@@ -1,6 +1,6 @@
-# Deployment Guide (macOS / Linux)
+# Deployment Guide (Ubuntu Server)
 
-This comprehensive guide provides instructions on how to set up, build, and deploy the `dunamismax.com` website. It covers local development setup, Supabase configuration, and a high-level overview of self-hosting.
+This comprehensive guide provides instructions on how to set up, build, and deploy the `dunamismax.com` website. It covers local development setup, Supabase configuration, and self-hosting on an Ubuntu Server using Nginx.
 
 ## Table of Contents
 
@@ -15,15 +15,20 @@ This comprehensive guide provides instructions on how to set up, build, and depl
     *   [Start the Frontend Server](#start-the-frontend-server-nextjs)
     *   [Accessing the Website](#accessing-the-website)
     *   [Stopping the Application](#stopping-the-application)
-5.  [Self-Hosting / Deployment Overview](#5-self-hosting--deployment-overview)
-    *   [Frontend Deployment](#frontend-deployment)
-    *   [Backend Deployment](#backend-deployment)
+5.  [Self-Hosting on Ubuntu Server](#5-self-hosting-on-ubuntu-server)
+    *   [Server Preparation](#server-preparation)
+    *   [Clone Repository on Server](#clone-repository-on-server)
+    *   [Backend Setup on Server](#backend-setup-on-server)
+    *   [Frontend Setup on Server](#frontend-setup-on-server)
+    *   [Nginx Configuration](#nginx-configuration)
+    *   [Running the Application in Production](#running-the-application-in-production)
+    *   [Accessing the Self-Hosted Website](#accessing-the-self-hosted-website)
 
 ---
 
 ## 1. Prerequisites
 
-Before you begin, ensure you have the following installed on your system:
+Before you begin, ensure you have the following installed on your system (for local development) or your Ubuntu Server (for self-hosting):
 
 *   **Node.js (LTS) & npm:** Required for the Next.js frontend.
     *   [Node.js Download](https://nodejs.org/en/download/)
@@ -34,6 +39,8 @@ Before you begin, ensure you have the following installed on your system:
     *   [Git Download](https://git-scm.com/downloads)
 *   **Supabase Account:** You will need a Supabase account and project for the database and backend services.
     *   [Supabase Website](https://supabase.com/)
+*   **Ubuntu Server:** A running Ubuntu Server instance for self-hosting.
+*   **Nginx:** A web server that will act as a reverse proxy on your Ubuntu Server.
 
 ## 2. Supabase Setup
 
@@ -165,35 +172,161 @@ You should now see the `dunamismax.com` website, with blog posts fetched from yo
 
 To stop both servers, go to each terminal where they are running and press `Ctrl + C`.
 
-## 5. Self-Hosting / Deployment Overview
+## 5. Self-Hosting on Ubuntu Server
 
-Deploying this full-stack application involves separate steps for the frontend and backend due to their decoupled nature.
+This section details how to deploy and run the `dunamismax.com` website on an Ubuntu Server.
 
-### Frontend Deployment
+### Server Preparation
 
-The Next.js frontend is a static site with server-side rendering capabilities. It can be deployed to various platforms optimized for Next.js applications, such as:
+First, ensure your Ubuntu server is updated and has the necessary tools installed:
 
-*   **Vercel (Recommended for Next.js):** The creators of Next.js, Vercel provides seamless deployment and excellent performance for Next.js applications.
-*   **Netlify:** Another popular choice for static sites and Next.js.
-*   **Custom Server (e.g., Ubuntu with Caddy/Nginx and PM2):** You can build the Next.js application (`npm run build`) and then serve the output (`.next` folder) using a web server like Caddy or Nginx, managed by PM2 or systemd.
+```bash
+sudo apt update
+sudo apt upgrade -y
+sudo apt install -y git python3 python3-pip python3-venv nginx
+```
 
-**Key steps for Frontend Deployment:**
-1.  **Build:** Run `npm run build` in the `frontend` directory. This generates the optimized production build.
-2.  **Environment Variables:** Ensure your production environment variables (`NEXT_PUBLIC_API_BASE_URL`, `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`) are correctly configured on your hosting platform. `NEXT_PUBLIC_API_BASE_URL` should point to your deployed FastAPI backend URL.
-3.  **Serve:** Configure your chosen hosting platform or web server to serve the built Next.js application.
+### Clone Repository on Server
 
-### Backend Deployment
+Clone the project repository to your Ubuntu server. It's recommended to clone it into a directory like `/var/www/`.
 
-The FastAPI backend is a Python application that can be deployed using various methods, often involving containerization for consistency and scalability.
+```bash
+sudo mkdir -p /var/www/dunamismax.com
+sudo chown -R $USER:$USER /var/www/dunamismax.com
+git clone https://github.com/dunamismax/dunamismax.git /var/www/dunamismax.com
+cd /var/www/dunamismax.com
+```
 
-*   **Docker (Recommended):** Containerize your FastAPI application with Gunicorn and Uvicorn. This provides a portable and isolated deployment unit.
-*   **Cloud Platforms (e.g., DigitalOcean Droplet, AWS EC2, Heroku):** Deploy your Docker container or Python application directly to a cloud virtual machine or platform-as-a-service.
-*   **Custom Server (e.g., Ubuntu with Gunicorn/Uvicorn and systemd/PM2):** Install Python, create a virtual environment, install dependencies, and run your FastAPI application with Gunicorn (for production-grade process management) behind a reverse proxy like Caddy or Nginx.
+### Backend Setup on Server
 
-**Key steps for Backend Deployment:**
-1.  **Containerization (Optional but Recommended):** Create a `Dockerfile` to build a Docker image of your FastAPI application.
-2.  **Process Management:** Use a production-ready ASGI server like Gunicorn with Uvicorn workers to run your FastAPI application. Manage this process with `systemd` or `PM2` for reliability.
-3.  **Reverse Proxy:** Place a reverse proxy (e.g., Caddy, Nginx) in front of your FastAPI application to handle SSL termination, load balancing, and static file serving.
-4.  **Environment Variables:** Configure your production environment variables (`SUPABASE_URL`, `SUPABASE_KEY`) on your server or hosting platform.
+Navigate to the `backend` directory, create a virtual environment, install dependencies, and configure environment variables.
 
-This guide provides a solid foundation. For specific deployment scenarios, refer to the documentation of your chosen hosting platform and tools.
+```bash
+cd backend
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+pip install gunicorn # Install Gunicorn for production
+```
+
+**Configure Backend Environment Variables:**
+
+Create a `.env` file in the `backend` directory with your production Supabase credentials. These should be the same as your local `.env` file.
+
+```bash
+cp .env.example .env
+# Open .env and add your Supabase credentials
+```
+
+### Frontend Setup on Server
+
+Navigate to the `frontend` directory, install dependencies, build the Next.js application, and configure environment variables.
+
+```bash
+cd ../frontend
+npm install
+npm run build
+```
+
+**Configure Frontend Environment Variables:**
+
+Create a `.env.local` file in the `frontend` directory. For production, `NEXT_PUBLIC_API_BASE_URL` should point to your server's domain or IP address where Nginx will proxy requests to the backend.
+
+```bash
+cp .env.local.example .env.local
+```
+
+Open `frontend/.env.local` and ensure it contains:
+
+```
+NEXT_PUBLIC_API_BASE_URL=http://YOUR_SERVER_IP_OR_DOMAIN:8000 # Or whatever port Nginx will proxy to
+NEXT_PUBLIC_SUPABASE_URL="YOUR_SUPABASE_URL"
+NEXT_PUBLIC_SUPABASE_ANON_KEY="YOUR_SUPABASE_ANON_KEY"
+```
+
+### Nginx Configuration
+
+Nginx will serve the Next.js static assets and proxy API requests to the FastAPI backend.
+
+1.  **Create Nginx Configuration File:**
+
+    ```bash
+    sudo nano /etc/nginx/sites-available/dunamismax.com
+    ```
+
+    Add the following content to the file. Replace `YOUR_SERVER_IP_OR_DOMAIN` with your actual server IP address or domain name.
+
+    ```nginx
+    server {
+        listen 80;
+        server_name YOUR_SERVER_IP_OR_DOMAIN;
+
+        location / {
+            proxy_pass http://localhost:3000; # Next.js frontend
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection 'upgrade';
+            proxy_set_header Host $host;
+            proxy_cache_bypass $http_upgrade;
+        }
+
+        location /api/ {
+            proxy_pass http://localhost:8000; # FastAPI backend
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+        }
+    }
+    ```
+
+2.  **Enable the Nginx Configuration:**
+
+    ```bash
+    sudo ln -s /etc/nginx/sites-available/dunamismax.com /etc/nginx/sites-enabled/
+    sudo nginx -t
+    sudo systemctl restart nginx
+    ```
+
+### Running the Application in Production
+
+For production, you should use `gunicorn` to run the FastAPI backend and `pm2` (or `systemd`) to manage both the backend and frontend processes.
+
+1.  **Install PM2:**
+
+    ```bash
+    sudo npm install -g pm2
+    ```
+
+2.  **Start Backend with Gunicorn and PM2:**
+
+    Navigate to the `backend` directory and start the FastAPI application using Gunicorn and PM2. Ensure your virtual environment is activated.
+
+    ```bash
+    cd /var/www/dunamismax.com/backend
+    source venv/bin/activate
+    pm2 start "gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app" --name "dunamismax-backend"
+    ```
+
+    *   `-w 4`: Runs 4 worker processes (adjust based on your server's CPU cores).
+    *   `-k uvicorn.workers.UvicornWorker`: Specifies Uvicorn worker class.
+
+3.  **Start Frontend with PM2:**
+
+    Navigate to the `frontend` directory and start the Next.js application with PM2.
+
+    ```bash
+    cd /var/www/dunamismax.com/frontend
+    pm2 start "npm run start" --name "dunamismax-frontend"
+    ```
+
+4.  **Save PM2 Process List (for persistence across reboots):**
+
+    ```bash
+    pm2 save
+    pm2 startup
+    ```
+
+### Accessing the Self-Hosted Website
+
+Open your web browser and navigate to your server's IP address or domain name (e.g., `http://YOUR_SERVER_IP_OR_DOMAIN`). You should see the `dunamismax.com` website.
