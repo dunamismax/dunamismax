@@ -1,4 +1,5 @@
-import { FaTwitter, FaBluesky, FaReddit, FaDiscord, FaSignal } from 'react-icons/fa';
+import { FaTwitter, FaReddit, FaDiscord } from 'react-icons/fa';
+import { FaBluesky, FaSignalMessenger } from 'react-icons/fa6';
 
 export default function AboutPage() {
   return (
@@ -23,7 +24,7 @@ export default function AboutPage() {
           <FaDiscord className="mr-2" /> Discord: dunamismax
         </li>
         <li className="flex items-center">
-          <FaSignal className="mr-2" /> Signal: dunamismax.66
+          <FaSignalMessenger className="mr-2" /> Signal: dunamismax.66
         </li>
       </ul>
     </section>
