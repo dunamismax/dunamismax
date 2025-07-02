@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function PhotographyPage() {
   const photos = [
-    { id: 1, src: "/placeholder-photo-1.jpg", alt: "Placeholder Photo 1" },
-    { id: 2, src: "/placeholder-photo-2.jpg", alt: "Placeholder Photo 2" },
-    { id: 3, src: "/placeholder-photo-3.jpg", alt: "Placeholder Photo 3" },
-    { id: 4, src: "/placeholder-photo-4.jpg", alt: "Placeholder Photo 4" },
-    { id: 5, src: "/placeholder-photo-5.jpg", alt: "Placeholder Photo 5" },
-    { id: 6, src: "/placeholder-photo-6.jpg", alt: "Placeholder Photo 6" },
+    { id: 1, src: "https://via.placeholder.com/600x400?text=Placeholder+Photo+1", alt: "Placeholder Photo 1" },
+    { id: 2, src: "https://via.placeholder.com/600x400?text=Placeholder+Photo+2", alt: "Placeholder Photo 2" },
+    { id: 3, src: "https://via.placeholder.com/600x400?text=Placeholder+Photo+3", alt: "Placeholder Photo 3" },
+    { id: 4, src: "https://via.placeholder.com/600x400?text=Placeholder+Photo+4", alt: "Placeholder Photo 4" },
+    { id: 5, src: "https://via.placeholder.com/600x400?text=Placeholder+Photo+5", alt: "Placeholder Photo 5" },
+    { id: 6, src: "https://via.placeholder.com/600x400?text=Placeholder+Photo+6", alt: "Placeholder Photo 6" },
   ];
 
   return (
