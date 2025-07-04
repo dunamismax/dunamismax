@@ -27,7 +27,7 @@ I'm an IT Director with over 15 years of experience in the tech industry, specia
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=python,typescript,rust,swift,cpp,c,html,css,nextjs,django,flask,nodejs,tailwind,vite,docker,git,github,cmake,nginx,vscode,raspberrypi,linux,debian,ubuntu,arch,fedora,freebsd,windows,bash,powershell,sqlite" />
+    <img src="https://skillicons.dev/icons?i=python,typescript,rust,swift,cpp,c,html,css,nextjs,django,flask,nodejs,tailwind,vite,docker,git,github,cmake,nginx,vscode,raspberrypi,linux,debian,ubuntu,arch,windows,bash,powershell,sqlite" />
   </a>
 </p>
 
