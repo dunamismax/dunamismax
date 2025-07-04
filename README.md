@@ -35,6 +35,10 @@ I'm an IT Director with over 15 years of experience in the tech industry, specia
 
 ### My C++ Journey
 
+<p align="center">
+  <img src="https://github.com/dunamismax/dunamismax/blob/131f2074ab3f91c69ff767fc6c830c21bb3e16b4/LLVMWyvernSmall.png" alt="C++ Monorepo logo" width="250"/>
+</p>
+
 I'm currently diving deep into C++ to expand my programming skills. My goal is to build robust, high-performance applications and contribute to the open-source C++ community. You can follow my progress in my C++ monorepo:
 
 <p align="center">
