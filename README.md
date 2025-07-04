@@ -6,7 +6,7 @@
   </a>
 </p>
 
-I'm an IT Director with over 15 years of experience in the tech industry, specializing in system administration, VoIP, and web hosting. I'm passionate about open-source technology and self-hosting, and I'm currently on an journey to master C++ and game development.
+I'm an IT Director with over 15 years of experience in the tech industry, specializing in system administration, VoIP, and web hosting. I'm passionate about open-source technology and self-hosting, and I'm currently on a journey to master C++ and game development.
 
 ---
 
