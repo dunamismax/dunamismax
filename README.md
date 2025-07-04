@@ -1,4 +1,4 @@
-# Hi there, I'm dunamismax! 👋
+# Hi there, I'm dunamismax
 
 <p align="center">
   <a href="https://github.com/dunamismax">
@@ -10,7 +10,7 @@ I'm an IT Director with over 15 years of experience in the tech industry, specia
 
 ---
 
-### 📈 My GitHub Stats
+### My GitHub Stats
 
 <p align="center">
   <a href="https://github.com/dunamismax">
@@ -23,7 +23,7 @@ I'm an IT Director with over 15 years of experience in the tech industry, specia
 
 ---
 
-### 🛠️ My Skills & Tools
+### My Skills & Tools
 
 <p align="center">
   <a href="https://skillicons.dev">
@@ -33,7 +33,7 @@ I'm an IT Director with over 15 years of experience in the tech industry, specia
 
 ---
 
-### 🚀 My C++ Journey
+### My C++ Journey
 
 I'm currently diving deep into C++ to expand my programming skills. My goal is to build robust, high-performance applications and contribute to the open-source C++ community. You can follow my progress in my C++ monorepo:
 
@@ -45,7 +45,7 @@ I'm currently diving deep into C++ to expand my programming skills. My goal is t
 
 ---
 
-### 📫 Let's Connect
+### Let's Connect
 
 <p align="center">
   <a href="https://twitter.com/dunamismax" target="_blank"><img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"></a>
