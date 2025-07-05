@@ -2,11 +2,11 @@
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=1DB954&center=true&vCenter=true&width=435&lines=IT+Director+%7C+C%2B%2B+Enthusiast;15%2B+Years+in+Tech;Sysadmin+%26+VoIP+Expert;Open-Source+Advocate;Self-Hosting+Proponent" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=1DB954&center=true&vCenter=true&width=435&lines=IT+Director+%7C+C+Enthusiast;15%2B+Years+in+Tech;Mastering+Systems+Programming;Open-Source+Advocate;Self-Hosting+Proponent" alt="Typing SVG" />
   </a>
 </p>
 
-I'm an IT Director with over 15 years of experience in the tech industry, specializing in system administration, VoIP, and web hosting. I'm passionate about open-source technology and self-hosting, and I'm currently on a journey to master C++ and game development.
+I'm an IT Director with over 15 years of experience in system administration, VoIP, and web hosting. I'm passionate about open-source technology and am currently on a journey to master the C programming language, focusing on systems programming, memory management, and software architecture.
 
 ---
 
@@ -27,23 +27,23 @@ I'm an IT Director with over 15 years of experience in the tech industry, specia
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=python,typescript,rust,swift,cpp,c,html,css,nextjs,django,flask,nodejs,tailwind,vite,docker,git,github,cmake,nginx,vscode,raspberrypi,linux,debian,ubuntu,arch,windows,bash,powershell,sqlite" />
+    <img src="https://skillicons.dev/icons?i=c,cpp,python,typescript,rust,swift,html,css,nextjs,django,flask,nodejs,tailwind,vite,docker,git,github,cmake,nginx,vscode,raspberrypi,linux,debian,ubuntu,arch,windows,bash,powershell,sqlite" />
   </a>
 </p>
 
 ---
 
-### My C++ Journey
+### My C Journey: The-C-Matrix
 
 <p align="center">
-  <img src="https://github.com/dunamismax/dunamismax/blob/131f2074ab3f91c69ff767fc6c830c21bb3e16b4/LLVMWyvernSmall.png" alt="C++ Monorepo logo" width="250"/>
+  <img src="https://raw.githubusercontent.com/dunamismax/The-C-Matrix/main/LLVMWyvernSmall.png" alt="The-C-Matrix Logo" width="250"/>
 </p>
 
-I'm currently diving deep into C++ to expand my programming skills. My goal is to build robust, high-performance applications and contribute to the open-source C++ community. You can follow my progress in my C++ monorepo:
+I'm currently diving deep into C to build a strong foundation in low-level programming. My goal is to build robust, high-performance applications and contribute to the open-source community. You can follow my progress in my C monorepo, **The-C-Matrix**:
 
 <p align="center">
-  <a href="https://github.com/dunamismax/cpp">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=cpp&theme=dracula" alt="C++ Monorepo" />
+  <a href="https://github.com/dunamismax/The-C-Matrix">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=The-C-Matrix&theme=dracula" alt="The-C-Matrix Monorepo" />
   </a>
 </p>
 
