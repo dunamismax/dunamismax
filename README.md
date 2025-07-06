@@ -36,7 +36,7 @@ I'm an IT Director with over 15 years of experience in system administration, Vo
 ### My C Journey: The-C-Matrix
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/dunamismax/The-C-Matrix/main/LLVMWyvernSmall.png" alt="The-C-Matrix Logo" width="250"/>
+  <img src="https://github.com/dunamismax/The-C-Matrix/blob/main/docs/LLVMWyvernSmall.png" alt="The-C-Matrix Logo" width="250"/>
 </p>
 
 I'm currently diving deep into C to build a strong foundation in low-level programming. My goal is to build robust, high-performance applications and contribute to the open-source community. You can follow my progress in my C monorepo, **The-C-Matrix**:
