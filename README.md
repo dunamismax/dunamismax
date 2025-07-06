@@ -38,7 +38,7 @@ I'm an IT Director with over 15 years of experience in system administration, Vo
 I'm documenting my entire learning journey in my `ruby-verse` monorepo. It's the central hub for all my applications, reusable packages, and experiments. Follow my progress there!
 
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/1200px-Ruby_logo.svg.png" alt="Ruby Logo" width="200"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/1200px-Ruby_logo.svg.png" alt="Ruby Logo" width="100"/>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/1200px-Ruby_On_Rails_Logo.svg.png" alt="Rails Logo" width="200"/>
 </p>
