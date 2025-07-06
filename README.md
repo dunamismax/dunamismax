@@ -2,11 +2,11 @@
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=1DB954&center=true&vCenter=true&width=435&lines=IT+Director+%7C+C+Enthusiast;15%2B+Years+in+Tech;Mastering+Systems+Programming;Open-Source+Advocate;Self-Hosting+Proponent" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=1DB954&center=true&vCenter=true&width=550&lines=IT+Director+%7C+C+%26+Elixir+Enthusiast;15%2B+Years+in+Tech;Mastering+Systems+%26+Web+Frameworks;Open-Source+Advocate;Self-Hosting+Proponent" alt="Typing SVG" />
   </a>
 </p>
 
-I'm an IT Director with over 15 years of experience in system administration, VoIP, and web hosting. I'm passionate about open-source technology and am currently on a journey to master the C programming language, focusing on systems programming, memory management, and software architecture.
+I'm an IT Director with over 15 years of experience in system administration, VoIP, and web hosting. I'm passionate about open-source technology and am currently on a dual journey to master both the **C programming language** for systems programming and the **Elixir language with the Phoenix framework** for building scalable, concurrent web applications.
 
 ---
 
@@ -27,23 +27,28 @@ I'm an IT Director with over 15 years of experience in system administration, Vo
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=c,cpp,python,typescript,rust,swift,html,css,nextjs,django,flask,nodejs,tailwind,vite,docker,git,github,cmake,nginx,vscode,raspberrypi,linux,debian,ubuntu,arch,windows,bash,powershell,sqlite" />
+    <img src="https://skillicons.dev/icons?i=c,elixir,phoenix,cpp,python,typescript,rust,swift,html,css,nextjs,django,flask,nodejs,tailwind,vite,docker,git,github,cmake,nginx,vscode,raspberrypi,linux,debian,ubuntu,arch,windows,bash,powershell,sqlite" />
   </a>
 </p>
 
 ---
 
-### My C Journey: The-C-Matrix
+### My Learning Journey: C & Elixir
+
+I'm currently diving deep into two distinct but powerful ecosystems to broaden my expertise from low-level systems to high-concurrency web applications. You can follow my progress in my two monorepos:
 
 <p align="center">
-  <img src="https://github.com/dunamismax/The-C-Matrix/blob/main/docs/LLVMWyvernSmall.png" alt="The-C-Matrix Logo" width="300"/>
+  <img src="https://github.com/dunamismax/The-C-Matrix/blob/main/docs/LLVMWyvernSmall.png" alt="The-C-Matrix Logo" width="250"/>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://elixir-lang.org/images/logo/logo.png" alt="The Elixir language logo" width="250"/>
 </p>
-
-I'm currently diving deep into C to build a strong foundation in low-level programming. My goal is to build robust, high-performance applications and contribute to the open-source community. You can follow my progress in my C monorepo, **The-C-Matrix**:
 
 <p align="center">
   <a href="https://github.com/dunamismax/The-C-Matrix">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=The-C-Matrix&theme=dracula" alt="The-C-Matrix Monorepo" />
+  </a>
+  <a href="https://github.com/dunamismax/elixir">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=elixir&theme=dracula" alt="Elixir Monorepo" />
   </a>
 </p>
 
