@@ -27,7 +27,7 @@ I'm an IT Director with over 15 years of experience in system administration, Vo
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=c,elixir,phoenix,cpp,python,typescript,rust,swift,html,css,nextjs,django,flask,nodejs,tailwind,vite,docker,git,github,cmake,nginx,vscode,raspberrypi,linux,debian,ubuntu,arch,windows,bash,powershell,sqlite" />
+    <img src="https://skillicons.dev/icons?i=c,elixir,cpp,python,typescript,rust,swift,html,css,nextjs,django,flask,nodejs,tailwind,vite,docker,git,github,cmake,nginx,vscode,raspberrypi,linux,debian,ubuntu,arch,windows,bash,powershell,sqlite" />
   </a>
 </p>
 
