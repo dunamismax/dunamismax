@@ -2,11 +2,11 @@
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=CC342D&center=true&vCenter=true&width=600&lines=IT+Director+%7C+Ruby+on+Rails+Developer;Mastering+Full-Stack+Web+Development;100%25+All-In+on+Ruby;Open-Source+%26+Self-Hosting+Advocate" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=3776AB&center=true&vCenter=true&width=600&lines=IT+Director+%7C+Python+%26+FastAPI+Developer;Mastering+Full-Stack+Web+Development;100%25+All-In+on+Python;Open-Source+%26+Self-Hosting+Advocate" alt="Typing SVG" />
   </a>
 </p>
 
-I'm an IT Director with over 15 years of experience in system administration, VoIP, and web hosting. I'm now focusing 100% on mastering **Ruby and the Ruby on Rails framework** to build robust, elegant, and scalable web applications. My journey is all about a deep-dive into the Ruby ecosystem, from its powerful standard library to the magic of Rails and Hotwire.
+I'm an IT Director with over 15 years of experience in system administration, VoIP, and web hosting. I'm now focusing 100% on mastering **Python and the FastAPI framework** to build robust, elegant, and scalable web applications. My journey is all about a deep-dive into the Python ecosystem, from its powerful standard library to the modern, high-performance world of FastAPI. I am developing primarily on **macOS**.
 
 ---
 
@@ -23,31 +23,31 @@ I'm an IT Director with over 15 years of experience in system administration, Vo
 
 ---
 
-### My Ruby & Rails Toolkit
+### My Python & FastAPI Toolkit
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=ruby,rails,tailwind,postgresql,sqlite,docker,git,github,nginx,vscode,raspberrypi,linux,debian,ubuntu,bash,powershell,typescript,html,css,nodejs" />
+    <img src="https://skillicons.dev/icons?i=python,fastapi,tailwind,postgresql,sqlite,docker,git,github,nginx,vscode,raspberrypi,linux,debian,ubuntu,bash,powershell,typescript,html,css,nodejs" />
   </a>
 </p>
 
 ---
 
-### My Ruby & Rails Journey
+### My Python & FastAPI Journey
 
-I'm documenting my entire learning journey in my `ruby-verse` monorepo. It's the central hub for all my applications, reusable packages, and experiments. Follow my progress there!
+I'm documenting my entire learning journey in my `python-fastapi` monorepo. It's the central hub for all my applications and experiments. Follow my progress there!
 
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/1200px-Ruby_logo.svg.png" alt="Ruby Logo" width="100"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1920px-Python-logo-notext.svg.png" alt="Python Logo" width="100"/>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/1200px-Ruby_On_Rails_Logo.svg.png" alt="Rails Logo" width="200"/>
+  <img src="https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png" alt="FastAPI Logo" width="200"/>
 </p>
 
 <p align="center">
-  <a href="https://github.com/dunamismax/ruby-verse">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=ruby-verse&theme=dracula" alt="ruby-verse Monorepo" />
+  <a href="https://github.com/dunamismax/python-fastapi">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=python-fastapi&theme=dracula" alt="python-fastapi Monorepo" />
   </a>
-</p>
+p>
 
 ---
 
