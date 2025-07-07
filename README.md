@@ -27,7 +27,7 @@ I'm an IT Director with over 15 years of experience in system administration, Vo
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=go,chi,postgres,caddy,htmx,tailwind,git,github,vscode,linux,ubuntu,bash" />
+    <img src="https://skillicons.dev/icons?i=go,postgres,htmx,tailwind,git,github,vscode,linux,ubuntu,bash" />
   </a>
 </p>
 
