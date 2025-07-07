@@ -2,11 +2,11 @@
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=3776AB&center=true&vCenter=true&width=600&lines=IT+Director+%7C+Python+%26+FastAPI+Developer;Mastering+Full-Stack+Web+Development;100%25+All-In+on+Python;Open-Source+%26+Self-Hosting+Advocate" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=3776AB&center=true&vCenter=true&width=600&lines=IT+Director+%7C+Learning+Python+%26+Go;Mastering+Full-Stack+Web+Development;Open-Source+%26+Self-Hosting+Advocate" alt="Typing SVG" />
   </a>
 </p>
 
-I'm an IT Director with over 15 years of experience in system administration, VoIP, and web hosting. I'm now focusing 100% on mastering **Python and the FastAPI framework** to build robust, elegant, and scalable web applications. My journey is all about a deep-dive into the Python ecosystem, from its powerful standard library to the modern, high-performance world of FastAPI. I am developing primarily on **macOS**.
+I'm an IT Director with over 15 years of experience in system administration, VoIP, and web hosting. I'm currently on a journey to master both **Python** and **Go** to build robust, elegant, and scalable web applications. My focus is on a deep-dive into both ecosystems, from Python's dynamic capabilities with FastAPI to Go's performance and concurrency. I am developing primarily on **macOS**.
 
 ---
 
@@ -23,20 +23,20 @@ I'm an IT Director with over 15 years of experience in system administration, Vo
 
 ---
 
-### My Python & FastAPI Toolkit
+### My Toolkit
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=python,fastapi,postgresql,git,github,vscode,linux,ubuntu,bash" />
+    <img src="https://skillicons.dev/icons?i=python,fastapi,go,postgres,git,github,vscode,linux,ubuntu,bash" />
   </a>
 </p>
 
 <details>
-<summary><h3>My Complete Tech Stack</h3></summary>
+<summary><h3>My Complete Tech Stacks</h3></summary>
 
-This stack is designed for modern, high-performance web and command-line applications, self-hosted on Ubuntu with Uvicorn and Caddy.
+I'm building with two primary tech stacks, one for Python and one for Go.
 
-#### **Core Application & CLI**
+#### **Python & FastAPI**
 
 - **Language:** [**Python**](https://www.python.org/doc/) (v3.12)
 - **Web Framework:** [**FastAPI**](https://fastapi.tiangolo.com/) (v0.115.14)
@@ -44,48 +44,34 @@ This stack is designed for modern, high-performance web and command-line applica
 - **Database ORM:** [**SQLAlchemy**](https://www.sqlalchemy.org/documentation/) (v2.0.41)
 - **Database Driver (Async):** [**asyncpg**](https://magicstack.github.io/asyncpg/current/) (v0.30.0)
 - **Database Migrations:** [**Alembic**](https://alembic.sqlalchemy.org/en/latest/) (v1.16.2)
-
-#### **Developer Experience & Tooling**
-
 - **Package & Environment Management:** [**uv**](https://astral.sh/docs/uv) (v0.2.14)
 - **Linter & Formatter:** [**Ruff**](https://astral.sh/docs/ruff) (v0.5.2)
-- **Configuration:** [**python-dotenv**](https://pypi.org/project/python-dotenv/) (v1.1.1)
-- **Development Server:** [**Uvicorn**](https://www.uvicorn.org/) (v0.30.1)
 
-#### **Frontend & User Experience**
+#### **Go**
 
-- **Client-Side Interactivity:** [**htmx**](https://htmx.org/docs/) (v2.0.0)
-- **Templating:** [**Jinja2**](https://jinja.palletsprojects.com/en/3.1.x/) (v3.1.6)
-- **FastAPI/htmx Integration:** [**fasthx**](https://pypi.org/project/fasthx/) (v0.6.1)
-- **Forms & Validation:** [**starlette-wtf**](https://pypi.org/project/starlette-wtf/) (v0.4.5) & [**python-multipart**](https://pypi.org/project/python-multipart/) (v0.0.20)
-- **Client-Side Validation:** **HTML5 Validation**
-
-#### **Authentication**
-
-- **Core Authentication:** [**FastAPI Security**](https://fastapi.tiangolo.com/tutorial/security/) & [**Passlib**](https://passlib.readthedocs.io/en/stable/) (v1.7.4)
-
-#### **Deployment & Production**
-
-- **Web Server / Reverse Proxy:** [**Caddy**](https://caddyserver.com/docs/) (v2)
-- **Asset Management:** [**FastAPI StaticFiles**](https://fastapi.tiangolo.com/tutorial/static-files/)
+- **Language:** [**Go**](https://go.dev/doc/) (v1.22)
+- **Web Framework:** [**Chi**](https://go-chi.io/#/) (v5.0.12)
+- **CLI Framework:** [**Cobra**](https://cobra.dev/) (v1.8.1)
+- **Database ORM:** [**SQLC**](https://docs.sqlc.dev/) (v1.26.0)
+- **Database Driver (Async):** [**pgx**](https://pkg.go.dev/github.com/jackc/pgx/v5) (v5.6.0)
+- **Database Migrations:** [**golang-migrate**](https://github.com/golang-migrate/migrate) (v4.17.1)
+- **Package & Environment Management:** **Go Modules**
+- **Linter & Formatter:** [**golangci-lint**](https://golangci-lint.run/) (v1.59.1) & [**gofumpt**](https://github.com/mvdan/gofumpt)
 
 </details>
 
 ---
 
-### My Python & FastAPI Journey
+### My Learning Journey
 
-I'm documenting my entire learning journey in my `python-fastapi` monorepo. It's the central hub for all my applications and experiments. Follow my progress there!
-
-<p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1920px-Python-logo-notext.svg.png" alt="Python Logo" width="100"/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png" alt="FastAPI Logo" width="200"/>
-</p>
+I'm documenting my entire learning journey in two separate monorepos, one for each language. They are the central hubs for all my applications and experiments. Follow my progress there!
 
 <p align="center">
   <a href="https://github.com/dunamismax/python-fastapi">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=python-fastapi&theme=dracula" alt="python-fastapi Monorepo" />
+  </a>
+  <a href="https://github.com/dunamismax/go">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=go&theme=dracula" alt="Go Monorepo" />
   </a>
 </p>
 
@@ -96,7 +82,7 @@ I'm documenting my entire learning journey in my `python-fastapi` monorepo. It's
 <p align="center">
   <a href="https://twitter.com/dunamismax" target="_blank"><img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"></a>
   <a href="https://bsky.app/profile/dunamismax.bsky.social" target="_blank"><img src="https://img.shields.io/badge/Bluesky-blue?style=for-the-badge&logo=bluesky&logoColor=white" alt="Bluesky"></a>
-  <a href="https://www.reddit.com/user/dunamismax" target="_blank"><img src="https://img.shields.io/badge/Reddit-%23FF4500.svg?&style=for-the-badge&logo=reddit&logoColor=white" alt="Reddit"></a>
+  <a href="https.reddit.com/user/dunamismax" target="_blank"><img src="https://img.shields.io/badge/Reddit-%23FF4500.svg?&style=for-the-badge&logo=reddit&logoColor=white" alt="Reddit"></a>
   <a href="https://discord.com/users/dunamismax" target="_blank"><img src="https://img.shields.io/badge/Discord-dunamismax-7289DA.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a>
   <a href="https://signal.me/#p/+dunamismax.66" target="_blank"><img src="https://img.shields.io/badge/Signal-dunamismax.66-3A76F0.svg?style=for-the-badge&logo=signal&logoColor=white" alt="Signal"></a>
 </p>
