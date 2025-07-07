@@ -27,9 +27,49 @@ I'm an IT Director with over 15 years of experience in system administration, Vo
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=python,fastapi,tailwind,postgresql,sqlite,docker,git,github,nginx,vscode,raspberrypi,linux,debian,ubuntu,bash,powershell,typescript,html,css,nodejs" />
+    <img src="https://skillicons.dev/icons?i=python,fastapi,postgresql,git,github,vscode,linux,ubuntu,bash" />
   </a>
 </p>
+
+<details>
+<summary><h3>My Complete Tech Stack</h3></summary>
+
+This stack is designed for modern, high-performance web and command-line applications, self-hosted on Ubuntu with Uvicorn and Caddy.
+
+#### **Core Application & CLI**
+
+- **Language:** [**Python**](https://www.python.org/doc/) (v3.12)
+- **Web Framework:** [**FastAPI**](https://fastapi.tiangolo.com/) (v0.115.14)
+- **CLI Framework:** [**Typer**](https://typer.tiangolo.com/) (v0.12.3)
+- **Database ORM:** [**SQLAlchemy**](https://www.sqlalchemy.org/documentation/) (v2.0.41)
+- **Database Driver (Async):** [**asyncpg**](https://magicstack.github.io/asyncpg/current/) (v0.30.0)
+- **Database Migrations:** [**Alembic**](https://alembic.sqlalchemy.org/en/latest/) (v1.16.2)
+
+#### **Developer Experience & Tooling**
+
+- **Package & Environment Management:** [**uv**](https://astral.sh/docs/uv) (v0.2.14)
+- **Linter & Formatter:** [**Ruff**](https://astral.sh/docs/ruff) (v0.5.2)
+- **Configuration:** [**python-dotenv**](https://pypi.org/project/python-dotenv/) (v1.1.1)
+- **Development Server:** [**Uvicorn**](https://www.uvicorn.org/) (v0.30.1)
+
+#### **Frontend & User Experience**
+
+- **Client-Side Interactivity:** [**htmx**](https://htmx.org/docs/) (v2.0.0)
+- **Templating:** [**Jinja2**](https://jinja.palletsprojects.com/en/3.1.x/) (v3.1.6)
+- **FastAPI/htmx Integration:** [**fasthx**](https://pypi.org/project/fasthx/) (v0.6.1)
+- **Forms & Validation:** [**starlette-wtf**](https://pypi.org/project/starlette-wtf/) (v0.4.5) & [**python-multipart**](https://pypi.org/project/python-multipart/) (v0.0.20)
+- **Client-Side Validation:** **HTML5 Validation**
+
+#### **Authentication**
+
+- **Core Authentication:** [**FastAPI Security**](https://fastapi.tiangolo.com/tutorial/security/) & [**Passlib**](https://passlib.readthedocs.io/en/stable/) (v1.7.4)
+
+#### **Deployment & Production**
+
+- **Web Server / Reverse Proxy:** [**Caddy**](https://caddyserver.com/docs/) (v2)
+- **Asset Management:** [**FastAPI StaticFiles**](https://fastapi.tiangolo.com/tutorial/static-files/)
+
+</details>
 
 ---
 
@@ -47,7 +87,7 @@ I'm documenting my entire learning journey in my `python-fastapi` monorepo. It's
   <a href="https://github.com/dunamismax/python-fastapi">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=python-fastapi&theme=dracula" alt="python-fastapi Monorepo" />
   </a>
-p>
+</p>
 
 ---
 
