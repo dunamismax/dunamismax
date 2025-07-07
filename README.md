@@ -97,6 +97,10 @@ This stack is designed for modern, high-performance, and concurrent web and comm
 I'm documenting my entire learning journey in my Go monorepo. It is the central hub for all my applications and experiments. Follow my progress there!
 
 <p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1920px-Go_Logo_Blue.svg.png" alt="The Go programming language logo." width="100"/>
+</p>
+
+<p align="center">
   <a href="https://github.com/dunamismax/go">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=go&theme=dracula" alt="Go Monorepo" />
   </a>
