@@ -6,7 +6,7 @@
   </a>
 </p>
 
-I'm an IT Director with over 15 years of experience in system administration, VoIP, and web hosting. I'm currently on a journey to master both **Python** and **Go** to build robust, elegant, and scalable web applications. My focus is on a deep-dive into both ecosystems, from Python's dynamic capabilities with FastAPI to Go's performance and concurrency. I am developing primarily on **macOS**.
+I'm an IT Director with over 15 years of experience in system administration, VoIP, and web hosting. I'm currently on a journey to master both **Python** and **Go** to build robust, elegant, and scalable web applications and CLI tools. My focus is on a deep-dive into both ecosystems, from Python's dynamic capabilities with FastAPI to Go's performance and concurrency. I am developing primarily on **macOS**.
 
 ---
 
