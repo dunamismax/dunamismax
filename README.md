@@ -105,6 +105,12 @@ I am documenting my entire journey in my **Go Monorepo**. It is the central hub 
   </a>
 </p>
 
+<p align="center">
+  <a href="https://github.com/dunamismax/go-monorepo-template">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=go&theme=dracula" alt="Go Monorepo Template" />
+  </a>
+</p>
+
 ---
 
 ### Let's Connect
