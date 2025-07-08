@@ -2,11 +2,13 @@
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=600&lines=IT+Director+%7C+Golang+Developer;Building+High-Performance+Web+Services;Open-Source+%26+Self-Hosting+Advocate" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=600&lines=IT+Director+%7C+Golang+Developer;Building+with+The+Pragmatic+Go+Stack;Standard+Library+First.+Minimal+Dependencies." alt="Typing SVG" />
   </a>
 </p>
 
-I'm an IT Director with over 15 years of experience in system administration, VoIP, and web hosting. I am now focused on mastering **Go** to build robust, elegant, and high-performance web applications, APIs, and CLI tools. My development environment is **macOS**, with a focus on deploying to self-hosted **Ubuntu** servers.
+I'm an IT Director with over 15 years of experience in system administration, VoIP, and web hosting. I am now focused on mastering **Go** to build robust, elegant, and high-performance web applications, APIs, and CLI tools. My development philosophy centers on a **Pragmatic Go Stack**: leveraging the power of the standard library first, supplemented by a minimal set of high-quality tools.
+
+All my development is done on **macOS**, with a focus on deploying to self-hosted **Linux (Ubuntu)** servers.
 
 ---
 
@@ -25,76 +27,73 @@ I'm an IT Director with over 15 years of experience in system administration, Vo
 
 ### My Go Toolkit
 
+My toolkit is built around simplicity, performance, and a great developer experience.
+
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=go,postgres,htmx,tailwind,git,github,vscode,linux,ubuntu,bash" />
+    <img src="https://skillicons.dev/icons?i=go,postgres,docker,caddy,htmx,git,github,vscode,linux,ubuntu,bash" />
   </a>
 </p>
 
 <details>
-<summary><h3>My Go Tech Stack</h3></summary>
+<summary><h3>My Pragmatic Go Stack (Click to Expand)</h3></summary>
 
-This stack is designed for modern, high-performance, and concurrent web and command-line applications, self-hosted on Ubuntu and served with Caddy. It prioritizes simplicity, performance, and a stellar developer experience through Go's powerful native tooling.
+This stack is designed for building modern, high-performance, and self-contained web applications. It prioritizes simplicity and maintainability by leaning heavily on Go's powerful standard library and a minimal set of well-vetted, essential third-party libraries.
 
 #### **Core Application & CLI**
 
 - **Language:** [**Go**](https://go.dev/doc/) (v1.22+)
-  - The application's foundation. Go is a statically typed, compiled language designed for building simple, reliable, and efficient software. Its strength lies in native concurrency and a single binary output.
-- **Web Router:** [**Chi**](https://go-chi.io/) (v5.0.14) or [**Gin**](https://gin-gonic.com/docs/) (v1.10.0)
-  - Unlike Python, Go's powerful `net/http` standard library handles most web server needs. A lightweight router is added for ergonomic routing, middleware, and URL parameters. **Chi** is known for being idiomatic and composable, while **Gin** is praised for high performance and a rich feature set.
-- **CLI Framework:** [**Cobra**](https://cobra.dev/) (v1.8.1)
-  - The de-facto standard for creating powerful and modern CLI applications in Go. It's used by major projects like Kubernetes and Hugo.
-- **Database Access:** **Standard `database/sql`** + [**sqlc**](https://docs.sqlc.dev/) (v1.26.0)
-  - The Go community prefers writing SQL. The standard library's `database/sql` package provides the core interface. `sqlc` generates fully type-safe, idiomatic Go code from your raw SQL queries, giving you the safety and speed of an ORM without the runtime overhead.
-- **Database Driver (PostgreSQL):** [**pgx**](https://pkg.go.dev/github.com/jackc/pgx/v5) (v5.6.0)
-  - A high-performance and feature-rich PostgreSQL driver for Go. It integrates perfectly with `database/sql` and `sqlc` and supports asynchronous operations natively.
-- **Database Migrations:** [**Goose**](https://github.com/pressly/goose) (v3.20.0)
-  - A robust, CLI-based tool for managing database schema migrations. You can write migrations in plain SQL or in Go for more complex logic.
+  - The application's foundation. A statically typed, compiled language renowned for performance, native concurrency, and single-binary deployments.
+- **Web Router:** [**`net/http`**](https://pkg.go.dev/net/http/)
+  - Go's powerful standard library handles all web server and routing needs. Using the built-in `http.ServeMux` provides a robust, dependency-free foundation.
+- **CLI Framework:** [**`flag`**](https://pkg.go.dev/flag/)
+  - The standard library package for parsing command-line flags, perfect for configuring application behavior at startup without external dependencies.
+- **Database ORM:** [**GORM**](https://gorm.io/docs/)
+  - A developer-friendly ORM that simplifies database interactions like CRUD, queries, and schema management.
+- **Database Driver (PostgreSQL):** [**`lib/pq`**](https://pkg.go.dev/github.com/lib/pq)
+  - A popular and stable PostgreSQL driver for Go that works seamlessly with the standard `database/sql` interface.
+- **Database Migrations:** [**`golang-migrate/migrate`**](https://pkg.go.dev/github.com/golang-migrate/migrate/v4)
+  - A dedicated tool for managing database schema changes using versioned SQL files, ensuring robust and repeatable migrations.
 
 #### **Developer Experience & Tooling**
 
 - **Package & Environment Management:** [**Go Modules & Toolchain**](https://go.dev/doc/tool/)
-  - Natively built into the language. The `go` command handles dependency management (`go get`), building (`go build`), formatting (`go fmt`), and linting (`go vet`) out of the box, providing a unified and simple experience.
-- **Linter & Formatter:** [**`go fmt`**](https://pkg.go.dev/cmd/gofmt/) & [**`go vet`**](https://pkg.go.dev/cmd/vet/)
-  - `go fmt` automatically formats your code to the canonical Go style, ensuring consistency across the entire ecosystem. `go vet` is a static analyzer that reports suspicious constructs and helps find bugs.
-- **Configuration:** [**Viper**](https://github.com/spf13/viper) (v1.19.0)
-  - A complete configuration solution for Go applications. It can handle everything from `.env` files and other formats to environment variables and remote config systems.
-- **Development Server:** [**Air**](https://github.com/cosmtrek/air) (v1.52.0)
-  - A live-reloading command-line tool for Go applications. It watches your files for changes and automatically rebuilds and restarts your application, just like Uvicorn's reload feature.
+  - The native Go toolchain provides a unified experience for managing dependencies, builds (`go build`), testing, formatting (`go fmt`), and linting (`go vet`).
+- **Configuration:** [**Viper**](https://github.com/spf13/viper)
+  - A complete configuration solution handling `.env` files, other formats (JSON, YAML), environment variables, and remote config systems.
+- **Live Reloading:** [**Air**](https://github.com/air-verse/air)
+  - A command-line tool that automatically rebuilds and restarts the application on file changes, creating a fast and efficient development loop.
 
 #### **Frontend & User Experience**
 
-- **Client-Side Interactivity:** [**htmx**](https://htmx.org/docs/) (v2.0.0)
-  - htmx is backend-agnostic and works beautifully with Go. Your Go handlers will simply serve HTML snippets in response to htmx-driven requests.
-- **Templating:** **Standard `html/template`**
-  - Go's built-in `html/template` package is the standard for server-side HTML rendering. It's powerful, fast, and provides automatic, context-aware escaping to protect against XSS attacks.
-- **Go/htmx Integration:** **Standard Handlers**
-  - No special library is needed. A standard Go HTTP handler that writes an HTML template to the `http.ResponseWriter` is all you need to integrate with htmx.
-- **Forms & Validation:** [**Validator**](https://github.com/go-playground/validator) (v10.22.0)
-  - The most popular library for struct and field validation based on tags. You define validation rules directly on your data structs, making your code clean and readable.
+- **Client-Side Interactivity:** [**htmx**](https://htmx.org/docs/)
+  - A small JavaScript library enabling modern AJAX and partial page updates directly in HTML, served by Go handlers.
+- **Templating:** **`html/template`**
+  - Go's standard library for secure, server-side HTML rendering with automatic, context-aware escaping to prevent XSS attacks.
+- **Forms & Validation:** **Manual Struct Population & Methods**
+  - Form data is manually parsed and validated using methods on Go structs, providing clear, explicit control over data handling.
 - **Client-Side Validation:** **HTML5 Validation**
-  - Remains the same. Built-in browser features provide instant client-side validation and are a great first line of defense.
+  - Uses built-in browser validation for instant feedback on user input, providing a great first line of defense.
 
 #### **Authentication**
 
-- **Core Authentication:** **JWT Libraries** & **`golang.org/x/crypto/bcrypt`**
-  - The Go ecosystem uses well-vetted libraries for handling JWTs, such as [`golang-jwt/jwt`](https://github.com/golang-jwt/jwt).
-  - Password hashing is handled by Go's official `bcrypt` package, which is secure and easy to use.
+- **Core Authentication:** **`golang.org/x/crypto/bcrypt`** & **Standard `crypto` Packages**
+  - Password security is handled with the industry-standard `bcrypt` hashing algorithm. Session management (e.g., JWTs) is built using Go's standard crypto packages.
 
 #### **Deployment & Production**
 
-- **Web Server / Reverse Proxy:** [**Caddy**](https://caddyserver.com/docs/) (v2)
-  - Caddy remains the perfect choice. It's a production-grade, open-source web server with automatic HTTPS that will act as a reverse proxy for your compiled Go application binary.
+- **Web Server / Reverse Proxy:** [**Caddy**](https://caddyserver.com/docs/)
+  - A modern web server and reverse proxy with automatic HTTPS, perfect for securely routing traffic to the compiled Go application binary.
 - **Asset Management:** [**Go `embed` Package**](https://pkg.go.dev/embed)
-  - Introduced in Go 1.16, the `embed` package allows you to bundle static assets like CSS, JavaScript, and images directly into your Go binary at compile time. This creates a single, self-contained executable that is incredibly easy to deploy.
+  - The standard library `embed` package bundles static assets (CSS, JS, images) directly into the Go binary, creating a single, self-contained executable that is trivial to deploy.
 
 </details>
 
 ---
 
-### My Go Learning Journey
+### My Go Monorepo
 
-I'm documenting my entire learning journey in my Go monorepo. It is the central hub for all my applications and experiments. Follow my progress there!
+I am documenting my entire journey in my **Go Monorepo**. It is the central hub for all my applications, services, and experiments, putting the Pragmatic Go Stack into practice. Follow my progress there!
 
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1920px-Go_Logo_Blue.svg.png" alt="The Go programming language logo." width="100"/>
@@ -113,7 +112,7 @@ I'm documenting my entire learning journey in my Go monorepo. It is the central 
 <p align="center">
   <a href="https://twitter.com/dunamismax" target="_blank"><img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"></a>
   <a href="https://bsky.app/profile/dunamismax.bsky.social" target="_blank"><img src="https://img.shields.io/badge/Bluesky-blue?style=for-the-badge&logo=bluesky&logoColor=white" alt="Bluesky"></a>
-  <a href="https.reddit.com/user/dunamismax" target="_blank"><img src="https://img.shields.io/badge/Reddit-%23FF4500.svg?&style=for-the-badge&logo=reddit&logoColor=white" alt="Reddit"></a>
+  <a href="https://reddit.com/user/dunamismax" target="_blank"><img src="https://img.shields.io/badge/Reddit-%23FF4500.svg?&style=for-the-badge&logo=reddit&logoColor=white" alt="Reddit"></a>
   <a href="https://discord.com/users/dunamismax" target="_blank"><img src="https://img.shields.io/badge/Discord-dunamismax-7289DA.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a>
-  <a href="https.signal.me/#p/+dunamismax.66" target="_blank"><img src="https://img.shields.io/badge/Signal-dunamismax.66-3A76F0.svg?style=for-the-badge&logo=signal&logoColor=white" alt="Signal"></a>
+  <a href="https://signal.me/#p/+dunamismax.66" target="_blank"><img src="https://img.shields.io/badge/Signal-dunamismax.66-3A76F0.svg?style=for-the-badge&logo=signal&logoColor=white" alt="Signal"></a>
 </p>
