@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Golang+Developer;Building+with+The+Pragmatic+Go+Stack;Standard+Library+First.+Minimal+Dependencies." alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=IT+Director.+%7C+Golang+Developer;Building+with+The+Pragmatic+Go+Stack.;Standard+Library+First.+Minimal+Dependencies." alt="Typing SVG" />
   </a>
 </p>
 
