@@ -31,7 +31,7 @@ My toolkit is built around simplicity, performance, and a great developer experi
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=go,postgres,docker,caddy,htmx,git,github,vscode,linux,ubuntu,bash" />
+    <img src="https://skillicons.dev/icons?i=go,postgres,docker,htmx,git,github,vscode,linux,ubuntu,bash" />
   </a>
 </p>
 
