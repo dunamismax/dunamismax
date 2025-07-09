@@ -6,7 +6,7 @@
   </a>
 </p>
 
-I'm an IT Director with over 15 years of experience who is now passionately focused on mastering **Python** to build robust, modern, and high-performance server-rendered web applications.
+I'm an IT Director with over 12 years of experience who is now passionately focused on mastering **Python** to build robust, modern, and high-performance server-rendered web applications.
 
 My development philosophy centers on **The Python Hypermedia Stack**: a curated set of best-in-class tools designed for maximum productivity and minimal frontend complexity. I believe in lean, powerful backends that deliver a rich user experience directly from the server. All my development is done on **macOS**, using **uv** for a lightning-fast workflow, and deployed to self-hosted **Linux (Ubuntu)** servers.
 
