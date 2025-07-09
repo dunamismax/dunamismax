@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=4B8BBE&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Python+Developer;Mastering+Modern+Web+Development.;Building+with+The+Python+Hypermedia+Stack.;FastAPI+%2B+HTMX+%2B+uv+%2B+Tailwind+CSS;Minimal+JavaScript.+Maximum+Productivity.;Check+out+my+Python-Hypermedia+repo+below!" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=4B8BBE&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Python+Developer;Mastering+Modern+Web+Development.;Building+with+The+Python+Hypermedia+Stack.;FastAPI+%2B+HTMX+%2B+uv+%2B+Tailwind+CSS;Minimal+JavaScript.+Maximum+Performance.;Check+out+my+Python-Hypermedia+repo+below!" alt="Typing SVG" />
   </a>
 </p>
 
@@ -20,7 +20,7 @@ My development philosophy centers on **The Python Hypermedia Stack**: a curated 
   </a>
 </p>
 <p align="center">
-    <img src="https://raw.githubusercontent.com/dunamismax/dunamismax/output/snake.svg" alt="Snake animation" />
+    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmNjYm9rdjgyMWx0OGdieGRobW94NW9xcWNzM2lnYmhpbmw2c2JuZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gG9fVWJdN41NeiHhzk/giphy.gif" alt="Snake GIF" />
 </p>
 
 ---
