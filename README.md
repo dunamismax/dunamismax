@@ -31,40 +31,72 @@ My toolkit is built around performance, type-safety, and a superior developer ex
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=python,fastapi,pydantic,sqlalchemy,htmx,tailwind,jinja,docker,git,github,vscode,linux,ubuntu,bash" />
+    <img src="https://skillicons.dev/icons?i=python,fastapi,htmx,tailwind,docker,git,github,vscode,linux,ubuntu,bash" />
   </a>
 </p>
 
 <details>
 <summary><h3>The Python Hypermedia Stack (Click to Expand)</h3></summary>
 
-This stack is designed for building self-contained, high-performance, and interactive web applications. The architecture is centered around a powerful Python backend that renders HTML, enhanced with a minimal set of best-in-class libraries to create a rich user experience without the need for a heavy client-side framework.
+This stack is designed for building fast, modern web applications with server-rendered HTML, enhanced with dynamic interactivity. It prioritizes developer experience, performance, and maintainability by leveraging a curated set of modern tools.
 
----
+### **1. Development & Tooling**
 
-#### **1. Backend**
+A streamlined toolchain for a productive and consistent development environment.
 
-- **FastAPI** & **Uvicorn**: For high-performance, async web servers and APIs.
+- **uv**
+  - **Why:** A next-generation, high-performance Python packaging tool. `uv` handles project dependency management and virtual environments with exceptional speed, replacing traditional tools like `pip` and `venv` for a faster, more efficient workflow.
+- **Ruff**
+  - **Why:** An extremely fast, all-in-one Python linter and code formatter. Ruff replaces multiple tools (like Black, isort, and Flake8) with a single, cohesive, and blazing-fast utility, ensuring consistent code quality and style across the project.
 
-#### **2. Database & Data Modeling**
+### **2. Backend**
 
-- **SQLModel**, **Pydantic**, & **SQLAlchemy**: A seamless, type-safe bridge between my database and Python code.
+The application's core, built for speed and ease of use.
 
-#### **3. Frontend (The Hypermedia Stack)**
+- **FastAPI**
+  - **Why:** A modern, high-performance Python web framework. It uses standard Python type hints to build robust APIs and render server-side HTML templates, providing automatic data validation and documentation.
+- **Uvicorn**
+  - **Why:** A lightning-fast ASGI server that runs the FastAPI application, enabling its high-performance asynchronous capabilities.
 
-- **Jinja2**: For server-side HTML templating.
-- **HTMX**: For modern interactivity with minimal-to-no JavaScript.
-- **Tailwind CSS** & **DaisyUI**: For rapid, utility-first UI development.
-- **TypeScript (Vanilla)**: For the rare occasion a sprinkle of client-side logic is needed.
+### **3. Database**
 
-#### **4. CLI & Management**
+A unified and Pythonic approach to data modeling and database interaction.
 
-- **uv**: The core of my workflow. An extremely fast Python package installer, resolver, and version manager that replaces `pip`, `virtualenv`, and `pyenv`. All project scripts and tasks are run through `uv` for a consistent and reproducible environment.
+- **SQLModel**
+  - **Why:** The primary tool for database interaction, built by the creator of FastAPI. SQLModel cleverly combines Pydantic and SQLAlchemy, allowing you to define data, database tables, and API models in a single Python class. This significantly reduces code duplication and simplifies data management.
+- **Pydantic & SQLAlchemy**
+  - **Why:** The foundational libraries that power SQLModel. Pydantic provides robust data validation, while SQLAlchemy offers a powerful and flexible SQL toolkit and Object Relational Mapper (ORM).
 
-#### **5. Deployment & Hosting**
+### **4. Frontend**
 
-- **Ubuntu Server**: The stable, reliable foundation for my self-hosted projects.
-- **Caddy**: The simple, powerful, and automatic HTTPS reverse proxy.
+A hypermedia-driven frontend that delivers a rich user experience without requiring a heavy client-side JavaScript framework.
+
+- **Jinja2**
+  - **Why:** A fast and expressive templating engine used by FastAPI to render dynamic HTML, injecting backend data directly into the user interface.
+- **HTMX**
+  - **Why:** The core of the interactive experience. HTMX allows you to trigger AJAX requests directly from HTML attributes, enabling smooth UI updates by swapping server-rendered HTML fragments without writing complex JavaScript.
+- **Tailwind CSS**
+  - **Why:** A utility-first CSS framework for rapidly building custom user interfaces directly within your HTML, promoting speed and consistency in design.
+- **DaisyUI**
+  - **Why:** A plugin for Tailwind CSS that provides a library of pre-styled components (like buttons, cards, and menus). It accelerates development by offering ready-to-use UI elements that are fully customizable with Tailwind utilities.
+- **TypeScript**
+  - **Why:** Used for minimal, targeted client-side interactions where HTMX may not be suitable. Vanilla TypeScript offers type safety for small, self-contained scripts without adding framework overhead.
+
+### **5. CLI & Task Management**
+
+A modern tool for building command-line interfaces to manage the application.
+
+- **Typer**
+  - **Why:** A library for building powerful and user-friendly CLI applications, created by the author of FastAPI. It uses the same Python type-hint philosophy, making it intuitive to create commands for database migrations, user management, or other administrative tasks.
+
+### **6. Deployment**
+
+A self-hosted, secure, and stable production environment.
+
+- **Ubuntu Server (LTS)**
+  - **Why:** A popular, stable, and well-documented Linux distribution ideal for web servers. The Long-Term Support (LTS) version guarantees security and maintenance updates for years.
+- **Caddy**
+  - **Why:** A modern, powerful web server and reverse proxy with a focus on simplicity. Caddy's standout feature is fully automatic HTTPS, effortlessly securing your application with zero-touch TLS certificate provisioning and renewal.
 
 </details>
 
@@ -75,9 +107,17 @@ This stack is designed for building self-contained, high-performance, and intera
 I am channeling all my learning and development into my **Python-Hypermedia** monorepo. It is the central hub for all my applications and experiments, putting the Python Hypermedia Stack into practice. This project is a living testament to my development philosophy.
 
 <p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="The Python programming language logo." width="100"/>
+</p>
+
+<p align="center">
   <a href="https://github.com/dunamismax/Python-Hypermedia">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=Python-Hypermedia&theme=dracula&show_owner=true" alt="Python-Hypermedia Monorepo" />
   </a>
+</p>
+
+<p align="center">
+    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMW40cmJoZTZpeDdldXliYmV6cmlhODBjc3Z6ZGwyd3Q4Z3YwNnZqZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/coxQHKASG60HrHtvkt/giphy.gif" alt="Python GIF" />
 </p>
 
 ---
@@ -90,4 +130,8 @@ I am channeling all my learning and development into my **Python-Hypermedia** mo
   <a href="https://reddit.com/user/dunamismax" target="_blank"><img src="https://img.shields.io/badge/Reddit-%23FF4500.svg?&style=for-the-badge&logo=reddit&logoColor=white" alt="Reddit"></a>
   <a href="https://discord.com/users/dunamismax" target="_blank"><img src="https://img.shields.io/badge/Discord-dunamismax-7289DA.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a>
   <a href="https://signal.me/#p/+dunamismax.66" target="_blank"><img src="https://img.shields.io/badge/Signal-dunamismax.66-3A76F0.svg?style=for-the-badge&logo=signal&logoColor=white" alt="Signal"></a>
+</p>
+
+<p align="center">
+    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYm84OHJrYnU3cjIxc3IzbDV3ZDRtdmR6Y2p6eGo3Nm9kNmk4NXZxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/13HgwGsXF0aiGY/giphy.gif" alt="Moss" />
 </p>
