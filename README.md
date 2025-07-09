@@ -31,7 +31,7 @@ My toolkit is built around performance, type-safety, and a superior developer ex
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=python,fastapi,sqlalchemy,tailwind,htmx,docker,git,github,vscode,linux,ubuntu,bash" />
+    <img src="https://skillicons.dev/icons?i=python,fastapi,tailwind,htmx,docker,git,github,vscode,linux,ubuntu,bash" />
   </a>
 </p>
 
