@@ -44,58 +44,60 @@ This stack is designed for building fast, modern web applications with server-re
 
 A streamlined toolchain for a productive and consistent development environment.
 
-- **uv**
+- [**uv**](https://astral.sh/uv)
   - **Why:** A next-generation, high-performance Python packaging tool. `uv` handles project dependency management and virtual environments with exceptional speed, replacing traditional tools like `pip` and `venv` for a faster, more efficient workflow.
-- **Ruff**
+- [**Ruff**](https://docs.astral.sh/ruff/)
   - **Why:** An extremely fast, all-in-one Python linter and code formatter. Ruff replaces multiple tools (like Black, isort, and Flake8) with a single, cohesive, and blazing-fast utility, ensuring consistent code quality and style across the project.
 
 ### **2. Backend**
 
 The application's core, built for speed and ease of use.
 
-- **FastAPI**
+- [**FastAPI**](https://fastapi.tiangolo.com/)
   - **Why:** A modern, high-performance Python web framework. It uses standard Python type hints to build robust APIs and render server-side HTML templates, providing automatic data validation and documentation.
-- **Uvicorn**
+- [**Uvicorn**](https://www.uvicorn.org/)
   - **Why:** A lightning-fast ASGI server that runs the FastAPI application, enabling its high-performance asynchronous capabilities.
 
 ### **3. Database**
 
 A unified and Pythonic approach to data modeling and database interaction.
 
-- **SQLModel**
+- [**SQLModel**](https://sqlmodel.tiangolo.com/)
   - **Why:** The primary tool for database interaction, built by the creator of FastAPI. SQLModel cleverly combines Pydantic and SQLAlchemy, allowing you to define data, database tables, and API models in a single Python class. This significantly reduces code duplication and simplifies data management.
-- **Pydantic & SQLAlchemy**
+- [**Pydantic**](https://docs.pydantic.dev/latest/)
+  - **Why:** The foundational libraries that power SQLModel. Pydantic provides robust data validation, while SQLAlchemy offers a powerful and flexible SQL toolkit and Object Relational Mapper (ORM).
+- [**SQLAlchemy**](https://www.sqlalchemy.org/)
   - **Why:** The foundational libraries that power SQLModel. Pydantic provides robust data validation, while SQLAlchemy offers a powerful and flexible SQL toolkit and Object Relational Mapper (ORM).
 
 ### **4. Frontend**
 
 A hypermedia-driven frontend that delivers a rich user experience without requiring a heavy client-side JavaScript framework.
 
-- **Jinja2**
+- [**Jinja2**](https://jinja.palletsprojects.com/)
   - **Why:** A fast and expressive templating engine used by FastAPI to render dynamic HTML, injecting backend data directly into the user interface.
-- **HTMX**
+- [**HTMX**](https://htmx.org/)
   - **Why:** The core of the interactive experience. HTMX allows you to trigger AJAX requests directly from HTML attributes, enabling smooth UI updates by swapping server-rendered HTML fragments without writing complex JavaScript.
-- **Tailwind CSS**
+- [**Tailwind CSS**](https://tailwindcss.com/docs)
   - **Why:** A utility-first CSS framework for rapidly building custom user interfaces directly within your HTML, promoting speed and consistency in design.
-- **DaisyUI**
+- [**DaisyUI**](https://daisyui.com/)
   - **Why:** A plugin for Tailwind CSS that provides a library of pre-styled components (like buttons, cards, and menus). It accelerates development by offering ready-to-use UI elements that are fully customizable with Tailwind utilities.
-- **TypeScript**
+- [**TypeScript**](https://www.typescriptlang.org/docs/)
   - **Why:** Used for minimal, targeted client-side interactions where HTMX may not be suitable. Vanilla TypeScript offers type safety for small, self-contained scripts without adding framework overhead.
 
 ### **5. CLI & Task Management**
 
 A modern tool for building command-line interfaces to manage the application.
 
-- **Typer**
+- [**Typer**](https://typer.tiangolo.com/)
   - **Why:** A library for building powerful and user-friendly CLI applications, created by the author of FastAPI. It uses the same Python type-hint philosophy, making it intuitive to create commands for database migrations, user management, or other administrative tasks.
 
 ### **6. Deployment**
 
 A self-hosted, secure, and stable production environment.
 
-- **Ubuntu Server (LTS)**
+- [**Ubuntu Server (LTS)**](https://ubuntu.com/server/docs)
   - **Why:** A popular, stable, and well-documented Linux distribution ideal for web servers. The Long-Term Support (LTS) version guarantees security and maintenance updates for years.
-- **Caddy**
+- [**Caddy**](https://caddyserver.com/docs/)
   - **Why:** A modern, powerful web server and reverse proxy with a focus on simplicity. Caddy's standout feature is fully automatic HTTPS, effortlessly securing your application with zero-touch TLS certificate provisioning and renewal.
 
 </details>
