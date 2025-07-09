@@ -117,7 +117,7 @@ I am channeling all my learning and development into my **Python-Hypermedia** mo
 </p>
 
 <p align="center">
-    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMW40cmJoZTZpeDdldXliYmV6cmlhODBjc3Z6ZGwyd3Q4Z3YwNnZqZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/coxQHKASG60HrHtvkt/giphy.gif" alt="Python GIF" width="100"/>
+    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMW40cmJoZTZpeDdldXliYmV6cmlhODBjc3Z6ZGwyd3Q4Z3YwNnZqZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/coxQHKASG60HrHtvkt/giphy.gif" alt="Python GIF" width="300"/>
 </p>
 
 ---
