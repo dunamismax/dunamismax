@@ -117,7 +117,7 @@ I am channeling all my learning and development into my **Python-Hypermedia** mo
 </p>
 
 <p align="center">
-    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMW40cmJoZTZpeDdldXliYmV6cmlhODBjc3Z6ZGwyd3Q4Z3YwNnZqZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/coxQHKASG60HrHtvkt/giphy.gif" alt="Python GIF" />
+    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMW40cmJoZTZpeDdldXliYmV6cmlhODBjc3Z6ZGwyd3Q4Z3YwNnZqZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/coxQHKASG60HrHtvkt/giphy.gif" alt="Python GIF" width="100"/>
 </p>
 
 ---
@@ -133,5 +133,5 @@ I am channeling all my learning and development into my **Python-Hypermedia** mo
 </p>
 
 <p align="center">
-    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYm84OHJrYnU3cjIxc3IzbDV3ZDRtdmR6Y2p6eGo3Nm9kNmk4NXZxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/13HgwGsXF0aiGY/giphy.gif" alt="Moss" />
+    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2doc3ZjMjRkb3JpeGJ6dzF2N3d5dXRnaWNrOTlzZXVnMncwY2F3NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/g79am6uuZJKSc/giphy.gif" alt="Moss IT Crowd Fire" />
 </p>
