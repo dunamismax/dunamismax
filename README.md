@@ -49,7 +49,7 @@ The frontend architecture uses a modern build system and a server-centric intera
 - [**PostCSS**](https://postcss.org/docs/postcss-cli)
   - **Role:** CSS Processor.
   - **Description:** A tool for transforming CSS with JavaScript plugins. It is essential for a build step that compiles utility classes and custom directives into a standard, browser-ready stylesheet.
-- [**Tailwind CSS**](https://tailwindcss.com/docs/installation)
+- **Tailwind CSS**
   - **Role:** Utility-First CSS Framework.
   - **Description:** A highly-customizable, utility-first CSS framework that enables rapid UI development directly within the HTML markup. It promotes design consistency and produces a minimal CSS file for production.
 - [**HTMX**](https://htmx.org/docs/)
@@ -119,9 +119,9 @@ A robust testing suite to ensure code quality, correctness, and maintainability.
 
 A professional and minimalist toolchain for a smooth developer workflow and consistent builds.
 
-- [**`ffcli`**](https://pkg.go.dev/github.com/peterbourgon/ff/v3/ffcli) & [**`promptui`**](https://github.com/manifoldco/promptui)
-  - **Role:** Lightweight CLI & TUI Frameworks.
-  - **Description:** `ffcli` provides a minimal, composable framework for building traditional CLI applications, while `promptui` enables the creation of simple, interactive terminal prompts for user input.
+- [**Urfave/CLI**](https://cli.urfave.org/)
+  - **Role:** Feature-Rich CLI Framework.
+  - **Description:** A declarative, fast, and dependency-free library for building command-line applications. It provides a simple API for creating apps with commands, subcommands, flags, and shell autocompletion, making it a powerful and accessible choice for any project.
 - [**Mage**](https://magefile.org/)
   - **Role:** Go-Native Task Runner / Build System.
   - **Description:** A build tool that allows you to write build scripts and tasks in plain Go, providing a type-safe, cross-platform, and idiomatic way to orchestrate all development workflows without leaving the Go ecosystem.
