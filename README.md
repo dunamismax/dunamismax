@@ -2,9 +2,9 @@
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Go+Developer;Creator+of+The+Go-Minimal+Stack.;My+Blueprint:+Go,+Chi,+SQLite,+htmx;Maximum+Performance.+Minimal+Footprint.;Check+out+my+reference+implementation+below!" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Go+Developer;Creator+of+The+Go-Minimal+Stack;Go+%2B+Chi+%2B+sqlc+%2B+htmx;Maximum+Performance.+Minimal+Footprint.;Explore+my+reference+implementation+below!" alt="Typing SVG" />
   </a>
-p>
+</p>
 
 I'm an IT Director with over 12 years of experience, now passionately focused on Go. My development philosophy is embodied in **The Go-Minimal Stack**, an original full-stack architecture I created for building applications with ultimate speed, simplicity, and a tiny resource footprint.
 
@@ -21,7 +21,7 @@ I believe in creating fast, scalable backends that compile to a single binary an
 </p>
 <p align="center">
     <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmNjYm9rdjgyMWx0OGdieGRobW94NW9xcWNzM2lnYmhpbmw2c2JuZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gG9fVWJdN41NeiHhzk/giphy.gif" alt="Snake GIF" />
-</p>
+p>
 
 ---
 
@@ -33,7 +33,7 @@ My toolkit is a reflection of the stack I created: focused on performance, simpl
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=go,sqlite,htmx,docker,caddy,linux,ubuntu" />
   </a>
-p>
+</p>
 
 <details>
 <summary><h3>The Go-Minimal Stack (Click to Expand)</h3></summary>
@@ -127,15 +127,15 @@ For building powerful and interactive command-line applications, from simple too
 
 ### My Current Focus: The Go-Minimal Reference Implementation
 
-My **Go** monorepo serves as the official reference implementation for **The Go-Minimal Stack**. It is the central hub where I put my architectural philosophy into practice, creating a living testament to the power and elegance of this approach.
+My **Go-Minimal** monorepo serves as the official reference implementation for **The Go-Minimal Stack**. It is the central hub where I put my architectural philosophy into practice, creating a living testament to the power and elegance of this approach.
 
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1920px-Go_Logo_Blue.svg.png" alt="The Go programming language logo." width="100"/>
 </p>
 
 <p align="center">
-  <a href="https://github.com/dunamismax/go">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=go&theme=dracula&show_owner=true" alt="Reference Implementation for The Go-Minimal Stack" />
+  <a href="https://github.com/dunamismax/Go-Minimal">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=Go-Minimal&theme=dracula&show_owner=true" alt="Reference Implementation for The Go-Minimal Stack" />
   </a>
 </p>
 
