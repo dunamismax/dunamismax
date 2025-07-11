@@ -10,9 +10,15 @@
   </a>
 </p>
 
-I'm an IT Director with over 12 years of experience, now passionately focused on Go. My development philosophy is embodied in **The Go-Minimal Stack**, an original full-stack architecture I created for building applications with ultimate speed, simplicity, and a tiny resource footprint.
+Hello! Thanks for stopping by.
 
-I believe in creating fast, scalable backends that compile to a single binary and deliver dynamic user experiences with minimal frontend complexity. All my development is done on **macOS** and deployed to self-hosted **Linux (Ubuntu)** servers.
+I'm an IT Director with over a decade of experience in the tech world. While I love my day job, I'm most passionate about the craft of software development, especially with Go. I became fascinated with its power to create incredibly fast applications that are simple to deploy.
+
+This led me to create The Go-Minimal Stack, my personal architecture for building modern web applications. It's built on a simple idea: maximum performance with a minimal footprint. No complex frontend frameworks, just a powerful Go backend that compiles to a single binary, ready to be deployed on a simple Linux server.
+
+I share my work and reference implementations freely, hoping to help others build better, faster software. If my projects have helped you out, I'd be incredibly grateful if you'd consider supporting my work with a coffee.
+
+It makes a huge difference!
 
 ---
 
