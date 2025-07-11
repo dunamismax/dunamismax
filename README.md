@@ -1,4 +1,4 @@
-# Hi there, I'm dunamismax 👋
+# Hi, I'm dunamismax
 
 <p align="center">
   <a href="https://github.com/dunamismax">
