@@ -136,9 +136,7 @@ For building powerful and interactive command-line applications, from simple too
 My **Go-Minimal** monorepo serves as the official reference implementation for **The Go-Minimal Stack**. It is the central hub where I put my architectural philosophy into practice, creating a living testament to the power and elegance of this approach.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/egonelbre/gophers/63b1f5a9f334f9e23735c6e09ac003479ffe5df5/vector/computer/gamer.svg" alt="Go Gaming Gopher" width="150"/>
-  <img src="https://raw.githubusercontent.com/egonelbre/gophers/63b1f5a9f334f9e23735c6e09ac003479ffe5df5/vector/arts/upright.svg" alt="Go Pianist Gopher" width="150"/>
-  <img src="https://raw.githubusercontent.com/egonelbre/gophers/63b1f5a9f334f9e23735c6e09ac003479ffe5df5/vector/computer/music.svg" alt="Go Electric Pianist Gopher" width="150"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1920px-Go_Logo_Blue.svg.png" alt="The Go programming language logo." width="150"/>
 </p>
 
 <p align="center">
