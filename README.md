@@ -2,13 +2,13 @@
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=4B8BBE&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Python+Developer;Mastering+Modern+Web+Development.;Building+with+The+Python+Hypermedia+Stack.;FastAPI+%2B+HTMX+%2B+uv+%2B+PostgreSQL;Minimal+JavaScript.+Maximum+Performance.;Check+out+my+Python-Hypermedia+repo+below!" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Go+Developer;Mastering+High-Performance+Go.;Building+with+The+Go-Minimal+Stack.;Go+%2B+Chi+%2B+SQLite+%2B+htmx;Maximum+Performance.+Minimal+Footprint.;Check+out+my+Go+monorepo+below!" alt="Typing SVG" />
   </a>
 </p>
 
-I'm an IT Director with over 12 years of experience, now passionately focused on mastering **Python** to build robust, modern, and high-performance server-rendered web applications.
+I'm an IT Director with over 12 years of experience, now passionately focused on mastering **Go** to build robust, high-performance, and minimalist web applications.
 
-My development philosophy centers on **The Python Hypermedia Stack**: a curated set of best-in-class tools designed for maximum productivity and minimal frontend complexity. I believe in lean, powerful backends that deliver a rich user experience directly from the server. All my development is done on **macOS**, using **uv** for a lightning-fast workflow, and deployed to self-hosted **Linux (Ubuntu)** servers.
+My development philosophy centers on **The Go-Minimal Stack**: a curated set of tools designed for ultimate speed, simplicity, and a tiny resource footprint. I believe in creating fast, scalable backends that compile to a single binary and deliver dynamic user experiences with minimal frontend complexity. All my development is done on **macOS** and deployed to self-hosted **Linux (Ubuntu)** servers.
 
 ---
 
@@ -25,112 +25,117 @@ My development philosophy centers on **The Python Hypermedia Stack**: a curated 
 
 ---
 
-### My Python Toolkit
+### My Go Toolkit
 
-My toolkit is built around performance, type-safety, and a superior developer experience with **uv** at the core.
+My toolkit is built around performance, simplicity, and a superior developer experience with Go at the core.
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=python,fastapi,htmx,postgresql,linux,ubuntu" />
+    <img src="https://skillicons.dev/icons?i=go,sqlite,htmx,docker,caddy,linux,ubuntu" />
   </a>
 </p>
 
 <details>
-<summary><h3>The Python Hypermedia Stack (Click to Expand)</h3></summary>
+<summary><h3>The Go-Minimal Stack (Click to Expand)</h3></summary>
 
-This stack is an integrated, high-performance solution for building modern web applications. It pairs a fully asynchronous Python backend with a streamlined, hypermedia-driven frontend, eliminating the need for complex JavaScript frameworks. The result is a powerful, secure, and maintainable system that enables rapid development and delivers a fast, interactive user experience. This approach prioritizes developer productivity and operational simplicity, making it a strategic choice for projects demanding both speed and reliability.
+This is a high-performance, minimalist full-stack solution designed for ultimate speed and simplicity. It combines a powerful Go backend with a featherlight, framework-free frontend. It's ideal for projects where performance, maintainability, and a small resource footprint are paramount.
 
 ---
 
-### **1. Development & Tooling**
+#### ## Frontend
 
-A streamlined toolchain for a productive and consistent development environment, ensuring rapid iteration and high code quality.
+The frontend provides a responsive user experience with zero frameworks or build tools. What you write is what the browser runs.
 
-- [**uv**](https://astral.sh/uv)
-  - **Why:** The next-generation, high-performance Python packaging tool. `uv` is central to all project environment and dependency management, providing an incredibly fast and reliable solution for reproducible environments.
-- [**Ruff**](https://docs.astral.sh/ruff/)
-  - **Why:** An extremely fast, all-in-one Python linter and code formatter. Ruff ensures consistent code quality and style across the project with a single, cohesive, and blazing-fast utility, integrating seamlessly into the development workflow.
+- [**Directly Served Static Assets (HTML, CSS, JS)**](https://developer.mozilla.org/en-US/docs/Web/HTML)
+  - **Role:** Structure, Styling, and Behavior.
+  - **Description:** This stack deliberately omits any frontend build step. The `index.html`, a handwritten `style.css`, and a vanilla `script.js` are served directly by the web server. This "no-build" approach represents the pinnacle of simplicity, eliminating an entire class of tools and configuration.
+- [**htmx**](https://htmx.org/docs/)
+  - **Role:** Dynamic Interactivity.
+  - **Description:** htmx extends HTML with attributes for modern AJAX requests directly from the markup. Instead of writing complex JavaScript, you use simple attributes like `hx-get` to make requests. The backend responds with HTML fragments, which htmx swaps into the DOM, enabling dynamic experiences without full-page reloads or frontend state management.
 
-### **2. Backend**
+---
 
-The application's core, built on a fully asynchronous foundation for maximum speed, concurrency, and efficient handling of web requests.
+#### ## Backend
 
-- [**FastAPI**](https://fastapi.tiangolo.com/)
-  - **Why:** A modern, high-performance Python web framework. It leverages standard Python type hints for robust APIs and efficient server-side HTML template rendering, forming the backbone of the application.
-- [**Uvicorn**](https://www.uvicorn.org/)
-  - **Why:** A lightning-fast ASGI server that runs the FastAPI application. Uvicorn serves as the high-performance process manager for both development and production, ensuring rapid response times.
-- [**HTTPX**](https://www.python-httpx.org/)
-  - **Why:** A fully featured, modern HTTP client for Python. It provides both synchronous and asynchronous APIs, making it the ideal choice for a FastAPI application to interact with external services without blocking the event loop, maintaining responsiveness.
+The backend is written entirely in Go, creating a fast, scalable, and secure web service.
 
-### **3. Database & Migrations**
+- [**Go**](https://go.dev/doc/)
+  - **Role:** Backend Language.
+  - **Description:** Go is a statically typed, compiled language renowned for its performance, concurrency, and simplicity. Its ability to compile to a single, dependency-free binary makes it trivial to package inside a minimal Docker container for simple and secure deployment.
+- [**Chi**](https://go-chi.io)
+  - **Role:** HTTP Routing.
+  - **Description:** Instead of relying only on the verbose standard library, Chi provides a lightweight, idiomatic router that simplifies handling URL parameters, middleware, and route grouping. It's built on the standard `net/http` package, offering a major developer experience boost with negligible performance overhead.
+- [**sqlc**](https://docs.sqlc.dev/)
+  - **Role:** Type-Safe Data Access.
+  - **Description:** sqlc builds upon Go's built-in `database/sql` package. You write raw SQL queries in `.sql` files, and sqlc generates type-safe, boilerplate-free Go code to execute them. This provides the performance and control of raw SQL while eliminating common errors from manual data scanning.
+- [**Standard Library (`os` & `flag`)**](https://pkg.go.dev/os)
+  - **Role:** Configuration Management.
+  - **Description:** Configuration is handled using Go's standard library to read environment variables (`os.Getenv`) and parse command-line options (`flag`). This aligns with the 12-Factor App methodology, ensuring the application is portable and configurable through its environment.
 
-A unified and fully asynchronous approach to data modeling, interaction, and schema evolution, ensuring data integrity and performance.
+---
 
-- [**PostgreSQL**](https://www.postgresql.org/docs/)
-  - **Why:** A powerful, open-source object-relational database system renowned for its reliability, extensive features, and high performance, serving as the robust data store.
-- [**SQLModel**](https://sqlmodel.tiangolo.com/)
-  - **Why:** The primary tool for database interaction. SQLModel cleverly combines Pydantic and SQLAlchemy, allowing you to define data models, database tables, and API models in a single, elegant Python class, simplifying data management.
-- [**Alembic**](https://alembic.sqlalchemy.org/en/latest/)
-  - **Why:** A lightweight database migration tool designed for SQLAlchemy (which powers SQLModel) to manage the lifecycle of your database schema, enabling seamless evolution of the database structure.
-- [**asyncpg**](https://magicstack.github.io/asyncpg/current/)
-  - **Why:** A high-performance, asyncio-native database driver for PostgreSQL. `asyncpg` is the essential link between the asynchronous framework and the database, ensuring all database communication is non-blocking and highly efficient.
+#### ## Database
 
-### **4. Asynchronous Task Processing**
+The stack uses a simple, file-based database coupled with a robust tool for managing its schema.
 
-A native, lightweight system for handling background tasks that should not block the response to the client, ensuring a smooth user experience.
+- [**SQLite**](https://www.sqlite.org/docs.html)
+  - **Role:** Database Engine.
+  - **Description:** SQLite is a self-contained, serverless SQL database engine. It runs within the application process and stores the entire database in a single file on disk, eliminating the need for a separate server. Its speed and simplicity are perfect for self-hosting.
+- [**golang-migrate/migrate**](https://github.com/golang-migrate/migrate)
+  - **Role:** Database Schema Migrations.
+  - **Description:** This tool provides a standardized, battle-tested way to handle database migrations. It uses versioned `.sql` files for both up and down migrations, ensuring the database schema can evolve safely and predictably. It can be run as a CLI tool during deployment or used as a library within the Go application on startup.
 
-- [**FastAPI BackgroundTasks**](https://fastapi.tiangolo.com/tutorial/background-tasks/)
-  - **Why:** For short-lived, in-process background tasks, FastAPI's native `BackgroundTasks` feature is the perfect fit. It allows you to run operations like sending notifications or processing data after returning a response, simplifying the architecture by avoiding the need for external dependencies.
+---
 
-### **5. Frontend**
+#### ## Development
 
-A pure hypermedia-driven frontend that delivers a rich user experience without requiring a complex JavaScript framework or a build step, focusing on server-rendered HTML.
+Development tooling is focused on providing a rapid and efficient feedback loop.
 
-- [**Jinja2**](https://jinja.palletsprojects.com/)
-  - **Why:** A fast and expressive templating engine used by FastAPI to render dynamic HTML, injecting backend data directly into the user interface, providing a flexible and powerful templating solution.
-- [**HTMX**](https://htmx.org/)
-  - **Why:** The core of the interactive experience. HTMX allows you to trigger AJAX requests directly from HTML attributes, enabling smooth UI updates by swapping server-rendered HTML fragments without writing complex JavaScript, embracing the hypermedia approach.
-- [**Pico.css**](https://picocss.com/)
-  - **Why:** A minimalist CSS framework that makes semantic HTML look beautiful by default. By linking to a single CSS file, you get elegant styling for raw HTML elements, automatic dark mode, and responsive design, all without dependencies or a complex setup, aligning with the minimal frontend philosophy.
+- [**Air**](https://github.com/cosmtrek/air)
+  - **Role:** Live Reloading.
+  - **Description:** Air is a development-only utility that watches for changes in Go source code and static files (HTML, CSS). Upon saving a file, it automatically recompiles and restarts the server, providing instant feedback and dramatically accelerating the development cycle. It is not included in the final production build.
 
-### **6. Testing**
+---
 
-A powerful and standard framework for ensuring code quality and correctness, providing confidence in the application's reliability.
+#### ## Deployment & Hosting
 
-- [**Pytest**](https://docs.pytest.org/en/stable/)
-  - **Why:** The de facto standard testing framework for Python. Pytest makes it easy to write small, readable tests and scales to support complex functional testing, with excellent support for asynchronous code via plugins like `pytest-asyncio`.
+This stack is designed for straightforward, secure, and containerized self-hosting with the smallest possible footprint.
 
-### **7. CLI, Security & Configuration**
-
-Modern tools for building command-line interfaces, securing the application, and managing configuration, enhancing developer productivity and application robustness.
-
-- [**Typer**](https://typer.tiangolo.com/)
-  - **Why:** A library for building powerful and user-friendly CLI applications. It uses the same Python type-hint philosophy as FastAPI, making it intuitive to create administrative commands and automate tasks.
-
-### **8. Deployment**
-
-A self-hosted, secure, and stable production environment, optimized for the Python Hypermedia Stack.
-
-- [**Ubuntu Server (LTS)**](https://ubuntu.com/server)
-  - **Why:** A popular, stable, and well-documented Linux distribution ideal for web servers, with long-term support for security and maintenance updates, providing a reliable foundation for deployment.
+- [**Docker**](https://docs.docker.com/)
+  - **Role:** Containerization.
+  - **Description:** Docker packages the entire compiled Go application and all static assets into a standardized container. A multi-stage `Dockerfile` creates a minimal final image, ensuring a tiny and secure result for deployment.
 - [**Caddy**](https://caddyserver.com/docs/)
-  - **Why:** A modern, powerful web server and reverse proxy with a focus on simplicity. Caddy manages incoming traffic, serves static files, and acts as a reverse proxy for Uvicorn. Its standout feature is fully automatic HTTPS, simplifying secure deployments.
+  - **Role:** Web Server & Reverse Proxy.
+  - **Description:** Caddy is a modern web server with automatic HTTPS. It serves the static frontend assets and acts as a secure reverse proxy, forwarding all dynamic requests to the Go application's container. Its simple configuration and automated TLS management make hosting effortless.
+- [**Alpine Linux**](https://www.alpinelinux.org/about/)
+  - **Role:** Host OS & Container Base.
+  - **Description:** Alpine Linux is a security-oriented, lightweight Linux distribution. Its minimalism makes it the ideal base for the application's Docker container and the host operating system, minimizing resource usage and attack surface.
+
+---
+
+#### ## CLI Apps
+
+For building powerful and interactive command-line applications, from simple tools to rich Text User Interfaces (TUIs).
+
+- [**Bubble Tea**](https://github.com/charmbracelet/bubbletea)
+  - **Role:** Interactive TUI (Text User Interface) Framework.
+  - **Description:** For applications requiring a rich, interactive terminal experience, Bubble Tea is the premier choice. Based on the functional paradigm of The Elm Architecture, it provides a stateful and delightful way to build complex TUIs. It is part of the "Charm" ecosystem, which includes `bubbles` for pre-built components and `lipgloss` for powerful styling.
 
 </details>
 
 ---
 
-### My Current Focus: The Python-Hypermedia Monorepo
+### My Current Focus: The Go-Minimal Monorepo
 
-I am channeling all my learning and development into my **Python-Hypermedia** monorepo. It is the central hub for all my applications and experiments, putting the Python Hypermedia Stack into practice. This project is a living testament to my development philosophy.
+I am channeling all my learning and development into my **Go** monorepo. It is the central hub for all my applications and experiments, putting the Go-Minimal Stack into practice. This project is a living testament to my development philosophy.
 
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="The Python programming language logo." width="100"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1920px-Go_Logo_Blue.svg.png" alt="The Go programming language logo." width="100"/>
 </p>
 
 <p align="center">
-  <a href="https://github.com/dunamismax/Python-Hypermedia">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=Python-Hypermedia&theme=dracula&show_owner=true" alt="Python-Hypermedia Monorepo" />
+  <a href="https://github.com/dunamismax/go">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=go&theme=dracula&show_owner=true" alt="Go-Minimal Monorepo" />
   </a>
 </p>
 
