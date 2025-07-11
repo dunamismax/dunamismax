@@ -39,11 +39,11 @@ My toolkit is a reflection of the stack I created: focused on performance, simpl
 <details>
 <summary><h3>The Go-Minimal Stack (Click to Expand)</h3></summary>
 
-**The Go-Minimal Stack** is my personal, opinionated blueprint for building high-performance, minimalist full-stack solutions. I designed it for ultimate speed and simplicity by combining a powerful Go backend with a featherlight, framework-free frontend. It's the ideal architecture for projects where performance, maintainability, and a small resource footprint are paramount.
+The Go-Minimal Stack is my personal, opinionated blueprint for building high-performance, minimalist full-stack solutions. I designed it for ultimate speed and simplicity by combining a powerful Go backend with a featherlight, framework-free frontend. It's the ideal architecture for projects where performance, maintainability, and a small resource footprint are paramount.
 
 ---
 
-#### ## Frontend
+## Frontend
 
 The frontend provides a responsive user experience with zero frameworks or build tools. What you write is what the browser runs.
 
@@ -56,14 +56,14 @@ The frontend provides a responsive user experience with zero frameworks or build
 
 ---
 
-#### ## Backend
+## Backend
 
 The backend is written entirely in Go, creating a fast, scalable, and secure web service.
 
 - [**Go**](https://go.dev/doc/)
   - **Role:** Backend Language.
   - **Description:** Go is a statically typed, compiled language renowned for its performance, concurrency, and simplicity. Its ability to compile to a single, dependency-free binary makes it trivial to package inside a minimal Docker container for simple and secure deployment.
-- [**Chi**](https://go-chi.io)
+- [**Chi**](https://go-chi.io/)
   - **Role:** HTTP Routing.
   - **Description:** Instead of relying only on the verbose standard library, Chi provides a lightweight, idiomatic router that simplifies handling URL parameters, middleware, and route grouping. It's built on the standard `net/http` package, offering a major developer experience boost with negligible performance overhead.
 - [**sqlc**](https://docs.sqlc.dev/)
@@ -75,7 +75,7 @@ The backend is written entirely in Go, creating a fast, scalable, and secure web
 
 ---
 
-#### ## Database
+## Database
 
 The stack uses a simple, file-based database coupled with a robust tool for managing its schema.
 
@@ -88,7 +88,7 @@ The stack uses a simple, file-based database coupled with a robust tool for mana
 
 ---
 
-#### ## Development
+## Development
 
 Development tooling is focused on providing a rapid and efficient feedback loop.
 
@@ -98,7 +98,7 @@ Development tooling is focused on providing a rapid and efficient feedback loop.
 
 ---
 
-#### ## Deployment & Hosting
+## Deployment & Hosting
 
 This stack is designed for straightforward, secure, and containerized self-hosting with the smallest possible footprint.
 
@@ -114,7 +114,7 @@ This stack is designed for straightforward, secure, and containerized self-hosti
 
 ---
 
-#### ## CLI Apps
+## CLI Apps
 
 For building powerful and interactive command-line applications, from simple tools to rich Text User Interfaces (TUIs).
 
