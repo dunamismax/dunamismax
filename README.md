@@ -6,15 +6,15 @@
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Go+Developer;Creator+of+The+Go-Minimal+Stack;Go+%2B+Chi+%2B+sqlc+%2B+htmx;Maximum+Performance.+Minimal+Footprint.;Explore+my+reference+implementation+below!" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Go+Developer;Creator+of+The+Go-Pragmatic+Stack;Go+%2B+Gin+%2B+sqlc+%2B+htmx;A+Robust+Toolkit+for+Modern+Apps;Explore+my+reference+implementation+below!" alt="Typing SVG" />
   </a>
 </p>
 
 Hello! Thanks for stopping by.
 
-I'm an IT Director with over a decade of experience in the tech world. While I love my day job, I'm most passionate about the craft of software development, especially with Go. I became fascinated with its power to create incredibly fast applications that are simple to deploy.
+I'm an IT Director with over a decade of experience, but my true passion is the craft of software development—especially with Go. I'm driven by its power to create incredibly fast, single-binary applications that are a joy to deploy and maintain.
 
-This led me to create The Go-Minimal Stack, my personal architecture for building modern web applications. It's built on a simple idea: maximum performance with a minimal footprint. No complex frontend frameworks, just a powerful Go backend that compiles to a single binary, ready to be deployed on a simple Linux server.
+This journey led me to create **The Go-Pragmatic Stack**, my official architecture for building best-in-class, modern web applications. It's a complete, opinionated blueprint for creating highly performant and maintainable software. It pairs a powerful Go backend with a modern, server-centric frontend toolchain, providing a structured and scalable environment without unnecessary complexity.
 
 I share my work and reference implementations freely, hoping to help others build better, faster software. If my projects have helped you out, I'd be incredibly grateful if you'd consider supporting my work with a coffee.
 
@@ -24,111 +24,97 @@ It makes a huge difference!
 
 ### My Go Toolkit
 
-My toolkit is a reflection of the stack I created: focused on performance, simplicity, and a superior developer experience with Go at the core.
+My toolkit is a reflection of the Go-Pragmatic stack: focused on performance, simplicity, and a superior developer experience with Go at the core.
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=go,sqlite,htmx,docker,linux,ubuntu" />
+    <img src="https://skillicons.dev/icons?i=go,nodejs,tailwind,htmx,sqlite,linux,ubuntu" />
   </a>
 </p>
 
 <details>
-<summary><h3>The Go-Minimal Stack (Click to Expand)</h3></summary>
+<summary><h3>The Go-Pragmatic Stack (Click to Expand)</h3></summary>
 
-The Go-Minimal Stack is my personal, opinionated blueprint for building high-performance, minimalist full-stack solutions. I designed it for ultimate speed and simplicity by combining a powerful Go backend with a featherlight, framework-free frontend. It's the ideal architecture for projects where performance, maintainability, and a small resource footprint are paramount.
-
----
-
-## Frontend
-
-The frontend provides a responsive user experience with zero frameworks or build tools. What you write is what the browser runs.
-
-- [**Directly Served Static Assets (HTML, CSS, JS)**](https://developer.mozilla.org/en-US/docs/Web/HTML)
-  - **Role:** Structure, Styling, and Behavior.
-  - **Description:** This stack deliberately omits any frontend build step. The `index.html`, a handwritten `style.css`, and a vanilla `script.js` are served directly by the web server. This "no-build" approach represents the pinnacle of simplicity, eliminating an entire class of tools and configuration.
-- [**htmx**](https://htmx.org/docs/)
-  - **Role:** Dynamic Interactivity.
-  - **Description:** htmx extends HTML with attributes for modern AJAX requests directly from the markup. Instead of writing complex JavaScript, you use simple attributes like `hx-get` to make requests. The backend responds with HTML fragments, which htmx swaps into the DOM, enabling dynamic experiences without full-page reloads or frontend state management.
+This stack represents a complete, best-in-class architecture for building secure, observable, and maintainable web applications. It is composed of a powerful Go backend and a modern, server-centric frontend toolchain. The stack prioritizes simplicity, rapid development, and zero-dependency deployment by favoring Go's native capabilities and lightweight, embedded tools.
 
 ---
 
-## Backend
+### **Frontend**
 
-The backend is written entirely in Go, creating a fast, scalable, and secure web service.
+The frontend architecture uses a modern build system and a server-centric interactivity model to deliver a fast, responsive, and maintainable user experience with minimal client-side complexity.
+
+- [**esbuild**](https://esbuild.github.io/getting-started/) & [**PostCSS**](https://postcss.org/docs/postcss-cli)
+  - **Role:** Asset Pipeline.
+  - **Description:** A high-speed asset pipeline using esbuild for bundling and PostCSS for processing Tailwind CSS. This ensures a highly optimized production output while maintaining a rapid development feedback loop.
+- [**Tailwind CSS**](https://tailwindcss.com/docs/installation)
+  - **Role:** Utility-First CSS Framework.
+  - **Description:** A highly-customizable, utility-first CSS framework that enables rapid UI development directly within the HTML markup.
+- [**HTMX**](https://htmx.org/docs/) & [**Alpine.js**](https://alpinejs.dev/start-here)
+  - **Role:** Server-Centric & Client-Side Interactivity.
+  - **Description:** HTMX provides powerful AJAX and dynamic content updates directly from HTML attributes, while Alpine.js serves as the perfect lightweight companion for small client-side interactions like dropdowns and modals.
+
+---
+
+### **Backend**
+
+A lean, performant, and maintainable backend service architected for rapid development and long-term stability.
 
 - [**Go**](https://go.dev/doc/)
   - **Role:** Backend Language.
-  - **Description:** Go is a statically typed, compiled language renowned for its performance, concurrency, and simplicity. Its ability to compile to a single, dependency-free binary makes it trivial to package inside a minimal Docker container for simple and secure deployment.
-- [**Chi**](https://go-chi.io/)
-  - **Role:** HTTP Routing.
-  - **Description:** Instead of relying only on the verbose standard library, Chi provides a lightweight, idiomatic router that simplifies handling URL parameters, middleware, and route grouping. It's built on the standard `net/http` package, offering a major developer experience boost with negligible performance overhead.
-- [**sqlc**](https://docs.sqlc.dev/)
-  - **Role:** Type-Safe Data Access.
-  - **Description:** sqlc builds upon Go's built-in `database/sql` package. You write raw SQL queries in `.sql` files, and sqlc generates type-safe, boilerplate-free Go code to execute them. This provides the performance and control of raw SQL while eliminating common errors from manual data scanning.
-- [**Standard Library (`os` & `flag`)**](https://pkg.go.dev/os)
-  - **Role:** Configuration Management.
-  - **Description:** Configuration is handled using Go's standard library to read environment variables (`os.Getenv`) and parse command-line options (`flag`). This aligns with the 12-Factor App methodology, ensuring the application is portable and configurable through its environment.
+  - **Description:** A statically typed, compiled language renowned for its performance, concurrency, and simplicity. Its ability to compile to a single binary simplifies deployment.
+- [**Gin**](https://gin-gonic.com/docs/)
+  - **Role:** High-Performance Web Framework.
+  - **Description:** A popular and fast HTTP web framework for Go, offering a rich feature set including routing, middleware, and validation that accelerates API development.
+- [**`koanf`**](https://github.com/knadh/koanf) & [**`log/slog`**](https://pkg.go.dev/log/slog)
+  - **Role:** Configuration & Logging.
+  - **Description:** `koanf` provides a clean API for reading configuration from files and environment variables, while `slog` produces consistent, machine-readable logs essential for monitoring and debugging.
 
 ---
 
-## Database
+### **Database & Caching**
 
-The stack uses a simple, file-based database coupled with a robust tool for managing its schema.
+A zero-dependency, in-process data layer that maximizes simplicity and speed for a wide range of applications.
 
 - [**SQLite**](https://www.sqlite.org/docs.html)
-  - **Role:** Database Engine.
-  - **Description:** SQLite is a self-contained, serverless SQL database engine. It runs within the application process and stores the entire database in a single file on disk, eliminating the need for a separate server. Its speed and simplicity are perfect for self-hosting.
-- [**golang-migrate/migrate**](https://github.com/golang-migrate/migrate)
+  - **Role:** Embedded Relational Database.
+  - **Description:** A self-contained, serverless SQL database engine that runs in-process with the application, eliminating operational overhead.
+- [**`sqlc`**](https://docs.sqlc.dev/)
+  - **Role:** Type-Safe SQL to Go Code Generation.
+  - **Description:** A tool that generates fully type-safe, idiomatic Go code from raw SQL queries, preventing data-related bugs at compile time.
+- [**`golang-migrate/migrate`**](https://github.com/golang-migrate/migrate/blob/master/MIGRATIONS.md)
   - **Role:** Database Schema Migrations.
-  - **Description:** This tool provides a standardized, battle-tested way to handle database migrations. It uses versioned `.sql` files for both up and down migrations, ensuring the database schema can evolve safely and predictably. It can be run as a CLI tool during deployment or used as a library within the Go application on startup.
+  - **Description:** A robust tool for managing and applying versioned SQL schema migrations.
+- [**`go-cache`**](https://pkg.go.dev/github.com/patrickmn/go-cache)
+  - **Role:** In-Process Caching.
+  - **Description:** A simple, thread-safe in-memory key-value store with expiration times for extremely fast caching without external dependencies.
 
 ---
 
-## Development
+### **Development & Deployment**
 
-Development tooling is focused on providing a rapid and efficient feedback loop.
+A professional and minimalist toolchain for a smooth developer workflow and consistent, single-binary builds.
 
+- [**Mage**](https://magefile.org/)
+  - **Role:** Go-Native Task Runner / Build System.
+  - **Description:** A build tool that allows you to write build scripts and tasks in plain Go, providing a type-safe and idiomatic way to orchestrate all development workflows.
 - [**Air**](https://github.com/cosmtrek/air)
   - **Role:** Live Reloading.
-  - **Description:** Air is a development-only utility that watches for changes in Go source code and static files (HTML, CSS). Upon saving a file, it automatically recompiles and restarts the server, providing instant feedback and dramatically accelerating the development cycle. It is not included in the final production build.
-
----
-
-## Deployment & Hosting
-
-This stack is designed for straightforward, secure, and containerized self-hosting with the smallest possible footprint.
-
-- [**Docker**](https://docs.docker.com/)
-  - **Role:** Containerization.
-  - **Description:** Docker packages the entire compiled Go application and all static assets into a standardized container. A multi-stage `Dockerfile` creates a minimal final image, ensuring a tiny and secure result for deployment.
+  - **Description:** A development utility that watches for file changes and automatically recompiles and restarts the server.
 - [**Caddy**](https://caddyserver.com/docs/)
   - **Role:** Web Server & Reverse Proxy.
-  - **Description:** Caddy is a modern web server with automatic HTTPS. It serves the static frontend assets and acts as a secure reverse proxy, forwarding all dynamic requests to the Go application's container. Its simple configuration and automated TLS management make hosting effortless.
-- [**Alpine Linux**](https://www.alpinelinux.org/about/)
-  - **Role:** Host OS & Container Base.
-  - **Description:** Alpine Linux is a security-oriented, lightweight Linux distribution. Its minimalism makes it the ideal base for the application's Docker container and the host operating system, minimizing resource usage and attack surface.
-
----
-
-## CLI Apps
-
-For building powerful and interactive command-line applications, from simple tools to rich Text User Interfaces (TUIs).
-
-- [**Bubble Tea**](https://github.com/charmbracelet/bubbletea)
-  - **Role:** Interactive TUI (Text User Interface) Framework.
-  - **Description:** For applications requiring a rich, interactive terminal experience, Bubble Tea is the premier choice. Based on the functional paradigm of The Elm Architecture, it provides a stateful and delightful way to build complex TUIs. It is part of the "Charm" ecosystem, which includes `bubbles` for pre-built components and `lipgloss` for powerful styling.
+  - **Description:** A modern web server with automatic HTTPS. It serves static frontend assets and acts as a secure reverse proxy for the Go application.
 
 </details>
 
 ---
 
-### My Current Focus: The Go-Minimal Reference Implementation
+### My Current Focus: The Go-Pragmatic Reference Implementation
 
-My **Go-Minimal** monorepo serves as the official reference implementation for **The Go-Minimal Stack**. It is the central hub where I put my architectural philosophy into practice, creating a living testament to the power and elegance of this approach.
+My **Go-Pragmatic** monorepo serves as the official reference implementation for **The Go-Pragmatic Stack**. It is the central hub where I put my architectural philosophy into practice, creating a living testament to the power and elegance of this approach.
 
 <p align="center">
-  <a href="https://github.com/dunamismax/Go-Minimal">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=Go-Minimal&theme=dracula&show_owner=true" alt="Reference Implementation for The Go-Minimal Stack" />
+  <a href="https://github.com/dunamismax/Go-Pragmatic">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=Go-Pragmatic&theme=dracula&show_owner=true" alt="Reference Implementation for The Go-Pragmatic Stack" />
   </a>
 </p>
 
@@ -136,7 +122,7 @@ My **Go-Minimal** monorepo serves as the official reference implementation for *
 
 ### Support My Work
 
-If you find my work on **The Go-Minimal Stack** valuable, consider supporting me. It helps me dedicate more time to creating and maintaining open-source projects.
+If you find my work on this stack valuable, consider supporting me. It helps me dedicate more time to creating and maintaining open-source projects.
 
 <p align="center">
   <a href="https://coff.ee/dunamismax" target="_blank">
