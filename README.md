@@ -2,13 +2,13 @@
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Go+Developer;Mastering+High-Performance+Go.;Building+with+The+Go-Minimal+Stack.;Go+%2B+Chi+%2B+SQLite+%2B+htmx;Maximum+Performance.+Minimal+Footprint.;Check+out+my+Go+monorepo+below!" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Go+Developer;Creator+of+The+Go-Minimal+Stack.;My+Blueprint:+Go,+Chi,+SQLite,+htmx;Maximum+Performance.+Minimal+Footprint.;Check+out+my+reference+implementation+below!" alt="Typing SVG" />
   </a>
-</p>
+p>
 
-I'm an IT Director with over 12 years of experience, now passionately focused on mastering **Go** to build robust, high-performance, and minimalist web applications.
+I'm an IT Director with over 12 years of experience, now passionately focused on Go. My development philosophy is embodied in **The Go-Minimal Stack**, an original full-stack architecture I created for building applications with ultimate speed, simplicity, and a tiny resource footprint.
 
-My development philosophy centers on **The Go-Minimal Stack**: a curated set of tools designed for ultimate speed, simplicity, and a tiny resource footprint. I believe in creating fast, scalable backends that compile to a single binary and deliver dynamic user experiences with minimal frontend complexity. All my development is done on **macOS** and deployed to self-hosted **Linux (Ubuntu)** servers.
+I believe in creating fast, scalable backends that compile to a single binary and deliver dynamic user experiences with minimal frontend complexity. All my development is done on **macOS** and deployed to self-hosted **Linux (Ubuntu)** servers.
 
 ---
 
@@ -27,18 +27,18 @@ My development philosophy centers on **The Go-Minimal Stack**: a curated set of 
 
 ### My Go Toolkit
 
-My toolkit is built around performance, simplicity, and a superior developer experience with Go at the core.
+My toolkit is a reflection of the stack I created: focused on performance, simplicity, and a superior developer experience with Go at the core.
 
 <p align="center">
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=go,sqlite,htmx,docker,caddy,linux,ubuntu" />
   </a>
-</p>
+p>
 
 <details>
 <summary><h3>The Go-Minimal Stack (Click to Expand)</h3></summary>
 
-This is a high-performance, minimalist full-stack solution designed for ultimate speed and simplicity. It combines a powerful Go backend with a featherlight, framework-free frontend. It's ideal for projects where performance, maintainability, and a small resource footprint are paramount.
+**The Go-Minimal Stack** is my personal, opinionated blueprint for building high-performance, minimalist full-stack solutions. I designed it for ultimate speed and simplicity by combining a powerful Go backend with a featherlight, framework-free frontend. It's the ideal architecture for projects where performance, maintainability, and a small resource footprint are paramount.
 
 ---
 
@@ -125,9 +125,9 @@ For building powerful and interactive command-line applications, from simple too
 
 ---
 
-### My Current Focus: The Go-Minimal Monorepo
+### My Current Focus: The Go-Minimal Reference Implementation
 
-I am channeling all my learning and development into my **Go** monorepo. It is the central hub for all my applications and experiments, putting the Go-Minimal Stack into practice. This project is a living testament to my development philosophy.
+My **Go** monorepo serves as the official reference implementation for **The Go-Minimal Stack**. It is the central hub where I put my architectural philosophy into practice, creating a living testament to the power and elegance of this approach.
 
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1920px-Go_Logo_Blue.svg.png" alt="The Go programming language logo." width="100"/>
@@ -135,7 +135,7 @@ I am channeling all my learning and development into my **Go** monorepo. It is t
 
 <p align="center">
   <a href="https://github.com/dunamismax/go">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=go&theme=dracula&show_owner=true" alt="Go-Minimal Monorepo" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=go&theme=dracula&show_owner=true" alt="Reference Implementation for The Go-Minimal Stack" />
   </a>
 </p>
 
