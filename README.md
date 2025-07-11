@@ -23,9 +23,6 @@ I believe in creating fast, scalable backends that compile to a single binary an
     <img src="https://github-readme-stats.vercel.app/api?username=dunamismax&show_icons=true&theme=dracula&include_all_commits=true&count_private=true" alt="dunamismax's GitHub stats" />
   </a>
 </p>
-<p align="center">
-    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmNjYm9rdjgyMWx0OGdieGRobW94NW9xcWNzM2lnYmhpbmw2c2JuZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gG9fVWJdN41NeiHhzk/giphy.gif" alt="Snake GIF" />
-</p>
 
 ---
 
@@ -35,7 +32,7 @@ My toolkit is a reflection of the stack I created: focused on performance, simpl
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=go,sqlite,htmx,docker,caddy,linux,ubuntu" />
+    <img src="https://skillicons.dev/icons?i=go,sqlite,htmx,docker,linux,ubuntu" />
   </a>
 </p>
 
@@ -132,10 +129,6 @@ For building powerful and interactive command-line applications, from simple too
 ### My Current Focus: The Go-Minimal Reference Implementation
 
 My **Go-Minimal** monorepo serves as the official reference implementation for **The Go-Minimal Stack**. It is the central hub where I put my architectural philosophy into practice, creating a living testament to the power and elegance of this approach.
-
-<p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1920px-Go_Logo_Blue.svg.png" alt="The Go programming language logo." width="150"/>
-</p>
 
 <p align="center">
   <a href="https://github.com/dunamismax/Go-Minimal">
