@@ -143,6 +143,10 @@ A fully automated pipeline for building, testing, and deploying the application,
 
 ---
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/3185864/32058716-5ee9b512-ba38-11e7-978a-287eb2a62743.png" alt="Gopher Mage." width="150"/>
+</p>
+
 ### My Current Focus: The Go-Pragmatic Reference Implementation
 
 My **Go-Pragmatic** monorepo serves as the official reference implementation for **The Go-Pragmatic Stack**. It is the central hub where I put my architectural philosophy into practice, creating a living testament to the power and elegance of this approach.
