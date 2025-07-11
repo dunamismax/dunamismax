@@ -6,6 +6,12 @@
   </a>
 </p>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/egonelbre/gophers/63b1f5a9f334f9e23735c6e09ac003479ffe5df5/vector/superhero/standing.svg" alt="Go Superhero Gopher" width="150"/>
+  <img src="https://raw.githubusercontent.com/egonelbre/gophers/63b1f5a9f334f9e23735c6e09ac003479ffe5df5/vector/projects/network.svg" alt="Go Sysadmin Gopher" width="150"/>
+  <img src="https://raw.githubusercontent.com/egonelbre/gophers/63b1f5a9f334f9e23735c6e09ac003479ffe5df5/vector/fairy-tale/witch-learning.svg" alt="Go Wizard Gopher Studying" width="150"/>
+</p>
+
 I'm an IT Director with over 12 years of experience, now passionately focused on Go. My development philosophy is embodied in **The Go-Minimal Stack**, an original full-stack architecture I created for building applications with ultimate speed, simplicity, and a tiny resource footprint.
 
 I believe in creating fast, scalable backends that compile to a single binary and deliver dynamic user experiences with minimal frontend complexity. All my development is done on **macOS** and deployed to self-hosted **Linux (Ubuntu)** servers.
@@ -21,7 +27,7 @@ I believe in creating fast, scalable backends that compile to a single binary an
 </p>
 <p align="center">
     <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmNjYm9rdjgyMWx0OGdieGRobW94NW9xcWNzM2lnYmhpbmw2c2JuZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gG9fVWJdN41NeiHhzk/giphy.gif" alt="Snake GIF" />
-p>
+</p>
 
 ---
 
@@ -130,12 +136,26 @@ For building powerful and interactive command-line applications, from simple too
 My **Go-Minimal** monorepo serves as the official reference implementation for **The Go-Minimal Stack**. It is the central hub where I put my architectural philosophy into practice, creating a living testament to the power and elegance of this approach.
 
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1920px-Go_Logo_Blue.svg.png" alt="The Go programming language logo." width="100"/>
+  <img src="https://raw.githubusercontent.com/egonelbre/gophers/63b1f5a9f334f9e23735c6e09ac003479ffe5df5/vector/computer/gamer.svg" alt="Go Gaming Gopher" width="150"/>
+  <img src="https://raw.githubusercontent.com/egonelbre/gophers/63b1f5a9f334f9e23735c6e09ac003479ffe5df5/vector/arts/upright.svg" alt="Go Pianist Gopher" width="150"/>
+  <img src="https://raw.githubusercontent.com/egonelbre/gophers/63b1f5a9f334f9e23735c6e09ac003479ffe5df5/vector/computer/music.svg" alt="Go Electric Pianist Gopher" width="150"/>
 </p>
 
 <p align="center">
   <a href="https://github.com/dunamismax/Go-Minimal">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=Go-Minimal&theme=dracula&show_owner=true" alt="Reference Implementation for The Go-Minimal Stack" />
+  </a>
+</p>
+
+---
+
+### Support My Work
+
+If you find my work on **The Go-Minimal Stack** valuable, consider supporting me. It helps me dedicate more time to creating and maintaining open-source projects.
+
+<p align="center">
+  <a href="https://coff.ee/dunamismax" target="_blank">
+    <img src="https://raw.githubusercontent.com/egonelbre/gophers/master/.thumb/animation/buy-morning-coffee-3x.gif" alt="Buy Me a Coffee" />
   </a>
 </p>
 
@@ -152,5 +172,5 @@ My **Go-Minimal** monorepo serves as the official reference implementation for *
 </p>
 
 <p align="center">
-    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2doc3ZjMjRkb3JpeGJ6dzF2N3d5dXRnaWNrOTlzZXVnMncwY2F3NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/g79am6uuZJKSc/giphy.gif" alt="Moss IT Crowd Fire" />
+    <img src="https://raw.githubusercontent.com/egonelbre/gophers/refs/heads/master/.thumb/animation/2bit-sprite/demo.gif" alt="Gopher Sprite Animation" />
 </p>
