@@ -1,15 +1,13 @@
 # Hi, I'm dunamismax
 
 <p align="center">
-  <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Go+Developer;Creator+of+The+Go-Minimal+Stack;Go+%2B+Chi+%2B+sqlc+%2B+htmx;Maximum+Performance.+Minimal+Footprint.;Explore+my+reference+implementation+below!" alt="Typing SVG" />
-  </a>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1920px-Go_Logo_Blue.svg.png" alt="The Go programming language logo." width="150"/>
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/egonelbre/gophers/63b1f5a9f334f9e23735c6e09ac003479ffe5df5/vector/superhero/standing.svg" alt="Go Superhero Gopher" width="150"/>
-  <img src="https://raw.githubusercontent.com/egonelbre/gophers/63b1f5a9f334f9e23735c6e09ac003479ffe5df5/vector/projects/network.svg" alt="Go Sysadmin Gopher" width="150"/>
-  <img src="https://raw.githubusercontent.com/egonelbre/gophers/63b1f5a9f334f9e23735c6e09ac003479ffe5df5/vector/fairy-tale/witch-learning.svg" alt="Go Wizard Gopher Studying" width="150"/>
+  <a href="https://github.com/dunamismax">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Go+Developer;Creator+of+The+Go-Minimal+Stack;Go+%2B+Chi+%2B+sqlc+%2B+htmx;Maximum+Performance.+Minimal+Footprint.;Explore+my+reference+implementation+below!" alt="Typing SVG" />
+  </a>
 </p>
 
 I'm an IT Director with over 12 years of experience, now passionately focused on Go. My development philosophy is embodied in **The Go-Minimal Stack**, an original full-stack architecture I created for building applications with ultimate speed, simplicity, and a tiny resource footprint.
