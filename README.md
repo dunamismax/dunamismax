@@ -43,15 +43,24 @@ This stack represents a complete, best-in-class architecture for building secure
 
 The frontend architecture uses a modern build system and a server-centric interactivity model to deliver a fast, responsive, and maintainable user experience with minimal client-side complexity.
 
-- [**esbuild**](https://esbuild.github.io/getting-started/) & [**PostCSS**](https://postcss.org/docs/postcss-cli)
-  - **Role:** Asset Pipeline.
-  - **Description:** A high-speed asset pipeline using esbuild for bundling and PostCSS for processing Tailwind CSS. This ensures a highly optimized production output while maintaining a rapid development feedback loop.
+- [**esbuild**](https://esbuild.github.io/getting-started/)
+  - **Role:** Asset Bundler & Minifier.
+  - **Description:** An extremely fast JavaScript and CSS bundler written in Go. It processes frontend assets, handles module bundling, and performs minification, ensuring a highly optimized production output while maintaining a rapid development feedback loop.
+- [**PostCSS**](https://postcss.org/docs/postcss-cli)
+  - **Role:** CSS Processor.
+  - **Description:** A tool for transforming CSS with JavaScript plugins. It is essential for processing the Tailwind CSS framework, running as part of the build step to compile utility classes and custom directives into a standard, browser-ready stylesheet.
 - [**Tailwind CSS**](https://tailwindcss.com/docs/installation)
   - **Role:** Utility-First CSS Framework.
-  - **Description:** A highly-customizable, utility-first CSS framework that enables rapid UI development directly within the HTML markup.
-- [**HTMX**](https://htmx.org/docs/) & [**Alpine.js**](https://alpinejs.dev/start-here)
-  - **Role:** Server-Centric & Client-Side Interactivity.
-  - **Description:** HTMX provides powerful AJAX and dynamic content updates directly from HTML attributes, while Alpine.js serves as the perfect lightweight companion for small client-side interactions like dropdowns and modals.
+  - **Description:** A highly-customizable, utility-first CSS framework that enables rapid UI development directly within the HTML markup. It promotes design consistency and produces a minimal CSS file for production.
+- [**HTMX**](https://htmx.org/docs/)
+  - **Role:** Server-Centric Interactivity.
+  - **Description:** A powerful library that enables modern browser features like AJAX and dynamic content updates directly from HTML attributes. It allows the backend to deliver UI fragments over the wire, providing rich user experiences without complex client-side JavaScript.
+- [**Go `html/template`**](https://pkg.go.dev/html/template)
+  - **Role:** Secure HTML Templating.
+  - **Description:** The official Go standard library for creating HTML templates. It provides secure, context-aware automatic escaping to prevent Cross-Site Scripting (XSS) attacks, making it a robust and idiomatic choice for server-side rendering of HTML pages and HTMX partials.
+- [**Alpine.js**](https://alpinejs.dev/start-here)
+  - **Role:** Lightweight Client-Side Interactivity.
+  - **Description:** A rugged, minimal framework for composing JavaScript behavior directly in your HTML markup. It serves as the perfect lightweight companion to HTMX for handling small client-side interactions like dropdowns, modals, and toggles, without requiring a heavy client-side framework.
 
 ---
 
@@ -64,10 +73,16 @@ A lean, performant, and maintainable backend service architected for rapid devel
   - **Description:** A statically typed, compiled language renowned for its performance, concurrency, and simplicity. Its ability to compile to a single binary simplifies deployment.
 - [**Gin**](https://gin-gonic.com/docs/)
   - **Role:** High-Performance Web Framework.
-  - **Description:** A popular and fast HTTP web framework for Go, offering a rich feature set including routing, middleware, and validation that accelerates API development.
-- [**`koanf`**](https://github.com/knadh/koanf) & [**`log/slog`**](https://pkg.go.dev/log/slog)
-  - **Role:** Configuration & Logging.
-  - **Description:** `koanf` provides a clean API for reading configuration from files and environment variables, while `slog` produces consistent, machine-readable logs essential for monitoring and debugging.
+  - **Description:** A popular and fast HTTP web framework for Go, offering a rich feature set including routing, middleware, and JSON validation, which helps accelerate API development.
+- [**`go-playground/validator`**](https://pkg.go.dev/github.com/go-playground/validator/v10)
+  - **Role:** Struct Validation.
+  - **Description:** The de-facto standard for data validation using struct tags. It ensures data integrity by validating incoming request data at the application's edge.
+- [**`koanf`**](https://github.com/knadh/koanf)
+  - **Role:** Lightweight & Flexible Configuration.
+  - **Description:** A minimal and modular configuration management library. It provides a clean API for reading configuration from various sources like files and environment variables with a small dependency footprint, making it a simple and maintainable choice.
+- [**`log/slog`**](https://pkg.go.dev/log/slog)
+  - **Role:** Structured Logging.
+  - **Description:** The official structured logging library in the Go standard library. It produces consistent, machine-readable logs essential for effective monitoring and debugging.
 
 ---
 
@@ -77,32 +92,52 @@ A zero-dependency, in-process data layer that maximizes simplicity and speed for
 
 - [**SQLite**](https://www.sqlite.org/docs.html)
   - **Role:** Embedded Relational Database.
-  - **Description:** A self-contained, serverless SQL database engine that runs in-process with the application, eliminating operational overhead.
+  - **Description:** A self-contained, serverless, full-featured SQL database engine that runs in-process with the application. It reads and writes to a single file, eliminating operational overhead and making it perfect for local development, testing, and many production workloads.
 - [**`sqlc`**](https://docs.sqlc.dev/)
   - **Role:** Type-Safe SQL to Go Code Generation.
-  - **Description:** A tool that generates fully type-safe, idiomatic Go code from raw SQL queries, preventing data-related bugs at compile time.
+  - **Description:** A tool that generates fully type-safe, idiomatic Go code from raw SQL queries. This allows developers to write performant, handcrafted SQL while eliminating manual boilerplate and preventing data-related bugs at compile time.
 - [**`golang-migrate/migrate`**](https://github.com/golang-migrate/migrate/blob/master/MIGRATIONS.md)
   - **Role:** Database Schema Migrations.
-  - **Description:** A robust tool for managing and applying versioned SQL schema migrations.
+  - **Description:** A robust and widely-used tool for managing and applying versioned SQL schema migrations. Migrations can be written in plain SQL and sourced from files, ensuring database schemas evolve predictably.
 - [**`go-cache`**](https://pkg.go.dev/github.com/patrickmn/go-cache)
   - **Role:** In-Process Caching.
-  - **Description:** A simple, thread-safe in-memory key-value store with expiration times for extremely fast caching without external dependencies.
+  - **Description:** A simple, thread-safe in-memory key-value store with expiration times. It provides extremely fast caching capabilities without requiring any external dependencies or network overhead.
 
 ---
 
-### **Development & Deployment**
+### **CLI, Development & Deployment**
 
-A professional and minimalist toolchain for a smooth developer workflow and consistent, single-binary builds.
+A professional and minimalist toolchain for a smooth developer workflow and consistent builds.
 
+- [**`ffcli`**](https://pkg.go.dev/github.com/peterbourgon/ff/v3/ffcli) & [**`promptui`**](https://github.com/manifoldco/promptui)
+  - **Role:** Lightweight CLI & TUI Frameworks.
+  - **Description:** `ffcli` provides a minimal, composable framework for building traditional CLI applications, while `promptui` enables the creation of simple, interactive terminal prompts for user input.
+- [**`stretchr/testify`**](https://pkg.go.dev/github.com/stretchr/testify)
+  - **Role:** Testing Toolkit.
+  - **Description:** A suite of packages providing a fluent, expressive API for writing tests, including assertions, mocking, and test suite management.
 - [**Mage**](https://magefile.org/)
   - **Role:** Go-Native Task Runner / Build System.
-  - **Description:** A build tool that allows you to write build scripts and tasks in plain Go, providing a type-safe and idiomatic way to orchestrate all development workflows.
+  - **Description:** A build tool that allows you to write build scripts and tasks in plain Go, providing a type-safe, cross-platform, and idiomatic way to orchestrate all development workflows without leaving the Go ecosystem.
 - [**Air**](https://github.com/cosmtrek/air)
   - **Role:** Live Reloading.
-  - **Description:** A development utility that watches for file changes and automatically recompiles and restarts the server.
+  - **Description:** A development utility that watches for file changes and automatically recompiles and restarts the server, providing a rapid feedback loop.
 - [**Caddy**](https://caddyserver.com/docs/)
   - **Role:** Web Server & Reverse Proxy.
   - **Description:** A modern web server with automatic HTTPS. It serves static frontend assets and acts as a secure reverse proxy for the Go application.
+
+---
+
+### **CI/CD**
+
+A fully automated pipeline for building, testing, and deploying the application, ensuring consistency and quality.
+
+- [**GitHub Actions**](https://docs.github.com/en/actions)
+  - **Role:** Automated CI/CD Platform.
+  - **Description:** A CI/CD workflow defined in the project repository to automate the entire lifecycle. The pipeline performs:
+    - **Linting & Formatting:** Runs `golangci-lint` and `gofmt` to enforce code quality.
+    - **Testing:** Executes unit and integration tests using `go test`.
+    - **Vulnerability Scanning:** Runs `govulncheck` to scan for security vulnerabilities.
+    - **Build:** Compiles the application and builds frontend assets using a `Mage` task.
 
 </details>
 
