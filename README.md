@@ -16,16 +16,6 @@ I believe in creating fast, scalable backends that compile to a single binary an
 
 ---
 
-### My GitHub Activity
-
-<p align="center">
-  <a href="https://github.com/dunamismax">
-    <img src="https://github-readme-stats.vercel.app/api?username=dunamismax&show_icons=true&theme=dracula&include_all_commits=true&count_private=true" alt="dunamismax's GitHub stats" />
-  </a>
-</p>
-
----
-
 ### My Go Toolkit
 
 My toolkit is a reflection of the stack I created: focused on performance, simplicity, and a superior developer experience with Go at the core.
