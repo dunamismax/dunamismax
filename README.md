@@ -10,15 +10,11 @@
   </a>
 </p>
 
-Hello! Thanks for stopping by.
+With over a decade of IT experience, I specialize in building fast and maintainable single-binary applications with Go.
 
-I'm an IT Director with over a decade of experience, but my true passion is the craft of software development—especially with Go. I'm driven by its power to create incredibly fast, single-binary applications that are a joy to deploy and maintain.
+To streamline modern web development, I created The Go-Pragmatic Stack—an opinionated blueprint that pairs a high-performance Go backend with a responsive, server-centric frontend.
 
-This journey led me to create **The Go-Pragmatic Stack**, my official architecture for building best-in-class, modern web applications. It's a complete, opinionated blueprint for creating highly performant and maintainable software. It pairs a powerful Go backend with a modern, server-centric frontend toolchain, providing a structured and scalable environment without unnecessary complexity.
-
-I share my work and reference implementations freely, hoping to help others build better, faster software. If my projects have helped you out, I'd be incredibly grateful if you'd consider supporting my work with a coffee.
-
-It makes a huge difference!
+This philosophy is put into practice in my go-scaffold repository, which serves as a ready-to-use template for building robust applications based on this stack. If you find this project helpful, your support is greatly appreciated.
 
 ---
 
