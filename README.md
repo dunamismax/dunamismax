@@ -5,22 +5,50 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Go+Developer;Creator+of+The+Go-Pragmatic+Stack;Go+%2B+Gin+%2B+sqlc+%2B+htmx;A+Robust+Toolkit+for+Modern+Apps;Explore+my+reference+implementation+below!" alt="Typing SVG" />
+  <a href="https://github.com/dunamismax/go-scaffold">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Go+Developer;Creator+of+go-scaffold;A+Production-Ready+Go+Blueprint;Go+%2B+Chi+%2B+GORM+%2B+htmx;Clone%2C+Configure%2C+and+Deploy!" alt="Typing SVG" />
   </a>
 </p>
 
-With over a decade of IT experience, I specialize in building fast and maintainable single-binary applications with Go.
+With over a decade of IT experience, I specialize in building fast, maintainable, single-binary applications with Go. To streamline modern web development, I created **[go-scaffold](https://github.com/dunamismax/go-scaffold)**—an opinionated, production-ready blueprint designed to get you up and running instantly.
 
-To streamline modern web development, I created The Go-Pragmatic Stack—an opinionated blueprint that pairs a high-performance Go backend with a responsive, server-centric frontend.
+This repository is the culmination of my philosophy: a ready-to-clone template that pairs a high-performance Go backend with a responsive, server-centric frontend. It's built on **The Go-Pragmatic Stack** and is designed for developers who value simplicity, performance, and an elegant workflow.
 
-This philosophy is put into practice in my go-scaffold repository, which serves as a ready-to-use template for building robust applications based on this stack. If you find this project helpful, your support is greatly appreciated.
+---
+
+### My Featured Project: `go-scaffold`
+
+My **[go-scaffold](https://github.com/dunamismax/go-scaffold)** repository is a living project that serves as a powerful, real-world template for building robust web applications. It's more than just a collection of tools; it's a complete development ecosystem.
+
+<p align="center">
+  <a href="https://github.com/dunamismax/go-scaffold">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=go-scaffold&theme=dracula&show_owner=true" alt="go-scaffold Repository" />
+  </a>
+</p>
+
+---
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/3185864/32058716-5ee9b512-ba38-11e7-978a-287eb2a62743.png" alt="Gopher Mage." width="150"/>
+</p>
+
+### The Ultimate Workflow: The `Magefile`
+
+One of the standout features of the `go-scaffold` template is its **`magefile.go`**. This isn't just a build script; it's a complete, Go-native task runner that orchestrates the entire development lifecycle. It provides a seamless, cross-platform experience without ever leaving the Go ecosystem.
+
+**Why is it so great?**
+
+- **Simplicity:** Manage complex workflows with simple commands like `mage dev` or `mage check`.
+- **Consistency:** Ensures every developer on a project uses the exact same commands for building, testing, and linting.
+- **Extensibility:** It's written in pure Go, making it easy to customize and extend for any project-specific needs.
+
+With a single command, you can spin up a live-reloading development environment, run a comprehensive suite of tests and linters, build production-ready binaries, and manage database migrations. It's designed to make you productive from the very first minute.
 
 ---
 
 ### My Go Toolkit
 
-My toolkit is a reflection of the Go-Pragmatic stack: focused on performance, simplicity, and a superior developer experience with Go at the core.
+My toolkit is a reflection of the Go-Pragmatic stack, which powers `go-scaffold`: focused on performance, simplicity, and a superior developer experience with Go at the core.
 
 <p align="center">
   <a href="https://skillicons.dev">
@@ -149,25 +177,9 @@ A fully automated pipeline for building, testing, and deploying the application,
 
 ---
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/3185864/32058716-5ee9b512-ba38-11e7-978a-287eb2a62743.png" alt="Gopher Mage." width="150"/>
-</p>
-
-### My Current Focus: The Go-Pragmatic Reference Implementation
-
-My **Go-Pragmatic** monorepo serves as the official reference implementation for **The Go-Pragmatic Stack**. It is the central hub where I put my architectural philosophy into practice, creating a living testament to the power and elegance of this approach.
-
-<p align="center">
-  <a href="https://github.com/dunamismax/Go-Pragmatic">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=Go-Pragmatic&theme=dracula&show_owner=true" alt="Reference Implementation for The Go-Pragmatic Stack" />
-  </a>
-</p>
-
----
-
 ### Support My Work
 
-If you find my work on this stack valuable, consider supporting me. It helps me dedicate more time to creating and maintaining open-source projects.
+If you find my work on `go-scaffold` and The Go-Pragmatic Stack valuable, please consider supporting me. It helps me dedicate more time to creating and maintaining high-quality open-source projects.
 
 <p align="center">
   <a href="https://coff.ee/dunamismax" target="_blank">
