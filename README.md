@@ -46,10 +46,10 @@ The frontend architecture uses a modern build system and a server-centric intera
 - [**esbuild**](https://esbuild.github.io/getting-started/)
   - **Role:** Asset Bundler & Minifier.
   - **Description:** An extremely fast JavaScript and CSS bundler written in Go. It processes frontend assets, handles module bundling, and performs minification, ensuring a highly optimized production output while maintaining a rapid development feedback loop.
-- [**PostCSS**](https://postcss.org/docs/postcss-cli)
+- [**PostCSS**](https://postcss.org/docs/)
   - **Role:** CSS Processor.
   - **Description:** A tool for transforming CSS with JavaScript plugins. It is essential for a build step that compiles utility classes and custom directives into a standard, browser-ready stylesheet.
-- **Tailwind CSS**
+- [**Tailwind CSS**](https://tailwindcss.com/docs/installation/using-vite)
   - **Role:** Utility-First CSS Framework.
   - **Description:** A highly-customizable, utility-first CSS framework that enables rapid UI development directly within the HTML markup. It promotes design consistency and produces a minimal CSS file for production.
 - [**HTMX**](https://htmx.org/docs/)
@@ -77,7 +77,7 @@ A lean, performant, and maintainable backend service architected for rapid devel
 - [**`go-playground/validator`**](https://pkg.go.dev/github.com/go-playground/validator/v10)
   - **Role:** Struct Validation.
   - **Description:** The de-facto standard for data validation using struct tags. It ensures data integrity by validating incoming request data at the application's edge.
-- [**godotenv**](https://github.com/joho/godotenv)
+- [**godotenv**](https://pkg.go.dev/github.com/lpernett/godotenv)
   - **Role:** Environment Variable Loading.
   - **Description:** A library to load environment variables from a `.env` file. This is ideal for development, adhering to twelve-factor app principles by separating configuration from code without complicating local setup.
 
@@ -93,10 +93,10 @@ A zero-dependency, in-process data layer that maximizes simplicity and speed for
 - [**GORM**](https://gorm.io/index.html)
   - **Role:** Developer-Friendly ORM.
   - **Description:** A comprehensive ORM library for Go that simplifies database interactions by mapping Go structs to database tables. It features auto-migrations, hooks, and transaction support, aiming to be developer-friendly.
-- [**Goose**](https://github.com/pressly/goose)
+- [**Goose**](https://pkg.go.dev/github.com/pressly/goose/v3)
   - **Role:** Database Schema Migrations.
   - **Description:** A robust tool for managing database schema evolution. It allows you to write migrations in either SQL or Go, providing flexibility for simple schema changes or complex data transformations.
-- [**Ristretto**](https://github.com/dgraph-io/ristretto)
+- [**Ristretto**](https://pkg.go.dev/github.com/dgraph-io/ristretto)
   - **Role:** High-Performance In-Process Caching.
   - **Description:** A fast, concurrent, and memory-bounded in-process cache designed for high performance. It uses a sophisticated LFU-based admission policy to maximize hit ratios, providing a more robust and predictable caching solution for demanding workloads without external dependencies.
 
@@ -145,7 +145,7 @@ A fully automated pipeline for building, testing, and deploying the application,
     - **Testing:** Executes the test suite using `go test`, enhanced with `Testify` for expressive and readable assertions.
     - **Vulnerability Scanning:** Runs `govulncheck` to scan for security vulnerabilities.
     - **Build:** Compiles the application and builds frontend assets using a `Mage` task.
-- [**GoReleaser**](https://github.com/goreleaser/goreleaser)
+- [**GoReleaser**](https://goreleaser.com/customization/)
   - **Role:** Release Automation.
   - **Description:** A powerful tool that automates the entire release process. It seamlessly integrates with GitHub Actions to cross-compile Go binaries, create archives, generate changelogs, and publish releases, simplifying the delivery of software.
 
