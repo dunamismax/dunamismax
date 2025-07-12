@@ -59,6 +59,8 @@ My toolkit is a reflection of The Pure Go Standard Library Stack, which powers `
 <details>
 <summary><h3>The Pure Go Standard Library Stack (Click to Expand)</h3></summary>
 
+---
+
 This stack represents a minimalist, robust architecture for building secure and performant web applications. It is composed entirely of a Go backend that leverages the standard library, removing all external dependencies. The stack prioritizes ultimate simplicity, zero-dependency deployment, and long-term stability by relying exclusively on Go's continuously evolving native capabilities. The frontend is reduced to plain HTML and CSS, with no JavaScript.
 
 ---
