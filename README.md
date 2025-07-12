@@ -54,7 +54,7 @@ My toolkit is a reflection of The Pure Go Standard Library Stack, which powers `
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=go,sqlite,linux,ubuntu" />
   </a>
-p>
+</p>
 
 <details>
 <summary><h3>The Pure Go Standard Library Stack (Click to Expand)</h3></summary>
