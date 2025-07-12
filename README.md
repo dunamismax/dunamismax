@@ -5,24 +5,24 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/dunamismax/go-scaffold">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Go+Developer;Creator+of+go-scaffold;A+Production-Ready+Go+Blueprint;Go+%2B+Chi+%2B+GORM+%2B+htmx;Clone%2C+Configure%2C+and+Deploy!" alt="Typing SVG" />
+  <a href="https://github.com/dunamismax/go-stdlib-scaffold">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Go+Developer;Creator+of+go-stdlib-scaffold;A+Dependency-Free+Go+Blueprint;Go+%2B+net/http+%2B+database/sql;Clone%2C+Configure%2C+and+Deploy!" alt="Typing SVG" />
   </a>
 </p>
 
-With over a decade of IT experience, I specialize in building fast, maintainable, single-binary applications with Go. To streamline modern web development, I created **[go-scaffold](https://github.com/dunamismax/go-scaffold)**—an opinionated, production-ready blueprint designed to get you up and running instantly.
+With over a decade of IT experience, I specialize in building fast, maintainable, and dependency-free applications with Go. To promote long-term stability and ultimate simplicity, I created **[go-stdlib-scaffold](https://github.com/dunamismax/go-stdlib-scaffold)**—an opinionated, production-ready blueprint that runs on nothing but Go's standard library.
 
-This repository is the culmination of my philosophy: a ready-to-clone template that pairs a high-performance Go backend with a responsive, server-centric frontend. It's built on **The Go-Pragmatic Stack** and is designed for developers who value simplicity, performance, and an elegant workflow.
+This repository is the culmination of my philosophy: a ready-to-clone template that demonstrates the power and elegance of a pure Go backend. It's built on **The Pure Go Standard Library Stack** and is designed for developers who value performance, minimalism, and a zero-dependency workflow.
 
 ---
 
-### My Featured Project: `go-scaffold`
+### My Featured Project: `go-stdlib-scaffold`
 
-My **[go-scaffold](https://github.com/dunamismax/go-scaffold)** repository is a living project that serves as a powerful, real-world template for building robust web applications. It's more than just a collection of tools; it's a complete development ecosystem.
+My **[go-stdlib-scaffold](https://github.com/dunamismax/go-stdlib-scaffold)** repository is a living project that serves as a powerful, real-world template for building robust web applications using only the tools provided by Go itself. It's more than just a collection of files; it's a complete and self-contained development ecosystem.
 
 <p align="center">
-  <a href="https://github.com/dunamismax/go-scaffold">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=go-scaffold&theme=dracula&show_owner=true" alt="go-scaffold Repository" />
+  <a href="https://github.com/dunamismax/go-stdlib-scaffold">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=go-stdlib-scaffold&theme=dracula&show_owner=true" alt="go-stdlib-scaffold Repository" />
   </a>
 </p>
 
@@ -34,144 +34,126 @@ My **[go-scaffold](https://github.com/dunamismax/go-scaffold)** repository is a 
 
 ### The Ultimate Workflow: The `Magefile`
 
-One of the standout features of the `go-scaffold` template is its **`magefile.go`**. This isn't just a build script; it's a complete, Go-native task runner that orchestrates the entire development lifecycle. It provides a seamless, cross-platform experience without ever leaving the Go ecosystem.
+One of the standout features of the `go-stdlib-scaffold` template is its **`magefile.go`**. This isn't just a build script; it's a complete, Go-native task runner that orchestrates the entire development lifecycle. It provides a seamless, cross-platform experience without ever leaving the Go ecosystem.
 
 **Why is it so great?**
 
-- **Simplicity:** Manage complex workflows with simple commands like `mage dev` or `mage check`.
-- **Consistency:** Ensures every developer on a project uses the exact same commands for building, testing, and linting.
+- **Simplicity:** Manage complex workflows with simple commands like `mage run` or `mage check:all`.
+- **Consistency:** Ensures every developer on a project uses the exact same commands for building, testing, and quality checks.
 - **Extensibility:** It's written in pure Go, making it easy to customize and extend for any project-specific needs.
 
-With a single command, you can spin up a live-reloading development environment, run a comprehensive suite of tests and linters, build production-ready binaries, and manage database migrations. It's designed to make you productive from the very first minute.
+With a single command, you can run a comprehensive suite of tests, build production-ready binaries, and manage database migrations. It's designed to make you productive from the very first minute.
 
 ---
 
 ### My Go Toolkit
 
-My toolkit is a reflection of the Go-Pragmatic stack, which powers `go-scaffold`: focused on performance, simplicity, and a superior developer experience with Go at the core.
+My toolkit is a reflection of The Pure Go Standard Library Stack, which powers `go-stdlib-scaffold`: focused on performance, simplicity, and a superior developer experience with Go at the core.
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=go,nodejs,tailwind,htmx,sqlite,linux,ubuntu" />
+    <img src="https://skillicons.dev/icons?i=go,sqlite,linux,ubuntu" />
   </a>
-</p>
+p>
 
 <details>
-<summary><h3>The go-scaffold Stack (Click to Expand)</h3></summary>
+<summary><h3>The Pure Go Standard Library Stack (Click to Expand)</h3></summary>
 
-This stack represents a complete, best-in-class architecture for building secure, observable, and maintainable web applications. It is composed of a powerful Go backend and a modern, server-centric frontend toolchain. The stack prioritizes simplicity, rapid development, and zero-dependency deployment by favoring Go's native capabilities and lightweight, embedded tools.
+This stack represents a minimalist, robust architecture for building secure and maintainable web applications. It is composed entirely of a Go backend that leverages the standard library, removing all external dependencies for routing, validation, and data access. The stack prioritizes ultimate simplicity, zero-dependency deployment, and long-term stability by relying exclusively on Go's native capabilities. The frontend is reduced to plain HTML and CSS, with no JavaScript.
 
 ---
 
 ### **Frontend**
 
-The frontend architecture uses a modern build system and a server-centric interactivity model to deliver a fast, responsive, and maintainable user experience with minimal client-side complexity.
+The frontend architecture is intentionally simplified to its core components, delivering a fast, accessible, and extremely maintainable user experience by avoiding all client-side scripting and build tools.
 
-- [**esbuild**](https://esbuild.github.io/getting-started/)
-  - **Role:** Asset Bundler & Minifier.
-  - **Description:** An extremely fast JavaScript and CSS bundler written in Go. It processes frontend assets, handles module bundling, and performs minification, ensuring a highly optimized production output while maintaining a rapid development feedback loop.
-- [**PostCSS**](https://postcss.org/docs/)
-  - **Role:** CSS Processor.
-  - **Description:** A tool for transforming CSS with JavaScript plugins. It is essential for a build step that compiles utility classes and custom directives into a standard, browser-ready stylesheet.
-- [**Tailwind CSS**](https://tailwindcss.com/docs/installation/using-vite)
-  - **Role:** Utility-First CSS Framework.
-  - **Description:** A highly-customizable, utility-first CSS framework that enables rapid UI development directly within the HTML markup. It promotes design consistency and produces a minimal CSS file for production.
-- [**HTMX**](https://htmx.org/docs/)
-  - **Role:** Server-Centric Interactivity.
-  - **Description:** A powerful library that enables modern browser features like AJAX and dynamic content updates directly from HTML attributes. It allows the backend to deliver UI fragments over the wire, providing rich user experiences without complex client-side JavaScript.
 - [**Go `html/template`**](https://pkg.go.dev/html/template)
   - **Role:** Secure HTML Templating.
-  - **Description:** The official Go standard library for creating HTML templates. It provides secure, context-aware automatic escaping to prevent Cross-Site Scripting (XSS) attacks, making it a robust and idiomatic choice for server-side rendering of HTML pages and HTMX partials.
-- [**Alpine.js**](https://alpinejs.dev/start-here)
-  - **Role:** Lightweight Client-Side Interactivity.
-  - **Description:** A rugged, minimal framework for composing JavaScript behavior directly in your HTML markup. It serves as the perfect lightweight companion to HTMX for handling small client-side interactions like dropdowns, modals, and toggles, without requiring a heavy client-side framework.
+  - **Description:** Go's standard library for server-side HTML rendering. It provides automatic, context-aware escaping to prevent Cross-Site Scripting (XSS), making it a secure foundation for web interfaces.
+- [**Plain CSS**](https://developer.mozilla.org/en-US/docs/Web/CSS)
+  - **Role:** Styling.
+  - **Description:** A standard, handwritten CSS file served as a static asset. This approach removes the need for pre-processors or build steps, maximizing simplicity and performance.
 
 ---
 
 ### **Backend**
 
-A lean, performant, and maintainable backend service architected for rapid development and long-term stability.
+A lean, performant, and maintainable backend service architected using only the Go standard library for maximum stability and minimal external dependencies.
 
 - [**Go**](https://go.dev/doc/)
   - **Role:** Backend Language.
-  - **Description:** A statically typed, compiled language renowned for its performance, concurrency, and simplicity. Its ability to compile to a single binary simplifies deployment.
-- [**Chi**](https://go-chi.io/)
-  - **Role:** Idiomatic & Lightweight Web Framework.
-  - **Description:** A lightweight, idiomatic, and composable router for building Go HTTP services. It is built on the standard `net/http` library and is praised for its elegant design, providing powerful features like middleware, routing context, and graceful shutdowns without unnecessary overhead.
-- [**`go-playground/validator`**](https://pkg.go.dev/github.com/go-playground/validator/v10)
-  - **Role:** Struct Validation.
-  - **Description:** The de-facto standard for data validation using struct tags. It ensures data integrity by validating incoming request data at the application's edge.
-- [**godotenv**](https://pkg.go.dev/github.com/lpernett/godotenv)
+  - **Description:** A statically typed, compiled language known for performance, concurrency, and simplicity. It compiles to a single, dependency-free binary, streamlining deployment.
+- [**`net/http`**](https://pkg.go.dev/net/http)
+  - **Role:** Web Server & Routing.
+  - **Description:** The standard library's package for all HTTP-related tasks. As of Go 1.22, it includes an enhanced request router that supports method-based routing and wildcards, removing the need for third-party frameworks.
+- [**Custom Validation Functions**](https://www.alexedwards.net/blog/validation-snippets-for-go)
+  - **Role:** Data Validation.
+  - **Description:** Data validation is handled by simple, explicit Go functions. This approach keeps validation logic clear, type-safe, and tightly integrated with the application's domain.
+- [**`os`**](https://pkg.go.dev/os)
   - **Role:** Environment Variable Loading.
-  - **Description:** A library to load environment variables from a `.env` file. This is ideal for development, adhering to twelve-factor app principles by separating configuration from code without complicating local setup.
+  - **Description:** Configuration is loaded from environment variables using the standard `os.Getenv` function, adhering to twelve-factor app principles without external libraries.
 
 ---
 
 ### **Database & Caching**
 
-A zero-dependency, in-process data layer that maximizes simplicity and speed for a wide range of applications.
+A zero-dependency, in-process data layer that maximizes simplicity and speed by using Go's native database interface and basic concurrency primitives.
 
 - [**SQLite**](https://www.sqlite.org/docs.html)
   - **Role:** Embedded Relational Database.
-  - **Description:** A self-contained, serverless, full-featured SQL database engine that runs in-process with the application. It reads and writes to a single file, eliminating operational overhead and making it perfect for local development, testing, and many production workloads.
-- [**GORM**](https://gorm.io/index.html)
-  - **Role:** Developer-Friendly ORM.
-  - **Description:** A comprehensive ORM library for Go that simplifies database interactions by mapping Go structs to database tables. It features auto-migrations, hooks, and transaction support, aiming to be developer-friendly.
-- [**Goose**](https://pkg.go.dev/github.com/pressly/goose/v3)
+  - **Description:** A self-contained, serverless SQL database engine that runs in-process, eliminating operational overhead and making it ideal for a wide range of production workloads.
+- [**`database/sql`**](https://pkg.go.dev/database/sql)
+  - **Role:** SQL Database Interface.
+  - **Description:** The standard library’s lean interface for SQL databases. It provides direct control over database operations via raw SQL queries, avoiding the overhead of an ORM.
+- [**SQL/Go Migration Scripts**](https://amacneil.github.io/dbmate/2022/01/21/go-database-migrations-without-orm.html)
   - **Role:** Database Schema Migrations.
-  - **Description:** A robust tool for managing database schema evolution. It allows you to write migrations in either SQL or Go, providing flexibility for simple schema changes or complex data transformations.
-- [**Ristretto**](https://pkg.go.dev/github.com/dgraph-io/ristretto)
-  - **Role:** High-Performance In-Process Caching.
-  - **Description:** A fast, concurrent, and memory-bounded in-process cache designed for high performance. It uses a sophisticated LFU-based admission policy to maximize hit ratios, providing a more robust and predictable caching solution for demanding workloads without external dependencies.
+  - **Description:** Migrations are managed with numbered SQL files or simple Go programs using `database/sql`. This method avoids external tooling and keeps schema management transparent.
+- [**`sync`**](https://pkg.go.dev/sync)
+  - **Role:** In-Process Caching.
+  - **Description:** High-performance, in-process caching is achieved with a standard Go map and a `sync.RWMutex`, providing a fast, concurrent-safe solution without external dependencies.
 
 ---
 
 ### **Testing**
 
-A robust testing suite to ensure code quality, correctness, and maintainability.
+A robust testing suite that relies exclusively on Go's powerful, built-in testing framework to ensure code quality and correctness.
 
-- [**`go test`**](https://pkg.go.dev/testing)
+- [**`testing`**](https://pkg.go.dev/testing)
   - **Role:** Core Testing Framework.
-  - **Description:** The built-in Go testing command and package. It provides the foundation for writing unit, integration, and benchmark tests in a way that is simple and deeply integrated with the language.
-- [**Testify**](https://github.com/stretchr/testify)
-  - **Role:** Assertion & Mocking Toolkit.
-  - **Description:** A toolkit that provides a rich set of assertion functions (`assert`, `require`) and an easy-to-use mocking framework. It significantly improves the readability and conciseness of tests, making them easier to write and maintain.
+  - **Description:** The built-in package for unit, integration, and benchmark tests. Assertions use simple `if` statements with `t.Errorf`, keeping tests clear and dependency-free.
 
 ---
 
 ### **CLI, Development & Deployment**
 
-A professional and minimalist toolchain for a smooth developer workflow and consistent builds.
+A minimalist toolchain using built-in Go commands and standard, universally available tools for a smooth developer workflow.
 
-- [**Urfave/CLI**](https://cli.urfave.org/)
-  - **Role:** Feature-Rich CLI Framework.
-  - **Description:** A declarative, fast, and dependency-free library for building command-line applications. It provides a simple API for creating apps with commands, subcommands, flags, and shell autocompletion, making it a powerful and accessible choice for any project.
-- [**Mage**](https://magefile.org/)
-  - **Role:** Go-Native Task Runner / Build System.
-  - **Description:** A build tool that allows you to write build scripts and tasks in plain Go, providing a type-safe, cross-platform, and idiomatic way to orchestrate all development workflows without leaving the Go ecosystem.
-- [**Air**](https://github.com/cosmtrek/air)
+- [**`flag`**](https://pkg.go.dev/flag)
+  - **Role:** Command-Line Interface.
+  - **Description:** The standard library's package for parsing command-line options. It is sufficient for building CLIs for most applications without third-party dependencies.
+- [**Mage / Magefile**](https://magefile.org/)
+  - **Role:** Task Runner / Build System.
+  - **Description:** A build tool that uses plain Go functions as runnable, Makefile-like targets. By replacing shell scripts with Go code, a `Magefile` creates a cross-platform, easy-to-maintain build system for development tasks.
+- [**Simple Shell Scripts**](https://dev.to/ignatk/go-live-reloading-with-a-shell-script-2305)
   - **Role:** Live Reloading.
-  - **Description:** A development utility that watches for file changes and automatically recompiles and restarts the server, providing a rapid feedback loop.
-- [**Caddy**](https://caddyserver.com/docs/)
-  - **Role:** Web Server & Reverse Proxy.
-  - **Description:** A modern web server with automatic HTTPS. It serves static frontend assets and acts as a secure reverse proxy for the Go application.
+  - **Description:** During development, a simple shell script can watch for file changes, automatically recompiling and restarting the server for a rapid feedback loop.
 
 ---
 
 ### **CI/CD**
 
-A fully automated pipeline for building, testing, and deploying the application, ensuring consistency and quality.
+A fully automated pipeline using standard Go tools to build, test, and deploy the application, ensuring consistency and quality.
 
 - [**GitHub Actions**](https://docs.github.com/en/actions)
   - **Role:** Automated CI/CD Platform.
-  - **Description:** A CI/CD workflow defined in the project repository to automate the entire lifecycle. The pipeline performs:
-    - **Linting & Formatting:** Runs `golangci-lint` and `gofmt` to enforce code quality.
-    - **Testing:** Executes the test suite using `go test`, enhanced with `Testify` for expressive and readable assertions.
-    - **Vulnerability Scanning:** Runs `govulncheck` to scan for security vulnerabilities.
-    - **Build:** Compiles the application and builds frontend assets using a `Mage` task.
-- [**GoReleaser**](https://goreleaser.com/customization/)
+  - **Description:** A CI/CD workflow defined in the project repository automates the entire lifecycle. The pipeline performs:
+    - **Linting & Formatting:** Runs [**`gofmt`**](https://pkg.go.dev/cmd/gofmt) and [**`go vet`**](https://pkg.go.dev/cmd/vet) to enforce code style and identify issues.
+    - **Testing:** Executes the test suite with the standard `go test` command.
+    - **Vulnerability Scanning:** Runs [**`govulncheck`**](https://go.dev/blog/vuln) to scan for security vulnerabilities.
+    - **Build:** Compiles the application into a single binary using `go build`.
+- [**`go build` Scripts (via Magefile)**](https://www.digitalocean.com/community/tutorials/how-to-build-go-executables-for-multiple-platforms-on-ubuntu-20-04)
   - **Role:** Release Automation.
-  - **Description:** A powerful tool that automates the entire release process. It seamlessly integrates with GitHub Actions to cross-compile Go binaries, create archives, generate changelogs, and publish releases, simplifying the delivery of software.
+  - **Description:** A simple script using `go build` with different `GOOS` and `GOARCH` environment variables automates cross-compilation for various platforms without external tools. (Orchestrated and run via the Magefile).
 
 </details>
 
@@ -179,7 +161,7 @@ A fully automated pipeline for building, testing, and deploying the application,
 
 ### Support My Work
 
-If you find my work on `go-scaffold` and The Go-Pragmatic Stack valuable, please consider supporting me. It helps me dedicate more time to creating and maintaining high-quality open-source projects.
+If you find my work on `go-stdlib-scaffold` and The Pure Go Standard Library Stack valuable, please consider supporting me. It helps me dedicate more time to creating and maintaining high-quality open-source projects.
 
 <p align="center">
   <a href="https://coff.ee/dunamismax" target="_blank">
