@@ -57,7 +57,7 @@ My toolkit is a reflection of the Go-Pragmatic stack, which powers `go-scaffold`
 </p>
 
 <details>
-<summary><h3>The Go-Pragmatic Stack (Click to Expand)</h3></summary>
+<summary><h3>The go-scaffold Stack (Click to Expand)</h3></summary>
 
 This stack represents a complete, best-in-class architecture for building secure, observable, and maintainable web applications. It is composed of a powerful Go backend and a modern, server-centric frontend toolchain. The stack prioritizes simplicity, rapid development, and zero-dependency deployment by favoring Go's native capabilities and lightweight, embedded tools.
 
