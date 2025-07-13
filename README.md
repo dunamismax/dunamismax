@@ -28,10 +28,6 @@ This repository is the official reference implementation for the Espresso-Driven
 
 ---
 
-<p align="center">
-  <img src="https://github.com/dunamismax/espresso-driven-development/blob/main/shared/static/images/python-coffee.png" alt="Python Coffee." width="150"/>
-</p>
-
 ### The Ultimate Workflow: The `justfile`
 
 One of the standout features of the Espresso-Driven Development stack is the **`justfile`**. This isn't just a task runner; it's a complete, cross-platform command orchestrator that manages the entire development lifecycle. It provides a seamless experience without complex build processes.
@@ -56,31 +52,33 @@ My toolkit reflects the Espresso-Driven Development philosophy: a hypermedia-fir
   </a>
 </p>
 
-<details open>
-<summary><h3>The Espresso-Driven Development Stack (Click to Expand)</h3></summary>
+<details>
+<summary><h3>The Espresso-Driven-Development (EDD) Stack - Click to Expand</h3></summary>
+
+# **The Espresso-Driven-Development (EDD) Stack**
 
 ---
 
-This stack is engineered for the absolute zenith of development speed and minimalist design. It is for developers who want to move from idea to a running application with the fewest possible moving parts. By eliminating the JavaScript ecosystem and stripping away layers of abstraction, this stack uses a powerful, Python-centric hypermedia approach. The result is a radically simple, cohesive, and blazing-fast stack that is trivial to deploy and maintain.
+This stack is engineered for maximum development velocity and minimalist design. It is for developers who want to move from idea to a running application with the fewest possible moving parts. By replacing the JavaScript build ecosystem and stripping away layers of abstraction, this stack uses a powerful, Python-centric hypermedia approach. The result is a radically simple, cohesive, and high-performance stack that is trivial to deploy and maintain.
 
 ---
 
-### **Frontend: Hypermedia-Powered, JavaScript-Free**
+### **Frontend: Hypermedia-Powered, No JS Build Step**
 
-This frontend architecture is built on the principle of "HTML over the wire." It delivers rich, interactive user experiences without client-side JavaScript by having the server handle all logic and rendering, resulting in an incredibly simple and fast development loop.
+This frontend architecture is built on the principle of "HTML over the wire." It delivers rich, interactive user experiences by having the server handle logic and rendering, resulting in an incredibly simple and fast development loop.
 
 - [**htmx**](https://htmx.org/docs/)
   - **Role:** Declarative Hypermedia Interactivity.
-  - **Description:** The core of the frontend. htmx supercharges HTML with simple attributes, enabling you to trigger server requests and swap page content dynamically. It provides the feel of a modern SPA without writing a single line of JavaScript.
+  - **Description:** The core of the frontend, htmx supercharges HTML with simple attributes, enabling dynamic server requests and page content swapping without writing JavaScript.
 - [**Hyperscript**](https://hyperscript.org/docs/)
   - **Role:** Intuitive, Inline Event Handling.
-  - **Description:** A perfect companion to htmx for handling trivial client-side behaviors. Its natural language syntax allows you to add simple interactivity (like toggling a CSS class) directly in your HTML, maintaining perfect locality of behavior.
+  - **Description:** A companion to htmx for handling client-side behaviors. Its natural-language syntax allows for simple interactivity directly within HTML.
 - [**Jinja Templates**](https://jinja.palletsprojects.com/en/3.1.x/)
   - **Role:** Powerful Server-Side HTML Rendering.
-  - **Description:** The definitive templating engine for Python. Jinja constructs the HTML on the server, seamlessly weaving your application's data into templates that are sent directly to the browser as complete, ready-to-display content.
+  - **Description:** The definitive templating engine for Python. Jinja constructs HTML on the server, weaving application data into templates sent to the browser.
 - [**Tailwind CSS (via Play CDN)**](https://tailwindcss.com/docs/installation/play-cdn)
   - **Role:** Build-Free, Utility-First Styling.
-  - **Description:** Provides a complete, utility-first CSS framework for crafting bespoke designs with maximum speed. The Play CDN enables access to the full power of Tailwind directly in the browser, completely removing the need for `npm` or any build steps.
+  - **Description:** A complete, utility-first CSS framework for rapid UI development. The Play CDN provides full access to Tailwind in the browser, eliminating the need for `npm` or build steps.
 
 ---
 
@@ -90,16 +88,16 @@ This backend foundation is optimized for performance, developer ergonomics, and 
 
 - [**FastAPI**](https://fastapi.tiangolo.com/)
   - **Role:** Modern Python Web Framework.
-  - **Description:** The high-performance engine for the entire application. It serves the hypermedia-driven frontend and provides a robust, type-safe foundation for building any necessary APIs with automatic data validation and documentation.
+  - **Description:** A high-performance framework for building APIs with Python, based on standard type hints. It serves the hypermedia-driven frontend with automatic data validation and documentation.
 - [**SQLAlchemy Core**](https://docs.sqlalchemy.org/en/20/core/)
   - **Role:** Powerful SQL Expression Toolkit.
-  - **Description:** Provides the full power of SQL through a Pythonic expression language. This gives you direct, granular control over your database interactions without the indirection of a traditional ORM, promoting clear and optimized queries.
+  - **Description:** Provides the full power of SQL through a Pythonic expression language, offering direct and granular control over database interactions.
 - [**Uvicorn**](https://www.uvicorn.org/)
   - **Role:** Lightning-Fast ASGI Server.
-  - **Description:** A high-performance server that acts as the production-ready engine for your FastAPI application, serving requests with incredible speed and efficiency.
+  - **Description:** A high-performance ASGI server that acts as the production-ready engine for your FastAPI application, serving requests with incredible speed.
 - [**Pydantic V2**](https://docs.pydantic.dev/latest/)
   - **Role:** Bulletproof Data Validation.
-  - **Description:** Guarantees data integrity throughout your application. It uses Python type hints to validate, parse, and serialize data, catching errors early and integrating seamlessly with FastAPI.
+  - **Description:** Guarantees data integrity using Python type hints to validate, parse, and serialize data, integrating seamlessly with FastAPI.
 
 ---
 
@@ -109,61 +107,61 @@ This data layer is designed for ultimate simplicity, with zero external service 
 
 - [**SQLite**](https://www.sqlite.org/docs.html)
   - **Role:** Zero-Configuration Embedded Database.
-  - **Description:** A self-contained, file-based SQL database that requires no setup or administration. It is the gold standard for rapid prototyping, embedded applications, and simple, self-hosted deployments.
+  - **Description:** A self-contained, file-based SQL database that requires no setup or administration, ideal for rapid prototyping and simple deployments.
 - [**FastAPI BackgroundTasks**](https://fastapi.tiangolo.com/tutorial/background-tasks/)
   - **Role:** Simple, In-Process Task Execution.
-  - **Description:** For fire-and-forget operations like sending emails or notifications. These tasks run in the background after a response is sent, requiring zero external dependencies, message brokers, or worker processes.
+  - **Description:** For "fire-and-forget" operations that run in the background after a response is sent, requiring no external dependencies like message brokers or worker processes.
 
 ---
 
 ### **Development Workflow: Modern & Fast**
 
-A cutting-edge Python development environment emphasizing speed, consistency, and a delightful developer experience.
+A cutting-edge Python development environment emphasizing speed, consistency, and an efficient developer experience.
 
 - [**uv**](https://docs.astral.sh/uv/)
   - **Role:** All-in-One Python Project & Package Manager.
-  - **Description:** An extremely fast tool written in Rust that replaces pip and venv. It provides a 10-100x speedup for dependency management, making your development workflow significantly faster.
+  - **Description:** An extremely fast tool, written in Rust, that replaces pip and venv, providing a significant speedup for dependency management.
 - [**Ruff**](https://docs.astral.sh/ruff/)
   - **Role:** Blazing-Fast Python Linter & Formatter.
-  - **Description:** Combines the functionality of dozens of tools like Flake8, isort, and Black into one Rust-powered binary, providing near-instantaneous feedback and code formatting.
+  - **Description:** Combines the functionality of tools like Flake8, isort, and Black into one Rust-powered binary for near-instantaneous feedback.
 - [**mypy**](https://mypy.readthedocs.io/en/stable/)
   - **Role:** Static Type Checker for Error Prevention.
-  - **Description:** The standard static type checker for Python. It analyzes your code to catch type-related errors before they happen at runtime, ensuring correctness and improving code quality.
+  - **Description:** The standard static type checker for Python, analyzing code to catch type-related errors before runtime.
 - [**just**](https://github.com/casey/just)
   - **Role:** A Modern Command Runner.
-  - **Description:** A simple and effective tool for saving and running project-specific commands. It acts as a modern, cross-platform alternative to `make` for common tasks like starting the server or running tests.
+  - **Description:** A simple tool for saving and running project-specific commands, acting as a modern, cross-platform alternative to `make`.
 
 ---
 
 ### **Authentication & Security: Lean & Controlled**
 
-A direct and transparent approach to security, giving you full control over the authentication flow using the framework's own robust tools.
+A direct and transparent approach to security, providing full control over the authentication flow.
 
 - [**FastAPI Middleware & Dependencies**](https://fastapi.tiangolo.com/tutorial/middleware/)
   - **Role:** Custom Session-Based Authentication.
-  - **Description:** Build a lean and transparent authentication system using FastAPI's own tools. A middleware can create a secure, cookie-based session, and a dependency can protect specific routes, giving you full control over the user flow.
+  - **Description:** Build a lean authentication system using FastAPI's own tools. Middleware can create a secure, cookie-based session, and dependencies can protect specific routes.
 - [**passlib[bcrypt]**](https://passlib.readthedocs.io/en/stable/)
   - **Role:** Industry-Standard Password Hashing.
-  - **Description:** A crucial library for protecting user credentials. It provides a simple and secure way to hash and verify passwords using the proven and adaptive bcrypt algorithm.
+  - **Description:** A crucial library for protecting user credentials by providing a simple and secure way to hash and verify passwords using the bcrypt algorithm.
 
 ---
 
 ### **Deployment & Operations: Minimalist & Self-Hosted**
 
-A lightweight, secure, and fully self-reliant deployment architecture designed for ultimate control and simplicity.
+A lightweight, secure, and fully self-reliant deployment architecture designed for simplicity and control.
 
 - [**Alpine Linux**](https://docs.alpinelinux.org/user-handbook/overview/)
   - **Role:** Secure & Minimalist Host OS.
-  - **Description:** A security-focused and resource-efficient Linux distribution that serves as the perfect small-footprint base for running your application on a VPS.
+  - **Description:** A security-focused and resource-efficient Linux distribution that serves as an ideal small-footprint base for your application.
 - [**Caddy**](https://caddyserver.com/docs/)
   - **Role:** Zero-Effort HTTPS Web Server.
-  - **Description:** A powerful web server that provides automatic, hands-free HTTPS certificate provisioning and renewal. It serves as a secure reverse proxy, directing traffic to your application with minimal configuration.
+  - **Description:** A powerful web server providing automatic HTTPS certificate provisioning and renewal, serving as a secure reverse proxy with minimal configuration.
 - [**systemd**](https://www.freedesktop.org/software/systemd/man/systemd.service.html)
   - **Role:** Native Process Management.
-  - **Description:** The init system built into most modern Linux distributions. Use simple `.service` files to manage your Uvicorn process, ensuring it runs on startup and restarts automatically without adding third-party dependencies.
+  - **Description:** The init system in most modern Linux distributions. Use simple `.service` files to manage the Uvicorn process, ensuring it runs on startup and restarts automatically.
 - [**Python `logging` Module**](https://docs.python.org/3/library/logging.html)
   - **Role:** Dependency-Free Application Logging.
-  - **Description:** The standard Python library for emitting event logs from your application. It can be configured to write to standard output or files, providing a simple, robust, and entirely self-contained logging solution.
+  - **Description:** The standard Python library for emitting event logs from your application, configurable to write to standard output or files.
 
 </details>
 
