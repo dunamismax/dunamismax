@@ -303,7 +303,7 @@ If you find my Full Stack Rust work valuable, consider supporting continued deve
 ---
 
 <p align="center">
-  <img src="https://github.com/dunamismax/full-stack-rust/blob/main/assets/rust-logo-title-wide.jpg" alt="Rust Logo" width="600"/>
+  <img src="https://github.com/dunamismax/full-stack-rust/blob/main/assets/rust-logo-title-wide.jpg" alt="Rust Logo" width="300"/>
 </p>
 
 <p align="center">
