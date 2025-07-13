@@ -207,62 +207,6 @@ A modern, container-native deployment and observability architecture designed fo
 - **Production Infrastructure** - PostgreSQL databases with SeaORM
 - **CI/CD Pipelines** - Automated testing, security scanning, and deployment
 
-### Architecture Patterns
-
-- **Type-safe contracts** between all application layers
-- **Shared libraries** for maximum code reuse across the stack
-- **Production-ready** patterns with comprehensive testing
-- **Security-first** design with modern authentication practices
-
----
-
-## Key Features Demonstrated
-
-### Complete Authentication System
-
-- User registration and login with validation
-- JWT-based stateless authentication
-- Secure Argon2 password hashing with salt
-- Protected routes with middleware authorization
-- Automatic database table creation
-
-### Modern Development Workflow
-
-- Live reload for frontend development
-- Hot reloading for backend changes
-- Comprehensive error handling
-- Security headers and input validation
-- Structured logging with tracing
-
-### Production-Grade Infrastructure
-
-- PostgreSQL database integration
-- Docker and Kubernetes deployment
-- Comprehensive CI/CD pipeline
-- Cross-platform builds and testing
-- Security auditing with cargo-audit
-
----
-
-## Quick Start Example
-
-```bash
-# Clone the repository
-git clone https://github.com/dunamismax/full-stack-rust.git
-cd full-stack-rust
-
-# Setup PostgreSQL database
-createdb fullstackrust
-
-# Start backend server (Terminal 1)
-cargo run -p server
-
-# Start frontend dev server (Terminal 2)
-cd ui/webapp && trunk serve
-
-# Visit http://127.0.0.1:8080
-```
-
 ---
 
 ## Support My Work
@@ -307,6 +251,6 @@ If you find my Full Stack Rust work valuable, consider supporting continued deve
 </p>
 
 <p align="center">
-  <strong>Building the future with Rust - one monorepo at a time</strong><br>
-  <sub>Zero JavaScript, Maximum Performance, Production Ready</sub>
+  <strong>Built with ❤️ and ☕ using Rust</strong><br>
+  <sub>Perfect for building the next generation of web applications</sub>
 </p>
