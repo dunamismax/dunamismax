@@ -77,6 +77,8 @@ My toolkit reflects the Full Stack Rust philosophy: a unified language approach 
   </a>
 </p>
 
+---
+
 <details>
 <summary><strong>Click to expand: Complete Technology Stack</strong></summary>
 
