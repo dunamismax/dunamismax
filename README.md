@@ -67,48 +67,141 @@ My toolkit reflects the Full Stack Rust philosophy: a unified language approach 
 <details>
 <summary><h3>Complete Technology Stack - Click to Expand</h3></summary>
 
-### **Frontend: WebAssembly-Powered UI**
+This framework is designed for building high-performance, reliable, and maintainable applications using Rust across the entire stack. It prioritizes developer ergonomics, type safety, and a unified ecosystem, enabling you to go from frontend to deployment with a single language. It is engineered for building everything from dynamic web applications and APIs to powerful command-line and terminal tools.
 
-- [**Yew**](https://yew.rs/) - Component-based framework with JSX-like syntax
-- [**Stylist**](https://docs.rs/stylist/) - CSS-in-Rust styling solution
-- [**Trunk**](https://trunkrs.dev/) - WASM bundler with live reload
-- [**Gloo**](https://docs.rs/gloo/) - Web API toolkit for Rust/WASM
+---
 
-### **Backend: High-Performance & Async**
+### **Frontend: A Reactive, WebAssembly-Powered UI**
 
-- [**Actix Web**](https://actix.rs/) - Actor-based web framework
-- [**SeaORM**](https://www.sea-ql.org/SeaORM/) - Type-safe database ORM
-- [**Tokio**](https://tokio.rs/) - Async runtime
-- [**Serde**](https://serde.rs/) - Serialization framework
+This frontend architecture leverages WebAssembly (WASM) to run native Rust code directly in the browser, delivering rich, interactive user experiences with near-native performance.
 
-### **Desktop: Cross-Platform Native**
+- [**Yew**](https://yew.rs/docs/getting-started):
+  - **Role:** Component-Based Frontend Framework.
+  - **Description:** Yew is a modern Rust framework for creating multi-threaded front-end web apps using WebAssembly. It features a component-based model and an `html!` macro similar to JSX, making it familiar for developers with a background in frameworks like React.
+- [**Tauri**](https://tauri.app/v1/guides/):
+  - **Role:** Cross-Platform Application Toolkit.
+  - **Description:** Tauri packages your Yew web frontend into a lightweight, secure, and fast desktop application. It provides the native shell for your UI, enabling access to system resources, creating installers, and managing application updates for Windows, macOS, and Linux.
+- [**Stylist**](https://docs.rs/stylist/latest/stylist/):
+  - **Role:** CSS-in-Rust Styling.
+  - **Description:** Stylist provides a type-safe, component-scoped styling solution for Rust-based WebAssembly applications. It integrates directly with Yew via a feature flag and allows you to write CSS within your components for co-located and maintainable styles.
 
-- [**Tauri**](https://tauri.app/) - Secure desktop application toolkit
+---
 
-### **CLI: Command-Line Power**
+### **Backend: High-Performance & Asynchronous**
 
-- [**Clap**](https://docs.rs/clap/) - Command-line argument parsing
+This backend foundation is optimized for speed, memory safety, and high concurrency, built on Rust's powerful asynchronous ecosystem.
 
-### **Security & Authentication**
+- [**Actix Web**](https://actix.rs/docs/):
+  - **Role:** Powerful & Pragmatic Web Framework.
+  - **Description:** A high-performance framework for building APIs and web services. Built on the actor model, Actix Web is capable of handling a massive number of concurrent connections with minimal resource usage, making it perfect for demanding backend services.
+- [**Tokio**](https://tokio.rs/tokio/tutorial):
+  - **Role:** Asynchronous Runtime.
+  - **Description:** Tokio is the de-facto standard for writing asynchronous applications in Rust. It provides the non-blocking I/O platform, task scheduler, and utilities that power the entire backend, from Actix Web to database clients.
+- [**Serde**](https://serde.rs/):
+  - **Role:** Robust Data Serialization & Deserialization.
+  - **Description:** A powerful and generic framework for converting Rust data structures to and from formats like JSON, BSON, and more. Serde is the essential tool for handling data in any modern web application.
 
-- [**Argon2**](https://docs.rs/argon2/) - Password hashing
-- [**JWT**](https://docs.rs/jsonwebtoken/) - Stateless authentication
-- [**Actix Web Grants**](https://docs.rs/actix-web-grants/) - Authorization
+---
 
-### **Configuration & Development**
+### **Database & Data Handling**
 
-- [**Figment**](https://docs.rs/figment/) - Layered configuration
-- [**Anyhow**](https://docs.rs/anyhow/) - Error handling
-- [**Thiserror**](https://docs.rs/thiserror/) - Custom error types
-- [**Cargo**](https://doc.rust-lang.org/cargo/) - Package manager
-- [**Clippy**](https://doc.rust-lang.org/clippy/) - Linter
-- [**Rustfmt**](https://rust-lang.github.io/rustfmt/) - Formatter
-- [**Tracing**](https://docs.rs/tracing/) - Observability
+This data layer is designed for reliability and seamless integration with the Rust ecosystem, offering choices for both development and production.
 
-### **Deployment**
+- [**SeaORM**](https://www.sea-ql.org/SeaORM/docs/internal-architecture/architecture):
+  - **Role:** Relational ORM.
+  - **Description:** A dynamic and flexible Object-Relational Mapper that helps you work with databases in an idiomatic Rust fashion. It reduces boilerplate and prevents common errors by mapping database tables to Rust structs.
+- [**SQLite (via `sea-orm`'s driver)**](https://www.sqlite.org/docs.html):
+  - **Role:** Embedded Database.
+  - **Description:** A self-contained, file-based SQL database that requires no setup. It is the ideal choice for rapid development, testing, and applications that require an embedded database.
 
-- [**Alpine Linux**](https://www.alpinelinux.org/) - Minimal container base
-- [**Systemd**](https://freedesktop.org/software/systemd/) - Process management
+---
+
+### **Authentication & Security**
+
+A direct and explicit approach to security, providing robust tools to control the authentication and authorization flow in your application.
+
+- [**actix-web-grants**](https://docs.rs/actix-web-grants/latest/actix_web_grants/):
+  - **Role:** Flexible Authorization for Actix Web.
+  - **Description:** Provides a flexible authorization layer to protect endpoints based on user roles and permissions. It can be integrated with various authentication schemes.
+- [**jsonwebtoken**](https://docs.rs/jsonwebtoken/latest/jsonwebtoken/):
+  - **Role:** Stateless JWT Authentication.
+  - **Description:** A crate for creating and verifying JSON Web Tokens (JWTs), the standard for implementing stateless authentication in modern APIs. This is a powerful alternative to traditional session management.
+- [**actix-identity**](https://docs.rs/actix-identity/latest/actix_identity/) & [**actix-session**](https://docs.rs/actix-session/latest/actix_session/):
+  - **Role:** Session Management and User Identity.
+  - **Description:** These middlewares work together to manage stateful user sessions and associate an identity with incoming requests, providing a robust foundation for traditional, cookie-based authentication.
+- [**argon2**](https://docs.rs/argon2/latest/argon2/):
+  - **Role:** Industry-Standard Password Hashing.
+  - **Description:** A crate for securely hashing passwords using the Argon2 algorithm, the winner of the Password Hashing Competition, ensuring that user credentials are protected.
+
+---
+
+### **Development Workflow & Quality**
+
+A cutting-edge Rust development environment emphasizing speed, correctness, and an efficient developer experience.
+
+- [**cargo**](https://doc.rust-lang.org/cargo/):
+  - **Role:** All-in-One Project & Package Manager.
+  - **Description:** The official build tool and package manager for Rust. Cargo handles dependency management, compilation, testing, publishing, and more, serving as the cornerstone of the development workflow.
+- [**Trunk**](https://trunkrs.dev/):
+  - **Role:** WASM Web Application Bundler.
+  - **Description:** The recommended tool for building and packaging Yew applications. Trunk simplifies the development workflow by managing your `index.html` file, handling asset bundling (CSS, images), and providing a live-reloading development server.
+- [**clippy**](https://doc.rust-lang.org/clippy/):
+  - **Role:** Blazing-Fast Rust Linter.
+  - **Description:** An official collection of lints that catches common mistakes and improves your Rust code, ensuring it is idiomatic, performant, and correct.
+- [**rustfmt**](https://rust-lang.github.io/rustfmt/):
+  - **Role:** Code Formatter.
+  - **Description:** A tool for automatically formatting Rust code to a community-agreed-upon style, ensuring consistency across the entire codebase.
+- [**rstest**](https://docs.rs/rstest/latest/rstest/):
+  - **Role:** Fixture-Based Test Framework.
+  - **Description:** Enhances Rust's built-in testing capabilities by providing fixtures and parameterized/table-based testing, making your tests cleaner, more powerful, and easier to maintain.
+
+---
+
+### **Configuration & Error Handling**
+
+A robust foundation for managing application configuration and handling errors gracefully.
+
+- [**Figment**](https://docs.rs/figment/latest/figment/):
+  - **Role:** Layered Application Configuration.
+  - **Description:** A powerful configuration library that can merge settings from multiple sources—such as files (TOML, JSON), environment variables, and defaults—into a single, type-safe configuration struct.
+- [**anyhow**](https://docs.rs/anyhow/latest/anyhow/):
+  - **Role:** Flexible Application-Level Error Handling.
+  - **Description:** Provides a simple and ergonomic way to handle errors in application code. It is ideal for cases where you need to easily propagate errors up the call stack without defining custom error types for every possible failure.
+- [**thiserror**](https://docs.rs/thiserror/latest/thiserror/):
+  - **Role:** Granular Library-Level Error Handling.
+  - **Description:** A procedural macro for creating detailed, specific error types with minimal boilerplate. It is perfect for library authors or for situations where you need to distinguish between different kinds of errors programmatically.
+
+---
+
+### **CLI & TUI Applications**
+
+Extend your reach beyond the web with powerful and performant native applications for the terminal.
+
+- [**clap**](https://docs.rs/clap/latest/clap/):
+  - **Role:** Powerful Command-Line Argument Parsing.
+  - **Description:** The go-to library for building feature-rich and user-friendly command-line interfaces (CLIs). Clap allows you to define arguments, flags, and subcommands with a simple declarative or builder API.
+- [**Ratatui**](https://ratatui.rs/tutorials/):
+  - **Role:** Rich Text-Based User Interfaces (TUIs).
+  - **Description:** A library for creating complex and interactive terminal applications. Ratatui provides a rich set of widgets and a flexible layout system, making it the perfect tool for building professional TUIs.
+
+---
+
+### **Deployment & Observability**
+
+A lightweight, secure, and fully self-reliant deployment architecture designed for simplicity, control, and production-grade monitoring.
+
+- [**Alpine Linux (with a static Rust build)**](https://www.alpinelinux.org/about/):
+  - **Role:** Secure & Minimalist Host OS.
+  - **Description:** A security-focused and resource-efficient Linux distribution that serves as an ideal small-footprint base for a statically linked Rust binary, minimizing the attack surface of your deployment.
+- [**Caddy**](https://caddyserver.com/docs/):
+  - **Role:** High-Performance Reverse Proxy.
+  - **Description:** A powerful web server that can serve as a reverse proxy, handle automatic TLS termination (HTTPS), and load balance requests to your Rust application. Caddy is renowned for its simplicity and security.
+- [**systemd**](https://www.freedesktop.org/software/systemd/man/latest/systemd.service.html):
+  - **Role:** Native Process Management.
+  - **Description:** The standard init system in most modern Linux distributions. You can use simple `.service` files to manage your compiled Rust application, ensuring it runs on startup and is restarted automatically on failure.
+- [**Tracing**](https://docs.rs/tracing/latest/tracing/):
+  - **Role:** Application-Level Observability.
+  - **Description:** A modern framework for instrumenting Rust programs to collect structured, event-based diagnostic information. Use it with `tracing-subscriber` to log events to the console or export them to observability platforms like Jaeger or Datadog for production-grade monitoring.
 
 </details>
 
