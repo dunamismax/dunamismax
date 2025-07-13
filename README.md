@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/dunamismax/full-stack-rust/blob/main/assets/rust-wallpaper-crab-new.png" alt="dunamismax - Full Stack Rust Developer" width="800"/>
+  <img src="https://github.com/dunamismax/full-stack-rust/blob/main/assets/rust-wallpaper-crab-new.png" alt="dunamismax - Full Stack Rust Developer" width="500"/>
 </p>
 
 <p align="center">
