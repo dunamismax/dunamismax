@@ -1,286 +1,169 @@
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/1920px-Go_Logo_Blue.svg.png" alt="The Go programming language logo." width="150"/>
+  <img src="https://github.com/dunamismax/espresso-driven-development/blob/main/shared/static/images/python-coffee.png" alt="Espresso-Driven Development logo." width="150"/>
 </p>
 
 <p align="center">
-  <a href="https://github.com/dunamismax/go-modern-scaffold">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Go+Developer;Creator+of+The+Go-Modern+Stack;Go+%2B+Fiber+%2B+HTMX+%2B+Tailwind;Interactive%2C+Performant%2C+and+Beautiful;Clone%2C+Configure%2C+and+Deploy!" alt="Typing SVG" />
+  <a href="https://github.com/dunamismax/espresso-driven-development">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=8B4513&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Python+Developer;Creator+of+Espresso-Driven+Development;FastAPI+%2B+htmx+%2B+SQLAlchemy+Core;Zero+JavaScript%2C+Maximum+Velocity;Clone%2C+Configure%2C+and+Deploy!" alt="Typing SVG" />
   </a>
 </p>
 
-With over a decade of IT experience, I specialize in building fast, maintainable, and powerful applications with Go. I have authored two distinct, production-ready Go stacks to suit different development philosophies:
+With over a decade of IT experience, I specialize in building fast, maintainable, and powerful web applications with Python. I have created the **Espresso-Driven Development** stack - a radically simple Python hypermedia architecture designed for maximum development velocity and minimalist design.
 
-1. **[The Go-Modern Stack](https://github.com/dunamismax/go-modern-scaffold)**: A feature-rich, batteries-included architecture for building highly interactive and visually appealing web applications with maximum velocity.
-2. **[The Pure Go Standard Library Stack](https://github.com/dunamismax/go-stdlib-scaffold)**: A minimalist, dependency-free blueprint for developers who value ultimate simplicity and long-term stability.
+The **[Espresso-Driven Development](https://github.com/dunamismax/espresso-driven-development)** monorepo represents the zenith of Python web development simplicity: a self-contained, hypermedia-driven stack that eliminates JavaScript build steps while delivering rich, interactive user experiences through the power of FastAPI, htmx, and SQLAlchemy Core.
 
-Both stacks are available as ready-to-clone templates, each with a complete and self-contained development ecosystem orchestrated by a powerful `magefile.go`.
+This repository serves as both a complete reference implementation and a ready-to-clone template, featuring a powerful `justfile` that orchestrates the entire development lifecycle with simple commands like `just blog` or `just dashboard`.
 
 ---
 
-### My Featured Scaffolds
+### My Featured Project
 
-These repositories are the official reference implementations for my two Go stacks. They are living projects that serve as powerful, real-world templates for building robust web applications.
+This repository is the official reference implementation for the Espresso-Driven Development stack. It's a living project that serves as a powerful, real-world template for building robust Python web applications with zero JavaScript complexity.
 
 <p align="center">
-  <a href="https://github.com/dunamismax/go-modern-scaffold">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=go-modern-scaffold&theme=dracula&show_owner=true" alt="go-modern-scaffold Repository" />
-  </a>
-  <a href="https://github.com/dunamismax/go-stdlib-scaffold">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=go-stdlib-scaffold&theme=dracula&show_owner=true" alt="go-stdlib-scaffold Repository" />
+  <a href="https://github.com/dunamismax/espresso-driven-development">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=espresso-driven-development&theme=dracula&show_owner=true" alt="espresso-driven-development Repository" />
   </a>
 </p>
 
 ---
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/3185864/32058716-5ee9b512-ba38-11e7-978a-287eb2a62743.png" alt="Gopher Mage." width="150"/>
+  <img src="https://github.com/dunamismax/espresso-driven-development/blob/main/shared/static/images/python-coffee.png" alt="Python Coffee." width="150"/>
 </p>
 
-### The Ultimate Workflow: The `Magefile`
+### The Ultimate Workflow: The `justfile`
 
-One of the standout features of both scaffold templates is the **`magefile.go`**. This isn't just a build script; it's a complete, Go-native task runner that orchestrates the entire development lifecycle. It provides a seamless, cross-platform experience without ever leaving the Go ecosystem.
+One of the standout features of the Espresso-Driven Development stack is the **`justfile`**. This isn't just a task runner; it's a complete, cross-platform command orchestrator that manages the entire development lifecycle. It provides a seamless experience without complex build processes.
 
 **Why is it so great?**
 
-- **Simplicity:** Manage complex workflows with simple commands like `mage dev` or `mage check:all`.
-- **Consistency:** Ensures every developer on a project uses the exact same commands for building, testing, and quality checks.
-- **Extensibility:** It's written in pure Go, making it easy to customize and extend for any project-specific needs.
+- **Simplicity:** Manage complex workflows with simple commands like `just blog` or `just dashboard`.
+- **Consistency:** Ensures every developer on a project uses the exact same commands for running, testing, and quality checks.
+- **Speed:** Written for maximum velocity - get from idea to running application in seconds.
 
-With a single command, you can run a comprehensive suite of tests, build production-ready binaries, and manage database migrations. It's designed to make you productive from the very first minute.
+With a single command, you can start interactive web applications, run comprehensive tests, and format your entire codebase. It's designed to make you productive from the very first minute.
 
 ---
 
-### My Go Toolkit
+### My Python Toolkit
 
-My toolkit is a reflection of the two stacks I've created: one focused on a rich, modern toolset and the other on pure, dependency-free simplicity. Both are centered around a superior developer experience with Go at the core.
+My toolkit reflects the Espresso-Driven Development philosophy: a hypermedia-first approach that maximizes development velocity while maintaining the power and elegance of Python.
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=go,fiber,tailwind,docker,postgres,redis,sqlite,linux,ubuntu" />
+    <img src="https://skillicons.dev/icons?i=python,fastapi,sqlite,tailwind,html,css,linux,ubuntu" />
   </a>
 </p>
 
 <details open>
-<summary><h3>The Go-Modern Stack (Click to Expand)</h3></summary>
+<summary><h3>The Espresso-Driven Development Stack (Click to Expand)</h3></summary>
 
 ---
 
-This stack is architected for developers aiming to build feature-rich, visually appealing, and highly interactive web and command-line applications with Go. It strategically combines powerful, community-vetted libraries with core Go idioms for a productive and ergonomic development experience. The result is a stack that prioritizes speed, type safety, and modern design without compromising on the core strengths of Go.
+This stack is engineered for the absolute zenith of development speed and minimalist design. It is for developers who want to move from idea to a running application with the fewest possible moving parts. By eliminating the JavaScript ecosystem and stripping away layers of abstraction, this stack uses a powerful, Python-centric hypermedia approach. The result is a radically simple, cohesive, and blazing-fast stack that is trivial to deploy and maintain.
 
 ---
 
-### **Frontend: Rich, Interactive & Beautifully Styled**
+### **Frontend: Hypermedia-Powered, JavaScript-Free**
 
-This frontend architecture is designed for building modern, animated user experiences with maximum velocity. It combines a Go-native templating engine with a complete ecosystem for styling, component-building, and interactivity, enabling the rapid development of dynamic and polished interfaces.
+This frontend architecture is built on the principle of "HTML over the wire." It delivers rich, interactive user experiences without client-side JavaScript by having the server handle all logic and rendering, resulting in an incredibly simple and fast development loop.
 
-- [**Templ**](https://templ.guide/)
-  - **Role:** Type-Safe, Component-Based HTML Templating.
-  - **Description:** A modern templating language that generates Go code from your components, providing compile-time type safety for your HTML. It allows you to build encapsulated, reusable UI elements with pure Go logic, eliminating runtime errors common in string-based templates.
-- [**Tailwind CSS**](https://tailwindcss.com/docs/installation)
-  - **Role:** Utility-First CSS Framework.
-  - **Description:** Enables incredibly fast UI development by providing low-level utility classes that can be composed to build any design directly within your HTML. This removes the need for writing custom CSS and ensures a consistent, scalable styling system.
-- [**DaisyUI**](https://daisyui.com/)
-  - **Role:** Component Library for Tailwind CSS.
-  - **Description:** A plugin for Tailwind CSS that provides a rich set of pre-built, themeable components like buttons, cards, and modals. It drastically speeds up development by allowing you to use simple class names (e.g., `btn-primary`) instead of long strings of utilities.
-- [**HTMX**](https://htmx.org/docs/)
-  - **Role:** HTML-driven Interactivity.
-  - **Description:** Adds dynamic, AJAX-powered interactivity to your application with simple HTML attributes. It allows server-side rendered applications to feel as responsive as a single-page app (SPA) without writing complex JavaScript.
-- [**Hyperscript**](https://hyperscript.org/)
-  - **Role:** Expressive, Event-Driven Scripting.
-  - **Description:** A scripting language designed for modern web development that lives directly in your HTML. It uses an intuitive, English-like syntax to handle user events and DOM manipulations, making it a natural companion to HTMX for client-side interactivity.
-- [**HTMX CSS Transitions**](https://htmx.org/examples/animation/)
-  - **Role:** Native, Lightweight Animations.
-  - **Description:** Leverage HTMX's built-in support for CSS transitions to create smooth animations between page states. By default, HTMX adds classes during its lifecycle, allowing you to easily apply fades, slides, and other effects with pure CSS.
-- [**Animate.css**](https://animate.style/)
-  - **Role:** Drop-in CSS Animation Library.
-  - **Description:** A library of ready-to-use, cross-browser CSS animations. It provides an extensive collection of effects that can be easily triggered by Hyperscript or HTMX events to add polish and visual feedback to your interface.
+- [**htmx**](https://htmx.org/docs/)
+  - **Role:** Declarative Hypermedia Interactivity.
+  - **Description:** The core of the frontend. htmx supercharges HTML with simple attributes, enabling you to trigger server requests and swap page content dynamically. It provides the feel of a modern SPA without writing a single line of JavaScript.
+- [**Hyperscript**](https://hyperscript.org/docs/)
+  - **Role:** Intuitive, Inline Event Handling.
+  - **Description:** A perfect companion to htmx for handling trivial client-side behaviors. Its natural language syntax allows you to add simple interactivity (like toggling a CSS class) directly in your HTML, maintaining perfect locality of behavior.
+- [**Jinja Templates**](https://jinja.palletsprojects.com/en/3.1.x/)
+  - **Role:** Powerful Server-Side HTML Rendering.
+  - **Description:** The definitive templating engine for Python. Jinja constructs the HTML on the server, seamlessly weaving your application's data into templates that are sent directly to the browser as complete, ready-to-display content.
+- [**Tailwind CSS (via Play CDN)**](https://tailwindcss.com/docs/installation/play-cdn)
+  - **Role:** Build-Free, Utility-First Styling.
+  - **Description:** Provides a complete, utility-first CSS framework for crafting bespoke designs with maximum speed. The Play CDN enables access to the full power of Tailwind directly in the browser, completely removing the need for `npm` or any build steps.
 
 ---
 
-### **Backend: Ergonomic, Performant & Well-Structured**
+### **Backend: High-Performance & Explicit**
 
-This backend is built for developer productivity and robust performance, leveraging a high-speed web framework and best-in-class libraries for logging, configuration, and validation.
+This backend foundation is optimized for performance, developer ergonomics, and direct control, with a strong emphasis on Python's type-safety features.
 
-- [**Echo**](https://echo.labstack.com/docs)
-  - **Role:** High-Performance Web Framework.
-  - **Description:** A high-performance, extensible, and minimalist web framework for Go. It features a highly optimized HTTP router with no dynamic memory allocation and offers robust capabilities for building scalable and secure RESTful APIs.
-- [**slog**](https://pkg.go.dev/log/slog)
-  - **Role:** Structured, Level-Based Logging.
-  - **Description:** The official structured logging package in Go's standard library. It enables the creation of machine-readable, key-value pair logs with severity levels, which is essential for effective parsing, filtering, and analysis in modern observability platforms.
-- [**Viper**](https://github.com/spf13/viper)
-  - **Role:** Complete Configuration Management.
-  - **Description:** A comprehensive configuration solution for Go applications. Viper can manage configuration from various sources—including YAML, JSON, and TOML files, environment variables, and remote key-value stores—unifying them into a single, accessible interface.
-- [**Validator**](https://pkg.go.dev/github.com/go-playground/validator/v10)
-  - **Role:** Struct-Tag Based Data Validation.
-  - **Description:** The de-facto standard for data validation in Go. It enables declarative validation on struct fields using simple tags (e.g., `validate:"required,email"`), integrating seamlessly with frameworks like Echo to ensure data integrity.
-
----
-
-### **TUI (Terminal User Interface): Beautiful & Interactive Command-Line Apps**
-
-For building polished and modern command-line applications, the [**Charm Bracelet**](https://charm.sh/) ecosystem provides a complete and elegant solution.
-
-- [**Bubble Tea**](https://github.com/charmbracelet/bubbletea)
-  - **Role:** Stateful TUI Framework.
-  - **Description:** Brings The Elm Architecture (a functional, model-view-update pattern) to terminal applications, making it ideal for building complex, interactive, and stateful TUIs that are easy to reason about and maintain.
-- [**Bubbles**](https://github.com/charmbracelet/bubbles)
-  - **Role:** Reusable TUI Components.
-  - **Description:** A library of common, ready-to-use TUI components—such as spinners, text inputs, and tables—that are designed to work with Bubble Tea, dramatically accelerating the development of sophisticated interfaces.
-- [**Lipgloss**](https://github.com/charmbracelet/lipgloss)
-  - **Role:** Declarative Terminal Styling.
-  - **Description:** Offers a fluent, expressive API for styling terminal text. It makes it simple to define colors, layouts, borders, and margins, enabling you to design beautiful and readable TUIs with ease.
+- [**FastAPI**](https://fastapi.tiangolo.com/)
+  - **Role:** Modern Python Web Framework.
+  - **Description:** The high-performance engine for the entire application. It serves the hypermedia-driven frontend and provides a robust, type-safe foundation for building any necessary APIs with automatic data validation and documentation.
+- [**SQLAlchemy Core**](https://docs.sqlalchemy.org/en/20/core/)
+  - **Role:** Powerful SQL Expression Toolkit.
+  - **Description:** Provides the full power of SQL through a Pythonic expression language. This gives you direct, granular control over your database interactions without the indirection of a traditional ORM, promoting clear and optimized queries.
+- [**Uvicorn**](https://www.uvicorn.org/)
+  - **Role:** Lightning-Fast ASGI Server.
+  - **Description:** A high-performance server that acts as the production-ready engine for your FastAPI application, serving requests with incredible speed and efficiency.
+- [**Pydantic V2**](https://docs.pydantic.dev/latest/)
+  - **Role:** Bulletproof Data Validation.
+  - **Description:** Guarantees data integrity throughout your application. It uses Python type hints to validate, parse, and serialize data, catching errors early and integrating seamlessly with FastAPI.
 
 ---
 
-### **Database & Caching: Fast, Embedded & Type-Safe**
+### **Data & Background Processing: Lean & Self-Contained**
 
-This data layer is built around SQLite for simplicity, performance, and portability. It combines a modern Go driver with generated, type-safe Go code and a pure-Go migration tool for a robust and maintainable data persistence strategy.
-
-- [**SQLite**](https://www.sqlite.org/index.html)
-  - **Role:** Embedded SQL Database Engine.
-  - **Description:** A C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine. SQLite is the most used database engine in the world, perfect for applications that need portability, reliability, and simplicity without the overhead of a separate server process.
-- [**modernc.org/sqlite**](https://pkg.go.dev/modernc.org/sqlite)
-  - **Role:** Pure Go SQLite Driver.
-  - **Description:** A pure Go SQLite driver that is a great choice for modern Go applications as it doesn't require CGo, which simplifies cross-compilation and deployment. It provides a reliable interface between your Go application and the SQLite database through the standard `database/sql` package.
-- [**sqlc**](https://docs.sqlc.dev/)
-  - **Role:** Type-Safe SQL Code Generation.
-  - **Description:** Generates fully type-safe, idiomatic Go code from your SQL schema and queries. This allows you to write raw SQL for maximum control and performance against your SQLite database while benefiting from compile-time safety, eliminating an entire class of runtime database errors.
-- [**Goose**](https://github.com/pressly/goose)
-  - **Role:** Database Schema Migrations.
-  - **Description:** A powerful, database-agnostic migration tool that lets you manage your database's schema evolution using SQL or Go functions. It operates with a simple CLI and tracks migration history, making it straightforward to apply, roll back, and verify schema changes in a sequential, version-controlled manner.
-- [**Ristretto**](https://github.com/dgraph-io/ristretto)
-  - **Role:** High-Performance In-Process Cache.
-  - **Description:** A fast, concurrent, and memory-bounded in-process cache from Dgraph. It is designed to achieve high hit ratios with low memory overhead, making it an excellent choice for reducing read latency on frequently accessed data without adding external dependencies.
-
----
-
-### **Development Workflow: Automated, Rapid & High-Quality**
-
-A modern toolchain using best-in-class tools to automate common tasks, ensure code quality, and maintain a fast and efficient developer feedback loop.
-
-- [**Mage**](https://magefile.org/)
-  - **Role:** Task Runner / Build System.
-  - **Description:** An elegant, Make-like tool that allows you to define build tasks (like compiling, testing, or linting) as simple Go functions within a `magefile.go`. This provides a clean, cross-platform, and idiomatic way to automate your project's workflow.
-- [**Air**](https://github.com/cosmtrek/air)
-  - **Role:** Live Reloading for Development.
-  - **Description:** A powerful command-line utility that watches for file changes in your project and automatically recompiles and restarts your application. Air provides a rapid, real-time feedback loop that is essential for productive web development.
-- [**Prettier Tailwind CSS Plugin**](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
-  - **Role:** Automatic Class Sorting.
-  - **Description:** An official Prettier plugin that automatically sorts your Tailwind CSS classes in a consistent, logical order. This keeps your HTML clean and readable, significantly improving maintainability with zero manual effort.
-
----
-
-### **Testing: Idiomatic & Dependency-Free**
-
-This stack relies exclusively on Go's powerful, built-in testing framework to ensure code quality and correctness without external dependencies.
-
-- [**Go `testing` Package**](https://pkg.go.dev/testing)
-  - **Role:** Core Testing Framework.
-  - **Description:** Go's standard library for writing unit, integration, and benchmark tests. Assertions are handled with simple `if` statements and `t.Errorf`, which keeps tests explicit, clear, and easy to maintain while avoiding third-party dependencies.
-
-</details>
-
-<details>
-
-<summary><h3>The Pure Go Standard Library Stack (Click to Expand)</h3></summary>
-
----
-
-This stack represents a minimalist, robust architecture for building secure and performant web applications. It is composed entirely of a Go backend that leverages the standard library, removing all external dependencies. The stack prioritizes ultimate simplicity, zero-dependency deployment, and long-term stability by relying exclusively on Go's continuously evolving native capabilities. The frontend is reduced to plain HTML and CSS, with no JavaScript.
-
----
-
-### **Frontend**
-
-The frontend architecture is intentionally simplified to its core components, delivering a fast, accessible, and extremely maintainable user experience by avoiding all client-side scripting and build tools.
-
-- [**Go `html/template`**](https://pkg.go.dev/html/template)
-  - **Role:** Secure HTML Templating.
-  - **Description:** Go's standard library for server-side HTML rendering. It provides automatic, context-aware escaping to prevent Cross-Site Scripting (XSS). As of Go 1.24, it also supports `range-over-func` and `range-over-int`, allowing for more flexible iteration patterns directly within templates.
-- [**Plain CSS**](https://developer.mozilla.org/en-US/docs/Web/CSS)
-  - **Role:** Styling.
-  - **Description:** A standard, handwritten CSS file served as a static asset. This approach removes the need for pre-processors or build steps, maximizing simplicity and performance.
-
----
-
-### **Backend**
-
-A lean, highly performant, and secure backend service architected using only the Go standard library for maximum stability and minimal attack surface.
-
-- [**Go (1.24+)**](https://go.dev/doc/)
-  - **Role:** Backend Language.
-  - **Description:** A statically typed, compiled language known for performance, concurrency, and simplicity. The Go 1.22+ `for` loop semantics prevent common concurrency bugs by creating new variables for each iteration. It compiles to a single, dependency-free binary, streamlining deployment.
-- [**`net/http`**](https://pkg.go.dev/net/http)
-  - **Role:** Web Server & Advanced Routing.
-  - **Description:** The standard library's package for all HTTP-related tasks. As of Go 1.22, the `http.ServeMux` includes an enhanced request router that supports method-based routing (e.g., `POST /items`) and wildcards (e.g., `/items/{id}`), removing the need for third-party frameworks. Path values are easily accessed via `r.PathValue("id")`.
-- [**Custom Validation Functions**](https://www.alexedwards.net/blog/validation-snippets-for-go)
-  - **Role:** Data Validation.
-  - **Description:** Data validation is handled by simple, explicit Go functions. Go 1.24's full support for generic type aliases allows for more reusable and readable validation logic.
-- [**`os`**](https://pkg.go.dev/os)
-  - **Role:** Secure Filesystem Access & Environment Loading.
-  - **Description:** Configuration is loaded from environment variables using `os.Getenv`. For file operations, Go 1.24's `os.Root` provides directory-limited filesystem access, preventing directory traversal attacks and ensuring that file-serving or upload handlers operate within a secure boundary.
-
----
-
-### **Database & Caching**
-
-A zero-dependency, in-process data layer that maximizes simplicity and speed by using Go's native database interface and advanced concurrency and memory primitives.
+This data layer is designed for ultimate simplicity, with zero external service dependencies.
 
 - [**SQLite**](https://www.sqlite.org/docs.html)
-  - **Role:** Embedded Relational Database.
-  - **Description:** A self-contained, serverless SQL database engine that runs in-process, eliminating operational overhead and making it ideal for a wide range of production workloads.
-- [**`database/sql`**](https://pkg.go.dev/database/sql)
-  - **Role:** SQL Database Interface.
-  - **Description:** The standard library’s lean interface for SQL databases. As of Go 1.22, it includes the generic `sql.Null[T]` type, which simplifies scanning nullable columns, reduces boilerplate, and improves type safety.
-- [**SQL/Go Migration Scripts**](https://amacneil.github.io/dbmate/2022/01/21/go-database-migrations-without-orm.html)
-  - **Role:** Database Schema Migrations.
-  - **Description:** Migrations are managed with numbered SQL files or simple Go programs using `database/sql`. The concise `for i := range 10` syntax from Go 1.22 can simplify scripting.
-- [**`sync`, `maps` & `unique`**](https://pkg.go.dev/sync)
-  - **Role:** High-Performance In-Process Caching.
-  - **Description:** High-performance, in-process caching is achieved with a standard Go map and a `sync.RWMutex`. As of Go 1.24, map performance is significantly improved due to a new Swiss Table implementation, directly boosting cache speed. For further memory optimization, Go 1.23's `unique` package can be used to canonicalize cache keys or values, reducing memory footprint.
+  - **Role:** Zero-Configuration Embedded Database.
+  - **Description:** A self-contained, file-based SQL database that requires no setup or administration. It is the gold standard for rapid prototyping, embedded applications, and simple, self-hosted deployments.
+- [**FastAPI BackgroundTasks**](https://fastapi.tiangolo.com/tutorial/background-tasks/)
+  - **Role:** Simple, In-Process Task Execution.
+  - **Description:** For fire-and-forget operations like sending emails or notifications. These tasks run in the background after a response is sent, requiring zero external dependencies, message brokers, or worker processes.
 
 ---
 
-### **Testing**
+### **Development Workflow: Modern & Fast**
 
-A robust testing suite that relies exclusively on Go's powerful, built-in testing framework to ensure code quality and correctness.
+A cutting-edge Python development environment emphasizing speed, consistency, and a delightful developer experience.
 
-- [**`testing`**](https://pkg.go.dev/testing)
-  - **Role:** Core Testing Framework.
-  - **Description:** The built-in package for unit, integration, and benchmark tests. Go 1.24's `go vet` includes a new `tests` analyzer that identifies common mistakes in test declarations. Assertions use simple `if` statements with `t.Errorf`, keeping tests clear and dependency-free.
-
----
-
-### **CLI, Development & Deployment**
-
-A minimalist and modern toolchain using built-in Go commands and standard, universally available tools for a smooth developer workflow.
-
-- [**`flag`**](https://pkg.go.dev/flag)
-  - **Role:** Command-Line Interface.
-  - **Description:** The standard library's package for parsing command-line options. It is sufficient for building CLIs for most applications without third-party dependencies.
-- [**Mage / Magefile (with `go.mod` toolchain)**](https://magefile.org/)
-  - **Role:** Task Runner / Build System.
-  - **Description:** As of Go 1.24, Mage and other build tools are managed declaratively via `tool` directives in the `go.mod` file. This replaces the `tools.go` workaround and ensures version-locked, reproducible builds across all development and CI environments.
-- [**Simple Shell Scripts**](https://dev.to/ignatk/go-live-reloading-with-a-shell-script-2305)
-  - **Role:** Live Reloading.
-  - **Description:** During development, a simple shell script can watch for file changes, automatically recompiling and restarting the server for a rapid feedback loop.
+- [**uv**](https://docs.astral.sh/uv/)
+  - **Role:** All-in-One Python Project & Package Manager.
+  - **Description:** An extremely fast tool written in Rust that replaces pip and venv. It provides a 10-100x speedup for dependency management, making your development workflow significantly faster.
+- [**Ruff**](https://docs.astral.sh/ruff/)
+  - **Role:** Blazing-Fast Python Linter & Formatter.
+  - **Description:** Combines the functionality of dozens of tools like Flake8, isort, and Black into one Rust-powered binary, providing near-instantaneous feedback and code formatting.
+- [**mypy**](https://mypy.readthedocs.io/en/stable/)
+  - **Role:** Static Type Checker for Error Prevention.
+  - **Description:** The standard static type checker for Python. It analyzes your code to catch type-related errors before they happen at runtime, ensuring correctness and improving code quality.
+- [**just**](https://github.com/casey/just)
+  - **Role:** A Modern Command Runner.
+  - **Description:** A simple and effective tool for saving and running project-specific commands. It acts as a modern, cross-platform alternative to `make` for common tasks like starting the server or running tests.
 
 ---
 
-### **CI/CD**
+### **Authentication & Security: Lean & Controlled**
 
-A fully automated, robust pipeline using modern Go tooling to build, test, and deploy the application, ensuring consistency and quality.
+A direct and transparent approach to security, giving you full control over the authentication flow using the framework's own robust tools.
 
-- [**GitHub Actions**](https://docs.github.com/en/actions)
-  - **Role:** Automated CI/CD Platform.
-  - **Description:** A CI/CD workflow defined in the project repository automates the entire lifecycle. The pipeline performs:
-    - **Linting & Formatting:** Runs `gofmt` and `go vet` to enforce code style and identify issues.
-    - **Testing:** Executes the test suite with `go test -json`, which (as of Go 1.24) provides structured JSON output for reliable, machine-readable test results.
-    - **Vulnerability Scanning:** Runs `govulncheck` to scan for security vulnerabilities.
-    - **Build:** Compiles the application into a single binary using `go build -json`, capturing structured build information for easier artifact management and error analysis.
-- [**`go build` Scripts (via Magefile)**](https://www.digitalocean.com/community/tutorials/how-to-build-go-executables-for-multiple-platforms-on-ubuntu-20-04)
-  - **Role:** Release Automation.
-  - **Description:** A simple script using `go build` with different `GOOS` and `GOARCH` environment variables automates cross-compilation. Go 1.24 automatically embeds version control information into the binary for improved traceability. The build process benefits from Profile-Guided Optimization (PGO), whose build-time overhead was significantly reduced in Go 1.23.
+- [**FastAPI Middleware & Dependencies**](https://fastapi.tiangolo.com/tutorial/middleware/)
+  - **Role:** Custom Session-Based Authentication.
+  - **Description:** Build a lean and transparent authentication system using FastAPI's own tools. A middleware can create a secure, cookie-based session, and a dependency can protect specific routes, giving you full control over the user flow.
+- [**passlib[bcrypt]**](https://passlib.readthedocs.io/en/stable/)
+  - **Role:** Industry-Standard Password Hashing.
+  - **Description:** A crucial library for protecting user credentials. It provides a simple and secure way to hash and verify passwords using the proven and adaptive bcrypt algorithm.
+
+---
+
+### **Deployment & Operations: Minimalist & Self-Hosted**
+
+A lightweight, secure, and fully self-reliant deployment architecture designed for ultimate control and simplicity.
+
+- [**Alpine Linux**](https://docs.alpinelinux.org/user-handbook/overview/)
+  - **Role:** Secure & Minimalist Host OS.
+  - **Description:** A security-focused and resource-efficient Linux distribution that serves as the perfect small-footprint base for running your application on a VPS.
+- [**Caddy**](https://caddyserver.com/docs/)
+  - **Role:** Zero-Effort HTTPS Web Server.
+  - **Description:** A powerful web server that provides automatic, hands-free HTTPS certificate provisioning and renewal. It serves as a secure reverse proxy, directing traffic to your application with minimal configuration.
+- [**systemd**](https://www.freedesktop.org/software/systemd/man/systemd.service.html)
+  - **Role:** Native Process Management.
+  - **Description:** The init system built into most modern Linux distributions. Use simple `.service` files to manage your Uvicorn process, ensuring it runs on startup and restarts automatically without adding third-party dependencies.
+- [**Python `logging` Module**](https://docs.python.org/3/library/logging.html)
+  - **Role:** Dependency-Free Application Logging.
+  - **Description:** The standard Python library for emitting event logs from your application. It can be configured to write to standard output or files, providing a simple, robust, and entirely self-contained logging solution.
 
 </details>
 
@@ -288,12 +171,10 @@ A fully automated, robust pipeline using modern Go tooling to build, test, and d
 
 ### Support My Work
 
-If you find my work on these Go stacks valuable, please consider supporting me. It helps me dedicate more time to creating and maintaining high-quality open-source projects.
+If you find my work on the Espresso-Driven Development stack valuable, please consider supporting me. It helps me dedicate more time to creating and maintaining high-quality open-source projects.
 
 <p align="center">
-  <a href="https://coff.ee/dunamismax" target="_blank">
-    <img src="https://raw.githubusercontent.com/egonelbre/gophers/master/.thumb/animation/buy-morning-coffee-3x.gif" alt="Buy Me a Coffee" />
-  </a>
+  <a href="https://www.buymeacoffee.com/dunamismax" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 </p>
 
 ---
@@ -309,5 +190,5 @@ If you find my work on these Go stacks valuable, please consider supporting me. 
 </p>
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/egonelbre/gophers/refs/heads/master/.thumb/animation/2bit-sprite/demo.gif" alt="Gopher Sprite Animation" />
+    <img src="https://github.com/dunamismax/espresso-driven-development/blob/main/shared/static/images/python-coffee.png" alt="Espresso-Driven Development" width="100"/>
 </p>
