@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/dunamismax/lua-scripts/blob/main/lua.jpg" alt="dunamismax - Lua Programming Specialist" width="500"/>
+  <img src="lua-new.png" alt="lua image" width="500"/>
 </p>
 
 <p align="center">
