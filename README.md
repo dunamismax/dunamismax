@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=000080&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Lua+Programming+Specialist;Creator+of+Complete+Lua+Ecosystems;Application+Development+%2B+Game+Development+%2B+Scripting;CLI+Tools+%2B+Web+APIs+%2B+VR+Games+%2B+Fantasy+Consoles;Production-Ready+GitHub+Templates+for+Entire+Lua+Stack;LuaJIT+%2B+L%C3%96VE+%2B+Lapis+%2B+Solar2D+%2B+PICO-8;Click+Use+This+Template+on+Any+Repository+to+Start;Zero+JavaScript%2C+Maximum+Simplicity+and+Performance;Complete+Monorepos+with+Shared+Libraries+%2B+Demo+Apps;Cross-Platform+Development+Desktop+%2B+Mobile+%2B+Web+%2B+VR;Professional+Documentation+and+Best+Practices+Included;Comprehensive+Development+Tools+%2B+Build+Automation;Modern+Lua+Development+Workflows+for+Rapid+Iteration;From+Command+Line+to+Cross+Platform+Pure+Lua;Template+Based+Development+Production+Grade+Infrastructure;Lightweight+Fast+Memory+Efficient+Solutions;Single+Language+Everywhere+Lua+Ecosystem+Mastery" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=000080&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Lua+Programming+Specialist;Creator+of+Complete+Lua+Ecosystems;Application+Development+Specialist;Game+Development+Expert;Scripting+%26+Automation+Architect;Production-Ready+GitHub+Templates;CLI+Tools+%2B+Web+APIs+%2B+Mobile+Apps;VR+Games+%2B+Fantasy+Consoles;LuaJIT+%2B+L%C3%96VE+%2B+Lapis+%2B+Solar2D;PICO-8+%2B+TIC-80+%2B+argparse+%2B+LTUI;Click+Use+This+Template+to+Start;Zero+JavaScript%2C+Pure+Lua+Power;Complete+Monorepos+with+Shared+Libraries;Cross-Platform+Excellence;Professional+Documentation+Included;Modern+Development+Workflows;Template+Based+Development;Production+Grade+Infrastructure;Lightweight+%26+Memory+Efficient;Single+Language+Ecosystem+Mastery;From+CLI+to+VR+in+Pure+Lua;Maximum+Versatility+%26+Performance" alt="Typing SVG" />
   </a>
 </p>
 
@@ -28,27 +28,15 @@
 
 ## About Me
 
-With over a decade of IT experience, I specialize in developing high-performance, lightweight, and maintainable applications using Lua across the entire technology stack. I have architected three comprehensive **production-grade GitHub templates** that provide complete foundations for modern development using Lua in application development, game development, and scripting/automation.
+IT Director with 10+ years experience specializing in Lua ecosystem development. I've created three **production-grade GitHub templates** covering the complete Lua stack - from CLI tools to VR games.
 
-**Specialization**: Creating complete ecosystems using Lua throughout every layer - from command-line tools to web APIs, from 2D games to VR experiences, from automation scripts to cross-platform mobile apps.
-
-**Philosophy**:
-
-- **Single Language Everywhere** - Lua from CLI tools to web backends to game engines to automation scripts
-- **Simplicity and Performance** - Lightweight, fast, and memory-efficient solutions without unnecessary complexity
-- **Production-Ready Templates** - Complete GitHub templates with shared libraries, demo applications, and professional tooling
-- **Cross-Platform Excellence** - Write once, run everywhere with native performance and platform-specific optimizations
-- **Developer Experience First** - Modern workflows with live reloading, comprehensive documentation, and automated builds
+**Philosophy**: Single language, maximum versatility. Lua everywhere - lightweight, fast, and cross-platform.
 
 ---
 
 ## Featured Projects: Complete Lua Ecosystems
 
-I have created three comprehensive **GitHub templates** that demonstrate the full power and versatility of Lua across different domains. Each template represents a complete, production-ready foundation that you can use to bootstrap your own projects immediately.
-
 ### **[Lua Applications](https://github.com/dunamismax/lua-apps)** - Complete Application Development Stack
-
-**Production-Ready GitHub Template** for building modern applications across all platforms using the complete Lua ecosystem.
 
 <p align="center">
   <a href="https://github.com/dunamismax/lua-apps">
@@ -58,16 +46,13 @@ I have created three comprehensive **GitHub templates** that demonstrate the ful
 
 **Key Features:**
 
-- **CLI Applications** - Professional command-line tools with argparse and full help systems
-- **Web Applications** - High-performance APIs built with Lapis on OpenResty
-- **Static Site Generation** - Fast Markdown-to-HTML conversion with YAML frontmatter
-- **Mobile & Desktop Apps** - Cross-platform applications using Solar2D framework
-- **Shared Libraries** - Production-tested utilities for HTTP, database, logging, and more
-- **Complete Tooling** - Setup scripts, testing framework, build automation, and comprehensive docs
+- CLI tools with argparse & help systems
+- Web APIs with Lapis on OpenResty
+- Static site generation with YAML frontmatter
+- Mobile & desktop apps via Solar2D
+- Shared libraries & comprehensive tooling
 
 ### **[Lua Gaming](https://github.com/dunamismax/lua-gaming)** - Complete Game Development Stack
-
-**Production-Ready GitHub Template** for game development using the complete Lua gaming ecosystem from 2D to VR to fantasy consoles.
 
 <p align="center">
   <a href="https://github.com/dunamismax/lua-gaming">
@@ -77,16 +62,13 @@ I have created three comprehensive **GitHub templates** that demonstrate the ful
 
 **Key Features:**
 
-- **2D Game Development** - LÖVE framework with physics, audio, and cross-platform deployment
-- **3D & VR Development** - LÖVR framework for immersive experiences with hand tracking
-- **Fantasy Console Games** - PICO-8 and TIC-80 development with retro aesthetics and creative constraints
-- **Shared Game Libraries** - Animation, collision detection, math utilities, and game state management
-- **Demo Games** - Fully functional examples: Asteroids (LÖVE), Space Explorer (LÖVR), Snake (PICO-8), Platformer (TIC-80)
-- **Modern Workflow** - Project templates, build scripts, and automated game packaging
+- 2D games with LÖVE framework
+- 3D & VR with LÖVR & hand tracking
+- Fantasy consoles: PICO-8 & TIC-80
+- Shared game libraries & utilities
+- Demo games for each platform
 
 ### **[Lua Scripts](https://github.com/dunamismax/lua-scripts)** - Complete Scripting & Automation Stack
-
-**Production-Ready GitHub Template** for modern scripting, automation, and CLI tool development using the complete Lua ecosystem.
 
 <p align="center">
   <a href="https://github.com/dunamismax/lua-scripts">
@@ -96,20 +78,15 @@ I have created three comprehensive **GitHub templates** that demonstrate the ful
 
 **Key Features:**
 
-- **CLI Tools** - File managers, system monitors, JSON processors, and network utilities
-- **Terminal UI Applications** - Interactive task managers and system dashboards using LTUI
-- **Automation Scripts** - Directory synchronization, log analysis, and system administration
-- **Networking Applications** - HTTP clients, servers, DNS tools, and API integrations
-- **Professional Infrastructure** - Configuration management, structured logging, and error handling
-- **Development Tools** - Code generation, testing frameworks, and deployment automation
+- CLI tools & system monitors
+- Terminal UIs with LTUI
+- Automation & networking scripts
+- Professional logging & config management
+- Development & deployment tools
 
 ---
 
----
-
-## Tech Stack Mastery
-
-My expertise spans the complete Lua ecosystem, from lightweight scripting to high-performance applications:
+## Tech Stack
 
 <p align="center">
   <a href="https://skillicons.dev">
@@ -117,69 +94,24 @@ My expertise spans the complete Lua ecosystem, from lightweight scripting to hig
   </a>
 </p>
 
-### **Core Lua Technologies**
-
-- **[Lua 5.4](https://www.lua.org/)** - The elegant, lightweight programming language
-- **[LuaJIT](https://luajit.org/)** - High-performance Just-In-Time compiler for demanding applications
-- **[LuaRocks](https://luarocks.org/)** - Package management and dependency handling
-
-### **Application Development**
-
-- **[Lapis](https://leafo.net/lapis/)** - High-performance web framework running on OpenResty
-- **[Solar2D](https://solar2d.com/)** - Cross-platform framework for mobile and desktop apps
-- **[argparse](https://github.com/mpeterv/argparse)** - Professional command-line argument parsing
-
-### **Game Development**
-
-- **[LÖVE (Love2D)](https://love2d.org/)** - 2D game framework with physics and cross-platform deployment
-- **[LÖVR](https://lovr.org/)** - 3D and VR game framework with spatial audio and hand tracking
-- **[PICO-8](https://www.lexaloffle.com/pico-8.php)** - Fantasy console for retro game development
-- **[TIC-80](https://tic80.com/)** - Open-source fantasy console with built-in development tools
-
-### **System Integration**
-
-- **[LuaFileSystem](https://lunarmodules.github.io/luafilesystem/)** - Advanced file system operations
-- **[LuaSocket](https://lunarmodules.github.io/luasocket/)** - Comprehensive networking and HTTP clients
-- **[LTUI](https://github.com/tboox/ltui)** - Terminal user interface framework
-
-### **Shared Libraries & Utilities**
-
-- **[lume](https://github.com/rxi/lume)** - Essential utility functions and functional programming
-- **[tween.lua](https://github.com/kikito/tween.lua)** - Professional animation and easing
-- **[json.lua](https://github.com/rxi/json.lua)** - Fast JSON processing and data interchange
+**Core**: Lua 5.4, LuaJIT, LuaRocks  
+**Web**: Lapis, OpenResty, LuaSocket  
+**Mobile**: Solar2D, cross-platform deployment  
+**Games**: LÖVE (2D), LÖVR (3D/VR), PICO-8, TIC-80  
+**CLI**: argparse, LTUI, LuaFileSystem  
+**Utils**: lume, tween.lua, json.lua
 
 ---
 
 ## What I Build
 
-### **Production Applications**
-
-- **Web APIs & Services** - High-performance Lapis servers with OpenResty and PostgreSQL
-- **Cross-Platform Mobile Apps** - Solar2D applications for iOS, Android, and desktop
-- **Professional CLI Tools** - System administration utilities with comprehensive help systems
-- **Static Site Generators** - Fast Markdown processors with templating and asset management
-
-### **Game Development**
-
-- **2D Indie Games** - LÖVE-powered games with physics, particle effects, and smooth animations
-- **3D & VR Experiences** - Immersive LÖVR applications with spatial audio and hand controllers
-- **Retro Fantasy Console Games** - Pixel-perfect PICO-8 and TIC-80 games with authentic aesthetics
-- **Cross-Platform Game Engines** - Shared libraries for collision detection, game states, and utilities
-
-### **Automation & Scripting**
-
-- **System Administration Tools** - File managers, log analyzers, and monitoring utilities
-- **Terminal User Interfaces** - Interactive dashboards and task managers using LTUI
-- **Network Applications** - HTTP clients, API wrappers, and network monitoring tools
-- **Build & Deployment Systems** - Automated workflows for testing, packaging, and distribution
-
----
+**Applications**: Web APIs, mobile apps, CLI tools, static generators  
+**Games**: 2D indies, 3D/VR experiences, fantasy console games  
+**Automation**: System tools, terminal UIs, network utilities
 
 ---
 
 ## Support My Work
-
-If you find my Lua ecosystem work valuable for your development journey, consider supporting continued development:
 
 <p align="center">
   <a href="https://www.buymeacoffee.com/dunamismax" target="_blank">
@@ -189,12 +121,10 @@ If you find my Lua ecosystem work valuable for your development journey, conside
 
 **Other Ways to Support:**
 
-- Star the [Lua Apps](https://github.com/dunamismax/lua-apps), [Lua Gaming](https://github.com/dunamismax/lua-gaming), and [Lua Scripts](https://github.com/dunamismax/lua-scripts) repositories
-- Use the templates to build your own applications and games
-- Report bugs and suggest improvements
-- Share the projects with other Lua developers
-- Contribute code, documentation, or examples
-- Showcase projects built with the templates
+- Star the repos: [Lua Apps](https://github.com/dunamismax/lua-apps), [Lua Gaming](https://github.com/dunamismax/lua-gaming), [Lua Scripts](https://github.com/dunamismax/lua-scripts)
+- Use the templates for your projects
+- Share with other developers
+- Contribute improvements
 
 ---
 
