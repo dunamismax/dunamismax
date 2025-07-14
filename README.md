@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=000080&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Lua+Programming+Specialist;Creator+of+Complete+Lua+Ecosystems;Application+Development+Game+Development+Scripting+Automation;CLI+Tools+Web+APIs+VR+Games+Fantasy+Consoles;Production-Ready+GitHub+Templates+for+Entire+Lua+Stack;LuaJIT+LÖVE+Lapis+Solar2D+PICO-8+TIC-80;Click+Use+This+Template+on+Any+Repository+to+Start;Zero+JavaScript+Maximum+Simplicity+and+Performance;Complete+Monorepos+with+Shared+Libraries+Demo+Apps;Cross-Platform+Development+Desktop+Mobile+Web+VR;Professional+Documentation+and+Best+Practices+Included;Comprehensive+Development+Tools+Build+Automation;Modern+Lua+Development+Workflows+Rapid+Iteration;From+Command+Line+to+Cross+Platform+Pure+Lua;Template+Based+Development+Production+Grade+Infrastructure;Lightweight+Fast+Memory+Efficient+Solutions;Single+Language+Everywhere+Lua+Ecosystem+Mastery" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=000080&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Lua+Programming+Specialist;Creator+of+Complete+Lua+Ecosystems;Application+Development+%2B+Game+Development+%2B+Scripting;CLI+Tools+%2B+Web+APIs+%2B+VR+Games+%2B+Fantasy+Consoles;Production-Ready+GitHub+Templates+for+Entire+Lua+Stack;LuaJIT+%2B+L%C3%96VE+%2B+Lapis+%2B+Solar2D+%2B+PICO-8;Click+Use+This+Template+on+Any+Repository+to+Start;Zero+JavaScript%2C+Maximum+Simplicity+and+Performance;Complete+Monorepos+with+Shared+Libraries+%2B+Demo+Apps;Cross-Platform+Development+Desktop+%2B+Mobile+%2B+Web+%2B+VR;Professional+Documentation+and+Best+Practices+Included;Comprehensive+Development+Tools+%2B+Build+Automation;Modern+Lua+Development+Workflows+for+Rapid+Iteration;From+Command+Line+to+Cross+Platform+Pure+Lua;Template+Based+Development+Production+Grade+Infrastructure;Lightweight+Fast+Memory+Efficient+Solutions;Single+Language+Everywhere+Lua+Ecosystem+Mastery" alt="Typing SVG" />
   </a>
 </p>
 
@@ -12,10 +12,16 @@
   <a href="https://www.lua.org/"><img src="https://img.shields.io/badge/Lua-5.4+-000080.svg?logo=lua" alt="Lua Version"></a>
   <a href="https://luajit.org/"><img src="https://img.shields.io/badge/LuaJIT-2.1+-blue.svg" alt="LuaJIT Version"></a>
   <a href="https://love2d.org/"><img src="https://img.shields.io/badge/L%C3%96VE-11.4-pink.svg?logo=love2d" alt="LÖVE Version"></a>
+  <a href="https://lovr.org/"><img src="https://img.shields.io/badge/L%C3%96VR-0.17-purple.svg" alt="LÖVR Version"></a>
   <a href="https://leafo.net/lapis/"><img src="https://img.shields.io/badge/Lapis-1.9+-green.svg" alt="Lapis Version"></a>
   <a href="https://solar2d.com/"><img src="https://img.shields.io/badge/Solar2D-2024-orange.svg" alt="Solar2D"></a>
   <a href="https://www.lexaloffle.com/pico-8.php"><img src="https://img.shields.io/badge/PICO--8-0.2.5-orange.svg" alt="PICO-8"></a>
   <a href="https://tic80.com/"><img src="https://img.shields.io/badge/TIC--80-1.1-red.svg" alt="TIC-80"></a>
+  <a href="https://github.com/mpeterv/argparse"><img src="https://img.shields.io/badge/argparse-0.7+-red.svg" alt="argparse"></a>
+  <a href="https://github.com/tboox/ltui"><img src="https://img.shields.io/badge/LTUI-2.7-green.svg" alt="LTUI"></a>
+  <a href="https://lunarmodules.github.io/luafilesystem/"><img src="https://img.shields.io/badge/LuaFileSystem-1.8-orange.svg" alt="LFS"></a>
+  <a href="https://lunarmodules.github.io/luasocket/"><img src="https://img.shields.io/badge/LuaSocket-3.1-red.svg" alt="LuaSocket"></a>
+  <a href="https://github.com/dunamismax/lua-apps/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
 </p>
 
 ---
