@@ -1,87 +1,63 @@
 <p align="center">
-  <img src="lua-new.png" alt="lua image" width="400"/>
+  <img src="https://github.com/dunamismax/c-foundry/blob/main/c.png" alt="C Foundry Logo" width="300" />
 </p>
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=000080&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Lua+Programming+Specialist;Creator+of+Complete+Lua+Ecosystems;Application+Development+Specialist;Game+Development+Expert;Scripting+%26+Automation+Architect;Production-Ready+GitHub+Templates;CLI+Tools+%2B+Web+APIs+%2B+Mobile+Apps;3D+Games+%2B+Fantasy+Consoles;LuaJIT+%2B+L%C3%96VE+%2B+Lapis+%2B+Solar2D;PICO-8+%2B+TIC-80+%2B+argparse+%2B+LTUI;Click+Use+This+Template+to+Start;Zero+JavaScript%2C+Pure+Lua+Power;Complete+Monorepos+with+Shared+Libraries;Cross-Platform+Excellence;Professional+Documentation+Included;Modern+Development+Workflows;Template+Based+Development;Production+Grade+Infrastructure;Lightweight+%26+Memory+Efficient;Single+Language+Ecosystem+Mastery;From+CLI+to+3D+Games+in+Pure+Lua;Maximum+Versatility+%26+Performance" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=3071A4&center=true&vCenter=true&width=800&lines=Systems+Programmer+%7C+C+Development+Specialist;Creator+of+C+Foundry+Monorepo+Template;Pure+C+Application+Development;From+CLI+Tools+to+3D+Games;System+Programming+to+Graphics;Cross-Platform+C+Development;Professional+Build+Systems;Games+%2B+Apps+%2B+Services+%2B+More;Raylib+%2B+CMake+%2B+Make+%2B+Nuklear;Maximum+Performance%2C+Pure+C+Power;Zero+Dependencies%2C+Pure+C+Excellence;Complete+Monorepo+with+Shared+Libraries;Production-Ready+GitHub+Template;Click+Use+This+Template+to+Start;Professional+Development+Workflows;Modern+C+Programming+Practices;Template+Based+Development;Cross-Platform+Excellence;Lightweight+%26+High+Performance;Single+Language+Ecosystem+Mastery;From+CLI+to+3D+Games+in+Pure+C;Maximum+Versatility+%26+Performance" alt="Typing SVG" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://www.lua.org/"><img src="https://img.shields.io/badge/Lua-5.4+-000080.svg?logo=lua" alt="Lua Version"></a>
-  <a href="https://luajit.org/"><img src="https://img.shields.io/badge/LuaJIT-2.1+-blue.svg" alt="LuaJIT Version"></a>
-  <a href="https://love2d.org/"><img src="https://img.shields.io/badge/L%C3%96VE-11.4-pink.svg?logo=love2d" alt="LÖVE Version"></a>
-  <a href="https://leafo.net/lapis/"><img src="https://img.shields.io/badge/Lapis-1.9+-green.svg" alt="Lapis Version"></a>
-  <a href="https://solar2d.com/"><img src="https://img.shields.io/badge/Solar2D-2024-orange.svg" alt="Solar2D"></a>
-  <a href="https://www.lexaloffle.com/pico-8.php"><img src="https://img.shields.io/badge/PICO--8-0.2.5-orange.svg" alt="PICO-8"></a>
-  <a href="https://tic80.com/"><img src="https://img.shields.io/badge/TIC--80-1.1-red.svg" alt="TIC-80"></a>
-  <a href="https://github.com/mpeterv/argparse"><img src="https://img.shields.io/badge/argparse-0.7+-red.svg" alt="argparse"></a>
-  <a href="https://github.com/tboox/ltui"><img src="https://img.shields.io/badge/LTUI-2.7-green.svg" alt="LTUI"></a>
-  <a href="https://lunarmodules.github.io/luafilesystem/"><img src="https://img.shields.io/badge/LuaFileSystem-1.8-orange.svg" alt="LFS"></a>
-  <a href="https://lunarmodules.github.io/luasocket/"><img src="https://img.shields.io/badge/LuaSocket-3.1-red.svg" alt="LuaSocket"></a>
-  <a href="https://github.com/dunamismax/lua-apps/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
+  <a href="https://www.gnu.org/software/gcc/"><img src="https://img.shields.io/badge/GCC-11+-red.svg?logo=gnu" alt="GCC Version"></a>
+  <a href="https://clang.llvm.org/"><img src="https://img.shields.io/badge/Clang-15+-blue.svg?logo=llvm" alt="Clang Version"></a>
+  <a href="https://cmake.org/"><img src="https://img.shields.io/badge/CMake-3.20+-green.svg?logo=cmake" alt="CMake Version"></a>
+  <a href="https://raylib.com/"><img src="https://img.shields.io/badge/Raylib-4.5+-orange.svg" alt="Raylib Version"></a>
+  <a href="https://kore.io/"><img src="https://img.shields.io/badge/Kore-4.0+-purple.svg" alt="Kore Version"></a>
+  <a href="https://github.com/vurtun/nuklear"><img src="https://img.shields.io/badge/Nuklear-4.0+-yellow.svg" alt="Nuklear Version"></a>
+  <a href="https://github.com/dunamismax/c-foundry/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
 </p>
 
 ---
 
 ## About Me
 
-IT Director with 10+ years experience specializing in Lua ecosystem development. I've created three **production-grade GitHub templates** covering the complete Lua stack - from CLI tools to 3D games.
+Systems programmer and C development specialist focusing on pure C application development. I've created a **production-grade GitHub template** that demonstrates the complete C development stack - from CLI tools to 3D games, all in pure C.
 
-**Philosophy**: Single language, maximum versatility. Lua everywhere - lightweight, fast, and cross-platform.
+**Philosophy**: Maximum performance, minimal dependencies. Pure C everywhere - fast, efficient, and cross-platform.
 
 ---
 
-## Featured Projects: Complete Lua Ecosystems
+## Featured Project: C Foundry Monorepo Template
 
-### **[Lua Applications](https://github.com/dunamismax/lua-apps)** - Complete Application Development Stack
+### **[C Foundry](https://github.com/dunamismax/c-foundry)** - Complete Pure C Development Stack
 
 <p align="center">
-  <a href="https://github.com/dunamismax/lua-apps">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=lua-apps&theme=dark&show_owner=true" alt="lua-apps Repository" />
+  <a href="https://github.com/dunamismax/c-foundry">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=c-foundry&theme=dark&show_owner=true" alt="c-foundry Repository" />
   </a>
 </p>
 
-**Key Features:**
-
-- CLI tools with argparse & help systems
-- Web APIs with Lapis on OpenResty
-- Static site generation with YAML frontmatter
-- Mobile & desktop apps via Solar2D
-- Shared libraries & comprehensive tooling
-
-### **[Lua Gaming](https://github.com/dunamismax/lua-gaming)** - Complete Game Development Stack
-
-<p align="center">
-  <a href="https://github.com/dunamismax/lua-gaming">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=lua-gaming&theme=dark&show_owner=true" alt="lua-gaming Repository" />
-  </a>
-</p>
+**A comprehensive, production-ready monorepo for pure C development across multiple platforms and application types.**
 
 **Key Features:**
 
-- 2D games with LÖVE framework
-- 3D games with advanced graphics
-- Fantasy consoles: PICO-8 & TIC-80
-- Shared game libraries & utilities
-- Demo games for each platform
+- **Games**: 2D platformer, 3D puzzler, physics demo with Raylib
+- **GUI Applications**: Asset editor with Nuklear immediate-mode GUI
+- **CLI Tools**: File importer, text processor with ncurses
+- **Web Services**: Authentication service, game API with Kore framework
+- **Shared Libraries**: Data structures, core engine, game logic
+- **Professional Build System**: 70+ Make targets orchestrating CMake
+- **Cross-Platform**: macOS, Linux, Windows with Apple Silicon support
 
-### **[Lua Scripts](https://github.com/dunamismax/lua-scripts)** - Complete Scripting & Automation Stack
+**Demo Applications:**
 
-<p align="center">
-  <a href="https://github.com/dunamismax/lua-scripts">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=lua-scripts&theme=dark&show_owner=true" alt="lua-scripts Repository" />
-  </a>
-</p>
-
-**Key Features:**
-
-- CLI tools & system monitors
-- Terminal UIs with LTUI
-- Automation & networking scripts
-- Professional logging & config management
-- Development & deployment tools
+- 2D Platformer Game (Raylib + Pure C)
+- 3D Puzzle Game (Raylib + OpenGL)
+- Asset Editor (Nuklear GUI)
+- CLI Tools (ncurses + libcurl)
+- Web Services (Kore framework)
+- Physics Simulation (Experimental)
 
 ---
 
@@ -89,24 +65,41 @@ IT Director with 10+ years experience specializing in Lua ecosystem development.
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=lua,nginx,postgresql,html,css,docker,linux,vscode" />
+    <img src="https://skillicons.dev/icons?i=c,cmake,clang,gcc,linux,vscode,git,github" />
   </a>
 </p>
 
-**Core**: Lua 5.4, LuaJIT, LuaRocks  
-**Web**: Lapis, OpenResty, LuaSocket  
-**Mobile**: Solar2D, cross-platform deployment  
-**Games**: LÖVE (2D), PICO-8, TIC-80  
-**CLI**: argparse, LTUI, LuaFileSystem  
-**Utils**: lume, tween.lua, json.lua
+**Core**: C99, GCC, Clang, CMake, Make  
+**Game Dev**: Raylib, Nuklear, Chipmunk2D  
+**CLI**: ncurses, libcurl, Check framework  
+**Web**: Kore framework, RESTful APIs  
+**Tools**: clang-format, clang-tidy, Doxygen  
+**Build**: Professional Makefile, cross-platform builds
 
 ---
 
 ## What I Build
 
-**Applications**: Web APIs, mobile apps, CLI tools, static generators  
-**Games**: 2D indies, 3D experiences, fantasy console games  
-**Automation**: System tools, terminal UIs, network utilities
+**Applications**: CLI tools, desktop GUI apps, system utilities  
+**Games**: 2D platformers, 3D puzzlers, physics simulations  
+**Services**: Web APIs, authentication systems, game backends  
+**Libraries**: Data structures, game engines, utility libraries
+
+**Current Focus**: Learning and mastering C programming through practical application development. The C Foundry monorepo serves as both a learning platform and a comprehensive template for others to build upon.
+
+---
+
+## Why C Foundry?
+
+This monorepo template represents:
+
+- **Learning Journey**: My exploration of pure C development across multiple domains
+- **Complete Ecosystem**: Everything needed for serious C development
+- **Production Ready**: Professional build systems, testing, and CI/CD
+- **Template Based**: Ready for others to use and extend
+- **Zero Dependencies**: Pure C with minimal external requirements
+
+**Perfect for**: Developers learning C, teams needing a C project template, or anyone wanting to see modern C development practices in action.
 
 ---
 
@@ -120,10 +113,10 @@ IT Director with 10+ years experience specializing in Lua ecosystem development.
 
 **Other Ways to Support:**
 
-- Star the repos: [Lua Apps](https://github.com/dunamismax/lua-apps), [Lua Gaming](https://github.com/dunamismax/lua-gaming), [Lua Scripts](https://github.com/dunamismax/lua-scripts)
-- Use the templates for your projects
-- Share with other developers
-- Contribute improvements
+- Star the [C Foundry](https://github.com/dunamismax/c-foundry) repository
+- Use the template for your C projects
+- Share with other C developers
+- Contribute improvements and feedback
 
 ---
 
@@ -140,6 +133,6 @@ IT Director with 10+ years experience specializing in Lua ecosystem development.
 ---
 
 <p align="center">
-  <strong>Built with Lua</strong><br>
-  <sub>Complete ecosystems for application development, game development, and scripting automation</sub>
+  <strong>Built with Pure C</strong><br>
+  <sub>A comprehensive foundation for high-performance, system-level application development</sub>
 </p>
