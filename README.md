@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=000080&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Lua+Programming+Specialist;Creator+of+Complete+Lua+Ecosystems;Application+Development+Specialist;Game+Development+Expert;Scripting+%26+Automation+Architect;Production-Ready+GitHub+Templates;CLI+Tools+%2B+Web+APIs+%2B+Mobile+Apps;VR+Games+%2B+Fantasy+Consoles;LuaJIT+%2B+L%C3%96VE+%2B+Lapis+%2B+Solar2D;PICO-8+%2B+TIC-80+%2B+argparse+%2B+LTUI;Click+Use+This+Template+to+Start;Zero+JavaScript%2C+Pure+Lua+Power;Complete+Monorepos+with+Shared+Libraries;Cross-Platform+Excellence;Professional+Documentation+Included;Modern+Development+Workflows;Template+Based+Development;Production+Grade+Infrastructure;Lightweight+%26+Memory+Efficient;Single+Language+Ecosystem+Mastery;From+CLI+to+VR+in+Pure+Lua;Maximum+Versatility+%26+Performance" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=000080&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Lua+Programming+Specialist;Creator+of+Complete+Lua+Ecosystems;Application+Development+Specialist;Game+Development+Expert;Scripting+%26+Automation+Architect;Production-Ready+GitHub+Templates;CLI+Tools+%2B+Web+APIs+%2B+Mobile+Apps;3D+Games+%2B+Fantasy+Consoles;LuaJIT+%2B+L%C3%96VE+%2B+Lapis+%2B+Solar2D;PICO-8+%2B+TIC-80+%2B+argparse+%2B+LTUI;Click+Use+This+Template+to+Start;Zero+JavaScript%2C+Pure+Lua+Power;Complete+Monorepos+with+Shared+Libraries;Cross-Platform+Excellence;Professional+Documentation+Included;Modern+Development+Workflows;Template+Based+Development;Production+Grade+Infrastructure;Lightweight+%26+Memory+Efficient;Single+Language+Ecosystem+Mastery;From+CLI+to+3D+Games+in+Pure+Lua;Maximum+Versatility+%26+Performance" alt="Typing SVG" />
   </a>
 </p>
 
@@ -12,7 +12,6 @@
   <a href="https://www.lua.org/"><img src="https://img.shields.io/badge/Lua-5.4+-000080.svg?logo=lua" alt="Lua Version"></a>
   <a href="https://luajit.org/"><img src="https://img.shields.io/badge/LuaJIT-2.1+-blue.svg" alt="LuaJIT Version"></a>
   <a href="https://love2d.org/"><img src="https://img.shields.io/badge/L%C3%96VE-11.4-pink.svg?logo=love2d" alt="LÖVE Version"></a>
-  <a href="https://lovr.org/"><img src="https://img.shields.io/badge/L%C3%96VR-0.17-purple.svg" alt="LÖVR Version"></a>
   <a href="https://leafo.net/lapis/"><img src="https://img.shields.io/badge/Lapis-1.9+-green.svg" alt="Lapis Version"></a>
   <a href="https://solar2d.com/"><img src="https://img.shields.io/badge/Solar2D-2024-orange.svg" alt="Solar2D"></a>
   <a href="https://www.lexaloffle.com/pico-8.php"><img src="https://img.shields.io/badge/PICO--8-0.2.5-orange.svg" alt="PICO-8"></a>
@@ -28,7 +27,7 @@
 
 ## About Me
 
-IT Director with 10+ years experience specializing in Lua ecosystem development. I've created three **production-grade GitHub templates** covering the complete Lua stack - from CLI tools to VR games.
+IT Director with 10+ years experience specializing in Lua ecosystem development. I've created three **production-grade GitHub templates** covering the complete Lua stack - from CLI tools to 3D games.
 
 **Philosophy**: Single language, maximum versatility. Lua everywhere - lightweight, fast, and cross-platform.
 
@@ -63,7 +62,7 @@ IT Director with 10+ years experience specializing in Lua ecosystem development.
 **Key Features:**
 
 - 2D games with LÖVE framework
-- 3D & VR with LÖVR & hand tracking
+- 3D games with advanced graphics
 - Fantasy consoles: PICO-8 & TIC-80
 - Shared game libraries & utilities
 - Demo games for each platform
@@ -97,7 +96,7 @@ IT Director with 10+ years experience specializing in Lua ecosystem development.
 **Core**: Lua 5.4, LuaJIT, LuaRocks  
 **Web**: Lapis, OpenResty, LuaSocket  
 **Mobile**: Solar2D, cross-platform deployment  
-**Games**: LÖVE (2D), LÖVR (3D/VR), PICO-8, TIC-80  
+**Games**: LÖVE (2D), PICO-8, TIC-80  
 **CLI**: argparse, LTUI, LuaFileSystem  
 **Utils**: lume, tween.lua, json.lua
 
@@ -106,7 +105,7 @@ IT Director with 10+ years experience specializing in Lua ecosystem development.
 ## What I Build
 
 **Applications**: Web APIs, mobile apps, CLI tools, static generators  
-**Games**: 2D indies, 3D/VR experiences, fantasy console games  
+**Games**: 2D indies, 3D experiences, fantasy console games  
 **Automation**: System tools, terminal UIs, network utilities
 
 ---
