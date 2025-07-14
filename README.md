@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=000080&center=true&vCenter=true&width=1000&lines=IT+Director+%7C+Lua+Programming+Specialist;Creator+of+Complete+Lua+Ecosystems;Application+Development+%2B+Game+Development+%2B+Scripting+%26+Automation;From+CLI+Tools+to+Web+APIs+to+VR+Games+to+Fantasy+Consoles;Production-Ready+GitHub+Templates+for+the+Entire+Lua+Stack;LuaJIT+%2B+LÖVE+%2B+Lapis+%2B+Solar2D+%2B+PICO-8+%2B+TIC-80;Click+%22Use+This+Template%22+on+Any+Repository+to+Start+Building!;Zero+JavaScript%2C+Maximum+Simplicity+and+Performance;Complete+Monorepos+with+Shared+Libraries+and+Demo+Applications;Cross-Platform+Development+from+Desktop+to+Mobile+to+Web+to+VR;Professional+Documentation+and+Best+Practices+Included;Comprehensive+Development+Tools+and+Build+Automation;Modern+Lua+Development+Workflows+for+Rapid+Iteration" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=000080&center=true&vCenter=true&width=800&lines=IT+Director+%7C+Lua+Programming+Specialist;Creator+of+Complete+Lua+Ecosystems;Application+Development+Game+Development+Scripting+Automation;CLI+Tools+Web+APIs+VR+Games+Fantasy+Consoles;Production-Ready+GitHub+Templates+for+Entire+Lua+Stack;LuaJIT+LÖVE+Lapis+Solar2D+PICO-8+TIC-80;Click+Use+This+Template+on+Any+Repository+to+Start;Zero+JavaScript+Maximum+Simplicity+and+Performance;Complete+Monorepos+with+Shared+Libraries+Demo+Apps;Cross-Platform+Development+Desktop+Mobile+Web+VR;Professional+Documentation+and+Best+Practices+Included;Comprehensive+Development+Tools+Build+Automation;Modern+Lua+Development+Workflows+Rapid+Iteration;From+Command+Line+to+Cross+Platform+Pure+Lua;Template+Based+Development+Production+Grade+Infrastructure;Lightweight+Fast+Memory+Efficient+Solutions;Single+Language+Everywhere+Lua+Ecosystem+Mastery" alt="Typing SVG" />
   </a>
 </p>
 
@@ -40,13 +40,13 @@ With over a decade of IT experience, I specialize in developing high-performance
 
 I have created three comprehensive **GitHub templates** that demonstrate the full power and versatility of Lua across different domains. Each template represents a complete, production-ready foundation that you can use to bootstrap your own projects immediately.
 
-### 🚀 **[Lua Applications](https://github.com/dunamismax/lua-apps)** - Complete Application Development Stack
+### **[Lua Applications](https://github.com/dunamismax/lua-apps)** - Complete Application Development Stack
 
 **Production-Ready GitHub Template** for building modern applications across all platforms using the complete Lua ecosystem.
 
 <p align="center">
   <a href="https://github.com/dunamismax/lua-apps">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=lua-apps&theme=default&show_owner=true" alt="lua-apps Repository" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=lua-apps&theme=dark&show_owner=true" alt="lua-apps Repository" />
   </a>
 </p>
 
@@ -59,13 +59,13 @@ I have created three comprehensive **GitHub templates** that demonstrate the ful
 - **Shared Libraries** - Production-tested utilities for HTTP, database, logging, and more
 - **Complete Tooling** - Setup scripts, testing framework, build automation, and comprehensive docs
 
-### 🎮 **[Lua Gaming](https://github.com/dunamismax/lua-gaming)** - Complete Game Development Stack
+### **[Lua Gaming](https://github.com/dunamismax/lua-gaming)** - Complete Game Development Stack
 
 **Production-Ready GitHub Template** for game development using the complete Lua gaming ecosystem from 2D to VR to fantasy consoles.
 
 <p align="center">
   <a href="https://github.com/dunamismax/lua-gaming">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=lua-gaming&theme=default&show_owner=true" alt="lua-gaming Repository" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=lua-gaming&theme=dark&show_owner=true" alt="lua-gaming Repository" />
   </a>
 </p>
 
@@ -78,13 +78,13 @@ I have created three comprehensive **GitHub templates** that demonstrate the ful
 - **Demo Games** - Fully functional examples: Asteroids (LÖVE), Space Explorer (LÖVR), Snake (PICO-8), Platformer (TIC-80)
 - **Modern Workflow** - Project templates, build scripts, and automated game packaging
 
-### 🛠️ **[Lua Scripts](https://github.com/dunamismax/lua-scripts)** - Complete Scripting & Automation Stack
+### **[Lua Scripts](https://github.com/dunamismax/lua-scripts)** - Complete Scripting & Automation Stack
 
 **Production-Ready GitHub Template** for modern scripting, automation, and CLI tool development using the complete Lua ecosystem.
 
 <p align="center">
   <a href="https://github.com/dunamismax/lua-scripts">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=lua-scripts&theme=default&show_owner=true" alt="lua-scripts Repository" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=lua-scripts&theme=dark&show_owner=true" alt="lua-scripts Repository" />
   </a>
 </p>
 
@@ -98,38 +98,6 @@ I have created three comprehensive **GitHub templates** that demonstrate the ful
 - **Development Tools** - Code generation, testing frameworks, and deployment automation
 
 ---
-
-## The Template Advantage
-
-Each of my repositories serves as a **GitHub template**, providing developers with production-grade foundations that eliminate months of setup and configuration work. Instead of starting from scratch, you get:
-
-**Immediate Productivity:**
-
-- Complete project structure with organized directories and conventions
-- Working demo applications that demonstrate best practices
-- Shared libraries and utilities for common tasks
-- Professional documentation and getting started guides
-
-**Production-Ready Infrastructure:**
-
-- Automated testing and quality assurance workflows
-- Build scripts and deployment automation
-- Error handling, logging, and configuration management
-- Cross-platform compatibility and optimization
-
-**Modern Development Experience:**
-
-- Live reloading and hot reload capabilities
-- Comprehensive development tooling and shortcuts
-- Professional code organization and shared libraries
-- Extensive examples and tutorial content
-
-**To use any template:**
-
-1. Click the green **"Use this template"** button on any repository
-2. Create your new repository with a clean git history
-3. Run the setup scripts to install dependencies
-4. Start building immediately with working examples
 
 ---
 
@@ -201,32 +169,6 @@ My expertise spans the complete Lua ecosystem, from lightweight scripting to hig
 
 ---
 
-## Why Lua?
-
-**Simplicity Meets Power**: Lua combines the elegance of Python with the performance of C, offering a clean syntax that's perfect for rapid development while maintaining excellent runtime performance.
-
-**Embeddability**: Lua's design as an embeddable language makes it ideal for extending applications, creating domain-specific languages, and building modular systems.
-
-**Lightweight & Fast**: With a tiny footprint and blazing-fast execution (especially with LuaJIT), Lua excels in resource-constrained environments and performance-critical applications.
-
-**Proven in Production**: From World of Warcraft addons to Adobe Lightroom to network infrastructure, Lua powers critical systems across industries.
-
-**Cross-Platform Excellence**: Write once, run everywhere - Lua applications work seamlessly across Windows, macOS, Linux, iOS, Android, and embedded systems.
-
----
-
-## Development Philosophy
-
-**Templates Over Tutorials**: Instead of just explaining concepts, I provide complete, working templates that demonstrate professional practices and can be used as starting points for real projects.
-
-**Shared Libraries**: Every template includes a comprehensive set of shared libraries that eliminate code duplication and provide consistent APIs across different types of applications.
-
-**Production-Ready**: All templates include error handling, logging, configuration management, testing frameworks, and deployment tools - not just toy examples.
-
-**Documentation-First**: Extensive documentation, getting started guides, best practices, and working examples ensure developers can be productive immediately.
-
-**Modern Workflows**: Live reloading, automated testing, build scripts, and professional development tools provide a modern development experience.
-
 ---
 
 ## Support My Work
@@ -241,12 +183,12 @@ If you find my Lua ecosystem work valuable for your development journey, conside
 
 **Other Ways to Support:**
 
-- ⭐ Star the [Lua Apps](https://github.com/dunamismax/lua-apps), [Lua Gaming](https://github.com/dunamismax/lua-gaming), and [Lua Scripts](https://github.com/dunamismax/lua-scripts) repositories
-- 🚀 Use the templates to build your own applications and games
-- 🐛 Report bugs and suggest improvements
-- 📢 Share the projects with other Lua developers
-- 🤝 Contribute code, documentation, or examples
-- 📦 Showcase projects built with the templates
+- Star the [Lua Apps](https://github.com/dunamismax/lua-apps), [Lua Gaming](https://github.com/dunamismax/lua-gaming), and [Lua Scripts](https://github.com/dunamismax/lua-scripts) repositories
+- Use the templates to build your own applications and games
+- Report bugs and suggest improvements
+- Share the projects with other Lua developers
+- Contribute code, documentation, or examples
+- Showcase projects built with the templates
 
 ---
 
