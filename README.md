@@ -65,7 +65,7 @@ Systems programmer and C development specialist focusing on pure C application d
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=c,cmake,clang,gcc,linux,vscode,git,github" />
+    <img src="https://skillicons.dev/icons?i=c,cmake,linux,vscode,git,github" />
   </a>
 </p>
 
