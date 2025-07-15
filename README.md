@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=3071A4&center=true&vCenter=true&width=800&lines=Systems+Programmer+%7C+C+Development+Expert;ARM64+Optimized+Build+Systems;Security-Hardened+C+Applications;154-Line+Professional+Makefile;5+Apps+%2B+2+Libraries+%2B+Complete+Tests;Maximum+Performance+Apple+Silicon;From+Calculator+to+Games+in+Pure+C;Memory-Safe+%26+Production-Ready" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=3071A4&center=true&vCenter=true&width=800&lines=Systems+Programmer;ARM64+Optimized+C+Development;High-Performance+Build+Systems;Production-Ready+Applications;Security-First+Development" alt="Typing SVG" />
   </a>
 </p>
 
@@ -19,15 +19,15 @@
 
 ## About Me
 
-Systems programmer specializing in **ARM64-optimized C development** and **security-hardened build systems**. Creator of a production-ready C monorepo template that demonstrates maximum Apple Silicon performance with comprehensive security measures.
+Systems programmer focused on **high-performance C development** and **modern build systems**. I build production-ready applications with an emphasis on security, performance, and clean architecture.
 
-**Philosophy**: Clean code, maximum performance, security first. Pure C with enterprise-grade quality.
+**Approach**: Security-first development, performance optimization, and maintainable code that scales.
 
 ---
 
-## Featured Project: C Monorepo Template
+## Featured Project: C Monorepo
 
-### **[C Monorepo](https://github.com/dunamismax/c-monorepo)** - ARM64 Optimized C Development
+### **[C Monorepo](https://github.com/dunamismax/c-monorepo)** - Production C Development Template
 
 <p align="center">
   <a href="https://github.com/dunamismax/c-monorepo">
@@ -35,115 +35,87 @@ Systems programmer specializing in **ARM64-optimized C development** and **secur
   </a>
 </p>
 
-**A production-ready, security-hardened C monorepo optimized for ARM64 Apple Silicon. Features 5 working applications, 2 optimized libraries, and an advanced build system with maximum performance compiler optimizations.**
+A comprehensive C development template optimized for ARM64 Apple Silicon. Includes multiple applications, optimized libraries, and a professional build system with comprehensive testing.
 
-### **Technical Achievements**
+### **Key Features**
 
-- **154-Line Professional Makefile**: Reduced from 471 lines (66% optimization) with smart auto-discovery
-- **Maximum ARM64 Performance**: Apple Silicon-specific optimizations (`-mcpu=apple-m1`, `-flto=thin`, `-ffast-math`)
-- **Complete Test Framework**: Unit tests, integration tests, security validation with test runner
-- **5 Working Applications**: Calculator, file utilities, text processor, tic-tac-toe, number guessing
-- **2 Optimized Libraries**: Math utilities and data structures with ARM64-specific optimizations
-- **Security Hardened**: Format string protection, path validation, buffer overflow prevention
+- **Professional Build System**: Efficient Makefile with parallel builds and smart dependency detection
+- **ARM64 Optimization**: Apple Silicon-specific compiler optimizations and flags
+- **Comprehensive Testing**: Unit tests, integration tests, and security validation
+- **Multiple Applications**: Calculator, file utilities, text processor, games
+- **Optimized Libraries**: Math utilities and data structures with performance focus
+- **Security Hardening**: Memory safety, input validation, and vulnerability protection
 
-### **Applications Built**
+### **Applications**
 
-- **Calculator**: Scientific calculator with advanced math operations
-- **File Utils**: File operations with security validation
-- **Text Processor**: String manipulation and processing
-- **Tic-Tac-Toe**: AI-powered game with intelligent strategies
-- **Number Guessing**: Multi-difficulty game with scoring
-
-### **Build System Features**
-
-- **Parallel Builds**: Automatically uses all CPU cores
-- **Three Build Modes**: Release (default), Debug (with sanitizers), Profile
-- **Smart Discovery**: Auto-detects libraries and applications
-- **Security Tools**: Format checking, linting, security scanning
-- **All Targets Tested**: Verified on Apple M4 Pro ARM64
+- **Calculator**: Scientific calculator with advanced mathematical operations
+- **File Utils**: Secure file operations with path validation
+- **Text Processor**: String manipulation and text processing utilities
+- **Games**: Tic-tac-toe with AI and number guessing with multiple difficulty levels
 
 ---
 
-## Tech Stack & Expertise
+## Technical Skills
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=c,apple,linux,vscode,git,github,cmake" />
+    <img src="https://skillicons.dev/icons?i=c,apple,linux,vscode,git,github" />
   </a>
 </p>
 
-**Core Technologies:**
+**Languages & Tools:**
 
-- **C11 Standard** with ARM64-specific optimizations
-- **Clang Compiler** optimized for Apple Silicon
-- **Advanced Make** build orchestration with parallel execution
-- **Security Tools**: AddressSanitizer, UndefinedBehaviorSanitizer, clang-tidy
-- **Performance**: Link-Time Optimization, fast math, vectorization
+- **C11/C17** with modern practices and security considerations
+- **Clang/GCC** with advanced optimization techniques
+- **Make/CMake** for efficient build systems
+- **Git** for version control and collaborative development
 
-**Development Workflow:**
+**Specializations:**
 
-- Memory-safe code with comprehensive input validation
-- Static analysis and security scanning integration
-- Comprehensive testing with coverage analysis
-- Professional build systems with intelligent dependency management
+- ARM64 architecture optimization
+- Memory-safe C development
+- Performance-critical applications
+- Security-hardened systems programming
+- Professional build system design
 
 ---
 
 ## What I Build
 
-**System Tools**: CLI applications with advanced features and security hardening  
-**Interactive Software**: Games with AI opponents and intelligent gameplay mechanics  
-**Optimized Libraries**: High-performance data structures and mathematical algorithms  
-**Security Solutions**: Memory-safe implementations with comprehensive validation
+**System Applications**: Command-line tools and utilities with robust error handling  
+**Performance Libraries**: Optimized data structures and algorithms  
+**Development Tools**: Build systems and testing frameworks  
+**Secure Software**: Applications with comprehensive input validation and memory safety
 
-**Current Focus**: Demonstrating modern C programming excellence through the C Monorepo - a complete template that showcases ARM64 optimization, security best practices, and professional development workflows.
-
----
-
-## Why Use My C Template?
-
-This template represents **proven excellence** in:
-
-**ARM64 Optimization**: Built and tested on Apple M4 Pro with maximum performance flags  
-**Security Excellence**: Protection against common C vulnerabilities with comprehensive validation  
-**Build System Mastery**: 154-line professional Makefile that outperforms complex build systems  
-**Complete Testing**: Full test framework with unit, integration, and security tests  
-**Production Ready**: All applications build and run successfully with proper error handling
-
-**Perfect for**: Teams building ARM64 applications, developers learning secure C programming, or anyone needing a professional C development foundation.
+Currently maintaining the C Monorepo as a reference implementation for modern C development practices, demonstrating ARM64 optimization and production-ready code organization.
 
 ---
 
-## Getting Started
+## Why Use the C Template?
+
+The template provides a solid foundation for C development with:
+
+**Modern Practices**: Current C standards with security-first development  
+**Performance Focus**: ARM64 optimization and efficient build processes  
+**Complete Testing**: Comprehensive test framework with multiple test types  
+**Production Ready**: All components tested and ready for real-world use  
+**Well Documented**: Clear code organization and development guidelines
+
+Ideal for developers building ARM64 applications, teams needing a C project foundation, or anyone looking to learn modern C development practices.
+
+---
+
+## Quick Start
 
 ```bash
-# Use the template (recommended)
+# Use as GitHub template (recommended)
 # Click "Use this template" on the repository page
 
-# Or clone and build
+# Or clone directly
 git clone https://github.com/dunamismax/c-monorepo.git
 cd c-monorepo
-make sysinfo  # Check your system
-make          # Build everything (ARM64 optimized)
-make run-calculator  # Try the calculator
+make sysinfo && make && make run-calculator
 ```
-
----
-
-## Support This Work
-
-<p align="center">
-  <a href="https://www.buymeacoffee.com/dunamismax" target="_blank">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" />
-  </a>
-</p>
-
-**Other Ways to Support:**
-
-- Star the [C Monorepo](https://github.com/dunamismax/c-monorepo) repository
-- Use the template for your ARM64 C projects
-- Share with other developers building on Apple Silicon
-- Contribute improvements and optimizations
 
 ---
 
@@ -160,6 +132,6 @@ make run-calculator  # Try the calculator
 ---
 
 <p align="center">
-  <strong>Built with Pure C for ARM64</strong><br>
-  <sub>Proven excellence in high-performance, Apple Silicon-optimized C development</sub>
+  <strong>Systems Programming with Modern C</strong><br>
+  <sub>Building efficient, secure, and maintainable software</sub>
 </p>
