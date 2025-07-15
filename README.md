@@ -1,63 +1,60 @@
 <p align="center">
-  <img src="https://github.com/dunamismax/c-foundry/blob/main/c.png" alt="C Foundry Logo" width="300" />
+  <img src="https://github.com/dunamismax/c-monorepo/blob/main/c.png" alt="C Monorepo Logo" width="300" />
 </p>
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=3071A4&center=true&vCenter=true&width=800&lines=Systems+Programmer+%7C+C+Development+Specialist;Creator+of+C+Foundry+Monorepo+Template;Pure+C+Application+Development;From+CLI+Tools+to+3D+Games;System+Programming+to+Graphics;Cross-Platform+C+Development;Professional+Build+Systems;Games+%2B+Apps+%2B+Services+%2B+More;Raylib+%2B+CMake+%2B+Make+%2B+Nuklear;Maximum+Performance%2C+Pure+C+Power;Zero+Dependencies%2C+Pure+C+Excellence;Complete+Monorepo+with+Shared+Libraries;Production-Ready+GitHub+Template;Click+Use+This+Template+to+Start;Professional+Development+Workflows;Modern+C+Programming+Practices;Template+Based+Development;Cross-Platform+Excellence;Lightweight+%26+High+Performance;Single+Language+Ecosystem+Mastery;From+CLI+to+3D+Games+in+Pure+C;Maximum+Versatility+%26+Performance" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=3071A4&center=true&vCenter=true&width=800&lines=Systems+Programmer+%7C+C+Development+Specialist;Creator+of+C+Monorepo+Template;ARM64+Optimized+Pure+C+Development;From+CLI+Tools+to+Interactive+Games;Security-Hardened+C+Applications;Apple+Silicon+Optimized+Build+System;Professional+Make+Build+Orchestration;Apps+%2B+Games+%2B+Libraries+%2B+Tools;65%2B+Makefile+Targets+for+Complete+Workflow;Maximum+Performance%2C+Pure+C+Power;Production-Ready+Security+Hardening;Complete+Monorepo+with+Shared+Libraries;Educational+%2B+Production+Template;Click+Use+This+Template+to+Start;Professional+Development+Workflows;Modern+C+Programming+Practices;ARM64+Apple+Silicon+Excellence;Memory-Safe+%26+High+Performance;Single+Language+Ecosystem+Mastery;From+Calculator+to+Games+in+Pure+C;Security+First+%26+Performance+Optimized" alt="Typing SVG" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://www.gnu.org/software/gcc/"><img src="https://img.shields.io/badge/GCC-11+-red.svg?logo=gnu" alt="GCC Version"></a>
   <a href="https://clang.llvm.org/"><img src="https://img.shields.io/badge/Clang-15+-blue.svg?logo=llvm" alt="Clang Version"></a>
-  <a href="https://cmake.org/"><img src="https://img.shields.io/badge/CMake-3.20+-green.svg?logo=cmake" alt="CMake Version"></a>
-  <a href="https://raylib.com/"><img src="https://img.shields.io/badge/Raylib-4.5+-orange.svg" alt="Raylib Version"></a>
-  <a href="https://kore.io/"><img src="https://img.shields.io/badge/Kore-4.0+-purple.svg" alt="Kore Version"></a>
-  <a href="https://github.com/vurtun/nuklear"><img src="https://img.shields.io/badge/Nuklear-4.0+-yellow.svg" alt="Nuklear Version"></a>
-  <a href="https://github.com/dunamismax/c-foundry/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
+  <a href="https://developer.apple.com/documentation/apple-silicon"><img src="https://img.shields.io/badge/ARM64-Apple_Silicon-black.svg?logo=apple" alt="ARM64 Apple Silicon"></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
+  <a href="https://github.com/dunamismax/c-monorepo/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
+  <a href="https://github.com/dunamismax/c-monorepo/stargazers"><img src="https://img.shields.io/github/stars/dunamismax/c-monorepo" alt="GitHub Stars"></a>
 </p>
 
 ---
 
 ## About Me
 
-Systems programmer and C development specialist focusing on pure C application development. I've created a **production-grade GitHub template** that demonstrates the complete C development stack - from CLI tools to 3D games, all in pure C.
+Systems programmer and C development specialist focusing on security-hardened, ARM64-optimized pure C development. I've created a **production-ready GitHub template** that demonstrates modern C programming practices with comprehensive security measures and Apple Silicon optimization.
 
-**Philosophy**: Maximum performance, minimal dependencies. Pure C everywhere - fast, efficient, and cross-platform.
+**Philosophy**: Security first, performance optimized, memory safe. Pure C with enterprise-grade quality and ARM64 excellence.
 
 ---
 
-## Featured Project: C Foundry Monorepo Template
+## Featured Project: C Monorepo Template
 
-### **[C Foundry](https://github.com/dunamismax/c-foundry)** - Complete Pure C Development Stack
+### **[C Monorepo](https://github.com/dunamismax/c-monorepo)** - Security-Hardened ARM64 C Development
 
 <p align="center">
-  <a href="https://github.com/dunamismax/c-foundry">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=c-foundry&theme=dark&show_owner=true" alt="c-foundry Repository" />
+  <a href="https://github.com/dunamismax/c-monorepo">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=c-monorepo&theme=dark&show_owner=true" alt="c-monorepo Repository" />
   </a>
 </p>
 
-**A comprehensive, production-ready monorepo for pure C development across multiple platforms and application types.**
+**A production-ready, security-hardened monorepo for pure C development optimized for ARM64 architecture and Apple Silicon.**
 
 **Key Features:**
 
-- **Games**: 2D platformer, 3D puzzler, physics demo with Raylib
-- **GUI Applications**: Asset editor with Nuklear immediate-mode GUI
-- **CLI Tools**: File importer, text processor with ncurses
-- **Web Services**: Authentication service, game API with Kore framework
-- **Shared Libraries**: Data structures, core engine, game logic
-- **Professional Build System**: 70+ Make targets orchestrating CMake
-- **Cross-Platform**: macOS, Linux, Windows with Apple Silicon support
+- **Security Hardened**: Protection against buffer overflows, path traversal, format string attacks
+- **ARM64 Optimized**: Built specifically for Apple Silicon with aggressive compiler optimizations
+- **CLI Applications**: Calculator, file utilities, text processor with advanced features
+- **Interactive Games**: AI-powered tic-tac-toe, multi-difficulty number guessing
+- **Shared Libraries**: High-performance data structures, optimized math utilities
+- **Professional Build System**: 65+ Make targets with parallel builds and dependency management
+- **Production Ready**: Memory-safe code with comprehensive input validation and error handling
 
 **Demo Applications:**
 
-- 2D Platformer Game (Raylib + Pure C)
-- 3D Puzzle Game (Raylib + OpenGL)
-- Asset Editor (Nuklear GUI)
-- CLI Tools (ncurses + libcurl)
-- Web Services (Kore framework)
-- Physics Simulation (Experimental)
+- Scientific Calculator (Math utilities integration)
+- File Operations Utility (System programming features)
+- Text Processor (String algorithms and data structures)
+- Tic-Tac-Toe Game (AI opponent with multiple strategies)
+- Number Guessing Game (Multi-difficulty with intelligent hints)
 
 ---
 
@@ -65,41 +62,41 @@ Systems programmer and C development specialist focusing on pure C application d
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=c,cmake,linux,vscode,git,github" />
+    <img src="https://skillicons.dev/icons?i=c,apple,linux,vscode,git,github" />
   </a>
 </p>
 
-**Core**: C99, GCC, Clang, CMake, Make  
-**Game Dev**: Raylib, Nuklear, Chipmunk2D  
-**CLI**: ncurses, libcurl, Check framework  
-**Web**: Kore framework, RESTful APIs  
-**Tools**: clang-format, clang-tidy, Doxygen  
-**Build**: Professional Makefile, cross-platform builds
+**Core**: C11 Standard, Clang, ARM64 Architecture, Make  
+**Security**: AddressSanitizer, UndefinedBehaviorSanitizer, Stack Protection  
+**Optimization**: Link-Time Optimization, Apple Silicon Specific Tuning  
+**Quality**: clang-format, clang-tidy, Static Analysis, Security Scanning  
+**Testing**: Unit Tests, Integration Tests, Code Coverage Analysis  
+**Build**: Professional Makefile with 65+ targets and parallel execution
 
 ---
 
 ## What I Build
 
-**Applications**: CLI tools, desktop GUI apps, system utilities  
-**Games**: 2D platformers, 3D puzzlers, physics simulations  
-**Services**: Web APIs, authentication systems, game backends  
-**Libraries**: Data structures, game engines, utility libraries
+**CLI Applications**: Calculators, file utilities, text processors with advanced features  
+**Interactive Games**: AI-powered games, multi-difficulty challenges, intelligent gameplay  
+**System Libraries**: High-performance data structures, optimized mathematical algorithms  
+**Security Tools**: Memory-safe implementations, input validation, comprehensive error handling
 
-**Current Focus**: Learning and mastering C programming through practical application development. The C Foundry monorepo serves as both a learning platform and a comprehensive template for others to build upon.
+**Current Focus**: Demonstrating modern C programming practices through security-hardened, ARM64-optimized applications. The C Monorepo serves as both an educational resource and a production-ready template for enterprise C development.
 
 ---
 
-## Why C Foundry?
+## Why C Monorepo?
 
-This monorepo template represents:
+This security-hardened template represents:
 
-- **Learning Journey**: My exploration of pure C development across multiple domains
-- **Complete Ecosystem**: Everything needed for serious C development
-- **Production Ready**: Professional build systems, testing, and CI/CD
-- **Template Based**: Ready for others to use and extend
-- **Zero Dependencies**: Pure C with minimal external requirements
+- **Security Excellence**: Comprehensive protection against common C vulnerabilities
+- **ARM64 Optimization**: Built specifically for Apple Silicon with maximum performance
+- **Educational Value**: Demonstrates modern C programming and security best practices
+- **Production Ready**: Enterprise-grade build systems, testing, and deployment automation
+- **Template Foundation**: Ready for immediate use with professional development workflows
 
-**Perfect for**: Developers learning C, teams needing a C project template, or anyone wanting to see modern C development practices in action.
+**Perfect for**: Developers learning secure C programming, teams needing ARM64-optimized applications, or anyone building production C systems on Apple Silicon.
 
 ---
 
@@ -113,10 +110,10 @@ This monorepo template represents:
 
 **Other Ways to Support:**
 
-- Star the [C Foundry](https://github.com/dunamismax/c-foundry) repository
-- Use the template for your C projects
-- Share with other C developers
-- Contribute improvements and feedback
+- Star the [C Monorepo](https://github.com/dunamismax/c-monorepo) repository
+- Use the template for your ARM64 C projects
+- Share with other C developers and security-conscious teams
+- Contribute security improvements and optimizations
 
 ---
 
@@ -133,6 +130,6 @@ This monorepo template represents:
 ---
 
 <p align="center">
-  <strong>Built with Pure C</strong><br>
-  <sub>A comprehensive foundation for high-performance, system-level application development</sub>
+  <strong>Built with Pure C for ARM64</strong><br>
+  <sub>A security-hardened foundation for high-performance, Apple Silicon-optimized C development</sub>
 </p>
