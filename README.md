@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/dunamismax/c-monorepo/blob/main/c.png" alt="C Monorepo Logo" width="300" />
+  <img src="https://github.com/dunamismax/c-monorepo/blob/main/c.png" alt="C Monorepo Logo" width="200" />
 </p>
 
 <p align="center">
