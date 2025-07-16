@@ -142,6 +142,16 @@ cd c-monorepo && make && make test
 
 ---
 
+## Support Me
+
+<p align="center">
+  <a href="https://www.buymeacoffee.com/dunamismax" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" />
+  </a>
+</p>
+
+---
+
 ## Connect
 
 <p align="center">
@@ -158,3 +168,4 @@ cd c-monorepo && make && make test
   <strong>Secure Systems Programming with Modern C</strong><br>
   <sub>Building cryptographic software and high-performance applications</sub>
 </p>
+---
