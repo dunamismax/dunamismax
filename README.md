@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=3071A4&center=true&vCenter=true&width=800&lines=C+Systems+Programmer;Pure+C+HTTP+Web+Server;HTMX+Dynamic+Capabilities;ARM64+Optimized+Performance;Security-First+Development" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=3071A4&center=true&vCenter=true&width=800&lines=C+Systems+Programmer;Building+High-Performance+C+Applications;Secure+&+Efficient+Software+Development;Template+Repos+for+Quick+C+Project+Starts;Monorepos+for+Scalable+C+Development;Raylib+Gaming+&+Web+Servers+in+Pure+C" alt="Typing SVG" />
   </a>
 </p>
 
@@ -26,74 +26,44 @@ C systems programmer specializing in **web servers**, **cryptographic software**
 
 ---
 
-## Featured Project
+## My C Projects
 
-### **[C Web Server](https://github.com/dunamismax/c-web-server)** - Pure C HTTP Server with HTMX
+I specialize in building robust, high-performance C applications. Here are some of my key projects, including template repositories to help you kickstart your own C development:
 
 <p align="center">
+  <a href="https://github.com/dunamismax/c-raylib">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=c-raylib&theme=dark&show_owner=true" alt="C Raylib Monorepo" />
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://github.com/dunamismax/c-web-server">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=c-web-server&theme=dark&show_owner=true" alt="C Web Server Repository" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=c-web-server&theme=dark&show_owner=true" alt="C Web Server" />
   </a>
 </p>
-
-**Latest Release** - A from-scratch HTTP web server demonstrating the power of combining pure C with modern web technologies:
-
-**Core Features:**
-
-- **Pure C Implementation**: Zero dependencies except pthread, built from scratch
-- **HTMX Integration**: Dynamic content without heavy JavaScript frameworks
-- **Security Hardened**: Path traversal protection, input validation, HTML escaping
-- **Multi-threaded**: Concurrent client handling with pthread architecture
-- **ARM64 Optimized**: Apple Silicon-specific optimizations with LTO
-- **Ultra-Lightweight**: Sub-millisecond response times, minimal memory footprint
-
-**Quick Start:**
-
-```bash
-git clone https://github.com/dunamismax/c-web-server.git
-cd c-web-server && make run
-# Server available at http://localhost:8080
-```
-
-**Technical Highlights:**
-
-- Custom HTTP/1.1 parser with security validation
-- Built-in API endpoints for HTMX dynamic features
-- Memory-safe string operations and bounds checking
-- Cross-platform support (macOS, Linux, BSD)
-- Professional build system with sanitizers and static analysis
-
----
-
-## Additional Projects
-
 <p align="center">
   <a href="https://github.com/dunamismax/c-chat">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=c-chat&theme=dark&show_owner=true" alt="C-Chat Repository" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=c-chat&theme=dark&show_owner=true" alt="C Chat" />
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://github.com/dunamismax/c-monorepo">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=c-monorepo&theme=dark&show_owner=true" alt="C-Monorepo Repository" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=c-monorepo&theme=dark&show_owner=true" alt="C Monorepo" />
   </a>
 </p>
 
+### **[C-Raylib](https://github.com/dunamismax/c-raylib)** - C Gaming Monorepo & Template
+
+A complete C gaming monorepo built with raylib for developing multiple 2D pixel art games. This repository serves as a **template** for quickly starting your own raylib projects with a professional Makefile and scalable structure.
+
+### **[C-Web-Server](https://github.com/dunamismax/c-web-server)** - Pure C HTTP Server with HTMX
+
+A from-scratch HTTP web server demonstrating the power of combining pure C with modern web technologies for maximum performance and efficiency.
+
 ### **[C-Chat](https://github.com/dunamismax/c-chat)** - End-to-End Encrypted Command-Line Chat
 
-Complete encrypted messaging system with zero-knowledge architecture:
-
-- **End-to-End Encryption**: ChaCha20-Poly1305 via libsodium with forward secrecy
-- **Multi-threaded TCP Server**: Handles 1000+ concurrent connections
-- **Custom Binary Protocol**: Efficient real-time message delivery
-- **Memory Safety**: Comprehensive buffer protection and secure memory clearing
+A complete encrypted messaging system with a zero-knowledge architecture, featuring multi-threaded TCP server and secure communication protocols.
 
 ### **[C-Monorepo](https://github.com/dunamismax/c-monorepo)** - ARM64 Optimized C Development Template
 
-Professional C development template and educational resource:
-
-- **ARM64 Build System**: Optimized Makefile with parallel builds
-- **Multiple Applications**: Calculator, file utilities, games with modern C patterns
-- **Comprehensive Testing**: Memory safety validation and automated CI/CD
-- **Educational Value**: Best practices for secure C development
+A professional C development template and educational resource, providing an ARM64 optimized Makefile and a structured environment for various C applications. This repository is designed as a **template** to help you get started with a perfect C project setup.
 
 ---
 
@@ -135,43 +105,38 @@ Professional C development template and educational resource:
 
 ## Quick Start Guide
 
-**Try the C Web Server (Recommended):**
+Explore my C projects and get started quickly:
+
+### **[C-Raylib](https://github.com/dunamismax/c-raylib)** - C Gaming Monorepo
 
 ```bash
-# Clone and build
-git clone https://github.com/dunamismax/c-web-server.git
-cd c-web-server && make
-
-# Start server
-make run
-# Visit http://localhost:8080 for HTMX demos
-
-# Custom port
-./build/release/bin/c-web-server 3000
+# Use as GitHub template (recommended for new projects)
+# Or clone directly:
+git clone --recurse-submodules https://github.com/dunamismax/c-raylib.git
+cd c-raylib && make && make run-foss_flapper
 ```
 
-**Explore C-Chat:**
+### **[C-Web-Server](https://github.com/dunamismax/c-web-server)** - Pure C HTTP Server
 
 ```bash
-# Build encrypted chat system
+git clone https://github.com/dunamismax/c-web-server.git
+cd c-web-server && make && make run
+# Visit http://localhost:8080 for HTMX demos
+```
+
+### **[C-Chat](https://github.com/dunamismax/c-chat)** - End-to-End Encrypted Chat
+
+```bash
 git clone https://github.com/dunamismax/c-chat.git
 cd c-chat && make
-
-# Start server (Terminal 1)
-make run-server
-
-# Register and chat (Terminal 2)
-./build/release/bin/c-chat --register alice
-./build/release/bin/c-chat --login alice
+# See repo README for server/client usage
 ```
 
-**Use C-Monorepo Template:**
+### **[C-Monorepo](https://github.com/dunamismax/c-monorepo)** - C Development Template
 
 ```bash
-# Use as GitHub template (recommended)
-# Click "Use this template" on the repository page
-
-# Or clone directly
+# Use as GitHub template (recommended for new projects)
+# Or clone directly:
 git clone https://github.com/dunamismax/c-monorepo.git
 cd c-monorepo && make && make test
 ```
@@ -224,5 +189,3 @@ If you find my C programming projects valuable, consider supporting continued de
   <strong>Building the Future with Pure C & Modern Web Technologies</strong><br>
   <sub>From ultra-lightweight HTTP servers to encrypted communication systems</sub>
 </p>
-
----
