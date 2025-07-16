@@ -1,90 +1,130 @@
 <p align="center">
-  <img src="https://github.com/dunamismax/c-monorepo/blob/main/c.png" alt="C Programming Logo" width="200" />
+  <img src="https://github.com/dunamismax/c-chat/blob/main/c-chat.png" alt="C-Chat Logo" width="200" />
 </p>
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=3071A4&center=true&vCenter=true&width=800&lines=Systems+Programmer;ARM64+Optimized+C+Development;High-Performance+Build+Systems;Security-First+Development" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=3071A4&center=true&vCenter=true&width=800&lines=C+Systems+Programmer;End-to-End+Encrypted+Chat;ARM64+Optimized+Development;Security-First+C+Programming" alt="Typing SVG" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://clang.llvm.org/"><img src="https://img.shields.io/badge/Clang-17+-blue.svg?logo=llvm" alt="Clang Version"></a>
+  <a href="https://libsodium.gitbook.io/doc/"><img src="https://img.shields.io/badge/LibSodium-1.0.20+-green.svg" alt="LibSodium"></a>
   <a href="https://developer.apple.com/documentation/apple-silicon"><img src="https://img.shields.io/badge/ARM64-Apple_Silicon-black.svg?logo=apple" alt="ARM64 Apple Silicon"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
-  <a href="https://github.com/dunamismax/c-monorepo/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
 </p>
 
 ---
 
-## About Me
+## About
 
-Systems programmer specializing in **high-performance C development** and **ARM64 optimization**. I create production-ready applications with a focus on security, performance, and maintainable architecture.
+C systems programmer focused on **cryptographic software**, **network programming**, and **high-performance applications**. I build secure, efficient systems using modern C with ARM64 optimization and security-first design principles.
 
-**Philosophy**: Security-first development with performance optimization and clean, scalable code.
+**Core Focus**: Cryptographic protocols, network systems, memory-safe C development, and performance optimization.
 
 ---
 
-## Featured Project
-
-### **[C Monorepo](https://github.com/dunamismax/c-monorepo)** - ARM64 Optimized C Development Template
+## Featured Projects
 
 <p align="center">
+  <a href="https://github.com/dunamismax/c-chat">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=c-chat&theme=default&show_owner=true" alt="C-Chat Repository" />
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://github.com/dunamismax/c-monorepo">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=c-monorepo&theme=dark&show_owner=true" alt="c-monorepo Repository" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=c-monorepo&theme=default&show_owner=true" alt="C-Monorepo Repository" />
   </a>
 </p>
 
-Production-ready C monorepo optimized for Apple Silicon with professional build system, comprehensive testing, and security hardening.
+### **[C-Chat](https://github.com/dunamismax/c-chat)** - End-to-End Encrypted Command-Line Chat
 
-**What's Included:**
+A complete encrypted messaging system built in pure C featuring:
 
-- **5 Applications**: Calculator, file utils, text processor, games with AI
-- **2 Optimized Libraries**: Math utilities and data structures
-- **Professional Build System**: ARM64-optimized Makefile with parallel builds
-- **Comprehensive Testing**: 29 tests across 4 suites with security validation
-- **Cross-Platform**: macOS and Linux compatibility
+- **End-to-End Encryption**: ChaCha20-Poly1305 via libsodium with forward secrecy
+- **Multi-threaded TCP Server**: Handles 1000+ concurrent connections with real-time message relay
+- **Zero-Knowledge Architecture**: Server never accesses plaintext messages or private keys
+- **Custom Binary Protocol**: Efficient TCP-based protocol with comprehensive error handling
+- **Memory Safety**: Comprehensive buffer protection and secure memory clearing
+- **Cross-Platform**: Native support for macOS, Linux, and BSD systems
+
+**Technical Highlights:**
+
+- Curve25519 key exchange with Argon2 password encryption
+- pthread-based server with rate limiting and DoS protection
+- Real-time message delivery with offline message queuing
+- Comprehensive test suite with network integration tests
+- ARM64-optimized build system with LTO
+
+### **[C-Monorepo](https://github.com/dunamismax/c-monorepo)** - ARM64 Optimized C Development Template
+
+Professional C development template with multiple applications and libraries:
+
+- **Build System**: ARM64-optimized Makefile with parallel builds and security hardening
+- **Applications**: Calculator, file utilities, text processor with modern C patterns
+- **Libraries**: Optimized data structures and mathematical utilities
+- **Testing**: Comprehensive test suites with memory safety validation
+- **Cross-Platform**: macOS and Linux compatibility with automated CI/CD
 
 ---
 
-## Technical Stack
+## Technical Expertise
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=c,apple,linux,vscode,git,github" />
+    <img src="https://skillicons.dev/icons?i=c,cpp,linux,apple,git,github,vscode" />
   </a>
 </p>
 
 **Core Technologies:**
 
-- **C11/C17** with modern security practices
-- **Clang/GCC** with ARM64 optimizations
-- **Make** for efficient build automation
-- **Git** for professional version control
+- **C11/C17** with security-focused practices
+- **Network Programming** (TCP/UDP, custom protocols)
+- **Cryptography** (libsodium, OpenSSL)
+- **Multi-threading** (pthreads, synchronization)
+- **Build Systems** (Make, CMake, cross-platform)
 
-**Specializations:**
+**Specialized Areas:**
 
-- ARM64 Apple Silicon optimization
+- Cryptographic protocol implementation
+- High-performance network servers
 - Memory-safe C development
-- Performance-critical systems
+- ARM64 Apple Silicon optimization
 - Security-hardened applications
 
 ---
 
-## What I Build
+## Development Philosophy
 
-**System Applications** → Robust CLI tools with comprehensive error handling  
-**Performance Libraries** → Optimized algorithms and data structures  
-**Build Systems** → Professional development tooling and automation  
-**Secure Software** → Applications with memory safety and input validation
+**Security First** → All code written with memory safety and input validation  
+**Performance Focused** → ARM64 optimizations and efficient algorithms  
+**Standards Compliant** → Modern C standards with cross-platform compatibility  
+**Test Driven** → Comprehensive testing including security and performance validation
 
 ---
 
 ## Quick Start
 
+**Try C-Chat:**
+
 ```bash
-# Use as template (recommended)
-# Click "Use this template" on GitHub
+# Clone and build
+git clone https://github.com/dunamismax/c-chat.git
+cd c-chat && make
+
+# Start server (Terminal 1)
+make run-server
+
+# Register and chat (Terminal 2)
+./build/release/bin/c-chat --register alice
+./build/release/bin/c-chat --login alice
+```
+
+**Use C-Monorepo Template:**
+
+```bash
+# Use as GitHub template (recommended)
+# Click "Use this template" on the repository
 
 # Or clone directly
 git clone https://github.com/dunamismax/c-monorepo.git
@@ -93,19 +133,16 @@ cd c-monorepo && make && make test
 
 ---
 
-## Support This Work
+## Current Work
 
-If you find my C development template useful, consider supporting continued development:
-
-<p align="center">
-  <a href="https://www.buymeacoffee.com/dunamismax" target="_blank">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" />
-  </a>
-</p>
+- **Advanced Cryptographic Protocols**: Implementing additional security features for C-Chat
+- **Performance Optimization**: ARM64-specific optimizations for high-throughput applications
+- **Network Programming**: TCP/UDP server architectures and custom protocol development
+- **Educational Content**: C programming best practices and security patterns
 
 ---
 
-## Let's Connect
+## Connect
 
 <p align="center">
   <a href="https://twitter.com/dunamismax" target="_blank"><img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"></a>
@@ -118,6 +155,6 @@ If you find my C development template useful, consider supporting continued deve
 ---
 
 <p align="center">
-  <strong>Systems Programming with Modern C</strong><br>
-  <sub>Building efficient, secure, and maintainable software for ARM64</sub>
+  <strong>Secure Systems Programming with Modern C</strong><br>
+  <sub>Building cryptographic software and high-performance applications</sub>
 </p>
