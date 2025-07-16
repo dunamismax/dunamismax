@@ -26,7 +26,7 @@ C systems programmer specializing in **web servers**, **cryptographic software**
 
 ---
 
-## 🚀 Featured Project
+## Featured Project
 
 ### **[C Web Server](https://github.com/dunamismax/c-web-server)** - Pure C HTTP Server with HTMX
 
@@ -36,7 +36,7 @@ C systems programmer specializing in **web servers**, **cryptographic software**
   </a>
 </p>
 
-**🌟 Latest Release** - A from-scratch HTTP web server demonstrating the power of combining pure C with modern web technologies:
+**Latest Release** - A from-scratch HTTP web server demonstrating the power of combining pure C with modern web technologies:
 
 **Core Features:**
 
@@ -65,7 +65,7 @@ cd c-web-server && make run
 
 ---
 
-## 🔧 Additional Projects
+## Additional Projects
 
 <p align="center">
   <a href="https://github.com/dunamismax/c-chat">
@@ -123,7 +123,7 @@ Professional C development template and educational resource:
 
 ---
 
-## 🎯 Development Philosophy
+## Development Philosophy
 
 **Security First** → All code written with memory safety and comprehensive input validation  
 **Performance Focused** → ARM64 optimizations and efficient, lightweight algorithms  
@@ -133,7 +133,7 @@ Professional C development template and educational resource:
 
 ---
 
-## 🚀 Quick Start Guide
+## Quick Start Guide
 
 **Try the C Web Server (Recommended):**
 
@@ -178,7 +178,7 @@ cd c-monorepo && make && make test
 
 ---
 
-## 🔬 Current Work
+## Current Work
 
 - **Advanced Web Features**: Expanding HTMX integration with additional dynamic endpoints
 - **Performance Optimization**: Sub-millisecond response times and memory efficiency improvements
@@ -187,7 +187,7 @@ cd c-monorepo && make && make test
 
 ---
 
-## 📊 GitHub Stats
+## GitHub Stats
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=dunamismax&show_icons=true&theme=dark&count_private=true" alt="GitHub Stats" />
@@ -208,7 +208,7 @@ If you find my C programming projects valuable, consider supporting continued de
 
 ---
 
-## 🌐 Connect With Me
+## Connect With Me
 
 <p align="center">
   <a href="https://twitter.com/dunamismax" target="_blank"><img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"></a>
