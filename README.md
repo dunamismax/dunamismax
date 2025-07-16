@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/dunamismax/ruby-rails/blob/main/rails.png" alt="Ruby on Rails Logo" width="400" />
+  <img src="rails.png" alt="Ruby on Rails Logo" width="400" />
 </p>
 
 <p align="center">
