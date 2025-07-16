@@ -1,18 +1,18 @@
 <p align="center">
-  <img src="c.png" alt="C Programming Logo" width="200" />
+  <img src="https://github.com/dunamismax/ruby-rails/blob/main/rails.png" alt="Ruby on Rails Logo" width="400" />
 </p>
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=3071A4&center=true&vCenter=true&width=800&lines=C+Systems+Programmer+%26+Educator;13+Complete+Applications+for+Learning+C;From+Hello+World+to+Advanced+Compilers;Building+High-Performance+Applications;Secure+%26+Educational+Software+Development;Production-Quality+Learning+Resources;ARM64+Optimized+C+Development;Memory-Safe+%26+Security-Hardened+Code;Thread+Pools+%26+Concurrent+Programming;Database+Engines+%26+B-Tree+Indexing;JSON+Parsers+%26+Network+Clients;Web+Servers+%26+HTMX+Integration;Cryptographic+Protocols+%26+LibSodium;Raylib+Gaming+%26+2D+Animation;Custom+Testing+Frameworks;Progressive+Learning+Paths;Beginner+to+Advanced+Examples;Real-World+C+Programming+Patterns;Cross-Platform+Development;Educational+Excellence+in+C;Making+C+Programming+Accessible;Comprehensive+Documentation;Interactive+Learning+Experience;From+Theory+to+Production+Code" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=CC342D&center=true&vCenter=true&width=800&lines=Ruby+on+Rails+Developer+%26+Architect;Building+Scalable+Monorepo+Platforms;Full-Stack+Ruby+Applications;Modern+Rails+Development;API+Design+%26+Implementation;Dark+Mode+UI+Specialist;Production-Ready+Ruby+Code;Shared+Libraries+%26+Utilities;CLI+Tools+%26+Automation;Blog+%26+Portfolio+Development;Interactive+API+Playgrounds;Text+Analysis+%26+Processing;Secure+Password+Generation;File+Organization+Systems;Code+Statistics+%26+Analytics;Deployment+%26+DevOps+Scripts;Testing+%26+Quality+Assurance;Responsive+Web+Design;Educational+Ruby+Resources;Open+Source+Contributions;Ruby+Gems+Development;Rails+Best+Practices;Monorepo+Architecture;Developer+Productivity+Tools" alt="Typing SVG" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://clang.llvm.org/"><img src="https://img.shields.io/badge/Clang-17+-blue.svg?logo=llvm" alt="Clang Version"></a>
-  <a href="https://htmx.org/"><img src="https://img.shields.io/badge/HTMX-1.9.10+-orange.svg" alt="HTMX Support"></a>
-  <a href="https://libsodium.gitbook.io/doc/"><img src="https://img.shields.io/badge/LibSodium-1.0.20+-green.svg" alt="LibSodium"></a>
-  <a href="https://developer.apple.com/documentation/apple-silicon"><img src="https://img.shields.io/badge/ARM64-Apple_Silicon-black.svg?logo=apple" alt="ARM64 Apple Silicon"></a>
+  <a href="https://www.ruby-lang.org/en/"><img src="https://img.shields.io/badge/Ruby-3.3.0+-red.svg?logo=ruby" alt="Ruby Version"></a>
+  <a href="https://rubyonrails.org/"><img src="https://img.shields.io/badge/Rails-8.0.2+-red.svg?logo=rubyonrails" alt="Rails Version"></a>
+  <a href="https://bundler.io/"><img src="https://img.shields.io/badge/Bundler-2.0+-blue.svg?logo=rubygems" alt="Bundler"></a>
+  <a href="https://sqlite.org/"><img src="https://img.shields.io/badge/SQLite-3.0+-blue.svg?logo=sqlite" alt="SQLite"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
 </p>
 
@@ -20,77 +20,51 @@
 
 ## About
 
-C systems programmer and educator passionate about **educational resources**, **high-performance applications**, **web servers**, and **cryptographic software**. I create comprehensive learning materials and build secure, efficient systems from scratch using modern C with ARM64 optimization and security-first design principles.
+Ruby on Rails developer and architect passionate about **scalable monorepo platforms**, **full-stack web applications**, **API design**, and **developer productivity tools**. I create comprehensive Ruby applications and build efficient, maintainable systems using modern Rails with a focus on code reuse, dark mode interfaces, and production-ready architectures.
 
-**Current Focus**: Comprehensive C programming education, pure C HTTP servers, HTMX integration, cryptographic protocols, and ultra-lightweight web architectures.
+**Current Focus**: Ruby on Rails monorepo development, interactive API playgrounds, CLI automation tools, dark mode UI design, and scalable application architectures.
 
-**Mission**: Making C programming accessible to everyone through hands-on examples, progressive learning paths, and production-quality educational resources that bridge the gap between theory and real-world application.
+**Mission**: Building production-quality Ruby applications that demonstrate best practices in monorepo architecture, shared library development, and modern Rails patterns that enhance developer productivity and code maintainability.
 
 ---
 
-## My C Projects
+## My Ruby Rails Projects
 
-I specialize in building robust, high-performance C applications and educational resources. Here are my key projects, including comprehensive learning materials and template repositories to help you master C programming:
+I specialize in building scalable Ruby on Rails applications and monorepo architectures. Here's my flagship project that demonstrates comprehensive Ruby and Rails development practices:
 
 <p align="center">
-  <a href="https://github.com/dunamismax/c-learning-demos">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=c-learning-demos&theme=dark&show_owner=true" alt="C Learning Demos" />
-  </a>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/dunamismax/c-raylib">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=c-raylib&theme=dark&show_owner=true" alt="C Raylib Monorepo" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://github.com/dunamismax/c-web-server">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=c-web-server&theme=dark&show_owner=true" alt="C Web Server" />
-  </a>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/dunamismax/c-chat">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=c-chat&theme=dark&show_owner=true" alt="C Chat" />
-  </a>
-</p>
-<p align="center">
-  <a href="https://github.com/dunamismax/c-monorepo">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=c-monorepo&theme=dark&show_owner=true" alt="C Monorepo" />
+  <a href="https://github.com/dunamismax/ruby-rails">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=ruby-rails&theme=dark&show_owner=true" alt="Ruby Rails Monorepo" />
   </a>
 </p>
 
-### **[C-Learning-Demos](https://github.com/dunamismax/c-learning-demos)** - Complete C Programming Education
+### **[Ruby-Rails Monorepo](https://github.com/dunamismax/ruby-rails)** - Complete Ruby & Rails Development Platform
 
-**The definitive C programming learning resource** - A comprehensive repository featuring 13 production-quality applications spanning beginner to advanced concepts. Each application demonstrates specific C programming techniques with extensive documentation and real-world examples.
+**The definitive Ruby on Rails monorepo** - A comprehensive platform featuring multiple production-ready applications, shared libraries, CLI tools, and automated scripts. This repository demonstrates modern Ruby and Rails practices with a focus on scalability, maintainability, and developer productivity.
 
-**Complete Learning Path**:
+**Applications & Features**:
 
-- **Beginner** (5 apps): Hello World, Calculator, Number Guessing, Password Generator, Text Analyzer
-- **Intermediate** (4 apps): File Manager, JSON Parser, Network Client, Memory Pool
-- **Advanced** (4 apps): Database Engine, Compiler, Web Server, Thread Pool
+- **🌙 Dunamismax** - Dark-themed personal blog and portfolio website with responsive design
+- **🔧 API Playground** - Interactive API testing environment with 6 utility endpoints
+- **📝 Blog Generator** - CLI tool for creating blog posts with metadata and statistics
+- **📁 File Organizer** - CLI tool for organizing files by type, date, and custom rules
+- **📊 Code Stats** - CLI tool for analyzing code statistics across projects
 
-**Features**: Progressive difficulty • Production-quality code • Comprehensive libraries • Custom testing framework • ARM64 optimized • Educational documentation
+**Infrastructure & Architecture**:
 
-### **[C-Raylib](https://github.com/dunamismax/c-raylib)** - C Gaming Monorepo & Template
+- **💎 Shared Utilities Gem** - Common libraries for string manipulation, date formatting, and API utilities
+- **🔧 Development Scripts** - Bootstrap, testing, and deployment automation
+- **🏗️ Monorepo Structure** - Scalable architecture for multiple applications and shared code
+- **🌑 Dark Mode UI** - Modern, elegant dark themes across all applications
+- **🔐 Security Focused** - Production-ready code with comprehensive input validation
 
-A complete C gaming monorepo built with raylib for developing multiple 2D pixel art games. This repository serves as a **template** for quickly starting your own raylib projects with a professional Makefile and scalable structure.
+**Technical Highlights**:
 
-**Features**: Complete Flappy Bird clone • Animation system • Cross-platform build • Template repository
-
-### **[C-Web-Server](https://github.com/dunamismax/c-web-server)** - Pure C HTTP Server with HTMX
-
-A from-scratch HTTP web server demonstrating the power of combining pure C with modern web technologies for maximum performance and efficiency.
-
-**Features**: Pure C HTTP/1.1 • HTMX integration • Multi-threading • Static file serving • Dynamic endpoints
-
-### **[C-Chat](https://github.com/dunamismax/c-chat)** - End-to-End Encrypted Command-Line Chat
-
-A complete encrypted messaging system with a zero-knowledge architecture, featuring multi-threaded TCP server and secure communication protocols.
-
-**Features**: End-to-end encryption • Multi-threaded server • libsodium cryptography • Real-time messaging
-
-### **[C-Monorepo](https://github.com/dunamismax/c-monorepo)** - ARM64 Optimized C Development Template
-
-A professional C development template and educational resource, providing an ARM64 optimized Makefile and a structured environment for various C applications. This repository is designed as a **template** to help you get started with a perfect C project setup.
-
-**Features**: ARM64 optimization • Professional Makefile • Testing framework • Template repository
+- **Modern Rails 8.0.2** with Ruby 3.3.0+ for cutting-edge features
+- **Production-Quality Code** with comprehensive error handling and validation
+- **Comprehensive Testing** with automated test runners and quality checks
+- **Professional Documentation** with extensive guides and API references
+- **Developer Productivity** with automated setup, linting, and deployment scripts
 
 ---
 
@@ -98,132 +72,126 @@ A professional C development template and educational resource, providing an ARM
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=c,cpp,html,css,js,linux,apple,git,github,vscode" />
+    <img src="https://skillicons.dev/icons?i=ruby,rails,html,css,js,sqlite,git,github,vscode,linux" />
   </a>
 </p>
 
 **Core Technologies:**
 
-- **C11/C17** with security-focused practices and educational approach
-- **Web Technologies** (HTTP/1.1, HTMX, HTML5, CSS3)
-- **Network Programming** (TCP/UDP, custom protocols)
-- **Cryptography** (libsodium, secure protocols)
-- **Multi-threading** (pthreads, concurrent systems)
-- **Educational Development** (Learning resources, comprehensive documentation)
+- **Ruby 3.3.0+** with modern syntax and performance optimizations
+- **Rails 8.0.2+** with cutting-edge features and best practices
+- **Web Technologies** (HTML5, CSS3, JavaScript, Turbo, Stimulus)
+- **Database Systems** (SQLite, PostgreSQL, Active Record)
+- **Testing Frameworks** (RSpec, Capybara, FactoryBot)
+- **Development Tools** (Bundler, RuboCop, Brakeman, Git hooks)
 
 **Specialized Areas:**
 
-- C programming education and tutorial development
-- Pure C web server development
-- HTMX and lightweight web architecture
-- Cryptographic protocol implementation
-- ARM64 Apple Silicon optimization
-- Security-hardened application development
-- Game development with raylib
+- Ruby on Rails monorepo architecture and development
+- API design and implementation with comprehensive documentation
+- Dark mode UI/UX design and responsive web interfaces
+- CLI tool development and automation scripting
+- Shared library development and gem creation
+- Security-focused development with input validation
+- Developer productivity tools and workflow automation
 
 ---
 
 ## Development Philosophy
 
-**Education First** → Making complex C concepts accessible through practical, well-documented examples  
-**Security Focused** → All code written with memory safety and comprehensive input validation  
-**Performance Oriented** → ARM64 optimizations and efficient, lightweight algorithms  
-**Modern Web Integration** → Combining pure C performance with HTMX for dynamic capabilities  
-**Standards Compliant** → Modern C standards with cross-platform compatibility  
-**Test Driven** → Comprehensive testing including security and performance validation
+**Code Reusability** → Building shared libraries and utilities that enhance productivity across projects  
+**Security Focused** → All applications built with comprehensive input validation and security best practices  
+**User Experience** → Modern, responsive dark mode interfaces with intuitive navigation  
+**Developer Productivity** → Automated scripts, testing, and deployment tools that streamline workflows  
+**Standards Compliant** → Following Ruby Style Guide and Rails conventions for maintainable code  
+**API-First Design** → Interactive API playgrounds and comprehensive documentation for all endpoints
 
 ---
 
 ## Quick Start Guide
 
-Explore my C projects and get started with your learning journey:
+Explore my Ruby Rails monorepo and get started with modern Rails development:
 
-### **[C-Learning-Demos](https://github.com/dunamismax/c-learning-demos)** - Start Your C Journey
+### **[Ruby-Rails Monorepo](https://github.com/dunamismax/ruby-rails)** - Complete Development Platform
 
 ```bash
-# Clone the comprehensive learning repository
-git clone https://github.com/dunamismax/c-learning-demos.git
-cd c-learning-demos
+# Clone the comprehensive monorepo
+git clone https://github.com/dunamismax/ruby-rails.git
+cd ruby-rails
 
-# Build all examples and libraries
-make
+# Bootstrap the entire monorepo
+ruby scripts/development/bootstrap.rb
 
-# Start with beginner examples
-make run-hello_world
-make run-calculator
-make run-number_guessing
+# Install dependencies
+bundle install
 
-# Advance to intermediate examples
-make run-file_manager
-make run-json_parser
+# Set up the Rails applications
+cd apps/dunamismax && bundle install && bundle exec rails db:create db:migrate
+cd ../apiplayground && bundle install && bundle exec rails db:create db:migrate
 
-# Run comprehensive test suite
-make test
+# Start the applications
+cd apps/dunamismax && bundle exec rails server
+# Visit http://localhost:3000 for the blog/portfolio
+
+cd apps/apiplayground && bundle exec rails server -p 3001
+# Visit http://localhost:3001 for the API playground
 ```
 
-### **[C-Raylib](https://github.com/dunamismax/c-raylib)** - C Gaming Development
+### **CLI Tools Usage**
 
 ```bash
-# Use as GitHub template (recommended for new projects)
-# Or clone directly:
-git clone --recurse-submodules https://github.com/dunamismax/c-raylib.git
-cd c-raylib && make && make run-foss_flapper
+# Blog Generator - Create blog posts with metadata
+./apps/blog_generator/bin/blog_generator new "My New Post" --tags ruby,rails
+
+# File Organizer - Organize files by type or date
+./apps/file_organizer/bin/file_organizer by_type /path/to/directory
+
+# Code Stats - Analyze project statistics
+./apps/code_stats/bin/code_stats analyze --format json
 ```
 
-### **[C-Web-Server](https://github.com/dunamismax/c-web-server)** - Pure C HTTP Server
+### **Development Scripts**
 
 ```bash
-git clone https://github.com/dunamismax/c-web-server.git
-cd c-web-server && make && make run
-# Visit http://localhost:8080 for HTMX demos
-```
+# Run all tests across applications
+ruby scripts/development/test_runner.rb
 
-### **[C-Chat](https://github.com/dunamismax/c-chat)** - Encrypted Communication
+# Deploy applications
+ruby scripts/deployment/deploy.rb --app dunamismax
 
-```bash
-git clone https://github.com/dunamismax/c-chat.git
-cd c-chat && make
-# See repo README for server/client usage
-```
-
-### **[C-Monorepo](https://github.com/dunamismax/c-monorepo)** - Project Template
-
-```bash
-# Use as GitHub template (recommended for new projects)
-# Or clone directly:
-git clone https://github.com/dunamismax/c-monorepo.git
-cd c-monorepo && make && make test
+# Clean up temporary files
+ruby scripts/maintenance/cleanup.rb
 ```
 
 ---
 
 ## Learning Path Recommendations
 
-**For C Beginners**
-Start with [C-Learning-Demos](https://github.com/dunamismax/c-learning-demos) → Master all 13 applications from basic to advanced → Build your own projects using the patterns learned
+**For Ruby Beginners**
+Start with [Ruby-Rails Monorepo](https://github.com/dunamismax/ruby-rails) → Explore the shared utilities gem → Study the CLI tools → Build your own Ruby applications
 
-**For Game Developers**
-Use [C-Raylib](https://github.com/dunamismax/c-raylib) as template → Study the complete Flappy Bird implementation → Build your own 2D games
+**For Rails Developers**
+Examine the Rails applications (Dunamismax & API Playground) → Study the monorepo architecture → Learn shared library patterns → Implement your own Rails apps
 
-**For Web Developers**
-Explore [C-Web-Server](https://github.com/dunamismax/c-web-server) → Learn pure C HTTP implementation → Master HTMX integration patterns
+**For API Developers**
+Explore the API Playground application → Study the endpoint implementations → Test the interactive API interface → Build your own API tools
 
-**For System Programmers**
-Begin with [C-Learning-Demos](https://github.com/dunamismax/c-learning-demos) advanced section → Study [C-Monorepo](https://github.com/dunamismax/c-monorepo) ARM64 optimizations → Build high-performance applications
+**For CLI Enthusiasts**
+Study the CLI tools (Blog Generator, File Organizer, Code Stats) → Learn the Thor gem usage → Examine the shared utilities integration → Create your own CLI applications
 
-**For Security Enthusiasts**
-Master [C-Learning-Demos](https://github.com/dunamismax/c-learning-demos) memory management → Examine [C-Chat](https://github.com/dunamismax/c-chat) cryptographic implementation → Build secure systems
+**For DevOps Engineers**
+Examine the development scripts → Study the deployment automation → Learn the testing frameworks → Implement your own automation tools
 
 ---
 
 ## Current Work
 
-- **C-Learning-Demos Expansion**: Completed all 13 applications from beginner to advanced, now enhancing documentation and adding interactive tutorials
-- **Educational Content Creation**: Developing comprehensive C programming guides and video content to accompany the learning repository
-- **Advanced Web Features**: Expanding HTMX integration patterns and building ultra-lightweight web architectures
-- **Performance Research**: Achieving sub-millisecond response times through ARM64 optimizations and memory efficiency improvements
-- **Security Hardening**: Implementing advanced input validation and attack surface reduction techniques across all projects
-- **Community Building**: Helping developers master C programming through structured learning paths and hands-on examples
+- **Ruby-Rails Monorepo Enhancement**: Expanding the monorepo with additional applications and improving the shared utilities library
+- **API Playground Development**: Adding more utility endpoints and enhancing the interactive testing interface
+- **CLI Tools Expansion**: Building additional command-line tools for developer productivity and automation
+- **Dark Mode UI Refinement**: Perfecting the dark mode themes across all applications for optimal user experience
+- **Documentation Improvement**: Creating comprehensive guides and tutorials for Ruby and Rails development patterns
+- **Community Engagement**: Sharing Ruby and Rails best practices through open-source contributions and educational content
 
 ---
 
@@ -238,7 +206,7 @@ Master [C-Learning-Demos](https://github.com/dunamismax/c-learning-demos) memory
 
 ## ☕ Support My Work
 
-If you find my C programming projects and educational resources valuable, consider supporting continued development:
+If you find my Ruby on Rails projects and development tools valuable, consider supporting continued development:
 
 <p align="center">
   <a href="https://www.buymeacoffee.com/dunamismax" target="_blank">
@@ -261,6 +229,6 @@ If you find my C programming projects and educational resources valuable, consid
 ---
 
 <p align="center">
-  <strong>Building the Future with Pure C & Educational Excellence</strong><br>
-  <sub>From comprehensive learning resources to ultra-lightweight production systems</sub>
+  <strong>Building the Future with Ruby on Rails & Developer Excellence</strong><br>
+  <sub>From comprehensive monorepo platforms to production-ready applications</sub>
 </p>
