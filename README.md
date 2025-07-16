@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/dunamismax/c-web-server/blob/main/c.png" alt="C Programming Logo" width="200" />
+  <img src="c.png" alt="C Programming Logo" width="200" />
 </p>
 
 <p align="center">
