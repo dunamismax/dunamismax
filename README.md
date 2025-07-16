@@ -56,7 +56,7 @@ I specialize in building robust, high-performance C applications and educational
   </a>
 </p>
 
-### **[C-Learning-Demos](https://github.com/dunamismax/c-learning-demos)** 🎓 - Complete C Programming Education
+### **[C-Learning-Demos](https://github.com/dunamismax/c-learning-demos)** - Complete C Programming Education
 
 **The definitive C programming learning resource** - A comprehensive repository featuring 13 production-quality applications spanning beginner to advanced concepts. Each application demonstrates specific C programming techniques with extensive documentation and real-world examples.
 
@@ -68,25 +68,25 @@ I specialize in building robust, high-performance C applications and educational
 
 **Features**: Progressive difficulty • Production-quality code • Comprehensive libraries • Custom testing framework • ARM64 optimized • Educational documentation
 
-### **[C-Raylib](https://github.com/dunamismax/c-raylib)** 🎮 - C Gaming Monorepo & Template
+### **[C-Raylib](https://github.com/dunamismax/c-raylib)** - C Gaming Monorepo & Template
 
 A complete C gaming monorepo built with raylib for developing multiple 2D pixel art games. This repository serves as a **template** for quickly starting your own raylib projects with a professional Makefile and scalable structure.
 
 **Features**: Complete Flappy Bird clone • Animation system • Cross-platform build • Template repository
 
-### **[C-Web-Server](https://github.com/dunamismax/c-web-server)** 🌐 - Pure C HTTP Server with HTMX
+### **[C-Web-Server](https://github.com/dunamismax/c-web-server)** - Pure C HTTP Server with HTMX
 
 A from-scratch HTTP web server demonstrating the power of combining pure C with modern web technologies for maximum performance and efficiency.
 
 **Features**: Pure C HTTP/1.1 • HTMX integration • Multi-threading • Static file serving • Dynamic endpoints
 
-### **[C-Chat](https://github.com/dunamismax/c-chat)** 🔒 - End-to-End Encrypted Command-Line Chat
+### **[C-Chat](https://github.com/dunamismax/c-chat)** - End-to-End Encrypted Command-Line Chat
 
 A complete encrypted messaging system with a zero-knowledge architecture, featuring multi-threaded TCP server and secure communication protocols.
 
 **Features**: End-to-end encryption • Multi-threaded server • libsodium cryptography • Real-time messaging
 
-### **[C-Monorepo](https://github.com/dunamismax/c-monorepo)** ⚡ - ARM64 Optimized C Development Template
+### **[C-Monorepo](https://github.com/dunamismax/c-monorepo)** - ARM64 Optimized C Development Template
 
 A professional C development template and educational resource, providing an ARM64 optimized Makefile and a structured environment for various C applications. This repository is designed as a **template** to help you get started with a perfect C project setup.
 
@@ -94,7 +94,7 @@ A professional C development template and educational resource, providing an ARM
 
 ---
 
-## 💻 Technical Expertise
+## Technical Expertise
 
 <p align="center">
   <a href="https://skillicons.dev">
@@ -199,19 +199,19 @@ cd c-monorepo && make && make test
 
 ## Learning Path Recommendations
 
-**For C Beginners** 📚  
+**For C Beginners**
 Start with [C-Learning-Demos](https://github.com/dunamismax/c-learning-demos) → Master all 13 applications from basic to advanced → Build your own projects using the patterns learned
 
-**For Game Developers** 🎮  
+**For Game Developers**
 Use [C-Raylib](https://github.com/dunamismax/c-raylib) as template → Study the complete Flappy Bird implementation → Build your own 2D games
 
-**For Web Developers** 🌐  
+**For Web Developers**
 Explore [C-Web-Server](https://github.com/dunamismax/c-web-server) → Learn pure C HTTP implementation → Master HTMX integration patterns
 
-**For System Programmers** ⚡  
+**For System Programmers**
 Begin with [C-Learning-Demos](https://github.com/dunamismax/c-learning-demos) advanced section → Study [C-Monorepo](https://github.com/dunamismax/c-monorepo) ARM64 optimizations → Build high-performance applications
 
-**For Security Enthusiasts** 🔒  
+**For Security Enthusiasts**
 Master [C-Learning-Demos](https://github.com/dunamismax/c-learning-demos) memory management → Examine [C-Chat](https://github.com/dunamismax/c-chat) cryptographic implementation → Build secure systems
 
 ---
