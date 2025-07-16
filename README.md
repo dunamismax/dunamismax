@@ -1,15 +1,16 @@
 <p align="center">
-  <img src="https://github.com/dunamismax/c-chat/blob/main/c-chat.png" alt="C-Chat Logo" width="200" />
+  <img src="https://github.com/dunamismax/c-web-server/blob/main/c.png" alt="C Programming Logo" width="200" />
 </p>
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=3071A4&center=true&vCenter=true&width=800&lines=C+Systems+Programmer;End-to-End+Encrypted+Chat;ARM64+Optimized+Development;Security-First+C+Programming" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=3071A4&center=true&vCenter=true&width=800&lines=C+Systems+Programmer;Pure+C+HTTP+Web+Server;HTMX+Dynamic+Capabilities;ARM64+Optimized+Performance;Security-First+Development" alt="Typing SVG" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://clang.llvm.org/"><img src="https://img.shields.io/badge/Clang-17+-blue.svg?logo=llvm" alt="Clang Version"></a>
+  <a href="https://htmx.org/"><img src="https://img.shields.io/badge/HTMX-1.9.10+-orange.svg" alt="HTMX Support"></a>
   <a href="https://libsodium.gitbook.io/doc/"><img src="https://img.shields.io/badge/LibSodium-1.0.20+-green.svg" alt="LibSodium"></a>
   <a href="https://developer.apple.com/documentation/apple-silicon"><img src="https://img.shields.io/badge/ARM64-Apple_Silicon-black.svg?logo=apple" alt="ARM64 Apple Silicon"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
@@ -19,13 +20,52 @@
 
 ## About
 
-C systems programmer focused on **cryptographic software**, **network programming**, and **high-performance applications**. I build secure, efficient systems using modern C with ARM64 optimization and security-first design principles.
+C systems programmer specializing in **web servers**, **cryptographic software**, and **high-performance applications**. I build secure, efficient systems from scratch using modern C with ARM64 optimization and security-first design principles.
 
-**Core Focus**: Cryptographic protocols, network systems, memory-safe C development, and performance optimization.
+**Current Focus**: Pure C HTTP servers, HTMX integration, cryptographic protocols, and ultra-lightweight web architectures.
 
 ---
 
-## Featured Projects
+## 🚀 Featured Project
+
+### **[C Web Server](https://github.com/dunamismax/c-web-server)** - Pure C HTTP Server with HTMX
+
+<p align="center">
+  <a href="https://github.com/dunamismax/c-web-server">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=c-web-server&theme=dark&show_owner=true" alt="C Web Server Repository" />
+  </a>
+</p>
+
+**🌟 Latest Release** - A from-scratch HTTP web server demonstrating the power of combining pure C with modern web technologies:
+
+**Core Features:**
+
+- **Pure C Implementation**: Zero dependencies except pthread, built from scratch
+- **HTMX Integration**: Dynamic content without heavy JavaScript frameworks
+- **Security Hardened**: Path traversal protection, input validation, HTML escaping
+- **Multi-threaded**: Concurrent client handling with pthread architecture
+- **ARM64 Optimized**: Apple Silicon-specific optimizations with LTO
+- **Ultra-Lightweight**: Sub-millisecond response times, minimal memory footprint
+
+**Quick Start:**
+
+```bash
+git clone https://github.com/dunamismax/c-web-server.git
+cd c-web-server && make run
+# Server available at http://localhost:8080
+```
+
+**Technical Highlights:**
+
+- Custom HTTP/1.1 parser with security validation
+- Built-in API endpoints for HTMX dynamic features
+- Memory-safe string operations and bounds checking
+- Cross-platform support (macOS, Linux, BSD)
+- Professional build system with sanitizers and static analysis
+
+---
+
+## 🔧 Additional Projects
 
 <p align="center">
   <a href="https://github.com/dunamismax/c-chat">
@@ -39,76 +79,81 @@ C systems programmer focused on **cryptographic software**, **network programmin
 
 ### **[C-Chat](https://github.com/dunamismax/c-chat)** - End-to-End Encrypted Command-Line Chat
 
-A complete encrypted messaging system built in pure C featuring:
+Complete encrypted messaging system with zero-knowledge architecture:
 
 - **End-to-End Encryption**: ChaCha20-Poly1305 via libsodium with forward secrecy
-- **Multi-threaded TCP Server**: Handles 1000+ concurrent connections with real-time message relay
-- **Zero-Knowledge Architecture**: Server never accesses plaintext messages or private keys
-- **Custom Binary Protocol**: Efficient TCP-based protocol with comprehensive error handling
+- **Multi-threaded TCP Server**: Handles 1000+ concurrent connections
+- **Custom Binary Protocol**: Efficient real-time message delivery
 - **Memory Safety**: Comprehensive buffer protection and secure memory clearing
-- **Cross-Platform**: Native support for macOS, Linux, and BSD systems
-
-**Technical Highlights:**
-
-- Curve25519 key exchange with Argon2 password encryption
-- pthread-based server with rate limiting and DoS protection
-- Real-time message delivery with offline message queuing
-- Comprehensive test suite with network integration tests
-- ARM64-optimized build system with LTO
 
 ### **[C-Monorepo](https://github.com/dunamismax/c-monorepo)** - ARM64 Optimized C Development Template
 
-Professional C development template with multiple applications and libraries:
+Professional C development template and educational resource:
 
-- **Build System**: ARM64-optimized Makefile with parallel builds and security hardening
-- **Applications**: Calculator, file utilities, text processor with modern C patterns
-- **Libraries**: Optimized data structures and mathematical utilities
-- **Testing**: Comprehensive test suites with memory safety validation
-- **Cross-Platform**: macOS and Linux compatibility with automated CI/CD
+- **ARM64 Build System**: Optimized Makefile with parallel builds
+- **Multiple Applications**: Calculator, file utilities, games with modern C patterns
+- **Comprehensive Testing**: Memory safety validation and automated CI/CD
+- **Educational Value**: Best practices for secure C development
 
 ---
 
-## Technical Expertise
+## 💻 Technical Expertise
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=c,cpp,linux,apple,git,github,vscode" />
+    <img src="https://skillicons.dev/icons?i=c,cpp,html,css,js,linux,apple,git,github,vscode" />
   </a>
 </p>
 
 **Core Technologies:**
 
 - **C11/C17** with security-focused practices
+- **Web Technologies** (HTTP/1.1, HTMX, HTML5, CSS3)
 - **Network Programming** (TCP/UDP, custom protocols)
-- **Cryptography** (libsodium, OpenSSL)
-- **Multi-threading** (pthreads, synchronization)
-- **Build Systems** (Make, CMake, cross-platform)
+- **Cryptography** (libsodium, secure protocols)
+- **Multi-threading** (pthreads, concurrent systems)
 
 **Specialized Areas:**
 
+- Pure C web server development
+- HTMX and lightweight web architecture
 - Cryptographic protocol implementation
-- High-performance network servers
-- Memory-safe C development
 - ARM64 Apple Silicon optimization
-- Security-hardened applications
+- Security-hardened application development
 
 ---
 
-## Development Philosophy
+## 🎯 Development Philosophy
 
-**Security First** → All code written with memory safety and input validation  
-**Performance Focused** → ARM64 optimizations and efficient algorithms  
+**Security First** → All code written with memory safety and comprehensive input validation  
+**Performance Focused** → ARM64 optimizations and efficient, lightweight algorithms  
+**Modern Web** → Combining pure C performance with HTMX for dynamic capabilities  
 **Standards Compliant** → Modern C standards with cross-platform compatibility  
 **Test Driven** → Comprehensive testing including security and performance validation
 
 ---
 
-## Quick Start
+## 🚀 Quick Start Guide
 
-**Try C-Chat:**
+**Try the C Web Server (Recommended):**
 
 ```bash
 # Clone and build
+git clone https://github.com/dunamismax/c-web-server.git
+cd c-web-server && make
+
+# Start server
+make run
+# Visit http://localhost:8080 for HTMX demos
+
+# Custom port
+./build/release/bin/c-web-server 3000
+```
+
+**Explore C-Chat:**
+
+```bash
+# Build encrypted chat system
 git clone https://github.com/dunamismax/c-chat.git
 cd c-chat && make
 
@@ -124,7 +169,7 @@ make run-server
 
 ```bash
 # Use as GitHub template (recommended)
-# Click "Use this template" on the repository
+# Click "Use this template" on the repository page
 
 # Or clone directly
 git clone https://github.com/dunamismax/c-monorepo.git
@@ -133,16 +178,27 @@ cd c-monorepo && make && make test
 
 ---
 
-## Current Work
+## 🔬 Current Work
 
-- **Advanced Cryptographic Protocols**: Implementing additional security features for C-Chat
-- **Performance Optimization**: ARM64-specific optimizations for high-throughput applications
-- **Network Programming**: TCP/UDP server architectures and custom protocol development
-- **Educational Content**: C programming best practices and security patterns
+- **Advanced Web Features**: Expanding HTMX integration with additional dynamic endpoints
+- **Performance Optimization**: Sub-millisecond response times and memory efficiency improvements
+- **Security Research**: Advanced input validation and attack surface reduction
+- **Educational Content**: C web programming tutorials and best practices documentation
 
 ---
 
-## Support Me
+## 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=dunamismax&show_icons=true&theme=dark&count_private=true" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dunamismax&layout=compact&theme=dark" alt="Top Languages" />
+</p>
+
+---
+
+## ☕ Support My Work
+
+If you find my C programming projects valuable, consider supporting continued development:
 
 <p align="center">
   <a href="https://www.buymeacoffee.com/dunamismax" target="_blank">
@@ -152,7 +208,7 @@ cd c-monorepo && make && make test
 
 ---
 
-## Connect
+## 🌐 Connect With Me
 
 <p align="center">
   <a href="https://twitter.com/dunamismax" target="_blank"><img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"></a>
@@ -165,7 +221,8 @@ cd c-monorepo && make && make test
 ---
 
 <p align="center">
-  <strong>Secure Systems Programming with Modern C</strong><br>
-  <sub>Building cryptographic software and high-performance applications</sub>
+  <strong>Building the Future with Pure C & Modern Web Technologies</strong><br>
+  <sub>From ultra-lightweight HTTP servers to encrypted communication systems</sub>
 </p>
+
 ---
