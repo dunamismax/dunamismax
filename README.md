@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=3071A4&center=true&vCenter=true&width=800&lines=C+Systems+Programmer+&+Educator;Building+High-Performance+Applications;Secure+&+Educational+Software+Development;From+Learning+Resources+to+Production+Systems;ARM64+Optimized+C+Development;Raylib+Gaming+&+Web+Servers+in+Pure+C" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=3071A4&center=true&vCenter=true&width=800&lines=C+Systems+Programmer+%26+Educator;13+Complete+Applications+for+Learning+C;From+Hello+World+to+Advanced+Compilers;Building+High-Performance+Applications;Secure+%26+Educational+Software+Development;Production-Quality+Learning+Resources;ARM64+Optimized+C+Development;Memory-Safe+%26+Security-Hardened+Code;Thread+Pools+%26+Concurrent+Programming;Database+Engines+%26+B-Tree+Indexing;JSON+Parsers+%26+Network+Clients;Web+Servers+%26+HTMX+Integration;Cryptographic+Protocols+%26+LibSodium;Raylib+Gaming+%26+2D+Animation;Custom+Testing+Frameworks;Progressive+Learning+Paths;Beginner+to+Advanced+Examples;Real-World+C+Programming+Patterns;Cross-Platform+Development;Educational+Excellence+in+C;Making+C+Programming+Accessible;Comprehensive+Documentation;Interactive+Learning+Experience;From+Theory+to+Production+Code" alt="Typing SVG" />
   </a>
 </p>
 
