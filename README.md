@@ -29,11 +29,11 @@ C systems programmer focused on **cryptographic software**, **network programmin
 
 <p align="center">
   <a href="https://github.com/dunamismax/c-chat">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=c-chat&theme=default&show_owner=true" alt="C-Chat Repository" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=c-chat&theme=dark&show_owner=true" alt="C-Chat Repository" />
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://github.com/dunamismax/c-monorepo">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=c-monorepo&theme=default&show_owner=true" alt="C-Monorepo Repository" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=c-monorepo&theme=dark&show_owner=true" alt="C-Monorepo Repository" />
   </a>
 </p>
 
