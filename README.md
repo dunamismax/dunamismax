@@ -30,7 +30,7 @@ JavaScript developer specializing in **pure Vanilla JavaScript web applications*
 
 ## Featured Project
 
-### **[JS-Monolith](https://github.com/dunamismax/JS-Monolith)** - The Ultimate Pure JavaScript Monorepo
+### **[js-monolith](https://github.com/dunamismax/JS-Monolith)** - The Ultimate Pure JavaScript Monorepo
 
 <p align="center">
   <a href="https://github.com/dunamismax/JS-Monolith">
