@@ -75,16 +75,6 @@ The **purest form of JavaScript web development** - architected for maximum perf
 - **Turborepo** for intelligent monorepo caching and parallel execution
 - **pnpm** for fast, disk-efficient package management
 
-**Specialized Areas:**
-
-- **Pure Vanilla JavaScript** web application development
-- **Zero-framework architecture** design and implementation
-- **Web Components** development and component system design
-- **High-performance backend** development with Fastify
-- **Modern build tooling** optimization and configuration
-- **Database performance** optimization with native drivers
-- **Monorepo architecture** and development workflow optimization
-
 ---
 
 ## Quick Start
@@ -140,31 +130,6 @@ cd apps/api && pnpm dev        # API server only
 - **pnpm** - Fast, disk-efficient package management
 - **ESLint** - Code quality and consistency enforcement
 - **Pico.css** - Minimalist, semantic CSS framework
-
----
-
-## Web Development Principles
-
-**Performance-First Architecture:**
-
-- Eliminate unnecessary abstractions and framework overhead
-- Use native browser APIs for maximum speed and compatibility
-- Optimize build processes with modern tooling like esbuild
-- Implement efficient database operations with native drivers
-
-**Modern JavaScript Standards:**
-
-- Embrace ES2024 features and modern syntax
-- Utilize Web Components for reusable, framework-agnostic UI
-- Implement proper module systems and tree-shaking
-- Follow semantic versioning and dependency management best practices
-
-**Developer Experience:**
-
-- Implement hot module replacement for rapid development
-- Use intelligent caching with Turborepo for faster builds
-- Provide comprehensive linting and code quality tools
-- Create clear, maintainable code architecture
 
 ---
 
