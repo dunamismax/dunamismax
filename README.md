@@ -61,7 +61,7 @@ The **purest form of JavaScript web development** - architected for maximum perf
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js,nodejs,fastify,mongodb,html,css,esbuild,git,github,vscode,linux,docker" />
+    <img src="https://skillicons.dev/icons?i=js,nodejs,mongodb,html,css,git,github,vscode,linux,docker" />
   </a>
 </p>
 
