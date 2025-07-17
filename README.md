@@ -4,14 +4,15 @@
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=Go+Developer;The+Ultimate+Hypermedia-Driven+Web+Stack;Single-Binary+Applications;Go+%2B+Chi+%2B+HTMX+%2B+Gomponents;SQLite+%2B+Vanilla+CSS;Production-Ready+Go+Code" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=Go+Developer;The+Ultimate+Go+Standard+Library+Web+Stack;Pure+Go+%2B+Zero+Dependencies;http.ServeMux+%2B+HTMX+%2B+html/template;SQLite+%2B+Vanilla+CSS;Single-Binary+Applications" alt="Typing SVG" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://golang.org/"><img src="https://img.shields.io/badge/Go-1.23+-00ADD8.svg?logo=go" alt="Go Version"></a>
-  <a href="https://github.com/go-chi/chi"><img src="https://img.shields.io/badge/Chi-v5.0+-00ADD8.svg?logo=go" alt="Chi Version"></a>
+  <a href="https://pkg.go.dev/net/http"><img src="https://img.shields.io/badge/Router-http.ServeMux-00ADD8.svg?logo=go" alt="Standard Library Router"></a>
   <a href="https://htmx.org/"><img src="https://img.shields.io/badge/HTMX-2.0+-3366CC.svg?logo=htmx" alt="HTMX Version"></a>
+  <a href="https://pkg.go.dev/html/template"><img src="https://img.shields.io/badge/Templates-html/template-00ADD8.svg?logo=go" alt="Standard Library Templates"></a>
   <a href="https://sqlite.org/"><img src="https://img.shields.io/badge/SQLite-3.0+-003B57.svg?logo=sqlite" alt="SQLite Version"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
 </p>
@@ -20,13 +21,41 @@
 
 ## About
 
-Go developer focused on building hypermedia-driven web applications with single-binary deployment. I create comprehensive Go applications emphasizing simplicity, performance, and zero-dependency architectures using modern Go practices.
+Go developer specializing in **pure Go standard library web applications** with zero external dependencies. I create comprehensive, production-ready Go applications that emphasize simplicity, performance, and single-binary deployment using the most stable and reliable approach possible.
 
-**Current Focus**: The Ultimate Hypermedia-Driven Web Stack - Go + Chi + HTMX + Gomponents + SQLite + Vanilla CSS + Mage build system.
+**Current Focus**: The Ultimate Go Standard Library Web Stack - demonstrating the power of Go's built-in capabilities for building modern, hypermedia-driven web applications.
 
 ---
 
-## Featured Project
+## Featured Projects
+
+### 🚀 **[Go-Stdlib](https://github.com/dunamismax/go-stdlib)** - The Ultimate Go Standard Library Web Stack
+
+<p align="center">
+  <a href="https://github.com/dunamismax/go-stdlib">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=go-stdlib&theme=dark&show_owner=true" alt="Go Standard Library Web Stack" />
+  </a>
+</p>
+
+The **purest form of Go web development** - architected for maximum simplicity, stability, and robustness by exclusively using the Go standard library. This represents the ultimate in dependency-free, single-binary web applications.
+
+**🔥 Key Features:**
+
+- **Zero External Dependencies** - Pure Go standard library only
+- **CGO-Free SQLite** - Database with no C dependencies (`modernc.org/sqlite`)
+- **Standard Library Router** - Native `http.ServeMux` for maximum compatibility
+- **Built-in Templates** - Go's `html/template` with automatic XSS protection
+- **Embedded Assets** - Everything bundled via `//go:embed`
+- **Production Ready** - Security-hardened with proper session management
+
+**Applications:**
+
+- **API Playground** - Interactive testing platform with text analysis and utilities
+- **GoSocial** - Full-featured social media platform with real-time interactions
+
+---
+
+### 🎯 **[Go-Chi](https://github.com/dunamismax/go-chi)** - Modern Go Web Framework Stack
 
 <p align="center">
   <a href="https://github.com/dunamismax/go-chi">
@@ -34,25 +63,31 @@ Go developer focused on building hypermedia-driven web applications with single-
   </a>
 </p>
 
-### **[Go-Chi Monorepo](https://github.com/dunamismax/go-chi)** - The Ultimate Hypermedia-Driven Web Stack
+A comprehensive demonstration of **modern Go web development** using popular community packages. Perfect for developers who want feature-rich frameworks while maintaining Go's simplicity.
 
-A comprehensive monorepo showcasing production-ready Go applications with hypermedia-driven architecture. Demonstrates modern Go practices with single-binary deployment and zero external dependencies.
+**🛠️ Technical Stack:**
 
-**Applications**:
+- **Chi Router** - Lightweight, composable HTTP routing
+- **Gomponents** - Type-safe HTML component generation
+- **HTMX** - Dynamic hypermedia interactions
+- **SQLite** - Embedded database with zero network latency
+- **Mage** - Go-based build automation
 
-- **API Playground** - Interactive API testing platform with text analysis, random generators, and utilities
-- **GoSocial** - Twitter-like social media platform with authentication and real-time features
-- **Shared Libraries** - Reusable packages for components, database, middleware, styles, and utilities
+Both projects demonstrate **single-binary deployment** with embedded assets and **hypermedia-driven architecture**.
 
-**Technical Features**:
+---
 
-- **Single-Binary Deployment** with embedded assets via `//go:embed`
-- **Hypermedia-First Architecture** using HTMX for dynamic interactions
-- **Type-Safe HTML Components** with Gomponents
-- **Zero-Latency Database** with embedded SQLite
-- **Vanilla CSS** for direct styling control
-- **Mage Build System** for Go-based automation
-- **Security-Hardened** with input validation and XSS protection
+## Stack Comparison
+
+| Aspect             | Go-Stdlib (Pure)          | Go-Chi (Modern)   |
+| ------------------ | ------------------------- | ----------------- |
+| **Router**         | `net/http.ServeMux`       | Chi Router        |
+| **Templates**      | `html/template`           | Gomponents        |
+| **Dependencies**   | **Zero**                  | Minimal           |
+| **Stability**      | **Maximum**               | High              |
+| **Features**       | Standard Library          | Enhanced          |
+| **Learning Curve** | **Gentle**                | Moderate          |
+| **Best For**       | **Production**, Long-term | Rapid Development |
 
 ---
 
@@ -67,6 +102,7 @@ A comprehensive monorepo showcasing production-ready Go applications with hyperm
 **Core Technologies:**
 
 - **Go 1.23+** with modern syntax and performance optimizations
+- **Standard Library Mastery** - `net/http`, `html/template`, `database/sql`
 - **Chi Router** for lightweight, composable HTTP routing
 - **HTMX** for dynamic hypermedia interactions
 - **Gomponents** for type-safe HTML component generation
@@ -75,49 +111,62 @@ A comprehensive monorepo showcasing production-ready Go applications with hyperm
 
 **Specialized Areas:**
 
-- Hypermedia-driven web application architecture
-- Single-binary deployment strategies
-- Embedded asset management with Go embed
-- Type-safe HTML component development
-- Zero-dependency application design
-- Go-based build automation with Mage
+- **Pure Go Standard Library** web application development
+- **Zero-dependency architecture** design and implementation
+- **Single-binary deployment** strategies and optimization
+- **Hypermedia-driven** web application architecture
+- **Embedded asset management** with Go embed
+- **Type-safe HTML** component development
+- **Go-based build automation** with Mage
 
 ---
 
 ## Development Philosophy
 
-**Simplicity First** → Single-binary applications with minimal external dependencies  
-**Performance Focused** → Compiled Go binaries with embedded assets for zero-latency operations  
-**Type Safety** → End-to-end type safety from backend logic to frontend components  
-**Hypermedia-Driven** → Server-rendered HTML with HTMX for rich interactions  
-**Security-Conscious** → Input validation, XSS protection, and secure session management
+**Standard Library First** → Leverage Go's built-in capabilities for maximum stability and longevity  
+**Zero Dependencies** → Minimize external dependencies for reduced security surface and maintenance  
+**Single Binary** → Self-contained applications with embedded assets for easy deployment  
+**Hypermedia-Driven** → Server-rendered HTML with HTMX for rich, accessible interactions  
+**Security-Conscious** → Input validation, XSS protection, and secure session management  
+**Performance Focused** → Compiled Go binaries with embedded assets for zero-latency operations
 
 ---
 
 ## Quick Start
 
-Explore The Ultimate Hypermedia-Driven Web Stack:
+### 🚀 Go Standard Library Stack (Recommended)
 
 ```bash
-# Clone the monorepo
-git clone https://github.com/dunamismax/go-chi.git
-cd go-chi
+# Clone the pure Go standard library stack
+git clone https://github.com/dunamismax/go-stdlib.git
+cd go-stdlib
 
 # Install Mage build system
 go install github.com/magefile/mage@latest
 
-# Initialize development environment
+# Initialize and start
 mage dev:init
-
-# Start all applications
 mage dev:start
+
+# Access applications
 # API Playground: http://localhost:8080
 # GoSocial: http://localhost:8081
 
-# Build production binaries
+# Build production binaries (single, dependency-free)
 mage prod:release
-./build/api-playground  # Single binary with all assets
-./build/go-social       # Single binary with all assets
+./build/api-playground  # Zero external dependencies
+./build/go-social       # Pure Go standard library
+```
+
+### 🎯 Modern Go Framework Stack
+
+```bash
+# Clone the modern framework stack
+git clone https://github.com/dunamismax/go-chi.git
+cd go-chi
+
+# Same commands as above
+mage dev:init && mage dev:start
 ```
 
 ---
@@ -133,7 +182,7 @@ mage prod:release
 
 ## Support My Work
 
-If you find The Ultimate Hypermedia-Driven Web Stack valuable, consider supporting continued development:
+If you find The Ultimate Go Standard Library Web Stack valuable, consider supporting continued development:
 
 <p align="center">
   <a href="https://www.buymeacoffee.com/dunamismax" target="_blank">
@@ -156,6 +205,6 @@ If you find The Ultimate Hypermedia-Driven Web Stack valuable, consider supporti
 ---
 
 <p align="center">
-  <strong>Building the Future with The Ultimate Hypermedia-Driven Web Stack</strong><br>
-  <sub>Go + Chi + HTMX + Gomponents + SQLite + Vanilla CSS + Mage</sub>
+  <strong>Building the Future with The Ultimate Go Standard Library Web Stack</strong><br>
+  <sub>Go + http.ServeMux + HTMX + html/template + SQLite + Vanilla CSS + Mage</sub>
 </p>
