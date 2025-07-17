@@ -167,7 +167,7 @@ If you find The Ultimate Pure JavaScript Monorepo valuable, consider supporting 
 ---
 
 <p align="center">
-  <img src="https://github.com/dunamismax/js-monolith/blob/main/images/js-yellow-blank.jpeg" alt="JavaScript Yellow" width="400" />
+  <img src="https://github.com/dunamismax/js-monolith/blob/main/images/js-yellow-crown.jpg" alt="JavaScript Yellow" width="400" />
 </p>
 
 <p align="center">
