@@ -1,19 +1,20 @@
 <p align="center">
-  <img src="go.png" alt="Go Logo" width="400" />
+  <img src="https://github.com/dunamismax/js-monolith/blob/main/images/js-coffee-particles.jpeg" alt="JavaScript Coffee Particles" width="400" />
 </p>
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=Go+Developer;The+Ultimate+Go+Standard+Library+Web+Stack;Pure+Go+%2B+Zero+Dependencies;http.ServeMux+%2B+HTMX+%2B+html/template;SQLite+%2B+Vanilla+CSS;Single-Binary+Applications" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=F7DF1E&center=true&vCenter=true&width=800&lines=JavaScript+Developer;The+Ultimate+Pure+JavaScript+Monorepo;Vanilla+JS+%2B+Web+Components+%2B+Fastify;Lightning-Fast+esbuild+%2B+MongoDB;Pico.css+%2B+Turborepo;Zero+Framework+Overhead" alt="Typing SVG" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://golang.org/"><img src="https://img.shields.io/badge/Go-1.23+-00ADD8.svg?logo=go" alt="Go Version"></a>
-  <a href="https://pkg.go.dev/net/http"><img src="https://img.shields.io/badge/Router-http.ServeMux-00ADD8.svg?logo=go" alt="Standard Library Router"></a>
-  <a href="https://htmx.org/"><img src="https://img.shields.io/badge/HTMX-2.0+-3366CC.svg?logo=htmx" alt="HTMX Version"></a>
-  <a href="https://pkg.go.dev/html/template"><img src="https://img.shields.io/badge/Templates-html/template-00ADD8.svg?logo=go" alt="Standard Library Templates"></a>
-  <a href="https://sqlite.org/"><img src="https://img.shields.io/badge/SQLite-3.0+-003B57.svg?logo=sqlite" alt="SQLite Version"></a>
+  <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-18+-339933.svg?logo=node.js" alt="Node.js Version"></a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/JavaScript-ES2024-F7DF1E.svg?logo=javascript" alt="JavaScript Version"></a>
+  <a href="https://www.fastify.io/"><img src="https://img.shields.io/badge/Fastify-4.0+-000000.svg?logo=fastify" alt="Fastify Version"></a>
+  <a href="https://esbuild.github.io/"><img src="https://img.shields.io/badge/esbuild-0.20+-FFCF00.svg?logo=esbuild" alt="esbuild Version"></a>
+  <a href="https://www.mongodb.com/"><img src="https://img.shields.io/badge/MongoDB-6.0+-47A248.svg?logo=mongodb" alt="MongoDB Version"></a>
+  <a href="https://turbo.build/"><img src="https://img.shields.io/badge/Turborepo-2.0+-EF4444.svg?logo=turborepo" alt="Turborepo Version"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
 </p>
 
@@ -21,37 +22,38 @@
 
 ## About
 
-Go developer specializing in **pure Go standard library web applications** with zero external dependencies. I create comprehensive, production-ready Go applications that emphasize simplicity, performance, and single-binary deployment using the most stable and reliable approach possible.
+JavaScript developer specializing in **pure Vanilla JavaScript web applications** with zero framework overhead. I create comprehensive, production-ready JavaScript applications that emphasize simplicity, performance, and modern web standards using native browser APIs and cutting-edge build tools.
 
-**Current Focus**: The Ultimate Go Standard Library Web Stack - demonstrating the power of Go's built-in capabilities for building modern, hypermedia-driven web applications.
+**Current Focus**: The Ultimate Pure JavaScript Monorepo - demonstrating the power of vanilla JavaScript, Web Components, and modern tooling for building lightning-fast, framework-free web applications.
 
 ---
 
 ## Featured Projects
 
-### 🚀 **[Go-Stdlib](https://github.com/dunamismax/go-stdlib)** - The Ultimate Go Standard Library Web Stack
+### 🚀 **[JS-Monolith](https://github.com/dunamismax/JS-Monolith)** - The Ultimate Pure JavaScript Monorepo
 
 <p align="center">
-  <a href="https://github.com/dunamismax/go-stdlib">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=go-stdlib&theme=dark&show_owner=true" alt="Go Standard Library Web Stack" />
+  <a href="https://github.com/dunamismax/JS-Monolith">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=JS-Monolith&theme=dark&show_owner=true" alt="JS-Monolith" />
   </a>
 </p>
 
-The **purest form of Go web development** - architected for maximum simplicity, stability, and robustness by exclusively using the Go standard library. This represents the ultimate in dependency-free, single-binary web applications.
+The **purest form of JavaScript web development** - architected for maximum performance, simplicity, and zero framework overhead by exclusively using vanilla JavaScript with modern Web Components. This represents the ultimate in high-performance, dependency-free web applications.
 
 **🔥 Key Features:**
 
-- **Zero External Dependencies** - Pure Go standard library only
-- **CGO-Free SQLite** - Database with no C dependencies (`modernc.org/sqlite`)
-- **Standard Library Router** - Native `http.ServeMux` for maximum compatibility
-- **Built-in Templates** - Go's `html/template` with automatic XSS protection
-- **Embedded Assets** - Everything bundled via `//go:embed`
-- **Production Ready** - Security-hardened with proper session management
+- **Zero Framework Overhead** - Pure Vanilla JavaScript for maximum performance
+- **Web Components** - Native browser APIs for reusable, framework-agnostic components
+- **Lightning-Fast Builds** - esbuild for near-instantaneous compilation and bundling
+- **Monorepo Architecture** - Turborepo with intelligent caching and parallel execution
+- **High-Performance Backend** - Fastify for ultra-fast API responses
+- **Native Database Driver** - MongoDB without ODM abstraction layer
 
 **Applications:**
 
-- **API Playground** - Interactive testing platform with text analysis and utilities
-- **GoSocial** - Full-featured social media platform with real-time interactions
+- **Blog (dunamismax-blog)** - Modern, dark-themed blog with fast client-side routing
+- **API Playground** - Interactive testing platform with 7 different API tools
+- **Fastify API Server** - High-performance backend serving blog content and tools
 
 ---
 
@@ -63,7 +65,7 @@ The **purest form of Go web development** - architected for maximum simplicity, 
   </a>
 </p>
 
-A comprehensive demonstration of **modern Go web development** using popular community packages. Perfect for developers who want feature-rich frameworks while maintaining Go's simplicity.
+A comprehensive demonstration of **modern Go web development** using hypermedia-driven architecture. Perfect for developers who want the performance of Go with rich, interactive web interfaces.
 
 **🛠️ Technical Stack:**
 
@@ -73,21 +75,21 @@ A comprehensive demonstration of **modern Go web development** using popular com
 - **SQLite** - Embedded database with zero network latency
 - **Mage** - Go-based build automation
 
-Both projects demonstrate **single-binary deployment** with embedded assets and **hypermedia-driven architecture**.
+Both projects demonstrate different approaches to **modern web development** - JavaScript for maximum frontend performance, Go for robust backend services.
 
 ---
 
 ## Stack Comparison
 
-| Aspect             | Go-Stdlib (Pure)          | Go-Chi (Modern)   |
-| ------------------ | ------------------------- | ----------------- |
-| **Router**         | `net/http.ServeMux`       | Chi Router        |
-| **Templates**      | `html/template`           | Gomponents        |
-| **Dependencies**   | **Zero**                  | Minimal           |
-| **Stability**      | **Maximum**               | High              |
-| **Features**       | Standard Library          | Enhanced          |
-| **Learning Curve** | **Gentle**                | Moderate          |
-| **Best For**       | **Production**, Long-term | Rapid Development |
+| Aspect           | JS-Monolith (JavaScript)        | Go-Chi (Go)       |
+| ---------------- | ------------------------------- | ----------------- |
+| **Frontend**     | **Vanilla JS + Web Components** | HTMX + Gomponents |
+| **Backend**      | **Fastify (Node.js)**           | Go + Chi          |
+| **Database**     | **MongoDB Native**              | SQLite Embedded   |
+| **Build System** | **esbuild + Turborepo**         | Mage + Go embed   |
+| **Performance**  | **Lightning Fast**              | Compiled Speed    |
+| **Deployment**   | **Multi-service**               | Single Binary     |
+| **Best For**     | **Modern Web Apps**             | System Services   |
 
 ---
 
@@ -95,79 +97,110 @@ Both projects demonstrate **single-binary deployment** with embedded assets and 
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=go,html,css,js,sqlite,git,github,vscode,linux,docker" />
+    <img src="https://skillicons.dev/icons?i=js,nodejs,fastify,mongodb,html,css,esbuild,git,github,vscode,linux,docker" />
   </a>
 </p>
 
-**Core Technologies:**
+**Core JavaScript Technologies:**
 
-- **Go 1.23+** with modern syntax and performance optimizations
-- **Standard Library Mastery** - `net/http`, `html/template`, `database/sql`
-- **Chi Router** for lightweight, composable HTTP routing
-- **HTMX** for dynamic hypermedia interactions
-- **Gomponents** for type-safe HTML component generation
-- **SQLite** for embedded, zero-latency database operations
-- **Vanilla CSS** with embedded asset serving
+- **Vanilla JavaScript ES2024** with modern syntax and performance optimizations
+- **Web Components** - Custom Elements, Shadow DOM, HTML Templates
+- **Fastify** for high-performance Node.js backend development
+- **esbuild** for lightning-fast builds and bundling
+- **MongoDB** with native driver for optimal database performance
+- **Turborepo** for intelligent monorepo caching and parallel execution
+- **pnpm** for fast, disk-efficient package management
 
 **Specialized Areas:**
 
-- **Pure Go Standard Library** web application development
-- **Zero-dependency architecture** design and implementation
-- **Single-binary deployment** strategies and optimization
-- **Hypermedia-driven** web application architecture
-- **Embedded asset management** with Go embed
-- **Type-safe HTML** component development
-- **Go-based build automation** with Mage
+- **Pure Vanilla JavaScript** web application development
+- **Zero-framework architecture** design and implementation
+- **Web Components** development and component system design
+- **High-performance backend** development with Fastify
+- **Modern build tooling** optimization and configuration
+- **Database performance** optimization with native drivers
+- **Monorepo architecture** and development workflow optimization
 
 ---
 
 ## Development Philosophy
 
-**Standard Library First** → Leverage Go's built-in capabilities for maximum stability and longevity  
-**Zero Dependencies** → Minimize external dependencies for reduced security surface and maintenance  
-**Single Binary** → Self-contained applications with embedded assets for easy deployment  
-**Hypermedia-Driven** → Server-rendered HTML with HTMX for rich, accessible interactions  
-**Security-Conscious** → Input validation, XSS protection, and secure session management  
-**Performance Focused** → Compiled Go binaries with embedded assets for zero-latency operations
+**Vanilla JavaScript First** → Leverage native browser APIs for maximum performance and longevity  
+**Zero Framework Overhead** → Eliminate abstraction layers for peak performance  
+**Web Components** → Use native browser standards for reusable, framework-agnostic components  
+**Lightning-Fast Builds** → Optimize development workflow with cutting-edge build tools  
+**Database Performance** → Use native drivers without ODM abstraction for optimal speed  
+**Modern Standards** → Embrace latest JavaScript features and web platform capabilities
 
 ---
 
 ## Quick Start
 
-### 🚀 Go Standard Library Stack (Recommended)
+### 🚀 JS-Monolith (Recommended)
 
 ```bash
-# Clone the pure Go standard library stack
-git clone https://github.com/dunamismax/go-stdlib.git
-cd go-stdlib
+# Clone the pure JavaScript monorepo
+git clone https://github.com/dunamismax/JS-Monolith.git
+cd JS-Monolith
+
+# Install dependencies with pnpm
+pnpm install
+
+# Start all applications in development mode
+pnpm dev
+
+# Access applications
+# Blog: http://localhost:3000
+# Playground: http://localhost:3002
+# API Server: http://localhost:3001
+
+# Build for production (optimized bundles)
+pnpm build
+
+# Run individual applications
+cd apps/blog && pnpm dev       # Blog only
+cd apps/playground && pnpm dev # Playground only
+cd apps/api && pnpm dev        # API server only
+```
+
+### 🎯 Go-Chi Hypermedia Stack
+
+```bash
+# Clone the Go hypermedia stack
+git clone https://github.com/dunamismax/go-chi.git
+cd go-chi
 
 # Install Mage build system
 go install github.com/magefile/mage@latest
 
 # Initialize and start
-mage dev:init
-mage dev:start
-
-# Access applications
-# API Playground: http://localhost:8080
-# GoSocial: http://localhost:8081
-
-# Build production binaries (single, dependency-free)
-mage prod:release
-./build/api-playground  # Zero external dependencies
-./build/go-social       # Pure Go standard library
-```
-
-### 🎯 Modern Go Framework Stack
-
-```bash
-# Clone the modern framework stack
-git clone https://github.com/dunamismax/go-chi.git
-cd go-chi
-
-# Same commands as above
 mage dev:init && mage dev:start
 ```
+
+---
+
+## JavaScript Ecosystem Focus
+
+**Frontend Development:**
+
+- **Vanilla JavaScript** - Maximum performance, direct DOM control
+- **Web Components** - Native browser APIs for component development
+- **Modern ES2024** - Latest JavaScript features and syntax
+- **esbuild** - Lightning-fast builds and hot module replacement
+
+**Backend Development:**
+
+- **Fastify** - High-performance Node.js web framework
+- **MongoDB Native** - Database operations without ODM overhead
+- **RESTful APIs** - Clean, fast API design and implementation
+- **Real-time Features** - WebSocket and server-sent events
+
+**Build & Tooling:**
+
+- **Turborepo** - Intelligent monorepo caching and parallel execution
+- **pnpm** - Fast, disk-efficient package management
+- **ESLint** - Code quality and consistency enforcement
+- **Pico.css** - Minimalist, semantic CSS framework
 
 ---
 
@@ -182,7 +215,7 @@ mage dev:init && mage dev:start
 
 ## Support My Work
 
-If you find The Ultimate Go Standard Library Web Stack valuable, consider supporting continued development:
+If you find The Ultimate Pure JavaScript Monorepo valuable, consider supporting continued development:
 
 <p align="center">
   <a href="https://www.buymeacoffee.com/dunamismax" target="_blank">
@@ -205,6 +238,10 @@ If you find The Ultimate Go Standard Library Web Stack valuable, consider suppor
 ---
 
 <p align="center">
-  <strong>Building the Future with The Ultimate Go Standard Library Web Stack</strong><br>
-  <sub>Go + http.ServeMux + HTMX + html/template + SQLite + Vanilla CSS + Mage</sub>
+  <img src="https://github.com/dunamismax/js-monolith/blob/main/images/js-yellow-blank.jpeg" alt="JavaScript Yellow" width="400" />
+</p>
+
+<p align="center">
+  <strong>Building the Future with The Ultimate Pure JavaScript Monorepo</strong><br>
+  <sub>Vanilla JS + Web Components + Fastify + MongoDB + esbuild + Turborepo</sub>
 </p>
