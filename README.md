@@ -1,17 +1,18 @@
 <p align="center">
-  <img src="rails.png" alt="Ruby on Rails Logo" width="400" />
+  <img src="go.png" alt="Go Logo" width="400" />
 </p>
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=CC342D&center=true&vCenter=true&width=800&lines=Ruby+on+Rails+Developer;Building+Scalable+Applications;Full-Stack+Ruby+Development;API+Design+%26+Implementation;Production-Ready+Code;Monorepo+Architecture;Developer+Productivity+Tools" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=Go+Developer;The+Ultimate+Hypermedia-Driven+Web+Stack;Single-Binary+Applications;Go+%2B+Chi+%2B+HTMX+%2B+Gomponents;SQLite+%2B+Vanilla+CSS;Production-Ready+Go+Code" alt="Typing SVG" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://www.ruby-lang.org/en/"><img src="https://img.shields.io/badge/Ruby-3.3.0+-red.svg?logo=ruby" alt="Ruby Version"></a>
-  <a href="https://rubyonrails.org/"><img src="https://img.shields.io/badge/Rails-8.0.2+-red.svg?logo=rubyonrails" alt="Rails Version"></a>
-  <a href="https://bundler.io/"><img src="https://img.shields.io/badge/Bundler-2.0+-blue.svg?logo=rubygems" alt="Bundler"></a>
+  <a href="https://golang.org/"><img src="https://img.shields.io/badge/Go-1.23+-00ADD8.svg?logo=go" alt="Go Version"></a>
+  <a href="https://github.com/go-chi/chi"><img src="https://img.shields.io/badge/Chi-v5.0+-00ADD8.svg?logo=go" alt="Chi Version"></a>
+  <a href="https://htmx.org/"><img src="https://img.shields.io/badge/HTMX-2.0+-3366CC.svg?logo=htmx" alt="HTMX Version"></a>
+  <a href="https://sqlite.org/"><img src="https://img.shields.io/badge/SQLite-3.0+-003B57.svg?logo=sqlite" alt="SQLite Version"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
 </p>
 
@@ -19,40 +20,39 @@
 
 ## About
 
-Ruby on Rails developer focused on building scalable monorepo platforms, full-stack web applications, and developer productivity tools. I create comprehensive Ruby applications with modern Rails practices, emphasizing code reuse, security, and maintainable architectures.
+Go developer focused on building hypermedia-driven web applications with single-binary deployment. I create comprehensive Go applications emphasizing simplicity, performance, and zero-dependency architectures using modern Go practices.
 
-**Current Focus**: Ruby on Rails monorepo development, API design, CLI automation tools, and scalable application architectures.
+**Current Focus**: The Ultimate Hypermedia-Driven Web Stack - Go + Chi + HTMX + Gomponents + SQLite + Vanilla CSS + Mage build system.
 
 ---
 
 ## Featured Project
 
 <p align="center">
-  <a href="https://github.com/dunamismax/ruby-rails">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=ruby-rails&theme=dark&show_owner=true" alt="Ruby Rails Monorepo" />
+  <a href="https://github.com/dunamismax/go-chi">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=go-chi&theme=dark&show_owner=true" alt="Go Chi Monorepo" />
   </a>
 </p>
 
-### **[Ruby-Rails Monorepo](https://github.com/dunamismax/ruby-rails)** - Complete Ruby & Rails Development Platform
+### **[Go-Chi Monorepo](https://github.com/dunamismax/go-chi)** - The Ultimate Hypermedia-Driven Web Stack
 
-A comprehensive monorepo featuring production-ready applications, shared libraries, CLI tools, and automated scripts. Demonstrates modern Ruby and Rails practices with focus on scalability and developer productivity.
+A comprehensive monorepo showcasing production-ready Go applications with hypermedia-driven architecture. Demonstrates modern Go practices with single-binary deployment and zero external dependencies.
 
 **Applications**:
 
-- **Dunamismax** - Personal blog and portfolio website
-- **API Playground** - Interactive API testing environment with utility endpoints
-- **Blog Generator** - CLI tool for creating blog posts with metadata
-- **File Organizer** - CLI tool for organizing files by type and date
-- **Code Stats** - CLI tool for analyzing code statistics
+- **API Playground** - Interactive API testing platform with text analysis, random generators, and utilities
+- **GoSocial** - Twitter-like social media platform with authentication and real-time features
+- **Shared Libraries** - Reusable packages for components, database, middleware, styles, and utilities
 
 **Technical Features**:
 
-- **Modern Rails 8.0.2** with Ruby 3.3.0+
-- **Security-hardened** with comprehensive input validation and rate limiting
-- **Performance optimized** with caching and monitoring
-- **Comprehensive testing** with RSpec and Rails test suite
-- **CI/CD pipeline** with automated testing and security audits
-- **Shared utilities** for string manipulation, date formatting, and API utilities
+- **Single-Binary Deployment** with embedded assets via `//go:embed`
+- **Hypermedia-First Architecture** using HTMX for dynamic interactions
+- **Type-Safe HTML Components** with Gomponents
+- **Zero-Latency Database** with embedded SQLite
+- **Vanilla CSS** for direct styling control
+- **Mage Build System** for Go-based automation
+- **Security-Hardened** with input validation and XSS protection
 
 ---
 
@@ -60,65 +60,64 @@ A comprehensive monorepo featuring production-ready applications, shared librari
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=ruby,rails,html,css,js,sqlite,git,github,vscode,linux" />
+    <img src="https://skillicons.dev/icons?i=go,html,css,js,sqlite,git,github,vscode,linux,docker" />
   </a>
 </p>
 
 **Core Technologies:**
 
-- **Ruby 3.3.0+** with modern syntax and performance optimizations
-- **Rails 8.0.2+** with cutting-edge features and best practices
-- **Web Technologies** (HTML5, CSS3, JavaScript, Turbo, Stimulus)
-- **Database Systems** (SQLite, PostgreSQL, Active Record)
-- **Testing Frameworks** (RSpec, Capybara, FactoryBot)
-- **Development Tools** (Bundler, RuboCop, Brakeman, Git hooks)
+- **Go 1.23+** with modern syntax and performance optimizations
+- **Chi Router** for lightweight, composable HTTP routing
+- **HTMX** for dynamic hypermedia interactions
+- **Gomponents** for type-safe HTML component generation
+- **SQLite** for embedded, zero-latency database operations
+- **Vanilla CSS** with embedded asset serving
 
 **Specialized Areas:**
 
-- Ruby on Rails monorepo architecture
-- API design and implementation
-- CLI tool development and automation
-- Security-focused development
-- Shared library development
-- Developer productivity tools
+- Hypermedia-driven web application architecture
+- Single-binary deployment strategies
+- Embedded asset management with Go embed
+- Type-safe HTML component development
+- Zero-dependency application design
+- Go-based build automation with Mage
 
 ---
 
 ## Development Philosophy
 
-**Code Reusability** → Building shared libraries that enhance productivity across projects  
-**Security First** → Comprehensive input validation and security best practices  
-**Developer Experience** → Automated tools and workflows that streamline development  
-**Standards Compliant** → Following Ruby Style Guide and Rails conventions  
-**API-First Design** → Well-documented APIs with interactive testing environments
+**Simplicity First** → Single-binary applications with minimal external dependencies  
+**Performance Focused** → Compiled Go binaries with embedded assets for zero-latency operations  
+**Type Safety** → End-to-end type safety from backend logic to frontend components  
+**Hypermedia-Driven** → Server-rendered HTML with HTMX for rich interactions  
+**Security-Conscious** → Input validation, XSS protection, and secure session management
 
 ---
 
 ## Quick Start
 
-Explore the Ruby Rails monorepo:
+Explore The Ultimate Hypermedia-Driven Web Stack:
 
 ```bash
 # Clone the monorepo
-git clone https://github.com/dunamismax/ruby-rails.git
-cd ruby-rails
+git clone https://github.com/dunamismax/go-chi.git
+cd go-chi
 
-# Bootstrap the entire monorepo
-ruby scripts/development/bootstrap.rb
+# Install Mage build system
+go install github.com/magefile/mage@latest
 
-# Install dependencies
-bundle install
+# Initialize development environment
+mage dev:init
 
-# Set up Rails applications
-cd apps/dunamismax && bundle install && bundle exec rails db:create db:migrate
-cd ../apiplayground && bundle install && bundle exec rails db:create db:migrate
+# Start all applications
+mage dev:start
+# API Playground: http://localhost:8080
+# GoSocial: http://localhost:8081
 
-# Start applications
-cd apps/dunamismax && bundle exec rails server
-# Visit http://localhost:3000
-
-cd apps/apiplayground && bundle exec rails server -p 3001
-# Visit http://localhost:3001
+# Build production binaries
+mage prod:release
+./build/api-playground  # Single binary with all assets
+./build/go-social       # Single binary with all assets
 ```
 
 ---
@@ -134,7 +133,7 @@ cd apps/apiplayground && bundle exec rails server -p 3001
 
 ## Support My Work
 
-If you find my Ruby on Rails projects valuable, consider supporting continued development:
+If you find The Ultimate Hypermedia-Driven Web Stack valuable, consider supporting continued development:
 
 <p align="center">
   <a href="https://www.buymeacoffee.com/dunamismax" target="_blank">
@@ -157,6 +156,6 @@ If you find my Ruby on Rails projects valuable, consider supporting continued de
 ---
 
 <p align="center">
-  <strong>Building the Future with Ruby on Rails</strong><br>
-  <sub>From comprehensive monorepo platforms to production-ready applications</sub>
+  <strong>Building the Future with The Ultimate Hypermedia-Driven Web Stack</strong><br>
+  <sub>Go + Chi + HTMX + Gomponents + SQLite + Vanilla CSS + Mage</sub>
 </p>
