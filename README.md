@@ -4,17 +4,17 @@
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=F7DF1E&center=true&vCenter=true&width=800&lines=JavaScript+Developer;The+Ultimate+Pure+JavaScript+Monorepo;Vanilla+JS+%2B+Web+Components+%2B+Fastify;Lightning-Fast+esbuild+%2B+MongoDB;Pico.css+%2B+Turborepo;Zero+Framework+Overhead" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=F7DF1E&center=true&vCenter=true&width=800&lines=JavaScript+Developer;Full-Stack+Web+%2B+Game+Development;Vanilla+JS+%2B+Phaser+3+%2B+Fastify;Lightning-Fast+esbuild+%2B+MongoDB;Two+Production-Ready+Monorepos;Zero+Framework+Overhead" alt="Typing SVG" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-18+-339933.svg?logo=node.js" alt="Node.js Version"></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/JavaScript-ES2024-F7DF1E.svg?logo=javascript" alt="JavaScript Version"></a>
-  <a href="https://www.fastify.io/"><img src="https://img.shields.io/badge/Fastify-4.0+-000000.svg?logo=fastify" alt="Fastify Version"></a>
+  <a href="https://phaser.io/"><img src="https://img.shields.io/badge/Phaser-3.70+-7B2CBF.svg?logo=phaser" alt="Phaser Version"></a>
   <a href="https://esbuild.github.io/"><img src="https://img.shields.io/badge/esbuild-0.20+-FFCF00.svg?logo=esbuild" alt="esbuild Version"></a>
+  <a href="https://www.fastify.io/"><img src="https://img.shields.io/badge/Fastify-4.0+-000000.svg?logo=fastify" alt="Fastify Version"></a>
   <a href="https://www.mongodb.com/"><img src="https://img.shields.io/badge/MongoDB-6.0+-47A248.svg?logo=mongodb" alt="MongoDB Version"></a>
-  <a href="https://turbo.build/"><img src="https://img.shields.io/badge/Turborepo-2.0+-EF4444.svg?logo=turborepo" alt="Turborepo Version"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
 </p>
 
@@ -22,15 +22,15 @@
 
 ## About
 
-JavaScript developer specializing in **pure Vanilla JavaScript web applications** with zero framework overhead. I create comprehensive, production-ready JavaScript applications that emphasize simplicity, performance, and modern web standards using native browser APIs and cutting-edge build tools.
+JavaScript developer specializing in **full-stack web and game development** with zero framework overhead. I create comprehensive, production-ready JavaScript applications that emphasize simplicity, performance, and modern web standards using native browser APIs and cutting-edge build tools.
 
-**Current Focus**: The Ultimate Pure JavaScript Monorepo - demonstrating the power of vanilla JavaScript, Web Components, and modern tooling for building lightning-fast, framework-free web applications.
+**Current Focus**: Two production-ready monorepos showcasing the power of vanilla JavaScript - one for web applications, another for 2D game development.
 
 ---
 
-## Featured Project
+## Featured Projects
 
-### **[js-monolith](https://github.com/dunamismax/js-monolith)** - The Ultimate Pure JavaScript Monorepo
+### **[js-monolith](https://github.com/dunamismax/js-monolith)** - Pure JavaScript Web Applications
 
 <p align="center">
   <a href="https://github.com/dunamismax/js-monolith">
@@ -38,22 +38,29 @@ JavaScript developer specializing in **pure Vanilla JavaScript web applications*
   </a>
 </p>
 
-The **purest form of JavaScript web development** - architected for maximum performance, simplicity, and zero framework overhead by exclusively using vanilla JavaScript with modern Web Components. This represents the ultimate in high-performance, dependency-free web applications.
+The **purest form of JavaScript web development** - zero framework overhead using vanilla JavaScript with modern Web Components.
 
-**Key Features:**
+**Applications:** Blog with fast routing • API Playground with 7 tools • High-performance Fastify server
 
-- **Zero Framework Overhead** - Pure Vanilla JavaScript for maximum performance
-- **Web Components** - Native browser APIs for reusable, framework-agnostic components
-- **Lightning-Fast Builds** - esbuild for near-instantaneous compilation and bundling
-- **Monorepo Architecture** - Turborepo with intelligent caching and parallel execution
-- **High-Performance Backend** - Fastify for ultra-fast API responses
-- **Native Database Driver** - MongoDB without ODM abstraction layer
+### **[js-games](https://github.com/dunamismax/js-games)** - JavaScript 2D Game Development
 
-**Applications:**
+<p align="center">
+  <a href="https://github.com/dunamismax/js-games">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=js-games&theme=dark&show_owner=true" alt="js-games" />
+  </a>
+</p>
 
-- **Blog (dunamismax-blog)** - Modern, dark-themed blog with fast client-side routing
-- **API Playground** - Interactive testing platform with 7 different API tools
-- **Fastify API Server** - High-performance backend serving blog content and tools
+**Cross-platform 2D game development** with Phaser 3, optimized for web and mobile deployment via Capacitor.
+
+**Games:** Pong • Snake • Space Invaders • Asteroids • Frogger • Tetris
+
+### **Unified Architecture:**
+
+- **Lightning-Fast Builds** - esbuild for near-instantaneous compilation
+- **Monorepo Architecture** - Intelligent caching and parallel execution
+- **High-Performance Backend** - Fastify + Socket.IO for real-time features
+- **Mobile Ready** - Capacitor for iOS/Android deployment
+- **Zero Framework Overhead** - Maximum performance and simplicity
 
 ---
 
@@ -65,71 +72,61 @@ The **purest form of JavaScript web development** - architected for maximum perf
   </a>
 </p>
 
-**Core JavaScript Technologies:**
+**Core Technologies:**
 
 - **Vanilla JavaScript ES2024** with modern syntax and performance optimizations
+- **Phaser 3** for cross-platform 2D game development with physics and animations
 - **Web Components** - Custom Elements, Shadow DOM, HTML Templates
-- **Fastify** for high-performance Node.js backend development
+- **Fastify + Socket.IO** for high-performance backends and real-time multiplayer
 - **esbuild** for lightning-fast builds and bundling
 - **MongoDB** with native driver for optimal database performance
-- **Turborepo** for intelligent monorepo caching and parallel execution
+- **Capacitor** for mobile deployment to iOS and Android
 - **pnpm** for fast, disk-efficient package management
 
 ---
 
 ## Quick Start
 
-### js-monolith
+### js-monolith (Web Applications)
 
 ```bash
-# Clone the pure JavaScript monorepo
 git clone https://github.com/dunamismax/js-monolith.git
-cd js-monolith
+cd js-monolith && pnpm install && pnpm dev
 
-# Install dependencies with pnpm
-pnpm install
+# Access: Blog (3000) • Playground (3002) • API (3001)
+```
 
-# Start all applications in development mode
-pnpm dev
+### js-games (2D Game Development)
 
-# Access applications
-# Blog: http://localhost:3000
-# Playground: http://localhost:3002
-# API Server: http://localhost:3001
+```bash
+git clone https://github.com/dunamismax/js-games.git
+cd js-games && pnpm install && pnpm dev
 
-# Build for production (optimized bundles)
-pnpm build
-
-# Run individual applications
-cd apps/blog && pnpm dev       # Blog only
-cd apps/playground && pnpm dev # Playground only
-cd apps/api && pnpm dev        # API server only
+# Access: Pong (3000) • Snake (3001) • Space Invaders (3002)
+#         Asteroids (3003) • Frogger (3004) • Tetris (3005)
 ```
 
 ---
 
-## JavaScript Ecosystem Focus
+## Development Focus
 
-**Frontend Development:**
+**Web Applications:**
 
-- **Vanilla JavaScript** - Maximum performance, direct DOM control
-- **Web Components** - Native browser APIs for component development
-- **Modern ES2024** - Latest JavaScript features and syntax
-- **esbuild** - Lightning-fast builds and hot module replacement
+- **Vanilla JavaScript + Web Components** - Zero framework overhead
+- **Fastify APIs** - High-performance backends with MongoDB
+- **Modern ES2024** - Latest JavaScript features and performance
 
-**Backend Development:**
+**Game Development:**
 
-- **Fastify** - High-performance Node.js web framework
-- **MongoDB Native** - Database operations without ODM overhead
-- **RESTful APIs** - Clean, fast API design and implementation
-- **Real-time Features** - WebSocket and server-sent events
+- **Phaser 3** - 2D game engine with arcade physics
+- **Cross-Platform** - Web-first with Capacitor mobile deployment
+- **Real-time Multiplayer** - Socket.IO for live gaming experiences
 
-**Build & Tooling:**
+**Unified Tooling:**
 
-- **Turborepo** - Intelligent monorepo caching and parallel execution
-- **pnpm** - Fast, disk-efficient package management
-- **ESLint** - Code quality and consistency enforcement
-- **Pico.css** - Minimalist, semantic CSS framework
+- **esbuild** - Lightning-fast builds across all projects
+- **pnpm** - Efficient monorepo package management
+- **ESLint + Prettier** - Consistent code quality and formatting
 
 ---
 
@@ -144,7 +141,7 @@ cd apps/api && pnpm dev        # API server only
 
 ## Support My Work
 
-If you find The Ultimate Pure JavaScript Monorepo valuable, consider supporting continued development:
+If you find these JavaScript monorepos valuable, consider supporting continued development:
 
 <p align="center">
   <a href="https://www.buymeacoffee.com/dunamismax" target="_blank">
@@ -171,6 +168,6 @@ If you find The Ultimate Pure JavaScript Monorepo valuable, consider supporting 
 </p>
 
 <p align="center">
-  <strong>Building the Future with The Ultimate Pure JavaScript Monorepo</strong><br>
-  <sub>Vanilla JS + Web Components + Fastify + MongoDB + esbuild + Turborepo</sub>
+  <strong>Building the Future with JavaScript Monorepos</strong><br>
+  <sub>Web Apps + 2D Games • Vanilla JS + Phaser 3 + Fastify + MongoDB + esbuild</sub>
 </p>
