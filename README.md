@@ -28,7 +28,7 @@ JavaScript developer specializing in **pure Vanilla JavaScript web applications*
 
 ---
 
-## Featured Projects
+## Featured Project
 
 ### 🚀 **[JS-Monolith](https://github.com/dunamismax/JS-Monolith)** - The Ultimate Pure JavaScript Monorepo
 
@@ -54,42 +54,6 @@ The **purest form of JavaScript web development** - architected for maximum perf
 - **Blog (dunamismax-blog)** - Modern, dark-themed blog with fast client-side routing
 - **API Playground** - Interactive testing platform with 7 different API tools
 - **Fastify API Server** - High-performance backend serving blog content and tools
-
----
-
-### 🎯 **[Go-Chi](https://github.com/dunamismax/go-chi)** - Modern Go Web Framework Stack
-
-<p align="center">
-  <a href="https://github.com/dunamismax/go-chi">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=go-chi&theme=dark&show_owner=true" alt="Go Chi Monorepo" />
-  </a>
-</p>
-
-A comprehensive demonstration of **modern Go web development** using hypermedia-driven architecture. Perfect for developers who want the performance of Go with rich, interactive web interfaces.
-
-**🛠️ Technical Stack:**
-
-- **Chi Router** - Lightweight, composable HTTP routing
-- **Gomponents** - Type-safe HTML component generation
-- **HTMX** - Dynamic hypermedia interactions
-- **SQLite** - Embedded database with zero network latency
-- **Mage** - Go-based build automation
-
-Both projects demonstrate different approaches to **modern web development** - JavaScript for maximum frontend performance, Go for robust backend services.
-
----
-
-## Stack Comparison
-
-| Aspect           | JS-Monolith (JavaScript)        | Go-Chi (Go)       |
-| ---------------- | ------------------------------- | ----------------- |
-| **Frontend**     | **Vanilla JS + Web Components** | HTMX + Gomponents |
-| **Backend**      | **Fastify (Node.js)**           | Go + Chi          |
-| **Database**     | **MongoDB Native**              | SQLite Embedded   |
-| **Build System** | **esbuild + Turborepo**         | Mage + Go embed   |
-| **Performance**  | **Lightning Fast**              | Compiled Speed    |
-| **Deployment**   | **Multi-service**               | Single Binary     |
-| **Best For**     | **Modern Web Apps**             | System Services   |
 
 ---
 
@@ -136,7 +100,7 @@ Both projects demonstrate different approaches to **modern web development** - J
 
 ## Quick Start
 
-### 🚀 JS-Monolith (Recommended)
+### 🚀 JS-Monolith
 
 ```bash
 # Clone the pure JavaScript monorepo
@@ -163,20 +127,6 @@ cd apps/playground && pnpm dev # Playground only
 cd apps/api && pnpm dev        # API server only
 ```
 
-### 🎯 Go-Chi Hypermedia Stack
-
-```bash
-# Clone the Go hypermedia stack
-git clone https://github.com/dunamismax/go-chi.git
-cd go-chi
-
-# Install Mage build system
-go install github.com/magefile/mage@latest
-
-# Initialize and start
-mage dev:init && mage dev:start
-```
-
 ---
 
 ## JavaScript Ecosystem Focus
@@ -201,6 +151,31 @@ mage dev:init && mage dev:start
 - **pnpm** - Fast, disk-efficient package management
 - **ESLint** - Code quality and consistency enforcement
 - **Pico.css** - Minimalist, semantic CSS framework
+
+---
+
+## Web Development Principles
+
+**Performance-First Architecture:**
+
+- Eliminate unnecessary abstractions and framework overhead
+- Use native browser APIs for maximum speed and compatibility
+- Optimize build processes with modern tooling like esbuild
+- Implement efficient database operations with native drivers
+
+**Modern JavaScript Standards:**
+
+- Embrace ES2024 features and modern syntax
+- Utilize Web Components for reusable, framework-agnostic UI
+- Implement proper module systems and tree-shaking
+- Follow semantic versioning and dependency management best practices
+
+**Developer Experience:**
+
+- Implement hot module replacement for rapid development
+- Use intelligent caching with Turborepo for faster builds
+- Provide comprehensive linting and code quality tools
+- Create clear, maintainable code architecture
 
 ---
 
