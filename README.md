@@ -30,11 +30,11 @@ JavaScript developer specializing in **pure Vanilla JavaScript web applications*
 
 ## Featured Project
 
-### **[JS-Monolith](https://github.com/dunamismax/JS-Monolith)** - The Ultimate Pure JavaScript Monorepo
+### **[js-monolith](https://github.com/dunamismax/js-monolith)** - The Ultimate Pure JavaScript Monorepo
 
 <p align="center">
-  <a href="https://github.com/dunamismax/JS-Monolith">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=JS-Monolith&theme=dark&show_owner=true" alt="JS-Monolith" />
+  <a href="https://github.com/dunamismax/js-monolith">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=js-monolith&theme=dark&show_owner=true" alt="js-monolith" />
   </a>
 </p>
 
@@ -79,12 +79,12 @@ The **purest form of JavaScript web development** - architected for maximum perf
 
 ## Quick Start
 
-### JS-Monolith
+### js-monolith
 
 ```bash
 # Clone the pure JavaScript monorepo
-git clone https://github.com/dunamismax/JS-Monolith.git
-cd JS-Monolith
+git clone https://github.com/dunamismax/js-monolith.git
+cd js-monolith
 
 # Install dependencies with pnpm
 pnpm install
