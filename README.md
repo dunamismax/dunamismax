@@ -30,7 +30,7 @@ JavaScript developer specializing in **pure Vanilla JavaScript web applications*
 
 ## Featured Project
 
-### 🚀 **[JS-Monolith](https://github.com/dunamismax/JS-Monolith)** - The Ultimate Pure JavaScript Monorepo
+### **[JS-Monolith](https://github.com/dunamismax/JS-Monolith)** - The Ultimate Pure JavaScript Monorepo
 
 <p align="center">
   <a href="https://github.com/dunamismax/JS-Monolith">
@@ -40,7 +40,7 @@ JavaScript developer specializing in **pure Vanilla JavaScript web applications*
 
 The **purest form of JavaScript web development** - architected for maximum performance, simplicity, and zero framework overhead by exclusively using vanilla JavaScript with modern Web Components. This represents the ultimate in high-performance, dependency-free web applications.
 
-**🔥 Key Features:**
+**Key Features:**
 
 - **Zero Framework Overhead** - Pure Vanilla JavaScript for maximum performance
 - **Web Components** - Native browser APIs for reusable, framework-agnostic components
@@ -89,18 +89,18 @@ The **purest form of JavaScript web development** - architected for maximum perf
 
 ## Development Philosophy
 
-**Vanilla JavaScript First** → Leverage native browser APIs for maximum performance and longevity  
-**Zero Framework Overhead** → Eliminate abstraction layers for peak performance  
-**Web Components** → Use native browser standards for reusable, framework-agnostic components  
-**Lightning-Fast Builds** → Optimize development workflow with cutting-edge build tools  
-**Database Performance** → Use native drivers without ODM abstraction for optimal speed  
+**Vanilla JavaScript First** → Leverage native browser APIs for maximum performance and longevity
+**Zero Framework Overhead** → Eliminate abstraction layers for peak performance
+**Web Components** → Use native browser standards for reusable, framework-agnostic components
+**Lightning-Fast Builds** → Optimize development workflow with cutting-edge build tools
+**Database Performance** → Use native drivers without ODM abstraction for optimal speed
 **Modern Standards** → Embrace latest JavaScript features and web platform capabilities
 
 ---
 
 ## Quick Start
 
-### 🚀 JS-Monolith
+### JS-Monolith
 
 ```bash
 # Clone the pure JavaScript monorepo
