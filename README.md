@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=F7DF1E&center=true&vCenter=true&width=800&lines=JavaScript+Developer;Full-Stack+Web+%2B+Game+Development;Vanilla+JS+%2B+Phaser+3+%2B+Fastify;Lightning-Fast+esbuild+%2B+MongoDB;Two+Production-Ready+Monorepos;Zero+Framework+Overhead" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=F7DF1E&center=true&vCenter=true&width=800&lines=JavaScript+Developer;Full-Stack+Web+%2B+Game+Development;Learning+Path+%2B+Games+%2B+Monolith;Vanilla+JS+%2B+Phaser+3+%2B+Express+%2B+Fastify;Three+Production-Ready+Monorepos;Zero+Framework+Overhead" alt="Typing SVG" />
   </a>
 </p>
 
@@ -22,25 +22,25 @@
 
 ## About
 
-JavaScript developer specializing in **full-stack web and game development** with zero framework overhead. I create comprehensive, production-ready JavaScript applications that emphasize simplicity, performance, and modern web standards using native browser APIs and cutting-edge build tools.
+JavaScript developer specializing in **full-stack web and game development** with zero framework overhead. I create comprehensive learning paths and production-ready applications using vanilla JavaScript, modern web standards, and cutting-edge build tools.
 
-**Current Focus**: Two production-ready monorepos showcasing the power of vanilla JavaScript - one for web applications, another for 2D game development.
+**Current Focus**: Three production-ready monorepos showcasing progressive JavaScript mastery - from learning fundamentals to enterprise applications.
 
 ---
 
 ## Featured Projects
 
-### **[js-monolith](https://github.com/dunamismax/js-monolith)** - Pure JavaScript Web Applications
+### **[js-examples](https://github.com/dunamismax/js-examples)** - JavaScript Learning Monorepo
 
 <p align="center">
-  <a href="https://github.com/dunamismax/js-monolith">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=js-monolith&theme=dark&show_owner=true" alt="js-monolith" />
+  <a href="https://github.com/dunamismax/js-examples">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=js-examples&theme=dark&show_owner=true" alt="js-examples" />
   </a>
 </p>
 
-The **purest form of JavaScript web development** - zero framework overhead using vanilla JavaScript with modern Web Components.
+**Progressive JavaScript learning path** from DOM manipulation to full-stack development with practical projects.
 
-**Applications:** Blog with fast routing • API Playground with 7 tools • High-performance Fastify server
+**Projects:** Todo App • Weather Dashboard • Blog Platform • Chat Platform
 
 ### **[js-games](https://github.com/dunamismax/js-games)** - JavaScript 2D Game Development
 
@@ -54,15 +54,41 @@ The **purest form of JavaScript web development** - zero framework overhead usin
 
 **Games:** Pong • Snake • Space Invaders • Asteroids • Frogger • Tetris
 
-### **Unified Architecture:**
+### **[js-monolith](https://github.com/dunamismax/js-monolith)** - Pure JavaScript Web Applications
 
-- **Lightning-Fast Builds** - esbuild for near-instantaneous compilation
-- **Monorepo Architecture** - Intelligent caching and parallel execution
-- **High-Performance Backend** - Fastify + Socket.IO for real-time features
-- **Mobile Ready** - Capacitor for iOS/Android deployment
-- **Zero Framework Overhead** - Maximum performance and simplicity
+<p align="center">
+  <a href="https://github.com/dunamismax/js-monolith">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=js-monolith&theme=dark&show_owner=true" alt="js-monolith" />
+  </a>
+</p>
+
+**Enterprise-grade vanilla JavaScript** - zero framework overhead with Web Components and advanced security.
+
+**Applications:** Blog with fast routing • API Playground with 7 tools • High-performance Fastify server
+
+### **Tech Stack Progression:**
+
+**Learning (js-examples)**: Vanilla JS → Express.js → SQLite → Progressive complexity  
+**Gaming (js-games)**: Phaser 3 → esbuild → Mobile deployment → Real-time multiplayer  
+**Enterprise (js-monolith)**: Web Components → Fastify → MongoDB → Security hardening
 
 ---
+
+## Quick Start
+
+```bash
+# Learning Path - Progressive JavaScript mastery
+git clone https://github.com/dunamismax/js-examples.git
+cd js-examples && npm install && npm run dev
+
+# Game Development - 6 classic games with mobile deployment
+git clone https://github.com/dunamismax/js-games.git
+cd js-games && pnpm install && pnpm dev
+
+# Enterprise Apps - Zero framework overhead with Web Components
+git clone https://github.com/dunamismax/js-monolith.git
+cd js-monolith && pnpm install && pnpm dev
+```
 
 ## Technical Expertise
 
@@ -72,61 +98,7 @@ The **purest form of JavaScript web development** - zero framework overhead usin
   </a>
 </p>
 
-**Core Technologies:**
-
-- **Vanilla JavaScript ES2024** with modern syntax and performance optimizations
-- **Phaser 3** for cross-platform 2D game development with physics and animations
-- **Web Components** - Custom Elements, Shadow DOM, HTML Templates
-- **Fastify + Socket.IO** for high-performance backends and real-time multiplayer
-- **esbuild** for lightning-fast builds and bundling
-- **MongoDB** with native driver for optimal database performance
-- **Capacitor** for mobile deployment to iOS and Android
-- **pnpm** for fast, disk-efficient package management
-
----
-
-## Quick Start
-
-### js-monolith (Web Applications)
-
-```bash
-git clone https://github.com/dunamismax/js-monolith.git
-cd js-monolith && pnpm install && pnpm dev
-
-# Access: Blog (3000) • Playground (3002) • API (3001)
-```
-
-### js-games (2D Game Development)
-
-```bash
-git clone https://github.com/dunamismax/js-games.git
-cd js-games && pnpm install && pnpm dev
-
-# Access: Pong (3000) • Snake (3001) • Space Invaders (3002)
-#         Asteroids (3003) • Frogger (3004) • Tetris (3005)
-```
-
----
-
-## Development Focus
-
-**Web Applications:**
-
-- **Vanilla JavaScript + Web Components** - Zero framework overhead
-- **Fastify APIs** - High-performance backends with MongoDB
-- **Modern ES2024** - Latest JavaScript features and performance
-
-**Game Development:**
-
-- **Phaser 3** - 2D game engine with arcade physics
-- **Cross-Platform** - Web-first with Capacitor mobile deployment
-- **Real-time Multiplayer** - Socket.IO for live gaming experiences
-
-**Unified Tooling:**
-
-- **esbuild** - Lightning-fast builds across all projects
-- **pnpm** - Efficient monorepo package management
-- **ESLint + Prettier** - Consistent code quality and formatting
+**Core Stack**: Vanilla JS • Phaser 3 • Express.js • Fastify • SQLite • MongoDB • esbuild • Capacitor
 
 ---
 
@@ -141,7 +113,7 @@ cd js-games && pnpm install && pnpm dev
 
 ## Support My Work
 
-If you find these JavaScript monorepos valuable, consider supporting continued development:
+If you find these three JavaScript monorepos valuable for learning and development, consider supporting continued work:
 
 <p align="center">
   <a href="https://www.buymeacoffee.com/dunamismax" target="_blank">
@@ -169,5 +141,5 @@ If you find these JavaScript monorepos valuable, consider supporting continued d
 
 <p align="center">
   <strong>Building the Future with JavaScript Monorepos</strong><br>
-  <sub>Web Apps + 2D Games • Vanilla JS + Phaser 3 + Fastify + MongoDB + esbuild</sub>
+  <sub>Learning + Games + Enterprise • Progressive JavaScript Mastery • Zero Framework Overhead</sub>
 </p>
