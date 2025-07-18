@@ -45,7 +45,7 @@ Go developer specializing in **modern full-stack development and system programm
 **Applications:** CLI Tools • TUI Interfaces • Web APIs • Game Engine • Playground Experiments  
 **Features:** 8 Shared Packages • Sandbox Environment • Modern Patterns • Zero Dependencies • Security Scanning
 
-### **[go-web](https://github.com/dunamismax/go-web)** - Production Web Stack ⭐
+### **[go-web](https://github.com/dunamismax/go-web)** - Production Web Stack
 
 <p align="center">
   <a href="https://github.com/dunamismax/go-web">
