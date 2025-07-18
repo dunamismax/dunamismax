@@ -23,9 +23,9 @@
 
 ## About
 
-Go developer specializing in **full-stack development and system programming** with zero framework overhead. I create comprehensive learning environments and production-ready applications using Go's standard library, modern web standards, and cutting-edge build tools.
+Go developer specializing in **modern full-stack development and system programming** with zero framework overhead. I build comprehensive learning environments and production-ready applications using Go 1.24, modern HTTP routing, and cutting-edge build automation.
 
-**Current Focus**: Two production-ready monorepos showcasing progressive Go mastery - from comprehensive learning fundamentals to enterprise web applications.
+**Current Focus**: Two production-ready monorepos showcasing progressive Go mastery - from comprehensive learning fundamentals with playground experimentation to enterprise web applications.
 
 ---
 
@@ -39,11 +39,11 @@ Go developer specializing in **full-stack development and system programming** w
   </a>
 </p>
 
-**The ultimate Go learning and development hub** - master Go development across CLI, TUI, Web, and Games with comprehensive shared libraries.
+**The ultimate Go learning and development hub** - master modern Go development across CLI, TUI, Web, Games, and experimental playground with comprehensive shared libraries.
 
-**Tech Stack:** Go 1.24 • Standard Library Only • Mage Build System • Go Workspaces • Structured Logging  
-**Applications:** CLI Apps (hello, calc) • TUI Apps (menu, progress) • Web Apps (hello, api) • Games (guess, tictactoe)  
-**Features:** 8 Shared Library Packages • Go 1.24 Latest Features • Comprehensive Testing • Security Scanning
+**Tech Stack:** Go 1.24 • Enhanced HTTP Routing • Integer Range Iteration • Structured Logging • Mage Build System  
+**Applications:** CLI Apps • TUI Apps • Web APIs • Games • Playground Experiments  
+**Features:** 8 Shared Packages • Playground Sandbox • Modern Go Patterns • Zero Dependencies • Security Scanning
 
 ### **[go-web](https://github.com/dunamismax/go-web)** - Go Standard Library Web Stack
 
@@ -61,8 +61,8 @@ Go developer specializing in **full-stack development and system programming** w
 
 ### **Tech Stack Progression:**
 
-**Learning Hub (golang)**: Go 1.24 → Standard Library → Mage → Workspaces → CLI + TUI + Web + Games  
-**Web Stack (go-web)**: Go + http.ServeMux → HTMX → html/template → SQLite → Single Binary Deployment
+**Learning Hub (golang)**: Go 1.24 → Enhanced Routing → Integer Ranges → Playground Sandbox → CLI + TUI + Web + Games  
+**Web Stack (go-web)**: Modern Go + HTTP Routing → HTMX → html/template → SQLite → Single Binary Deployment
 
 ---
 
@@ -90,26 +90,26 @@ cd go-web && mage dev:init && mage dev:start
   </a>
 </p>
 
-**Core Stack**: Go 1.24 • Standard Library • http.ServeMux • html/template • SQLite • HTMX • Mage • Go Workspaces
+**Core Stack**: Go 1.24 • Enhanced HTTP Routing • Integer Range Iteration • html/template • SQLite • HTMX • Mage • Workspaces
 
 **Specializations**:
 
-- **Backend Development**: HTTP servers, REST APIs, middleware, authentication
+- **Backend Development**: Modern HTTP routing, REST APIs, middleware, structured logging
 - **Database Management**: SQLite, PostgreSQL, migrations, connection pooling
-- **System Programming**: CLI tools, TUI applications, file processing
-- **Web Development**: Server-side rendering, HTMX, vanilla CSS, single-page applications
-- **Game Development**: Game engines, input handling, sprite management, animations
+- **System Programming**: CLI tools, TUI applications, concurrency patterns
+- **Web Development**: Server-side rendering, HTMX, vanilla CSS, type-safe templates
+- **Experimentation**: Playground sandbox, prototyping, advanced Go patterns
 - **DevOps**: Single-binary deployment, embedded assets, build automation
 
 ---
 
 ## Architecture Philosophy
 
-**Standard Library First**: Minimize external dependencies, maximize stability and security  
-**Single Binary Deployment**: Embed all assets for zero-dependency deployment  
+**Modern Go First**: Leverage Go 1.24 features, enhanced routing, integer ranges  
+**Zero Dependencies**: Standard library only, minimal external dependencies  
+**Single Binary**: Embed all assets for zero-dependency deployment  
 **Type Safety**: Leverage Go's type system for robust, maintainable code  
-**Performance**: Compiled binaries, goroutine concurrency, efficient algorithms  
-**Security**: Input validation, SQL injection prevention, XSS protection, secure headers
+**Experimentation**: Playground sandbox for prototyping and learning
 
 ---
 
@@ -117,14 +117,15 @@ cd go-web && mage dev:init && mage dev:start
 
 ### Ultimate Go Monorepo Packages
 
-- **cli**: Command-line interface utilities and argument parsing
+- **cli**: Command-line interface utilities and modern argument parsing
 - **config**: Configuration management with JSON/YAML/environment support
 - **database**: Database utilities with SQLite/PostgreSQL/MySQL support
 - **game**: Game engine utilities (vectors, sprites, animations, input handling)
-- **http**: HTTP server utilities with middleware and routing helpers
-- **logger**: Logging utilities with both traditional and structured (slog) support
+- **http**: Modern HTTP routing utilities with middleware and path parameters
+- **logger**: Structured logging (slog) with JSON output and traditional support
 - **tui**: Terminal user interface utilities with keyboard input and display
 - **utils**: General utilities (strings, files, crypto, time, validation)
+- **playground**: Experiments, prototypes, and learning sandbox
 
 ### Go Web Stack Packages
 
@@ -168,8 +169,8 @@ If you find these Go monorepos valuable for learning and development, consider s
 ---
 
 <p align="center">
-  <strong>Building the Future with Go Monorepos</strong><br>
-  <sub>Learning + Web + CLI + TUI + Games • Progressive Go Mastery • Standard Library First</sub>
+  <strong>Building the Future with Modern Go</strong><br>
+  <sub>Learning + Playground + Web + CLI + TUI + Games • Go 1.24 Features • Zero Dependencies</sub>
 </p>
 
 <p align="center">
