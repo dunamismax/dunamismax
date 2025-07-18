@@ -24,13 +24,27 @@
 
 JavaScript developer specializing in **full-stack web and game development** with zero framework overhead. I create comprehensive learning paths and production-ready applications using vanilla JavaScript, modern web standards, and cutting-edge build tools.
 
-**Current Focus**: Three production-ready monorepos showcasing progressive JavaScript mastery - from learning fundamentals to enterprise applications.
+**Current Focus**: Four production-ready monorepos showcasing progressive JavaScript mastery - from pure learning fundamentals to enterprise applications.
 
 ---
 
 ## Featured Projects
 
-### **[js-examples](https://github.com/dunamismax/js-examples)** - JavaScript Learning Monorepo
+### **[js-webdev](https://github.com/dunamismax/js-webdev)** - Pure JavaScript Learning Monorepo ⭐
+
+<p align="center">
+  <a href="https://github.com/dunamismax/js-webdev">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=js-webdev&theme=dark&show_owner=true" alt="js-webdev" />
+  </a>
+</p>
+
+**The ultimate pure JavaScript learning environment** - master modern web development without framework abstractions.
+
+**Tech Stack:** Vanilla JS • Express.js • SQLite • esbuild • Modern Web Standards  
+**Applications:** Weather Dashboard with OpenWeatherMap API • Full-Stack Todo App with SQLite  
+**Features:** Lightning-fast builds • Shared utilities • Professional dark theme • Production-ready patterns
+
+### **[js-examples](https://github.com/dunamismax/js-examples)** - JavaScript Learning Path
 
 <p align="center">
   <a href="https://github.com/dunamismax/js-examples">
@@ -68,7 +82,8 @@ JavaScript developer specializing in **full-stack web and game development** wit
 
 ### **Tech Stack Progression:**
 
-**Learning (js-examples)**: Vanilla JS → Express.js → SQLite → Progressive complexity  
+**Pure Learning (js-webdev)**: Vanilla JS → Express.js → SQLite → Modern Web Standards → Zero Framework Overhead  
+**Learning Path (js-examples)**: Vanilla JS → Express.js → SQLite → Progressive complexity  
 **Gaming (js-games)**: Phaser 3 → esbuild → Mobile deployment → Real-time multiplayer  
 **Enterprise (js-monolith)**: Web Components → Fastify → MongoDB → Security hardening
 
@@ -77,6 +92,10 @@ JavaScript developer specializing in **full-stack web and game development** wit
 ## Quick Start
 
 ```bash
+# Pure JavaScript Learning - Perfect starting point for mastering web fundamentals
+git clone https://github.com/dunamismax/js-webdev.git
+cd js-webdev && npm install && npm run dev
+
 # Learning Path - Progressive JavaScript mastery
 git clone https://github.com/dunamismax/js-examples.git
 cd js-examples && npm install && npm run dev
@@ -113,7 +132,7 @@ cd js-monolith && pnpm install && pnpm dev
 
 ## Support My Work
 
-If you find these three JavaScript monorepos valuable for learning and development, consider supporting continued work:
+If you find these four JavaScript monorepos valuable for learning and development, consider supporting continued work:
 
 <p align="center">
   <a href="https://www.buymeacoffee.com/dunamismax" target="_blank">
