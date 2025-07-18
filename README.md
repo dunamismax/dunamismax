@@ -31,7 +31,7 @@ Go developer specializing in **modern full-stack development and system programm
 
 ## Featured Projects
 
-### **[golang](https://github.com/dunamismax/golang)** - The Ultimate Go Monorepo ⭐
+### **[golang](https://github.com/dunamismax/golang)** - The Ultimate Go Learning Hub
 
 <p align="center">
   <a href="https://github.com/dunamismax/golang">
@@ -39,13 +39,13 @@ Go developer specializing in **modern full-stack development and system programm
   </a>
 </p>
 
-**The ultimate Go learning and development hub** - master modern Go development across CLI, TUI, Web, Games, and experimental playground with comprehensive shared libraries.
+**Master modern Go across all domains** - comprehensive monorepo with CLI, TUI, Web, Games, and experimental playground. Perfect for learning Go 1.24 features and building diverse applications.
 
 **Tech Stack:** Go 1.24 • Enhanced HTTP Routing • Integer Range Iteration • Structured Logging • Mage Build System  
-**Applications:** CLI Apps • TUI Apps • Web APIs • Games • Playground Experiments  
-**Features:** 8 Shared Packages • Playground Sandbox • Modern Go Patterns • Zero Dependencies • Security Scanning
+**Applications:** CLI Tools • TUI Interfaces • Web APIs • Game Engine • Playground Experiments  
+**Features:** 8 Shared Packages • Sandbox Environment • Modern Patterns • Zero Dependencies • Security Scanning
 
-### **[go-web](https://github.com/dunamismax/go-web)** - Go Standard Library Web Stack
+### **[go-web](https://github.com/dunamismax/go-web)** - Production Web Stack ⭐
 
 <p align="center">
   <a href="https://github.com/dunamismax/go-web">
@@ -53,11 +53,11 @@ Go developer specializing in **modern full-stack development and system programm
   </a>
 </p>
 
-**The ultimate Go standard library web stack** - build production-ready web applications with single-binary deployment and embedded assets.
+**Enterprise-ready web applications** - standard library only stack with hypermedia-driven interfaces, secure authentication, and single-binary deployment.
 
 **Tech Stack:** Go + http.ServeMux + HTMX + html/template + SQLite + Vanilla CSS + Mage  
 **Applications:** API Playground • GoSocial Platform  
-**Features:** Single-binary deployment • Embedded assets • Type-safe templates • Zero-latency SQLite • Hypermedia-driven interfaces
+**Features:** Single-Binary Deploy • Embedded Assets • Session Security • Rate Limiting • Type-Safe Templates
 
 ### **Tech Stack Progression:**
 
@@ -129,9 +129,11 @@ cd go-web && mage dev:init && mage dev:start
 
 ### Go Web Stack Packages
 
-- **database**: SQLite management with migrations and connection pooling
-- **middleware**: HTTP middleware for logging, CORS, and error recovery
-- **utils**: Response helpers, text processing, and random generation
+- **database**: SQLite management with migrations, connection pooling, and secure queries
+- **middleware**: HTTP middleware for structured logging, CORS, rate limiting, and security
+- **utils**: Response helpers, session tokens, validation, text processing, and crypto
+- **components**: HTMX components and reusable layout utilities
+- **styles**: CSS utilities for consistent styling across applications
 
 ---
 
