@@ -1,20 +1,21 @@
 <p align="center">
-  <img src="https://github.com/dunamismax/js-monolith/blob/main/images/js-coffee-particles.jpeg" alt="JavaScript Coffee Particles" width="400" />
+  <img src="go.png" alt="Go Programming Language" width="400" />
 </p>
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=F7DF1E&center=true&vCenter=true&width=800&lines=JavaScript+Developer;Full-Stack+Web+%2B+Game+Development;Learning+Path+%2B+Games+%2B+Monolith;Vanilla+JS+%2B+Phaser+3+%2B+Express+%2B+Fastify;Three+Production-Ready+Monorepos;Zero+Framework+Overhead" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=Go+Developer;Full-Stack+Development+%2B+System+Programming;Standard+Library+First;CLI+%2B+TUI+%2B+Web+%2B+Games;Two+Production-Ready+Monorepos;Zero+Framework+Overhead" alt="Typing SVG" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-18+-339933.svg?logo=node.js" alt="Node.js Version"></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/JavaScript-ES2024-F7DF1E.svg?logo=javascript" alt="JavaScript Version"></a>
-  <a href="https://phaser.io/"><img src="https://img.shields.io/badge/Phaser-3.70+-7B2CBF.svg?logo=phaser" alt="Phaser Version"></a>
-  <a href="https://esbuild.github.io/"><img src="https://img.shields.io/badge/esbuild-0.20+-FFCF00.svg?logo=esbuild" alt="esbuild Version"></a>
-  <a href="https://www.fastify.io/"><img src="https://img.shields.io/badge/Fastify-4.0+-000000.svg?logo=fastify" alt="Fastify Version"></a>
-  <a href="https://www.mongodb.com/"><img src="https://img.shields.io/badge/MongoDB-6.0+-47A248.svg?logo=mongodb" alt="MongoDB Version"></a>
+  <a href="https://golang.org/"><img src="https://img.shields.io/badge/Go-1.24+-00ADD8.svg?logo=go" alt="Go Version"></a>
+  <a href="https://pkg.go.dev/net/http"><img src="https://img.shields.io/badge/Router-http.ServeMux-00ADD8.svg?logo=go" alt="Standard Library Router"></a>
+  <a href="https://pkg.go.dev/html/template"><img src="https://img.shields.io/badge/Templates-html/template-00ADD8.svg?logo=go" alt="Standard Library Templates"></a>
+  <a href="https://pkg.go.dev/log/slog"><img src="https://img.shields.io/badge/Logging-log/slog-00ADD8.svg?logo=go" alt="Structured Logging"></a>
+  <a href="https://htmx.org/"><img src="https://img.shields.io/badge/HTMX-2.0+-3366CC.svg?logo=htmx" alt="HTMX Version"></a>
+  <a href="https://sqlite.org/"><img src="https://img.shields.io/badge/SQLite-3.0+-003B57.svg?logo=sqlite" alt="SQLite Version"></a>
+  <a href="https://magefile.org/"><img src="https://img.shields.io/badge/Mage-1.15+-purple.svg?logo=go" alt="Mage Version"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
 </p>
 
@@ -22,102 +23,110 @@
 
 ## About
 
-JavaScript developer specializing in **full-stack web and game development** with zero framework overhead. I create comprehensive learning paths and production-ready applications using vanilla JavaScript, modern web standards, and cutting-edge build tools.
+Go developer specializing in **full-stack development and system programming** with zero framework overhead. I create comprehensive learning environments and production-ready applications using Go's standard library, modern web standards, and cutting-edge build tools.
 
-**Current Focus**: Four production-ready monorepos showcasing progressive JavaScript mastery - from pure learning fundamentals to enterprise applications.
+**Current Focus**: Two production-ready monorepos showcasing progressive Go mastery - from comprehensive learning fundamentals to enterprise web applications.
 
 ---
 
 ## Featured Projects
 
-### **[js-webdev](https://github.com/dunamismax/js-webdev)** - Pure JavaScript Learning Monorepo ⭐
+### **[golang](https://github.com/dunamismax/golang)** - The Ultimate Go Monorepo ⭐
 
 <p align="center">
-  <a href="https://github.com/dunamismax/js-webdev">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=js-webdev&theme=dark&show_owner=true" alt="js-webdev" />
+  <a href="https://github.com/dunamismax/golang">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=golang&theme=dark&show_owner=true" alt="golang" />
   </a>
 </p>
 
-**The ultimate pure JavaScript learning environment** - master modern web development without framework abstractions.
+**The ultimate Go learning and development hub** - master Go development across CLI, TUI, Web, and Games with comprehensive shared libraries.
 
-**Tech Stack:** Vanilla JS • Express.js • SQLite • esbuild • Modern Web Standards  
-**Applications:** Weather Dashboard with OpenWeatherMap API • Full-Stack Todo App with SQLite  
-**Features:** Lightning-fast builds • Shared utilities • Professional dark theme • Production-ready patterns
+**Tech Stack:** Go 1.24 • Standard Library Only • Mage Build System • Go Workspaces • Structured Logging  
+**Applications:** CLI Apps (hello, calc) • TUI Apps (menu, progress) • Web Apps (hello, api) • Games (guess, tictactoe)  
+**Features:** 8 Shared Library Packages • Go 1.24 Latest Features • Comprehensive Testing • Security Scanning
 
-### **[js-examples](https://github.com/dunamismax/js-examples)** - JavaScript Learning Path
+### **[go-web](https://github.com/dunamismax/go-web)** - Go Standard Library Web Stack
 
 <p align="center">
-  <a href="https://github.com/dunamismax/js-examples">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=js-examples&theme=dark&show_owner=true" alt="js-examples" />
+  <a href="https://github.com/dunamismax/go-web">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=go-web&theme=dark&show_owner=true" alt="go-web" />
   </a>
 </p>
 
-**Progressive JavaScript learning path** from DOM manipulation to full-stack development with practical projects.
+**The ultimate Go standard library web stack** - build production-ready web applications with single-binary deployment and embedded assets.
 
-**Projects:** Todo App • Weather Dashboard • Blog Platform • Chat Platform
-
-### **[js-games](https://github.com/dunamismax/js-games)** - JavaScript 2D Game Development
-
-<p align="center">
-  <a href="https://github.com/dunamismax/js-games">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=js-games&theme=dark&show_owner=true" alt="js-games" />
-  </a>
-</p>
-
-**Cross-platform 2D game development** with Phaser 3, optimized for web and mobile deployment via Capacitor.
-
-**Games:** Pong • Snake • Space Invaders • Asteroids • Frogger • Tetris
-
-### **[js-monolith](https://github.com/dunamismax/js-monolith)** - Pure JavaScript Web Applications
-
-<p align="center">
-  <a href="https://github.com/dunamismax/js-monolith">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=js-monolith&theme=dark&show_owner=true" alt="js-monolith" />
-  </a>
-</p>
-
-**Enterprise-grade vanilla JavaScript** - zero framework overhead with Web Components and advanced security.
-
-**Applications:** Blog with fast routing • API Playground with 7 tools • High-performance Fastify server
+**Tech Stack:** Go + http.ServeMux + HTMX + html/template + SQLite + Vanilla CSS + Mage  
+**Applications:** API Playground • GoSocial Platform  
+**Features:** Single-binary deployment • Embedded assets • Type-safe templates • Zero-latency SQLite • Hypermedia-driven interfaces
 
 ### **Tech Stack Progression:**
 
-**Pure Learning (js-webdev)**: Vanilla JS → Express.js → SQLite → Modern Web Standards → Zero Framework Overhead  
-**Learning Path (js-examples)**: Vanilla JS → Express.js → SQLite → Progressive complexity  
-**Gaming (js-games)**: Phaser 3 → esbuild → Mobile deployment → Real-time multiplayer  
-**Enterprise (js-monolith)**: Web Components → Fastify → MongoDB → Security hardening
+**Learning Hub (golang)**: Go 1.24 → Standard Library → Mage → Workspaces → CLI + TUI + Web + Games  
+**Web Stack (go-web)**: Go + http.ServeMux → HTMX → html/template → SQLite → Single Binary Deployment
 
 ---
 
 ## Quick Start
 
 ```bash
-# Pure JavaScript Learning - Perfect starting point for mastering web fundamentals
-git clone https://github.com/dunamismax/js-webdev.git
-cd js-webdev && npm install && npm run dev
+# Ultimate Go Monorepo - Perfect starting point for mastering Go fundamentals
+git clone https://github.com/dunamismax/golang.git
+cd golang && mage dev:init && mage build:all
 
-# Learning Path - Progressive JavaScript mastery
-git clone https://github.com/dunamismax/js-examples.git
-cd js-examples && npm install && npm run dev
-
-# Game Development - 6 classic games with mobile deployment
-git clone https://github.com/dunamismax/js-games.git
-cd js-games && pnpm install && pnpm dev
-
-# Enterprise Apps - Zero framework overhead with Web Components
-git clone https://github.com/dunamismax/js-monolith.git
-cd js-monolith && pnpm install && pnpm dev
+# Go Standard Library Web Stack - Production-ready web applications
+git clone https://github.com/dunamismax/go-web.git
+cd go-web && mage dev:init && mage dev:start
 ```
 
 ## Technical Expertise
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js,nodejs,mongodb,html,css,git,github,vscode,linux" />
+    <img src="https://skillicons.dev/icons?i=go,sqlite,html,css,git,github,vscode,linux,docker" />
   </a>
 </p>
 
-**Core Stack**: Vanilla JS • Phaser 3 • Express.js • Fastify • SQLite • MongoDB • esbuild • Capacitor
+**Core Stack**: Go 1.24 • Standard Library • http.ServeMux • html/template • SQLite • HTMX • Mage • Go Workspaces
+
+**Specializations**:
+
+- **Backend Development**: HTTP servers, REST APIs, middleware, authentication
+- **Database Management**: SQLite, PostgreSQL, migrations, connection pooling
+- **System Programming**: CLI tools, TUI applications, file processing
+- **Web Development**: Server-side rendering, HTMX, vanilla CSS, single-page applications
+- **Game Development**: Game engines, input handling, sprite management, animations
+- **DevOps**: Single-binary deployment, embedded assets, build automation
+
+---
+
+## Architecture Philosophy
+
+**Standard Library First**: Minimize external dependencies, maximize stability and security  
+**Single Binary Deployment**: Embed all assets for zero-dependency deployment  
+**Type Safety**: Leverage Go's type system for robust, maintainable code  
+**Performance**: Compiled binaries, goroutine concurrency, efficient algorithms  
+**Security**: Input validation, SQL injection prevention, XSS protection, secure headers
+
+---
+
+## Package Architecture
+
+### Ultimate Go Monorepo Packages
+
+- **cli**: Command-line interface utilities and argument parsing
+- **config**: Configuration management with JSON/YAML/environment support
+- **database**: Database utilities with SQLite/PostgreSQL/MySQL support
+- **game**: Game engine utilities (vectors, sprites, animations, input handling)
+- **http**: HTTP server utilities with middleware and routing helpers
+- **logger**: Logging utilities with both traditional and structured (slog) support
+- **tui**: Terminal user interface utilities with keyboard input and display
+- **utils**: General utilities (strings, files, crypto, time, validation)
+
+### Go Web Stack Packages
+
+- **database**: SQLite management with migrations and connection pooling
+- **middleware**: HTTP middleware for logging, CORS, and error recovery
+- **utils**: Response helpers, text processing, and random generation
 
 ---
 
@@ -132,7 +141,7 @@ cd js-monolith && pnpm install && pnpm dev
 
 ## Support My Work
 
-If you find these four JavaScript monorepos valuable for learning and development, consider supporting continued work:
+If you find these Go monorepos valuable for learning and development, consider supporting continued work:
 
 <p align="center">
   <a href="https://www.buymeacoffee.com/dunamismax" target="_blank">
@@ -155,10 +164,10 @@ If you find these four JavaScript monorepos valuable for learning and developmen
 ---
 
 <p align="center">
-  <img src="https://github.com/dunamismax/js-monolith/blob/main/images/js-yellow-crown.jpg" alt="JavaScript Yellow" width="400" />
+  <img src="go.png" alt="Go Programming Language" width="400" />
 </p>
 
 <p align="center">
-  <strong>Building the Future with JavaScript Monorepos</strong><br>
-  <sub>Learning + Games + Enterprise • Progressive JavaScript Mastery • Zero Framework Overhead</sub>
+  <strong>Building the Future with Go Monorepos</strong><br>
+  <sub>Learning + Web + CLI + TUI + Games • Progressive Go Mastery • Standard Library First</sub>
 </p>
