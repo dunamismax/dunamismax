@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/dunamismax/golang/blob/main/docs/images/go-logo.png" alt="Go Programming Language" width="600" />
+  <img src="https://github.com/dunamismax/golang/blob/main/docs/images/go-logo.png" alt="Go Programming Language" width="400" />
 </p>
 
 <p align="center">
@@ -67,7 +67,7 @@ Go developer specializing in **full-stack development and system programming** w
 ---
 
 <p align="center">
-  <img src="https://github.com/dunamismax/golang/blob/main/docs/images/gopher-mage.svg" alt="Gopher Mage" width="100" />
+  <img src="https://github.com/dunamismax/golang/blob/main/docs/images/gopher-mage.svg" alt="Gopher Mage" width="150" />
 </p>
 
 ## Quick Start
@@ -149,7 +149,7 @@ If you find these Go monorepos valuable for learning and development, consider s
 
 <p align="center">
   <a href="https://buymeacoffee.com/dunamismax" target="_blank">
-    <img src="https://github.com/dunamismax/golang/blob/main/docs/images/buy-coffee-go.gif" alt="Buy Me A Coffee" style="height: 120px !important;" />
+    <img src="https://github.com/dunamismax/golang/blob/main/docs/images/buy-coffee-go.gif" alt="Buy Me A Coffee" style="height: 150px !important;" />
   </a>
 </p>
 
@@ -173,5 +173,5 @@ If you find these Go monorepos valuable for learning and development, consider s
 </p>
 
 <p align="center">
-  <img src="https://github.com/dunamismax/golang/blob/main/docs/images/gopher-running-jumping.gif" alt="Gopher Running and Jumping" width="300" />
+  <img src="https://github.com/dunamismax/golang/blob/main/docs/images/gopher-running-jumping.gif" alt="Gopher Running and Jumping" width="400" />
 </p>
