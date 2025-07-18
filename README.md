@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="go.png" alt="Go Programming Language" width="400" />
+  <img src="go.png" alt="Go Programming Language" width="600" />
 </p>
 
 <p align="center">
@@ -164,7 +164,7 @@ If you find these Go monorepos valuable for learning and development, consider s
 ---
 
 <p align="center">
-  <img src="go.png" alt="Go Programming Language" width="400" />
+  <img src="go.png" alt="Go Programming Language" width="600" />
 </p>
 
 <p align="center">
