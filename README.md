@@ -4,18 +4,18 @@
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=Go+Developer;Full-Stack+Development+%2B+System+Programming;Go+1.24+%2B+Svelte+5;CLI+%2B+TUI+%2B+Web+%2B+Games;Two+Production-Ready+Monorepos;Modern+Tech+Stack" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=Go+Developer;Full-Stack+Development+%2B+System+Programming;Go+1.24+Standard+Library+First;CLI+%2B+TUI+%2B+Web+%2B+Games;Two+Production-Ready+Monorepos;Modern+Minimalist+Tech+Stack" alt="Typing SVG" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://golang.org/"><img src="https://img.shields.io/badge/Go-1.24+-00ADD8.svg?logo=go" alt="Go Version"></a>
-  <a href="https://gofiber.io/"><img src="https://img.shields.io/badge/Fiber-v2.52+-00ADD8.svg?logo=go" alt="Fiber Version"></a>
-  <a href="https://svelte.dev/"><img src="https://img.shields.io/badge/Svelte-5.0+-FF3E00.svg?logo=svelte" alt="Svelte Version"></a>
-  <a href="https://kit.svelte.dev/"><img src="https://img.shields.io/badge/SvelteKit-2.0+-FF3E00.svg?logo=svelte" alt="SvelteKit Version"></a>
-  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-4.0+-06B6D4.svg?logo=tailwindcss" alt="Tailwind Version"></a>
+  <a href="https://pkg.go.dev/net/http"><img src="https://img.shields.io/badge/Router-http.ServeMux-00ADD8.svg?logo=go" alt="Standard Library Router"></a>
+  <a href="https://htmx.org/"><img src="https://img.shields.io/badge/HTMX-2.0+-3366CC.svg?logo=htmx" alt="HTMX Version"></a>
+  <a href="https://pkg.go.dev/html/template"><img src="https://img.shields.io/badge/Templates-html/template-00ADD8.svg?logo=go" alt="Standard Library Templates"></a>
   <a href="https://sqlite.org/"><img src="https://img.shields.io/badge/SQLite-3.0+-003B57.svg?logo=sqlite" alt="SQLite Version"></a>
   <a href="https://magefile.org/"><img src="https://img.shields.io/badge/Mage-1.15+-purple.svg?logo=go" alt="Mage Version"></a>
+  <a href="https://github.com/air-verse/air"><img src="https://img.shields.io/badge/Air-Live%20Reload-FF6B6B.svg" alt="Air Live Reload"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
 </p>
 
@@ -23,9 +23,9 @@
 
 ## About
 
-Go developer specializing in **modern full-stack development and system programming** with cutting-edge tech stacks. I build comprehensive learning environments and production-ready applications using Go 1.24, Svelte 5, and modern build automation.
+Go developer specializing in **standard library-first development and minimalist architecture** with cutting-edge Go 1.24 features. I build comprehensive learning environments and production-ready applications using pure Go standard library, hypermedia-driven interfaces, and zero-dependency deployment.
 
-**Current Focus**: Two production-ready monorepos showcasing progressive Go mastery - from comprehensive learning fundamentals with playground experimentation to high-performance web applications with modern frontend frameworks.
+**Current Focus**: Two production-ready monorepos showcasing progressive Go mastery - from comprehensive learning fundamentals with playground experimentation to the ultimate Go standard library web stack with embedded assets and single-binary deployment.
 
 ---
 
@@ -45,24 +45,24 @@ Go developer specializing in **modern full-stack development and system programm
 **Applications:** CLI Tools • TUI Interfaces • Web APIs • Game Engine • Playground Experiments  
 **Features:** 8 Shared Packages • Sandbox Environment • Modern Patterns • Zero Dependencies • Security Scanning
 
-### **[go-fiber](https://github.com/dunamismax/go-fiber)** - Modern Full-Stack Monorepo
+### **[go-web](https://github.com/dunamismax/go-web)** - The Ultimate Go Standard Library Web Stack
 
 <p align="center">
-  <a href="https://github.com/dunamismax/go-fiber">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=go-fiber&theme=dark&show_owner=true" alt="go-fiber" />
+  <a href="https://github.com/dunamismax/go-web">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=go-web&theme=dark&show_owner=true" alt="go-web" />
   </a>
 </p>
 
-**High-performance web applications** - cutting-edge stack combining Go 1.24 backend with Svelte 5 frontends, beautiful UI components, and single-binary deployment.
+**Pure Go standard library excellence** - hypermedia-driven web applications built with zero external dependencies, showcasing the power of Go's standard library with modern development workflows.
 
-**Tech Stack:** Go 1.24 + Fiber + Svelte 5 + SvelteKit + Bits UI + Tailwind CSS + SQLite + Mage  
-**Applications:** Hello World App • Blog Platform  
-**Features:** Single-Binary Deploy • Embedded Assets • Reactive Frontends • Modern UI Components • Type-Safe Development
+**Tech Stack:** Go 1.24 + net/http + HTMX + html/template + SQLite (CGO-free) + Vanilla CSS + Mage + Air  
+**Applications:** API Playground • Social Media Platform  
+**Features:** Single-Binary Deploy • Embedded Assets • Live Reloading • XSS Protection • Zero Dependencies • Standard Library First
 
 ### **Tech Stack Progression:**
 
 **Learning Hub (golang)**: Go 1.24 → Enhanced Routing → Integer Ranges → Playground Sandbox → CLI + TUI + Web + Games  
-**Full-Stack (go-fiber)**: Go 1.24 + Fiber → Svelte 5 + SvelteKit → Bits UI + Tailwind → Single Binary Deployment
+**Standard Library Web (go-web)**: Go 1.24 + net/http → HTMX Hypermedia → html/template → SQLite Embedded → Air Live Reload
 
 ---
 
@@ -77,40 +77,40 @@ Go developer specializing in **modern full-stack development and system programm
 git clone https://github.com/dunamismax/golang.git
 cd golang && mage dev:init && mage build:all
 
-# Modern Full-Stack Monorepo - Go 1.24 + Svelte 5 web applications
-git clone https://github.com/dunamismax/go-fiber.git
-cd go-fiber && mage install && mage build
+# Go Standard Library Web Stack - Pure Go hypermedia-driven applications
+git clone https://github.com/dunamismax/go-web.git
+cd go-web && mage dev:init && mage dev:startwithair
 ```
 
 ## Technical Expertise
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=go,svelte,tailwind,sqlite,html,css,git,github,vscode,linux" />
+    <img src="https://skillicons.dev/icons?i=go,html,css,sqlite,git,github,vscode,linux" />
   </a>
 </p>
 
-**Core Stack**: Go 1.24 • Fiber • Svelte 5 • SvelteKit • Bits UI • Tailwind CSS • SQLite • Mage • Workspaces
+**Core Stack**: Go 1.24 • net/http • HTMX • html/template • SQLite • Vanilla CSS • Mage • Air • Workspaces
 
 **Specializations**:
 
-- **Backend Development**: Go Fiber, REST APIs, middleware, structured logging
-- **Frontend Development**: Svelte 5, SvelteKit, reactive components, modern JavaScript
-- **UI/UX Design**: Bits UI, Tailwind CSS, responsive design, component libraries
-- **Database Management**: SQLite, GORM, migrations, connection pooling
-- **System Programming**: CLI tools, TUI applications, concurrency patterns
-- **Experimentation**: Playground sandbox, prototyping, advanced Go patterns
-- **DevOps**: Single-binary deployment, embedded assets, build automation
+- **Backend Development**: Go standard library, net/http routing, structured logging, CGO-free SQLite
+- **Hypermedia Applications**: HTMX interactions, server-side rendering, progressive enhancement
+- **Template Engineering**: html/template, XSS protection, component composition, server-side generation
+- **Database Management**: SQLite embedding, migrations, connection pooling, zero-latency access
+- **System Programming**: CLI tools, TUI applications, concurrency patterns, single-binary deployment
+- **Experimentation**: Playground sandbox, prototyping, advanced Go patterns, standard library exploration
+- **DevOps**: Embedded assets, live reloading with Air, zero-dependency deployment, build automation
 
 ---
 
 ## Architecture Philosophy
 
-**Modern Go First**: Leverage Go 1.24 features, Fiber performance, clean architecture  
-**Modern Frontend**: Svelte 5 runes, reactive components, type-safe development  
-**Single Binary**: Embed all assets for zero-dependency deployment  
-**Component Design**: Reusable UI components with Bits UI and Tailwind CSS  
-**Experimentation**: Playground sandbox for prototyping and learning
+**Standard Library First**: Leverage Go 1.24 standard library, net/http excellence, minimal dependencies  
+**Hypermedia Driven**: HTMX interactions, server-side rendering, progressive enhancement  
+**Single Binary**: Embed all assets for true zero-dependency deployment  
+**Security Focused**: XSS protection, parameterized queries, secure headers, input validation  
+**Developer Experience**: Air live reloading, structured logging, comprehensive error handling
 
 ---
 
@@ -128,14 +128,14 @@ cd go-fiber && mage install && mage build
 - **utils**: General utilities (strings, files, crypto, time, validation)
 - **playground**: Experiments, prototypes, and learning sandbox
 
-### Go Fiber Full-Stack Packages
+### Go Standard Library Web Stack Packages
 
-- **database**: SQLite + GORM integration with auto-migration and connection management
-- **handlers**: Go Fiber HTTP handlers for REST APIs with JSON responses
-- **models**: GORM database models with relationships and validation
-- **middleware**: Fiber middleware for logging, recovery, and CORS
-- **apps**: SvelteKit applications with Svelte 5 components and Tailwind CSS
-- **components/ui**: Reusable UI components with Bits UI and custom styling
+- **database**: SQLite (CGO-free) with migrations and connection pooling using modernc.org/sqlite
+- **middleware**: HTTP middleware for structured logging, security headers, and request handling
+- **components**: Reusable template components and HTMX integration utilities
+- **styles**: Embedded CSS utilities and responsive design patterns
+- **utils**: Response helpers, text processing, random generation, and validation
+- **apps**: Web applications showcasing API playground and social media platform
 
 ---
 
@@ -150,7 +150,7 @@ cd go-fiber && mage install && mage build
 
 ## Support My Work
 
-If you find these Go monorepos valuable for learning modern full-stack development, consider supporting continued work:
+If you find these Go monorepos valuable for learning modern standard library-first development, consider supporting continued work:
 
 <p align="center">
   <a href="https://buymeacoffee.com/dunamismax" target="_blank">
@@ -173,8 +173,8 @@ If you find these Go monorepos valuable for learning modern full-stack developme
 ---
 
 <p align="center">
-  <strong>Building the Future with Modern Go + Svelte</strong><br>
-  <sub>Learning + Playground + Full-Stack + CLI + TUI + Games • Go 1.24 + Svelte 5 • Modern Components</sub>
+  <strong>Building the Future with Go Standard Library Excellence</strong><br>
+  <sub>Learning + Playground + Hypermedia + CLI + TUI + Games • Go 1.24 Standard Library • Zero Dependencies</sub>
 </p>
 
 <p align="center">
