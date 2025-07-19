@@ -23,13 +23,27 @@
 
 ## About
 
-Go developer specializing in **standard library-first development and minimalist architecture** with cutting-edge Go 1.24 features. I build comprehensive learning environments and production-ready applications using pure Go standard library, hypermedia-driven interfaces, and zero-dependency deployment.
+Go developer specializing in **standard library-first development and hypermedia-driven architecture** with cutting-edge Go 1.24 features. I build production-ready applications that demonstrate the power of Go's standard library while maintaining zero external dependencies and single-binary deployment.
 
-**Current Focus**: Two production-ready monorepos showcasing progressive Go mastery - from comprehensive learning fundamentals with playground experimentation to the ultimate Go standard library web stack with embedded assets and single-binary deployment.
+**Current Focus**: Two comprehensive monorepos showcasing modern Go excellence - the ultimate standard library web stack with hypermedia interfaces and a complete learning environment for mastering Go fundamentals across all domains.
 
 ---
 
 ## Featured Projects
+
+### **[go-web](https://github.com/dunamismax/go-web)** - The Ultimate Go Hypermedia Stack
+
+<p align="center">
+  <a href="https://github.com/dunamismax/go-web">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=go-web&theme=dark&show_owner=true" alt="go-web" />
+  </a>
+</p>
+
+**Hypermedia-driven web applications with zero dependencies** - demonstrates the full power of Go's standard library with interactive HTMX interfaces, embedded assets, and sub-millisecond response times.
+
+**Tech Stack:** Go 1.24 + net/http.ServeMux + HTMX + html/template + SQLite (CGO-free) + Vanilla CSS + Mage + Air  
+**Applications:** GoHyperDocs Platform • API Playground • Social Media Platform  
+**Features:** 0.2ms Response Times • 12MB Binaries • Live Demos • Progressive Enhancement • Single-Binary Deploy
 
 ### **[golang](https://github.com/dunamismax/golang)** - The Ultimate Go Learning Hub
 
@@ -45,24 +59,10 @@ Go developer specializing in **standard library-first development and minimalist
 **Applications:** CLI Tools • TUI Interfaces • Web APIs • Game Engine • Playground Experiments  
 **Features:** 8 Shared Packages • Sandbox Environment • Modern Patterns • Zero Dependencies • Security Scanning
 
-### **[go-web](https://github.com/dunamismax/go-web)** - The Ultimate Go Standard Library Web Stack
-
-<p align="center">
-  <a href="https://github.com/dunamismax/go-web">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=go-web&theme=dark&show_owner=true" alt="go-web" />
-  </a>
-</p>
-
-**Pure Go standard library excellence** - hypermedia-driven web applications built with zero external dependencies, showcasing the power of Go's standard library with modern development workflows.
-
-**Tech Stack:** Go 1.24 + net/http + HTMX + html/template + SQLite (CGO-free) + Vanilla CSS + Mage + Air  
-**Applications:** API Playground • Social Media Platform  
-**Features:** Single-Binary Deploy • Embedded Assets • Live Reloading • XSS Protection • Zero Dependencies • Standard Library First
-
 ### **Tech Stack Progression:**
 
-**Learning Hub (golang)**: Go 1.24 → Enhanced Routing → Integer Ranges → Playground Sandbox → CLI + TUI + Web + Games  
-**Standard Library Web (go-web)**: Go 1.24 + net/http → HTMX Hypermedia → html/template → SQLite Embedded → Air Live Reload
+**Hypermedia Web (go-web)**: Go 1.24 + net/http.ServeMux → HTMX Hypermedia → html/template → SQLite Embedded → 0.2ms Response Times  
+**Learning Hub (golang)**: Go 1.24 → Enhanced Routing → Integer Ranges → Playground Sandbox → CLI + TUI + Web + Games
 
 ---
 
@@ -73,13 +73,14 @@ Go developer specializing in **standard library-first development and minimalist
 ## Quick Start
 
 ```bash
-# Ultimate Go Monorepo - Perfect starting point for mastering Go fundamentals
-git clone https://github.com/dunamismax/golang.git
-cd golang && mage dev:init && mage build:all
-
-# Go Standard Library Web Stack - Pure Go hypermedia-driven applications
+# Go Hypermedia Stack - Production-ready web applications with zero dependencies
 git clone https://github.com/dunamismax/go-web.git
 cd go-web && mage dev:init && mage dev:startwithair
+# Open http://localhost:8082 for GoHyperDocs demonstration
+
+# Ultimate Go Learning Hub - Master Go fundamentals across all domains
+git clone https://github.com/dunamismax/golang.git
+cd golang && mage dev:init && mage build:all
 ```
 
 ## Technical Expertise
@@ -90,33 +91,44 @@ cd go-web && mage dev:init && mage dev:startwithair
   </a>
 </p>
 
-**Core Stack**: Go 1.24 • net/http • HTMX • html/template • SQLite • Vanilla CSS • Mage • Air • Workspaces
+**Core Stack**: Go 1.24 • net/http.ServeMux • HTMX • html/template • SQLite • Vanilla CSS • Mage • Air • Workspaces
 
 **Specializations**:
 
+- **Hypermedia Applications**: HTMX interactions, server-side rendering, progressive enhancement, 0.2ms response times
 - **Backend Development**: Go standard library, net/http routing, structured logging, CGO-free SQLite
-- **Hypermedia Applications**: HTMX interactions, server-side rendering, progressive enhancement
 - **Template Engineering**: html/template, XSS protection, component composition, server-side generation
 - **Database Management**: SQLite embedding, migrations, connection pooling, zero-latency access
-- **System Programming**: CLI tools, TUI applications, concurrency patterns, single-binary deployment
+- **Single-Binary Deployment**: Embedded assets, zero dependencies, cross-platform compilation
+- **System Programming**: CLI tools, TUI applications, concurrency patterns, structured logging
+- **Build Automation**: Mage build system, Air live reloading, zero-dependency workflows
 - **Experimentation**: Playground sandbox, prototyping, advanced Go patterns, standard library exploration
-- **DevOps**: Embedded assets, live reloading with Air, zero-dependency deployment, build automation
 
 ---
 
 ## Architecture Philosophy
 
-**Standard Library First**: Leverage Go 1.24 standard library, net/http excellence, minimal dependencies  
-**Hypermedia Driven**: HTMX interactions, server-side rendering, progressive enhancement  
-**Single Binary**: Embed all assets for true zero-dependency deployment  
+**Hypermedia Driven**: HTMX interactions, server-side rendering, progressive enhancement, sub-millisecond responses  
+**Standard Library First**: Leverage Go 1.24 standard library, net/http.ServeMux excellence, zero dependencies  
+**Single Binary**: Embed all assets for true zero-dependency deployment and instant startup  
 **Security Focused**: XSS protection, parameterized queries, secure headers, input validation  
-**Developer Experience**: Air live reloading, structured logging, comprehensive error handling
+**Performance Obsessed**: 0.2ms response times, 12MB binaries, zero-latency data access
 
 ---
 
 ## Package Architecture
 
-### Ultimate Go Monorepo Packages
+### Go Hypermedia Stack Packages
+
+- **gohyperdocs**: Comprehensive documentation platform with 25+ interactive sections and live HTMX demos
+- **database**: SQLite (CGO-free) with migrations and connection pooling using modernc.org/sqlite
+- **middleware**: HTTP middleware for structured logging, security headers, and request handling
+- **components**: Reusable template components and HTMX integration utilities
+- **styles**: Embedded CSS utilities and responsive design patterns
+- **utils**: Response helpers, text processing, random generation, and validation
+- **apps**: API playground and social media platform showcasing hypermedia patterns
+
+### Ultimate Go Learning Hub Packages
 
 - **cli**: Command-line interface utilities and modern argument parsing
 - **config**: Configuration management with JSON/YAML/environment support
@@ -127,15 +139,6 @@ cd go-web && mage dev:init && mage dev:startwithair
 - **tui**: Terminal user interface utilities with keyboard input and display
 - **utils**: General utilities (strings, files, crypto, time, validation)
 - **playground**: Experiments, prototypes, and learning sandbox
-
-### Go Standard Library Web Stack Packages
-
-- **database**: SQLite (CGO-free) with migrations and connection pooling using modernc.org/sqlite
-- **middleware**: HTTP middleware for structured logging, security headers, and request handling
-- **components**: Reusable template components and HTMX integration utilities
-- **styles**: Embedded CSS utilities and responsive design patterns
-- **utils**: Response helpers, text processing, random generation, and validation
-- **apps**: Web applications showcasing API playground and social media platform
 
 ---
 
@@ -150,7 +153,7 @@ cd go-web && mage dev:init && mage dev:startwithair
 
 ## Support My Work
 
-If you find these Go monorepos valuable for learning modern standard library-first development, consider supporting continued work:
+If you find these Go monorepos valuable for building hypermedia-driven applications and learning modern standard library-first development, consider supporting continued work:
 
 <p align="center">
   <a href="https://buymeacoffee.com/dunamismax" target="_blank">
@@ -173,8 +176,8 @@ If you find these Go monorepos valuable for learning modern standard library-fir
 ---
 
 <p align="center">
-  <strong>Building the Future with Go Standard Library Excellence</strong><br>
-  <sub>Learning + Playground + Hypermedia + CLI + TUI + Games • Go 1.24 Standard Library • Zero Dependencies</sub>
+  <strong>Building the Future with Go Hypermedia Excellence</strong><br>
+  <sub>Hypermedia + Learning + Playground + CLI + TUI + Games • Go 1.24 Standard Library • Zero Dependencies</sub>
 </p>
 
 <p align="center">
