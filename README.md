@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/images/js-evolution.jpeg" alt="Vanilla Web Developer" width="400" />
+  <img src="/images/js-coffee-particles.jpeg" alt="Vanilla Web Developer" width="400" />
 </p>
 
 <p align="center">
@@ -48,7 +48,7 @@ Vanilla web developer specializing in **pure HTML, CSS, and JavaScript developme
 ---
 
 <p align="center">
-  <img src="/images/js-yellow-crown.jpg" alt="JavaScript Crown" width="200" />
+  <img src="/images/js-evolution.jpeg" alt="JavaScript Crown" width="150" />
 </p>
 
 ## Quick Start
@@ -60,7 +60,7 @@ cd vanilla-web && npm install
 
 # Start Development Servers
 npm run dev:portfolio    # Personal Portfolio (Port 3001)
-npm run dev:landing     # Landing Page (Port 3002)  
+npm run dev:landing     # Landing Page (Port 3002)
 npm run dev:backend     # API Server (Port 3000)
 ```
 
@@ -103,7 +103,7 @@ npm run dev:backend     # API Server (Port 3000)
 ### Vanilla Web Monorepo Structure
 
 - **Personal Portfolio (Port 3001)**: Responsive developer portfolio with smooth scrolling, modal contact forms, and scroll-triggered animations
-- **Landing Page (Port 3002)**: Modern product page with animated counters, parallax effects, newsletter signup, and typewriter animations  
+- **Landing Page (Port 3002)**: Modern product page with animated counters, parallax effects, newsletter signup, and typewriter animations
 - **Simple API Server (Port 3000)**: Pure Node.js REST API with CRUD operations, CORS support, and JSON handling
 - **UI Components Package**: Reusable button and modal components with vanilla HTML, CSS, and JavaScript
 - **Utilities Package**: Helper functions for API clients, debouncing, DOM manipulation, and common tasks
@@ -123,7 +123,7 @@ npm run dev:backend     # API Server (Port 3000)
 
 - **Pure JavaScript Mastery**: Master core language features without framework abstractions
 - **Modern Web APIs**: Learn fetch, localStorage, DOM manipulation, Intersection Observer
-- **Component Architecture**: Build reusable components with vanilla technologies  
+- **Component Architecture**: Build reusable components with vanilla technologies
 - **Full-Stack Understanding**: See how frontend and backend communicate
 - **Performance Optimization**: Understand debouncing, lazy loading, efficient DOM updates
 - **Professional Workflow**: Experience modern development tools and best practices
@@ -169,5 +169,5 @@ If you find this Vanilla Web Learning Monorepo valuable for building pure web ap
 </p>
 
 <p align="center">
-  <img src="/images/js-evolution.jpeg" alt="JavaScript Evolution" width="400" />
+  <img src="/images/js-yellow-crown.jpg" alt="JavaScript Evolution" width="400" />
 </p>
