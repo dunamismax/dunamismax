@@ -4,16 +4,17 @@
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=Go+Developer;Full-Stack+Development+%2B+System+Programming;Go+1.24+Standard+Library+First;CLI+%2B+TUI+%2B+Web+%2B+Games;Two+Production-Ready+Monorepos;Modern+Minimalist+Tech+Stack" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=Go+Developer;Server-Centric+Web+Architecture;Go+1.24+%2B+Gin+%2B+HTMX+%2B+Tailwind;Auto-Discovery+Build+Systems;Single+Binary+Deployment;Modern+Hypermedia+Applications" alt="Typing SVG" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://golang.org/"><img src="https://img.shields.io/badge/Go-1.24+-00ADD8.svg?logo=go" alt="Go Version"></a>
-  <a href="https://pkg.go.dev/net/http"><img src="https://img.shields.io/badge/Router-http.ServeMux-00ADD8.svg?logo=go" alt="Standard Library Router"></a>
-  <a href="https://htmx.org/"><img src="https://img.shields.io/badge/HTMX-2.0+-3366CC.svg?logo=htmx" alt="HTMX Version"></a>
-  <a href="https://pkg.go.dev/html/template"><img src="https://img.shields.io/badge/Templates-html/template-00ADD8.svg?logo=go" alt="Standard Library Templates"></a>
-  <a href="https://sqlite.org/"><img src="https://img.shields.io/badge/SQLite-3.0+-003B57.svg?logo=sqlite" alt="SQLite Version"></a>
+  <a href="https://gin-gonic.com/"><img src="https://img.shields.io/badge/Framework-Gin-00ADD8.svg?logo=go" alt="Gin Web Framework"></a>
+  <a href="https://gorm.io/"><img src="https://img.shields.io/badge/ORM-GORM-00ADD8.svg?logo=go" alt="GORM ORM"></a>
+  <a href="https://htmx.org/"><img src="https://img.shields.io/badge/Frontend-HTMX-3D72D7.svg?logo=htmx" alt="HTMX"></a>
+  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/CSS-Tailwind%20CSS-06B6D4.svg?logo=tailwindcss" alt="Tailwind CSS"></a>
+  <a href="https://www.sqlite.org/"><img src="https://img.shields.io/badge/Database-SQLite-003B57.svg?logo=sqlite" alt="SQLite"></a>
   <a href="https://magefile.org/"><img src="https://img.shields.io/badge/Mage-1.15+-purple.svg?logo=go" alt="Mage Version"></a>
   <a href="https://github.com/air-verse/air"><img src="https://img.shields.io/badge/Air-Live%20Reload-FF6B6B.svg" alt="Air Live Reload"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
@@ -23,15 +24,15 @@
 
 ## About
 
-Go developer specializing in **standard library-first development and hypermedia-driven architecture** with cutting-edge Go 1.24 features. I build production-ready applications that demonstrate the power of Go's standard library while maintaining zero external dependencies and single-binary deployment.
+Go developer specializing in **server-centric web architecture with modern hypermedia interfaces**. I build high-performance web applications using Go 1.24, Gin framework, GORM, HTMX, and Tailwind CSS that prioritize simplicity, performance, and single-binary deployment.
 
-**Current Focus**: Two comprehensive monorepos showcasing modern Go excellence - the ultimate standard library web stack with hypermedia interfaces and a complete learning environment for mastering Go fundamentals across all domains.
+**Current Focus**: Sophisticated monorepo showcasing modern Go web development - auto-discovery build systems, real-time dashboards, and interactive demos that achieve sub-millisecond response times while maintaining zero JavaScript complexity.
 
 ---
 
 ## Featured Projects
 
-### **[go-web](https://github.com/dunamismax/go-web)** - The Ultimate Go Hypermedia Stack
+### **[go-web](https://github.com/dunamismax/go-web)** - Modern Go Web Development Stack
 
 <p align="center">
   <a href="https://github.com/dunamismax/go-web">
@@ -39,11 +40,11 @@ Go developer specializing in **standard library-first development and hypermedia
   </a>
 </p>
 
-**Hypermedia-driven web applications with zero dependencies** - demonstrates the full power of Go's standard library with interactive HTMX interfaces, embedded assets, and sub-millisecond response times.
+**Server-centric web applications with intelligent auto-discovery** - showcases modern Go web development using Gin, GORM, HTMX, and Tailwind CSS with sophisticated build automation and real-time capabilities.
 
-**Tech Stack:** Go 1.24 + net/http.ServeMux + HTMX + html/template + SQLite (CGO-free) + Vanilla CSS + Mage + Air  
-**Applications:** GoHyperDocs Platform • API Playground • Social Media Platform  
-**Features:** 0.2ms Response Times • 12MB Binaries • Live Demos • Progressive Enhancement • Single-Binary Deploy
+**Tech Stack:** Go 1.24 + Gin + GORM + HTMX + Tailwind CSS + SQLite + Mage + Air  
+**Applications:** API Playground • Real-time Dashboard • Auto-discovery Build System  
+**Features:** Sub-ms Response Times • 8-12MB Binaries • WebSocket Monitoring • Auto Port Assignment • Single-Binary Deploy
 
 ### **[golang](https://github.com/dunamismax/golang)** - The Ultimate Go Learning Hub
 
@@ -59,9 +60,9 @@ Go developer specializing in **standard library-first development and hypermedia
 **Applications:** CLI Tools • TUI Interfaces • Web APIs • Game Engine • Playground Experiments  
 **Features:** 8 Shared Packages • Sandbox Environment • Modern Patterns • Zero Dependencies • Security Scanning
 
-### **Tech Stack Progression:**
+### **Tech Stack Architecture:**
 
-**Hypermedia Web (go-web)**: Go 1.24 + net/http.ServeMux → HTMX Hypermedia → html/template → SQLite Embedded → 0.2ms Response Times  
+**Modern Web Stack (go-web)**: Go 1.24 + Gin Framework → GORM ORM → HTMX Interactions → Tailwind CSS → Auto-discovery Build System  
 **Learning Hub (golang)**: Go 1.24 → Enhanced Routing → Integer Ranges → Playground Sandbox → CLI + TUI + Web + Games
 
 ---
@@ -73,10 +74,10 @@ Go developer specializing in **standard library-first development and hypermedia
 ## Quick Start
 
 ```bash
-# Go Hypermedia Stack - Production-ready web applications with zero dependencies
+# Modern Go Web Stack - Server-centric applications with auto-discovery
 git clone https://github.com/dunamismax/go-web.git
-cd go-web && mage dev:init && mage dev:startwithair
-# Open http://localhost:8082 for GoHyperDocs demonstration
+cd go-web && mage dev:init && mage dev:air
+# API Playground: http://localhost:8080 • Dashboard: http://localhost:8081
 
 # Ultimate Go Learning Hub - Master Go fundamentals across all domains
 git clone https://github.com/dunamismax/golang.git
@@ -87,46 +88,46 @@ cd golang && mage dev:init && mage build:all
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=go,html,css,sqlite,git,github,vscode,linux" />
+    <img src="https://skillicons.dev/icons?i=go,html,css,tailwind,sqlite,git,github,vscode,linux" />
   </a>
 </p>
 
-**Core Stack**: Go 1.24 • net/http.ServeMux • HTMX • html/template • SQLite • Vanilla CSS • Mage • Air • Workspaces
+**Core Stack**: Go 1.24 • Gin • GORM • HTMX • Tailwind CSS • SQLite • slog • Mage • Air • Workspaces
 
 **Specializations**:
 
-- **Hypermedia Applications**: HTMX interactions, server-side rendering, progressive enhancement, 0.2ms response times
-- **Backend Development**: Go standard library, net/http routing, structured logging, CGO-free SQLite
+- **Server-Centric Architecture**: HTMX interactions, Gin routing, progressive enhancement, sub-millisecond responses
+- **Web Framework Mastery**: Gin framework, middleware integration, high-performance routing patterns
+- **Database Engineering**: GORM ORM, SQLite integration, auto-migrations, connection pooling
+- **Modern CSS**: Tailwind CSS builds, utility-first design, optimized asset generation
 - **Template Engineering**: html/template, XSS protection, component composition, server-side generation
-- **Database Management**: SQLite embedding, migrations, connection pooling, zero-latency access
-- **Single-Binary Deployment**: Embedded assets, zero dependencies, cross-platform compilation
-- **System Programming**: CLI tools, TUI applications, concurrency patterns, structured logging
-- **Build Automation**: Mage build system, Air live reloading, zero-dependency workflows
-- **Experimentation**: Playground sandbox, prototyping, advanced Go patterns, standard library exploration
+- **Real-time Systems**: WebSocket implementations, live dashboards, system monitoring
+- **Build Automation**: Auto-discovery systems, Mage orchestration, Air live reloading
+- **Single-Binary Deployment**: Embedded assets, optimized builds, cross-platform compilation
 
 ---
 
 ## Architecture Philosophy
 
-**Hypermedia Driven**: HTMX interactions, server-side rendering, progressive enhancement, sub-millisecond responses  
-**Standard Library First**: Leverage Go 1.24 standard library, net/http.ServeMux excellence, zero dependencies  
-**Single Binary**: Embed all assets for true zero-dependency deployment and instant startup  
-**Security Focused**: XSS protection, parameterized queries, secure headers, input validation  
-**Performance Obsessed**: 0.2ms response times, 12MB binaries, zero-latency data access
+**Server-Centric Design**: HTMX interactions, Gin routing, progressive enhancement, sub-millisecond responses  
+**Modern Go Stack**: Gin framework, GORM ORM, structured logging, type-safe development  
+**Auto-Discovery Systems**: Intelligent build systems that find and manage applications automatically  
+**Single Binary**: Embed all assets for streamlined deployment and instant startup  
+**Security Focused**: XSS protection, ORM protections, secure headers, input validation  
+**Performance Obsessed**: Sub-ms response times, 8-12MB binaries, optimized asset builds
 
 ---
 
-## Package Architecture
+## Application Architecture
 
-### Go Hypermedia Stack Packages
+### Go Web Stack Applications
 
-- **gohyperdocs**: Comprehensive documentation platform with 25+ interactive sections and live HTMX demos
-- **database**: SQLite (CGO-free) with migrations and connection pooling using modernc.org/sqlite
-- **middleware**: HTTP middleware for structured logging, security headers, and request handling
-- **components**: Reusable template components and HTMX integration utilities
-- **styles**: Embedded CSS utilities and responsive design patterns
-- **utils**: Response helpers, text processing, random generation, and validation
-- **apps**: API playground and social media platform showcasing hypermedia patterns
+- **API Playground (Port 8080)**: Interactive demo showcasing HTMX + Gin integration with text analysis, generators, dice rolling, and GitHub user lookup
+- **Go Dashboard (Port 8081)**: Real-time system monitoring with WebSocket updates, CPU/RAM metrics, and visitor tracking
+- **Auto-Discovery Build System**: Intelligent Mage-based system that finds applications by detecting `main.go` + `go.mod` patterns
+- **Embedded Asset Pipeline**: Tailwind CSS builds, static file embedding, template compilation
+- **Database Layer**: GORM models with SQLite, auto-migrations, connection pooling
+- **Security Framework**: Structured logging, input validation, XSS protection, crypto-secure randomness
 
 ### Ultimate Go Learning Hub Packages
 
@@ -153,7 +154,7 @@ cd golang && mage dev:init && mage build:all
 
 ## Support My Work
 
-If you find these Go monorepos valuable for building hypermedia-driven applications and learning modern standard library-first development, consider supporting continued work:
+If you find these Go monorepos valuable for building server-centric web applications and learning modern Go development patterns, consider supporting continued work:
 
 <p align="center">
   <a href="https://buymeacoffee.com/dunamismax" target="_blank">
@@ -176,8 +177,8 @@ If you find these Go monorepos valuable for building hypermedia-driven applicati
 ---
 
 <p align="center">
-  <strong>Building the Future with Go Hypermedia Excellence</strong><br>
-  <sub>Hypermedia + Learning + Playground + CLI + TUI + Games • Go 1.24 Standard Library • Zero Dependencies</sub>
+  <strong>Building the Future with Modern Go Web Architecture</strong><br>
+  <sub>Server-Centric • Auto-Discovery • Real-time • Learning • Go 1.24 • Gin • GORM • HTMX • Tailwind</sub>
 </p>
 
 <p align="center">
