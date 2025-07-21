@@ -48,7 +48,7 @@ Vanilla web developer specializing in **pure HTML, CSS, and JavaScript developme
 ---
 
 <p align="center">
-  <img src="/images/js-evolution.jpeg" alt="JavaScript Crown" width="150" />
+  <img src="/images/js-evolution.jpeg" alt="JavaScript Crown" width="300" />
 </p>
 
 ## Quick Start
