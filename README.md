@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/images/js-coffee-particles.jpeg" alt="Vanilla Web Developer" width="400" />
+  <img src="/images/vanilla-js-logo.png" alt="Vanilla Web Logo" width="200" />
 </p>
 
 <p align="center">
@@ -48,7 +48,7 @@ Vanilla web developer specializing in **pure HTML, CSS, and JavaScript developme
 ---
 
 <p align="center">
-  <img src="/images/js-evolution.jpeg" alt="JavaScript Crown" width="400" />
+  <img src="/images/js-small.png" alt="Vanilla Web Logo" width="100" />
 </p>
 
 ## Quick Start
@@ -149,5 +149,5 @@ If you find this Vanilla Web Learning Monorepo valuable for building pure web ap
 </p>
 
 <p align="center">
-  <img src="/images/js-yellow-crown.jpg" alt="JavaScript Evolution" width="400" />
+  <img src="/images/js-evolution.jpeg" alt="JavaScript Evolution" width="400" />
 </p>
