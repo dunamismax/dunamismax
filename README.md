@@ -79,6 +79,33 @@ cd go-web-server && make run
 # Both create single binaries with embedded assets - zero dependencies!
 ```
 
+## Modern Build System with Mage
+
+**GoHub** showcases advanced **Go-based build automation** with [**Mage**](https://magefile.org/) - replacing Makefiles with pure Go for better maintainability and cross-platform support.
+
+```bash
+# 🚀 Development Workflow
+mage setup            # Install all tools and dependencies
+mage generate:all     # Generate sqlc + templ code
+mage dev:server       # Start web app with hot reload
+mage dev:tui          # Launch interactive TUI dashboard
+
+# 🔨 Build & Quality
+mage build:all        # Build both webapp and TUI binaries
+mage test:all         # Run comprehensive test suite
+mage quality:all      # Format, vet, and vulnerability scan
+
+# 🗄️ Database Operations
+mage database:up      # Run all database migrations
+mage database:reset   # Reset database with fresh schema
+
+# 🚢 Production Ready
+mage ci               # Complete CI pipeline (generate → quality → test → build)
+mage clean            # Clean all build artifacts
+```
+
+**Why Mage?** Pure Go build scripts, better dependency management, cross-platform compatibility, and excellent IDE integration compared to traditional Makefiles.
+
 ## Technical Expertise
 
 <p align="center">
