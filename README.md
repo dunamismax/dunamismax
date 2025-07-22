@@ -1,21 +1,21 @@
 <p align="center">
-  <img src="/images/vanilla-js-logo.png" alt="Vanilla Web Logo" width="200" />
+  <img src="https://raw.githubusercontent.com/dunamismax/gohub/main/docs/images/go-logo.png" alt="Go Developer Logo" width="400" />
 </p>
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=F7DF1E&center=true&vCenter=true&width=800&lines=Vanilla+Web+Developer;Pure+HTML+%2B+CSS+%2B+JavaScript;Modern+Web+Standards+Focus;Node.js+Backend+Architecture;Zero+Framework+Learning+Environment;Component-Based+Vanilla+Development" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=Modern+Go+Developer;Echo+%2B+Templ+%2B+HTMX+Architecture;Enterprise-Grade+Security;Single+Binary+Deployment;Type-Safe+Database+Operations;Production-Ready+Monorepos" alt="Typing SVG" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-18+-339933.svg?logo=node.js" alt="Node.js Version"></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/Vanilla_JS-ES6+-F7DF1E.svg?logo=javascript" alt="Vanilla JS"></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"><img src="https://img.shields.io/badge/CSS3-Modern-1572B6.svg?logo=css3" alt="CSS3"></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"><img src="https://img.shields.io/badge/HTML5-Semantic-E34F26.svg?logo=html5" alt="HTML5"></a>
-  <a href="https://www.npmjs.com/"><img src="https://img.shields.io/badge/npm-9.0+-CB3837.svg?logo=npm" alt="npm Version"></a>
-  <a href="https://prettier.io/"><img src="https://img.shields.io/badge/Prettier-Code_Style-F7B93E.svg?logo=prettier" alt="Prettier"></a>
-  <a href="https://eslint.org/"><img src="https://img.shields.io/badge/ESLint-Quality-4B32C3.svg?logo=eslint" alt="ESLint"></a>
+  <a href="https://golang.org/"><img src="https://img.shields.io/badge/Go-1.24+-00ADD8.svg?logo=go" alt="Go Version"></a>
+  <a href="https://echo.labstack.com/"><img src="https://img.shields.io/badge/Framework-Echo-00ADD8.svg?logo=go" alt="Echo Framework"></a>
+  <a href="https://templ.guide/"><img src="https://img.shields.io/badge/Templates-Templ-00ADD8.svg?logo=go" alt="Templ"></a>
+  <a href="https://htmx.org/"><img src="https://img.shields.io/badge/Frontend-HTMX-3D72D7.svg?logo=htmx" alt="HTMX"></a>
+  <a href="https://sqlc.dev/"><img src="https://img.shields.io/badge/SQL-sqlc-00ADD8.svg?logo=go" alt="sqlc"></a>
+  <a href="https://www.sqlite.org/"><img src="https://img.shields.io/badge/Database-SQLite-003B57.svg?logo=sqlite" alt="SQLite"></a>
+  <a href="https://magefile.org/"><img src="https://img.shields.io/badge/Build-Mage-purple.svg?logo=go" alt="Mage"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
 </p>
 
@@ -23,90 +23,113 @@
 
 ## About
 
-Vanilla web developer specializing in **pure HTML, CSS, and JavaScript development with modern web standards**. I build fast, maintainable web applications using vanilla technologies and Node.js that prioritize simplicity, performance, and educational value without framework overhead.
+**Modern Go developer** specializing in production-ready web applications with **enterprise security**, **type-safe architecture**, and **single binary deployment**. I build high-performance monorepo applications using the modern Go stack that prioritize security, maintainability, and operational simplicity.
 
-**Current Focus**: Comprehensive vanilla web monorepo showcasing modern web development - reusable components, utility functions, and full-stack applications that achieve lightning-fast performance while maintaining zero framework dependencies.
+**Current Focus**: Building comprehensive Go monorepos showcasing modern web development - unified backend architecture, CSRF protection, XSS prevention, type-safe database operations, and comprehensive testing that achieve lightning-fast performance while maintaining zero external dependencies.
 
 ---
 
-## Featured Project
+## Featured Projects
 
-### **[vanilla-web](https://github.com/dunamismax/vanilla-web)** - The Ultimate Vanilla Web Learning Monorepo
+### **[GoHub](https://github.com/dunamismax/gohub)** - Enterprise Go Monorepo
 
 <p align="center">
-  <a href="https://github.com/dunamismax/vanilla-web">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=vanilla-web&theme=dark&show_owner=true" alt="vanilla-web" />
+  <a href="https://github.com/dunamismax/gohub">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=gohub&theme=dark&show_owner=true" alt="gohub" />
   </a>
 </p>
 
-**Pure web technologies learning environment** - showcases modern vanilla web development using HTML5, CSS3, and JavaScript ES6+ with professional tooling and component architecture for building fast, framework-free applications.
+**Production-ready monorepo** demonstrating modern Go development with unified backend architecture - web and TUI applications sharing data access, configuration, and business logic with enterprise-grade security.
 
-**Tech Stack:** Vanilla JavaScript + Modern CSS + Semantic HTML + Node.js + Prettier + ESLint + Live Server  
-**Applications:** Personal Portfolio • Landing Page • REST API Server • UI Components • Utility Libraries  
-**Features:** Zero Dependencies • Component Architecture • Modern Web APIs • Professional Tooling • Educational Focus
+**Tech Stack:** Go 1.24 + Echo + Bubble Tea + Templ + HTMX + sqlc + SQLite + Mage  
+**Applications:** Web App with CSRF Protection • Interactive TUI Dashboard • Unified Database Layer  
+**Features:** Enterprise Security • Type Safety • Single Binary • Comprehensive Testing • CI/CD Pipeline
+
+### **[Go Web Server](https://github.com/dunamismax/go-web-server)** - Minimal Perfect Template
+
+<p align="center">
+  <a href="https://github.com/dunamismax/go-web-server">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=go-web-server&theme=dark&show_owner=true" alt="go-web-server" />
+  </a>
+</p>
+
+**Minimal, reusable template** for modern web development using the Modern Go Stack - radical simplicity and stability with single, self-contained binaries and zero external dependencies.
+
+**Tech Stack:** Go 1.24 + Echo + Templ + HTMX + Pico.css + sqlc + SQLite + slog  
+**Features:** Single Binary • Type Safety • Hot Reloading • Production Patterns • Embedded Assets
 
 ---
 
 <p align="center">
-  <img src="/images/js-small.png" alt="Vanilla Web Logo" width="100" />
+  <img src="https://raw.githubusercontent.com/dunamismax/gohub/main/docs/images/gopher-mage.svg" alt="Gopher Mage" width="150" />
 </p>
 
 ## Quick Start
 
 ```bash
-# Ultimate Vanilla Web Learning Environment
-git clone https://github.com/dunamismax/vanilla-web.git
-cd vanilla-web && npm install
+# Enterprise Go Monorepo with Security & Testing
+git clone https://github.com/dunamismax/gohub.git
+cd gohub && mage setup
 
-# Start Development Servers
-npm run dev:portfolio    # Personal Portfolio (Port 3001)
-npm run dev:landing     # Landing Page (Port 3002)
-npm run dev:backend     # API Server (Port 3000)
+# Start Applications
+mage dev:server    # Web App with CSRF protection (Port 8080)
+mage dev:tui       # Interactive TUI dashboard
+
+# Perfect Minimal Template
+git clone https://github.com/dunamismax/go-web-server.git
+cd go-web-server && go generate ./... && go run ./cmd/web
 ```
 
 ## Technical Expertise
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js,html,css,nodejs,npm,git,github,vscode,linux" />
+    <img src="https://skillicons.dev/icons?i=go,sqlite,docker,linux,git,github,vscode,bash" />
   </a>
 </p>
 
-**Core Stack**: Vanilla JavaScript • Modern CSS • Semantic HTML • Node.js • npm • Prettier • ESLint • Live Server
+**Core Stack**: Go 1.24 • Echo • Templ • HTMX • sqlc • SQLite • Bubble Tea • Mage • slog
 
 **Specializations**:
 
-- **Pure JavaScript Mastery**: ES6+ features, DOM manipulation, Web APIs, event handling, async/await patterns
-- **Modern CSS Architecture**: Grid/Flexbox layouts, custom properties, animations, responsive design, component styling
-- **Semantic HTML**: Accessibility-first markup, semantic elements, form validation, SEO optimization
-- **Node.js Backend**: Pure Node.js APIs, HTTP servers, RESTful endpoints, CORS handling
-- **Component Architecture**: Reusable vanilla components, utility functions, modular design patterns
-- **Web Performance**: Efficient DOM updates, debouncing, lazy loading, optimized assets
-- **Development Workflow**: Modern tooling, code formatting, linting, live reloading, path aliases
-- **Progressive Enhancement**: Core functionality first, enhanced experiences, graceful degradation
+- **Enterprise Security**: CSRF protection, XSS prevention, input validation, secure headers
+- **Type-Safe Architecture**: sqlc database queries, templ templates, comprehensive error handling
+- **Modern Go Stack**: Echo framework, Bubble Tea TUIs, HTMX interactions, Pico.css styling
+- **Production Operations**: Single binary deployment, structured logging, database migrations
+- **Monorepo Design**: Unified backend, shared infrastructure, multiple application interfaces
+- **Quality Assurance**: Comprehensive testing, CI/CD pipelines, vulnerability scanning
+- **Performance Optimization**: Zero dependencies, embedded assets, fast startup times
+- **Developer Experience**: Mage build system, hot reloading, professional tooling
 
 ---
 
 ## Architecture Philosophy
 
-**Vanilla-First Approach**: Pure web technologies, no framework dependencies, direct browser APIs, maximum performance  
-**Component-Based Design**: Reusable UI components, utility functions, clean separation of concerns  
-**Modern Web Standards**: ES6+ JavaScript, CSS Grid/Flexbox, semantic HTML, accessibility focus  
-**Educational Value**: Clear code examples, learning progressions, well-documented patterns  
-**Performance Obsessed**: Minimal bundles, fast loading, efficient DOM manipulation, optimized assets  
-**Professional Workflow**: Modern tooling, code quality, consistent formatting, automated linting
+**Security First**: Enterprise-grade CSRF protection, XSS prevention, comprehensive input validation  
+**Type Safety**: sqlc-generated database code, templ templates, compile-time error prevention  
+**Unified Backend**: Shared data access, configuration, and business logic across applications  
+**Single Binary**: Embedded assets, zero dependencies, trivial deployment and scaling  
+**Production Ready**: Structured logging, database migrations, comprehensive test coverage  
+**Developer Experience**: Modern tooling, quality gates, automated workflows
 
 ---
 
 ## Application Architecture
 
-### Core Packages & Components
+### Enterprise Security Features
 
-- **ui-components**: Reusable vanilla components (Button, Modal) with CSS and JavaScript
-- **utils**: JavaScript utilities (API Client, Debounce, DOM Helpers, Storage Management)
-- **websites**: Complete frontend projects showcasing different vanilla techniques
-- **apps**: Full-stack Node.js applications demonstrating server-side vanilla development
-- **experiments**: Rapid prototyping environment for testing new ideas and techniques
+- **CSRF Protection**: Secure cookie-based tokens with proper validation
+- **XSS Prevention**: HTML escaping, content security policies, input sanitization
+- **Input Validation**: Length limits, UTF-8 validation, dangerous content detection
+- **Secure Headers**: CORS restrictions, security-focused middleware configuration
+
+### Modern Go Stack Components
+
+- **Web Framework**: Echo with comprehensive middleware and type-safe routing
+- **TUI Framework**: Bubble Tea with rich terminal interactions and real-time updates
+- **Database Layer**: sqlc type-safe queries with SQLite for zero-dependency deployment
+- **Template Engine**: Templ for compile-time HTML validation and component architecture
+- **Build System**: Mage for Go-native build automation and quality assurance
 
 ---
 
@@ -121,11 +144,11 @@ npm run dev:backend     # API Server (Port 3000)
 
 ## Support My Work
 
-If you find this Vanilla Web Learning Monorepo valuable for building pure web applications and learning modern web development without frameworks, consider supporting continued development:
+If you find these Modern Go Stack projects valuable for building secure, high-performance web applications with type safety and single binary deployment, consider supporting continued development:
 
 <p align="center">
-  <a href="https://www.buymeacoffee.com/dunamismax" target="_blank">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" />
+  <a href="https://buymeacoffee.com/dunamismax" target="_blank">
+    <img src="https://raw.githubusercontent.com/dunamismax/gohub/main/docs/images/buy-coffee-go.gif" alt="Buy Me A Coffee" style="height: 150px !important;" />
   </a>
 </p>
 
@@ -144,10 +167,10 @@ If you find this Vanilla Web Learning Monorepo valuable for building pure web ap
 ---
 
 <p align="center">
-  <strong>Building the Future with Pure Vanilla Web Technologies</strong><br>
-  <sub>Pure JavaScript • Modern CSS • Semantic HTML • Node.js • Zero Frameworks • Maximum Performance</sub>
+  <strong>Building the Future with Modern Go Architecture</strong><br>
+  <sub>Go 1.24 • Echo • Templ • HTMX • sqlc • SQLite • Bubble Tea • Enterprise Security • Single Binary</sub>
 </p>
 
 <p align="center">
-  <img src="/images/js-evolution.jpeg" alt="JavaScript Evolution" width="600" />
+  <img src="https://raw.githubusercontent.com/dunamismax/gohub/main/docs/images/gopher-running-jumping.gif" alt="Gopher Running and Jumping" width="400" />
 </p>
