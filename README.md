@@ -102,36 +102,6 @@ cd go-web-server && go generate ./... && go run ./cmd/web
 
 ---
 
-## Architecture Philosophy
-
-**Security First**: Enterprise-grade CSRF protection, XSS prevention, comprehensive input validation  
-**Type Safety**: sqlc-generated database code, templ templates, compile-time error prevention  
-**Unified Backend**: Shared data access, configuration, and business logic across applications  
-**Single Binary**: Embedded assets, zero dependencies, trivial deployment and scaling  
-**Production Ready**: Structured logging, database migrations, comprehensive test coverage  
-**Developer Experience**: Modern tooling, quality gates, automated workflows
-
----
-
-## Application Architecture
-
-### Enterprise Security Features
-
-- **CSRF Protection**: Secure cookie-based tokens with proper validation
-- **XSS Prevention**: HTML escaping, content security policies, input sanitization
-- **Input Validation**: Length limits, UTF-8 validation, dangerous content detection
-- **Secure Headers**: CORS restrictions, security-focused middleware configuration
-
-### Modern Go Stack Components
-
-- **Web Framework**: Echo with comprehensive middleware and type-safe routing
-- **TUI Framework**: Bubble Tea with rich terminal interactions and real-time updates
-- **Database Layer**: sqlc type-safe queries with SQLite for zero-dependency deployment
-- **Template Engine**: Templ for compile-time HTML validation and component architecture
-- **Build System**: Mage for Go-native build automation and quality assurance
-
----
-
 ## GitHub Stats
 
 <p align="center">
