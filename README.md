@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=800&lines=Modern+Go+Developer;Echo+%2B+Templ+%2B+HTMX+Architecture;Enterprise-Grade+Security;Single+Binary+Deployment;Type-Safe+Database+Operations;Production-Ready+Monorepos" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=900&lines=Modern+Go+Developer;Echo+%2B+Templ+%2B+HTMX+Architecture;Enterprise+Security+%26+Performance;Single+Binary+Deployment;Type-Safe+Database+Operations;Production-Ready+Monorepos;Radical+Simplicity+%26+Stability;CGO-Free+Pure+Go+Binaries;Unified+Backend+Infrastructure;CSRF+%2B+XSS+Protection;Structured+Logging+%26+Testing;Zero+External+Dependencies" alt="Typing SVG" />
   </a>
 </p>
 
@@ -22,9 +22,9 @@
 
 ## About
 
-**Modern Go developer** specializing in production-ready web applications with **enterprise security**, **type-safe architecture**, and **single binary deployment**. I build high-performance monorepo applications using the modern Go stack that prioritize security, maintainability, and operational simplicity.
+**Modern Go developer** specializing in **enterprise-grade web applications** with **radical simplicity** and **production excellence**. I build high-performance monorepo systems using the modern Go stack, emphasizing security, type safety, and single binary deployment with zero external dependencies.
 
-**Current Focus**: Building comprehensive Go monorepos showcasing modern web development - unified backend architecture, CSRF protection, XSS prevention, type-safe database operations, and comprehensive testing that achieve lightning-fast performance while maintaining zero external dependencies.
+**Philosophy**: Pragmatic simplicity meets enterprise security. Every project showcases production-ready patterns - CSRF protection, XSS prevention, type-safe operations, structured logging, and comprehensive testing - all compiled into fast, self-contained binaries that deploy anywhere.
 
 ---
 
@@ -38,11 +38,12 @@
   </a>
 </p>
 
-**Production-ready monorepo** demonstrating modern Go development with unified backend architecture - web and TUI applications sharing data access, configuration, and business logic with enterprise-grade security.
+**Enterprise-grade monorepo** showcasing unified backend architecture - web and TUI applications sharing platform services, data access, and configuration with comprehensive security and testing.
 
 **Tech Stack:** Go 1.24 + Echo + Bubble Tea + Templ + HTMX + sqlc + SQLite + Mage  
-**Applications:** Web App with CSRF Protection • Interactive TUI Dashboard • Unified Database Layer  
-**Features:** Enterprise Security • Type Safety • Single Binary • Comprehensive Testing • CI/CD Pipeline
+**Architecture:** Unified Backend • Shared Platform Services • Multiple Application Interfaces  
+**Security:** CSRF Protection • XSS Prevention • Input Validation • Vulnerability Scanning  
+**Operations:** Single Binary • Database Migrations • Structured Logging • CI/CD Pipeline
 
 ### **[Go Web Server](https://github.com/dunamismax/go-web-server)** - Minimal Perfect Template
 
@@ -52,10 +53,11 @@
   </a>
 </p>
 
-**Minimal, reusable template** for modern web development using the Modern Go Stack - radical simplicity and stability with single, self-contained binaries and zero external dependencies.
+**Perfect minimal template** for modern web development using the Modern Go Stack - radical simplicity and production stability with CGO-free, self-contained binaries.
 
 **Tech Stack:** Go 1.24 + Echo + Templ + HTMX + Pico.css + sqlc + SQLite + slog  
-**Features:** Single Binary • Type Safety • Hot Reloading • Production Patterns • Embedded Assets
+**Features:** Zero Dependencies • Type Safety • Hot Reloading • Embedded Assets  
+**Benefits:** 10-15MB Binary • Instant Startup • Production Patterns • Pure Go
 
 ---
 
@@ -66,17 +68,15 @@
 ## Quick Start
 
 ```bash
-# Enterprise Go Monorepo with Security & Testing
+# 🏢 Enterprise Monorepo (Security + Testing + TUI)
 git clone https://github.com/dunamismax/gohub.git
-cd gohub && mage setup
+cd gohub && mage setup && mage dev:server
 
-# Start Applications
-mage dev:server    # Web App with CSRF protection (Port 8080)
-mage dev:tui       # Interactive TUI dashboard
-
-# Perfect Minimal Template
+# 🚀 Minimal Template (Perfect Starting Point)
 git clone https://github.com/dunamismax/go-web-server.git
-cd go-web-server && go generate ./... && go run ./cmd/web
+cd go-web-server && make run
+
+# Both create single binaries with embedded assets - zero dependencies!
 ```
 
 ## Technical Expertise
@@ -89,16 +89,16 @@ cd go-web-server && go generate ./... && go run ./cmd/web
 
 **Core Stack**: Go 1.24 • Echo • Templ • HTMX • sqlc • SQLite • Bubble Tea • Mage • slog
 
-**Specializations**:
+**Architecture Specializations**:
 
-- **Enterprise Security**: CSRF protection, XSS prevention, input validation, secure headers
-- **Type-Safe Architecture**: sqlc database queries, templ templates, comprehensive error handling
-- **Modern Go Stack**: Echo framework, Bubble Tea TUIs, HTMX interactions, Pico.css styling
-- **Production Operations**: Single binary deployment, structured logging, database migrations
-- **Monorepo Design**: Unified backend, shared infrastructure, multiple application interfaces
-- **Quality Assurance**: Comprehensive testing, CI/CD pipelines, vulnerability scanning
-- **Performance Optimization**: Zero dependencies, embedded assets, fast startup times
-- **Developer Experience**: Mage build system, hot reloading, professional tooling
+- **🔒 Enterprise Security**: CSRF protection, XSS prevention, input validation, secure headers
+- **⚡ Type-Safe Operations**: sqlc database queries, templ templates, comprehensive error handling
+- **🏗️ Modern Go Stack**: Echo framework, Bubble Tea TUIs, HTMX interactions, Pico.css styling
+- **🚀 Production Excellence**: Single binary deployment, structured logging, database migrations
+- **🔧 Monorepo Design**: Unified backend, shared platform services, multiple application interfaces
+- **✅ Quality Engineering**: Comprehensive testing, CI/CD pipelines, vulnerability scanning
+- **⚡ Performance Focus**: Zero dependencies, embedded assets, sub-second startup times
+- **🛠️ Developer Experience**: Mage build automation, hot reloading, professional tooling
 
 ---
 
@@ -113,7 +113,7 @@ cd go-web-server && go generate ./... && go run ./cmd/web
 
 ## Support My Work
 
-If you find these Modern Go Stack projects valuable for building secure, high-performance web applications with type safety and single binary deployment, consider supporting continued development:
+If you find these **Modern Go Stack projects** valuable for building **secure, high-performance web applications** with **enterprise security**, **type safety**, and **single binary deployment**, consider supporting continued development:
 
 <p align="center">
   <a href="https://buymeacoffee.com/dunamismax" target="_blank">
@@ -136,8 +136,8 @@ If you find these Modern Go Stack projects valuable for building secure, high-pe
 ---
 
 <p align="center">
-  <strong>Building the Future with Modern Go Architecture</strong><br>
-  <sub>Go 1.24 • Echo • Templ • HTMX • sqlc • SQLite • Bubble Tea • Enterprise Security • Single Binary</sub>
+  <strong>Building Enterprise Applications with Modern Go Architecture</strong><br>
+  <sub>Go 1.24 • Echo • Templ • HTMX • sqlc • SQLite • Bubble Tea • CSRF Protection • Zero Dependencies</sub>
 </p>
 
 <p align="center">
