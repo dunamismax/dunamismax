@@ -61,6 +61,10 @@
 
 ---
 
+<p align="center">
+  <img src="https://github.com/dunamismax/images/blob/main/gopher-mage.svg" alt="Gopher Mage" width="150" />
+</p>
+
 ## Quick Start
 
 ```bash
@@ -74,10 +78,6 @@ cd go-web-server && mage setup && mage run
 
 # Both create single binaries with embedded assets
 ```
-
-<p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/gopher-mage.svg" alt="Gopher Mage" width="150" />
-</p>
 
 ## Build System with Mage
 
