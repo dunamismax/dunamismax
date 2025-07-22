@@ -16,7 +16,6 @@
   <a href="https://sqlc.dev/"><img src="https://img.shields.io/badge/SQL-sqlc-00ADD8.svg?logo=go" alt="sqlc"></a>
   <a href="https://www.sqlite.org/"><img src="https://img.shields.io/badge/Database-SQLite-003B57.svg?logo=sqlite" alt="SQLite"></a>
   <a href="https://magefile.org/"><img src="https://img.shields.io/badge/Build-Mage-purple.svg?logo=go" alt="Mage"></a>
-  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
 </p>
 
 ---
