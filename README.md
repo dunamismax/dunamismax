@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/dunamismax/gohub/main/docs/images/go-logo.png" alt="Go Developer Logo" width="400" />
+  <img src="https://github.com/dunamismax/images/blob/main/go-logo.png" alt="Go Developer Logo" width="400" />
 </p>
 
 <p align="center">
@@ -76,7 +76,7 @@ cd go-web-server && mage setup && mage run
 ```
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/dunamismax/gohub/main/docs/images/gopher-mage.svg" alt="Gopher Mage" width="150" />
+  <img src="https://github.com/dunamismax/images/blob/main/gopher-mage.svg" alt="Gopher Mage" width="150" />
 </p>
 
 ## Build System with Mage
@@ -144,7 +144,7 @@ If you find these **Modern Go Stack projects** useful for building **secure, mai
 
 <p align="center">
   <a href="https://buymeacoffee.com/dunamismax" target="_blank">
-    <img src="https://raw.githubusercontent.com/dunamismax/gohub/main/docs/images/buy-coffee-go.gif" alt="Buy Me A Coffee" style="height: 150px !important;" />
+    <img src="https://github.com/dunamismax/images/blob/main/buy-coffee-go.gif" alt="Buy Me A Coffee" style="height: 150px !important;" />
   </a>
 </p>
 
@@ -168,5 +168,5 @@ If you find these **Modern Go Stack projects** useful for building **secure, mai
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/dunamismax/gohub/main/docs/images/gopher-running-jumping.gif" alt="Gopher Running and Jumping" width="400" />
+  <img src="https://github.com/dunamismax/images/blob/main/gopher-running-jumping.gif" alt="Gopher Running and Jumping" width="400" />
 </p>
