@@ -22,7 +22,7 @@
 
 ## About
 
-**Modern Go developer** specializing in **enterprise-grade web applications** with **radical simplicity** and **production excellence**. I build high-performance monorepo systems using the modern Go stack, emphasizing security, type safety, and single binary deployment with zero external dependencies.
+**Go developer** specializing in **enterprise-grade web applications** with **radical simplicity**. I build high-performance monorepo systems using the modern Go stack, emphasizing security, type safety, and single binary deployment with zero external dependencies.
 
 **Philosophy**: Pragmatic simplicity meets enterprise security. Every project showcases production-ready patterns - CSRF protection, XSS prevention, type-safe operations, structured logging, and comprehensive testing - all compiled into fast, self-contained binaries that deploy anywhere.
 
@@ -40,9 +40,9 @@
 
 **Enterprise-grade monorepo** showcasing unified backend architecture - web and TUI applications sharing platform services, data access, and configuration with comprehensive security and testing.
 
-**Tech Stack:** Go 1.24 + Echo + Bubble Tea + Templ + HTMX + sqlc + SQLite + Mage  
-**Architecture:** Unified Backend • Shared Platform Services • Multiple Application Interfaces  
-**Security:** CSRF Protection • XSS Prevention • Input Validation • Vulnerability Scanning  
+**Tech Stack:** Go 1.24 + Echo + Bubble Tea + Templ + HTMX + sqlc + SQLite + Mage
+**Architecture:** Unified Backend • Shared Platform Services • Multiple Application Interfaces
+**Security:** CSRF Protection • XSS Prevention • Input Validation • Vulnerability Scanning
 **Operations:** Single Binary • Database Migrations • Structured Logging • CI/CD Pipeline
 
 ### **[Go Web Server](https://github.com/dunamismax/go-web-server)** - Minimal Perfect Template
@@ -55,51 +55,51 @@
 
 **Perfect minimal template** for modern web development using the Modern Go Stack - radical simplicity and production stability with CGO-free, self-contained binaries.
 
-**Tech Stack:** Go 1.24 + Echo + Templ + HTMX + Pico.css + sqlc + SQLite + slog  
-**Features:** Zero Dependencies • Type Safety • Hot Reloading • Embedded Assets  
+**Tech Stack:** Go 1.24 + Echo + Templ + HTMX + Pico.css + sqlc + SQLite + slog
+**Features:** Zero Dependencies • Type Safety • Hot Reloading • Embedded Assets
 **Benefits:** 10-15MB Binary • Instant Startup • Production Patterns • Pure Go
 
 ---
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/dunamismax/gohub/main/docs/images/gopher-mage.svg" alt="Gopher Mage" width="150" />
-</p>
-
 ## Quick Start
 
 ```bash
-# 🏢 Enterprise Monorepo (Security + Testing + TUI)
+# Enterprise Monorepo (Security + Testing + TUI)
 git clone https://github.com/dunamismax/gohub.git
 cd gohub && mage setup && mage dev:server
 
-# 🚀 Minimal Template (Perfect Starting Point)
+# Minimal Template (Perfect Starting Point)
 git clone https://github.com/dunamismax/go-web-server.git
 cd go-web-server && make run
 
 # Both create single binaries with embedded assets - zero dependencies!
 ```
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/dunamismax/gohub/main/docs/images/gopher-mage.svg" alt="Gopher Mage" width="150" />
+</p>
+
 ## Modern Build System with Mage
 
 **GoHub** showcases advanced **Go-based build automation** with [**Mage**](https://magefile.org/) - replacing Makefiles with pure Go for better maintainability and cross-platform support.
 
 ```bash
-# 🚀 Development Workflow
+# Development Workflow
 mage setup            # Install all tools and dependencies
 mage generate:all     # Generate sqlc + templ code
 mage dev:server       # Start web app with hot reload
 mage dev:tui          # Launch interactive TUI dashboard
 
-# 🔨 Build & Quality
+# Build & Quality
 mage build:all        # Build both webapp and TUI binaries
 mage test:all         # Run comprehensive test suite
 mage quality:all      # Format, vet, and vulnerability scan
 
-# 🗄️ Database Operations
+# Database Operations
 mage database:up      # Run all database migrations
 mage database:reset   # Reset database with fresh schema
 
-# 🚢 Production Ready
+# Production Ready
 mage ci               # Complete CI pipeline (generate → quality → test → build)
 mage clean            # Clean all build artifacts
 ```
@@ -118,14 +118,14 @@ mage clean            # Clean all build artifacts
 
 **Architecture Specializations**:
 
-- **🔒 Enterprise Security**: CSRF protection, XSS prevention, input validation, secure headers
-- **⚡ Type-Safe Operations**: sqlc database queries, templ templates, comprehensive error handling
-- **🏗️ Modern Go Stack**: Echo framework, Bubble Tea TUIs, HTMX interactions, Pico.css styling
-- **🚀 Production Excellence**: Single binary deployment, structured logging, database migrations
-- **🔧 Monorepo Design**: Unified backend, shared platform services, multiple application interfaces
-- **✅ Quality Engineering**: Comprehensive testing, CI/CD pipelines, vulnerability scanning
-- **⚡ Performance Focus**: Zero dependencies, embedded assets, sub-second startup times
-- **🛠️ Developer Experience**: Mage build automation, hot reloading, professional tooling
+- **Enterprise Security**: CSRF protection, XSS prevention, input validation, secure headers
+- **Type-Safe Operations**: sqlc database queries, templ templates, comprehensive error handling
+- **Modern Go Stack**: Echo framework, Bubble Tea TUIs, HTMX interactions, Pico.css styling
+- **Production Excellence**: Single binary deployment, structured logging, database migrations
+- **Monorepo Design**: Unified backend, shared platform services, multiple application interfaces
+- **Quality Engineering**: Comprehensive testing, CI/CD pipelines, vulnerability scanning
+- **Performance Focus**: Zero dependencies, embedded assets, sub-second startup times
+- **Developer Experience**: Mage build automation, hot reloading, professional tooling
 
 ---
 
