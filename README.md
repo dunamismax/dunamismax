@@ -1,131 +1,138 @@
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/sveltekit-wallpaper.png" alt="SvelteKit Developer Logo" width="600" />
+  <img src="https://github.com/dunamismax/images/blob/main/Vanilla-JS-Logo.png" alt="JavaScript Developer Logo" width="600" />
 </p>
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=ff3e00&center=true&vCenter=true&width=1000&lines=SvelteKit+%2B+Deno+Full-Stack+Developer;Svelte+5+Runes+%2B+Modern+Reactivity;Deno+2+Runtime+%2B+Hono+Framework;shadcn%2Fui+%2B+Tailwind+CSS+v4;Superforms+%2B+Zod+Validation;PostgreSQL+%2B+Drizzle+ORM;JWT+Authentication+%2B+Security;Full-Stack+Type+Safety;Docker+%2B+Self-Hosted+Deploy;Monorepo+%2B+Shared+Packages;4-Step+Development+Setup;Zero+Configuration+Required;Production-Ready+Templates;Hot+Module+Replacement;TypeScript+%2B+ESLint+Ready" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=F7DF1E&center=true&vCenter=true&width=1000&lines=Vanilla+JavaScript+%2B+Node.js+Developer;Modern+ES+Modules+%2B+Zero+Dependencies;FlareJS+Router+%2B+SPA+Navigation;Express.js+%2B+SQLite+Backend;EJS+Templates+%2B+Server-Side+Rendering;CSS+Design+System+%2B+Dark+Themes;npm+Workspaces+%2B+Monorepo;ESLint+%2B+Prettier+%2B+Quality;Weather+Dashboard+%2B+Todo+Apps;Secure+API+Key+Management;Production+Deployment+Ready;Zero+Framework+Overhead;Maximum+Performance+Control;Self-Hosted+%2B+Linux+Deploy;4-Step+Development+Setup" alt="Typing SVG" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://kit.svelte.dev/"><img src="https://img.shields.io/badge/SvelteKit-2.25.1+-ff3e00.svg?logo=svelte" alt="SvelteKit Version"></a>
-  <a href="https://svelte.dev/"><img src="https://img.shields.io/badge/Svelte-5.0+-ff3e00.svg?logo=svelte" alt="Svelte Version"></a>
-  <a href="https://deno.com/"><img src="https://img.shields.io/badge/Deno-2.4.0+-000000.svg?logo=deno" alt="Deno Version"></a>
-  <a href="https://hono.dev/"><img src="https://img.shields.io/badge/Framework-Hono-E36002.svg" alt="Hono Framework"></a>
-  <a href="https://www.shadcn-svelte.com/"><img src="https://img.shields.io/badge/UI-shadcn%2Fui-000000.svg" alt="shadcn/ui"></a>
-  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/CSS-Tailwind_v4-06B6D4.svg?logo=tailwindcss" alt="Tailwind CSS"></a>
-  <a href="https://www.postgresql.org/"><img src="https://img.shields.io/badge/Database-PostgreSQL-336791.svg?logo=postgresql" alt="PostgreSQL"></a>
+  <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-18+-339933.svg?logo=node.js" alt="Node.js Version"></a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/Vanilla_JS-ES2020+-F7DF1E.svg?logo=javascript" alt="Vanilla JS"></a>
+  <a href="https://expressjs.com/"><img src="https://img.shields.io/badge/Express.js-4.18+-000000.svg?logo=express" alt="Express.js Version"></a>
+  <a href="https://github.com/dunamismax/FlareJS"><img src="https://img.shields.io/badge/FlareJS-2kB_Router-FF6B35.svg" alt="FlareJS Router"></a>
+  <a href="https://ejs.co/"><img src="https://img.shields.io/badge/Templates-EJS-B4CA65.svg" alt="EJS Templates"></a>
+  <a href="https://www.sqlite.org/"><img src="https://img.shields.io/badge/Database-SQLite-003B57.svg?logo=sqlite" alt="SQLite"></a>
+  <a href="https://eslint.org/"><img src="https://img.shields.io/badge/Code_Quality-ESLint-4B32C3.svg?logo=eslint" alt="ESLint"></a>
 </p>
 
 ---
 
 ## About
 
-**Full-stack developer** specializing in **modern SvelteKit applications** with **Deno backends**. I create production-ready templates that combine the latest web technologies with pragmatic architecture, emphasizing developer experience, type safety, and rapid deployment.
+**Full-stack JavaScript developer** specializing in **vanilla JavaScript applications** with **zero dependencies**. I create high-performance web applications using modern ES modules, custom routing solutions, and pragmatic architectures that prioritize speed, simplicity, and developer control.
 
-**Philosophy**: Modern web development should be simple yet powerful. My projects showcase cutting-edge patterns - Svelte 5 runes, Deno 2 runtime, shadcn/ui components, full-stack TypeScript, and zero-configuration setups - all deployable with Docker in minutes.
+**Philosophy**: Modern web development doesn't need heavy frameworks. My projects showcase pure JavaScript patterns - ES modules, custom routers, shared utilities, and monorepo architectures - all deployable with minimal overhead and maximum performance.
 
 ---
 
-## Featured Project
+## Featured Projects
 
-### **[SvelteKit + Deno Monorepo Template](https://github.com/dunamismax/svelte)**
+### **[JavaScript Development Monorepo](https://github.com/dunamismax/javascript)**
 
 <p align="center">
-  <a href="https://github.com/dunamismax/svelte">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=svelte&theme=dark&show_owner=true" alt="svelte-template" />
+  <a href="https://github.com/dunamismax/javascript">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=javascript&theme=dark&show_owner=true" alt="javascript-monorepo" />
   </a>
 </p>
 
-**Complete full-stack template** combining SvelteKit frontend, Deno API backend, and shared packages in a monorepo architecture. Perfect for rapid development of modern web applications with type safety, performance, and developer experience in mind.
+**Production-ready JavaScript monorepo** featuring vanilla JavaScript, Node.js, and Express.js with shared utilities, API clients, and a comprehensive design system. Build high-performance web applications with minimal dependencies and maximum control.
 
-**Tech Stack:** SvelteKit 5 + Deno 2 + Hono + shadcn/ui + Tailwind v4 + PostgreSQL + Drizzle ORM  
-**Architecture:** Monorepo • Shared Packages • Full-Stack Type Safety • Zero Configuration  
-**Security:** JWT Authentication • Input Validation • SQL Injection Prevention • CORS Protection  
-**Developer Experience:** Hot Reload • 4-Step Setup • Database Studio • Docker Support
+**Tech Stack:** Vanilla JS + Node.js + Express.js + FlareJS Router + SQLite + EJS Templates  
+**Architecture:** npm Workspaces • Shared Packages • ES Modules • Zero Framework Overhead  
+**Security:** Server-side API Keys • HTML Escaping • CORS Protection • Input Validation  
+**Developer Experience:** Hot Reload • 4-Step Setup • Auto-formatting • Comprehensive Tooling
+
+### **[FlareJS Router](https://github.com/dunamismax/FlareJS)**
+
+<p align="center">
+  <a href="https://github.com/dunamismax/FlareJS">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=FlareJS&theme=dark&show_owner=true" alt="flare-router" />
+  </a>
+</p>
+
+**Lightning-fast 2kB router** that makes static sites feel like blazingly fast SPAs. Zero configuration, intelligent prefetching, and seamless navigation without the framework overhead.
 
 **Key Features:**
 
-- **Svelte 5 Runes**: Modern reactivity and component patterns
-- **Deno 2 Runtime**: Secure, modern JavaScript/TypeScript execution
-- **shadcn/ui Integration**: Beautiful, accessible UI components
-- **PostgreSQL + Drizzle**: Real database with type-safe queries
-- **Superforms + Zod**: Enhanced form handling with validation
-- **Docker Ready**: Development and production deployment
-- **Monorepo Structure**: Shared packages for maximum code reuse
+- **2kB Bundle Size**: Minimal footprint for maximum performance
+- **Smart Prefetching**: Intelligent link prefetching with IntersectionObserver
+- **SPA-like Navigation**: Instant page transitions without full reloads
+- **State Preservation**: Long-lived JavaScript behaviors between navigations
+- **Framework Agnostic**: Works with any static site or multi-page application
+- **Zero Configuration**: Drop-in solution that works out of the box
 
 ---
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/TS-logo.png" alt="TypeScript" width="200" />
+  <img src="https://github.com/dunamismax/images/blob/main/JavaScript-logo.png" alt="JavaScript" width="200" />
 </p>
 
 ## Quick Start
 
 ```bash
-# Clone the complete SvelteKit + Deno template
-git clone https://github.com/dunamismax/svelte.git
-cd svelte
+# Clone the complete JavaScript monorepo
+git clone https://github.com/dunamismax/javascript.git
+cd javascript
 
 # 4-step setup - everything works out of the box
-pnpm install                              # Install dependencies
-docker-compose up -d                      # Start PostgreSQL database
-pnpm --filter sveltekit-template db:push  # Run database migrations
-pnpm dev                                  # Start development servers
+npm install                              # Install all dependencies
+node scripts/setup.js                   # Run automated setup
+cp apps/weather/.env.example apps/weather/.env  # Configure environment
+npm run dev                              # Start development servers
 
-# Open and develop
-# Frontend: http://localhost:5173
-# API: http://localhost:8000
-# Database Studio: pnpm --filter sveltekit-template db:studio
+# Access applications
+# Weather Dashboard: http://localhost:3000
+# Todo Manager: http://localhost:3001
 ```
 
 ## Development Workflow
 
-The template includes comprehensive tooling for modern development:
+The monorepo includes comprehensive tooling for modern JavaScript development:
 
 ```bash
 # Development Commands
-pnpm dev                              # Start all development servers
-pnpm build                            # Build all applications
-pnpm lint                             # Lint and format code
-pnpm --filter api type-check          # TypeScript checking for Deno API
-pnpm --filter sveltekit-template build # Build SvelteKit app
+npm run dev                              # Start all development servers
+npm run build                            # Build all packages
+npm run lint                             # Lint JavaScript with ESLint
+npm run lint:fix                         # Auto-fix linting issues
+npm run format                           # Format code with Prettier
 
-# Database Operations
-docker-compose up -d                  # Start PostgreSQL database
-pnpm --filter sveltekit-template db:push   # Update database schema
-pnpm --filter sveltekit-template db:studio # Open Drizzle Studio
-
-# Add shadcn/ui Components
-pnpm dlx shadcn-svelte@latest add button card input dialog
+# FlareJS Router Development
+cd packages/FlareJS
+npm run build                            # Build router package
+npm run serve                            # Serve example application
+npm test                                 # Run Playwright tests
 
 # Production Deployment
-docker-compose -f docker-compose.prod.yml up -d --build
+npm run build                            # Build all packages
+npm run start                            # Start in production mode
 ```
 
 ## Technical Stack
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=svelte,typescript,deno,nodejs,postgres,docker,tailwind,vite" />
+    <img src="https://skillicons.dev/icons?i=js,nodejs,express,sqlite,html,css,git,linux" />
   </a>
 </p>
 
-**Frontend Stack**: SvelteKit 5 • Svelte 5 Runes • shadcn/ui • Tailwind CSS v4 • Superforms • Vite  
-**Backend Stack**: Deno 2 • Hono Framework • JWT Auth • PostgreSQL • Drizzle ORM  
-**DevOps Stack**: Docker • pnpm Workspaces • TypeScript • ESLint • Prettier
+**Frontend Stack**: Vanilla JavaScript ES Modules • FlareJS Router • EJS Templates • CSS Design System  
+**Backend Stack**: Node.js 18+ • Express.js • SQLite • REST APIs • Environment Config  
+**DevOps Stack**: npm Workspaces • ESLint • Prettier • Linux • systemd • Caddy
 
 **Focus Areas**:
 
-- **Modern Reactivity**: Svelte 5 runes for intuitive state management and component logic
-- **Type Safety**: Full-stack TypeScript with shared validation schemas and database types
-- **UI Excellence**: shadcn/ui components with Tailwind CSS v4 for beautiful, accessible interfaces
-- **Backend Performance**: Deno 2 runtime with Hono framework for lightning-fast API responses
-- **Database Integration**: PostgreSQL with Drizzle ORM for type-safe, real database operations
-- **Developer Experience**: Hot reload, 4-step setup, comprehensive tooling, zero configuration
-- **Production Ready**: Docker deployment, environment management, security best practices
-- **Monorepo Architecture**: Shared packages for UI, validation, and database utilities
+- **Zero Dependencies**: Pure JavaScript solutions without framework overhead
+- **Performance First**: Minimal bundle sizes, intelligent prefetching, optimized delivery
+- **Developer Experience**: Hot reload, auto-formatting, comprehensive tooling, 4-step setup
+- **Shared Architecture**: Monorepo with reusable packages for maximum code sharing
+- **Custom Routing**: FlareJS router for SPA-like navigation in static applications
+- **Real Applications**: Weather dashboard and todo manager with full CRUD operations
+- **Production Ready**: Environment management, security best practices, deployment scripts
+- **Modern JavaScript**: ES modules, async/await, modern browser APIs
 
 ---
 
@@ -140,7 +147,7 @@ docker-compose -f docker-compose.prod.yml up -d --build
 
 ## Support My Work
 
-If you find this **SvelteKit + Deno template** useful for building **modern web applications** with **full-stack type safety** and **rapid deployment**, consider supporting continued development:
+If you find **FlareJS Router** and the **JavaScript Monorepo** useful for building **high-performance web applications** with **zero framework overhead**, consider supporting continued development:
 
 <p align="center">
   <a href="https://buymeacoffee.com/dunamismax" target="_blank">
@@ -163,10 +170,10 @@ If you find this **SvelteKit + Deno template** useful for building **modern web 
 ---
 
 <p align="center">
-  <strong>Building Modern Web Applications with SvelteKit + Deno</strong><br>
-  <sub>SvelteKit 5 • Deno 2 • shadcn/ui • Tailwind v4 • PostgreSQL • Full-Stack Type Safety • Zero Configuration</sub>
+  <strong>Building High-Performance Web Applications with Vanilla JavaScript</strong><br>
+  <sub>Vanilla JS • Node.js • FlareJS Router • Express.js • SQLite • Zero Dependencies • Maximum Performance</sub>
 </p>
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/svelte-white-hires-logo.jpeg" alt="Svelte Logo" width="400" />
+  <img src="https://github.com/dunamismax/images/blob/main/js-coffee-particles.jpg" alt="JavaScript Coffee" width="400" />
 </p>
