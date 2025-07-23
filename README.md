@@ -67,7 +67,7 @@
 ---
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/JavaScript-logo.png" alt="JavaScript" width="150" />
+  <img src="https://github.com/dunamismax/images/blob/main/JavaScript-logo.png" alt="JavaScript" width="100" />
 </p>
 
 ## Quick Start
@@ -175,5 +175,5 @@ If you find **FlareJS Router** and the **JavaScript Monorepo** useful for buildi
 </p>
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/js-coffee-particles.jpg" alt="JavaScript Coffee" width="400" />
+  <img src="https://github.com/dunamismax/images/blob/main/js-coffee-particles.jpg" alt="JavaScript Coffee" width="450" />
 </p>
