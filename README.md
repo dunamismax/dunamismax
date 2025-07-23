@@ -58,7 +58,7 @@
 ---
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/svelte-white-hires-logo.jpeg" alt="Svelte Logo" width="200" />
+  <img src="https://github.com/dunamismax/images/blob/main/TS-logo.png" alt="TypeScript" width="200" />
 </p>
 
 ## Quick Start
@@ -168,5 +168,5 @@ If you find this **SvelteKit + Deno template** useful for building **modern web 
 </p>
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/svelte-wallpaper.png" alt="SvelteKit + Deno Stack" width="500" />
+  <img src="https://github.com/dunamismax/images/blob/main/svelte-white-hires-logo.jpeg" alt="Svelte Logo" width="400" />
 </p>
