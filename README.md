@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/golang/go-logo.png" alt="Go and JavaScript Developer" width="200" />
+  <img src="https://github.com/dunamismax/images/blob/main/golang/go-logo.png" alt="Go and JavaScript Developer" width="400" />
 </p>
 
 <p align="center">
@@ -63,7 +63,7 @@
 ---
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/golang/gopher-mage.svg" alt="Go Gopher" width="200" />
+  <img src="https://github.com/dunamismax/images/blob/main/golang/gopher-mage.svg" alt="Go Gopher" width="150" />
 </p>
 
 ## Quick Start
@@ -154,7 +154,7 @@ const router = flare({ prefetch: 'visible', log: true });
 ---
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/golang/gopher-running-jumping.gif" alt="Go Gopher" width="400" />
+  <img src="https://github.com/dunamismax/images/blob/main/golang/gopher-aviator.jpg" alt="Go Gopher" width="400" />
 </p>
 
 ## Key Features
