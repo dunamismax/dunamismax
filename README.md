@@ -1,20 +1,20 @@
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/Vanilla-JS-Logo.png" alt="flare-router Creator" width="200" />
+  <img src="https://github.com/dunamismax/images/blob/main/golang/go-logo.png" alt="Go and JavaScript Developer" width="200" />
 </p>
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=FF6B35&center=true&vCenter=true&width=1000&lines=flare-router+Creator+%2B+3.4kB+Bundle;Lightning-Fast+SPA+Navigation;Zero+Configuration+Setup;Intelligent+Link+Prefetching;Static+Sites+Feel+Like+SPAs;Full-Stack+JavaScript+Developer;Vanilla+JavaScript+%2B+Node.js+Expert;Modern+Monorepo+Architectures;Production-Ready+Web+Applications;Fastify+%2B+MongoDB+Backend;VineJS+Validation+%2B+Security;pnpm+Workspaces+%2B+ES+Modules;Zero+Framework+Dependencies;Maximum+Performance+Control;Enterprise+Grade+Architecture" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=1000&lines=Go+%2B+JavaScript+Developer;The+Modern+Go+Stack+Creator;Echo+v4+%2B+Templ+%2B+HTMX+Expert;Production-Ready+Go+Applications;flare-router+3.4kB+JavaScript+Router;Type-Safe+SQL+with+SQLC;Pure+Go+SQLite+Applications;Lightning-Fast+SPA+Navigation;Zero+Configuration+Setup;Single+Binary+Deployment;Hot+Reload+%2B+Mage+Build;Structured+Logging+with+slog;Modern+Web+Architectures;Enterprise+Grade+Solutions" alt="Typing SVG" />
   </a>
 </p>
 
 <p align="center">
+  <a href="https://golang.org/"><img src="https://img.shields.io/badge/Go-1.24+-00ADD8.svg?logo=go" alt="Go Version"></a>
+  <a href="https://github.com/dunamismax/go-web-server"><img src="https://img.shields.io/badge/Echo-v4-00ADD8.svg?logo=go" alt="Echo Framework"></a>
   <a href="https://github.com/dunamismax/flare-router"><img src="https://img.shields.io/badge/flare_router-3.4kB-FF6B35.svg" alt="flare-router"></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/Vanilla_JS-ES2020+-F7DF1E.svg?logo=javascript" alt="Vanilla JavaScript"></a>
-  <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-18+-339933.svg?logo=node.js" alt="Node.js Version"></a>
-  <a href="https://fastify.dev/"><img src="https://img.shields.io/badge/Fastify-4.29+-000000.svg?logo=fastify" alt="Fastify Version"></a>
-  <a href="https://www.mongodb.com/"><img src="https://img.shields.io/badge/MongoDB-6.18+-47A248.svg?logo=mongodb" alt="MongoDB Version"></a>
-  <a href="https://pnpm.io/"><img src="https://img.shields.io/badge/Package_Manager-pnpm-F69220.svg?logo=pnpm" alt="pnpm"></a>
+  <a href="https://templ.guide/"><img src="https://img.shields.io/badge/Templates-Templ-00ADD8.svg?logo=go" alt="Templ"></a>
+  <a href="https://htmx.org/"><img src="https://img.shields.io/badge/Frontend-HTMX_2.x-3D72D7.svg?logo=htmx" alt="HTMX"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
 </p>
 
@@ -22,13 +22,28 @@
 
 ## About
 
-**Creator of flare-router** and **full-stack JavaScript developer** specializing in **ultra-lightweight solutions** and **production-ready monorepo architectures**. I build high-performance web applications with 3.4kB routers that transform static sites into SPAs, vanilla frontends with intelligent prefetching, and modern backends - all deployable with minimal overhead and maximum performance control.
+**Go and JavaScript developer** specializing in **The Modern Go Stack** and **ultra-lightweight frontend solutions**. I build production-ready applications using Echo v4, Templ, HTMX, and type-safe SQL, plus 3.4kB JavaScript routers that transform static sites into blazingly fast SPAs. My projects deliver single binary deployments with zero external dependencies and maximum performance control.
 
-**Philosophy**: Modern web development doesn't need heavy frameworks. My projects showcase pure JavaScript patterns that prioritize speed, simplicity, and developer control.
+**Philosophy**: Modern web development needs both robust backend architectures and lightweight frontend solutions. Go provides enterprise-grade reliability while vanilla JavaScript delivers unmatched performance control.
 
 ---
 
 ## Featured Projects
+
+### **[The Modern Go Stack - Web Server Template](https://github.com/dunamismax/go-web-server)**
+
+<p align="center">
+  <a href="https://github.com/dunamismax/go-web-server">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=go-web-server&theme=dark&show_owner=true" alt="go-web-server" />
+  </a>
+</p>
+
+**Production-ready Go web application template** featuring Echo v4, Templ, HTMX 2.x, and Pico.css with type-safe SQL using SQLC and pure Go SQLite driver. Creates single, self-contained binaries (~11MB) with zero external dependencies, structured logging with slog, and comprehensive development tooling.
+
+**Tech Stack:** Echo v4 • Templ • HTMX 2.x • Pico.css v2 • SQLC • SQLite • Pure Go Driver  
+**Architecture:** Type-Safe SQL • Structured Logging • Single Binary Deployment • Zero CGO Dependencies  
+**Developer Experience:** Hot Reload with Air • Mage Build Automation • Database Migrations with Goose  
+**Production Features:** Security Middleware • Rate Limiting • Graceful Shutdown • Multi-Source Configuration
 
 ### **[flare-router 🔥](https://github.com/dunamismax/flare-router)**
 
@@ -45,28 +60,29 @@
 **Compatibility:** Framework Agnostic • Static Sites • Server-Rendered Apps • Astro Compatible  
 **Developer Experience:** Drop-in Solution • Event Handling • Programmatic Navigation • Progress Tracking
 
-### **[Full-Stack Vanilla JavaScript Monorepo](https://github.com/dunamismax/javascript)**
-
-<p align="center">
-  <a href="https://github.com/dunamismax/javascript">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=javascript&theme=dark&show_owner=true" alt="javascript-monorepo" />
-  </a>
-</p>
-
-**Production-ready JavaScript monorepo** featuring vanilla HTML, CSS, and JavaScript frontend with Node.js, Fastify, and MongoDB backend. Built with shared utilities, modern tooling, and complete production deployment configurations. Showcases flare-router integration for SPA-like navigation across real applications.
-
-**Tech Stack:** Vanilla JS + Node.js + Fastify + MongoDB + flare-router + VineJS Validation  
-**Architecture:** pnpm Workspaces • Shared Packages • ES Modules • Zero Framework Overhead  
-**Applications:** Todo List with Analytics + Weather Dashboard with OpenWeatherMap API  
-**Developer Experience:** esbuild Bundling • Hot Reload • 4-Step Setup • systemd + Caddy Deploy
-
 ---
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/JavaScript-logo.png" alt="JavaScript" width="100" />
+  <img src="https://github.com/dunamismax/images/blob/main/golang/gopher-mage.svg" alt="Go Gopher" width="200" />
 </p>
 
 ## Quick Start
+
+### The Modern Go Stack - Production-Ready in 4 Steps
+
+```bash
+# Clone and setup Go web server
+git clone https://github.com/dunamismax/go-web-server.git
+cd go-web-server && go mod tidy
+
+# Install development tools and dependencies
+mage setup
+
+# Start development server with hot reload
+mage dev
+
+# Server starts at http://localhost:8080 with full CRUD demo
+```
 
 ### flare-router - Get SPA Navigation in 3 Steps
 
@@ -104,45 +120,27 @@ const router = flare({ prefetch: 'visible', log: true });
 </html>
 ```
 
-### Full-Stack JavaScript Monorepo
-
-```bash
-# Clone and get running in 4 steps
-git clone https://github.com/dunamismax/javascript.git
-cd javascript && pnpm install
-
-# Configure environment
-cp apps/todo-list/.env.example apps/todo-list/.env
-cp apps/weather/.env.example apps/weather/.env
-# Edit .env files with your MongoDB URI and OpenWeatherMap API key
-
-# Build and start (includes flare-router)
-pnpm build && pnpm dev
-
-# Access: Todo List at http://localhost:3001, Weather at http://localhost:3000
-```
-
 ## Technical Stack
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js,nodejs,mongodb,html,css,vite,git,linux" />
+    <img src="https://skillicons.dev/icons?i=go,js,html,css,sqlite,docker,linux,git" />
   </a>
 </p>
 
-**Router Stack**: Vanilla JavaScript ES Modules • IntersectionObserver API • Fetch API • History API • esbuild  
-**Frontend Stack**: flare-router • CSS Design System • Intelligent Prefetching • State Preservation  
-**Backend Stack**: Node.js 18+ • Fastify • MongoDB Native Driver • VineJS Validation • REST APIs  
-**DevOps Stack**: pnpm Workspaces • ESLint • Prettier • Linux • systemd • Caddy • GitHub Actions
+**Go Backend Stack**: Echo v4 • Templ • HTMX 2.x • SQLC • SQLite • Pure Go Driver • slog Logging  
+**JavaScript Frontend Stack**: flare-router • Vanilla ES Modules • IntersectionObserver API • Fetch API • History API  
+**Build & DevOps Stack**: Mage Build Automation • Air Hot Reload • Goose Migrations • Docker • Linux • GitHub Actions  
+**Development Stack**: Type-Safe SQL • Structured Logging • Single Binary Deployment • Zero Dependencies
 
 **Architecture Philosophy**:
 
-- **Ultra-Lightweight Solutions**: 3.4kB router that transforms static sites into blazingly fast SPAs
-- **Zero Framework Dependencies**: Pure JavaScript solutions with maximum performance control
-- **Intelligent Performance**: Smart prefetching, SPA-like navigation, modern browser APIs
-- **Production Ready**: Environment management, security best practices, deployment automation
-- **Framework Agnostic**: Drop-in solutions that work with any website architecture
-- **Developer Experience**: Zero config setup, comprehensive tooling, modern workflows
+- **The Modern Go Stack**: Production-ready web applications with Echo v4, Templ, HTMX, and type-safe SQL
+- **Single Binary Deployment**: Self-contained applications (~11MB) with zero external dependencies
+- **Ultra-Lightweight Frontend**: 3.4kB JavaScript router that transforms static sites into blazingly fast SPAs
+- **Type-Safe Development**: SQLC for database queries, Templ for HTML components, structured logging
+- **Zero Configuration**: Drop-in solutions that work immediately with intelligent defaults
+- **Developer Experience**: Hot reload, build automation, comprehensive tooling, modern workflows
 
 ---
 
@@ -156,10 +154,18 @@ pnpm build && pnpm dev
 ---
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/js-evolution-wallpaper.jpg" alt="JavaScript Evolution" width="450" />
+  <img src="https://github.com/dunamismax/images/blob/main/golang/gopher-running-jumping.gif" alt="Go Gopher" width="400" />
 </p>
 
 ## Key Features
+
+**The Modern Go Stack:**
+
+- **Single Binary Deployment** - Self-contained applications (~11MB) with zero external dependencies
+- **Type-Safe SQL** - SQLC generates Go code from SQL queries with compile-time safety
+- **Hot Reload Development** - Air for instant server restart, Mage for build automation
+- **Production Security** - Rate limiting, CORS, secure headers, graceful shutdown middleware
+- **Pure Go SQLite** - Zero CGO dependencies with modernc.org/sqlite driver
 
 **flare-router Features:**
 
@@ -169,22 +175,15 @@ pnpm build && pnpm dev
 - **Framework Agnostic** - Drop-in solution compatible with any website architecture
 - **State Preservation** - Long-lived JavaScript behaviors between navigations
 
-**Full-Stack Applications:**
-
-- **Todo List with Analytics** - Full CRUD operations, MongoDB backend, real-time analytics dashboard
-- **Weather Dashboard** - OpenWeatherMap integration, server-side proxy, responsive design
-- **Lightning-Fast Navigation**: flare-router for instant page transitions without full reloads
-- **Enterprise Security**: VineJS validation, XSS protection, OWASP-compliant headers
-
 ---
 
 ## Support My Work
 
-If you find **flare-router** and these **production-ready JavaScript monorepos** useful for building **blazingly fast applications**, consider supporting continued development:
+If you find **The Modern Go Stack** and **flare-router** useful for building **production-ready applications**, consider supporting continued development:
 
 <p align="center">
   <a href="https://buymeacoffee.com/dunamismax" target="_blank">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" />
+    <img src="https://github.com/dunamismax/images/blob/main/golang/buy-coffee-go.gif" alt="Buy Me A Coffee" style="height: 150px !important;" />
   </a>
 </p>
 
@@ -203,10 +202,10 @@ If you find **flare-router** and these **production-ready JavaScript monorepos**
 ---
 
 <p align="center">
-  <strong>flare-router • Production-Ready JavaScript Monorepos</strong><br>
-  <sub>3.4kB Router • Lightning-Fast SPA Navigation • Full-Stack Vanilla JavaScript • Fastify • MongoDB • VineJS • pnpm Workspaces • Zero Framework Dependencies • Ultra-Lightweight Solutions</sub>
+  <strong>The Modern Go Stack • flare-router • Production-Ready Web Applications</strong><br>
+  <sub>Echo v4 • Templ • HTMX 2.x • SQLC • SQLite • 3.4kB Router • Type-Safe SQL • Single Binary Deployment • Zero Dependencies • Ultra-Lightweight Solutions</sub>
 </p>
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/js-coffee-particles.jpg" alt="JavaScript Coffee" width="450" />
+  <img src="https://github.com/dunamismax/images/blob/main/golang/gopher-running-jumping.gif" alt="Go Gopher" width="400" />
 </p>
