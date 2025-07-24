@@ -207,5 +207,5 @@ If you find **The Modern Go Stack** and **flare-router** useful for building **p
 </p>
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/golang/gopher-running-jumping.gif" alt="Go Gopher" width="400" />
+  <img src="https://github.com/dunamismax/images/blob/main/golang/gopher-running-jumping.gif" alt="Go Gopher" width="600" />
 </p>
