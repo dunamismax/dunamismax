@@ -167,7 +167,7 @@ npm run build && npm run dev
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js,nodejs,fastify,mongodb,html,css,phaser,sqlite,go,docker,linux,git" />
+    <img src="https://skillicons.dev/icons?i=js,node,fastify,mongodb,html,css,sqlite,go,docker,linux,git" />
   </a>
 </p>
 
