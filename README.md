@@ -4,12 +4,12 @@
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=FF6B35&center=true&vCenter=true&width=1000&lines=FlareJS+Router+Creator+%2B+2kB+Bundle;Lightning-Fast+SPA+Navigation;Zero+Configuration+Setup;Intelligent+Link+Prefetching;Static+Sites+Feel+Like+SPAs;Full-Stack+JavaScript+Developer;Vanilla+JavaScript+%2B+Node.js+Expert;Modern+Monorepo+Architectures;Production-Ready+Web+Applications;Interactive+CLI+%2B+API+Development;Fastify+%2B+MongoDB+Backend;VineJS+Validation+%2B+Security;pnpm+Workspaces+%2B+ES+Modules;Zero+Framework+Dependencies;Maximum+Performance+Control;Enterprise+Grade+Architecture" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=FF6B35&center=true&vCenter=true&width=1000&lines=FlareJS+Router+Creator+%2B+3.4kB+Bundle;Lightning-Fast+SPA+Navigation;Zero+Configuration+Setup;Intelligent+Link+Prefetching;Static+Sites+Feel+Like+SPAs;Full-Stack+JavaScript+Developer;Vanilla+JavaScript+%2B+Node.js+Expert;Modern+Monorepo+Architectures;Production-Ready+Web+Applications;Interactive+CLI+%2B+API+Development;Fastify+%2B+MongoDB+Backend;VineJS+Validation+%2B+Security;pnpm+Workspaces+%2B+ES+Modules;Zero+Framework+Dependencies;Maximum+Performance+Control;Enterprise+Grade+Architecture" alt="Typing SVG" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/dunamismax/FlareJS"><img src="https://img.shields.io/badge/FlareJS_Router-2kB-FF6B35.svg" alt="FlareJS Router"></a>
+  <a href="https://github.com/dunamismax/FlareJS"><img src="https://img.shields.io/badge/FlareJS_Router-3.4kB-FF6B35.svg" alt="FlareJS Router"></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/Vanilla_JS-ES2020+-F7DF1E.svg?logo=javascript" alt="Vanilla JavaScript"></a>
   <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-18+-339933.svg?logo=node.js" alt="Node.js Version"></a>
   <a href="https://fastify.dev/"><img src="https://img.shields.io/badge/Fastify-4.29+-000000.svg?logo=fastify" alt="Fastify Version"></a>
@@ -26,7 +26,7 @@
 
 **Creator of FlareJS Router** and **full-stack JavaScript developer** specializing in **ultra-lightweight solutions** and **production-ready monorepo architectures**. I build high-performance web applications, intelligent routing systems, and interactive CLI tools using modern ES modules and zero-dependency architectures that prioritize speed, simplicity, and developer control.
 
-**Philosophy**: Modern web development doesn't need heavy frameworks. My projects showcase pure JavaScript patterns - 2kB routers that transform static sites into SPAs, vanilla frontends with intelligent prefetching, high-performance backends, and monorepo architectures - all deployable with minimal overhead and maximum performance control.
+**Philosophy**: Modern web development doesn't need heavy frameworks. My projects showcase pure JavaScript patterns - 3.4kB routers that transform static sites into SPAs, vanilla frontends with intelligent prefetching, high-performance backends, and monorepo architectures - all deployable with minimal overhead and maximum performance control.
 
 ---
 
@@ -40,9 +40,9 @@
   </a>
 </p>
 
-**Lightning-fast 2kB router** and intelligent prefetcher that makes static sites feel like blazingly fast SPAs. Transform any multi-page website into a lightning-fast experience without framework overhead. Zero configuration, intelligent prefetching, and seamless navigation.
+**Lightning-fast 3.4kB router** and intelligent prefetcher that makes static sites feel like blazingly fast SPAs. Transform any multi-page website into a lightning-fast experience without framework overhead. Zero configuration, intelligent prefetching, and seamless navigation.
 
-**Key Features:** 2kB Bundle Size • Zero Configuration • Intelligent Link Prefetching • SPA-like Navigation
+**Key Features:** 3.4kB Bundle Size • Zero Configuration • Intelligent Link Prefetching • SPA-like Navigation
 **Architecture:** IntersectionObserver API • Fetch API • History API • Modern Browser APIs
 **Compatibility:** Framework Agnostic • Static Sites • Server-Rendered Apps • Astro Compatible
 **Developer Experience:** Drop-in Solution • Event Handling • Programmatic Navigation • Playwright Tests
@@ -204,7 +204,7 @@ pnpm format:check      # Check code formatting
 
 **Architecture Philosophy**:
 
-- **Ultra-Lightweight Solutions**: 2kB router that transforms static sites into blazingly fast SPAs
+- **Ultra-Lightweight Solutions**: 3.4kB router that transforms static sites into blazingly fast SPAs
 - **Zero Framework Dependencies**: Pure JavaScript solutions with maximum performance control
 - **Intelligent Performance**: Smart prefetching, SPA-like navigation, modern browser APIs
 - **Monorepo Excellence**: Shared utilities, consistent tooling, and reusable packages
@@ -230,7 +230,7 @@ pnpm format:check      # Check code formatting
 
 **FlareJS Router Features:**
 
-- **2kB Bundle Size** - Ultra-lightweight router with zero configuration setup
+- **3.4kB Bundle Size** - Ultra-lightweight router with zero configuration setup
 - **Intelligent Prefetching** - IntersectionObserver-based link prefetching for instant navigation
 - **SPA-like Navigation** - Transform static sites into blazingly fast single-page experiences
 - **Framework Agnostic** - Drop-in solution compatible with any website architecture
@@ -278,7 +278,7 @@ If you find **FlareJS Router** and these **production-ready JavaScript monorepos
 
 <p align="center">
   <strong>FlareJS Router • Production-Ready JavaScript Monorepos</strong><br>
-  <sub>2kB Router • Lightning-Fast SPA Navigation • Full-Stack Vanilla JavaScript • Node.js CLI & API Development • Fastify • MongoDB • VineJS • pnpm Workspaces • Zero Framework Dependencies • Ultra-Lightweight Solutions</sub>
+  <sub>3.4kB Router • Lightning-Fast SPA Navigation • Full-Stack Vanilla JavaScript • Node.js CLI & API Development • Fastify • MongoDB • VineJS • pnpm Workspaces • Zero Framework Dependencies • Ultra-Lightweight Solutions</sub>
 </p>
 
 <p align="center">
