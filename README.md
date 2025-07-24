@@ -122,10 +122,6 @@ pnpm build && pnpm dev
 # Access: Todo List at http://localhost:3001, Weather at http://localhost:3000
 ```
 
-<p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/js-evolution-wallpaper.jpg" alt="JavaScript Evolution" width="450" />
-</p>
-
 ## Technical Stack
 
 <p align="center">
@@ -158,6 +154,10 @@ pnpm build && pnpm dev
 </p>
 
 ---
+
+<p align="center">
+  <img src="https://github.com/dunamismax/images/blob/main/js-evolution-wallpaper.jpg" alt="JavaScript Evolution" width="450" />
+</p>
 
 ## Key Features
 
