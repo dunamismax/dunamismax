@@ -184,6 +184,10 @@ pnpm clean             # Clean all built assets
 pnpm format:check      # Check code formatting
 ```
 
+<p align="center">
+  <img src="https://github.com/dunamismax/images/blob/main/js-evolution-wallpaper.jpg" alt="JavaScript Evolution" width="450" />
+</p>
+
 ## Technical Stack
 
 <p align="center">
@@ -223,10 +227,6 @@ pnpm format:check      # Check code formatting
 ---
 
 ## Key Applications & Features
-
-<p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/js-evolution-wallpaper.jpg" alt="JavaScript Evolution" width="450" />
-</p>
 
 **FlareJS Router Features:**
 
