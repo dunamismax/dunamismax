@@ -42,9 +42,9 @@
 
 **Lightning-fast 2kB router** and intelligent prefetcher that makes static sites feel like blazingly fast SPAs. Transform any multi-page website into a lightning-fast experience without framework overhead. Zero configuration, intelligent prefetching, and seamless navigation.
 
-**Key Features:** 2kB Bundle Size • Zero Configuration • Intelligent Link Prefetching • SPA-like Navigation  
-**Architecture:** IntersectionObserver API • Fetch API • History API • Modern Browser APIs  
-**Compatibility:** Framework Agnostic • Static Sites • Server-Rendered Apps • Astro Compatible  
+**Key Features:** 2kB Bundle Size • Zero Configuration • Intelligent Link Prefetching • SPA-like Navigation
+**Architecture:** IntersectionObserver API • Fetch API • History API • Modern Browser APIs
+**Compatibility:** Framework Agnostic • Static Sites • Server-Rendered Apps • Astro Compatible
 **Developer Experience:** Drop-in Solution • Event Handling • Programmatic Navigation • Playwright Tests
 
 ### **[Full-Stack Vanilla JavaScript Monorepo](https://github.com/dunamismax/javascript)**
@@ -57,9 +57,9 @@
 
 **Production-ready JavaScript monorepo** featuring vanilla HTML, CSS, and JavaScript frontend with Node.js, Fastify, and MongoDB backend. Built with shared utilities, modern tooling, and complete production deployment configurations. Includes FlareJS Router for SPA-like navigation.
 
-**Tech Stack:** Vanilla JS + Node.js + Fastify + MongoDB + FlareJS Router + VineJS Validation  
-**Architecture:** pnpm Workspaces • Shared Packages • ES Modules • Zero Framework Overhead  
-**Applications:** Todo List with Analytics + Weather Dashboard with OpenWeatherMap API  
+**Tech Stack:** Vanilla JS + Node.js + Fastify + MongoDB + FlareJS Router + VineJS Validation
+**Architecture:** pnpm Workspaces • Shared Packages • ES Modules • Zero Framework Overhead
+**Applications:** Todo List with Analytics + Weather Dashboard with OpenWeatherMap API
 **Developer Experience:** esbuild Bundling • Hot Reload • 4-Step Setup • systemd + Caddy Deploy
 
 ### **[Node.js CLI & API Development Monorepo](https://github.com/dunamismax/node-cli)**
@@ -72,9 +72,9 @@
 
 **Production-ready Node.js monorepo** featuring high-performance RESTful APIs and interactive command-line tools. Built with Fastify, Yargs, MongoDB, and pure JavaScript. Create scalable backend services and powerful CLI applications with shared utilities.
 
-**Tech Stack:** Pure JavaScript + Fastify + Yargs + MongoDB + Enquirer + Chalk  
-**Architecture:** pnpm Workspaces • Shared Utilities • VineJS Validation • API Response Helpers  
-**Applications:** RESTful API Server + Interactive CLI with Tech Stack Explorer  
+**Tech Stack:** Pure JavaScript + Fastify + Yargs + MongoDB + Enquirer + Chalk
+**Architecture:** pnpm Workspaces • Shared Utilities • VineJS Validation • API Response Helpers
+**Applications:** RESTful API Server + Interactive CLI with Tech Stack Explorer
 **Developer Experience:** Interactive Prompts • Spinners + Styling • Production Deployment Ready
 
 ---
@@ -103,7 +103,9 @@ const router = flare({ prefetch: 'visible', log: true });
 ```html
 <!DOCTYPE html>
 <html>
-  <head><title>My Fast Site</title></head>
+  <head>
+    <title>My Fast Site</title>
+  </head>
   <body>
     <nav>
       <a href="/">Home</a>
@@ -112,8 +114,8 @@ const router = flare({ prefetch: 'visible', log: true });
     </nav>
     <main><!-- Your content --></main>
     <script type="module">
-      import flare from 'flare-router';
-      const router = flare({ prefetch: 'visible', log: true });
+      import flare from "flare-router";
+      const router = flare({ prefetch: "visible", log: true });
     </script>
   </body>
 </html>
@@ -168,7 +170,7 @@ npm test              # Run Playwright test suite
 
 # Universal Commands (monorepos)
 pnpm dev               # Start all applications in development mode
-pnpm build             # Build all applications for production  
+pnpm build             # Build all applications for production
 pnpm lint              # Lint all JavaScript files with ESLint
 pnpm lint:fix          # Auto-fix linting issues
 pnpm format            # Format code with Prettier
@@ -178,7 +180,7 @@ pnpm start             # Start in production mode
 pnpm build:dev         # Build with sourcemaps for debugging
 pnpm clean             # Clean all built assets
 
-# Node CLI Monorepo Specific  
+# Node CLI Monorepo Specific
 pnpm format:check      # Check code formatting
 ```
 
@@ -186,14 +188,14 @@ pnpm format:check      # Check code formatting
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js,nodejs,fastify,mongodb,html,css,vite,playwright,git,linux" />
+    <img src="https://skillicons.dev/icons?i=js,nodejs,mongodb,html,css,vite,git,linux" />
   </a>
 </p>
 
-**Router Stack**: Vanilla JavaScript ES Modules • IntersectionObserver API • Fetch API • History API • Vite • Playwright  
-**Frontend Stack**: FlareJS Router • CSS Design System • esbuild Bundling • Intelligent Prefetching  
-**Backend Stack**: Node.js 18+ • Fastify • MongoDB Native Driver • VineJS Validation • REST APIs  
-**CLI Stack**: Yargs Parsing • Enquirer Prompts • Chalk Styling • Ora Spinners • Figlet Banners  
+**Router Stack**: Vanilla JavaScript ES Modules • IntersectionObserver API • Fetch API • History API • Vite • Playwright
+**Frontend Stack**: FlareJS Router • CSS Design System • esbuild Bundling • Intelligent Prefetching
+**Backend Stack**: Node.js 18+ • Fastify • MongoDB Native Driver • VineJS Validation • REST APIs
+**CLI Stack**: Yargs Parsing • Enquirer Prompts • Chalk Styling • Ora Spinners • Figlet Banners
 **DevOps Stack**: pnpm Workspaces • ESLint • Prettier • Linux • systemd • Caddy • GitHub Actions
 
 **Architecture Philosophy**:
@@ -202,7 +204,7 @@ pnpm format:check      # Check code formatting
 - **Zero Framework Dependencies**: Pure JavaScript solutions with maximum performance control
 - **Intelligent Performance**: Smart prefetching, SPA-like navigation, modern browser APIs
 - **Monorepo Excellence**: Shared utilities, consistent tooling, and reusable packages
-- **Production Ready**: Environment management, security best practices, deployment automation  
+- **Production Ready**: Environment management, security best practices, deployment automation
 - **Framework Agnostic**: Drop-in solutions that work with any website architecture
 - **Developer Experience**: Zero config setup, comprehensive tooling, modern workflows
 - **Enterprise Grade**: VineJS validation, security headers, OWASP compliance, health monitoring
@@ -227,18 +229,21 @@ pnpm format:check      # Check code formatting
 </p>
 
 **FlareJS Router Features:**
+
 - **2kB Bundle Size** - Ultra-lightweight router with zero configuration setup
 - **Intelligent Prefetching** - IntersectionObserver-based link prefetching for instant navigation
 - **SPA-like Navigation** - Transform static sites into blazingly fast single-page experiences
 - **Framework Agnostic** - Drop-in solution compatible with any website architecture
 
 **Full-Stack Applications:**
+
 - **Todo List with Analytics** - Full CRUD operations, MongoDB backend, real-time analytics dashboard
 - **Weather Dashboard** - OpenWeatherMap integration, server-side proxy, responsive design
 - **RESTful API Server** - High-performance Fastify with MongoDB, CORS, rate limiting, security
 - **Interactive CLI Tools** - Tech stack explorer, project utilities, beautiful prompts and styling
 
 **Performance Features:**
+
 - **Lightning-Fast Navigation**: FlareJS Router for instant page transitions without full reloads
 - **Ultra-High Performance**: Fastify backend (2-3x faster than Express), esbuild bundling (10-100x faster)
 - **Enterprise Security**: VineJS validation, XSS protection, OWASP-compliant headers, input sanitization
