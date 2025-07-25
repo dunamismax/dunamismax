@@ -1,146 +1,179 @@
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/deno/deno-retro.jpeg" alt="Deno Retro Logo" width="200" />
+  <img src="https://github.com/dunamismax/images/blob/main/deno/deno-white-logo-main.jpeg" alt="Rust Header" width="400" />
 </p>
 
+<h1 align="center">🦀 DunamisMax - Rust Systems Engineer</h1>
+
 <p align="center">
-  <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=1000&lines=TypeScript+Developer+%7C+Deno+%26+Fresh+Solutions;Island+Architecture+%2B+Zero+JS+by+Default;TypeScript+Native+%2B+Zero+Config+Setup;Deno+2+Runtime+%2B+Fresh;Valibot+JSR+Validation+%2B+Type+Safety;Preact+Islands+%2B+Tailwind+CSS;Deno+KV+Database+%2B+Zero+Setup;Web+Standard+APIs+Everywhere;Lightning+Fast+Performance;Production+Ready+%2B+Secure;Single+Binary+Deployment" alt="Typing SVG" />
+  <a href="https://github.com/dunamismax/full-stack-rust">
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=22&pause=1000&color=CE422B&center=true&vCenter=true&width=800&lines=Full-Stack+Rust+Developer;Memory+Safety+%2B+Zero-Cost+Abstractions;Systems+Programming+Expert;WebAssembly+Enthusiast;Production-Ready+Applications;Open+Source+Rust+Advocate" alt="Typing SVG" />
   </a>
 </p>
 
+---
+
+## 👨‍💻 About Me
+
+I'm a **Rust systems engineer** passionate about building **memory-safe**, **high-performance applications** across the entire technology stack. From blazing-fast web backends to rich terminal interfaces, I leverage Rust's ownership model and zero-cost abstractions to create production-ready systems that eliminate entire classes of bugs at compile time.
+
+**Currently focused on:**
+
+- 🦀 **Full-stack Rust development** with modern frameworks like Leptos and Axum
+- 🌐 **WebAssembly applications** for near-native browser performance
+- 🖥️ **Terminal user interfaces** with rich, interactive experiences
+- 🔧 **Systems programming** with emphasis on safety and performance
+
+---
+
+## 🛠️ Rust Tech Stack
+
+### Core Technologies
+
+![Rust](https://img.shields.io/badge/Rust-CE422B?style=for-the-badge&logo=rust&logoColor=white)
+![WebAssembly](https://img.shields.io/badge/WebAssembly-654FF0?style=for-the-badge&logo=webassembly&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+
+### Web Development
+
+![Leptos](https://img.shields.io/badge/Leptos-EF3939?style=for-the-badge&logo=rust&logoColor=white)
+![Axum](https://img.shields.io/badge/Axum-000000?style=for-the-badge&logo=rust&logoColor=white)
+![Tokio](https://img.shields.io/badge/Tokio-CE422B?style=for-the-badge&logo=rust&logoColor=white)
+
+### Terminal & Systems
+
+![Ratatui](https://img.shields.io/badge/Ratatui-F74C00?style=for-the-badge&logo=rust&logoColor=white)
+![Crossterm](https://img.shields.io/badge/Crossterm-CE422B?style=for-the-badge&logo=rust&logoColor=white)
+
+### Database & Tools
+
+![SQLx](https://img.shields.io/badge/SQLx-CE422B?style=for-the-badge&logo=rust&logoColor=white)
+![Serde](https://img.shields.io/badge/Serde-000000?style=for-the-badge&logo=rust&logoColor=white)
+![Cargo](https://img.shields.io/badge/Cargo-CE422B?style=for-the-badge&logo=rust&logoColor=white)
+
+### DevOps & Deployment
+
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+
+---
+
+## 🚀 Featured Project
+
+### 🦀 [Full-Stack Rust Monorepo](https://github.com/dunamismax/full-stack-rust)
+
+A **production-ready** Rust application monorepo demonstrating the power of using Rust across your entire technology stack. This project showcases modern full-stack development with memory safety, zero-cost abstractions, and end-to-end type safety.
+
+**Tech Stack:** Rust, Leptos, Axum, Ratatui, WebAssembly, SQLite, SQLx
+
+**🌟 Key Features:**
+
+- 🌐 **Leptos Web Application**: Server-side rendering with client-side hydration
+- 🖥️ **Ratatui Terminal Interface**: Rich, interactive terminal dashboard
+- 📊 **Type-Safe Database**: SQLite with SQLx migrations and health monitoring
+- 🔒 **Production Security**: Input validation, error handling, and request limiting
+- 🚀 **Single Binary Deployment**: Statically-linked executables for easy deployment
+- ⚡ **High Performance**: WebAssembly frontend with async Rust backend
+- 🛡️ **Memory Safety**: Eliminates null pointers, buffer overflows, and data races
+- 📦 **Cargo Workspace**: Unified dependency management and shared libraries
+
+**🎯 What Makes It Special:**
+
+- **One Language, Full Stack**: Rust everywhere - frontend, backend, terminal, and shared utilities
+- **Compile-Time Guarantees**: Catch bugs at compile time, not runtime
+- **Zero-Cost Abstractions**: High-level code compiles to optimized machine code
+- **Developer Experience**: Hot reload, structured logging, and comprehensive health checks
+
+---
+
+## 📊 GitHub Stats
+
 <p align="center">
-  <a href="https://deno.com/"><img src="https://img.shields.io/badge/Deno-2.3+-00ADD8.svg?logo=deno" alt="Deno Version"></a>
-  <a href="https://fresh.deno.dev/"><img src="https://img.shields.io/badge/Fresh-Framework-FDB462.svg" alt="Fresh Version"></a>
-  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-Native-3178C6.svg?logo=typescript" alt="TypeScript"></a>
-  <a href="https://jsr.io/@valibot/valibot"><img src="https://img.shields.io/badge/Valibot-JSR-F7DF1E.svg" alt="Valibot JSR"></a>
-  <a href="https://preactjs.com/"><img src="https://img.shields.io/badge/Preact-Islands-673AB8.svg?logo=preact" alt="Preact"></a>
-  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind-CSS-06B6D4.svg?logo=tailwindcss" alt="Tailwind CSS"></a>
-  <a href="https://deno.com/kv"><img src="https://img.shields.io/badge/Deno_KV-Database-00ADD8.svg" alt="Deno KV"></a>
-  <a href="https://jsr.io/"><img src="https://img.shields.io/badge/Registry-JSR-F7DF1E.svg" alt="JSR Registry"></a>
-  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
+  <img src="https://github-readme-stats.vercel.app/api?username=dunamismax&show_icons=true&theme=dracula&count_private=true" alt="GitHub Stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dunamismax&layout=compact&theme=dracula&langs_count=8" alt="Top Languages" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=dunamismax&theme=dracula" alt="GitHub Streak" />
 </p>
 
 ---
 
-## About
+## 🎯 Current Focus
 
-**TypeScript developer** specializing in **production-ready full-stack applications** using **Deno** and **Fresh**. I build high-performance web solutions that leverage native TypeScript, island architecture, and web-standard APIs. My focus is on creating fast, secure, and maintainable applications with a first-class developer experience.
-
-**Philosophy**: Modern web development should be simple, fast, and secure. By embracing the Deno runtime and Fresh framework, we can build applications with a minimal footprint, zero-JS by default, and a complete toolchain out of the box. This approach ensures robust, type-safe code from the server to the client.
-
----
-
-## Featured Project
-
-### **[Citrus Press - Deno Fresh Application](https://github.com/dunamismax/citrus-press)**
-
-<p align="center">
-  <a href="https://github.com/dunamismax/citrus-press">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=citrus-press&theme=dark&show_owner=true" alt="citrus-press" />
-  </a>
-</p>
-
-<p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/deno/deno-fresh-logo.png" alt="Deno Toolbox" width="150" />
-</p>
-
-A production-ready TypeScript application built with **Deno 2** and **Fresh**, featuring island architecture, zero JavaScript by default, and lightning-fast performance. Experience the future of web development with native TypeScript, web standard APIs, and a modern edge-ready architecture that compiles to a single binary.
-
-**Core Features**: Fresh Framework • Deno 2 Runtime • Island Architecture • Native TypeScript • Deno KV Database • Tailwind CSS
-**Applications**: Todo List with Analytics • Weather Dashboard
-**Developer Experience**: Zero-Config Setup • Hot Reloading • Built-in Toolchain • Single Binary Deployment
-**Architecture**: Edge-Ready • File-Based Routing • Preact Signals • JSR Packages
+- 🔥 **Building production Rust applications** with Leptos, Axum, and WebAssembly
+- 🌍 **Contributing to the Rust ecosystem** and open source libraries
+- 📚 **Mastering systems programming** with emphasis on performance and safety
+- 🤝 **Sharing Rust knowledge** through code examples and community engagement
+- 🦀 **Evangelizing memory-safe systems** programming practices
 
 ---
 
-## Quick Start
+## 🏆 Rust Expertise
 
-### Citrus Press - Get Running in 4 Steps
+```rust
+struct RustDeveloper {
+    name: &'static str,
+    specialties: Vec<&'static str>,
+    principles: [&'static str; 3],
+}
 
-**Prerequisites:** [Deno 2.0+](https://deno.land/manual/getting_started/installation)
+impl RustDeveloper {
+    fn new() -> Self {
+        Self {
+            name: "DunamisMax",
+            specialties: vec![
+                "Full-Stack Web Development",
+                "Systems Programming",
+                "WebAssembly Applications",
+                "Terminal User Interfaces",
+                "Database Integration",
+                "Production Deployments"
+            ],
+            principles: [
+                "Memory Safety Without Garbage Collection",
+                "Zero-Cost Abstractions",
+                "Fearless Concurrency"
+            ]
+        }
+    }
 
-```bash
-# 1. Clone and navigate
-git clone https://github.com/dunamismax/citrus-press.git
-cd citrus-press
-
-# 2. Configure environment
-cp .env.example .env
-# Edit .env with your OpenWeatherMap API key
-
-# 3. Start development server
-deno task start
-
-# 4. Open your browser
-# http://localhost:8000
+    fn mission(&self) -> &'static str {
+        "Empowering developers to build fast, safe, and reliable systems with Rust"
+    }
+}
 ```
 
 ---
 
-<p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/deno/deno-eating-ts.jpeg" alt="Deno Eating TS" width="200" />
-</p>
-
-## Technical Stack
+## 📫 Let's Connect
 
 <p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=ts,deno,react,tailwind,sqlite,linux,git" />
+  <a href="https://twitter.com/dunamismax" target="_blank">
+    <img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
   </a>
-</p>
-
-**Core Stack**: Deno 2 • Fresh Framework • TypeScript • Preact Islands • Tailwind CSS • Deno KV
-**Tooling**: Deno Built-in Formatter, Linter, Test Runner & Task Runner
-**Deployment**: Single Binary Compilation (`deno compile`) • `systemd` • Caddy Reverse Proxy
-
-**Architecture Philosophy**:
-
-- **Performance First**: Zero JavaScript by default with island-based, selective hydration for instant page loads.
-- **Type Safety End-to-End**: Leverage native TypeScript in Deno for robust, error-free code across the entire stack.
-- **Web Standards**: Build on modern, future-proof web APIs for maximum compatibility and performance.
-- **Developer Experience**: Enjoy a zero-configuration setup, a complete built-in toolchain, and seamless hot-reloading.
-- **Simplified Deployment**: Compile applications into a single, self-contained binary for easy, dependency-free deployment.
-
----
-
-## GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=dunamismax&show_icons=true&theme=dark&count_private=true" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dunamismax&layout=compact&theme=dark" alt="Top Languages" />
-</p>
-
----
-
-## Support My Work
-
-If you find my work on **Deno** and **Fresh** valuable for building next-generation web applications, consider supporting my efforts:
-
-<p align="center">
-  <a href="https://www.buymeacoffee.com/dunamismax">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" >
+  <a href="https://bsky.app/profile/dunamismax.bsky.social" target="_blank">
+    <img src="https://img.shields.io/badge/Bluesky-blue?style=for-the-badge&logo=bluesky&logoColor=white" alt="Bluesky" />
+  </a>
+  <a href="https://reddit.com/user/dunamismax" target="_blank">
+    <img src="https://img.shields.io/badge/Reddit-%23FF4500.svg?&style=for-the-badge&logo=reddit&logoColor=white" alt="Reddit" />
+  </a>
+  <a href="https://discord.com/users/dunamismax" target="_blank">
+    <img src="https://img.shields.io/badge/Discord-dunamismax-7289DA.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
+  </a>
+  <a href="https://signal.me/#p/+dunamismax.66" target="_blank">
+    <img src="https://img.shields.io/badge/Signal-dunamismax.66-3A76F0.svg?style=for-the-badge&logo=signal&logoColor=white" alt="Signal" />
   </a>
 </p>
 
 ---
 
-## Connect With Me
-
 <p align="center">
-  <a href="https://twitter.com/dunamismax" target="_blank"><img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"></a>
-  <a href="https://bsky.app/profile/dunamismax.bsky.social" target="_blank"><img src="https://img.shields.io/badge/Bluesky-blue?style=for-the-badge&logo=bluesky&logoColor=white" alt="Bluesky"></a>
-  <a href="https://reddit.com/user/dunamismax" target="_blank"><img src="https://img.shields.io/badge/Reddit-%23FF4500.svg?&style=for-the-badge&logo=reddit&logoColor=white" alt="Reddit"></a>
-  <a href="https://discord.com/users/dunamismax" target="_blank"><img src="https://img.shields.io/badge/Discord-dunamismax-7289DA.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a>
-  <a href="https://signal.me/#p/+dunamismax.66" target="_blank"><img src="https://img.shields.io/badge/Signal-dunamismax.66-3A76F0.svg?style=for-the-badge&logo=signal&logoColor=white" alt="Signal"></a>
-</p>
-
----
-
-<p align="center">
-  <strong>TypeScript Full-Stack Developer • Deno • Fresh</strong><br>
-  <sub>🍋 Fresh • 🦕 Deno 2 • 🏝️ Islands Architecture • ⚡ TypeScript Native • 🚀 Edge Ready</sub>
+  <img src="https://komarev.com/ghpvc/?username=dunamismax&color=blueviolet&style=flat-square&label=Profile+Views" alt="Profile Views" />
 </p>
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/deno/deno-evolution.jpeg" alt="Deno Evolution" width="500" />
+  <strong>🦀 "Fast, Reliable, Productive — Pick Three. That's Rust." 🦀</strong>
 </p>
