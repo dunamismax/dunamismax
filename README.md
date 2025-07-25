@@ -23,9 +23,9 @@
 
 ## About
 
-**C# .NET developer** specializing in **production-ready full-stack applications**, **enterprise solutions**, and **type-safe web development**. I build comprehensive .NET ecosystems using Blazor Server, ASP.NET Core, Entity Framework, and modern C# practices. My projects emphasize type safety, performance optimization, and maintainable monorepo architectures for scalable enterprise applications.
+**C# .NET developer** specializing in **production-ready full-stack applications** and **type-safe web development**. I build comprehensive .NET ecosystems using Blazor Server, ASP.NET Core, Entity Framework, and modern C# practices. My focus is on type safety, performance optimization, and maintainable monorepo architectures.
 
-**Philosophy**: Modern .NET development thrives on type safety and unified ecosystems. C# provides compile-time validation and IntelliSense throughout the stack, while Blazor enables rich interactive UIs without JavaScript complexity. Combined with ASP.NET Core's performance and Entity Framework's data abstraction, this creates a complete enterprise-grade development experience with minimal complexity.
+**Philosophy**: Modern .NET development thrives on type safety and unified ecosystems. C# provides compile-time validation and IntelliSense throughout the stack, while Blazor enables rich interactive UIs without JavaScript complexity. Combined with ASP.NET Core's performance and Entity Framework's data abstraction, this creates a complete development experience with minimal complexity.
 
 ---
 
@@ -33,7 +33,7 @@
   <img src="https://github.com/dunamismax/images/blob/main/dotnet/Csharp-Logo.png" alt="C#" width="150" />
 </p>
 
-## Featured Projects
+## Featured Project
 
 ### **[Full-Stack .NET 8 Monorepo](https://github.com/dunamismax/fullstack-dotnet)**
 
@@ -49,51 +49,6 @@
 **Applications:** Interactive Blazor Web App • RESTful API with Swagger • CLI Tools with DI Container • Shared Library Components
 **Developer Experience:** Hot Reload Development • Centralized Configuration • Cross-Platform Build Scripts • CI/CD Pipeline
 **Architecture:** Monorepo Structure • Shared Utilities • Modern .NET Patterns • Production Deployment Ready
-
-### **[C# Enterprise Web Applications](https://github.com/dunamismax/dotnet-enterprise)**
-
-<p align="center">
-  <a href="https://github.com/dunamismax/dotnet-enterprise">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=dotnet-enterprise&theme=dark&show_owner=true" alt="dotnet-enterprise" />
-  </a>
-</p>
-
-**Enterprise-grade .NET solutions** featuring advanced patterns like CQRS, Clean Architecture, and Domain-Driven Design. Built with ASP.NET Core, Entity Framework, MediatR, and comprehensive security middleware for scalable business applications.
-
-**Architecture Patterns:** Clean Architecture • CQRS with MediatR • Domain-Driven Design • Repository Pattern
-**Enterprise Features:** Multi-Tenant Support • Role-Based Security • Audit Logging • Performance Monitoring
-**Technologies:** ASP.NET Core 8 • Entity Framework Core • AutoMapper • FluentValidation
-**Quality Assurance:** Unit Testing • Integration Testing • Performance Testing • Security Scanning
-
-### **[Blazor Component Library](https://github.com/dunamismax/blazor-components)**
-
-<p align="center">
-  <a href="https://github.com/dunamismax/blazor-components">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=blazor-components&theme=dark&show_owner=true" alt="blazor-components" />
-  </a>
-</p>
-
-**Comprehensive Blazor component library** with Material Design styling, accessibility features, and responsive design patterns. Features 50+ reusable components built with modern C# patterns and CSS isolation for maintainable enterprise applications.
-
-**Component Collection:** Data Grids • Form Controls • Navigation • Charts • Modal Dialogs • Toast Notifications
-**Design System:** Material Design Principles • Dark/Light Theming • Responsive Grid System • Typography Scale
-**Accessibility:** ARIA Compliance • Keyboard Navigation • Screen Reader Support • Color Contrast Standards
-**Developer Experience:** IntelliSense Support • Comprehensive Documentation • Interactive Examples • NuGet Package
-
-### **[C# CLI Development Framework](https://github.com/dunamismax/dotnet-cli)**
-
-<p align="center">
-  <a href="https://github.com/dunamismax/dotnet-cli">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=dotnet-cli&theme=dark&show_owner=true" alt="dotnet-cli" />
-  </a>
-</p>
-
-**Professional command-line application framework** featuring interactive prompts, dependency injection, structured logging, and cross-platform deployment. Built with modern C# patterns and Microsoft.Extensions for enterprise-grade console applications.
-
-**CLI Features:** Interactive Commands • Dependency Injection • Structured Logging • Configuration Management
-**User Experience:** Colorized Output • Progress Indicators • Error Handling • Help System
-**Architecture:** Command Pattern • Async/Await • Cancellation Tokens • Resource Management
-**Deployment:** Self-Contained Binaries • Cross-Platform Support • Docker Images • Package Distribution
 
 ---
 
@@ -157,22 +112,20 @@ dotnet ef database update
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=cs,dotnet,blazor,sqlite,html,css,docker,linux,git" />
+    <img src="https://skillicons.dev/icons?i=cs,dotnet,sqlite,html,css,docker,linux,git" />
   </a>
 </p>
 
 **C# Frontend Stack**: Blazor Server Components • Real-Time SignalR • MudBlazor Material Design • Zero JavaScript Required • Type-Safe UI Development
 **.NET Backend Stack**: ASP.NET Core Web API • Entity Framework Core • SQLite Database • Kestrel High-Performance Server • RESTful Architecture
 **CLI Development Stack**: .NET Console Applications • Microsoft.Extensions DI • Structured Logging • Cross-Platform Deployment • Interactive Commands
-**Enterprise Stack**: Clean Architecture • CQRS with MediatR • Domain-Driven Design • Multi-Tenant Support • Role-Based Security
-**Testing & Quality**: xUnit Testing Framework • Integration Testing • Code Coverage • Performance Testing • Security Scanning
+**Testing & Quality**: xUnit Testing Framework • Integration Testing • Code Coverage • CI/CD Pipeline
 **Development Tools**: dotnet CLI • Hot Reload • IntelliSense • Directory.Build.props • Cross-Platform Build Scripts
 
 **Architecture Philosophy**:
 
 - **.NET Ecosystem Excellence**: Complete full-stack C# development with type safety from frontend to backend and database
 - **Type-Safe Development**: Compile-time validation, IntelliSense support, and shared models across the entire application stack
-- **Enterprise-Grade Solutions**: Clean Architecture patterns, CQRS implementation, and comprehensive security middleware for scalable applications
 - **Production-Ready Monorepos**: Blazor web apps, RESTful APIs, CLI tools, and shared libraries with centralized configuration management
 - **Modern Development Practices**: Hot reload development, automated testing, CI/CD pipelines, and cross-platform deployment strategies
 - **Performance Optimization**: Blazor Server real-time updates, Entity Framework optimization, minimal JavaScript footprint, and efficient data access
@@ -199,25 +152,11 @@ dotnet ef database update
 - **Developer Experience** - Hot reload development, IntelliSense support, cross-platform build scripts, CI/CD pipeline
 - **Type Safety First** - Compile-time validation, shared models, consistent API contracts, comprehensive error handling
 
-**Enterprise .NET Solutions:**
-
-- **Advanced Architecture Patterns** - Clean Architecture, CQRS with MediatR, Domain-Driven Design, Repository Pattern
-- **Scalable Business Applications** - Multi-tenant support, role-based security, audit logging, performance monitoring
-- **Comprehensive Testing** - Unit testing, integration testing, performance testing, security scanning
-- **Modern C# Patterns** - Async/await, nullable reference types, dependency injection, configuration management
-
-**Blazor & Component Development:**
-
-- **Material Design Components** - 50+ reusable Blazor components with MudBlazor, dark/light theming, responsive design
-- **Interactive CLI Framework** - Professional command-line applications with dependency injection, structured logging
-- **Cross-Platform Ready** - Self-contained binaries, Docker images, systemd services, automated deployment
-- **Quality Assurance** - ARIA compliance, keyboard navigation, comprehensive documentation, NuGet packages
-
 ---
 
 ## Support My Work
 
-If you find my **.NET ecosystem**, **Blazor components**, and **enterprise solutions** valuable for building **production-ready applications** and **learning modern C# development**, consider supporting continued development:
+If you find my **.NET ecosystem** valuable for building **production-ready applications** and **learning modern C# development**, consider supporting continued development:
 
 <p align="center">
   <a href="https://www.buymeacoffee.com/dunamismax">
@@ -240,8 +179,8 @@ If you find my **.NET ecosystem**, **Blazor components**, and **enterprise solut
 ---
 
 <p align="center">
-  <strong>C# .NET Full-Stack Developer • Blazor Server • Enterprise Solutions</strong><br>
-  <sub>C# • .NET 8 • Blazor • ASP.NET Core • Entity Framework • CLI Tools • Type-Safe Development • Enterprise Architecture</sub>
+  <strong>C# .NET Full-Stack Developer • Blazor Server • Production Solutions</strong><br>
+  <sub>C# • .NET 8 • Blazor • ASP.NET Core • Entity Framework • CLI Tools • Type-Safe Development • Monorepo Architecture</sub>
 </p>
 
 <p align="center">
