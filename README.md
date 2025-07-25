@@ -104,8 +104,6 @@ dotnet ef migrations add InitialCreate
 dotnet ef database update
 ```
 
----
-
 <p align="center">
   <img src="https://github.com/dunamismax/images/blob/main/dotnet/NET-Core-Wallpaper.jpeg" alt=".NET Core Wallpaper" width="400" />
 </p>
