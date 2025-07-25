@@ -52,10 +52,6 @@
 
 ---
 
-<p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/dotnet/NET-Core-Wallpaper.jpeg" alt=".NET Core Wallpaper" width="400" />
-</p>
-
 ## Quick Start
 
 ### Full-Stack .NET 8 Monorepo - Production-Ready in 4 Steps
@@ -107,6 +103,14 @@ dotnet ef migrations add InitialCreate
 # 3. Apply migrations and start using type-safe data access
 dotnet ef database update
 ```
+
+---
+
+<p align="center">
+  <img src="https://github.com/dunamismax/images/blob/main/dotnet/NET-Core-Wallpaper.jpeg" alt=".NET Core Wallpaper" width="400" />
+</p>
+
+---
 
 ## Technical Stack
 
