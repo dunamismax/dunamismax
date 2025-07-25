@@ -1,21 +1,22 @@
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/dotnet/NET-Core-Logo.png" alt="C# .NET Developer - Full-Stack & Enterprise Solutions" width="150" />
+  <img src="https://github.com/dunamismax/images/blob/main/deno/deno-white-logo-main.jpeg" alt="Deno Main Logo" width="200" />
 </p>
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=512BD4&center=true&vCenter=true&width=1200&lines=C%23+.NET+Developer+%7C+Full-Stack+%26+Enterprise+Solutions;Blazor+Server+%2B+ASP.NET+Core+Architecture;Type-Safe+End-to-End+Development;C%23+Frontend+%2B+Backend+Monorepo;Entity+Framework+Core+%2B+SQLite;MudBlazor+Material+Design+Components;Interactive+CLI+Tools+%2B+Console+Apps;Production-Ready+.NET+8+Solutions;Cross-Platform+Development;High-Performance+Web+Applications;Modern+C%23+Development+Experience;Complete+.NET+Ecosystem;Enterprise+Grade+Architecture;Real-World+Applications;MIT+Licensed+Open+Source" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=1000&lines=TypeScript+Developer+%7C+Deno+%26+Fresh+Solutions;Island+Architecture+%2B+Zero+JS+by+Default;TypeScript+Native+%2B+Zero+Config+Setup;Deno+2+Runtime+%2B+Fresh;Valibot+JSR+Validation+%2B+Type+Safety;Preact+Islands+%2B+Tailwind+CSS;Deno+KV+Database+%2B+Zero+Setup;Web+Standard+APIs+Everywhere;Lightning+Fast+Performance;Production+Ready+%2B+Secure;Single+Binary+Deployment" alt="Typing SVG" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/dunamismax/fullstack-dotnet/actions/workflows/dotnet.yml"><img src="https://github.com/dunamismax/fullstack-dotnet/workflows/.NET%208%20CI%2FCD/badge.svg" alt="CI/CD Build Status"></a>
-  <a href="https://dotnet.microsoft.com/"><img src="https://img.shields.io/badge/.NET-8.0-512BD4.svg?logo=.net" alt=".NET Version"></a>
-  <a href="https://learn.microsoft.com/en-us/aspnet/core/blazor/"><img src="https://img.shields.io/badge/Blazor-Server-512BD4.svg?logo=blazor" alt="Blazor Server"></a>
-  <a href="https://learn.microsoft.com/en-us/aspnet/core/web-api/"><img src="https://img.shields.io/badge/ASP.NET_Core-Web_API-512BD4.svg?logo=.net" alt="ASP.NET Core"></a>
-  <a href="https://learn.microsoft.com/en-us/dotnet/csharp/"><img src="https://img.shields.io/badge/C%23-12.0-239120.svg?logo=c-sharp" alt="C# Version"></a>
-  <a href="https://www.sqlite.org/"><img src="https://img.shields.io/badge/SQLite-Database-003B57.svg?logo=sqlite" alt="SQLite"></a>
-  <a href="https://www.linux.org/"><img src="https://img.shields.io/badge/Platform-Cross_Platform-FCC624.svg?logo=linux" alt="Cross Platform"></a>
+  <a href="https://deno.com/"><img src="https://img.shields.io/badge/Deno-2.3+-00ADD8.svg?logo=deno" alt="Deno Version"></a>
+  <a href="https://fresh.deno.dev/"><img src="https://img.shields.io/badge/Fresh-Framework-FDB462.svg" alt="Fresh Version"></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-Native-3178C6.svg?logo=typescript" alt="TypeScript"></a>
+  <a href="https://jsr.io/@valibot/valibot"><img src="https://img.shields.io/badge/Valibot-JSR-F7DF1E.svg" alt="Valibot JSR"></a>
+  <a href="https://preactjs.com/"><img src="https://img.shields.io/badge/Preact-Islands-673AB8.svg?logo=preact" alt="Preact"></a>
+  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind-CSS-06B6D4.svg?logo=tailwindcss" alt="Tailwind CSS"></a>
+  <a href="https://deno.com/kv"><img src="https://img.shields.io/badge/Deno_KV-Database-00ADD8.svg" alt="Deno KV"></a>
+  <a href="https://jsr.io/"><img src="https://img.shields.io/badge/Registry-JSR-F7DF1E.svg" alt="JSR Registry"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
 </p>
 
@@ -23,115 +24,82 @@
 
 ## About
 
-**C# .NET developer** specializing in **production-ready full-stack applications** and **type-safe web development**. I build comprehensive .NET ecosystems using Blazor Server, ASP.NET Core, Entity Framework, and modern C# practices. My focus is on type safety, performance optimization, and maintainable monorepo architectures.
+**TypeScript developer** specializing in **production-ready full-stack applications** using **Deno** and **Fresh**. I build high-performance web solutions that leverage native TypeScript, island architecture, and web-standard APIs. My focus is on creating fast, secure, and maintainable applications with a first-class developer experience.
 
-**Philosophy**: Modern .NET development thrives on type safety and unified ecosystems. C# provides compile-time validation and IntelliSense throughout the stack, while Blazor enables rich interactive UIs without JavaScript complexity. Combined with ASP.NET Core's performance and Entity Framework's data abstraction, this creates a complete development experience with minimal complexity.
+**Philosophy**: Modern web development should be simple, fast, and secure. By embracing the Deno runtime and Fresh framework, we can build applications with a minimal footprint, zero-JS by default, and a complete toolchain out of the box. This approach ensures robust, type-safe code from the server to the client.
 
 ---
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/dotnet/Csharp-Logo.png" alt="C#" width="150" />
+  <img src="https://github.com/dunamismax/images/blob/main/deno/deno-toolbox.jpeg" alt="Deno Toolbox" width="200" />
 </p>
 
 ## Featured Project
 
-### **[Full-Stack .NET 8 Monorepo](https://github.com/dunamismax/fullstack-dotnet)**
+### **[Citrus Press - Deno Fresh Application](https://github.com/dunamismax/citrus-press)**
 
 <p align="center">
-  <a href="https://github.com/dunamismax/fullstack-dotnet">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=fullstack-dotnet&theme=dark&show_owner=true" alt="fullstack-dotnet" />
+  <a href="https://github.com/dunamismax/citrus-press">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=citrus-press&theme=dark&show_owner=true" alt="citrus-press" />
   </a>
 </p>
 
-**Production-ready .NET 8 monorepo** featuring **Blazor Server** with **MudBlazor** components, **ASP.NET Core Web API**, and comprehensive tooling. Built for type-safe end-to-end development with C# throughout the entire stack, enabling rich interactive UIs without JavaScript complexity.
+A production-ready TypeScript application built with **Deno 2** and **Fresh**, featuring island architecture, zero JavaScript by default, and lightning-fast performance. Experience the future of web development with native TypeScript, web standard APIs, and a modern edge-ready architecture that compiles to a single binary.
 
-**Core Features:** Blazor Server Real-Time UI • Type-Safe C# Architecture • ASP.NET Core High-Performance API • Entity Framework Core Data Layer
-**Applications:** Interactive Blazor Web App • RESTful API with Swagger • CLI Tools with DI Container • Shared Library Components
-**Developer Experience:** Hot Reload Development • Centralized Configuration • Cross-Platform Build Scripts • CI/CD Pipeline
-**Architecture:** Monorepo Structure • Shared Utilities • Modern .NET Patterns • Production Deployment Ready
+**Core Features**: Fresh Framework • Deno 2 Runtime • Island Architecture • Native TypeScript • Deno KV Database • Tailwind CSS
+**Applications**: Todo List with Analytics • Weather Dashboard
+**Developer Experience**: Zero-Config Setup • Hot Reloading • Built-in Toolchain • Single Binary Deployment
+**Architecture**: Edge-Ready • File-Based Routing • Preact Signals • JSR Packages
 
 ---
 
 ## Quick Start
 
-### Full-Stack .NET 8 Monorepo - Production-Ready in 4 Steps
+### Citrus Press - Get Running in 4 Steps
+
+**Prerequisites:** [Deno 2.0+](https://deno.land/manual/getting_started/installation)
 
 ```bash
-# Clone and setup the complete .NET ecosystem
-git clone https://github.com/dunamismax/fullstack-dotnet.git
-cd fullstack-dotnet && dotnet restore
+# 1. Clone and navigate
+git clone https://github.com/dunamismax/citrus-press.git
+cd citrus-press
 
-# Build the entire solution
-dotnet build
+# 2. Configure environment
+cp .env.example .env
+# Edit .env with your OpenWeatherMap API key
 
-# Run tests to verify everything works
-dotnet test
+# 3. Start development server
+deno task start
 
-# Start applications
-# Blazor Web App (port 5000)
-cd src/apps/DemoWebApp && dotnet run
-
-# ASP.NET Core API (port 5001) - in new terminal
-cd src/apis/DemoApi && dotnet run
-
-# CLI Tool - in new terminal
-cd src/cli/InteractiveTool && dotnet run
+# 4. Open your browser
+# http://localhost:8000
 ```
-
-### Blazor Server - Modern Web UI with C# in 3 Steps
-
-```bash
-# 1. Create new Blazor Server application
-dotnet new blazor -n MyBlazorApp
-
-# 2. Add MudBlazor for Material Design components
-dotnet add package MudBlazor
-
-# 3. Start building rich interactive UIs with C# instead of JavaScript!
-dotnet run
-```
-
-### Entity Framework - Type-Safe Data Access in 3 Steps
-
-```bash
-# 1. Install Entity Framework Core tools
-dotnet tool install --global dotnet-ef
-
-# 2. Create your models and DbContext
-dotnet ef migrations add InitialCreate
-
-# 3. Apply migrations and start using type-safe data access
-dotnet ef database update
-```
-
-<p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/dotnet/NET-Core-Wallpaper.jpeg" alt=".NET Core Wallpaper" width="400" />
-</p>
 
 ---
+
+<p align="center">
+  <img src="https://github.com/dunamismax/images/blob/main/deno/deno-mage.jpeg" alt="Deno Mage" width="200" />
+</p>
 
 ## Technical Stack
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=cs,dotnet,sqlite,html,css,docker,linux,git" />
+    <img src="https://skillicons.dev/icons?i=ts,deno,react,tailwind,sqlite,linux,git" />
   </a>
 </p>
 
-**C# Frontend Stack**: Blazor Server Components • Real-Time SignalR • MudBlazor Material Design • Zero JavaScript Required • Type-Safe UI Development
-**.NET Backend Stack**: ASP.NET Core Web API • Entity Framework Core • SQLite Database • Kestrel High-Performance Server • RESTful Architecture
-**CLI Development Stack**: .NET Console Applications • Microsoft.Extensions DI • Structured Logging • Cross-Platform Deployment • Interactive Commands
-**Testing & Quality**: xUnit Testing Framework • Integration Testing • Code Coverage • CI/CD Pipeline
-**Development Tools**: dotnet CLI • Hot Reload • IntelliSense • Directory.Build.props • Cross-Platform Build Scripts
+**Core Stack**: Deno 2 • Fresh Framework • TypeScript • Preact Islands • Tailwind CSS • Deno KV
+**Tooling**: Deno Built-in Formatter, Linter, Test Runner & Task Runner
+**Deployment**: Single Binary Compilation (`deno compile`) • `systemd` • Caddy Reverse Proxy
 
 **Architecture Philosophy**:
 
-- **.NET Ecosystem Excellence**: Complete full-stack C# development with type safety from frontend to backend and database
-- **Type-Safe Development**: Compile-time validation, IntelliSense support, and shared models across the entire application stack
-- **Production-Ready Monorepos**: Blazor web apps, RESTful APIs, CLI tools, and shared libraries with centralized configuration management
-- **Modern Development Practices**: Hot reload development, automated testing, CI/CD pipelines, and cross-platform deployment strategies
-- **Performance Optimization**: Blazor Server real-time updates, Entity Framework optimization, minimal JavaScript footprint, and efficient data access
-- **Developer Experience**: IntelliSense throughout the stack, unified debugging, consistent patterns, and comprehensive documentation
+- **Performance First**: Zero JavaScript by default with island-based, selective hydration for instant page loads.
+- **Type Safety End-to-End**: Leverage native TypeScript in Deno for robust, error-free code across the entire stack.
+- **Web Standards**: Build on modern, future-proof web APIs for maximum compatibility and performance.
+- **Developer Experience**: Enjoy a zero-configuration setup, a complete built-in toolchain, and seamless hot-reloading.
+- **Simplified Deployment**: Compile applications into a single, self-contained binary for easy, dependency-free deployment.
 
 ---
 
@@ -144,21 +112,9 @@ dotnet ef database update
 
 ---
 
-## Key Features
-
-**C# .NET Full-Stack Excellence:**
-
-- **Blazor Server Components** - Rich interactive UIs with C# instead of JavaScript, real-time updates via SignalR
-- **Production Applications** - Blazor web app with MudBlazor, RESTful API with Swagger, interactive CLI tools
-- **Modern Architecture** - ASP.NET Core backend, Entity Framework Core, SQLite database, centralized configuration
-- **Developer Experience** - Hot reload development, IntelliSense support, cross-platform build scripts, CI/CD pipeline
-- **Type Safety First** - Compile-time validation, shared models, consistent API contracts, comprehensive error handling
-
----
-
 ## Support My Work
 
-If you find my **.NET ecosystem** valuable for building **production-ready applications** and **learning modern C# development**, consider supporting continued development:
+If you find my work on **Deno** and **Fresh** valuable for building next-generation web applications, consider supporting my efforts:
 
 <p align="center">
   <a href="https://www.buymeacoffee.com/dunamismax">
@@ -181,10 +137,10 @@ If you find my **.NET ecosystem** valuable for building **production-ready appli
 ---
 
 <p align="center">
-  <strong>C# .NET Full-Stack Developer • Blazor Server • Production Solutions</strong><br>
-  <sub>C# • .NET 8 • Blazor • ASP.NET Core • Entity Framework • CLI Tools • Type-Safe Development • Monorepo Architecture</sub>
+  <strong>TypeScript Full-Stack Developer • Deno • Fresh</strong><br>
+  <sub>🍋 Fresh • 🦕 Deno 2 • 🏝️ Islands Architecture • ⚡ TypeScript Native • 🚀 Edge Ready</sub>
 </p>
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/dotnet/NET-20-Years-Wallpaper.png" alt=".NET 20 Year Anniversary Wallpaper" width="400" />
+  <img src="https://github.com/dunamismax/images/blob/main/deno/deno-evolution.jpeg" alt="Deno Evolution" width="500" />
 </p>
