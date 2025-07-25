@@ -31,7 +31,7 @@
 ---
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/deno/deno-fresh-logo.png" alt="Deno Toolbox" width="200" />
+  <img src="https://github.com/dunamismax/images/blob/main/deno/deno-fresh-logo.png" alt="Deno Toolbox" width="150" />
 </p>
 
 ## Featured Project
@@ -78,7 +78,7 @@ deno task start
 ---
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/deno/deno-box.jpeg" alt="Deno Mage" width="200" />
+  <img src="https://github.com/dunamismax/images/blob/main/deno/deno-eating-ts.jpeg" alt="Deno Eating TS" width="200" />
 </p>
 
 ## Technical Stack
