@@ -1,22 +1,21 @@
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/javascript/Vanilla-JS-Logo.png" alt="JavaScript Developer - Full-Stack & CLI Specialist" width="200" />
+  <img src="https://github.com/dunamismax/images/blob/main/dotnet/NET-Core-Logo.png" alt="C# .NET Developer - Full-Stack & Enterprise Solutions" width="150" />
 </p>
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=F7DF1E&center=true&vCenter=true&width=1200&lines=JavaScript+Developer+%7C+Full-Stack+%26+CLI+Specialist;flare-router+3.4kB+Lightning+Fast+SPA+Router;Vanilla+JavaScript+%2B+Node.js+%2B+Fastify;MongoDB+Native+Driver+%2B+VineJS+Validation;26+Progressive+Learning+Scripts;Classic+Arcade+Games+Collection;Interactive+CLI+Tools+%2B+APIs;Production-Ready+Monorepos;Zero+Framework+Dependencies;Lightning+Fast+Performance;Enterprise+Grade+Architecture;Modern+Development+Experience;Complete+JavaScript+Ecosystem;Educational+Resources+%2B+Examples;Real-World+Applications;MIT+Licensed+Open+Source" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=512BD4&center=true&vCenter=true&width=1200&lines=C%23+.NET+Developer+%7C+Full-Stack+%26+Enterprise+Solutions;Blazor+Server+%2B+ASP.NET+Core+Architecture;Type-Safe+End-to-End+Development;C%23+Frontend+%2B+Backend+Monorepo;Entity+Framework+Core+%2B+SQLite;MudBlazor+Material+Design+Components;Interactive+CLI+Tools+%2B+Console+Apps;Production-Ready+.NET+8+Solutions;Cross-Platform+Development;High-Performance+Web+Applications;Modern+C%23+Development+Experience;Complete+.NET+Ecosystem;Enterprise+Grade+Architecture;Real-World+Applications;MIT+Licensed+Open+Source" alt="Typing SVG" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/dunamismax/javascript"><img src="https://img.shields.io/badge/flare_router-3.4kB-FF6B35.svg" alt="flare-router"></a>
-  <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-18+-339933.svg?logo=node.js" alt="Node.js Version"></a>
-  <a href="https://fastify.dev/"><img src="https://img.shields.io/badge/Fastify-5.4+-000000.svg?logo=fastify" alt="Fastify Version"></a>
-  <a href="https://www.mongodb.com/"><img src="https://img.shields.io/badge/MongoDB-6.18+-47A248.svg?logo=mongodb" alt="MongoDB Version"></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/Vanilla_JS-ES2020+-F7DF1E.svg?logo=javascript" alt="Vanilla JavaScript"></a>
-  <a href="https://phaser.io/"><img src="https://img.shields.io/badge/Phaser_3-3.70+-7B2CBF.svg" alt="Phaser 3"></a>
-  <a href="https://yargs.js.org/"><img src="https://img.shields.io/badge/CLI-Yargs-FF6B6B.svg?logo=terminal" alt="Yargs CLI"></a>
-  <a href="https://pnpm.io/"><img src="https://img.shields.io/badge/Package_Manager-pnpm-F69220.svg?logo=pnpm" alt="pnpm"></a>
+  <a href="https://github.com/dunamismax/fullstack-dotnet/actions/workflows/dotnet.yml"><img src="https://github.com/dunamismax/fullstack-dotnet/workflows/.NET%208%20CI%2FCD/badge.svg" alt="CI/CD Build Status"></a>
+  <a href="https://dotnet.microsoft.com/"><img src="https://img.shields.io/badge/.NET-8.0-512BD4.svg?logo=.net" alt=".NET Version"></a>
+  <a href="https://learn.microsoft.com/en-us/aspnet/core/blazor/"><img src="https://img.shields.io/badge/Blazor-Server-512BD4.svg?logo=blazor" alt="Blazor Server"></a>
+  <a href="https://learn.microsoft.com/en-us/aspnet/core/web-api/"><img src="https://img.shields.io/badge/ASP.NET_Core-Web_API-512BD4.svg?logo=.net" alt="ASP.NET Core"></a>
+  <a href="https://learn.microsoft.com/en-us/dotnet/csharp/"><img src="https://img.shields.io/badge/C%23-12.0-239120.svg?logo=c-sharp" alt="C# Version"></a>
+  <a href="https://www.sqlite.org/"><img src="https://img.shields.io/badge/SQLite-Database-003B57.svg?logo=sqlite" alt="SQLite"></a>
+  <a href="https://www.linux.org/"><img src="https://img.shields.io/badge/Platform-Cross_Platform-FCC624.svg?logo=linux" alt="Cross Platform"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
 </p>
 
@@ -24,169 +23,160 @@
 
 ## About
 
-**JavaScript developer** specializing in **production-ready full-stack applications**, **interactive CLI tools**, and **ultra-lightweight frontend solutions**. I build comprehensive JavaScript ecosystems using vanilla JS, Node.js, Fastify, and MongoDB, plus educational resources and game development with Phaser 3. My projects emphasize zero framework dependencies, lightning-fast performance, and modern development practices.
+**C# .NET developer** specializing in **production-ready full-stack applications**, **enterprise solutions**, and **type-safe web development**. I build comprehensive .NET ecosystems using Blazor Server, ASP.NET Core, Entity Framework, and modern C# practices. My projects emphasize type safety, performance optimization, and maintainable monorepo architectures for scalable enterprise applications.
 
-**Philosophy**: Modern JavaScript development thrives on simplicity and performance. Vanilla JavaScript provides unmatched control and speed, while Node.js delivers enterprise-grade backend capabilities. Combined with intelligent tooling and progressive learning resources, this creates a complete development ecosystem without framework bloat.
+**Philosophy**: Modern .NET development thrives on type safety and unified ecosystems. C# provides compile-time validation and IntelliSense throughout the stack, while Blazor enables rich interactive UIs without JavaScript complexity. Combined with ASP.NET Core's performance and Entity Framework's data abstraction, this creates a complete enterprise-grade development experience with minimal complexity.
 
 ---
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/javascript/JavaScript-logo.png" alt="JavaScript" width="100" />
+  <img src="https://github.com/dunamismax/images/blob/main/dotnet/Csharp-Logo.png" alt="C#" width="150" />
 </p>
 
 ## Featured Projects
 
-### **[Full-Stack Vanilla JavaScript Monorepo](https://github.com/dunamismax/javascript)**
+### **[Full-Stack .NET 8 Monorepo](https://github.com/dunamismax/fullstack-dotnet)**
 
 <p align="center">
-  <a href="https://github.com/dunamismax/javascript">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=javascript&theme=dark&show_owner=true" alt="javascript" />
+  <a href="https://github.com/dunamismax/fullstack-dotnet">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=fullstack-dotnet&theme=dark&show_owner=true" alt="fullstack-dotnet" />
   </a>
 </p>
 
-**Production-ready JavaScript monorepo** featuring **flare-router** - a blazingly fast 3.4kB SPA router with intelligent prefetching. Built with vanilla HTML, CSS, and JavaScript frontend, Node.js, Fastify, and MongoDB backend. Includes todo list with analytics dashboard and weather app with ZIP code validation.
+**Production-ready .NET 8 monorepo** featuring **Blazor Server** with **MudBlazor** components, **ASP.NET Core Web API**, and comprehensive tooling. Built for type-safe end-to-end development with C# throughout the entire stack, enabling rich interactive UIs without JavaScript complexity.
 
-**Core Features:** flare-router 3.4kB Lightning Router • Zero-Config Performance • Modern Full-Stack Architecture • Rate Limiting & Error Handling
-**Applications:** Todo List with Analytics • Weather Dashboard with ZIP Validation • Real-time Updates • Mobile-Responsive Design
-**Developer Experience:** Hot Reload Development • ESLint + Prettier • pnpm Workspaces • Production Deployment Ready
-**Security:** Centralized Error Handling • Input Validation • CORS Protection • Environment Configuration
+**Core Features:** Blazor Server Real-Time UI • Type-Safe C# Architecture • ASP.NET Core High-Performance API • Entity Framework Core Data Layer
+**Applications:** Interactive Blazor Web App • RESTful API with Swagger • CLI Tools with DI Container • Shared Library Components
+**Developer Experience:** Hot Reload Development • Centralized Configuration • Cross-Platform Build Scripts • CI/CD Pipeline
+**Architecture:** Monorepo Structure • Shared Utilities • Modern .NET Patterns • Production Deployment Ready
 
-### **[JavaScript Learning Monorepo](https://github.com/dunamismax/javascript-examples)**
+### **[C# Enterprise Web Applications](https://github.com/dunamismax/dotnet-enterprise)**
 
 <p align="center">
-  <a href="https://github.com/dunamismax/javascript-examples">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=javascript-examples&theme=dark&show_owner=true" alt="javascript-examples" />
+  <a href="https://github.com/dunamismax/dotnet-enterprise">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=dotnet-enterprise&theme=dark&show_owner=true" alt="dotnet-enterprise" />
   </a>
 </p>
 
-**Comprehensive learning path** from JavaScript fundamentals to full-stack development using Vanilla JS, Express.js, and SQLite. Features 26 progressive scripts and 4 real-world projects designed to take you from beginner to full-stack developer with hands-on practice.
+**Enterprise-grade .NET solutions** featuring advanced patterns like CQRS, Clean Architecture, and Domain-Driven Design. Built with ASP.NET Core, Entity Framework, MediatR, and comprehensive security middleware for scalable business applications.
 
-**Learning Path:** 26 Progressive Scripts • 4 Real-World Projects • Modern JavaScript ES6+ • Full-Stack Development Skills
-**Projects:** Todo App • Weather Dashboard • Blog Platform • Chat Platform with WebSockets
-**Technologies:** Vanilla JavaScript • Express.js • SQLite • Socket.IO • Modern Web APIs
-**Educational:** Interactive Examples • Progressive Difficulty • Comprehensive Documentation • Portfolio Building
+**Architecture Patterns:** Clean Architecture • CQRS with MediatR • Domain-Driven Design • Repository Pattern
+**Enterprise Features:** Multi-Tenant Support • Role-Based Security • Audit Logging • Performance Monitoring
+**Technologies:** ASP.NET Core 8 • Entity Framework Core • AutoMapper • FluentValidation
+**Quality Assurance:** Unit Testing • Integration Testing • Performance Testing • Security Scanning
 
-### **[JavaScript 2D Game Development Stack](https://github.com/dunamismax/javascript-games)**
+### **[Blazor Component Library](https://github.com/dunamismax/blazor-components)**
 
 <p align="center">
-  <a href="https://github.com/dunamismax/javascript-games">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=javascript-games&theme=dark&show_owner=true" alt="javascript-games" />
+  <a href="https://github.com/dunamismax/blazor-components">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=blazor-components&theme=dark&show_owner=true" alt="blazor-components" />
   </a>
 </p>
 
-**High-performance collection** of classic arcade games built with Phaser 3, featuring lightning-fast esbuild compilation, mobile deployment with Capacitor, and modern JavaScript tooling. Experience 60fps gameplay with zero framework overhead across six complete games.
+**Comprehensive Blazor component library** with Material Design styling, accessibility features, and responsive design patterns. Features 50+ reusable components built with modern C# patterns and CSS isolation for maintainable enterprise applications.
 
-**Game Collection:** Pong • Snake • Space Invaders • Asteroids • Frogger • Tetris
-**Technology:** Phaser 3 Game Engine • esbuild Lightning Builds • Capacitor Mobile Apps • 60fps Arcade Physics
-**Features:** Mobile Ready • Hot Reload Development • Production Optimized • Cross-Platform Deployment
-**Architecture:** Monorepo Structure • Shared Game Logic • Modern Development Workflow • Professional Game Portfolio
+**Component Collection:** Data Grids • Form Controls • Navigation • Charts • Modal Dialogs • Toast Notifications
+**Design System:** Material Design Principles • Dark/Light Theming • Responsive Grid System • Typography Scale
+**Accessibility:** ARIA Compliance • Keyboard Navigation • Screen Reader Support • Color Contrast Standards
+**Developer Experience:** IntelliSense Support • Comprehensive Documentation • Interactive Examples • NuGet Package
 
-### **[Node.js CLI & API Development Monorepo](https://github.com/dunamismax/node-cli)**
+### **[C# CLI Development Framework](https://github.com/dunamismax/dotnet-cli)**
 
 <p align="center">
-  <a href="https://github.com/dunamismax/node-cli">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=node-cli&theme=dark&show_owner=true" alt="node-cli" />
+  <a href="https://github.com/dunamismax/dotnet-cli">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=dotnet-cli&theme=dark&show_owner=true" alt="dotnet-cli" />
   </a>
 </p>
 
-**Production-ready Node.js monorepo** featuring high-performance RESTful APIs and interactive command-line tools. Built with Fastify, Yargs, MongoDB, and pure JavaScript. Create scalable backend services and powerful CLI applications with shared utilities and modern development practices.
+**Professional command-line application framework** featuring interactive prompts, dependency injection, structured logging, and cross-platform deployment. Built with modern C# patterns and Microsoft.Extensions for enterprise-grade console applications.
 
-**API Features:** High-Performance Fastify Server • MongoDB Integration • VineJS Validation • Rate Limiting & Security
-**CLI Tools:** Interactive Yargs Interface • Enquirer Prompts • Chalk Styling • Tech Stack Explorer
-**Architecture:** Shared Utilities • Centralized Configuration • Production Deployment • Environment Management
-**Developer Experience:** Hot Reload • ESLint + Prettier • Comprehensive Tooling • Professional CLI Design
-
-### **[The Modern Go Stack - Web Server Template](https://github.com/dunamismax/go-web-server)**
-
-<p align="center">
-  <a href="https://github.com/dunamismax/go-web-server">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=go-web-server&theme=dark&show_owner=true" alt="go-web-server" />
-  </a>
-</p>
-
-**Production-ready Go web application template** featuring the complete Modern Go Stack with Echo v4 framework, type-safe Templ templates, HTMX 2.x dynamic interactions, and comprehensive security middleware. Creates self-contained 11MB binaries with zero CGO dependencies.
-
-**Go Stack:** Echo v4 Framework • Type-Safe Templ Templates • HTMX 2.x Dynamic UX • SQLC Type-Safe Queries
-**Security:** Custom CSRF Protection • Input Sanitization • Security Headers • Rate Limiting
-**Development:** Hot Reload with Air • Mage Build Automation • Quality Checks • Vulnerability Scanning
-**Deployment:** Single Binary • Graceful Shutdown • Multi-Source Configuration • Production Ready
+**CLI Features:** Interactive Commands • Dependency Injection • Structured Logging • Configuration Management
+**User Experience:** Colorized Output • Progress Indicators • Error Handling • Help System
+**Architecture:** Command Pattern • Async/Await • Cancellation Tokens • Resource Management
+**Deployment:** Self-Contained Binaries • Cross-Platform Support • Docker Images • Package Distribution
 
 ---
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/javascript/js-evolution-wallpaper.jpg" alt="JavaScript Evolution" width="450" />
+  <img src="https://github.com/dunamismax/images/blob/main/dotnet/NET-Core-Wallpaper.jpeg" alt=".NET Core Wallpaper" width="400" />
 </p>
 
 ## Quick Start
 
-### Full-Stack JavaScript Monorepo - Production-Ready in 4 Steps
+### Full-Stack .NET 8 Monorepo - Production-Ready in 4 Steps
 
 ```bash
-# Clone and setup the complete JavaScript ecosystem
-git clone https://github.com/dunamismax/javascript.git
-cd javascript && pnpm install
+# Clone and setup the complete .NET ecosystem
+git clone https://github.com/dunamismax/fullstack-dotnet.git
+cd fullstack-dotnet && dotnet restore
 
-# Configure environment (MongoDB URI and API keys)
-cp apps/todo-list/.env.example apps/todo-list/.env
-cp apps/weather/.env.example apps/weather/.env
+# Build the entire solution
+dotnet build
 
-# Build and start development servers
-pnpm build && pnpm dev
+# Run tests to verify everything works
+dotnet test
 
-# Access: Todo List at http://localhost:3001, Weather at http://localhost:3000
+# Start applications
+# Blazor Web App (port 5000)
+cd src/apps/DemoWebApp && dotnet run
+
+# ASP.NET Core API (port 5001) - in new terminal
+cd src/apis/DemoApi && dotnet run
+
+# CLI Tool - in new terminal
+cd src/cli/InteractiveTool && dotnet run
 ```
 
-### flare-router - Lightning-Fast Navigation in 3 Steps
+### Blazor Server - Modern Web UI with C# in 3 Steps
 
 ```bash
-# 1. Install the 3.4kB router
-npm install @dunamismax/flare-router
+# 1. Create new Blazor Server application
+dotnet new blazor -n MyBlazorApp
 
-# 2. Import and initialize with intelligent prefetching
-import flare from '@dunamismax/flare-router';
-const router = flare({ prefetch: 'visible', log: true });
+# 2. Add MudBlazor for Material Design components
+dotnet add package MudBlazor
 
-# 3. Transform your static site into a blazing-fast SPA!
+# 3. Start building rich interactive UIs with C# instead of JavaScript!
+dotnet run
 ```
 
-### JavaScript Learning Path - Master JavaScript in 8 Weeks
+### Entity Framework - Type-Safe Data Access in 3 Steps
 
 ```bash
-# Start the comprehensive learning journey
-git clone https://github.com/dunamismax/javascript-examples.git
-cd javascript-examples && npm install
+# 1. Install Entity Framework Core tools
+dotnet tool install --global dotnet-ef
 
-# Begin with fundamentals (26 progressive scripts)
-cd fundamentals && node 01-hello-world.js
+# 2. Create your models and DbContext
+dotnet ef migrations add InitialCreate
 
-# Build real projects (4 progressive applications)
-npm run build && npm run dev
+# 3. Apply migrations and start using type-safe data access
+dotnet ef database update
 ```
 
 ## Technical Stack
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js,nodejs,mongodb,html,css,sqlite,go,docker,linux,git" />
+    <img src="https://skillicons.dev/icons?i=cs,dotnet,blazor,sqlite,html,css,docker,linux,git" />
   </a>
 </p>
 
-**JavaScript Frontend Stack**: flare-router 3.4kB Bundle • Vanilla ES Modules • Zero Framework Dependencies • Intelligent Prefetching • SPA Navigation
-**Node.js Backend Stack**: Fastify High-Performance Server • MongoDB Native Driver • VineJS Validation • Rate Limiting • Centralized Error Handling
-**Game Development Stack**: Phaser 3 Game Engine • esbuild Lightning Builds • Capacitor Mobile Apps • 60fps Performance • Modern Arcade Physics
-**CLI Development Stack**: Yargs Argument Parsing • Enquirer Interactive Prompts • Chalk Styling • Ora Spinners • Professional Terminal UX
-**Educational Stack**: Progressive Learning Scripts • Real-World Projects • Interactive Examples • Comprehensive Documentation • Portfolio Building
-**Development Tools**: ESLint + Prettier • pnpm Workspaces • Hot Reload • Production Deployment • Modern Development Workflow
+**C# Frontend Stack**: Blazor Server Components • Real-Time SignalR • MudBlazor Material Design • Zero JavaScript Required • Type-Safe UI Development
+**.NET Backend Stack**: ASP.NET Core Web API • Entity Framework Core • SQLite Database • Kestrel High-Performance Server • RESTful Architecture
+**CLI Development Stack**: .NET Console Applications • Microsoft.Extensions DI • Structured Logging • Cross-Platform Deployment • Interactive Commands
+**Enterprise Stack**: Clean Architecture • CQRS with MediatR • Domain-Driven Design • Multi-Tenant Support • Role-Based Security
+**Testing & Quality**: xUnit Testing Framework • Integration Testing • Code Coverage • Performance Testing • Security Scanning
+**Development Tools**: dotnet CLI • Hot Reload • IntelliSense • Directory.Build.props • Cross-Platform Build Scripts
 
 **Architecture Philosophy**:
 
-- **JavaScript Ecosystem Mastery**: Complete full-stack JavaScript development from fundamentals to production applications
-- **Zero Framework Dependencies**: Vanilla JavaScript solutions with maximum performance control and minimal bundle sizes
-- **Progressive Learning**: 26 structured scripts building from basics to advanced concepts with real-world project applications
-- **Production-Ready Applications**: Todo list with analytics, weather dashboard, game collection, and CLI tools for professional portfolios
-- **Modern Development Practices**: Hot reload, code quality tools, monorepo architecture, and comprehensive testing strategies
-- **Educational Focus**: Learning resources, interactive examples, and progressive difficulty levels for skill development
-- **Performance Optimization**: 3.4kB router, lightning-fast builds, intelligent prefetching, and optimized application architectures
+- **.NET Ecosystem Excellence**: Complete full-stack C# development with type safety from frontend to backend and database
+- **Type-Safe Development**: Compile-time validation, IntelliSense support, and shared models across the entire application stack
+- **Enterprise-Grade Solutions**: Clean Architecture patterns, CQRS implementation, and comprehensive security middleware for scalable applications
+- **Production-Ready Monorepos**: Blazor web apps, RESTful APIs, CLI tools, and shared libraries with centralized configuration management
+- **Modern Development Practices**: Hot reload development, automated testing, CI/CD pipelines, and cross-platform deployment strategies
+- **Performance Optimization**: Blazor Server real-time updates, Entity Framework optimization, minimal JavaScript footprint, and efficient data access
+- **Developer Experience**: IntelliSense throughout the stack, unified debugging, consistent patterns, and comprehensive documentation
 
 ---
 
@@ -201,33 +191,33 @@ npm run build && npm run dev
 
 ## Key Features
 
-**JavaScript Full-Stack Excellence:**
+**C# .NET Full-Stack Excellence:**
 
-- **flare-router 3.4kB Bundle** - Ultra-lightweight SPA router with intelligent prefetching and zero configuration setup
-- **Production Applications** - Todo list with analytics dashboard, weather app with ZIP validation, real-time updates
-- **Modern Architecture** - Fastify backend, MongoDB native driver, VineJS validation, rate limiting, centralized error handling
-- **Developer Experience** - Hot reload development, ESLint + Prettier integration, pnpm workspaces, production deployment
-- **Security First** - Input validation, CORS protection, environment configuration, comprehensive error handling
+- **Blazor Server Components** - Rich interactive UIs with C# instead of JavaScript, real-time updates via SignalR
+- **Production Applications** - Blazor web app with MudBlazor, RESTful API with Swagger, interactive CLI tools
+- **Modern Architecture** - ASP.NET Core backend, Entity Framework Core, SQLite database, centralized configuration
+- **Developer Experience** - Hot reload development, IntelliSense support, cross-platform build scripts, CI/CD pipeline
+- **Type Safety First** - Compile-time validation, shared models, consistent API contracts, comprehensive error handling
 
-**Educational JavaScript Resources:**
+**Enterprise .NET Solutions:**
 
-- **26 Progressive Scripts** - Structured learning path from basics to advanced JavaScript concepts with interactive examples
-- **4 Real-World Projects** - Todo app, weather dashboard, blog platform, chat application with increasing complexity
-- **Full-Stack Skills** - Frontend DOM manipulation, backend Express.js, SQLite integration, WebSocket communication
-- **Modern JavaScript** - ES6+ features, async/await patterns, modern web APIs, performance optimization techniques
+- **Advanced Architecture Patterns** - Clean Architecture, CQRS with MediatR, Domain-Driven Design, Repository Pattern
+- **Scalable Business Applications** - Multi-tenant support, role-based security, audit logging, performance monitoring
+- **Comprehensive Testing** - Unit testing, integration testing, performance testing, security scanning
+- **Modern C# Patterns** - Async/await, nullable reference types, dependency injection, configuration management
 
-**Game Development & CLI Tools:**
+**Blazor & Component Development:**
 
-- **6 Classic Arcade Games** - Pong, Snake, Space Invaders, Asteroids, Frogger, Tetris with Phaser 3 and 60fps performance
-- **Interactive CLI Applications** - Tech stack explorer, project tools, utility functions with beautiful terminal interfaces
-- **Mobile Ready** - Capacitor integration for iOS/Android deployment with touch controls and responsive scaling
-- **Professional Tooling** - Yargs parsing, Enquirer prompts, Chalk styling, comprehensive development workflow
+- **Material Design Components** - 50+ reusable Blazor components with MudBlazor, dark/light theming, responsive design
+- **Interactive CLI Framework** - Professional command-line applications with dependency injection, structured logging
+- **Cross-Platform Ready** - Self-contained binaries, Docker images, systemd services, automated deployment
+- **Quality Assurance** - ARIA compliance, keyboard navigation, comprehensive documentation, NuGet packages
 
 ---
 
 ## Support My Work
 
-If you find my **JavaScript ecosystem**, **flare-router**, and **educational resources** valuable for building **production-ready applications** and **learning modern JavaScript development**, consider supporting continued development:
+If you find my **.NET ecosystem**, **Blazor components**, and **enterprise solutions** valuable for building **production-ready applications** and **learning modern C# development**, consider supporting continued development:
 
 <p align="center">
   <a href="https://www.buymeacoffee.com/dunamismax">
@@ -250,10 +240,10 @@ If you find my **JavaScript ecosystem**, **flare-router**, and **educational res
 ---
 
 <p align="center">
-  <strong>JavaScript Full-Stack Developer • flare-router • Educational Resources</strong><br>
-  <sub>Vanilla JS • Node.js • Fastify • MongoDB • Phaser 3 • CLI Tools • 3.4kB Router • Zero Dependencies • Lightning Performance</sub>
+  <strong>C# .NET Full-Stack Developer • Blazor Server • Enterprise Solutions</strong><br>
+  <sub>C# • .NET 8 • Blazor • ASP.NET Core • Entity Framework • CLI Tools • Type-Safe Development • Enterprise Architecture</sub>
 </p>
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/javascript/js-coffee-particles.jpg" alt="JavaScript Coffee" width="450" />
+  <img src="https://github.com/dunamismax/images/blob/main/dotnet/NET-20-Years-Wallpaper.png" alt=".NET 20 Year Anniversary Wallpaper" width="400" />
 </p>
