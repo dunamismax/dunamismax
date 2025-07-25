@@ -30,10 +30,6 @@
 
 ---
 
-<p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/deno/deno-fresh-logo.png" alt="Deno Toolbox" width="150" />
-</p>
-
 ## Featured Project
 
 ### **[Citrus Press - Deno Fresh Application](https://github.com/dunamismax/citrus-press)**
@@ -42,6 +38,10 @@
   <a href="https://github.com/dunamismax/citrus-press">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=citrus-press&theme=dark&show_owner=true" alt="citrus-press" />
   </a>
+</p>
+
+<p align="center">
+  <img src="https://github.com/dunamismax/images/blob/main/deno/deno-fresh-logo.png" alt="Deno Toolbox" width="150" />
 </p>
 
 A production-ready TypeScript application built with **Deno 2** and **Fresh**, featuring island architecture, zero JavaScript by default, and lightning-fast performance. Experience the future of web development with native TypeScript, web standard APIs, and a modern edge-ready architecture that compiles to a single binary.
