@@ -16,7 +16,6 @@
   <a href="https://webassembly.org/"><img src="https://img.shields.io/badge/WebAssembly-WASM-654FF0.svg?logo=webassembly" alt="WebAssembly"></a>
   <a href="https://www.sqlite.org/"><img src="https://img.shields.io/badge/SQLite-Database-003B57.svg?logo=sqlite" alt="SQLite Database"></a>
   <a href="https://docs.rs/sqlx/"><img src="https://img.shields.io/badge/SQLx-Type_Safe-CE422B.svg" alt="SQLx Type Safety"></a>
-  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License"></a>
 </p>
 
 ---
