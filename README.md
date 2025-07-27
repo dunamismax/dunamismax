@@ -104,10 +104,6 @@ C provides unmatched control over system resources and memory management. My wor
 | Startup Time         | Framework loading    | Instant execution         |
 | Platform Control     | Abstracted           | Complete system access    |
 
-<p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/c/the-c-programming-language.png" alt="The C Programming Language" width="300" />
-</p>
-
 ## GitHub Statistics
 
 <p align="center">
