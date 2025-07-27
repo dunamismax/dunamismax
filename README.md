@@ -19,8 +19,6 @@
 
 ---
 
-# DunamisMax - C Developer
-
 I enjoy working with C and systems programming, building applications with a focus on memory safety and performance. I'm particularly interested in ARM64 optimization and modern C development practices that prioritize security and reliability.
 
 <p align="center">
