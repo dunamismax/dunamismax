@@ -19,11 +19,13 @@
 
 ---
 
-I enjoy working with C and systems programming, building applications with a focus on memory safety and performance. I'm particularly interested in ARM64 optimization and modern C development practices that prioritize security and reliability.
+# DunamisMax - C Developer
 
 <p align="center">
   <img src="https://github.com/dunamismax/images/blob/main/c/C-Logo.png" alt="C Programming Language Logo" width="150" />
 </p>
+
+I enjoy working with C and systems programming, building applications with a focus on memory safety and performance. I'm particularly interested in ARM64 optimization and modern C development practices that prioritize security and reliability.
 
 ## Featured Project: C Programming Monolith
 
