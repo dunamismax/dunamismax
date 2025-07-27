@@ -27,7 +27,7 @@ A **C systems programming expert** specializing in building **memory-safe**, **h
   <img src="https://github.com/dunamismax/images/blob/main/c/C-Logo.png" alt="C Programming Language Logo" width="150" />
 </p>
 
-## 🚀 Featured Project: C Programming Monolith
+## Featured Project: C Programming Monolith
 
 <p align="center">
   <a href="https://github.com/dunamismax/c-monolith">
@@ -37,7 +37,7 @@ A **C systems programming expert** specializing in building **memory-safe**, **h
 
 **Production-ready C monolith** featuring ARM64-optimized applications, comprehensive security hardening, and a professional build system. Demonstrates modern C development practices with **zero runtime dependencies**, **memory safety**, and **high-performance optimizations**.
 
-### 🛠️ Core Technologies & Features
+### Core Technologies & Features
 
 **LLVM Clang Ecosystem:**
 
@@ -64,7 +64,7 @@ A **C systems programming expert** specializing in building **memory-safe**, **h
   <img src="https://github.com/dunamismax/images/blob/main/c/c-programming-typed.png" alt="C Programming Typed" width="400" />
 </p>
 
-## 🔧 Technical Expertise
+## Technical Expertise
 
 ### ARM64 Optimization
 
@@ -91,7 +91,7 @@ A **C systems programming expert** specializing in building **memory-safe**, **h
   <img src="https://github.com/dunamismax/images/blob/main/c/logo-logo-modern.png" alt="Modern C Logo" width="250" />
 </p>
 
-## 📊 Why C for System Programming?
+## Why C for System Programming?
 
 C provides unmatched control over system resources and memory management. My work demonstrates how modern C development achieves both safety and performance through careful design, comprehensive testing, and security-first practices.
 
@@ -108,7 +108,7 @@ C provides unmatched control over system resources and memory management. My wor
   <img src="https://github.com/dunamismax/images/blob/main/c/the-c-programming-language.png" alt="The C Programming Language" width="300" />
 </p>
 
-## 📈 GitHub Statistics
+## GitHub Statistics
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=dunamismax&show_icons=true&theme=dark&count_private=true&bg_color=0d1117&title_color=58a6ff&text_color=8b949e&icon_color=58a6ff&border_color=30363d" alt="GitHub Stats" />
@@ -122,23 +122,19 @@ C provides unmatched control over system resources and memory management. My wor
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=dunamismax&theme=dark&background=0d1117&border=30363d&stroke=8b949e&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff" alt="GitHub Streak" />
 </p>
 
-## 🎯 Current Focus
+## Current Focus
 
 Building production C applications with modern development practices and contributing to the C programming community through educational and practical examples. Specializing in ARM64-optimized applications, security-hardened development, and demonstrating that C can be both safe and performant with proper engineering practices.
 
 **Key Areas:**
 
-- 🔹 ARM64 Apple Silicon optimization and performance tuning
-- 🔹 Memory-safe C development with comprehensive testing frameworks
-- 🔹 Security-hardened applications with extensive validation
-- 🔹 Professional build systems and development workflows
-- 🔹 Educational C programming examples and best practices
+- ARM64 Apple Silicon optimization and performance tuning
+- Memory-safe C development with comprehensive testing frameworks
+- Security-hardened applications with extensive validation
+- Professional build systems and development workflows
+- Educational C programming examples and best practices
 
-<p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/c/c-computerphile.png" alt="C Computerphile" width="400" />
-</p>
-
-## 🌐 Connect
+## Connect
 
 <p align="center">
   <a href="https://www.buymeacoffee.com/dunamismax">
