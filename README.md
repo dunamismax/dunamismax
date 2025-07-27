@@ -21,11 +21,11 @@
 
 # DunamisMax - C Developer
 
-<p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/c/C-Logo.png" alt="C Programming Language Logo" width="150" />
-</p>
-
 I enjoy working with C and systems programming, building applications with a focus on memory safety and performance. I'm particularly interested in ARM64 optimization and modern C development practices that prioritize security and reliability.
+
+<p align="center">
+  <img src="https://github.com/dunamismax/images/blob/main/c/C-Logo.png" alt="C Programming Language Logo" width="100" />
+</p>
 
 ## Featured Project: C Programming Monolith
 
@@ -88,7 +88,7 @@ A C monolith featuring ARM64-optimized applications and comprehensive testing. T
 - Cross-platform compatibility with platform-specific optimizations
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/c/logo-logo-modern.png" alt="Modern C Logo" width="250" />
+  <img src="https://github.com/dunamismax/images/blob/main/c/logo-logo-modern.png" alt="Modern C Logo" width="200" />
 </p>
 
 ## Why C for System Programming?
