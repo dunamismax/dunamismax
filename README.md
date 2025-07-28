@@ -19,9 +19,7 @@
 
 ---
 
-# DunamisMax - Systems Programming Expert
-
-Passionate C developer specializing in high-performance, memory-safe systems programming. I create production-ready applications with zero runtime dependencies, focusing on ARM64 optimization and security-first development practices that demonstrate modern C can be both safe and blazingly fast.
+I'm a passionate C developer specializing in high-performance, memory-safe systems programming. I build production-ready applications with zero runtime dependencies, focusing on ARM64 optimization and security-first development to show that modern C can be both safe and incredibly fast.
 
 <p align="center">
   <img src="https://github.com/dunamismax/images/blob/main/c/C-Logo.png" alt="C Programming Language Logo" width="100" />
@@ -35,100 +33,43 @@ Passionate C developer specializing in high-performance, memory-safe systems pro
   </a>
 </p>
 
-A comprehensive C monolith featuring ARM64-optimized applications, complete data structures implementation, and 51+ comprehensive tests. This project showcases enterprise-grade C development with educational value and production-quality code.
+This comprehensive C monolith features ARM64-optimized applications, a complete data structures implementation, and over 51 comprehensive tests. It's a showcase of enterprise-grade C development with both educational value and production-quality code.
 
-### Core Technologies & Expertise
+### Core Expertise
 
-**LLVM Clang Mastery:**
-
-- ARM64 Apple Silicon optimization with M-series CPU tuning (`-mcpu=apple-m1`)
-- Advanced link-time optimization (LTO) for maximum performance
-- Comprehensive sanitizer integration (AddressSanitizer, UBSan)
-- Vectorization and cache-optimized algorithms
-
-**Professional Build Systems:**
-
-- High-performance parallel Makefiles with intelligent dependency management
-- Multi-mode builds (release/debug/profile) with appropriate optimizations
-- Comprehensive test suites with 51+ individual tests and coverage reporting
-- Security verification and automated quality assurance
-
-**Security-First Development:**
-
-- Advanced buffer overflow protection with stack canaries
-- Comprehensive input validation and sanitization frameworks
-- Path traversal prevention and secure file operations
-- Memory-safe patterns with zero-copy optimizations
+- **LLVM/Clang Mastery:** ARM64 Apple Silicon optimization, advanced Link-Time Optimization (LTO), and comprehensive sanitizer integration (ASan, UBSan).
+- **Professional Build Systems:** High-performance parallel Makefiles, multi-mode builds (release/debug/profile), and extensive test suites with coverage reporting.
+- **Security-First Development:** Advanced buffer overflow protection, comprehensive input validation, and memory-safe patterns with zero-copy optimizations.
+- **Modern C Engineering:** C11 standard compliance, type-safe generic programming with advanced macros, and cross-platform compatibility.
 
 <p align="center">
   <img src="https://github.com/dunamismax/images/blob/main/c/c-programming-typed.png" alt="C Programming Typed" width="400" />
 </p>
 
-## Technical Specializations
-
-### ARM64 Performance Engineering
-
-- Apple Silicon M-series processor optimization with platform-specific compiler flags
-- Advanced LLVM optimization passes and intelligent auto-vectorization
-- Memory alignment strategies and cache-friendly data structure design
-- Performance profiling, benchmarking, and bottleneck analysis
-
-### Memory Safety & Security Architecture
-
-- Production-grade sanitizer integration and memory leak detection
-- Defensive programming patterns with comprehensive error handling
-- Static analysis integration with clang-tidy and security scanners
-- Vulnerability prevention strategies (buffer overflow, format string, path traversal)
-
-### Modern C Engineering
-
-- C11 standard compliance with cutting-edge language features
-- Type-safe generic programming using advanced macro techniques
-- Comprehensive testing frameworks with automated coverage analysis
-- Cross-platform compatibility with platform-specific optimizations
-
-<p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/c/logo-logo-modern.png" alt="Modern C Logo" width="200" />
-</p>
-
 ## Why C for Mission-Critical Systems?
 
-C provides unparalleled control over system resources and memory management. My work demonstrates how modern C development achieves both safety and performance through rigorous engineering practices, comprehensive testing, and security-conscious design.
+C provides unparalleled control over system resources. My work demonstrates that modern C development, through rigorous engineering, comprehensive testing, and security-conscious design, achieves both safety and performance.
 
-| Aspect               | Modern Frameworks | My C Development     |
-| -------------------- | ----------------- | -------------------- |
-| Runtime Dependencies | Heavy ecosystems  | Zero dependencies    |
-| Memory Management    | Garbage collected | Manual with safety   |
-| Performance          | Variable overhead | Consistently optimal |
-| Binary Size          | Bloated bundles   | Minimal footprint    |
-| Startup Time         | Framework loading | Instant execution    |
-| Platform Control     | Abstracted APIs   | Direct system access |
+| Aspect                   | Modern Frameworks | My C Development     |
+| :----------------------- | :---------------- | :------------------- |
+| **Runtime Dependencies** | Heavy ecosystems  | Zero dependencies    |
+| **Memory Management**    | Garbage collected | Manual with safety   |
+| **Performance**          | Variable overhead | Consistently optimal |
+| **Binary Size**          | Bloated bundles   | Minimal footprint    |
+| **Startup Time**         | Framework loading | Instant execution    |
+| **Platform Control**     | Abstracted APIs   | Direct system access |
 
 ## GitHub Statistics
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=dunamismax&show_icons=true&theme=dark&count_private=true&bg_color=0d1117&title_color=58a6ff&text_color=8b949e&icon_color=58a6ff&border_color=30363d" alt="GitHub Stats" />
-</p>
-
-<p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dunamismax&layout=compact&theme=dark&langs_count=8&bg_color=0d1117&title_color=58a6ff&text_color=8b949e&icon_color=58a6ff&border_color=30363d" alt="Top Languages" />
+  <img src="https://streak-stats.demolab.com/?user=dunamismax&theme=dark&background=0d1117&border=30363d&stroke=8b949e&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff" alt="GitHub Streak" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=dunamismax&theme=dark&background=0d1117&border=30363d&stroke=8b949e&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff" alt="GitHub Streak" />
+  <img src="https://github.com/dunamismax/images/blob/main/c/logo-logo-modern.png" alt="Modern C Logo" width="200" />
 </p>
-
-## Current Focus & Innovation
-
-Building next-generation C applications that bridge the gap between performance and safety. Contributing to the C programming community through educational examples and advocating for modern C development practices that prove systems programming can be both secure and efficient.
-
-**Innovation Areas:**
-
-- ARM64 Apple Silicon performance optimization and tuning methodologies
-- Memory-safe C development with comprehensive testing frameworks
-- Security-conscious application architecture with threat modeling
-- Advanced build systems and developer experience optimization
-- Educational C programming resources and best practices documentation
 
 ## Connect
 
