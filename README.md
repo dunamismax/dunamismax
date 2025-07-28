@@ -63,8 +63,14 @@ C provides unparalleled control over system resources. My work demonstrates that
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=dunamismax&show_icons=true&theme=dark&count_private=true&bg_color=0d1117&title_color=58a6ff&text_color=8b949e&icon_color=58a6ff&border_color=30363d" alt="GitHub Stats" />
+</p>
+
+<p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dunamismax&layout=compact&theme=dark&langs_count=8&bg_color=0d1117&title_color=58a6ff&text_color=8b949e&icon_color=58a6ff&border_color=30363d" alt="Top Languages" />
-  <img src="https://streak-stats.demolab.com/?user=dunamismax&theme=dark&background=0d1117&border=30363d&stroke=8b949e&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff" alt="GitHub Streak" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=dunamismax&theme=dark&background=0d1117&border=30363d&stroke=8b949e&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff" alt="GitHub Streak" />
 </p>
 
 <p align="center">
