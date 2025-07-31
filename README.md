@@ -68,7 +68,7 @@ Go provides the perfect balance of developer productivity and runtime performanc
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=dunamismax&theme=dark&background=0d1117&border=30363d&stroke=8b949e&ring=00ADD8&fire=00ADD8&currStreakLabel=00ADD8" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats-eight.vercel.app/?user=dunamismax&theme=dark&background=0d1117&border=30363d&stroke=8b949e&ring=00ADD8&fire=00ADD8&currStreakLabel=00ADD8" alt="GitHub Streak" />
 </p>
 
 ## Connect & Support
