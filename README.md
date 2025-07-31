@@ -50,23 +50,6 @@ A comprehensive production-ready C monolith featuring ARM64-optimized applicatio
 
 The most cursed, unholy, and beautifully twisted Hello World program ever written in C. Features seven different hellish output methods, extensive trigraph abuse, macro sorcery, and enough obfuscation to traumatize compilers. Each execution produces different cursed variations of "Hello World!" depending on which circle of programming hell you visit.
 
-<p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/c/C-Logo.png" alt="C Programming Language Logo" width="150" />
-</p>
-
-## Why C in 2025?
-
-While others chase frameworks and abstractions, I work directly with the machine. C provides unmatched control over system resources, predictable performance, and the ability to create applications that start instantly and run anywhere without dependencies. My projects demonstrate that modern C development can achieve both safety and performance through careful design and comprehensive testing.
-
-| Aspect                   | High-Level Languages | My C Projects           |
-| :----------------------- | :------------------- | :---------------------- |
-| **Runtime Dependencies** | Heavy ecosystems     | Zero dependencies       |
-| **Memory Management**    | Garbage collected    | Manual with safety      |
-| **Performance**          | Variable overhead    | Consistently optimal    |
-| **Binary Size**          | Bloated applications | Minimal footprint       |
-| **Startup Time**         | Framework loading    | Instant execution       |
-| **System Control**       | Abstracted away      | Complete hardware access|
-
 ## Technical Philosophy
 
 I write C code that exists at the intersection of production quality and digital artistry. Whether building comprehensive systems programming applications or crafting beautifully obfuscated code, I believe in:
