@@ -23,10 +23,6 @@
 
 I'm a passionate Go developer specializing in **The Modern Go Stack** - building production-ready web applications that combine high performance, type safety, and enterprise security. I create single, self-contained binaries with zero external dependencies that deploy anywhere and start instantly.
 
-<p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/golang/gopher-mage.svg" alt="Gopher Mage" width="150" />
-</p>
-
 ## Featured Project: Go Web Server Template
 
 <p align="center">
@@ -75,10 +71,6 @@ Go provides the perfect balance of developer productivity and runtime performanc
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=dunamismax&theme=dark&background=0d1117&border=30363d&stroke=8b949e&ring=00ADD8&fire=00ADD8&currStreakLabel=00ADD8" alt="GitHub Streak" />
 </p>
 
-<p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/golang/gopher-running-jumping.gif" alt="Gopher Running and Jumping" width="400" />
-</p>
-
 ## Connect & Support
 
 <p align="center">
@@ -110,4 +102,8 @@ Go provides the perfect balance of developer productivity and runtime performanc
 
 <p align="center">
   <em>"The Modern Go Stack is a powerful and elegant solution that aligns beautifully with Go's core principles. It is an excellent starting point for many new projects, and any decision to deviate from it should be driven by specific, demanding requirements."</em>
+</p>
+
+<p align="center">
+  <img src="https://github.com/dunamismax/images/blob/main/golang/gopher-running-jumping.gif" alt="Gopher Running and Jumping" width="400" />
 </p>
