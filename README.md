@@ -25,10 +25,6 @@ I'm a Python developer who specializes in building beautiful, high-performance w
 ### NiceGUI Blog Template
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/python/Repo-Features.png" alt="NiceGUI Blog Template" width="300" />
-</p>
-
-<p align="center">
   <a href="https://github.com/dunamismax/nicegui-blog">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=nicegui-blog&theme=dark&bg_color=0d1117&title_color=713A90&text_color=8b949e&icon_color=713A90&border_color=30363d&border_radius=6" alt="NiceGUI Blog Template" />
   </a>
@@ -45,6 +41,12 @@ I write Python code that is both pragmatic and beautiful. Whether building full-
 - **Developer Experience**: Creating well-documented, easy-to-use, and maintainable code.
 - **Beautiful UIs**: Designing and implementing user interfaces that are both functional and aesthetically pleasing.
 - **Open Source**: Contributing back to the community and sharing knowledge.
+
+---
+
+<p align="center">
+  <img src="https://github.com/dunamismax/images/blob/main/python/Repo-Features.png" alt="NiceGUI Blog Template" width="300" />
+</p>
 
 ## Current Focus
 
