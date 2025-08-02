@@ -61,14 +61,14 @@ Building elegant user experiences with modern tooling and clean architecture
 </tr>
 </table>
 
-### 🚀 Technical Focus
+### Technical Focus
 
 * **Modern Python** with async/await patterns and latest language features
 * **High-performance applications** with intelligent caching and optimization
 * **Beautiful UIs** combining functionality with aesthetic design
 * **Production-ready code** with comprehensive testing and monitoring
 
-### 🎯 Development Philosophy
+### Development Philosophy
 
 * **Clean architecture** with modular, maintainable components
 * **Modern tooling** leveraging uv, Ruff, and cutting-edge Python ecosystem
@@ -76,6 +76,10 @@ Building elegant user experiences with modern tooling and clean architecture
 * **Open source first** contributing back to the community
 
 ## Featured Project
+
+<p align="center">
+  <img src="https://github.com/dunamismax/images/blob/main/python/NiceBlog.png" alt="NiceGUI Blog" width="300" />
+</p>
 
 ### NiceGUI Blog Template
 
@@ -97,10 +101,10 @@ A production-ready blog template showcasing modern Python development with **Nic
 
 ## Current Focus
 
-**🔧 Building:** Next-generation Python web applications with NiceGUI and FastAPI
-**🎨 Designing:** Intuitive user interfaces that bridge functionality and beauty
-**🌟 Contributing:** Open source projects in the Python ecosystem
-**📚 Exploring:** Cutting-edge Python features and modern development practices
+**Building:** Next-generation Python web applications with NiceGUI and FastAPI
+**Designing:** Intuitive user interfaces that bridge functionality and beauty
+**Contributing:** Open source projects in the Python ecosystem
+**Exploring:** Cutting-edge Python features and modern development practices
 
 ## GitHub Activity
 
