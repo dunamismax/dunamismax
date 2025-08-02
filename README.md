@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/python/NiceBlog.png" alt="NiceGUI Blog" width="350" />
+  <img src="https://github.com/dunamismax/images/blob/main/python/NiceGUI.png" alt="NiceGUI" width="400" />
 </p>
 
 <p align="center">
@@ -99,8 +99,4 @@ I write Python code that is both pragmatic and beautiful. Whether building full-
 
 <p align="center">
   <em>"The best code is no code at all."</em>
-</p>
-
-<p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/python/NiceGUI.png" alt="Python Development" width="400" />
 </p>
