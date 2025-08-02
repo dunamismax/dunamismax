@@ -95,10 +95,6 @@ A production-ready blog template showcasing modern Python development with **Nic
 
 ---
 
-<p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/python/NiceGUI.png" alt="dunamismax" width="300" />
-</p>
-
 ## Current Focus
 
 **Building:** Next-generation Python web applications with NiceGUI and FastAPI
@@ -118,6 +114,12 @@ A production-ready blog template showcasing modern Python development with **Nic
 
 <p align="center">
   <img src="https://github-readme-streak-stats-eight.vercel.app/?user=dunamismax&theme=dark&background=0d1117&border=30363d&stroke=8b949e&ring=713A90&fire=713A90&currStreakLabel=713A90&border_radius=6" alt="GitHub Streak" />
+</p>
+
+---
+
+<p align="center">
+  <img src="https://github.com/dunamismax/images/blob/main/python/NiceGUI.png" alt="dunamismax" width="300" />
 </p>
 
 ## Technology Stack
