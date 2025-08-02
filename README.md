@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/python/NiceGUI.png" alt="dunamismax" width="300" />
+  <img src="https://github.com/dunamismax/images/blob/main/python/Repo-Features.png" alt="Repository Features" width="300" />
 </p>
 
 <div align="center">
@@ -96,7 +96,7 @@ A production-ready blog template showcasing modern Python development with **Nic
 ---
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/python/Repo-Features.png" alt="Repository Features" width="300" />
+  <img src="https://github.com/dunamismax/images/blob/main/python/NiceGUI.png" alt="dunamismax" width="300" />
 </p>
 
 ## Current Focus
