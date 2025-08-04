@@ -1,4 +1,8 @@
 <p align="center">
+  <img src="https://github.com/dunamismax/images/blob/main/javascript/js-coffee-particles.jpg" alt="JS Coffee Particles Logo" width="400" />
+</p>
+
+<p align="center">
   <a href="https://github.com/dunamismax">
     <img src="https://readme-typing-svg.demolab.com/?font=Inter&weight=600&size=28&pause=1000&color=5865F2&center=true&vCenter=true&width=1200&height=90&lines=Hi%2C+I'm+Sawyer;I+build+high-performance%2C+production-ready+applications;Focusing+on+minimalism%2C+security%2C+and+user+experience" alt="Typing SVG" />
   </a>
