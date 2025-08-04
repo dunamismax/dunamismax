@@ -1,16 +1,16 @@
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/javascript/js-coffee-particles.jpg" alt="JS Coffee Particles Logo" width="400" />
+  <img src="https://github.com/elixir-lang/elixir-lang.github.com/raw/main/images/logo/logo.png" alt="Elixir Logo" width="400" />
 </p>
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Inter&weight=600&size=28&pause=1000&color=5865F2&center=true&vCenter=true&width=1200&height=90&lines=Hi%2C+I'm+Sawyer;I+build+high-performance%2C+production-ready+applications;Focusing+on+minimalism%2C+security%2C+and+user+experience;I+turn+coffee+into+clean%2C+efficient+code;Let's+build+something+amazing+together" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Inter&weight=600&size=28&pause=1000&color=663399&center=true&vCenter=true&width=1200&height=90&lines=Hi%2C+I'm+Sawyer;I+build+fault-tolerant%2C+concurrent+Elixir+applications;Focusing+on+OTP%2C+Phoenix+LiveView%2C+and+clean+architecture;I+turn+coffee+into+scalable%2C+maintainable+systems;Let+it+crash+and+build+amazing+things+together" alt="Typing SVG" />
   </a>
 </p>
 
 <div align="center">
 
-I specialize in creating efficient, self-hosted solutions with a strong emphasis on performance, security, and developer experience. My work spans from high-level application frameworks to low-level system programming, always with a passion for clean, maintainable code. Below are a few of my flagship open-source projects.
+I specialize in creating robust, fault-tolerant applications with Elixir and the OTP platform, with a strong emphasis on concurrency, scalability, and developer experience. My work focuses on modern Phoenix applications, umbrella architectures, and clean separation of concerns, always with a passion for functional programming and "let it crash" philosophy. Below are my flagship Elixir projects.
 
 </div>
 
@@ -18,7 +18,32 @@ I specialize in creating efficient, self-hosted solutions with a strong emphasis
 
 ## Featured Projects
 
-### 1. Discord Bot Framework
+### 1. Elixir Umbrella Monorepo
+
+<p align="center">
+  <img src="https://github.com/elixir-lang/elixir-lang.github.com/raw/main/images/logo/logo.png" alt="Elixir Umbrella Logo" width="200" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/dunamismax/elixir">
+    <img src="https://readme-typing-svg.demolab.com/?font=Inter&weight=600&size=28&pause=1000&color=663399&center=true&vCenter=true&width=1200&height=90&lines=Modern+Elixir+Umbrella+Architecture+with+Phoenix;Phoenix+LiveView+1.1.2+%2B+Ecto+3.13.2+SQLite;Interactive+Text+Adventure+Game+with+OTP;CLI+File+Processing+Tool+with+Shared+Logic;Clean+Separation+of+Concerns+%26+Domain+Logic;Comprehensive+CI%2FCD+with+GitHub+Actions;Code+Quality+with+Credo%2C+Dialyzer%2C+Sobelow;Fault-Tolerant+GenServer+%26+Supervision+Trees;Real-Time+Web+with+LiveView+Components;Production-Ready+Mix+Tasks+%26+Development+Setup;Open+Source+Apache+2.0+Licensed+Framework" alt="Typing SVG" />
+  </a>
+</p>
+
+A comprehensive Elixir umbrella project showcasing modern development practices, clean architecture, and the power of the OTP platform with Phoenix LiveView, Ecto, and fault-tolerant design patterns.
+
+<p align="center">
+  <a href="https://elixir-lang.org/"><img src="https://img.shields.io/badge/Elixir-1.18.4+-663399.svg?logo=elixir&logoColor=white&style=for-the-badge" alt="Elixir Version"></a>
+  <a href="https://phoenixframework.org/"><img src="https://img.shields.io/badge/Phoenix-1.7.21+-663399.svg?logo=phoenix-framework&logoColor=white&style=for-the-badge" alt="Phoenix Version"></a>
+  <a href="https://hexdocs.pm/phoenix_live_view/"><img src="https://img.shields.io/badge/LiveView-1.1.2+-663399.svg?style=for-the-badge&logoColor=white" alt="LiveView"></a>
+  <a href="https://hexdocs.pm/ecto/"><img src="https://img.shields.io/badge/Ecto-3.13.2+-663399.svg?style=for-the-badge&logoColor=white" alt="Ecto"></a>
+</p>
+
+[**Explore the Elixir Umbrella Monorepo →**](https://github.com/dunamismax/elixir)
+
+---
+
+### 2. Discord Bot Framework
 
 <p align="center">
   <img src="https://github.com/dunamismax/images/blob/main/discord-bot-framework/discord-bot-framework.png" alt="Discord Bot Framework Logo" width="200" />
@@ -40,31 +65,6 @@ A production-ready framework for building modern Discord bots with Python, desig
 </p>
 
 [**Explore the Discord Bot Framework →**](https://github.com/dunamismax/discord-bot-framework)
-
----
-
-### 2. 14KB Web Monorepo
-
-<p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/javascript/Vanilla-JS-Logo.png" alt="14KB Web Logo" width="200" />
-</p>
-
-<p align="center">
-  <a href="https://github.com/dunamismax/14kb-web">
-    <img src="https://readme-typing-svg.demolab.com/?font=Inter&weight=600&size=28&pause=1000&color=FCCD3C&center=true&vCenter=true&width=1200&height=90&lines=Ultra-Lightweight+Web+Development+Under+14KB;High-Performance+Fastify+API+%2B+SQLite+Database;Minimalist+Blog+with+Performance+Philosophy;Weather+App+with+OpenWeatherMap+Integration;Tasks+App+with+Scheduler+and+Notes;Zero+Framework+Overhead+%26+Maximum+Speed;Production+Ready+with+esbuild+%26+Performance+Budget;TCP+Slow+Start+Optimized+Architecture;Complete+Accessibility+with+Semantic+HTML;Lightning+Fast+14KB+Page+Loads;Open+Source+MIT+Licensed+Framework" alt="Typing SVG" />
-  </a>
-</p>
-
-A comprehensive monorepo for building ultra-fast websites under 14KB per page, featuring optimized performance, beautiful UIs, and zero framework dependencies.
-
-<p align="center">
-  <a href="https://nodejs.org/"><img src="https://img.shields.io/badge/Node.js-22.18+-58A448.svg?logo=nodedotjs&logoColor=white&style=for-the-badge" alt="Node.js Version"></a>
-  <a href="https://www.fastify.io/"><img src="https://img.shields.io/badge/Fastify-5.4+-58A448.svg?logo=fastify&logoColor=white&style=for-the-badge" alt="Fastify Version"></a>
-  <a href="https://esbuild.github.io/"><img src="https://img.shields.io/badge/esbuild-0.25+-58A448.svg?style=for-the-badge&logoColor=white" alt="esbuild"></a>
-  <a href="https://pnpm.io/"><img src="https://img.shields.io/badge/pnpm-8+-58A448.svg?logo=pnpm&logoColor=white&style=for-the-badge" alt="pnpm"></a>
-</p>
-
-[**Explore the 14KB Web Monorepo →**](https://github.com/dunamismax/14kb-web)
 
 ---
 
