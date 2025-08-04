@@ -1,10 +1,6 @@
 # dunamismax
 
-<div align="center">
-
 I specialize in creating robust, fault-tolerant applications with Elixir and the OTP platform, with a strong emphasis on concurrency, scalability, and developer experience. My work focuses on modern Phoenix applications, umbrella architectures, and clean separation of concerns, always with a passion for functional programming and "let it crash" philosophy. Below are my flagship Elixir projects.
-
-</div>
 
 ---
 
