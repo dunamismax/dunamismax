@@ -1,8 +1,4 @@
-<p align="center">
-  <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Inter&weight=600&size=28&pause=1000&color=663399&center=true&vCenter=true&width=1200&height=90&lines=Hi%2C+I'm+Sawyer;I+build+fault-tolerant%2C+concurrent+Elixir+applications;Focusing+on+OTP%2C+Phoenix+LiveView%2C+and+clean+architecture;I+turn+coffee+into+scalable%2C+maintainable+systems;Let+it+crash+and+build+amazing+things+together" alt="Typing SVG" />
-  </a>
-</p>
+# dunamismax
 
 <div align="center">
 
