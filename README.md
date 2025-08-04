@@ -4,13 +4,13 @@
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://readme-typing-svg.demolab.com/?font=Inter&weight=600&size=28&pause=1000&color=5865F2&center=true&vCenter=true&width=1200&height=90&lines=Hi%2C+I'm+Sawyer;I+build+high-performance%2C+production-ready+applications;Focusing+on+minimalism%2C+security%2C+and+user+experience" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Inter&weight=600&size=28&pause=1000&color=5865F2&center=true&vCenter=true&width=1200&height=90&lines=Hi%2C+I'm+Sawyer;I+build+high-performance%2C+production-ready+applications;Focusing+on+minimalism%2C+security%2C+and+user+experience;I+turn+coffee+into+clean%2C+efficient+code;Let's+build+something+amazing+together" alt="Typing SVG" />
   </a>
 </p>
 
 <div align="center">
 
-I specialize in creating efficient, self-hosted solutions with a strong emphasis on performance and security. Below are two of my flagship open-source projects.
+I specialize in creating efficient, self-hosted solutions with a strong emphasis on performance, security, and developer experience. My work spans from high-level application frameworks to low-level system programming, always with a passion for clean, maintainable code. Below are a few of my flagship open-source projects.
 
 </div>
 
@@ -65,6 +65,30 @@ A comprehensive monorepo for building ultra-fast websites under 14KB per page, f
 </p>
 
 [**Explore the 14KB Web Monorepo →**](https://github.com/dunamismax/14kb-web)
+
+---
+
+### 3. Hello World From Hell
+
+<p align="center">
+  <img src="https://github.com/dunamismax/images/blob/main/c/hello-world-from-hell.png" alt="Hello World From Hell Logo" width="200" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/dunamismax/hello-world-from-hell">
+    <img src="https://readme-typing-svg.demolab.com/?font=Inter&weight=600&size=28&pause=1000&color=FF0000&center=true&vCenter=true&width=1200&height=90&lines=The+most+cursed+Hello+World+in+C;Trigraphs%2C+Macros%2C+and+Demonic+Invocations;11+Circles+of+Hell+for+Terminal+Torture;Advanced+C%2C+SIMD%2C+and+Parallel+Dimensions;A+Beautifully+Twisted+Educational+Tool" alt="Typing SVG" />
+  </a>
+</p>
+
+The most cursed, unholy, and beautifully twisted Hello World program ever written in C. It serves as an educational tool to demonstrate advanced (and often ill-advised) C programming techniques in a humorous and engaging way.
+
+<p align="center">
+  <a href="#"><img src="https://img.shields.io/badge/Language-C17-red.svg?style=for-the-badge&logo=c&logoColor=white" alt="Language"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Compile-Cursed-red.svg?style=for-the-badge&logoColor=white" alt="Compile Status"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Quality-Eldritch_Horror-black.svg?style=for-the-badge&logoColor=white" alt="Code Quality"></a>
+</p>
+
+[**Explore Hello World From Hell →**](https://github.com/dunamismax/hello-world-from-hell)
 
 ---
 
