@@ -12,18 +12,19 @@ I specialize in creating robust, fault-tolerant applications with Elixir and the
 
 <p align="center">
   <a href="https://github.com/dunamismax/elixir">
-    <img src="https://readme-typing-svg.demolab.com/?font=Inter&weight=600&size=28&pause=1000&color=663399&center=true&vCenter=true&width=1200&height=90&lines=Modern+Elixir+Umbrella+Architecture;Phoenix+LiveView+1.1.2+%2B+Ecto+3.13.2;Interactive+Text+Adventure+Game+with+OTP;CLI+File+Processing+Tool+with+Shared+Logic;Clean+Separation+of+Concerns+%26+Domain+Logic;Comprehensive+CI%2FCD+with+GitHub+Actions;Code+Quality+with+Credo%2C+Dialyzer%2C+Sobelow;Fault-Tolerant+GenServer+%26+Supervision+Trees;Real-Time+Web+with+LiveView+Components;Production-Ready+Mix+Tasks+%26+Development+Setup;Open+Source+Apache+2.0+Licensed+Framework" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Inter&weight=600&size=28&pause=1000&color=663399&center=true&vCenter=true&width=1200&height=90&lines=Modern+Elixir+Umbrella+Architecture;Phoenix+LiveView+1.1.2+%2B+Ecto+3.13.2;Comprehensive+Telemetry+%26+Monitoring;Interactive+Text+Adventure+Game+with+OTP;CLI+File+Processing+Tool+with+Shared+Logic;Clean+Separation+of+Concerns+%26+Domain+Logic;Comprehensive+CI%2FCD+with+GitHub+Actions;Code+Quality+with+Credo%2C+Dialyzer%2C+Sobelow;Fault-Tolerant+GenServer+%26+Supervision+Trees;Real-Time+Web+with+LiveView+Components;Production-Ready+Mix+Tasks+%26+Development+Setup;Open+Source+MIT+Licensed+Framework" alt="Typing SVG" />
   </a>
 </p>
 
 A comprehensive Elixir umbrella project showcasing modern development practices, clean architecture, and the power of the OTP platform with Phoenix LiveView, Ecto, and fault-tolerant design patterns.
 
 <p align="center">
-  <a href="https://elixir-lang.org/"><img src="https://img.shields.io/badge/Elixir-1.18.4+-663399.svg?logo=elixir&logoColor=white&style=for-the-badge" alt="Elixir Version"></a>
+  <a href="https://elixir-lang.org/"><img src="https://img.shields.io/badge/Elixir-1.19+-663399.svg?logo=elixir&logoColor=white&style=for-the-badge" alt="Elixir Version"></a>
   <a href="https://phoenixframework.org/"><img src="https://img.shields.io/badge/Phoenix-1.7.21+-663399.svg?logo=phoenix-framework&logoColor=white&style=for-the-badge" alt="Phoenix Version"></a>
   <a href="https://hexdocs.pm/phoenix_live_view/"><img src="https://img.shields.io/badge/LiveView-1.1.2+-663399.svg?style=for-the-badge&logoColor=white" alt="LiveView"></a>
   <a href="https://hexdocs.pm/ecto/"><img src="https://img.shields.io/badge/Ecto-3.13.2+-663399.svg?style=for-the-badge&logoColor=white" alt="Ecto"></a>
-  <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache_2.0-663399.svg?style=for-the-badge&logoColor=white" alt="Apache License"></a>
+  <a href="https://hex.pm/packages/telemetry"><img src="https://img.shields.io/badge/Telemetry-1.2+-663399.svg?style=for-the-badge&logoColor=white" alt="Telemetry"></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-663399.svg?style=for-the-badge&logoColor=white" alt="MIT License"></a>
 </p>
 
 [**Explore the Elixir Umbrella Monorepo →**](https://github.com/dunamismax/elixir)
@@ -35,7 +36,7 @@ A comprehensive Elixir umbrella project showcasing modern development practices,
 <table align="center">
 <tr>
 <td align="center">
-<img src="https://img.shields.io/badge/Language-Elixir_1.18.4+-663399?style=for-the-badge&logo=elixir&logoColor=white" alt="Elixir"><br>
+<img src="https://img.shields.io/badge/Language-Elixir_1.19+-663399?style=for-the-badge&logo=elixir&logoColor=white" alt="Elixir"><br>
 <sub>Functional, concurrent, fault-tolerant</sub>
 </td>
 <td align="center">
