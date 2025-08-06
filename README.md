@@ -12,7 +12,7 @@ I specialize in creating high-performance, production-ready web applications wit
 
 <p align="center">
   <a href="https://github.com/dunamismax/go-web-server">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=900&lines=The+Modern+Go+Stack;Echo+v4+Framework+with+Type-Safe+Templates;HTMX+Dynamic+UX+without+JavaScript;SQLC+Generated+Queries+with+Pure+Go+SQLite;CSRF+Protection+and+Input+Sanitization;Structured+Error+Handling+and+Request+Tracing;Hot+Reload+Development+with+Mage+Automation;Single+Binary+Deployment+at+11MB;Production-Ready+Security+Middleware;Zero+External+Dependencies" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=900&lines=The+Modern+Go+Stack;Echo+v4+Framework+with+Type-Safe+Templates;HTMX+Dynamic+UX+without+JavaScript;SQLC+Generated+Queries+with+Pure+Go+SQLite;CSRF+Protection+and+Input+Sanitization;Structured+Error+Handling+and+Request+Tracing;Hot+Reload+Development+with+Mage+Automation;Single+Binary+Deployment+at+14MB;Production-Ready+Security+Middleware;Zero+External+Dependencies" alt="Typing SVG" />
   </a>
 </p>
 
