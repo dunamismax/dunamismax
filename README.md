@@ -35,13 +35,13 @@ A production-ready template for modern web applications using **The Modern Go St
 <sub>High-performance web framework</sub>
 </td>
 <td align="center">
-<img src="https://img.shields.io/badge/Templates-Templ_v0.3.924-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Templ"><br>
+<img src="https://img.shields.io/badge/Templates-Templ-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Templ"><br>
 <sub>Type-safe Go HTML components</sub>
 </td>
 </tr>
 <tr>
 <td align="center">
-<img src="https://img.shields.io/badge/Frontend-HTMX_2.x-3D72D7?style=for-the-badge&logo=htmx&logoColor=white" alt="HTMX"><br>
+<img src="https://img.shields.io/badge/Frontend-HTMX-3D72D7?style=for-the-badge&logo=htmx&logoColor=white" alt="HTMX"><br>
 <sub>Dynamic UX without JavaScript</sub>
 </td>
 <td align="center">
@@ -49,7 +49,7 @@ A production-ready template for modern web applications using **The Modern Go St
 <sub>Self-contained, serverless database</sub>
 </td>
 <td align="center">
-<img src="https://img.shields.io/badge/Queries-SQLC_v1.29.0-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="SQLC"><br>
+<img src="https://img.shields.io/badge/Queries-SQLC-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="SQLC"><br>
 <sub>Generate type-safe Go from SQL</sub>
 </td>
 </tr>
