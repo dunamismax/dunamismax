@@ -100,7 +100,7 @@ This project follows the **AGENTS.md** and **PROMPT.md** guidelines, emphasizing
 
 <p align="center">
   <strong>The Modern Go Stack</strong><br>
-  <sub>Echo v4 • Templ v0.3.924 • HTMX 2.x • Pico.css v2 • SQLC v1.29.0 • SQLite • slog • Koanf • Goose • Mage • Air</sub>
+  <sub>Echo • Templ • HTMX • Pico.css • SQLC • SQLite • slog • Koanf • Goose • Mage • Air</sub>
 </p>
 
 ---
