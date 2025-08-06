@@ -24,13 +24,13 @@ A production-ready template for modern web applications using **The Modern Go St
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://github-readme-stats.vercel.app/api?username=dunamismax&show_icons=true&theme=dark&include_all_commits=true&count_private=true" alt="dunamismax's GitHub stats" />
+    <img src="https://github-readme-stats.vercel.app/api?username=dunamismax&show_icons=true&theme=dark&include_all_commits=true&count_private=true&hide_border=true" alt="dunamismax's GitHub stats" />
   </a>
 </p>
 
 <p align="center">
   <a href="https://github.com/dunamismax">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dunamismax&layout=compact&langs_count=8&theme=dark" alt="dunamismax's top languages" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dunamismax&layout=compact&langs_count=8&theme=dark&hide_border=true" alt="dunamismax's top languages" />
   </a>
 </p>
 
