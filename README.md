@@ -68,10 +68,6 @@ This project follows the **AGENTS.md** and **PROMPT.md** guidelines, emphasizing
 - **Developer Experience** - Hot reload development, comprehensive tooling, and quality checks with Mage automation
 - **Modern Web Stack** - Server-side rendering with HTMX for dynamic interactions and Pico.css for semantic styling
 
-<p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/golang/gopher-mage.svg" alt="Gopher Mage" width="200" />
-</p>
-
 ## Key Features Demonstrated
 
 **The Modern Go Stack in Action:**
