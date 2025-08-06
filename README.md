@@ -18,15 +18,6 @@ I specialize in creating high-performance, production-ready web applications wit
 
 A production-ready template for modern web applications using **The Modern Go Stack** - showcasing high-performance web development with Echo v4, type-safe Templ templates, HTMX dynamic interactions, and comprehensive security features.
 
-<p align="center">
-  <a href="https://golang.org/"><img src="https://img.shields.io/badge/Go-1.24+-00ADD8.svg?logo=go&style=for-the-badge" alt="Go Version"></a>
-  <a href="https://echo.labstack.com/"><img src="https://img.shields.io/badge/Framework-Echo_v4-00ADD8.svg?logo=go&style=for-the-badge" alt="Echo Framework"></a>
-  <a href="https://templ.guide/"><img src="https://img.shields.io/badge/Templates-Templ_v0.3.924-00ADD8.svg?logo=go&style=for-the-badge" alt="Templ"></a>
-  <a href="https://htmx.org/"><img src="https://img.shields.io/badge/Frontend-HTMX_2.x-3D72D7.svg?logo=htmx&style=for-the-badge" alt="HTMX"></a>
-  <a href="https://sqlc.dev/"><img src="https://img.shields.io/badge/Queries-SQLC-00ADD8.svg?logo=go&style=for-the-badge" alt="SQLC"></a>
-  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-00ADD8.svg?style=for-the-badge" alt="MIT License"></a>
-</p>
-
 [**Explore The Modern Go Stack →**](https://github.com/dunamismax/go-web-server)
 
 ---
