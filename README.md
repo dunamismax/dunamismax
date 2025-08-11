@@ -103,10 +103,6 @@ Traditional trading card games operate under corporate monopolies that prioritiz
   <a href="https://signal.me/#p/+dunamismax.66" target="_blank"><img src="https://img.shields.io/badge/Signal-00ADD8.svg?style=for-the-badge&logo=signal&logoColor=white" alt="Signal"></a>
 </p>
 
-<p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/golang/gopher-running-jumping.gif" alt="Gopher Running and Jumping" width="600" />
-</p>
-
 ---
 
 ## Also Building: The Modern Go Stack
