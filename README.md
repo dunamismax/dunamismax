@@ -7,7 +7,7 @@ Go developer and creator of **Forge Realm** - an open-source trading card game b
 ## Featured Project: Forge Realm
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/forge-realm/forge-realm.png" alt="Forge Realm Logo" width="400" />
+  <img src="https://github.com/dunamismax/images/blob/main/forge-realm/forge-realm-alt.png" alt="Forge Realm Logo" width="400" />
 </p>
 
 <p align="center">
