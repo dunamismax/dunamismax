@@ -1,24 +1,33 @@
 # dunamismax
 
-I specialize in creating high-performance, production-ready web applications with **The Modern Go Stack** - a cohesive technology ecosystem emphasizing simplicity, performance, and maintainability. My work focuses on modern Go web development with Echo, type-safe templates, and single-binary deployments, always with a passion for clean architecture and the Go philosophy of simplicity over complexity. Below is my flagship Go project.
+Go developer and creator of **Forge Realm** - an open-source trading card game built by the community, for the community. Challenging the TCG industry through democratic governance, transparent development, and unrestricted print-and-play access. No artificial scarcity, no corporate control.
 
 ---
 
-## Featured Project: Go Web Server Template
+## Featured Project: Forge Realm
 
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/golang/go-logo.png" alt="Go Web Server Template Logo" width="400" />
+  <img src="https://github.com/dunamismax/images/blob/main/forge-realm/forge-realm.png" alt="Forge Realm Logo" width="400" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/dunamismax/go-web-server">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=24&pause=1000&color=00ADD8&center=true&vCenter=true&width=900&lines=The+Modern+Go+Stack;Echo+v4+Framework+with+Type-Safe+Templates;HTMX+Dynamic+UX+without+JavaScript;SQLC+Generated+Queries+with+Pure+Go+SQLite;CSRF+Protection+and+Input+Sanitization;Structured+Error+Handling+and+Request+Tracing;Hot+Reload+Development+with+Mage+Automation;Single+Binary+Deployment+at+15MB;Production-Ready+Security+Middleware;Zero+External+Dependencies" alt="Typing SVG" />
+  <a href="https://github.com/dunamismax/forge-realm">
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=22&pause=1000&color=E74C3C&center=true&vCenter=true&width=900&lines=Open+Source+Trading+Card+Game;Democratic+Community+Governance;Print-and-Play+Accessibility;Built+with+Go+1.24+and+Mage;Transparent+Development+Process;No+Artificial+Scarcity;Free+for+Everyone;Community+Voting+on+Design;Professional+Print+Quality;MTG+Alternative" alt="Typing SVG" />
   </a>
 </p>
 
-A production-ready template for modern web applications using **The Modern Go Stack** - showcasing high-performance web development with Echo v4, type-safe Templ templates, HTMX dynamic interactions, and comprehensive security features.
+**The first truly open-source TCG** where every card, rule, and decision is made transparently by the community. Built with Go 1.24 and modern development practices, featuring democratic governance where contributors vote on game direction.
 
-[**Explore The Modern Go Stack →**](https://github.com/dunamismax/go-web-server)
+### Revolutionary Features
+
+- **100% Open Source** - All cards, rules, and code freely available
+- **Democratic Governance** - Community votes determine game direction
+- **Print-and-Play** - Professional PDF sheets for home printing
+- **No Paywalls** - Every card accessible to every player
+- **Transparent Development** - All decisions made publicly on GitHub
+- **Modern Tech Stack** - Go 1.24, Mage build system, comprehensive CI/CD
+
+[**Play Forge Realm →**](https://github.com/dunamismax/forge-realm) | [**Quick Start Guide**](https://github.com/dunamismax/forge-realm/blob/main/docs/gameplay/quick-start.md) | [** Join the Community**](https://github.com/dunamismax/forge-realm/discussions)
 
 ---
 
@@ -40,63 +49,47 @@ A production-ready template for modern web applications using **The Modern Go St
 
 ---
 
-## Technology Stack
+## Current Focus: Building the Future of TCGs
+
+**Why Forge Realm Matters:**
+
+Traditional trading card games operate under corporate monopolies that prioritize profit over gameplay innovation. Players are trapped in artificial scarcity models where access to cards depends on wallet size rather than skill or creativity.
+
+**Forge Realm breaks this cycle by:**
+
+- Making every card freely available to every player
+- Using democratic governance where the community decides game direction
+- Maintaining complete transparency in all design decisions
+- Providing professional-quality print-and-play files
+- Building with modern technology (Go 1.24) for reliability and performance
+
+**Built With Modern Go Excellence:**
 
 <table align="center">
 <tr>
 <td align="center">
-<img src="https://img.shields.io/badge/Language-Go_1.24+-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go"><br>
-<sub>Simple, fast, reliable, productive</sub>
+<img src="https://img.shields.io/badge/Language-Go_1.24-E74C3C?style=for-the-badge&logo=go&logoColor=white" alt="Go"><br>
+<sub>Latest Go with new features</sub>
 </td>
 <td align="center">
-<img src="https://img.shields.io/badge/Framework-Echo_v4-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Echo"><br>
-<sub>High-performance web framework</sub>
+<img src="https://img.shields.io/badge/Build-Mage-E74C3C?style=for-the-badge&logo=go&logoColor=white" alt="Mage"><br>
+<sub>Magic build automation</sub>
 </td>
 <td align="center">
-<img src="https://img.shields.io/badge/Templates-Templ-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Templ"><br>
-<sub>Type-safe Go HTML components</sub>
-</td>
-</tr>
-<tr>
-<td align="center">
-<img src="https://img.shields.io/badge/Frontend-HTMX-3D72D7?style=for-the-badge&logo=htmx&logoColor=white" alt="HTMX"><br>
-<sub>Dynamic UX without JavaScript</sub>
-</td>
-<td align="center">
-<img src="https://img.shields.io/badge/Database-SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite"><br>
-<sub>Self-contained, serverless database</sub>
-</td>
-<td align="center">
-<img src="https://img.shields.io/badge/Queries-SQLC-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="SQLC"><br>
-<sub>Generate type-safe Go from SQL</sub>
+<img src="https://img.shields.io/badge/Community-Democratic-E74C3C?style=for-the-badge&logo=github&logoColor=white" alt="Democratic"><br>
+<sub>Community-driven decisions</sub>
 </td>
 </tr>
 </table>
 
----
+**Game Development Philosophy:**
 
-## Development Philosophy
-
-This project follows the **AGENTS.md** and **PROMPT.md** guidelines, emphasizing:
-
-- **Go-First Architecture** - Embrace Go's philosophy of simplicity, explicit error handling, and composition over complexity
-- **Production-Ready Security** - CSRF protection, input sanitization, security headers, and comprehensive defensive programming
-- **Type Safety & Performance** - SQLC for database queries, Templ for HTML templates, and efficient middleware chains
-- **Single Binary Deployment** - Zero external dependencies with embedded assets and pure Go SQLite driver
-- **Developer Experience** - Hot reload development, comprehensive tooling, and quality checks with Mage automation
-- **Modern Web Stack** - Server-side rendering with HTMX for dynamic interactions and Pico.css for semantic styling
-
-## Key Features Demonstrated
-
-**The Modern Go Stack in Action:**
-
-- Echo v4 + Templ v0.3.924 + HTMX 2.x + Pico.css v2 + SQLC v1.29.0
-- Single 13MB binary with embedded assets and zero external dependencies  
-- Comprehensive security middleware with CSRF protection and input sanitization
-- Type-safe database operations with pure Go SQLite driver
-- Hot reload development with Air and comprehensive build automation with Mage
-- Structured logging with slog and Prometheus metrics for observability
-- Production-ready deployment patterns with graceful shutdown
+- **Community First** - Every decision voted on by contributors
+- **Transparency** - All discussions, votes, and changes public on GitHub
+- **Accessibility** - Print-and-play removes economic barriers
+- **Quality** - Professional card design and balanced gameplay
+- **Innovation** - Modern mechanics without corporate constraints
+- **Sustainability** - Self-sustaining through community contributions
 
 ---
 
@@ -116,11 +109,32 @@ This project follows the **AGENTS.md** and **PROMPT.md** guidelines, emphasizing
 
 ---
 
+## Also Building: The Modern Go Stack
+
+<details>
+<summary><strong>Click to explore my Go web development template</strong></summary>
+
+### Go Web Server Template
+
 <p align="center">
-  <strong>The Modern Go Stack</strong><br>
-  <sub>Echo • Templ • HTMX • Pico.css • SQLC • SQLite • slog • Koanf • Goose • Mage • Air</sub>
+  <img src="https://github.com/dunamismax/images/blob/main/golang/go-logo.png" alt="Go Web Server Template Logo" width="200" />
+</p>
+
+A production-ready template for modern web applications using **The Modern Go Stack** - showcasing high-performance web development with Echo v4, type-safe Templ templates, HTMX dynamic interactions, and comprehensive security features.
+
+**Tech Stack:** Echo • Templ • HTMX • Pico.css • SQLC • SQLite • slog • Koanf • Goose • Mage • Air
+
+[**Explore The Modern Go Stack →**](https://github.com/dunamismax/go-web-server)
+
+</details>
+
+---
+
+<p align="center">
+  <strong>Join the Forge Realm Revolution</strong><br>
+  <sub>Open Source • Democratic • Accessible • Revolutionary</sub>
 </p>
 
 ---
 
-*"The Modern Go Stack is a powerful and elegant solution that aligns beautifully with Go's core principles. It is an excellent starting point for many new projects, and any decision to deviate from it should be driven by specific, demanding requirements."* - Me
+*"Traditional TCGs prioritize profit over players. Forge Realm prioritizes players over profit."* - dunamismax
