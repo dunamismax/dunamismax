@@ -12,7 +12,7 @@
 
 ---
 
-## **🎯 Core Set Launch: Q1 2026**
+## **Core Set Launch: Q1 2026**
 
 Full original artwork, Legacy/Vintage mechanics, balanced starter decks. **Join our [Discord](https://discord.gg/KQTY8DfY)** - we need contributors for mechanics, artwork, and playtesting!
 
@@ -20,25 +20,25 @@ Full original artwork, Legacy/Vintage mechanics, balanced starter decks. **Join 
 
 ## **⚡ Why Forge Realm?**
 
-- **🆓 Always Free** - Print any card, build any deck, zero restrictions
-- **🗳️ Community Controlled** - Democratic governance, transparent development  
-- **🎲 Legacy & Vintage Focus** - Strategic depth without corporate interference
-- **🌍 Global Access** - Play anywhere with just a printer
+- **Always Free** - Print any card, build any deck, zero restrictions
+- **Community Controlled** - Democratic governance, transparent development  
+- **Legacy & Vintage Focus** - Strategic depth without corporate interference
+- **Global Access** - Play anywhere with just a printer
 
 ---
 
-## **🚀 Quick Start**
+## **Quick Start**
 
 ```
 1. Learn Rules → forge-realm.com/docs/gameplay/
-2. Print Cards → forge-realm.com/docs/printing/  
+2. Print Cards → forge-realm.com/docs/printing/
 3. Join Discord → discord.gg/KQTY8DfY
 4. Find Games → Community matchmaking
 ```
 
 ---
 
-## **🛠️ Currently Working On**
+## **Currently Working On**
 
 - **Game Design**: Legacy/Vintage-inspired mechanics and balance
 - **Open Source**: Transparent development process and community tools
@@ -47,7 +47,7 @@ Full original artwork, Legacy/Vintage mechanics, balanced starter decks. **Join 
 
 ---
 
-## **💬 Let's Connect**
+## **Let's Connect**
 
 Whether you're passionate about **classic Magic**, interested in **open source game development**, or want to **shape the future of TCGs** - let's chat!
 
