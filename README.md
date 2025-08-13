@@ -7,7 +7,7 @@
 **Creator of Ideal Magic** - It's the Magic you remember at its best—sharp, interactive, and endlessly replayable—refined until every decision feels clean in the hand and vivid on the table. The rules step out of the way. The drama stays.
 
 [![ideal-magic.com](https://img.shields.io/badge/ideal--magic.com-Visit_Site-50fa7b?style=for-the-badge&labelColor=0b0b0b)](https://ideal-magic.com)
-[![Discord](https://img.shields.io/badge/Discord-Join_Community-8839ef?style=for-the-badge&labelColor=0b0b0b)](https://discord.gg/KQTY8DfY)
+[![Discord](https://img.shields.io/badge/Discord-Join_Community-8839ef?style=for-the-badge&labelColor=0b0b0b)](https://discord.gg/DvHRY8h3rs)
 [![GitHub](https://img.shields.io/badge/GitHub-dunamismax/ideal--magic-a6e3a1?style=for-the-badge&labelColor=0b0b0b)](https://github.com/dunamismax/ideal-magic)
 
 ---
@@ -73,7 +73,7 @@ You start at twenty life with the London Mulligan, and the game meets you halfwa
 Whether you're passionate about **Magic at its absolute best**, interested in **perfect game balance**, or want to **shape the ideal MTG experience** - let's build this together!
 
 <p align="center">
-  <a href="https://discord.gg/KQTY8DfY"><img src="https://img.shields.io/badge/Discord-Community-8839ef?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a>
+  <a href="https://discord.gg/DvHRY8h3rs"><img src="https://img.shields.io/badge/Discord-Community-8839ef?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a>
   <a href="mailto:dunamismax@ideal-magic.com"><img src="https://img.shields.io/badge/Email-Contact-50fa7b?style=for-the-badge&logo=mail.ru&logoColor=0b0b0b" alt="Email"></a>
   <a href="https://github.com/dunamismax/ideal-magic"><img src="https://img.shields.io/badge/GitHub-Contribute-a6e3a1?style=for-the-badge&logo=github&logoColor=0b0b0b" alt="GitHub"></a>
 </p>
