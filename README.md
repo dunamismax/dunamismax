@@ -46,7 +46,7 @@
 
 ## Featured Projects
 
-### 🤖 [Go Discord Bots Monorepo](https://github.com/dunamismax/go-discord-bots)
+### 🤖 [Go Discord Bots Monorepo](https://github.com/dunamismax/python-bots)
 
 Modern Discord bot framework showcasing **enterprise-grade architecture** and **microservice patterns**. Three specialized bots with shared infrastructure demonstrating 2025 best practices.
 
