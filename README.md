@@ -22,4 +22,3 @@ Web developer building practical, privacy-first web apps.
 - Web app architecture and product delivery
 - Real-time features and clean UX flows
 - Developer tooling and workflow automation
-test
