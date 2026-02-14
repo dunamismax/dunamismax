@@ -61,8 +61,8 @@ mission: Build fast, resilient systems that teams can actually maintain.
 ## GitHub Telemetry
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=dunamismax&show_icons=true&include_all_commits=true&rank_icon=github&theme=transparent&hide_border=true&title_color=38bdf8&text_color=cbd5e1&icon_color=22d3ee" alt="GitHub stats" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dunamismax&layout=compact&theme=transparent&hide_border=true&title_color=38bdf8&text_color=cbd5e1" alt="Top languages" />
+  <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=dunamismax&theme=github_dark" alt="GitHub stats" />
+  <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=dunamismax&theme=github_dark" alt="Top languages" />
 </p>
 
 <p align="center">
