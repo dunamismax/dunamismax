@@ -78,23 +78,34 @@ mission: Build fast, resilient systems that teams can actually maintain.
 </p>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=dunamismax&theme=algolia&no-frame=true&no-bg=true&margin-w=12&row=1" alt="GitHub trophies" />
+  <img src="https://img.shields.io/badge/GitHub-Highlights-0f172a?style=for-the-badge&logo=github&logoColor=22d3ee" alt="GitHub highlights" />
+  <img src="https://img.shields.io/badge/dynamic/json?style=for-the-badge&label=Public%20Repos&query=%24.public_repos&url=https%3A%2F%2Fapi.github.com%2Fusers%2Fdunamismax&color=0ea5e9" alt="Public repos" />
+  <img src="https://img.shields.io/badge/dynamic/json?style=for-the-badge&label=Public%20Gists&query=%24.public_gists&url=https%3A%2F%2Fapi.github.com%2Fusers%2Fdunamismax&color=0891b2" alt="Public gists" />
 </p>
 
 ## Featured Builds
 
 <p align="center">
   <a href="https://github.com/dunamismax/mylife-rpg">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=mylife-rpg&theme=transparent&hide_border=true&title_color=38bdf8&text_color=cbd5e1&icon_color=22d3ee" alt="mylife-rpg" />
+    <img src="https://img.shields.io/badge/MyLife_RPG-Laravel%20%2B%20Livewire-0ea5e9?style=for-the-badge&logo=laravel&logoColor=white" alt="mylife-rpg" />
   </a>
   <a href="https://github.com/dunamismax/poddashboard">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=poddashboard&theme=transparent&hide_border=true&title_color=38bdf8&text_color=cbd5e1&icon_color=22d3ee" alt="poddashboard" />
+    <img src="https://img.shields.io/badge/PodDashboard-Platform%20Ops%20Dashboard-06b6d4?style=for-the-badge&logo=github&logoColor=white" alt="poddashboard" />
+  </a>
+  <a href="https://github.com/dunamismax/mtg-card-bot">
+    <img src="https://img.shields.io/badge/MTG_Card_Bot-Python%20Discord%20Automation-14b8a6?style=for-the-badge&logo=python&logoColor=white" alt="mtg-card-bot" />
   </a>
 </p>
 
 <p align="center">
+  <a href="https://github.com/dunamismax/mylife-rpg">
+    <img src="https://img.shields.io/github/stars/dunamismax/mylife-rpg?style=flat-square&label=mylife-rpg%20stars&color=22d3ee" alt="mylife-rpg stars" />
+  </a>
+  <a href="https://github.com/dunamismax/poddashboard">
+    <img src="https://img.shields.io/github/stars/dunamismax/poddashboard?style=flat-square&label=poddashboard%20stars&color=06b6d4" alt="poddashboard stars" />
+  </a>
   <a href="https://github.com/dunamismax/mtg-card-bot">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=mtg-card-bot&theme=transparent&hide_border=true&title_color=38bdf8&text_color=cbd5e1&icon_color=22d3ee" alt="mtg-card-bot" />
+    <img src="https://img.shields.io/github/stars/dunamismax/mtg-card-bot?style=flat-square&label=mtg-card-bot%20stars&color=14b8a6" alt="mtg-card-bot stars" />
   </a>
 </p>
 
