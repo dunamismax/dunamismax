@@ -1,117 +1,115 @@
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:020617,40:0f172a,75:0ea5e9,100:22d3ee&text=Stephen%20Sawyer&fontColor=e2e8f0&fontSize=54&fontAlignY=36&desc=PHP%20%E2%80%A2%20Laravel%20%E2%80%A2%20Livewire%20%E2%80%A2%20IT%20Director&descAlignY=56&animation=fadeIn" alt="Header" />
+
 <p align="center">
-  Personal profile repository for practical software, automation workflows, and project discovery.
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=2400&pause=1000&color=22D3EE&center=true&vCenter=true&width=980&lines=Engineering+real-world+systems+that+ship.;Laravel+%2B+Livewire+specialist+with+operations+depth.;IT+Director+mindset%3A+reliability%2C+security%2C+velocity.;Linux+%7C+Windows+%7C+macOS+%7C+Python+%7C+PowerShell+%7C+SQL" alt="Typing animation" />
+  </a>
 </p>
 
-# Stephen Sawyer (@dunamismax)
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=dunamismax&label=Profile%20Views&color=0ea5e9&style=for-the-badge" alt="Profile views" />
+  <img src="https://img.shields.io/github/followers/dunamismax?style=for-the-badge&label=Followers&color=06b6d4&labelColor=0f172a" alt="Followers" />
+  <img src="https://img.shields.io/github/stars/dunamismax?style=for-the-badge&label=Total%20Stars&color=22c55e&labelColor=0f172a" alt="Total stars" />
+</p>
 
-This repository is the public profile README for the `dunamismax` GitHub account. It provides a concise overview of current focus areas, core technologies, and linked projects.
+# Stephen Sawyer
 
-## Trust Signals
+<p align="center">
+  <strong>PHP / Laravel / Livewire Developer</strong> + <strong>IT Director</strong> focused on secure architecture, practical automation, and cross-platform operations.
+</p>
 
-![Type](https://img.shields.io/badge/Repo-GitHub_Profile-informational)
-![Scope](https://img.shields.io/badge/Scope-Portfolio%20Overview-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
+---
 
-## Quick Start
+## System Profile
 
-### Prerequisites
-
-- Git (optional, only needed for local edits)
-- A GitHub account (for publishing profile updates)
-
-### Run
-
-```bash
-git clone https://github.com/dunamismax/dunamismax.git
-cd dunamismax
+```yaml
+name: Stephen Sawyer
+roles:
+  - IT Director
+  - Senior Full-Stack Engineer
+  - Platform and Operations Lead
+primary_stack:
+  - PHP
+  - Laravel
+  - Livewire
+  - SQL
+extended_stack:
+  - Python
+  - JavaScript / TypeScript
+  - PowerShell
+  - Bash
+operating_systems:
+  - Linux
+  - Windows
+  - macOS
+  - Unix-like environments
+mission: Build fast, resilient systems that teams can actually maintain.
 ```
 
-Expected result:
+## Tech Arsenal
 
-- You can read and edit `README.md` locally.
-- Pushing changes to the default branch updates the GitHub profile page.
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=php,laravel,python,javascript,typescript,powershell,bash,mysql,postgresql,sqlite,redis,docker,linux,windows,apple,githubactions,vscode,git&perline=9" alt="Skill icons" />
+</p>
 
-## Features
+<p align="center">
+  <img src="https://img.shields.io/badge/Livewire-Server--Driven_UI-4E56A6?style=for-the-badge" alt="Livewire" />
+  <img src="https://img.shields.io/badge/IT_Director-Strategy_%2B_Execution-0f766e?style=for-the-badge" alt="IT Director" />
+  <img src="https://img.shields.io/badge/Cross--Platform-Linux%20%7C%20Windows%20%7C%20macOS-334155?style=for-the-badge" alt="Cross platform" />
+</p>
 
-- Profile summary focused on current engineering priorities.
-- Technology snapshot spanning frontend, backend, infrastructure, and DX.
-- Direct links to active public projects.
-- Single-file maintenance model (`README.md`) for quick iteration.
+## GitHub Telemetry
 
-## Tech Stack
+<p align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=dunamismax&show_icons=true&include_all_commits=true&rank_icon=github&theme=transparent&hide_border=true&title_color=38bdf8&text_color=cbd5e1&icon_color=22d3ee" alt="GitHub stats" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dunamismax&layout=compact&theme=transparent&hide_border=true&title_color=38bdf8&text_color=cbd5e1" alt="Top languages" />
+</p>
 
-| Layer | Technology | Purpose |
-|---|---|---|
-| Content | Markdown | Profile presentation and structure |
-| Hosting | GitHub profile repository | Public profile rendering |
-| Collaboration | Git | Version history and updates |
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=dunamismax&theme=transparent&hide_border=true&ring=22d3ee&fire=22d3ee&currStreakLabel=38bdf8&sideNums=cbd5e1&currStreakNum=e2e8f0&dates=94a3b8" alt="Contribution streak" />
+</p>
 
-## Project Structure
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=dunamismax&bg_color=0d111700&color=38bdf8&line=22d3ee&point=e2e8f0&area=true&hide_border=true" alt="Activity graph" />
+</p>
 
-```sh
-dunamismax/
-├── README.md                      # GitHub profile content
-└── LICENSE                        # Repository license
-```
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=dunamismax&theme=github_dark" alt="Profile summary" />
+</p>
 
-## Development Workflow and Common Commands
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=dunamismax&theme=algolia&no-frame=true&no-bg=true&margin-w=12&row=1" alt="GitHub trophies" />
+</p>
 
-### Setup
+## Featured Builds
 
-```bash
-git clone https://github.com/dunamismax/dunamismax.git
-cd dunamismax
-```
+<p align="center">
+  <a href="https://github.com/dunamismax/mylife-rpg">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=mylife-rpg&theme=transparent&hide_border=true&title_color=38bdf8&text_color=cbd5e1&icon_color=22d3ee" alt="mylife-rpg" />
+  </a>
+  <a href="https://github.com/dunamismax/poddashboard">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=poddashboard&theme=transparent&hide_border=true&title_color=38bdf8&text_color=cbd5e1&icon_color=22d3ee" alt="poddashboard" />
+  </a>
+</p>
 
-### Run
+<p align="center">
+  <a href="https://github.com/dunamismax/mtg-card-bot">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dunamismax&repo=mtg-card-bot&theme=transparent&hide_border=true&title_color=38bdf8&text_color=cbd5e1&icon_color=22d3ee" alt="mtg-card-bot" />
+  </a>
+</p>
 
-No runtime service is provided by this repository.
+## Leadership + Engineering
 
-### Test
+- I lead IT as a systems-level operator, not just a policy owner.
+- I build and ship production Laravel/Livewire platforms with pragmatic architecture.
+- I bridge engineering and operations across Linux, Windows, and macOS environments.
+- I use Python, JavaScript, SQL, and PowerShell to automate workflows and reduce operational drag.
 
-No automated test suite is applicable for this profile-only repository.
+## Current Focus
 
-### Lint and Format
+- Laravel 12 + Livewire 4 applications with clean domain boundaries.
+- Security-first auth patterns, rate limiting, and observability.
+- Internal platforms and dashboards that improve team velocity.
+- Automation pipelines for infrastructure and service operations.
 
-No repository-specific linting tooling is configured.
-
-### Build
-
-No build step is required.
-
-### Deploy (Profile Update)
-
-```bash
-git add README.md
-git commit -m "Update profile README"
-git push origin main
-```
-
-Command verification notes for this README rewrite:
-
-- Verified in this environment: `git -C /home/sawyer/github/dunamismax status --short`.
-- Not executed in this rewrite: profile publish flow (`git commit` / `git push`).
-
-## Deployment and Operations
-
-This repository has no application runtime. Deployment is equivalent to pushing markdown updates to the default branch.
-
-## Security and Reliability Notes
-
-- No runtime secrets or service credentials should be stored in this repository.
-- Keep external project links current to avoid stale or broken profile references.
-
-## Documentation
-
-| Path | Purpose |
-|---|---|
-| [README.md](README.md) | Profile content shown on GitHub |
-| [LICENSE](LICENSE) | License terms for repository content |
-
-## Contributing
-
-For profile improvements, open a pull request with concise content updates and clear rationale for project/focus changes.
-
-## License
-
-Licensed under the [MIT License](LICENSE).
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=140&color=0:020617,40:0f172a,75:0ea5e9,100:22d3ee" alt="Footer" />
