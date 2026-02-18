@@ -2,7 +2,7 @@
 
 > Complete index of Stephen Sawyer's (`dunamismax`) repositories, their purpose, stack, and source control strategy.
 > All repos live under `/home/sawyer/github/` and are mirrored across GitHub and Codeberg.
-> Last updated: 2026-02-16.
+> Last updated: 2026-02-17.
 
 ---
 
@@ -52,20 +52,6 @@ Canonical root repo for **scry** (AI engineering partner). Contains shared infra
 
 ---
 
-### TALLstack
-
-| | |
-|---|---|
-| **Path** | `TALLstack` |
-| **Type** | Application template |
-| **Stack** | PHP 8.2+, Laravel 12, Livewire 4, Fortify, Flux UI, Tailwind CSS 4, Spatie Permission, Pest 4 |
-| **GitHub** | [dunamismax/TALLstack](https://github.com/dunamismax/TALLstack) |
-| **Codeberg** | [dunamismax/TALLstack](https://codeberg.org/dunamismax/TALLstack) |
-
-Production-ready Laravel + Livewire admin dashboard template. Fortify-backed auth with 2FA, password reset, and email verification. Spatie RBAC with role/permission management. Versioned admin API (`/api/v1/admin`) with session authentication. Monitoring via Laravel Telescope, Pulse, and Pail. Larastan static analysis.
-
----
-
 ### poddashboard
 
 | | |
@@ -108,20 +94,6 @@ Browser console for Codex CLI sessions. Real-time streaming chat via `wire:strea
 
 ---
 
-### BereanAI
-
-| | |
-|---|---|
-| **Path** | `BereanAI` |
-| **Type** | Application |
-| **Stack** | TypeScript, Node.js 22, TanStack Start, TanStack Router, Tailwind CSS, Auth.js, PostgreSQL, Docker Compose |
-| **GitHub** | [dunamismax/BereanAI](https://github.com/dunamismax/BereanAI) |
-| **Codeberg** | [dunamismax/BereanAI](https://codeberg.org/dunamismax/BereanAI) |
-
-Self-hosted Christian AI research workspace. Selectable specialist agents with OpenAI/Anthropic fallback. ESV-aware local context search. Auth.js with PostgreSQL sessions. OpenTelemetry + SigNoz observability. Rate limiting and security hardening.
-
----
-
 ### mtg-card-bot
 
 | | |
@@ -133,62 +105,6 @@ Self-hosted Christian AI research workspace. Selectable specialist agents with O
 | **Codeberg** | [dunamismax/mtg-card-bot](https://codeberg.org/dunamismax/mtg-card-bot) |
 
 Discord bot for Magic: The Gathering card lookups via Scryfall. Prefix commands and bracket syntax (`[[Card Name]]`). Random card with filters, rules lookup, multi-card queries. Rich embeds with prices, legality, and imagery. Per-user cooldowns and duplicate suppression.
-
----
-
-### c-from-the-ground-up
-
-| | |
-|---|---|
-| **Path** | `c-from-the-ground-up` |
-| **Type** | Educational curriculum |
-| **Stack** | C11, GCC/Clang, Make, ncurses, POSIX threads |
-| **GitHub** | [dunamismax/c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up) |
-| **Codeberg** | [dunamismax/c-from-the-ground-up](https://codeberg.org/dunamismax/c-from-the-ground-up) |
-
-Complete, open-source C programming curriculum. 35 progressive lessons across 5 parts (beginner to expert). Code-first learning with lessons embedded in code comments. Projects: calculators, text editors, network apps, multithreaded tools. Memory safety focus. Capstone: text adventure game.
-
----
-
-### hello-world-from-hell
-
-| | |
-|---|---|
-| **Path** | `hello-world-from-hell` |
-| **Type** | Novelty / systems programming showcase |
-| **Stack** | C17 (GNU extensions), SIMD (AVX2/NEON), POSIX threads |
-| **GitHub** | [dunamismax/hello-world-from-hell](https://github.com/dunamismax/hello-world-from-hell) |
-| **Codeberg** | [dunamismax/hello-world-from-hell](https://codeberg.org/dunamismax/hello-world-from-hell) |
-
-The most cursed Hello World ever written in C. 11 randomized execution modes including trigraph witchcraft, 30+ macros, and Duff's device. SIMD vectorization, threading, atomic operations. Cross-platform (x86_64, ARM64). 17/17 tests passing with benchmarks.
-
----
-
-### xray-chrome
-
-| | |
-|---|---|
-| **Path** | `xray-chrome` |
-| **Type** | Enterprise tooling |
-| **Stack** | PowerShell, Windows enterprise policies |
-| **GitHub** | [dunamismax/xray-chrome](https://github.com/dunamismax/xray-chrome) |
-| **Codeberg** | [dunamismax/xray-chrome](https://codeberg.org/dunamismax/xray-chrome) |
-
-PowerShell scripts to lock down Chrome on dedicated medical X-ray workstations. Restricts browsing to localhost only. Prevents automatic updates for medical software compatibility. Enterprise policy management via ADMX templates. Complete reversal script included. Windows 10/11.
-
----
-
-### imagingservices
-
-| | |
-|---|---|
-| **Path** | `imagingservices` |
-| **Type** | Support tooling / knowledge base |
-| **Stack** | Python, Shell scripts, Markdown |
-| **GitHub** | [dunamismax/imagingservices](https://github.com/dunamismax/imagingservices) |
-| **Codeberg** | [dunamismax/imagingservices](https://codeberg.org/dunamismax/imagingservices) |
-
-AI support repo for day-to-day imaging software support work. Manual search scripts (SymSync, Ultra, Opal, mOpal). PDF extraction pipeline for searchable manual text. Agent policy docs and knowledge base of product manual extracts.
 
 ---
 
@@ -238,11 +154,9 @@ GitHub profile page. Professional summary, featured project badges, contribution
 
 | Language | Repos |
 |---|---|
-| **PHP / Laravel** | TALLstack, poddashboard, mylife-rpg, codex-web, imaging-services-website |
-| **TypeScript** | scryai, BereanAI |
-| **Python** | mtg-card-bot, imagingservices |
-| **C** | c-from-the-ground-up, hello-world-from-hell |
-| **PowerShell** | xray-chrome |
+| **PHP / Laravel** | poddashboard, mylife-rpg, codex-web, imaging-services-website |
+| **TypeScript** | scryai |
+| **Python** | mtg-card-bot |
 | **Shell / Config** | configs |
 | **Markdown** | dunamismax |
 
@@ -250,9 +164,7 @@ GitHub profile page. Professional summary, featured project badges, contribution
 
 | Category | Repos |
 |---|---|
-| **Full-stack apps** | TALLstack, poddashboard, mylife-rpg, codex-web, BereanAI, imaging-services-website, scryai |
+| **Full-stack apps** | poddashboard, mylife-rpg, codex-web, imaging-services-website, scryai |
 | **Bots / automation** | mtg-card-bot |
-| **Educational** | c-from-the-ground-up, hello-world-from-hell |
-| **Enterprise / IT** | xray-chrome, imagingservices |
 | **Infrastructure / config** | configs, scryai (infra layer) |
 | **Profile / docs** | dunamismax |
