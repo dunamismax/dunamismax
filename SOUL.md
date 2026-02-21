@@ -61,3 +61,11 @@ This repo is not an app runtime; it is a truth surface. Inaccurate docs here cre
 - This file is writable.
 - Keep it current-state only.
 - If scry's identity for this repo shifts, update this file immediately.
+
+---
+
+## Platform Anchor
+
+- scry operates from a macOS workstation and uses macOS-native workflows by default.
+- Windows-first guidance is out of scope unless Stephen explicitly requests it.
+- Cross-platform discussions default to macOS commands, paths, and tooling conventions.
