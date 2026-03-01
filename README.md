@@ -26,19 +26,17 @@ primary_stack:
   - TypeScript
   - React 19
   - Bun
-  - Vite + React Router
-  - Tailwind CSS
+  - Vite + React Router 7
+  - Tailwind CSS v4
   - PostgreSQL + Drizzle ORM
 extended_stack:
-  - Node.js
   - Python
   - Bash
-  - PowerShell
-  - SQL
+  - Node.js
 operating_systems:
+  - macOS
   - Linux
   - Windows
-  - macOS
 mission: Build systems that are fast to ship, hard to break, and easy to operate.
 ```
 
@@ -52,7 +50,7 @@ mission: Build systems that are fast to ship, hard to break, and easy to operate
   <img src="https://img.shields.io/badge/React_19-UI_Runtime-61DAFB?style=for-the-badge&logo=react&logoColor=111827" alt="React" />
   <img src="https://img.shields.io/badge/TypeScript-Strict_by_Default-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Bun-Runtime_%2B_Package_Manager-F9F1E1?style=for-the-badge&logo=bun&logoColor=111827" alt="Bun" />
-  <img src="https://img.shields.io/badge/React_Router-Framework_Mode-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white" alt="React Router" />
+  <img src="https://img.shields.io/badge/React_Router_7-Framework_Mode-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white" alt="React Router" />
   <img src="https://img.shields.io/badge/PostgreSQL-Data_Layer-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
 </p>
 
@@ -60,11 +58,13 @@ mission: Build systems that are fast to ship, hard to break, and easy to operate
 
 | Project | What it is | Stack |
 |---|---|---|
-| [reactiveweb](https://github.com/dunamismax/reactiveweb) | Canonical React monorepo for production apps and shared packages, optimized for Bun workflows and predictable delivery. | Bun, React 19, TypeScript, React Router, Tailwind, Drizzle, Postgres |
-| [scryai](https://github.com/dunamismax/scryai) | AI engineering monorepo with infrastructure and app layers, designed for long-lived product iteration and operational control. | TypeScript, Bun, Qwik, Postgres, MinIO, Caddy |
-| [codex-web](https://github.com/dunamismax/codex-web) | Browser console for Codex CLI sessions with streaming UX and strong runtime controls. | Full-stack web app, realtime streaming, CLI orchestration |
-| [mylife-rpg](https://github.com/dunamismax/mylife-rpg) | Gamified productivity system focused on durable domain modeling and practical UX loops. | Product platform app |
-| [mtg-card-bot](https://github.com/dunamismax/mtg-card-bot) | Discord automation bot for MTG card lookup and utility workflows. | Python, Discord API |
+| [reactiveweb](https://github.com/dunamismax/reactiveweb) | Full-stack web app platform with auth, RBAC, and Hono API backend. | Bun, React 19, React Router 7, Hono, Tailwind v4, Drizzle, Postgres |
+| [open-video-downloader](https://github.com/dunamismax/open-video-downloader) | Self-hosted web app for downloading videos from 1700+ sites via yt-dlp. | Bun, React 19, Hono, WebSocket, Tailwind v4, Zod |
+| [repo-monitor](https://github.com/dunamismax/repo-monitor) | Real-time dashboard for monitoring AI agent activity across git repos. | Bun, React 19, React Router 7, SSE, Tailwind v4 |
+| [poddashboard](https://github.com/dunamismax/poddashboard) | Pod management and event dashboard with auth and role-based permissions. | Bun, React 19, React Router 7, Tailwind v4, Drizzle, Postgres |
+| [mylife-rpg](https://github.com/dunamismax/mylife-rpg) | Gamified productivity system with quests, XP, leveling, and achievements. | Bun, React 19, React Router 7, Drizzle, Postgres |
+| [scryai](https://github.com/dunamismax/scryai) | Operations CLI and identity hub for cross-repo orchestration and workstation management. | Bun, TypeScript, Biome |
+| [mtg-card-bot](https://github.com/dunamismax/mtg-card-bot) | Discord bot for MTG card lookup via Scryfall with rich embeds and rate limiting. | Python, discord.py, httpx |
 
 ## Engineering Style
 
@@ -76,8 +76,8 @@ mission: Build systems that are fast to ship, hard to break, and easy to operate
 
 ## Current Focus (2026)
 
-- Scaling `reactiveweb` as the primary React/TypeScript/Bun platform.
-- Converging app standards around typed boundaries, shared packages, and clean monorepo orchestration.
+- Shipping production apps on the React 19 + React Router 7 + Bun stack.
+- Converging all projects around typed boundaries, shared patterns, and clean architecture.
 - Production-hardening auth, data, and deployment workflows.
 - Maintaining GitHub + Codeberg mirroring for source-control resilience.
 

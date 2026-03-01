@@ -1,8 +1,8 @@
 # Repository Index
 
-> Complete index of Stephen Sawyer's (`dunamismax`) repositories, their purpose, stack, and source control strategy.
-> All repos live under `/home/sawyer/github/` and are mirrored across GitHub and Codeberg.
-> Last updated: 2026-02-17.
+> Complete index of Stephen Sawyer's (`dunamismax`) repositories.
+> All repos live under `~/github/` and most are mirrored across GitHub and Codeberg.
+> Last updated: 2026-03-01.
 
 ---
 
@@ -10,12 +10,12 @@
 
 ### Dual-Remote Mirroring (GitHub + Codeberg)
 
-Every repository uses a single `origin` remote with dual push URLs:
+Most repositories use a single `origin` remote with dual push URLs:
 
 ```
-origin  git@github.com:dunamismax/<repo>.git   (fetch)
-origin  git@github.com:dunamismax/<repo>.git   (push)
-origin  git@codeberg.org:dunamismax/<repo>.git  (push)
+origin  git@github.com-dunamismax:dunamismax/<repo>.git   (fetch)
+origin  git@github.com-dunamismax:dunamismax/<repo>.git   (push)
+origin  git@codeberg.org-dunamismax:dunamismax/<repo>.git  (push)
 ```
 
 One `git push` publishes to both hosts. This is an intentional resilience pattern — platform risk is not existential when source control is redundant across providers.
@@ -25,30 +25,47 @@ One `git push` publishes to both hosts. This is an intentional resilience patter
 - All remotes use **SSH**, never HTTPS.
 - Fetch comes from GitHub. Push goes to both GitHub and Codeberg.
 - New repos get dual push URLs wired immediately after clone or init.
-- Force push to a secondary mirror is only allowed for initial bootstrap, with explicit approval.
 - SSH host config and dedicated identities are maintained in `~/.ssh/config` for both providers.
-
-### Why
-
-- **Sovereignty**: If GitHub goes down or changes policy, Codeberg has the full history.
-- **Simplicity**: No sync scripts, no cron jobs. The git push URL list handles it natively.
-- **Zero friction**: The workflow is identical to single-remote — `git push` just does more.
+- Use `bun run scry:sync:remotes` in the scryai repo to verify and fix remotes across all projects.
 
 ---
 
 ## Repositories
 
-### scryai
+### reactiveweb
 
 | | |
 |---|---|
-| **Path** | `scryai` |
-| **Type** | Monorepo — infrastructure, apps, and agent operating docs |
-| **Stack** | TypeScript, Qwik + Qwik City, Bun, Vite, Tailwind CSS v4, PostgreSQL (pgvector, pgcrypto), postgres.js, Better Auth, pg-boss, MinIO, Caddy |
-| **GitHub** | [dunamismax/scryai](https://github.com/dunamismax/scryai) |
-| **Codeberg** | [dunamismax/scryai](https://codeberg.org/dunamismax/scryai) |
+| **Type** | Full-stack web application |
+| **Stack** | Bun, React 19, React Router 7, Hono, Tailwind CSS v4, PostgreSQL, Drizzle ORM, Zod, Biome |
+| **GitHub** | [dunamismax/reactiveweb](https://github.com/dunamismax/reactiveweb) |
+| **Codeberg** | [dunamismax/reactiveweb](https://codeberg.org/dunamismax/reactiveweb) |
 
-Canonical root repo for **scry** (AI engineering partner). Contains shared infrastructure (Docker Compose with PostgreSQL, MinIO, Caddy), monorepo apps under `apps/`, root automation scripts, and the identity/operations contracts (`SOUL.md`, `AGENTS.md`). Current app: `bedrock-web` (full-stack template, migrating from React Router to Qwik).
+Full-stack web app platform with authentication, RBAC, Hono API backend, and dark-themed UI with shadcn/ui patterns.
+
+---
+
+### open-video-downloader
+
+| | |
+|---|---|
+| **Type** | Self-hosted web application |
+| **Stack** | Bun, React 19, React Router 7, Hono, WebSocket, Tailwind CSS v4, Zod, Biome |
+| **GitHub** | [dunamismax/open-video-downloader](https://github.com/dunamismax/open-video-downloader) |
+
+Self-hosted web app for downloading videos from 1700+ sites. Paste a URL, pick a format, download. Powered by yt-dlp and ffmpeg. Real-time progress via WebSocket.
+
+---
+
+### repo-monitor
+
+| | |
+|---|---|
+| **Type** | Developer tool |
+| **Stack** | Bun, React 19, React Router 7, SSE, Tailwind CSS v4, Biome |
+| **GitHub** | [dunamismax/repo-monitor](https://github.com/dunamismax/repo-monitor) |
+
+Real-time dashboard for monitoring AI agent activity across git repositories. Detects Claude, Cursor, Aider, and Codex. Keyboard navigation, diff preview, activity firehose.
 
 ---
 
@@ -56,13 +73,12 @@ Canonical root repo for **scry** (AI engineering partner). Contains shared infra
 
 | | |
 |---|---|
-| **Path** | `poddashboard` |
-| **Type** | Application |
-| **Stack** | PHP 8.2+, Laravel 12, Livewire 4, Fortify, Flux UI, Spatie Permission, Pest |
+| **Type** | Full-stack web application |
+| **Stack** | Bun, React 19, React Router 7, Tailwind CSS v4, PostgreSQL, Drizzle ORM, Zod, Biome |
 | **GitHub** | [dunamismax/poddashboard](https://github.com/dunamismax/poddashboard) |
 | **Codeberg** | [dunamismax/poddashboard](https://codeberg.org/dunamismax/poddashboard) |
 
-Lean pod/event management app with passwordless OTP sign-in and session-authenticated API endpoints. Telescope and Pulse monitoring. PHPStan static analysis.
+Pod management and event dashboard with credentials auth, role-based permissions, and session-authenticated API endpoints.
 
 ---
 
@@ -70,27 +86,25 @@ Lean pod/event management app with passwordless OTP sign-in and session-authenti
 
 | | |
 |---|---|
-| **Path** | `mylife-rpg` |
-| **Type** | Application |
-| **Stack** | PHP 8.2+, Laravel 12, Livewire 4, Fortify, Flux UI, Spatie Permission, Pest |
+| **Type** | Full-stack web application |
+| **Stack** | Bun, React 19, React Router 7, Tailwind CSS v4, PostgreSQL, Drizzle ORM, Zod, Biome |
 | **GitHub** | [dunamismax/mylife-rpg](https://github.com/dunamismax/mylife-rpg) |
 | **Codeberg** | [dunamismax/mylife-rpg](https://codeberg.org/dunamismax/mylife-rpg) |
 
-Gamified productivity engine. Quests, habits, XP/leveling, achievements, and stat progression. Fortify authentication with RBAC. Telescope and Pulse monitoring.
+Gamified productivity system. Quests, habits, XP/leveling, stat progression, and achievements. Domain-driven RPG engine with testable rules.
 
 ---
 
-### codex-web
+### scryai
 
 | | |
 |---|---|
-| **Path** | `codex-web` |
-| **Type** | Application |
-| **Stack** | PHP 8.2+, Laravel, Livewire, Flux UI, Tailwind CSS v4 |
-| **GitHub** | [dunamismax/codex-web](https://github.com/dunamismax/codex-web) |
-| **Codeberg** | [dunamismax/codex-web](https://codeberg.org/dunamismax/codex-web) |
+| **Type** | Operations CLI / identity hub |
+| **Stack** | Bun, TypeScript, Biome |
+| **GitHub** | [dunamismax/scryai](https://github.com/dunamismax/scryai) |
+| **Codeberg** | [dunamismax/scryai](https://codeberg.org/dunamismax/scryai) |
 
-Browser console for Codex CLI sessions. Real-time streaming chat via `wire:stream` and SSE. Session continuation with thread IDs. Configurable runtime controls (model, reasoning, sandbox, approval policy). Server-side workspace path boundary validation.
+Operations CLI and identity hub for **scry**. Workstation bootstrap, project orchestration, SSH key management, dual-remote sync, and cross-repo health checks.
 
 ---
 
@@ -98,27 +112,25 @@ Browser console for Codex CLI sessions. Real-time streaming chat via `wire:strea
 
 | | |
 |---|---|
-| **Path** | `mtg-card-bot` |
-| **Type** | Bot / automation |
+| **Type** | Discord bot |
 | **Stack** | Python 3.12+, discord.py, httpx, uv |
 | **GitHub** | [dunamismax/mtg-card-bot](https://github.com/dunamismax/mtg-card-bot) |
 | **Codeberg** | [dunamismax/mtg-card-bot](https://codeberg.org/dunamismax/mtg-card-bot) |
 
-Discord bot for Magic: The Gathering card lookups via Scryfall. Prefix commands and bracket syntax (`[[Card Name]]`). Random card with filters, rules lookup, multi-card queries. Rich embeds with prices, legality, and imagery. Per-user cooldowns and duplicate suppression.
+Discord bot for Magic: The Gathering card lookups via Scryfall. Bracket syntax, random pulls, rules lookup, rich embeds with prices and legality. Per-user cooldowns and rate limiting.
 
 ---
 
-### imaging-services-website
+### Sawyer-Visual-Media
 
 | | |
 |---|---|
-| **Path** | `imaging-services-website` |
-| **Type** | Website |
-| **Stack** | PHP 8.2+, Laravel 12, Livewire 4, Tailwind CSS, Pest |
-| **GitHub** | [dunamismax/imaging-services-website](https://github.com/dunamismax/imaging-services-website) |
-| **Codeberg** | [dunamismax/imaging-services-website](https://codeberg.org/dunamismax/imaging-services-website) |
+| **Type** | Business operations |
+| **Stack** | Markdown, business documents |
+| **GitHub** | [dunamismax/Sawyer-Visual-Media](https://github.com/dunamismax/Sawyer-Visual-Media) |
+| **Codeberg** | [dunamismax/Sawyer-Visual-Media](https://codeberg.org/dunamismax/Sawyer-Visual-Media) |
 
-Imaging Services department website built with Laravel and Livewire.
+Business repository for Sawyer Visual Media — professional aerial drone photography and videography. Marketing, operations, legal, finances, portfolio, and website.
 
 ---
 
@@ -126,13 +138,38 @@ Imaging Services department website built with Laravel and Livewire.
 
 | | |
 |---|---|
-| **Path** | `configs` |
 | **Type** | Dotfiles / system configuration |
 | **Stack** | Shell (bash/zsh), SSH config, terminal config |
 | **GitHub** | [dunamismax/configs](https://github.com/dunamismax/configs) |
 | **Codeberg** | [dunamismax/configs](https://codeberg.org/dunamismax/configs) |
 
-Personal dotfiles and system configuration. Shell profiles (`.zshrc`, `.bash_profile`, `.profile`, `.zprofile`), SSH config, Ghostty terminal config, Ubuntu-WSL settings.
+Personal workstation configuration backups. Shell profiles, SSH config, Ghostty terminal, VS Code Insiders settings.
+
+---
+
+### images
+
+| | |
+|---|---|
+| **Type** | Static assets |
+| **Stack** | PNG, JPG, SVG, GIF, MOV |
+| **GitHub** | [dunamismax/images](https://github.com/dunamismax/images) |
+| **Codeberg** | [dunamismax/images](https://codeberg.org/dunamismax/images) |
+
+Central media library for reusable images, icons, screenshots, and visual assets across projects.
+
+---
+
+### work
+
+| | |
+|---|---|
+| **Type** | Work documents |
+| **Stack** | Documents, templates |
+| **GitHub** | [dunamismax/work](https://github.com/dunamismax/work) |
+| **Codeberg** | [dunamismax/work](https://codeberg.org/dunamismax/work) |
+
+Work-related documents, email templates, employee handbook materials, marketing assets, and the imaging services website.
 
 ---
 
@@ -140,13 +177,12 @@ Personal dotfiles and system configuration. Shell profiles (`.zshrc`, `.bash_pro
 
 | | |
 |---|---|
-| **Path** | `dunamismax` |
 | **Type** | GitHub profile README |
 | **Stack** | Markdown, GitHub widgets |
 | **GitHub** | [dunamismax/dunamismax](https://github.com/dunamismax/dunamismax) |
 | **Codeberg** | [dunamismax/dunamismax](https://codeberg.org/dunamismax/dunamismax) |
 
-GitHub profile page. Professional summary, featured project badges, contribution stats, and tech arsenal display.
+GitHub profile page. Professional summary, featured projects, contribution stats, and tech stack display.
 
 ---
 
@@ -154,17 +190,19 @@ GitHub profile page. Professional summary, featured project badges, contribution
 
 | Language | Repos |
 |---|---|
-| **PHP / Laravel** | poddashboard, mylife-rpg, codex-web, imaging-services-website |
-| **TypeScript** | scryai |
+| **TypeScript / React** | reactiveweb, open-video-downloader, repo-monitor, poddashboard, mylife-rpg |
+| **TypeScript (CLI)** | scryai |
 | **Python** | mtg-card-bot |
 | **Shell / Config** | configs |
-| **Markdown** | dunamismax |
+| **Markdown / Docs** | dunamismax, images, Sawyer-Visual-Media, work |
 
 ## By Category
 
 | Category | Repos |
 |---|---|
-| **Full-stack apps** | poddashboard, mylife-rpg, codex-web, imaging-services-website, scryai |
+| **Full-stack apps** | reactiveweb, poddashboard, mylife-rpg |
+| **Developer tools** | open-video-downloader, repo-monitor |
 | **Bots / automation** | mtg-card-bot |
-| **Infrastructure / config** | configs, scryai (infra layer) |
-| **Profile / docs** | dunamismax |
+| **Infrastructure / ops** | scryai, configs |
+| **Business / docs** | Sawyer-Visual-Media, work |
+| **Profile / assets** | dunamismax, images |
