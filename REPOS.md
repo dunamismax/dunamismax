@@ -2,7 +2,7 @@
 
 > Complete index of Stephen Sawyer's (`dunamismax`) repositories.
 > All repos live under `~/github/` and most are mirrored across GitHub and Codeberg.
-> Last updated: 2026-03-01.
+> Last updated: 2026-03-02.
 
 ---
 
@@ -26,7 +26,7 @@ One `git push` publishes to both hosts. This is an intentional resilience patter
 - Fetch comes from GitHub. Push goes to both GitHub and Codeberg.
 - New repos get dual push URLs wired immediately after clone or init.
 - SSH host config and dedicated identities are maintained in `~/.ssh/config` for both providers.
-- Use `bun run scry:sync:remotes` in the scryai repo to verify and fix remotes across all projects.
+- Use `bun run scry:sync:remotes` in the scryai-typescript repo to verify and fix remotes across all projects.
 
 ---
 
@@ -52,6 +52,7 @@ Full-stack web app platform with authentication, RBAC, Hono API backend, and dar
 | **Type** | Self-hosted web application |
 | **Stack** | Bun, React 19, React Router 7, Hono, WebSocket, Tailwind CSS v4, Zod, Biome |
 | **GitHub** | [dunamismax/open-video-downloader](https://github.com/dunamismax/open-video-downloader) |
+| **Codeberg** | [dunamismax/open-video-downloader](https://codeberg.org/dunamismax/open-video-downloader) |
 
 Self-hosted web app for downloading videos from 1700+ sites. Paste a URL, pick a format, download. Powered by yt-dlp and ffmpeg. Real-time progress via WebSocket.
 
@@ -64,6 +65,7 @@ Self-hosted web app for downloading videos from 1700+ sites. Paste a URL, pick a
 | **Type** | Developer tool |
 | **Stack** | Bun, React 19, React Router 7, SSE, Tailwind CSS v4, Biome |
 | **GitHub** | [dunamismax/repo-monitor](https://github.com/dunamismax/repo-monitor) |
+| **Codeberg** | [dunamismax/repo-monitor](https://codeberg.org/dunamismax/repo-monitor) |
 
 Real-time dashboard for monitoring AI agent activity across git repositories. Detects Claude, Cursor, Aider, and Codex. Keyboard navigation, diff preview, activity firehose.
 
@@ -95,16 +97,55 @@ Gamified productivity system. Quests, habits, XP/leveling, stat progression, and
 
 ---
 
-### scryai
+### elchess
+
+| | |
+|---|---|
+| **Type** | Self-hosted web application |
+| **Stack** | Bun, React 19, React Router 7, Vite, chess.js, Tailwind CSS v4, Biome |
+| **GitHub** | [dunamismax/elchess](https://github.com/dunamismax/elchess) |
+| **Codeberg** | [dunamismax/elchess](https://codeberg.org/dunamismax/elchess) |
+
+Self-hostable chess platform. Interactive board with click-to-move, legal move highlighting, full game state detection, move history, captured pieces, and material tracking.
+
+---
+
+### CallRift
+
+| | |
+|---|---|
+| **Type** | Mobile application |
+| **Stack** | React Native, Expo SDK 55, React 19, Zustand, Fastify, Drizzle, SQLite, Biome |
+| **GitHub** | [dunamismax/CallRift](https://github.com/dunamismax/CallRift) |
+| **Codeberg** | [dunamismax/CallRift](https://codeberg.org/dunamismax/CallRift) |
+
+Mobile SIP/VoIP client with contact management, call history search, real-time messaging, pull-to-refresh, persisted settings, and error boundaries. Cross-platform via Expo.
+
+---
+
+### scryai-typescript
 
 | | |
 |---|---|
 | **Type** | Operations CLI / identity hub |
 | **Stack** | Bun, TypeScript, Biome |
-| **GitHub** | [dunamismax/scryai](https://github.com/dunamismax/scryai) |
-| **Codeberg** | [dunamismax/scryai](https://codeberg.org/dunamismax/scryai) |
+| **GitHub** | [dunamismax/scryai-typescript](https://github.com/dunamismax/scryai-typescript) |
+| **Codeberg** | [dunamismax/scryai-typescript](https://codeberg.org/dunamismax/scryai-typescript) |
 
-Operations CLI and identity hub for **scry**. Workstation bootstrap, project orchestration, SSH key management, dual-remote sync, and cross-repo health checks.
+Operations CLI and identity hub for Scry. Workstation bootstrap, project orchestration, SSH key management, dual-remote sync, OpenClaw config, and cross-repo health checks.
+
+---
+
+### scry-trader
+
+| | |
+|---|---|
+| **Type** | Trading system |
+| **Stack** | Python 3.12+, ib-async, Anthropic Claude, Click, Rich, Pydantic, pandas |
+| **GitHub** | [dunamismax/scry-trader](https://github.com/dunamismax/scry-trader) |
+| **Codeberg** | [dunamismax/scry-trader](https://codeberg.org/dunamismax/scry-trader) |
+
+AI-assisted, human-directed trading system. Claude analyzes and recommends, you confirm. IBKR integration for live portfolio, quotes, and order execution. Rule-based risk management, trade journaling, CLI-native interface.
 
 ---
 
@@ -190,9 +231,10 @@ GitHub profile page. Professional summary, featured projects, contribution stats
 
 | Language | Repos |
 |---|---|
-| **TypeScript / React** | reactiveweb, open-video-downloader, repo-monitor, poddashboard, mylife-rpg |
-| **TypeScript (CLI)** | scryai |
-| **Python** | mtg-card-bot |
+| **TypeScript / React** | reactiveweb, open-video-downloader, repo-monitor, poddashboard, mylife-rpg, elchess |
+| **TypeScript (Mobile)** | CallRift |
+| **TypeScript (CLI)** | scryai-typescript |
+| **Python** | scry-trader, mtg-card-bot |
 | **Shell / Config** | configs |
 | **Markdown / Docs** | dunamismax, images, Sawyer-Visual-Media, work |
 
@@ -200,9 +242,12 @@ GitHub profile page. Professional summary, featured projects, contribution stats
 
 | Category | Repos |
 |---|---|
-| **Full-stack apps** | reactiveweb, poddashboard, mylife-rpg |
-| **Developer tools** | open-video-downloader, repo-monitor |
+| **Full-stack apps** | reactiveweb, poddashboard, mylife-rpg, elchess |
+| **Self-hosted tools** | open-video-downloader |
+| **Mobile** | CallRift |
+| **Developer tools** | repo-monitor, scryai-typescript |
+| **Trading** | scry-trader |
 | **Bots / automation** | mtg-card-bot |
-| **Infrastructure / ops** | scryai, configs |
+| **Infrastructure / ops** | configs |
 | **Business / docs** | Sawyer-Visual-Media, work |
 | **Profile / assets** | dunamismax, images |
