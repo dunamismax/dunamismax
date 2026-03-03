@@ -6,11 +6,26 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/openclaw/openclaw/pull/32217"><img src="https://img.shields.io/badge/🦀_OpenClaw-Contributor-ea580c?style=flat&labelColor=0f172a" alt="OpenClaw Contributor" /></a>&nbsp;
+  <a href="https://github.com/openclaw/openclaw/pulls?q=is%3Apr+author%3Adunamismax"><img src="https://img.shields.io/badge/🦀_OpenClaw-Contributor-ea580c?style=flat&labelColor=0f172a" alt="OpenClaw Contributor" /></a>&nbsp;
   <a href="https://github.com/dunamismax"><img src="https://img.shields.io/github/followers/dunamismax?style=flat&label=Followers&color=fb923c&labelColor=0f172a" alt="Followers" /></a>&nbsp;
   <a href="https://codeberg.org/dunamismax"><img src="https://img.shields.io/badge/Codeberg-Mirror-2185D0?style=flat&logo=codeberg&logoColor=white" alt="Codeberg" /></a>&nbsp;
   <img src="https://komarev.com/ghpvc/?username=dunamismax&label=Views&color=ea580c&style=flat" alt="Profile views" />
 </p>
+
+---
+
+## Open Source
+
+Active contributor to [**OpenClaw**](https://github.com/openclaw/openclaw) — the open-source AI agent gateway.
+
+| PR | Type | Description |
+|---|---|---|
+| [#32217](https://github.com/openclaw/openclaw/pull/32217) | fix | Signal reaction `messageId` fallback + queued message `channelId` passthrough |
+| [#32396](https://github.com/openclaw/openclaw/pull/32396) | docs | Signal block streaming and progressive delivery guide |
+| [#32397](https://github.com/openclaw/openclaw/pull/32397) | test | Numeric `messageId` coverage for Signal reaction handler |
+| [#32398](https://github.com/openclaw/openclaw/pull/32398) | docs | Recommended DM configuration for personal assistant use |
+
+Signal has no subsystem maintainer — working to establish ownership through consistent contributions.
 
 ---
 
@@ -33,42 +48,44 @@ Validation     Zod
 Quality        Biome (lint + format)
 ```
 
+Python, Rust, Go — whatever the job demands. TypeScript is the default, not the religion.
+
 ---
 
 ## Projects
 
-### Full-Stack Applications
+### Applications
 
 <table>
   <tr>
     <td width="50%">
-      <h3><a href="https://github.com/dunamismax/reactiveweb">reactiveweb</a></h3>
+      <h3><a href="https://github.com/dunamismax/homepage">homepage</a></h3>
       <p>Full-stack web platform with session auth, RBAC, Hono API, and dark-themed UI. The canonical template for the stack.</p>
       <p><sub>Bun · React 19 · React Router 7 · Hono · Postgres · Drizzle · Tailwind v4 · shadcn/ui</sub></p>
     </td>
     <td width="50%">
-      <h3><a href="https://github.com/dunamismax/poddashboard">poddashboard</a></h3>
-      <p>Pod management and event dashboard with credentials auth, role-based permissions, and session-authenticated API.</p>
-      <p><sub>Bun · React 19 · React Router 7 · Hono · Postgres · Drizzle · TanStack Query</sub></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3><a href="https://github.com/dunamismax/mylife-rpg">mylife-rpg</a></h3>
+      <h3><a href="https://github.com/dunamismax/questlog">questlog</a></h3>
       <p>Gamified productivity system. Quests, habits, XP, leveling, stat progression, and achievements — powered by a testable domain-driven RPG engine.</p>
       <p><sub>Bun · React 19 · React Router 7 · Postgres · Drizzle · TanStack Query · shadcn/ui</sub></p>
     </td>
-    <td width="50%">
-      <h3><a href="https://github.com/dunamismax/open-video-downloader">open-video-downloader</a></h3>
-      <p>Self-hosted video downloader for 1700+ sites. Paste a URL, pick a format, download. Real-time progress via WebSocket. Powered by yt-dlp + ffmpeg.</p>
-      <p><sub>Bun · React 19 · Hono · WebSocket · TanStack Query · Tailwind v4</sub></p>
-    </td>
   </tr>
   <tr>
+    <td width="50%">
+      <h3><a href="https://github.com/dunamismax/podwatch">podwatch</a></h3>
+      <p>Pod management and event dashboard with credentials auth, role-based permissions, and session-authenticated API.</p>
+      <p><sub>Bun · React 19 · React Router 7 · Hono · Postgres · Drizzle · TanStack Query</sub></p>
+    </td>
     <td width="50%">
       <h3><a href="https://github.com/dunamismax/elchess">elchess</a></h3>
       <p>Self-hostable chess platform. Interactive board with legal move highlighting, full game state detection, move history, and material tracking.</p>
       <p><sub>Bun · React 19 · React Router 7 · Vite · chess.js · Tailwind v4</sub></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3><a href="https://github.com/dunamismax/rip">rip</a></h3>
+      <p>Self-hosted video downloader for 1700+ sites. Paste a URL, pick a format, download. Real-time progress via WebSocket. Powered by yt-dlp + ffmpeg.</p>
+      <p><sub>Bun · React 19 · Hono · WebSocket · TanStack Query · Tailwind v4</sub></p>
     </td>
     <td width="50%">
       <h3><a href="https://github.com/dunamismax/CallRift">CallRift</a></h3>
@@ -78,40 +95,44 @@ Quality        Biome (lint + format)
   </tr>
 </table>
 
-### Developer Tools & Automation
+### Tools & Automation
 
 <table>
   <tr>
     <td width="50%">
-      <h3><a href="https://github.com/dunamismax/repo-monitor">repo-monitor</a></h3>
+      <h3><a href="https://github.com/dunamismax/sentinel">sentinel</a></h3>
       <p>Real-time dashboard for monitoring AI agent activity across git repos. Detects Claude, Cursor, Aider, and Codex. SSE streaming, inline diffs, keyboard-driven UI.</p>
       <p><sub>Bun · React 19 · React Router 7 · SSE · Tailwind v4</sub></p>
     </td>
     <td width="50%">
-      <h3><a href="https://github.com/dunamismax/scryai-typescript">scryai-typescript</a></h3>
-      <p>Operations CLI and agent identity repo. Workstation bootstrap, project orchestration, dual-remote sync, cross-repo health checks, and OpenClaw config.</p>
+      <h3><a href="https://github.com/dunamismax/grimoire">grimoire</a></h3>
+      <p>Agent identity and operations toolkit. Workstation bootstrap, project orchestration, dual-remote sync, cross-repo health checks, and OpenClaw workspace management.</p>
       <p><sub>Bun · TypeScript · Biome</sub></p>
     </td>
   </tr>
   <tr>
     <td width="50%">
-      <h3><a href="https://github.com/dunamismax/scry-trader">scry-trader</a></h3>
-      <p>Automated trading system with Interactive Brokers integration and Claude-powered market analysis. Real-time data, strategy execution, risk management.</p>
-      <p><sub>Python · IBKR API · Claude · asyncio</sub></p>
+      <h3><a href="https://github.com/dunamismax/augur">augur</a></h3>
+      <p>Automated trading system with Interactive Brokers integration and AI-powered market analysis. Real-time data, strategy execution, risk management.</p>
+      <p><sub>Python · IBKR API · asyncio</sub></p>
     </td>
     <td width="50%">
-      <h3><a href="https://github.com/dunamismax/mtg-card-bot">mtg-card-bot</a></h3>
+      <h3><a href="https://github.com/dunamismax/oracle">oracle</a></h3>
       <p>Discord bot for Magic: The Gathering card lookups via Scryfall. Bracket syntax, random pulls, rules lookup, rich embeds with prices and legality.</p>
       <p><sub>Python 3.12+ · discord.py · httpx · Scryfall API</sub></p>
     </td>
   </tr>
   <tr>
     <td width="50%">
-      <h3><a href="https://github.com/dunamismax/configs">configs</a></h3>
-      <p>Dotfiles and workstation config. Shell profiles, SSH config, Ghostty terminal, VS Code Insiders settings — organized by OS.</p>
+      <h3><a href="https://github.com/dunamismax/PodScry">PodScry</a></h3>
+      <p>Pre-configured OpenClaw instance for Discord playgroups. MTG Commander knowledge, Scryfall card lookup skill, Docker-ready deployment.</p>
+      <p><sub>OpenClaw · Docker · Scryfall</sub></p>
+    </td>
+    <td width="50%">
+      <h3><a href="https://github.com/dunamismax/dotfiles">dotfiles</a></h3>
+      <p>Workstation config. Shell profiles, SSH config, Ghostty terminal, VS Code Insiders settings — organized by OS and path.</p>
       <p><sub>Zsh · Bash · SSH · Ghostty</sub></p>
     </td>
-    <td width="50%"></td>
   </tr>
 </table>
 
