@@ -26,72 +26,72 @@ One `git push` publishes to both hosts. This is an intentional resilience patter
 - Fetch comes from GitHub. Push goes to both GitHub and Codeberg.
 - New repos get dual push URLs wired immediately after clone or init.
 - SSH host config and dedicated identities are maintained in `~/.ssh/config` for both providers.
-- Use `bun run scry:sync:remotes` in the scryai-typescript repo to verify and fix remotes across all projects.
+- Use `bun run scry:sync:remotes` in the grimoire repo to verify and fix remotes across all projects.
 
 ---
 
 ## Repositories
 
-### reactiveweb
+### homepage
 
 | | |
 |---|---|
 | **Type** | Full-stack web application |
 | **Stack** | Bun, React 19, React Router 7, Hono, Tailwind CSS v4, PostgreSQL, Drizzle ORM, Zod, Biome |
-| **GitHub** | [dunamismax/reactiveweb](https://github.com/dunamismax/reactiveweb) |
-| **Codeberg** | [dunamismax/reactiveweb](https://codeberg.org/dunamismax/reactiveweb) |
+| **GitHub** | [dunamismax/homepage](https://github.com/dunamismax/homepage) |
+| **Codeberg** | [dunamismax/homepage](https://codeberg.org/dunamismax/homepage) |
 
 Full-stack web app platform with authentication, RBAC, Hono API backend, and dark-themed UI with shadcn/ui patterns.
 
 ---
 
-### open-video-downloader
+### rip
 
 | | |
 |---|---|
 | **Type** | Self-hosted web application |
 | **Stack** | Bun, React 19, React Router 7, Hono, WebSocket, Tailwind CSS v4, Zod, Biome |
-| **GitHub** | [dunamismax/open-video-downloader](https://github.com/dunamismax/open-video-downloader) |
-| **Codeberg** | [dunamismax/open-video-downloader](https://codeberg.org/dunamismax/open-video-downloader) |
+| **GitHub** | [dunamismax/rip](https://github.com/dunamismax/rip) |
+| **Codeberg** | [dunamismax/rip](https://codeberg.org/dunamismax/rip) |
 
 Self-hosted web app for downloading videos from 1700+ sites. Paste a URL, pick a format, download. Powered by yt-dlp and ffmpeg. Real-time progress via WebSocket.
 
 ---
 
-### repo-monitor
+### sentinel
 
 | | |
 |---|---|
 | **Type** | Developer tool |
 | **Stack** | Bun, React 19, React Router 7, SSE, Tailwind CSS v4, Biome |
-| **GitHub** | [dunamismax/repo-monitor](https://github.com/dunamismax/repo-monitor) |
-| **Codeberg** | [dunamismax/repo-monitor](https://codeberg.org/dunamismax/repo-monitor) |
+| **GitHub** | [dunamismax/sentinel](https://github.com/dunamismax/sentinel) |
+| **Codeberg** | [dunamismax/sentinel](https://codeberg.org/dunamismax/sentinel) |
 
 Real-time dashboard for monitoring AI agent activity across git repositories. Detects Claude, Cursor, Aider, and Codex. Keyboard navigation, diff preview, activity firehose.
 
 ---
 
-### poddashboard
+### podwatch
 
 | | |
 |---|---|
 | **Type** | Full-stack web application |
 | **Stack** | Bun, React 19, React Router 7, Tailwind CSS v4, PostgreSQL, Drizzle ORM, Zod, Biome |
-| **GitHub** | [dunamismax/poddashboard](https://github.com/dunamismax/poddashboard) |
-| **Codeberg** | [dunamismax/poddashboard](https://codeberg.org/dunamismax/poddashboard) |
+| **GitHub** | [dunamismax/podwatch](https://github.com/dunamismax/podwatch) |
+| **Codeberg** | [dunamismax/podwatch](https://codeberg.org/dunamismax/podwatch) |
 
 Pod management and event dashboard with credentials auth, role-based permissions, and session-authenticated API endpoints.
 
 ---
 
-### mylife-rpg
+### questlog
 
 | | |
 |---|---|
 | **Type** | Full-stack web application |
 | **Stack** | Bun, React 19, React Router 7, Tailwind CSS v4, PostgreSQL, Drizzle ORM, Zod, Biome |
-| **GitHub** | [dunamismax/mylife-rpg](https://github.com/dunamismax/mylife-rpg) |
-| **Codeberg** | [dunamismax/mylife-rpg](https://codeberg.org/dunamismax/mylife-rpg) |
+| **GitHub** | [dunamismax/questlog](https://github.com/dunamismax/questlog) |
+| **Codeberg** | [dunamismax/questlog](https://codeberg.org/dunamismax/questlog) |
 
 Gamified productivity system. Quests, habits, XP/leveling, stat progression, and achievements. Domain-driven RPG engine with testable rules.
 
@@ -123,40 +123,40 @@ Mobile SIP/VoIP client with contact management, call history search, real-time m
 
 ---
 
-### scryai-typescript
+### grimoire
 
 | | |
 |---|---|
 | **Type** | Operations CLI / identity hub |
 | **Stack** | Bun, TypeScript, Biome |
-| **GitHub** | [dunamismax/scryai-typescript](https://github.com/dunamismax/scryai-typescript) |
-| **Codeberg** | [dunamismax/scryai-typescript](https://codeberg.org/dunamismax/scryai-typescript) |
+| **GitHub** | [dunamismax/grimoire](https://github.com/dunamismax/grimoire) |
+| **Codeberg** | [dunamismax/grimoire](https://codeberg.org/dunamismax/grimoire) |
 
 Operations CLI and identity hub for Scry. Workstation bootstrap, project orchestration, SSH key management, dual-remote sync, OpenClaw config, and cross-repo health checks.
 
 ---
 
-### scry-trader
+### augur
 
 | | |
 |---|---|
 | **Type** | Trading system |
 | **Stack** | Python 3.12+, ib-async, Anthropic Claude, Click, Rich, Pydantic, pandas |
-| **GitHub** | [dunamismax/scry-trader](https://github.com/dunamismax/scry-trader) |
-| **Codeberg** | [dunamismax/scry-trader](https://codeberg.org/dunamismax/scry-trader) |
+| **GitHub** | [dunamismax/augur](https://github.com/dunamismax/augur) |
+| **Codeberg** | [dunamismax/augur](https://codeberg.org/dunamismax/augur) |
 
 AI-assisted, human-directed trading system. Claude analyzes and recommends, you confirm. IBKR integration for live portfolio, quotes, and order execution. Rule-based risk management, trade journaling, CLI-native interface.
 
 ---
 
-### mtg-card-bot
+### oracle
 
 | | |
 |---|---|
 | **Type** | Discord bot |
 | **Stack** | Python 3.12+, discord.py, httpx, uv |
-| **GitHub** | [dunamismax/mtg-card-bot](https://github.com/dunamismax/mtg-card-bot) |
-| **Codeberg** | [dunamismax/mtg-card-bot](https://codeberg.org/dunamismax/mtg-card-bot) |
+| **GitHub** | [dunamismax/oracle](https://github.com/dunamismax/oracle) |
+| **Codeberg** | [dunamismax/oracle](https://codeberg.org/dunamismax/oracle) |
 
 Discord bot for Magic: The Gathering card lookups via Scryfall. Bracket syntax, random pulls, rules lookup, rich embeds with prices and legality. Per-user cooldowns and rate limiting.
 
@@ -175,14 +175,14 @@ Business repository for Sawyer Visual Media — professional aerial drone photog
 
 ---
 
-### configs
+### dotfiles
 
 | | |
 |---|---|
 | **Type** | Dotfiles / system configuration |
 | **Stack** | Shell (bash/zsh), SSH config, terminal config |
-| **GitHub** | [dunamismax/configs](https://github.com/dunamismax/configs) |
-| **Codeberg** | [dunamismax/configs](https://codeberg.org/dunamismax/configs) |
+| **GitHub** | [dunamismax/dotfiles](https://github.com/dunamismax/dotfiles) |
+| **Codeberg** | [dunamismax/dotfiles](https://codeberg.org/dunamismax/dotfiles) |
 
 Personal workstation configuration backups. Shell profiles, SSH config, Ghostty terminal, VS Code Insiders settings.
 
@@ -231,23 +231,23 @@ GitHub profile page. Professional summary, featured projects, contribution stats
 
 | Language | Repos |
 |---|---|
-| **TypeScript / React** | reactiveweb, open-video-downloader, repo-monitor, poddashboard, mylife-rpg, elchess |
+| **TypeScript / React** | homepage, rip, sentinel, podwatch, questlog, elchess |
 | **TypeScript (Mobile)** | CallRift |
-| **TypeScript (CLI)** | scryai-typescript |
-| **Python** | scry-trader, mtg-card-bot |
-| **Shell / Config** | configs |
+| **TypeScript (CLI)** | grimoire |
+| **Python** | augur, oracle |
+| **Shell / Config** | dotfiles |
 | **Markdown / Docs** | dunamismax, images, Sawyer-Visual-Media, work |
 
 ## By Category
 
 | Category | Repos |
 |---|---|
-| **Full-stack apps** | reactiveweb, poddashboard, mylife-rpg, elchess |
-| **Self-hosted tools** | open-video-downloader |
+| **Full-stack apps** | homepage, podwatch, questlog, elchess |
+| **Self-hosted tools** | rip |
 | **Mobile** | CallRift |
-| **Developer tools** | repo-monitor, scryai-typescript |
-| **Trading** | scry-trader |
-| **Bots / automation** | mtg-card-bot |
-| **Infrastructure / ops** | configs |
+| **Developer tools** | sentinel, grimoire |
+| **Trading** | augur |
+| **Bots / automation** | oracle |
+| **Infrastructure / ops** | dotfiles |
 | **Business / docs** | Sawyer-Visual-Media, work |
 | **Profile / assets** | dunamismax, images |
