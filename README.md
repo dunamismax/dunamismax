@@ -16,16 +16,9 @@
 
 ## Open Source
 
-Active contributor to [**OpenClaw**](https://github.com/openclaw/openclaw) — the open-source AI agent gateway.
+Contributor to [**OpenClaw**](https://github.com/openclaw/openclaw) — the open-source AI agent gateway.
 
-| PR | Type | Description |
-|---|---|---|
-| [#32217](https://github.com/openclaw/openclaw/pull/32217) | fix | Signal reaction `messageId` fallback + queued message `channelId` passthrough |
-| [#32396](https://github.com/openclaw/openclaw/pull/32396) | docs | Signal block streaming and progressive delivery guide |
-| [#32397](https://github.com/openclaw/openclaw/pull/32397) | test | Numeric `messageId` coverage for Signal reaction handler |
-| [#32398](https://github.com/openclaw/openclaw/pull/32398) | docs | Recommended DM configuration for personal assistant use |
-
-Signal has no subsystem maintainer — working to establish ownership through consistent contributions.
+- [**PR #32217**](https://github.com/openclaw/openclaw/pull/32217) — Fixed Signal reaction `messageId` fallback and queued message `channelId` passthrough. Signal channel bug fix that resolved silent reaction failures when `messageId` wasn't exposed via `toolContext`.
 
 ---
 
