@@ -2,7 +2,7 @@
 
 > Complete index of Stephen Sawyer's (`dunamismax`) repositories.
 > All repos live under `~/github/` and most are mirrored across GitHub and Codeberg.
-> Last updated: 2026-03-02.
+> Last updated: 2026-03-05.
 
 ---
 
@@ -162,6 +162,19 @@ Discord bot for Magic: The Gathering card lookups via Scryfall. Bracket syntax, 
 
 ---
 
+### PodScry
+
+| | |
+|---|---|
+| **Type** | Preconfigured AI gateway deployment |
+| **Stack** | OpenClaw, Docker, Docker Compose, Markdown |
+| **GitHub** | [dunamismax/PodScry](https://github.com/dunamismax/PodScry) |
+| **Codeberg** | [dunamismax/PodScry](https://codeberg.org/dunamismax/PodScry) |
+
+Pre-configured OpenClaw instance for Discord playgroups. MTG Commander knowledge base, Docker-ready deployment, and playgroup-focused defaults.
+
+---
+
 ### Sawyer-Visual-Media
 
 | | |
@@ -236,7 +249,7 @@ GitHub profile page. Professional summary, featured projects, contribution stats
 | **TypeScript (CLI)** | grimoire |
 | **Python** | augur, oracle |
 | **Shell / Config** | dotfiles |
-| **Markdown / Docs** | dunamismax, images, Sawyer-Visual-Media, work |
+| **Markdown / Docs** | dunamismax, images, PodScry, Sawyer-Visual-Media, work |
 
 ## By Category
 
@@ -248,6 +261,7 @@ GitHub profile page. Professional summary, featured projects, contribution stats
 | **Developer tools** | sentinel, grimoire |
 | **Trading** | augur |
 | **Bots / automation** | oracle |
+| **AI gateway deployments** | PodScry |
 | **Infrastructure / ops** | dotfiles |
 | **Business / docs** | Sawyer-Visual-Media, work |
 | **Profile / assets** | dunamismax, images |
