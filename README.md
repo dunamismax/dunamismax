@@ -18,6 +18,7 @@
 ## Current Projects
 
 - 🦞 **[OpenClaw](https://github.com/openclaw/openclaw)** — The open-source AI agent gateway. Active contributor — Signal subsystem fixes, test coverage, and core bug fixes ([PRs](https://github.com/openclaw/openclaw/pulls?q=is%3Apr+author%3Adunamismax))
+<!-- BEGIN GENERATED CURRENT PROJECTS -->
 - 🏠 **[homepage](https://github.com/dunamismax/homepage)** — Full-stack web platform. Session auth, RBAC, Hono API, dark-themed UI. The canonical template for my stack
 - ⚔️ **[questlog](https://github.com/dunamismax/questlog)** — Gamified productivity. Quests, habits, XP, leveling, stat progression — powered by a domain-driven RPG engine
 - 📡 **[podwatch](https://github.com/dunamismax/podwatch)** — Pod management and event dashboard with credentials auth and role-based permissions
@@ -30,10 +31,13 @@
 - 🔮 **[PodScry](https://github.com/dunamismax/PodScry)** — Pre-configured OpenClaw instance for Discord playgroups. MTG Commander knowledge, Docker-ready
 - 🧙 **[grimoire](https://github.com/dunamismax/grimoire)** — Agent identity and operations toolkit. Workstation bootstrap, project orchestration, OpenClaw workspace management
 - ⚙️ **[dotfiles](https://github.com/dunamismax/dotfiles)** — Workstation config. Zsh, SSH, Ghostty, VS Code — organized by OS and path
+<!-- END GENERATED CURRENT PROJECTS -->
 
 ### Other Work
 
+<!-- BEGIN GENERATED OTHER WORK -->
 - 🎥 **[Sawyer Visual Media](https://github.com/dunamismax/Sawyer-Visual-Media)** — Drone photography and videography business. Aerial work with DJI Mini 5 Pro
+<!-- END GENERATED OTHER WORK -->
 
 ## Stack
 

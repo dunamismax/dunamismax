@@ -2,7 +2,7 @@
 
 > Complete index of Stephen Sawyer's (`dunamismax`) repositories.
 > All repos live under `~/github/` and most are mirrored across GitHub and Codeberg.
-> Last updated: 2026-03-05.
+> Generated from `data/repos.json` via `python3 scripts/generate_docs.py`.
 
 ---
 
@@ -31,6 +31,7 @@ One `git push` publishes to both hosts. This is an intentional resilience patter
 ---
 
 ## Repositories
+
 
 ### homepage
 
@@ -238,8 +239,6 @@ Work-related documents, email templates, employee handbook materials, marketing 
 
 GitHub profile page. Professional summary, featured projects, contribution stats, and tech stack display.
 
----
-
 ## By Language
 
 | Language | Repos |
@@ -249,7 +248,7 @@ GitHub profile page. Professional summary, featured projects, contribution stats
 | **TypeScript (CLI)** | grimoire |
 | **Python** | augur, oracle |
 | **Shell / Config** | dotfiles |
-| **Markdown / Docs** | dunamismax, images, PodScry, Sawyer-Visual-Media, work |
+| **Markdown / Docs** | PodScry, Sawyer-Visual-Media, images, work, dunamismax |
 
 ## By Category
 
@@ -264,4 +263,4 @@ GitHub profile page. Professional summary, featured projects, contribution stats
 | **AI gateway deployments** | PodScry |
 | **Infrastructure / ops** | dotfiles |
 | **Business / docs** | Sawyer-Visual-Media, work |
-| **Profile / assets** | dunamismax, images |
+| **Profile / assets** | images, dunamismax |
