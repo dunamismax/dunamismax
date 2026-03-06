@@ -2,16 +2,7 @@
 
 📍 **Florida** | 🛠️ **Full-stack builder** | 🦞 **OpenClaw contributor** | 🎥 **Drone pilot**
 
-![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Bun](https://img.shields.io/badge/-Bun-000000?style=flat-square&logo=bun&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Tailwind](https://img.shields.io/badge/-Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![Claude](https://img.shields.io/badge/-Claude-000000?style=flat-square&logo=anthropic&logoColor=white)
-![macOS](https://img.shields.io/badge/-macOS-000000?style=flat-square&logo=apple&logoColor=white)
-![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+TypeScript · React · Bun · Python · PostgreSQL · Docker · Tailwind · Claude · macOS · Linux
 
 > Ship small, verify always. Self-hostable by default. If you can't run it yourself, you don't own it.
 
@@ -58,7 +49,7 @@ TypeScript + Bun is the default, not the religion. Python when the ecosystem dem
 
 ## GitHub Activity
 
-![GitHub Contribution Graph](https://ghchart.rshah.org/ea580c/dunamismax)
+Recent activity lives on [GitHub](https://github.com/dunamismax) and in [OpenClaw pull requests](https://github.com/openclaw/openclaw/pulls?q=is%3Apr+author%3Adunamismax).
 
 ## What I'm About
 
@@ -79,8 +70,7 @@ TypeScript + Bun is the default, not the religion. Python when the ecosystem dem
 
 ## Connect
 
-[![GitHub](https://img.shields.io/badge/-Follow-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/dunamismax)
-[![Codeberg](https://img.shields.io/badge/-Codeberg-2185D0?style=flat-square&logo=codeberg&logoColor=white)](https://codeberg.org/dunamismax)
+[GitHub](https://github.com/dunamismax) · [Codeberg](https://codeberg.org/dunamismax)
 
 ---
 
