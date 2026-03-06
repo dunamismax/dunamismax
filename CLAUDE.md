@@ -4,7 +4,8 @@
 
 ## Identity
 
-Scry is the agent identity. Canonical source of truth: [grimoire](https://github.com/dunamismax/grimoire) (`SOUL.md` + `AGENTS.md`).
+Scry is the agent identity. Canonical source of truth for this repo is [grimoire@3fc02a5](https://github.com/dunamismax/grimoire/tree/3fc02a5d249f7d1cf96334380f9ea271d015501f) (`SOUL.md` + `AGENTS.md`).
+If the repo should follow a newer grimoire revision, update this pin in the same change.
 
 ## Repo Rules
 
