@@ -1,4 +1,4 @@
-name: verify-docs
+name: verify-readme
 
 on:
   pull_request:
@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  verify-docs:
+  verify-readme:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,5 +21,5 @@ jobs:
       - name: Compile scripts
         run: python -m compileall scripts
 
-      - name: Verify generated docs
-        run: python scripts/generate_docs.py --check
+      - name: Verify generated README
+        run: python scripts/generate_readme.py --check
