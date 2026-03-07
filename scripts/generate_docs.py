@@ -5,77 +5,16 @@ from __future__ import annotations
 import argparse
 import json
 import sys
-from collections import defaultdict
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "repos.json"
 README_PATH = ROOT / "README.md"
-REPOS_PATH = ROOT / "REPOS.md"
-
 README_CURRENT_START = "<!-- BEGIN GENERATED CURRENT PROJECTS -->"
 README_CURRENT_END = "<!-- END GENERATED CURRENT PROJECTS -->"
 README_OTHER_START = "<!-- BEGIN GENERATED OTHER WORK -->"
 README_OTHER_END = "<!-- END GENERATED OTHER WORK -->"
-
-LANGUAGE_ORDER = [
-    "TypeScript / React",
-    "TypeScript (Mobile)",
-    "TypeScript (CLI)",
-    "Python",
-    "Shell / Config",
-    "Markdown / Docs",
-]
-
-CATEGORY_ORDER = [
-    "Full-stack apps",
-    "Self-hosted tools",
-    "Mobile",
-    "Developer tools",
-    "Trading",
-    "Bots / automation",
-    "AI gateway deployments",
-    "Infrastructure / ops",
-    "Business / docs",
-    "Profile / assets",
-]
-
-REPOS_PREFIX = """# Repository Index
-
-> Complete index of Stephen Sawyer's (`dunamismax`) repositories.
-> All repos live under `~/github/` and most are mirrored across GitHub and Codeberg.
-> Generated from `data/repos.json` via `python3 scripts/generate_docs.py`.
-
----
-
-## Source Control Strategy
-
-### Dual-Remote Mirroring (GitHub + Codeberg)
-
-Most repositories use a single `origin` remote with dual push URLs:
-
-```
-origin  git@github.com-dunamismax:dunamismax/<repo>.git   (fetch)
-origin  git@github.com-dunamismax:dunamismax/<repo>.git   (push)
-origin  git@codeberg.org-dunamismax:dunamismax/<repo>.git  (push)
-```
-
-One `git push` publishes to both hosts. This is an intentional resilience pattern — platform risk is not existential when source control is redundant across providers.
-
-**Rules:**
-
-- All remotes use **SSH**, never HTTPS.
-- Fetch comes from GitHub. Push goes to both GitHub and Codeberg.
-- New repos get dual push URLs wired immediately after clone or init.
-- SSH host config and dedicated identities are maintained in `~/.ssh/config` for both providers.
-- Use `bun run scry:sync:remotes` in the grimoire repo to verify and fix remotes across all projects.
-
----
-
-## Repositories
-"""
-
 
 def load_repos() -> list[dict[str, object]]:
     return json.loads(DATA_PATH.read_text())
@@ -128,75 +67,6 @@ def build_readme(repos: list[dict[str, object]], current_text: str) -> str:
     )
 
 
-def format_repo_section(repo: dict[str, object]) -> str:
-    slug = repo["slug"]
-    stack = ", ".join(repo["stack"])
-    github_url = repo["github_url"]
-    codeberg_url = repo["codeberg_url"]
-    description = repo["description"]
-    return "\n".join(
-        [
-            f"### {slug}",
-            "",
-            "| | |",
-            "|---|---|",
-            f"| **Type** | {repo['type']} |",
-            f"| **Stack** | {stack} |",
-            f"| **GitHub** | [dunamismax/{slug}]({github_url}) |",
-            f"| **Codeberg** | [dunamismax/{slug}]({codeberg_url}) |",
-            "",
-            str(description),
-        ]
-    )
-
-
-def render_bucket_table(
-    repos: list[dict[str, object]],
-    heading: str,
-    column_name: str,
-    bucket_key: str,
-    ordered_buckets: list[str],
-) -> str:
-    grouped: dict[str, list[str]] = defaultdict(list)
-    for repo in sort_repos(repos, "index_order"):
-        grouped[str(repo[bucket_key])].append(str(repo["slug"]))
-
-    lines = [
-        f"## {heading}",
-        "",
-        f"| {column_name} | Repos |",
-        "|---|---|",
-    ]
-    for bucket in ordered_buckets:
-        names = ", ".join(grouped[bucket])
-        lines.append(f"| **{bucket}** | {names} |")
-    return "\n".join(lines)
-
-
-def build_repos(repos: list[dict[str, object]]) -> str:
-    sections = []
-    for repo in sort_repos(repos, "index_order"):
-        sections.append(format_repo_section(repo))
-
-    language_table = render_bucket_table(
-        repos,
-        heading="By Language",
-        column_name="Language",
-        bucket_key="language_bucket",
-        ordered_buckets=LANGUAGE_ORDER,
-    )
-    category_table = render_bucket_table(
-        repos,
-        heading="By Category",
-        column_name="Category",
-        bucket_key="category_bucket",
-        ordered_buckets=CATEGORY_ORDER,
-    )
-
-    parts = [REPOS_PREFIX, "\n\n---\n\n".join(sections), language_table, category_table]
-    return "\n\n".join(parts) + "\n"
-
-
 def write_or_check(path: Path, expected: str, check: bool) -> bool:
     current = path.read_text()
     if current == expected:
@@ -213,7 +83,7 @@ def write_or_check(path: Path, expected: str, check: bool) -> bool:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Generate README.md and REPOS.md from tracked repo metadata.")
+    parser = argparse.ArgumentParser(description="Generate README.md from tracked repo metadata.")
     parser.add_argument("--check", action="store_true", help="Fail if generated docs are out of date.")
     return parser.parse_args()
 
@@ -223,11 +93,9 @@ def main() -> int:
     repos = load_repos()
 
     readme = build_readme(repos, README_PATH.read_text())
-    repos_doc = build_repos(repos)
 
     ok = True
     ok &= write_or_check(README_PATH, readme, args.check)
-    ok &= write_or_check(REPOS_PATH, repos_doc, args.check)
     return 0 if ok else 1
 
 
