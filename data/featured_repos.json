@@ -1,27 +1,27 @@
 [
   {
+    "name": "OpenClaw",
+    "url": "https://github.com/openclaw/openclaw",
+    "summary": "Contributor work on a self-hosted personal assistant that runs across the chat, desktop, and mobile channels I already use."
+  },
+  {
     "name": "scry-home",
     "url": "https://github.com/dunamismax/scry-home",
-    "summary": "Identity, agent instructions, workstation snapshots, and operational tooling for the rest of my workspace."
+    "summary": "Home base for my workstation setup, shared agent instructions, and operational scripts."
   },
   {
     "name": "boring-go-web",
     "url": "https://github.com/dunamismax/boring-go-web",
-    "summary": "Production-minded Go web starter with Echo, Templ, HTMX, PostgreSQL, and deployment automation."
+    "summary": "Go web starter built around Echo, Templ, HTMX, PostgreSQL, and deployment automation."
   },
   {
     "name": "c-from-the-ground-up",
     "url": "https://github.com/dunamismax/c-from-the-ground-up",
-    "summary": "Project-based C curriculum that teaches fundamentals and systems work through runnable lessons."
+    "summary": "Project-based C curriculum focused on systems fundamentals through runnable lessons."
   },
   {
     "name": "scryfall-discord-bot",
     "url": "https://github.com/dunamismax/scryfall-discord-bot",
-    "summary": "Discord bot for fast Scryfall-powered card lookups, rules text, random pulls, and rich embeds."
-  },
-  {
-    "name": "hello-world-from-hell",
-    "url": "https://github.com/dunamismax/hello-world-from-hell",
-    "summary": "Obfuscated C experiment that turns a simple hello world into a deliberately overengineered horror show."
+    "summary": "Discord bot for fast Scryfall-powered card lookups, rules text, and rich embeds."
   }
 ]

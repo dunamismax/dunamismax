@@ -7,11 +7,11 @@ Python · Go · C · PostgreSQL · Docker
 ## Current Focus
 
 <!-- BEGIN GENERATED FEATURED REPOS -->
-- **[scry-home](https://github.com/dunamismax/scry-home)** - Identity, agent instructions, workstation snapshots, and operational tooling for the rest of my workspace.
-- **[boring-go-web](https://github.com/dunamismax/boring-go-web)** - Production-minded Go web starter with Echo, Templ, HTMX, PostgreSQL, and deployment automation.
-- **[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up)** - Project-based C curriculum that teaches fundamentals and systems work through runnable lessons.
-- **[scryfall-discord-bot](https://github.com/dunamismax/scryfall-discord-bot)** - Discord bot for fast Scryfall-powered card lookups, rules text, random pulls, and rich embeds.
-- **[hello-world-from-hell](https://github.com/dunamismax/hello-world-from-hell)** - Obfuscated C experiment that turns a simple hello world into a deliberately overengineered horror show.
+- **[OpenClaw](https://github.com/openclaw/openclaw)** - Contributor work on a self-hosted personal assistant that runs across the chat, desktop, and mobile channels I already use.
+- **[scry-home](https://github.com/dunamismax/scry-home)** - Home base for my workstation setup, shared agent instructions, and operational scripts.
+- **[boring-go-web](https://github.com/dunamismax/boring-go-web)** - Go web starter built around Echo, Templ, HTMX, PostgreSQL, and deployment automation.
+- **[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up)** - Project-based C curriculum focused on systems fundamentals through runnable lessons.
+- **[scryfall-discord-bot](https://github.com/dunamismax/scryfall-discord-bot)** - Discord bot for fast Scryfall-powered card lookups, rules text, and rich embeds.
 <!-- END GENERATED FEATURED REPOS -->
 
 ## How I Work
