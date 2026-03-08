@@ -1,11 +1,9 @@
 # Hi, I'm Stephen 👋
 
-📍 **Florida** · ⚙️ **Self-hosted systems builder** · 🎮 **Game dev pivot in progress** · 🧱 **Alias:** `dunamismax`
+📍 **Florida** · ⚙️ **Self-hosted systems builder** · 🧱 **Alias:** `dunamismax`
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![C%23](https://img.shields.io/badge/-C%23-512BD4?style=flat-square&logo=csharp&logoColor=white)
-![Godot](https://img.shields.io/badge/-Godot-478CBF?style=flat-square&logo=godotengine&logoColor=white)
-![Blender](https://img.shields.io/badge/-Blender-E87D0D?style=flat-square&logo=blender&logoColor=white)
+![C%2B%2B](https://img.shields.io/badge/-C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
 ![Django](https://img.shields.io/badge/-Django-092E20?style=flat-square&logo=django&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![uv](https://img.shields.io/badge/-uv-6E56CF?style=flat-square&logo=python&logoColor=white)
@@ -16,43 +14,36 @@
 
 > I build software that still makes sense at 2am: self-hosted when possible, local-first where it matters, explicit about its tradeoffs, and verified before it gets trusted.
 
-## What I build
+## Current focus
 
-My current work is centered on two lanes:
+Right now my center of gravity is:
 
-- **Python** for operational software, automation, tooling, web apps, and pipeline helpers
-- **C# + Godot** for game development, gameplay systems, and 3D prototype work
+- **Python** for operational software, automation, tooling, and practical web apps
+- **C++** as the next serious language lane
+- **Game development** as a future build lane that I plan to expand publicly over time
 
-Blender is part of the stack for asset creation, blockouts, and world-building. I like software and game projects that are durable, understandable, and actually useful to the person building or operating them.
+I prefer durable systems, explicit data flow, operator-friendly tooling, and projects that are actually maintainable after the initial excitement wears off.
 
-## Game development repos
+## Selected projects
 
-- **[courier-of-the-weird](https://github.com/dunamismax/courier-of-the-weird)** — a stylized 3D Godot + C# delivery game prototype about hauling unstable cargo across strange floating spaces
-- **[godot-csharp-lab](https://github.com/dunamismax/godot-csharp-lab)** — my gameplay sketchbook for movement, camera, interaction, combat, and system experiments in Godot with C#
-- **[blender-game-assets](https://github.com/dunamismax/blender-game-assets)** — Blender source assets, export conventions, and reusable kits for future games
-- **[game-dev-tools-py](https://github.com/dunamismax/game-dev-tools-py)** — Python tooling for asset hygiene, content manifests, and game-dev automation
+### Python
 
-## Python projects
-
-- **[changeledger](https://github.com/dunamismax/changeledger)** — an operational memory and change intelligence platform for IT, platform, and ops teams
+- **[changeledger](https://github.com/dunamismax/changeledger)** — operational memory and change intelligence for IT, platform, and ops teams
 - **[pymodernize](https://github.com/dunamismax/pymodernize)** — a deterministic Python modernization assistant focused on stable plans and low-risk fixers
 - **[verify-patch](https://github.com/dunamismax/verify-patch)** — patch-aware verification for Python repos with repo-native checks and GitHub-friendly output
 - **[scriptspace](https://github.com/dunamismax/scriptspace)** — a PEP 723 workspace manager for single-file Python scripts
-- **[pyforge](https://github.com/dunamismax/pyforge)** — a growing home for durable Python utilities and reusable tooling
+- **[scry-home](https://github.com/dunamismax/scry-home)** — my Python-first control plane repo for workstation automation, docs, and local ops workflows
 - **[rip](https://github.com/dunamismax/rip)** — a self-hosted FastAPI app for inspecting formats and downloading media through `yt-dlp`
 - **[podwatch](https://github.com/dunamismax/podwatch)** — a focused Django app for recurring groups and their scheduled events
 - **[questlog](https://github.com/dunamismax/questlog)** — a Django app for quests, habits, and daily check-ins without gamified bloat
-- **[trade-desk-cli](https://github.com/dunamismax/trade-desk-cli)** — a human-directed Python trading CLI with typed models and explicit operator control
-- **[scryfall-discord-bot](https://github.com/dunamismax/scryfall-discord-bot)** — a Python Discord bot for fast Scryfall lookups and rich card embeds
-- **[scry-home](https://github.com/dunamismax/scry-home)** — my Python-only control plane repo for workstation automation, docs, and local ops workflows
 
 ## Open source
 
-- **[OpenClaw](https://github.com/openclaw/openclaw)** — contributor; currently **2 merged PRs** in the upstream project
+- **[OpenClaw](https://github.com/openclaw/openclaw)** — contributor; currently **2 merged PRs** upstream
 
-## Archived / historical repos
+## Historical / archived
 
-These repos matter to my history, but they are no longer the center of gravity.
+These matter to my history, but they are not my current direction.
 
 ### Rust
 
@@ -81,14 +72,12 @@ These repos matter to my history, but they are no longer the center of gravity.
 - understandable repo layouts
 - deterministic tooling over magical abstractions
 - operator-facing software that reduces cognitive load
-- game prototypes that are actually finishable
 - systems that can scale without becoming impossible to reason about
 
 ## Tech I reach for most
 
 - **Python** for product velocity, automation, and operational software
-- **C# + Godot** for gameplay systems and 3D prototyping
-- **Blender** for game asset work and blockouts
+- **C++** as the next systems and game-dev lane I’m building toward
 - **Django** and **FastAPI** for practical web surfaces
 - **PostgreSQL** for durable state
 - **Docker** for reproducible local environments
