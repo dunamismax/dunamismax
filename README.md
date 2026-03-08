@@ -17,44 +17,30 @@
 
 ## What I build
 
-Most of my work right now lives in two lanes:
+My current work is centered on two lanes:
 
-- **Python** for operational products, automation, web apps, CLIs, and repo tooling
-- **Rust** for cargo-native developer tools, policy engines, and build / ABI introspection
+- **Python** for operational software, automation, web apps, CLIs, and repo tooling
+- **Rust** for cargo-native developer tools, policy engines, and inspection / verification workflows
 
-I care about software that is durable, understandable, and useful to the person actually operating it.
+I like software that is durable, understandable, and actually useful to the person operating it.
 
-## Building now
-
-### 🚨 ChangeLedger
-
-**[ChangeLedger](https://github.com/dunamismax/changeledger)** is my flagship Python project: an operational memory and change intelligence platform for IT, platform, and ops teams.
-
-It is intentionally built as **one Python-first product in one repo**.
-
-- API, CLI, TUI, worker, connectors, docs site, and shared domain models live together
-- The repo is organized for operation, not theater
-- Current module lanes include:
-  - **KEV Commander**
-  - **Identity & SaaS Drift Watch**
-  - **Incident Timeline & Recovery Proof**
-
-## Active Rust work
+## Rust projects
 
 - **[cargo-trust](https://github.com/dunamismax/cargo-trust)** — dependency admission control for Rust with explainable `allow`, `review`, and `block` decisions
-- **[explain-build](https://github.com/dunamismax/explain-build)** — a cargo subcommand that captures `build`, `check`, `test`, and `run` sessions, then explains what changed between them
+- **[explain-build](https://github.com/dunamismax/explain-build)** — a Cargo subcommand that captures `build`, `check`, `test`, and `run` sessions, then explains what changed between them
 - **[abi-audit](https://github.com/dunamismax/abi-audit)** — a Cargo-native CLI for auditing Rust FFI and ABI boundaries
 
-## Active Python work
+## Python projects
 
-- **[pymodernize](https://github.com/dunamismax/pymodernize)** — deterministic Python modernization planning and low-risk fixers
+- **[changeledger](https://github.com/dunamismax/changeledger)** — an operational memory and change intelligence platform for IT, platform, and ops teams
+- **[pymodernize](https://github.com/dunamismax/pymodernize)** — a deterministic Python modernization assistant focused on stable plans and low-risk fixers
 - **[verify-patch](https://github.com/dunamismax/verify-patch)** — patch-aware verification for Python repos with repo-native checks and GitHub-friendly output
 - **[scriptspace](https://github.com/dunamismax/scriptspace)** — a PEP 723 workspace manager for single-file Python scripts
 - **[pyforge](https://github.com/dunamismax/pyforge)** — a growing home for durable Python utilities and reusable tooling
 - **[rip](https://github.com/dunamismax/rip)** — a self-hosted FastAPI app for inspecting formats and downloading media through `yt-dlp`
 - **[podwatch](https://github.com/dunamismax/podwatch)** — a focused Django app for recurring groups and their scheduled events
 - **[questlog](https://github.com/dunamismax/questlog)** — a Django app for quests, habits, and daily check-ins without gamified bloat
-- **[trade-desk-cli](https://github.com/dunamismax/trade-desk-cli)** — a human-directed Python trading CLI with typed models, verification, and explicit operator control
+- **[trade-desk-cli](https://github.com/dunamismax/trade-desk-cli)** — a human-directed Python trading CLI with typed models and explicit operator control
 - **[scryfall-discord-bot](https://github.com/dunamismax/scryfall-discord-bot)** — a Python Discord bot for fast Scryfall lookups and rich card embeds
 - **[scry-home](https://github.com/dunamismax/scry-home)** — my Python-only control plane repo for workstation automation, docs, and local ops workflows
 
