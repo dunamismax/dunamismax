@@ -13,43 +13,33 @@
 
 > I build software that still makes sense at 2am: self-hostable, local-first when possible, strongly typed where it matters, and verified before it gets trusted.
 
-## Building Now
+## Building now
 
-## 🚨 ChangeLedger
+### 🚨 ChangeLedger
 
 **ChangeLedger** is my current flagship build: an operational memory and change intelligence platform for IT, platform, and ops teams.
 
-It is deliberately structured as **one company, one product, multiple internal modules** — not a pile of unrelated repos.
+It is now intentionally built as **one product in one repo** — not a pile of adjacent repos pretending to be strategy.
 
-### Repo portfolio
+- **[changeledger](https://github.com/dunamismax/changeledger)**
+  One Python monorepo for the API, CLI, TUI, worker, shared domain models, documentation site, connector layer, labs work, and module scaffolds.
+- **Inside the repo:** `apps/`, `packages/`, `packages/connectors/`, `labs/`, `site/`, docs, and shared operational tooling.
+- **Current module lanes:**
+  - **KEV Commander**
+  - **Identity & SaaS Drift Watch**
+  - **Incident Timeline & Recovery Proof**
 
-- **[changeledger](https://github.com/dunamismax/changeledger)**  
-  The flagship Python monorepo: API, CLI, TUI, worker, shared domain models, settings, docs, and internal module scaffolds.
+## Selected work
 
-- **[changeledger-connectors](https://github.com/dunamismax/changeledger-connectors)**  
-  Integrations, vendor adapters, ingestion pipelines, SaaS/identity connectors, and browser-automation stubs for ugly admin portals.
+<!-- BEGIN GENERATED FEATURED REPOS -->
+- **[OpenClaw](https://github.com/openclaw/openclaw)** - Contributor work on a self-hosted personal assistant that spans chat, browser, desktop, and mobile surfaces I actually use.
+- **[scry-home](https://github.com/dunamismax/scry-home)** - Home base for my workstation setup, agent-network operating docs, automation, and day-to-day operational tooling.
+- **[boring-go-web](https://github.com/dunamismax/boring-go-web)** - A practical Go web starter built for shipping without framework theater: Echo, Templ, HTMX, PostgreSQL, and deployment automation.
+- **[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up)** - Project-based C learning focused on systems fundamentals through runnable lessons instead of disconnected toy snippets.
+- **[scryfall-discord-bot](https://github.com/dunamismax/scryfall-discord-bot)** - Discord bot for fast Scryfall lookups, rules text, and rich embeds that stay useful in real conversations.
+<!-- END GENERATED FEATURED REPOS -->
 
-- **[changeledger-site](https://github.com/dunamismax/changeledger-site)**  
-  The marketing and documentation site for the product.
-
-- **[changeledger-labs](https://github.com/dunamismax/changeledger-labs)**  
-  Experiments, evals, prompt assets, synthetic fixtures, and prototype workflows kept separate from production code.
-
-### Core product modules
-
-- **KEV Commander**
-- **Identity & SaaS Drift Watch**
-- **Incident Timeline & Recovery Proof**
-
-## Selected Work
-
-- 🦞 **[OpenClaw](https://github.com/openclaw/openclaw)** — contributor work on a self-hosted personal assistant that runs across chat, desktop, and mobile surfaces already in use
-- 🏠 **[scry-home](https://github.com/dunamismax/scry-home)** — my workstation, agent-network, docs, automation, and operating environment
-- 🌐 **[boring-go-web](https://github.com/dunamismax/boring-go-web)** — a practical Go web starter built for shipping without framework theater
-- 🧠 **[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up)** — project-based C learning focused on systems fundamentals through runnable lessons
-- 🃏 **[scryfall-discord-bot](https://github.com/dunamismax/scryfall-discord-bot)** — Discord bot for fast Scryfall lookups, rules text, and rich embeds
-
-## How I Build
+## How I build
 
 - **Ship small. Verify always.**
 - **Prefer boring infrastructure over clever architecture.**
@@ -59,7 +49,7 @@ It is deliberately structured as **one company, one product, multiple internal m
 - **Write docs like they are part of the system.**
 - **Optimize for maintenance reality, not launch-day aesthetics.**
 
-## What I Optimize For
+## What I optimize for
 
 - durable local-first workflows
 - understandable repo layouts
@@ -67,7 +57,7 @@ It is deliberately structured as **one company, one product, multiple internal m
 - operational software that helps the operator instead of impressing the roadmap
 - tools that can scale without becoming impossible to reason about
 
-## Tech I Reach For Most
+## Tech I reach for most
 
 - **Python** for product velocity, automation, data work, and ops tooling
 - **Go** for small services and sharp-edged infra tools
