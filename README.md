@@ -27,6 +27,7 @@ I like software that is durable, understandable, and actually useful to the pers
 ## Rust projects
 
 - **[cargo-trust](https://github.com/dunamismax/cargo-trust)** — dependency admission control for Rust with explainable `allow`, `review`, and `block` decisions
+- **[cargo-advisor](https://github.com/dunamismax/cargo-advisor)** — the decision layer for Cargo: crate recommendation, comparison, explanation, and local dependency review with receipts
 - **[explain-build](https://github.com/dunamismax/explain-build)** — a Cargo subcommand that captures `build`, `check`, `test`, and `run` sessions, then explains what changed between them
 - **[abi-audit](https://github.com/dunamismax/abi-audit)** — a Cargo-native CLI for auditing Rust FFI and ABI boundaries
 
@@ -43,6 +44,15 @@ I like software that is durable, understandable, and actually useful to the pers
 - **[trade-desk-cli](https://github.com/dunamismax/trade-desk-cli)** — a human-directed Python trading CLI with typed models and explicit operator control
 - **[scryfall-discord-bot](https://github.com/dunamismax/scryfall-discord-bot)** — a Python Discord bot for fast Scryfall lookups and rich card embeds
 - **[scry-home](https://github.com/dunamismax/scry-home)** — my Python-only control plane repo for workstation automation, docs, and local ops workflows
+
+## Open source
+
+- **[OpenClaw](https://github.com/openclaw/openclaw)** — contributor; currently **2 merged PRs** in the upstream project
+
+## Legacy projects
+
+- **[boring-go-web](https://github.com/dunamismax/boring-go-web)** — practical Go web starter built for shipping without framework theater
+- **[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up)** — project-based C learning focused on systems fundamentals through runnable lessons
 
 ## How I build
 
