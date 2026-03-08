@@ -2,26 +2,26 @@
   {
     "name": "OpenClaw",
     "url": "https://github.com/openclaw/openclaw",
-    "summary": "Contributor work on a self-hosted personal assistant that runs across the chat, desktop, and mobile channels I already use."
+    "summary": "Contributor work on a self-hosted personal assistant that spans chat, browser, desktop, and mobile surfaces I actually use."
   },
   {
     "name": "scry-home",
     "url": "https://github.com/dunamismax/scry-home",
-    "summary": "Home base for my workstation setup, shared agent instructions, and operational scripts."
+    "summary": "Home base for my workstation setup, agent-network operating docs, automation, and day-to-day operational tooling."
   },
   {
     "name": "boring-go-web",
     "url": "https://github.com/dunamismax/boring-go-web",
-    "summary": "Go web starter built around Echo, Templ, HTMX, PostgreSQL, and deployment automation."
+    "summary": "A practical Go web starter built for shipping without framework theater: Echo, Templ, HTMX, PostgreSQL, and deployment automation."
   },
   {
     "name": "c-from-the-ground-up",
     "url": "https://github.com/dunamismax/c-from-the-ground-up",
-    "summary": "Project-based C curriculum focused on systems fundamentals through runnable lessons."
+    "summary": "Project-based C learning focused on systems fundamentals through runnable lessons instead of disconnected toy snippets."
   },
   {
     "name": "scryfall-discord-bot",
     "url": "https://github.com/dunamismax/scryfall-discord-bot",
-    "summary": "Discord bot for fast Scryfall-powered card lookups, rules text, and rich embeds."
+    "summary": "Discord bot for fast Scryfall lookups, rules text, and rich embeds that stay useful in real conversations."
   }
 ]
