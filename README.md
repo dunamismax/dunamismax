@@ -3,10 +3,10 @@
 📍 **Florida** · ⚙️ **Self-hosted systems builder** · 🧱 **Alias:** `dunamismax`
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![C%2B%2B](https://img.shields.io/badge/-C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
+![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+![C](https://img.shields.io/badge/-C-A8B9CC?style=flat-square&logo=c&logoColor=black)
 ![Django](https://img.shields.io/badge/-Django-092E20?style=flat-square&logo=django&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![uv](https://img.shields.io/badge/-uv-6E56CF?style=flat-square&logo=python&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![CLI](https://img.shields.io/badge/-CLI-000000?style=flat-square&logo=gnu-bash&logoColor=white)
@@ -16,15 +16,15 @@
 
 ## Current focus
 
-Right now my center of gravity is:
+My center of gravity is now straightforward:
 
-- **Python** for operational software, automation, tooling, and practical web apps
-- **C++** as the next serious language lane
-- **Game development** as a future build lane that I plan to expand publicly over time
+- **Python** for operational software, automation, web apps, CLI/TUI tooling, and control planes
+- **Go** for backend services, infrastructure tools, networking-heavy systems, and practical high-performance software
+- **C** for systems fundamentals, low-level tooling, and building closer to the machine without pretending the machine is not there
 
-I prefer durable systems, explicit data flow, operator-friendly tooling, and projects that are actually maintainable after the initial excitement wears off.
+I care about backend systems, devops, networking, self-hosting, infrastructure software, operator-friendly tooling, and the kind of utilities that earn a permanent place on a real machine.
 
-## Selected projects
+## Main projects
 
 ### Python
 
@@ -37,25 +37,17 @@ I prefer durable systems, explicit data flow, operator-friendly tooling, and pro
 - **[podwatch](https://github.com/dunamismax/podwatch)** — a focused Django app for recurring groups and their scheduled events
 - **[questlog](https://github.com/dunamismax/questlog)** — a Django app for quests, habits, and daily check-ins without gamified bloat
 
+### Go
+
+- **[boring-go-web](https://github.com/dunamismax/boring-go-web)** — a practical Go web starter built for shipping without framework theater
+
+### C
+
+- **[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up)** — project-based C learning focused on systems fundamentals through runnable lessons
+
 ## Open source
 
 - **[OpenClaw](https://github.com/openclaw/openclaw)** — contributor; currently **2 merged PRs** upstream
-
-## Historical / archived
-
-These matter to my history, but they are not my current direction.
-
-### Rust
-
-- **[cargo-trust](https://github.com/dunamismax/cargo-trust)** — dependency admission control for Rust with explainable `allow`, `review`, and `block` decisions
-- **[cargo-advisor](https://github.com/dunamismax/cargo-advisor)** — a Cargo decision layer for crate recommendation, comparison, explanation, and dependency review
-- **[explain-build](https://github.com/dunamismax/explain-build)** — a Cargo subcommand for capturing and explaining build, check, test, and run sessions
-- **[abi-audit](https://github.com/dunamismax/abi-audit)** — a Cargo-native CLI for auditing Rust FFI and ABI boundaries
-
-### Other legacy projects
-
-- **[boring-go-web](https://github.com/dunamismax/boring-go-web)** — practical Go web starter built for shipping without framework theater
-- **[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up)** — project-based C learning focused on systems fundamentals through runnable lessons
 
 ## How I build
 
@@ -72,12 +64,15 @@ These matter to my history, but they are not my current direction.
 - understandable repo layouts
 - deterministic tooling over magical abstractions
 - operator-facing software that reduces cognitive load
-- systems that can scale without becoming impossible to reason about
+- backend systems that are practical to operate
+- infrastructure and networking software that stays legible under pressure
+- tools that can scale without becoming impossible to reason about
 
 ## Tech I reach for most
 
 - **Python** for product velocity, automation, and operational software
-- **C++** as the next systems and game-dev lane I’m building toward
+- **Go** for backend services, infra tools, and network-facing systems
+- **C** for systems fundamentals and low-level control
 - **Django** and **FastAPI** for practical web surfaces
 - **PostgreSQL** for durable state
 - **Docker** for reproducible local environments
