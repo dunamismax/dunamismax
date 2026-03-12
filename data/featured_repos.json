@@ -1,27 +1,32 @@
 [
   {
-    "name": "OpenClaw",
-    "url": "https://github.com/openclaw/openclaw",
-    "summary": "Contributor work on a self-hosted personal assistant that spans chat, browser, desktop, and mobile surfaces I actually use."
-  },
-  {
     "name": "scry-home",
     "url": "https://github.com/dunamismax/scry-home",
-    "summary": "Home base for my workstation setup, agent-network operating docs, automation, and day-to-day operational tooling."
+    "summary": "Control plane monorepo for local repo operations, encrypted backups, CAB packet scaffolding, and an operator dashboard."
   },
   {
-    "name": "boring-go-web",
-    "url": "https://github.com/dunamismax/boring-go-web",
-    "summary": "A practical Go web starter built for shipping without framework theater: Echo, Templ, HTMX, PostgreSQL, and deployment automation."
+    "name": "Roleback",
+    "url": "https://github.com/dunamismax/Roleback",
+    "summary": "Self-hostable Discord server backup platform with a TanStack Start dashboard, bot runtime, Drizzle persistence, and observability."
   },
   {
-    "name": "c-from-the-ground-up",
-    "url": "https://github.com/dunamismax/c-from-the-ground-up",
-    "summary": "Project-based C learning focused on systems fundamentals through runnable lessons instead of disconnected toy snippets."
+    "name": "rip",
+    "url": "https://github.com/dunamismax/rip",
+    "summary": "Authenticated self-hosted `yt-dlp` workspace with PostgreSQL-backed queues, Better Auth, and OpenTelemetry around download workflows."
   },
   {
-    "name": "scryfall-discord-bot",
-    "url": "https://github.com/dunamismax/scryfall-discord-bot",
-    "summary": "Discord bot for fast Scryfall lookups, rules text, and rich embeds that stay useful in real conversations."
+    "name": "QuestLog",
+    "url": "https://github.com/dunamismax/questlog",
+    "summary": "Personal execution journal for quests, habits, daily check-ins, and a lightweight XP loop."
+  },
+  {
+    "name": "PodWatch",
+    "url": "https://github.com/dunamismax/podwatch",
+    "summary": "Recurring-group scheduling app for pods, events, and timeline review inside a Bun monorepo."
+  },
+  {
+    "name": "tsforge",
+    "url": "https://github.com/dunamismax/tsforge",
+    "summary": "Email template conversion workbench that pairs a Bun CLI with a TanStack Start app and a TypeScript converter core."
   }
 ]

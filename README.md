@@ -1,62 +1,57 @@
-# Hi, I'm Stephen 👋
+# Stephen Sawyer
 
-📍 **Florida** · ⚙️ **Self-hosted systems builder** · 🧱 **Alias:** `dunamismax`
+Bun-first TypeScript builder for self-hosted products, control planes, and operator-facing software.
 
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Go](https://img.shields.io/badge/-Go-00ADD8?style=flat-square&logo=go&logoColor=white)
-![C](https://img.shields.io/badge/-C-A8B9CC?style=flat-square&logo=c&logoColor=black)
-![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![CLI](https://img.shields.io/badge/-CLI-000000?style=flat-square&logo=gnu-bash&logoColor=white)
-![Self-Hosted](https://img.shields.io/badge/-Self--Hosted-2E8B57?style=flat-square&logo=serverfault&logoColor=white)
+![Bun](https://img.shields.io/badge/Bun-1.3+-000000?style=flat-square&logo=bun&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![TanStack Start](https://img.shields.io/badge/TanStack-Start-FF4154?style=flat-square&logo=tanstack&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16+-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Drizzle ORM](https://img.shields.io/badge/Drizzle-ORM-C5F74F?style=flat-square&logo=drizzle&logoColor=111111)
+![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-Wired-6B3FA0?style=flat-square&logo=opentelemetry&logoColor=white)
 
-> I build software that still makes sense at 2am: self-hosted when possible, local-first where it matters, explicit about its tradeoffs, and verified before it gets trusted.
+I spend most of my time building Bun monorepos with shared contracts across web, server, and CLI packages. The common thread is narrow products, explicit data flow, authentication that is part of the design, and observability wired in before the system gets complicated.
 
-## Thesis
+## Current stack
 
-I like software that a small team can actually own.
+- Runtime, scripts, and workspaces: Bun
+- Language: TypeScript
+- App layer: TanStack Start, TanStack Router, TanStack Query
+- Data: PostgreSQL + Drizzle ORM
+- Validation and contracts: Zod
+- Auth: Better Auth
+- Tooling: Biome + Vitest
+- Observability: OpenTelemetry
 
-That usually means:
+## What I optimize for
 
-- infrastructure that is understandable without a priesthood
-- tools that help the operator instead of hiding the system from them
-- explicit data flow over magic
-- local-first and self-hosted setups when control matters
-- boring technology where boring wins, and lower-level technology where control is worth the cost
+- Self-hosted and operator-facing software that a small team can actually own
+- Clear contracts between packages instead of hidden framework magic
+- Web apps, CLIs, and background workflows that share the same domain model
+- Docs, tests, and telemetry as part of the feature, not cleanup work later
 
-I am not chasing stacks for their own sake. I care about backend systems, networking, devops, self-hosting, control planes, CLIs, TUIs, and infrastructure tools that earn their place by being useful under real operating conditions.
+## Current repos
 
-## Current direction
+Most of my active work now lives in these Bun-first repositories:
 
-My lane is straightforward:
+<!-- BEGIN GENERATED FEATURED REPOS -->
+- **[scry-home](https://github.com/dunamismax/scry-home)** - Control plane monorepo for local repo operations, encrypted backups, CAB packet scaffolding, and an operator dashboard.
+- **[Roleback](https://github.com/dunamismax/Roleback)** - Self-hostable Discord server backup platform with a TanStack Start dashboard, bot runtime, Drizzle persistence, and observability.
+- **[rip](https://github.com/dunamismax/rip)** - Authenticated self-hosted `yt-dlp` workspace with PostgreSQL-backed queues, Better Auth, and OpenTelemetry around download workflows.
+- **[QuestLog](https://github.com/dunamismax/questlog)** - Personal execution journal for quests, habits, daily check-ins, and a lightweight XP loop.
+- **[PodWatch](https://github.com/dunamismax/podwatch)** - Recurring-group scheduling app for pods, events, and timeline review inside a Bun monorepo.
+- **[tsforge](https://github.com/dunamismax/tsforge)** - Email template conversion workbench that pairs a Bun CLI with a TanStack Start app and a TypeScript converter core.
+<!-- END GENERATED FEATURED REPOS -->
 
-- **Python** for operational software, automation, verification, control planes, and practical web tooling
-- **Go** for backend services, infra tools, and network-facing systems where simplicity and performance both matter
-- **C** for systems fundamentals, low-level tooling, and staying close enough to the machine to understand what the abstractions cost
+## Also in the workshop
 
-## Selected work
+I still keep a hand in adjacent work when control is worth the cost:
 
-A few repos that represent the kind of work I actually want to keep doing:
-
-- **[changeledger](https://github.com/dunamismax/changeledger)** — operational memory and change intelligence for IT, platform, and ops teams
-- **[verify-patch](https://github.com/dunamismax/verify-patch)** — patch-aware verification for Python repositories with repo-native checks and operator-friendly output
-- **[scriptspace](https://github.com/dunamismax/scriptspace)** — a workspace manager for single-file Python scripts built around PEP 723 and `uv`
-- **[boring-go-web](https://github.com/dunamismax/boring-go-web)** — a practical Go web starter for shipping without framework theater
-- **[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up)** — project-based C learning focused on systems fundamentals through runnable lessons
-
-More Go and C work is coming. The direction is backend, infrastructure, networking, and tools — not toy repos for the sake of having more repos.
+- **[boring-go-web](https://github.com/dunamismax/boring-go-web)** - Practical Go starter with Echo, Templ, HTMX, PostgreSQL, SQLC, and the kind of auth and ops plumbing I want from day one.
+- **[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up)** - Project-based C workbook for staying close to systems fundamentals and understanding what abstractions cost.
 
 ## Open source
 
-- **[OpenClaw](https://github.com/openclaw/openclaw)** — contributor; currently **2 merged PRs** upstream
-
-## How I build
-
-- **Ship small. Verify always.**
-- **Prefer boring infrastructure over clever architecture.**
-- **Make CLI, API, and operator workflows first-class.**
-- **Treat docs as part of the product.**
-- **Optimize for maintenance reality, not launch-day aesthetics.**
+- Contributor to **[OpenClaw](https://github.com/openclaw/openclaw)**, a multi-surface personal assistant project with chat, browser, desktop, and mobile integrations.
 
 ## Elsewhere
 

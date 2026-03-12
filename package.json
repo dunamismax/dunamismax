@@ -1,0 +1,10 @@
+{
+  "name": "dunamismax-profile",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.3.10",
+  "scripts": {
+    "readme:generate": "bun scripts/generate-readme.ts",
+    "readme:check": "bun scripts/generate-readme.ts --check"
+  }
+}
