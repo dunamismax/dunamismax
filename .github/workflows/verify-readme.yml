@@ -13,13 +13,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
         with:
-          python-version: "3.12"
-
-      - name: Compile scripts
-        run: python -m compileall scripts
+          bun-version: "1.3.10"
 
       - name: Verify generated README
-        run: python scripts/generate_readme.py --check
+        run: bun run readme:check
