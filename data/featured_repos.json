@@ -2,17 +2,17 @@
   {
     "name": "scry-home",
     "url": "https://github.com/dunamismax/scry-home",
-    "summary": "Control plane monorepo for local repo operations, encrypted backups, CAB packet scaffolding, and an operator dashboard."
+    "summary": "Canonical home for the Scry identity and prompt stack, with optional Bun tooling for local operations and encrypted artifacts."
   },
   {
     "name": "Roleback",
     "url": "https://github.com/dunamismax/Roleback",
-    "summary": "Self-hostable Discord server backup platform with a TanStack Start dashboard, bot runtime, Drizzle persistence, and observability."
+    "summary": "Self-hostable Discord backup platform with a TanStack Start dashboard, bot runtime, queued jobs, and restore tooling."
   },
   {
     "name": "rip",
     "url": "https://github.com/dunamismax/rip",
-    "summary": "Authenticated self-hosted `yt-dlp` workspace with PostgreSQL-backed queues, Better Auth, and OpenTelemetry around download workflows."
+    "summary": "Authenticated self-hosted `yt-dlp` workspace with PostgreSQL-backed queues, Better Auth, and observability around download workflows."
   },
   {
     "name": "QuestLog",
@@ -22,11 +22,11 @@
   {
     "name": "PodWatch",
     "url": "https://github.com/dunamismax/podwatch",
-    "summary": "Recurring-group scheduling app for pods, events, and timeline review inside a Bun monorepo."
+    "summary": "Scheduling app for recurring groups, pod events, and timeline review inside a Bun monorepo."
   },
   {
     "name": "tsforge",
     "url": "https://github.com/dunamismax/tsforge",
-    "summary": "Email template conversion workbench that pairs a Bun CLI with a TanStack Start app and a TypeScript converter core."
+    "summary": "TypeScript forge for durable scripts, converters, small tools, and a TanStack Start workbench."
   }
 ]
