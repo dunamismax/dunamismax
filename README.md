@@ -43,7 +43,7 @@ Most of my active work right now lives in these repositories:
 
 I still keep a hand in adjacent work when the problem is worth owning end to end:
 
-- **[boring-go-web](https://github.com/dunamismax/boring-go-web)** - Practical Go starter with Echo, Templ, HTMX, PostgreSQL, SQLC, and the kind of auth and ops plumbing I want from day one.
+- **[go-web-server](https://github.com/dunamismax/go-web-server)** - Practical Go starter with Echo, Templ, HTMX, PostgreSQL, SQLC, and the kind of auth and ops plumbing I want from day one.
 - **[scryfall-discord-bot](https://github.com/dunamismax/scryfall-discord-bot)** - Bun + TypeScript Discord bot for fast Magic: The Gathering card lookups against the Scryfall API.
 - **[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up)** - Project-based C workbook for staying close to systems fundamentals and understanding what abstractions cost.
 
