@@ -9,44 +9,44 @@ Bun-first TypeScript builder for self-hosted products, control planes, and opera
 ![Drizzle ORM](https://img.shields.io/badge/Drizzle-ORM-C5F74F?style=flat-square&logo=drizzle&logoColor=111111)
 ![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-Wired-6B3FA0?style=flat-square&logo=opentelemetry&logoColor=white)
 
-I spend most of my time building Bun monorepos with shared contracts across web, server, and CLI packages. The common thread is narrow products, explicit data flow, authentication that is part of the design, and observability wired in before the system gets complicated.
+I build small-team-ownable systems: TanStack Start apps, Bun CLIs, shared contracts across packages, background workflows, and the auth and telemetry plumbing that keeps everything honest once real users show up.
 
-## Current stack
+## Current projects
 
-- Runtime, scripts, and workspaces: Bun
-- Language: TypeScript
-- App layer: TanStack Start, TanStack Router, TanStack Query
-- Data: PostgreSQL + Drizzle ORM
-- Validation and contracts: Zod
-- Auth: Better Auth
-- Tooling: Biome + Vitest
-- Observability: OpenTelemetry
-
-## What I optimize for
-
-- Self-hosted and operator-facing software that a small team can actually own
-- Clear contracts between packages instead of hidden framework magic
-- Web apps, CLIs, and background workflows that share the same domain model
-- Docs, tests, and telemetry as part of the feature, not cleanup work later
-
-## Current repos
-
-Most of my active work now lives in these Bun-first repositories:
+Most of my active work right now lives in these repositories:
 
 <!-- BEGIN GENERATED FEATURED REPOS -->
-- **[scry-home](https://github.com/dunamismax/scry-home)** - Control plane monorepo for local repo operations, encrypted backups, CAB packet scaffolding, and an operator dashboard.
-- **[Roleback](https://github.com/dunamismax/Roleback)** - Self-hostable Discord server backup platform with a TanStack Start dashboard, bot runtime, Drizzle persistence, and observability.
-- **[rip](https://github.com/dunamismax/rip)** - Authenticated self-hosted `yt-dlp` workspace with PostgreSQL-backed queues, Better Auth, and OpenTelemetry around download workflows.
+- **[scry-home](https://github.com/dunamismax/scry-home)** - Canonical home for the Scry identity and prompt stack, with optional Bun tooling for local operations and encrypted artifacts.
+- **[Roleback](https://github.com/dunamismax/Roleback)** - Self-hostable Discord backup platform with a TanStack Start dashboard, bot runtime, queued jobs, and restore tooling.
+- **[rip](https://github.com/dunamismax/rip)** - Authenticated self-hosted `yt-dlp` workspace with PostgreSQL-backed queues, Better Auth, and observability around download workflows.
 - **[QuestLog](https://github.com/dunamismax/questlog)** - Personal execution journal for quests, habits, daily check-ins, and a lightweight XP loop.
-- **[PodWatch](https://github.com/dunamismax/podwatch)** - Recurring-group scheduling app for pods, events, and timeline review inside a Bun monorepo.
-- **[tsforge](https://github.com/dunamismax/tsforge)** - Email template conversion workbench that pairs a Bun CLI with a TanStack Start app and a TypeScript converter core.
+- **[PodWatch](https://github.com/dunamismax/podwatch)** - Scheduling app for recurring groups, pod events, and timeline review inside a Bun monorepo.
+- **[tsforge](https://github.com/dunamismax/tsforge)** - TypeScript forge for durable scripts, converters, small tools, and a TanStack Start workbench.
 <!-- END GENERATED FEATURED REPOS -->
+
+## How I build
+
+- Bun-first monorepos with shared contracts across web, server, and CLI packages
+- Operator-facing and self-hosted software with explicit boundaries and boring operations
+- Auth, background work, docs, tests, and telemetry treated as part of the product
+
+## Stack
+
+- Runtime and workspaces: Bun
+- Language: TypeScript
+- App layer: TanStack Start, TanStack Router, TanStack Query
+- Data and contracts: PostgreSQL, Drizzle ORM, Zod
+- Auth: Better Auth
+- Tooling: Biome, Vitest, OpenTelemetry
 
 ## Also in the workshop
 
-I still keep a hand in adjacent work when control is worth the cost:
+I still keep a hand in adjacent work when the problem is worth owning end to end:
 
 - **[boring-go-web](https://github.com/dunamismax/boring-go-web)** - Practical Go starter with Echo, Templ, HTMX, PostgreSQL, SQLC, and the kind of auth and ops plumbing I want from day one.
+- **[scryfall-discord-bot](https://github.com/dunamismax/scryfall-discord-bot)** - Bun + TypeScript Discord bot for fast Magic: The Gathering card lookups against the Scryfall API.
+- **[imaging-services-ops](https://github.com/dunamismax/imaging-services-ops)** - Long-lived business and website workspace for Imaging Services operations.
+- **[Sawyer-Visual-Media](https://github.com/dunamismax/Sawyer-Visual-Media)** - Operating repo for an aerial media business with website code, workflows, and planning material.
 - **[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up)** - Project-based C workbook for staying close to systems fundamentals and understanding what abstractions cost.
 
 ## Open source
