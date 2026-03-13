@@ -45,8 +45,6 @@ I still keep a hand in adjacent work when the problem is worth owning end to end
 
 - **[boring-go-web](https://github.com/dunamismax/boring-go-web)** - Practical Go starter with Echo, Templ, HTMX, PostgreSQL, SQLC, and the kind of auth and ops plumbing I want from day one.
 - **[scryfall-discord-bot](https://github.com/dunamismax/scryfall-discord-bot)** - Bun + TypeScript Discord bot for fast Magic: The Gathering card lookups against the Scryfall API.
-- **[imaging-services-ops](https://github.com/dunamismax/imaging-services-ops)** - Long-lived business and website workspace for Imaging Services operations.
-- **[Sawyer-Visual-Media](https://github.com/dunamismax/Sawyer-Visual-Media)** - Operating repo for an aerial media business with website code, workflows, and planning material.
 - **[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up)** - Project-based C workbook for staying close to systems fundamentals and understanding what abstractions cost.
 
 ## Open source
