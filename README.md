@@ -1,51 +1,56 @@
-# Stephen Sawyer
+# Hi, I'm Stephen Sawyer
 
-Bun-first TypeScript builder for self-hosted products, control planes, and operator-facing software.
+Node.js + pnpm + TypeScript builder for self-hosted products, internal tools, and operator-facing software.
 
-![Bun](https://img.shields.io/badge/Bun-1.3+-000000?style=flat-square&logo=bun&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![TanStack Start](https://img.shields.io/badge/TanStack-Start-FF4154?style=flat-square&logo=tanstack&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16+-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Drizzle ORM](https://img.shields.io/badge/Drizzle-ORM-C5F74F?style=flat-square&logo=drizzle&logoColor=111111)
-![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-Wired-6B3FA0?style=flat-square&logo=opentelemetry&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-Runtime-339933?style=flat-square&logo=node.js&logoColor=white)
+![pnpm](https://img.shields.io/badge/pnpm-Workspace-F69220?style=flat-square&logo=pnpm&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-Typed-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-SPA-61DAFB?style=flat-square&logo=react&logoColor=111111)
+![Vite](https://img.shields.io/badge/Vite-Build-646CFF?style=flat-square&logo=vite&logoColor=white)
+![TanStack](https://img.shields.io/badge/TanStack-Router%20%7C%20Query%20%7C%20Form-FF4154?style=flat-square&logo=tanstack&logoColor=white)
+![Hono](https://img.shields.io/badge/Hono-API-E36002?style=flat-square&logo=hono&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Self--Hosted-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748?style=flat-square&logo=prisma&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-E2E-2EAD33?style=flat-square&logo=playwright&logoColor=white)
 
-I build small-team-ownable systems: TanStack Start apps, Bun CLIs, shared contracts across packages, background workflows, and the auth and telemetry plumbing that keeps everything honest once real users show up.
+I build typed React SPAs and full-stack apps with Vite, TanStack Router, TanStack Query, TanStack Form, Hono, PostgreSQL, Prisma, Better Auth, Zod, Biome, Vitest, and Playwright.
+
+Most of my current work is self-hosted software with a React SPA on the front, a Hono API on the back, shared contracts in the middle, and boring operations by design.
 
 ## Current projects
 
 <!-- BEGIN GENERATED FEATURED REPOS -->
-- **[Roleback](https://github.com/dunamismax/Roleback)** — Self-hostable Discord server backup platform with full and incremental snapshots, a TanStack Start dashboard, bot runtime, queued jobs, and restore tooling.
-- **[rip](https://github.com/dunamismax/rip)** — Authenticated self-hosted `yt-dlp` workspace with PostgreSQL-backed download queues, concurrent workers, format inspection, and OpenTelemetry tracing.
-- **[QuestLog](https://github.com/dunamismax/questlog)** — Personal execution journal with finite quests, recurring habits, daily check-ins, and a lightweight XP loop.
-- **[PodWatch](https://github.com/dunamismax/podwatch)** — Scheduling app for recurring groups, pod events, and timeline review inside a Bun monorepo.
-- **[tsforge](https://github.com/dunamismax/tsforge)** — TypeScript forge for durable scripts, converters, small tools, and a TanStack Start workbench.
-- **[scry-home](https://github.com/dunamismax/scry-home)** — Canonical home for the Scry identity and prompt stack, with optional Bun tooling for local operations and encrypted artifacts.
+- **[Roleback](https://github.com/dunamismax/Roleback)** - Self-hosted Discord server backup platform with a React + Vite dashboard, Hono API, PostgreSQL + Prisma, bot workers, resumable jobs, and restore tooling.
+- **[Chute](https://github.com/dunamismax/Chute)** - Self-hosted form backend and dashboard for collecting submissions, reviewing entries, exporting CSVs, and protecting public endpoints with practical anti-spam controls.
+- **[rip](https://github.com/dunamismax/rip)** - Self-hosted `yt-dlp` control deck with authenticated access, PostgreSQL-backed queues, concurrent workers, and format and download operations.
+- **[QuestLog](https://github.com/dunamismax/questlog)** - Focused execution journal for quests, habits, daily check-ins, and a lightweight XP loop built on the same React + Hono + Prisma stack.
+- **[PodWatch](https://github.com/dunamismax/podwatch)** - Full-stack scheduling workspace for small recurring groups, pod events, and timeline review.
+- **[tsforge](https://github.com/dunamismax/tsforge)** - TypeScript forge for durable scripts, converters, and small tools, with Bun used selectively where it fits.
 <!-- END GENERATED FEATURED REPOS -->
+
+## Active stack
+
+- Core platform: Node.js, pnpm, TypeScript
+- SPA stack: Vite, React, TanStack Router, TanStack Query, TanStack Form, Zod, shadcn/ui, Radix UI
+- Full-stack extension: Hono, PostgreSQL, Prisma, Prisma Migrate, Better Auth, Zod
+- Tooling: Biome, Vitest, Playwright
+- Deployment model: self-hosted
 
 ## How I build
 
-- Bun-first monorepos with shared contracts across web, server, and CLI packages
-- Operator-facing and self-hosted software with explicit boundaries and boring operations
-- Auth, background work, docs, tests, and telemetry treated as part of the product
-- Two stacks: TanStack Start for apps people use, Astro + Vue for sites people read
+- Small-team-ownable systems with explicit boundaries and clean contracts
+- React SPA frontend plus Hono API backend when the product needs persistence, auth, or protected operations
+- Auth, validation, background jobs, and test coverage treated as core product work
+- Self-hosted software designed to be understandable and maintainable without a giant platform team
 
-## Stack
-
-**Application stack** — TanStack Start, TanStack Router, TanStack Query, PostgreSQL, Drizzle ORM, Better Auth, Zod, OpenTelemetry
-
-**Content stack** — Astro, Vue (islands), Markdown / MDX, Content Collections, static-first with PostgreSQL only when needed
-
-**Everywhere** — Bun, TypeScript, Biome, Vitest
-
-## Also in the workshop
+## Also building
 
 - **[go-web-server](https://github.com/dunamismax/go-web-server)** — Go starter with Echo, Templ, HTMX, PostgreSQL, SQLC, and the auth and ops plumbing I want from day one.
 - **[scryfall-discord-bot](https://github.com/dunamismax/scryfall-discord-bot)** — Bun + TypeScript Discord bot for fast Magic: The Gathering card lookups against the Scryfall API.
+- **[scry-home](https://github.com/dunamismax/scry-home)** — Canonical home for the Scry identity and prompt stack, with optional workspace tooling.
 - **[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up)** — Project-based C workbook for staying close to systems fundamentals and understanding what abstractions cost.
 
-## Open source
-
-- Contributor to **[OpenClaw](https://github.com/openclaw/openclaw)**, a multi-surface personal assistant project with chat, browser, desktop, and mobile integrations.
+I also use Bun and Go selectively where they fit, but the default stack for my current apps is the Node.js + pnpm + Vite + React + Hono setup above.
 
 ## Elsewhere
 
