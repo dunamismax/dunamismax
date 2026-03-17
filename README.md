@@ -25,7 +25,7 @@ Most of my current work is self-hosted software with a React SPA on the front, a
 - **[rip](https://github.com/dunamismax/rip)** - Self-hosted `yt-dlp` control deck with authenticated access, PostgreSQL-backed queues, concurrent workers, and format and download operations.
 - **[QuestLog](https://github.com/dunamismax/questlog)** - Focused execution journal for quests, habits, daily check-ins, and a lightweight XP loop built on the same React + Hono + Prisma stack.
 - **[PodWatch](https://github.com/dunamismax/podwatch)** - Full-stack scheduling workspace for small recurring groups, pod events, and timeline review.
-- **[tsforge](https://github.com/dunamismax/tsforge)** - TypeScript forge for durable scripts, converters, and small tools, with Bun used selectively where it fits.
+- **[tsforge](https://github.com/dunamismax/tsforge)** - TypeScript forge for durable scripts, converters, and small tools.
 <!-- END GENERATED FEATURED REPOS -->
 
 ## Active stack
@@ -43,14 +43,14 @@ Most of my current work is self-hosted software with a React SPA on the front, a
 - Auth, validation, background jobs, and test coverage treated as core product work
 - Self-hosted software designed to be understandable and maintainable without a giant platform team
 
-## Also building
+## Also maintaining
 
-- **[go-web-server](https://github.com/dunamismax/go-web-server)** — Go starter with Echo, Templ, HTMX, PostgreSQL, SQLC, and the auth and ops plumbing I want from day one.
-- **[scryfall-discord-bot](https://github.com/dunamismax/scryfall-discord-bot)** — Bun + TypeScript Discord bot for fast Magic: The Gathering card lookups against the Scryfall API.
+- **[go-web-server](https://github.com/dunamismax/go-web-server)** — Legacy Go starter that I still maintain.
+- **[scryfall-discord-bot](https://github.com/dunamismax/scryfall-discord-bot)** — TypeScript Discord bot for fast Magic: The Gathering card lookups against the Scryfall API.
 - **[scry-home](https://github.com/dunamismax/scry-home)** — Canonical home for the Scry identity and prompt stack, with optional workspace tooling.
 - **[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up)** — Project-based C workbook for staying close to systems fundamentals and understanding what abstractions cost.
 
-I also use Bun and Go selectively where they fit, but the default stack for my current apps is the Node.js + pnpm + Vite + React + Hono setup above.
+I work exclusively in TypeScript today. Older non-TypeScript repos are legacy maintenance, but my active stack is Node.js + pnpm + Vite + React + Hono.
 
 ## Elsewhere
 
