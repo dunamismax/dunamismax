@@ -10,8 +10,6 @@ Self-hosted product builder focused on operator-facing software, internal tools,
 ![TanStack](https://img.shields.io/badge/TanStack-Router%20%7C%20Query%20%7C%20Form-FF4154?style=flat-square&logo=tanstack&logoColor=white)
 ![Hono](https://img.shields.io/badge/Hono-API-E36002?style=flat-square&logo=hono&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Self--Hosted-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748?style=flat-square&logo=prisma&logoColor=white)
-![Playwright](https://img.shields.io/badge/Playwright-E2E-2EAD33?style=flat-square&logo=playwright&logoColor=white)
 
 Most of my active work follows one default stack:
 
