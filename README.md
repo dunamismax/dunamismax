@@ -1,6 +1,6 @@
 # Hi, I'm Stephen Sawyer
 
-Node.js + pnpm + TypeScript builder for self-hosted products, internal tools, and operator-facing software.
+Self-hosted product builder focused on operator-facing software, internal tools, and small-team-ownable systems.
 
 ![Node.js](https://img.shields.io/badge/Node.js-Runtime-339933?style=flat-square&logo=node.js&logoColor=white)
 ![pnpm](https://img.shields.io/badge/pnpm-Workspace-F69220?style=flat-square&logo=pnpm&logoColor=white)
@@ -13,44 +13,41 @@ Node.js + pnpm + TypeScript builder for self-hosted products, internal tools, an
 ![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748?style=flat-square&logo=prisma&logoColor=white)
 ![Playwright](https://img.shields.io/badge/Playwright-E2E-2EAD33?style=flat-square&logo=playwright&logoColor=white)
 
-I build typed React SPAs and full-stack apps with Vite, TanStack Router, TanStack Query, TanStack Form, Hono, PostgreSQL, Prisma, Better Auth, Zod, Biome, Vitest, and Playwright.
+Most of my active work follows one default stack:
 
-Most of my current work is self-hosted software with a React SPA on the front, a Hono API on the back, shared contracts in the middle, and boring operations by design.
+- Platform: Node.js, pnpm, TypeScript
+- SPA: Vite, React, TanStack Router, TanStack Query, TanStack Form, Zod, shadcn/ui, Radix UI
+- Full-stack extension: Hono, PostgreSQL, Prisma, Prisma Migrate, Better Auth
+- Tooling: Biome, Vitest, Playwright
 
-## Current projects
+I like boring operations, explicit contracts, and software that can run on a single host without a giant platform team.
+
+## Start Here
 
 <!-- BEGIN GENERATED FEATURED REPOS -->
-- **[Roleback](https://github.com/dunamismax/Roleback)** - Self-hosted Discord server backup platform with a React + Vite dashboard, Hono API, PostgreSQL + Prisma, bot workers, resumable jobs, and restore tooling.
-- **[Chute](https://github.com/dunamismax/Chute)** - Self-hosted form backend and dashboard for collecting submissions, reviewing entries, exporting CSVs, and protecting public endpoints with practical anti-spam controls.
-- **[rip](https://github.com/dunamismax/rip)** - Self-hosted `yt-dlp` control deck with authenticated access, PostgreSQL-backed queues, concurrent workers, and format and download operations.
-- **[QuestLog](https://github.com/dunamismax/questlog)** - Focused execution journal for quests, habits, daily check-ins, and a lightweight XP loop built on the same React + Hono + Prisma stack.
-- **[PodWatch](https://github.com/dunamismax/podwatch)** - Full-stack scheduling workspace for small recurring groups, pod events, and timeline review.
-- **[tsforge](https://github.com/dunamismax/tsforge)** - TypeScript forge for durable scripts, converters, and small tools.
+- **[Roleback](https://github.com/dunamismax/Roleback)** - Self-hosted Discord server backup and restore platform with a React dashboard, Hono API, PostgreSQL + Prisma, bot workers, resumable jobs, snapshot lineage, and conservative restore flows.
+- **[FieldLog](https://github.com/dunamismax/fieldlog)** - Offline-first inspection, checklist, note, and media-capture workspace with a strong mobile-first foundation around local persistence, queued sync, conflict review, and report export.
+- **[Dispatch](https://github.com/dunamismax/dispatch)** - Runnable foundation for a self-hosted webhook gateway, inspector, replay console, and delivery-operations workspace with signed inbound hooks, searchable event history, and replay tooling.
+- **[Chute](https://github.com/dunamismax/Chute)** - Self-hosted form backend and dashboard for public submission endpoints, spam-resistant handling, CSV export, and optional email notifications.
+- **[rip](https://github.com/dunamismax/rip)** - Self-hosted `yt-dlp` control deck with authenticated access, PostgreSQL-backed queues, concurrent workers, and download, format, and remux operations.
+- **[OpsLedger](https://github.com/dunamismax/opsledger)** - Initial MVP foundation for an incident notebook, runbook workspace, and restore-drill tracker for small teams with service catalog, timeline, postmortem, and drill workflows.
 <!-- END GENERATED FEATURED REPOS -->
 
-## Active stack
+## More Active Repos
 
-- Core platform: Node.js, pnpm, TypeScript
-- SPA stack: Vite, React, TanStack Router, TanStack Query, TanStack Form, Zod, shadcn/ui, Radix UI
-- Full-stack extension: Hono, PostgreSQL, Prisma, Prisma Migrate, Better Auth, Zod
-- Tooling: Biome, Vitest, Playwright
-- Deployment model: self-hosted
+- **[PodWatch](https://github.com/dunamismax/podwatch)** - Full-stack scheduling workspace for small recurring groups, pods, and event timelines.
+- **[QuestLog](https://github.com/dunamismax/questlog)** - Focused execution journal for quests, habits, daily check-ins, and a lightweight XP loop.
+- **[Arbor](https://github.com/dunamismax/arbor)** - Installable TypeScript backend utilities for Hono and Prisma, starting with request, audit, and actor-context packages.
+- **[tsforge](https://github.com/dunamismax/tsforge)** - TypeScript forge for durable scripts, converters, small tools, and lightweight interfaces on top of them.
 
-## How I build
+## Also Maintaining
 
-- Small-team-ownable systems with explicit boundaries and clean contracts
-- React SPA frontend plus Hono API backend when the product needs persistence, auth, or protected operations
-- Auth, validation, background jobs, and test coverage treated as core product work
-- Self-hosted software designed to be understandable and maintainable without a giant platform team
+- **[go-web-server](https://github.com/dunamismax/go-web-server)** - Go starter for server-rendered apps with Echo, Templ, HTMX, PostgreSQL, SQLC, and Mage.
+- **[scryfall-discord-bot](https://github.com/dunamismax/scryfall-discord-bot)** - TypeScript Discord bot for fast Magic: The Gathering card lookups against the Scryfall API.
+- **[scry-home](https://github.com/dunamismax/scry-home)** - Canonical home for the Scry persona, prompt stack, and optional Bun-based helper tooling.
+- **[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up)** - Project-based C workbook for staying close to systems fundamentals and understanding what abstractions cost.
 
-## Also maintaining
-
-- **[go-web-server](https://github.com/dunamismax/go-web-server)** — Legacy Go starter that I still maintain.
-- **[scryfall-discord-bot](https://github.com/dunamismax/scryfall-discord-bot)** — TypeScript Discord bot for fast Magic: The Gathering card lookups against the Scryfall API.
-- **[scry-home](https://github.com/dunamismax/scry-home)** — Canonical home for the Scry identity and prompt stack, with optional workspace tooling.
-- **[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up)** — Project-based C workbook for staying close to systems fundamentals and understanding what abstractions cost.
-
-I work exclusively in TypeScript today. Older non-TypeScript repos are legacy maintenance, but my active stack is Node.js + pnpm + Vite + React + Hono.
+I work primarily in TypeScript today. Older Go, bot, and systems-learning repos are still maintained, but the center of gravity is self-hosted React + Hono + PostgreSQL products.
 
 ## Elsewhere
 
