@@ -24,14 +24,12 @@ I like boring operations, explicit contracts, and software that can run on a sin
 
 ## Start Here
 
-<!-- BEGIN GENERATED FEATURED REPOS -->
 - **[Roleback](https://github.com/dunamismax/Roleback)** - Self-hosted Discord server backup and restore platform with a React dashboard, Hono API, PostgreSQL + Prisma, bot workers, resumable jobs, snapshot lineage, and conservative restore flows.
 - **[FieldLog](https://github.com/dunamismax/fieldlog)** - Offline-first inspection, checklist, note, and media-capture workspace with a strong mobile-first foundation around local persistence, queued sync, conflict review, and report export.
 - **[Dispatch](https://github.com/dunamismax/dispatch)** - Runnable foundation for a self-hosted webhook gateway, inspector, replay console, and delivery-operations workspace with signed inbound hooks, searchable event history, and replay tooling.
 - **[Chute](https://github.com/dunamismax/Chute)** - Self-hosted form backend and dashboard for public submission endpoints, spam-resistant handling, CSV export, and optional email notifications.
 - **[rip](https://github.com/dunamismax/rip)** - Self-hosted `yt-dlp` control deck with authenticated access, PostgreSQL-backed queues, concurrent workers, and download, format, and remux operations.
 - **[OpsLedger](https://github.com/dunamismax/opsledger)** - Initial MVP foundation for an incident notebook, runbook workspace, and restore-drill tracker for small teams with service catalog, timeline, postmortem, and drill workflows.
-<!-- END GENERATED FEATURED REPOS -->
 
 ## More Active Repos
 
@@ -44,7 +42,6 @@ I like boring operations, explicit contracts, and software that can run on a sin
 
 - **[go-web-server](https://github.com/dunamismax/go-web-server)** - Go starter for server-rendered apps with Echo, Templ, HTMX, PostgreSQL, SQLC, and Mage.
 - **[scryfall-discord-bot](https://github.com/dunamismax/scryfall-discord-bot)** - TypeScript Discord bot for fast Magic: The Gathering card lookups against the Scryfall API.
-- **[scry-home](https://github.com/dunamismax/scry-home)** - Canonical home for the Scry persona, prompt stack, and optional Bun-based helper tooling.
 - **[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up)** - Project-based C workbook for staying close to systems fundamentals and understanding what abstractions cost.
 
 I work primarily in TypeScript today. Older Go, bot, and systems-learning repos are still maintained, but the center of gravity is self-hosted React + Hono + PostgreSQL products.
