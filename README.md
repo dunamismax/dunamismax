@@ -1,48 +1,60 @@
 # Hi, I'm Stephen Sawyer
 
-Self-hosted product builder focused on operator-facing software, internal tools, and small-team-ownable systems.
+Rust engineer, hacker, tinkerer, and builder focused on local-first software, native tools, terminal workbenches, and small systems that do real work.
 
-![Node.js](https://img.shields.io/badge/Node.js-Runtime-339933?style=flat-square&logo=node.js&logoColor=white)
-![pnpm](https://img.shields.io/badge/pnpm-Workspace-F69220?style=flat-square&logo=pnpm&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-Typed-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-SPA-61DAFB?style=flat-square&logo=react&logoColor=111111)
-![Vite](https://img.shields.io/badge/Vite-Build-646CFF?style=flat-square&logo=vite&logoColor=white)
-![TanStack](https://img.shields.io/badge/TanStack-Router%20%7C%20Query%20%7C%20Form-FF4154?style=flat-square&logo=tanstack&logoColor=white)
-![Hono](https://img.shields.io/badge/Hono-API-E36002?style=flat-square&logo=hono&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Self--Hosted-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-First-000000?style=flat-square&logo=rust&logoColor=white)
+![Tauri](https://img.shields.io/badge/Tauri-v2-24C8DB?style=flat-square&logo=tauri&logoColor=white)
+![Axum](https://img.shields.io/badge/Axum-Web-000000?style=flat-square&logo=rust&logoColor=white)
+![HTMX](https://img.shields.io/badge/HTMX-Thin%20Frontend-3366CC?style=flat-square&logo=htmx&logoColor=white)
+![Tokio](https://img.shields.io/badge/Tokio-Async-000000?style=flat-square&logo=rust&logoColor=white)
+![tracing](https://img.shields.io/badge/tracing-Observability-5A5A5A?style=flat-square)
+![SQLite](https://img.shields.io/badge/SQLite-Local--First-003B57?style=flat-square&logo=sqlite&logoColor=white)
+![SQLx](https://img.shields.io/badge/SQLx-Checked%20Queries-6E4AFF?style=flat-square)
+![Ratatui](https://img.shields.io/badge/Ratatui-TUI-7A3E00?style=flat-square)
+![egui](https://img.shields.io/badge/egui-Native%20UI-4E7BFF?style=flat-square)
+![wgpu](https://img.shields.io/badge/wgpu-Graphics-222222?style=flat-square)
 
-Most of my active work follows one default stack:
+I build Rust-first systems with shared core logic, thin interfaces, and hard boundaries between product code and presentation. The goal is simple: ship software that can live on one machine, stay understandable, and still feel sharp.
 
-- Platform: Node.js, pnpm, TypeScript
-- SPA: Vite, React, TanStack Router, TanStack Query, TanStack Form, Zod, shadcn/ui, Radix UI
-- Full-stack extension: Hono, PostgreSQL, Prisma, Prisma Migrate, Better Auth
-- Tooling: Biome, Vitest, Playwright
+## Universal Rust Stack
 
-I like boring operations, explicit contracts, and software that can run on a single host without a giant platform team.
+- Core tooling: `rustup`, `rust-analyzer`, `cargo-nextest`
+- Architecture: Rust-first domain logic, thin frontend, strict boundaries
+- Desktop and mobile: `Tauri v2`
+- Web: `Axum` + `HTMX` + plain HTML/CSS
+- Runtime and observability: `Tokio` + `tracing`
+- Data: `SQLite` + `SQLx`
+- Interfaces: `Ratatui` and `egui`
+- Graphics: `wgpu`
 
-## Start Here
+I like local-first data, single-binary deployments, operator-facing tooling, and products small teams can actually own.
 
-- **[Roleback](https://github.com/dunamismax/Roleback)** - Self-hosted Discord server backup and restore platform with a React dashboard, Hono API, PostgreSQL + Prisma, bot workers, resumable jobs, snapshot lineage, and conservative restore flows.
-- **[FieldLog](https://github.com/dunamismax/fieldlog)** - Offline-first inspection, checklist, note, and media-capture workspace with a strong mobile-first foundation around local persistence, queued sync, conflict review, and report export.
-- **[Dispatch](https://github.com/dunamismax/dispatch)** - Runnable foundation for a self-hosted webhook gateway, inspector, replay console, and delivery-operations workspace with signed inbound hooks, searchable event history, and replay tooling.
-- **[Chute](https://github.com/dunamismax/Chute)** - Self-hosted form backend and dashboard for public submission endpoints, spam-resistant handling, CSV export, and optional email notifications.
-- **[rip](https://github.com/dunamismax/rip)** - Self-hosted `yt-dlp` control deck with authenticated access, PostgreSQL-backed queues, concurrent workers, and download, format, and remux operations.
-- **[OpsLedger](https://github.com/dunamismax/opsledger)** - Initial MVP foundation for an incident notebook, runbook workspace, and restore-drill tracker for small teams with service catalog, timeline, postmortem, and drill workflows.
+## Active Rust Repos
 
-## More Active Repos
+- **[TraceScope](https://github.com/dunamismax/tracescope)** - Native async telemetry cockpit for Tokio apps: connect to `console-subscriber`, record sessions, and inspect tasks, spans, resources, warnings, and timelines in a Rust desktop UI.
+- **[HostLens](https://github.com/dunamismax/hostlens)** - macOS host visibility desk: snapshot launch agents, ports, installed apps, recent files, and persistence points, diff them over time, and search the results locally.
+- **[ChangeRadar](https://github.com/dunamismax/changeradar)** - Local-first watcher for remote pages and local files with normalized snapshots, diff scoring, SQLite history, and native alerts when something meaningfully changes.
+- **[Caseboard](https://github.com/dunamismax/caseboard)** - Investigation OS for sources, claims, evidence links, tags, snapshots, full-text search, and a time-oriented case timeline.
+- **[SourceDeck](https://github.com/dunamismax/sourcedeck)** - Terminal-native research workbench that ingests CSV, JSON, NDJSON, plain text, and SQLite into a searchable, taggable local vault.
+- **[Atlas Local](https://github.com/dunamismax/atlaslocal)** - Local dataset mapper for turning CSV and JSON into structured timelines with schema inference, field mapping, SQLite persistence, and Markdown/HTML export.
+- **[Patchworks](https://github.com/dunamismax/patchworks)** - Git-style visual diffing for SQLite databases with schema comparison, row diffs, snapshots, and generated SQL to move one database toward another.
+- **[Cargo Scout](https://github.com/dunamismax/cargoscout)** - Ratatui instrument panel for Cargo dependency graphs, why-path inspection, feature visibility, and RustSec advisory surfacing.
 
-- **[PodWatch](https://github.com/dunamismax/podwatch)** - Full-stack scheduling workspace for small recurring groups, pods, and event timelines.
-- **[QuestLog](https://github.com/dunamismax/questlog)** - Focused execution journal for quests, habits, daily check-ins, and a lightweight XP loop.
-- **[Arbor](https://github.com/dunamismax/arbor)** - Installable TypeScript backend utilities for Hono and Prisma, starting with request, audit, and actor-context packages.
-- **[tsforge](https://github.com/dunamismax/tsforge)** - TypeScript forge for durable scripts, converters, small tools, and lightweight interfaces on top of them.
+## Archived TypeScript / Web Stack
 
-## Also Maintaining
+These repos belong to my previous TypeScript-first phase and are no longer actively maintained.
 
-- **[go-web-server](https://github.com/dunamismax/go-web-server)** - Go starter for server-rendered apps with Echo, Templ, HTMX, PostgreSQL, SQLC, and Mage.
-- **[scryfall-discord-bot](https://github.com/dunamismax/scryfall-discord-bot)** - TypeScript Discord bot for fast Magic: The Gathering card lookups against the Scryfall API.
-- **[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up)** - Project-based C workbook for staying close to systems fundamentals and understanding what abstractions cost.
-
-I work primarily in TypeScript today. Older Go, bot, and systems-learning repos are still maintained, but the center of gravity is self-hosted React + Hono + PostgreSQL products.
+- **[Roleback](https://github.com/dunamismax/roleback)** - Discord backup and restore platform
+- **[FieldLog](https://github.com/dunamismax/fieldlog)** - Offline-first inspection and reporting workspace
+- **[Dispatch](https://github.com/dunamismax/dispatch)** - Self-hosted webhook gateway and replay console
+- **[Chute](https://github.com/dunamismax/chute)** - Self-hosted forms backend and dashboard
+- **[rip](https://github.com/dunamismax/rip)** - `yt-dlp` control deck and download queue
+- **[OpsLedger](https://github.com/dunamismax/opsledger)** - Incident notebook and runbook workspace
+- **[PodWatch](https://github.com/dunamismax/podwatch)** - Scheduling workspace for pods and recurring groups
+- **[QuestLog](https://github.com/dunamismax/questlog)** - Quest, habit, and execution journal
+- **[Arbor](https://github.com/dunamismax/arbor)** - TypeScript backend utility packages
+- **[tsforge](https://github.com/dunamismax/tsforge)** - TypeScript forge for scripts and lightweight tools
+- **[scryfall-discord-bot](https://github.com/dunamismax/scryfall-discord-bot)** - Discord bot for Magic card lookups
 
 ## Elsewhere
 
