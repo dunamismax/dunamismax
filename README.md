@@ -23,9 +23,6 @@
   <img alt="Tauri v2" src="https://img.shields.io/badge/Tauri-v2-24C8D8?style=for-the-badge&amp;logo=tauri&amp;logoColor=white" />
   <img alt="Tokio" src="https://img.shields.io/badge/Tokio-DC2626?style=for-the-badge" />
   <img alt="SQLx" src="https://img.shields.io/badge/SQLx-0F172A?style=for-the-badge" />
-</p>
-
-<p align="center">
   <img alt="Axum" src="https://img.shields.io/badge/Axum-111827?style=for-the-badge" />
   <img alt="HTMX" src="https://img.shields.io/badge/HTMX-3366CC?style=for-the-badge&amp;logo=htmx&amp;logoColor=white" />
   <img alt="Ratatui" src="https://img.shields.io/badge/Ratatui-166534?style=for-the-badge" />
