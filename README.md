@@ -6,7 +6,7 @@
   <br />
   Builder of native desktop apps, terminal workbenches, and small systems that stay understandable.
   <br />
-  Most of my work lives at the intersection of observability, research workflows, diffing, and SQLite-backed local software.
+  Most of my work lives at the intersection of observability, research workflows, Cargo/workspace tooling, diffing, and SQLite-backed local software, with a side channel of visual and playable Rust experiments.
   <br />
   <br />
   <a href="https://github.com/dunamismax">GitHub</a>
@@ -64,13 +64,58 @@ Terminal-native research workbench that ingests CSV, JSON, NDJSON, plain text, a
 **[Atlas Local](https://github.com/dunamismax/atlaslocal)**
 Local dataset mapper that turns CSV and JSON into timeline reports with schema inference, field mapping, diagnostics, and Markdown/HTML export.
 
-### Developer Tooling and Data Utilities
+### Cargo and Workspace Tooling
+
+**[Cargo Scout](https://github.com/dunamismax/cargoscout)**
+Ratatui instrument panel for Cargo dependency graphs, shortest-path "why is this here?" tracing, feature visibility, and RustSec advisory surfacing.
+
+**[cargo-capability](https://github.com/dunamismax/cargo-capability)**
+Cargo subcommand that heuristically inventories sensitive capabilities in Rust workspaces, explains where they came from, and enforces simple CI policy.
+
+**[cargo-compatible](https://github.com/dunamismax/cargo-compatible)**
+Cargo subcommand for finding the highest dependency graph that still fits a chosen Rust version or MSRV, with candidate lockfile resolution and conservative manifest suggestions.
+
+**[cargo-doctor-build](https://github.com/dunamismax/cargo-doctor-build)**
+Stable-Rust build profiler for Cargo workflows. Captures machine-readable snapshots, renders HTML reports, and compares runs to surface regressions and slow units.
+
+**[cargo-license-verify](https://github.com/dunamismax/cargo-license-verify)**
+Cargo subcommand for verifying manifest license metadata, packaged license evidence, SPDX headers, and dependency licensing against CI policy.
+
+### Data and Diff Utilities
 
 **[Patchworks](https://github.com/dunamismax/patchworks)**
 Native SQLite diff studio: inspect schemas, compare rows, snapshot live databases, and generate SQL intended to move one database toward another.
 
-**[Cargo Scout](https://github.com/dunamismax/cargoscout)**
-Ratatui instrument panel for Cargo dependency graphs, shortest-path "why is this here?" tracing, feature visibility, and RustSec advisory surfacing.
+### Playable Systems and Games
+
+**[Caseboard Noir](https://github.com/dunamismax/caseboard-noir)**
+Local-first detective game built with Tauri, Axum, and SQLite. Read source documents, link claims to evidence, reveal the timeline, and file a final accusation.
+
+**[Dependency Dungeon](https://github.com/dunamismax/dependency-dungeon)**
+Ratatui roguelike about surviving a cursed dependency graph, complete with deterministic floors, cargo-themed enemies, and a Lockfile Lich boss.
+
+**[Sand Sorcerer](https://github.com/dunamismax/sand-sorcerer)**
+Bevy action-puzzler / roguelite where combat is driven by reactive material-grid chain reactions across a short handcrafted ruined-temple run.
+
+### Visual, Audio, and Simulation Labs
+
+**[Deepblue](https://github.com/dunamismax/deepblue)**
+Truecolor terminal aquarium with procedural fish genomes, boids-inspired motion, breeding, feeding, bubbles, plants, and a day/night cycle.
+
+**[Falling-Sand Lab](https://github.com/dunamismax/falling-sand-lab)**
+Native `egui` cellular sandbox with seven reactive materials, instant presets, snapshot save/load, and a clean local desktop loop.
+
+**[Fractal Forge](https://github.com/dunamismax/fractal-forge)**
+GPU-powered fractal explorer with Mandelbrot, Julia, Burning Ship, and Tricorn modes, progressive rendering, palette cycling, and PNG export.
+
+**[Signal Garden](https://github.com/dunamismax/signal-garden)**
+Desktop particle-and-trail instrument built with `wgpu` and `egui`, tuned around curated presets, live control-surface tweaking, and screensaver mode.
+
+**[Sonic Prism](https://github.com/dunamismax/sonic-prism)**
+Microphone-driven audio visualizer that runs FFT analysis in Rust and renders multiple reactive GPU views through a native desktop shell.
+
+**[Void Museum](https://github.com/dunamismax/void-museum)**
+Desktop ray-marching gallery for impossible geometry and fractal objects, with orbit/fly camera modes plus PNG and GIF export.
 
 ## Beyond Rust
 
