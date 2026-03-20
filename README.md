@@ -62,6 +62,9 @@ macOS host-visibility recorder. Collects launch agents, ports, installed apps, r
 **[ChangeRadar](https://github.com/dunamismax/changeradar)**
 Local-first change watcher for web pages and local files. Normalizes content, scores diffs, stores history in SQLite, and raises desktop notifications when something materially changes.
 
+**[GitPulse](https://github.com/dunamismax/gitpulse)**
+Local-first git activity tracker for one repo or many. Watches working trees, stages, commits, pushes, sessions, streaks, and goals in real time, then serves the history back through a responsive local dashboard backed by SQLite.
+
 ### Research and Investigation
 
 **[Caseboard](https://github.com/dunamismax/caseboard)**
