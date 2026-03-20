@@ -4,9 +4,9 @@
   <strong>Rust. Local-first. Ships.</strong>
   <br />
   <br />
-  Builder of native desktop apps, terminal workbenches, and small systems that stay understandable.
+  Builder of native desktop apps, terminal workbenches, web backends, and interactive Rust software that stays understandable.
   <br />
-  Most of my work lives at the intersection of observability, research workflows, Cargo/workspace tooling, diffing, and SQLite-backed local software, with a side channel of visual and playable Rust experiments.
+  Most of my work lives at the intersection of observability, research workflows, Cargo/workspace tooling, diffing, and SQLite-backed local software, with a side channel of visual, real-time, and playable Rust experiments.
   <br />
   <br />
   <a href="https://github.com/dunamismax">GitHub</a>
@@ -29,6 +29,8 @@
   <img alt="HTMX" src="https://img.shields.io/badge/HTMX-3366CC?style=for-the-badge&amp;logo=htmx&amp;logoColor=white" />
   <img alt="Ratatui" src="https://img.shields.io/badge/Ratatui-166534?style=for-the-badge" />
   <img alt="egui" src="https://img.shields.io/badge/egui-334155?style=for-the-badge" />
+  <img alt="Bevy" src="https://img.shields.io/badge/Bevy-1A1A1A?style=for-the-badge" />
+  <img alt="wgpu" src="https://img.shields.io/badge/wgpu-0F766E?style=for-the-badge" />
   <img alt="tracing" src="https://img.shields.io/badge/tracing-B45309?style=for-the-badge" />
 </p>
 
@@ -37,8 +39,17 @@
 - Local-first software over service-heavy architectures by default
 - SQLite as an application substrate, not just an implementation detail
 - Native desktop apps and TUIs when they make the tool clearer and faster
+- Web backends and server-rendered interfaces when they keep the product simpler
 - Diffs, timelines, search, and observability as first-class features
 - Shared Rust domain cores with thin interface layers on top
+
+## Preferred Stack
+
+- **Application shells:** Tauri v2 for native desktop/mobile shells, Axum for APIs and server-rendered apps, HTMX + plain HTML/CSS for low-complexity web interaction, Ratatui for terminal interfaces, egui for native tools, and Bevy when the project wants a real-time engine.
+- **Runtime and services:** Tokio for async execution, `tracing` for instrumentation, `reqwest` for outbound HTTP, and `tower-http` for practical Axum middleware.
+- **Data and persistence:** SQLite by default for local-first software, SQLx + SQLx migrations for explicit schemas and checked queries, plus `serde`, `serde_json`, and `toml` for app boundaries and configuration.
+- **CLI, config, and errors:** `clap` for developer-facing tools, `config` for layered settings, `thiserror` for library/domain errors, and `anyhow` at the application boundary.
+- **Quality and validation:** `rustfmt`, `clippy`, `cargo-nextest`, `cargo-deny`, Criterion, and Proptest as the default quality/performance/testing toolbox.
 
 ## Portfolio Map
 
