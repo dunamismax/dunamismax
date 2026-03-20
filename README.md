@@ -6,6 +6,7 @@
   <br />
   Builder of native desktop apps, terminal workbenches, web backends, and interactive Rust software that stays understandable.
   <br />
+  <br />
   Most of my work lives at the intersection of observability, research workflows, Cargo/workspace tooling, diffing, and SQLite-backed local software, with a side channel of visual, real-time, and playable Rust experiments.
   <br />
   <br />
