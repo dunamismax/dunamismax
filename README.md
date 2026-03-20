@@ -46,7 +46,7 @@ I like local-first data, single-binary deployments, operator-facing tooling, and
 - **[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up)** - Project-based C workbook for staying close to systems fundamentals and understanding what abstractions cost.
 - **[scryfall-discord-bot](https://github.com/dunamismax/scryfall-discord-bot)** - Discord bot for fast Magic: The Gathering card lookups against the Scryfall API.
 
-## Archived TypeScript / Web Stack
+## Archived TypeScript / Web Projects
 
 These repos belong to my previous TypeScript-first phase and are no longer actively maintained.
 
