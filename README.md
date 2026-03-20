@@ -1,44 +1,108 @@
 # Stephen Sawyer
 
-Rust. Local-first. Ships.
+<div align="center">
+  <strong>Rust. Local-first. Ships.</strong>
+  <br />
+  <br />
+  Builder of native desktop apps, terminal workbenches, and small systems that stay understandable.
+  <br />
+  Most of my work lives at the intersection of observability, research workflows, diffing, and SQLite-backed local software.
+  <br />
+  <br />
+  <a href="https://github.com/dunamismax">GitHub</a>
+  ·
+  <a href="https://codeberg.org/dunamismax">Codeberg</a>
+</div>
 
-I build native tools, terminal workbenches, and small systems that live on one machine and stay understandable. Shared core logic, thin interfaces, hard boundaries between domain code and presentation.
+<br />
 
-## Stack
+<p align="center">
+  <img alt="Rust" src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&amp;logo=rust&amp;logoColor=white" />
+  <img alt="SQLite" src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&amp;logo=sqlite&amp;logoColor=white" />
+  <img alt="Tauri v2" src="https://img.shields.io/badge/Tauri-v2-24C8D8?style=for-the-badge&amp;logo=tauri&amp;logoColor=white" />
+  <img alt="Tokio" src="https://img.shields.io/badge/Tokio-DC2626?style=for-the-badge" />
+  <img alt="SQLx" src="https://img.shields.io/badge/SQLx-0F172A?style=for-the-badge" />
+</p>
 
-Rust-first design · Tauri v2 · Axum + HTMX · Tokio · tracing · SQLite + SQLx · Ratatui · egui · wgpu
+<p align="center">
+  <img alt="Axum" src="https://img.shields.io/badge/Axum-111827?style=for-the-badge" />
+  <img alt="HTMX" src="https://img.shields.io/badge/HTMX-3366CC?style=for-the-badge&amp;logo=htmx&amp;logoColor=white" />
+  <img alt="Ratatui" src="https://img.shields.io/badge/Ratatui-166534?style=for-the-badge" />
+  <img alt="egui" src="https://img.shields.io/badge/egui-334155?style=for-the-badge" />
+  <img alt="tracing" src="https://img.shields.io/badge/tracing-B45309?style=for-the-badge" />
+</p>
 
-## Active Projects
+<p align="center">
+  <img height="180" src="https://github-readme-stats.vercel.app/api?username=dunamismax&amp;show_icons=true&amp;theme=transparent&amp;hide_border=true&amp;rank_icon=github" alt="GitHub stats for Stephen Sawyer" />
+  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dunamismax&amp;layout=donut-vertical&amp;theme=transparent&amp;hide_border=true&amp;langs_count=8&amp;size_weight=0.5&amp;count_weight=0.5&amp;hide=html,css" alt="Most used languages across public repositories" />
+</p>
 
-**[TraceScope](https://github.com/dunamismax/tracescope)** — Async telemetry cockpit for Tokio apps. Connect to `console-subscriber`, record sessions, inspect tasks, spans, resources, and timelines in a native desktop UI.
+## Build Bias
 
-**[HostLens](https://github.com/dunamismax/hostlens)** — macOS machine black box. Snapshot launch agents, ports, installed apps, recent files, and persistence points. Diff them over time. Search locally.
+- Local-first software over service-heavy architectures by default
+- SQLite as an application substrate, not just an implementation detail
+- Native desktop apps and TUIs when they make the tool clearer and faster
+- Diffs, timelines, search, and observability as first-class features
+- Shared Rust domain cores with thin interface layers on top
 
-**[ChangeRadar](https://github.com/dunamismax/changeradar)** — Page and document diff watcher. Normalized snapshots, diff scoring, SQLite history, native alerts when something meaningfully changes.
+## Portfolio Map
 
-**[Caseboard](https://github.com/dunamismax/caseboard)** — Investigation OS. Sources, claims, evidence links, tags, snapshots, full-text search, and a time-oriented case timeline.
+### Observability and System Visibility
 
-**[SourceDeck](https://github.com/dunamismax/sourcedeck)** — Terminal research workbench. Ingest CSV, JSON, NDJSON, plain text, and SQLite into a searchable, taggable local vault.
+**[TraceScope](https://github.com/dunamismax/tracescope)**
+Native Rust viewer for Tokio `console-subscriber` telemetry. Connect to live gRPC streams, inspect tasks, spans, resources, and warnings, then persist snapshots to SQLite for later analysis.
 
-**[Atlas Local](https://github.com/dunamismax/atlaslocal)** — Local dataset mapper. CSV and JSON into structured timelines with schema inference, field mapping, and Markdown/HTML export.
+**[HostLens](https://github.com/dunamismax/hostlens)**
+macOS host-visibility recorder. Collects launch agents, ports, installed apps, recent files, and persistence points, then stores and diffs the machine over time.
 
-**[Patchworks](https://github.com/dunamismax/patchworks)** — Git-style visual diffing for SQLite databases. Schema comparison, row diffs, snapshots, and generated migration SQL.
+**[ChangeRadar](https://github.com/dunamismax/changeradar)**
+Local-first change watcher for web pages and local files. Normalizes content, scores diffs, stores history in SQLite, and raises desktop notifications when something materially changes.
 
-**[Cargo Scout](https://github.com/dunamismax/cargoscout)** — Ratatui instrument panel for Cargo dependency graphs, feature visibility, and RustSec advisory surfacing.
+### Research and Investigation
 
-## Other Work
+**[Caseboard](https://github.com/dunamismax/caseboard)**
+Local-first investigation desktop app for sources, claims, evidence links, tags, snapshots, search, and time-oriented case timelines.
 
-**[go-web-server](https://github.com/dunamismax/go-web-server)** — Go starter with Echo, Templ, HTMX, PostgreSQL, SQLC, and Mage.
+**[SourceDeck](https://github.com/dunamismax/sourcedeck)**
+Terminal-native research workbench that ingests CSV, JSON, NDJSON, plain text, and SQLite query results into a searchable, taggable local vault.
 
-**[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up)** — Project-based C workbook. Systems fundamentals and understanding what abstractions cost.
+**[Atlas Local](https://github.com/dunamismax/atlaslocal)**
+Local dataset mapper that turns CSV and JSON into timeline reports with schema inference, field mapping, diagnostics, and Markdown/HTML export.
 
-**[scryfall-discord-bot](https://github.com/dunamismax/scryfall-discord-bot)** — Discord bot for Magic: The Gathering card lookups via Scryfall.
+### Developer Tooling and Data Utilities
 
-## Archive
+**[Patchworks](https://github.com/dunamismax/patchworks)**
+Native SQLite diff studio: inspect schemas, compare rows, snapshot live databases, and generate SQL intended to move one database toward another.
 
-Previous TypeScript-first projects, no longer maintained:
-[Roleback](https://github.com/dunamismax/roleback) · [FieldLog](https://github.com/dunamismax/fieldlog) · [Dispatch](https://github.com/dunamismax/dispatch) · [Chute](https://github.com/dunamismax/chute) · [rip](https://github.com/dunamismax/rip) · [OpsLedger](https://github.com/dunamismax/opsledger) · [PodWatch](https://github.com/dunamismax/podwatch) · [QuestLog](https://github.com/dunamismax/questlog) · [Arbor](https://github.com/dunamismax/arbor) · [tsforge](https://github.com/dunamismax/tsforge)
+**[Cargo Scout](https://github.com/dunamismax/cargoscout)**
+Ratatui instrument panel for Cargo dependency graphs, shortest-path "why is this here?" tracing, feature visibility, and RustSec advisory surfacing.
 
----
+## Beyond Rust
 
-[GitHub](https://github.com/dunamismax) · [Codeberg](https://codeberg.org/dunamismax)
+- **[go-web-server](https://github.com/dunamismax/go-web-server)**: Go starter with Echo, Templ, HTMX, PostgreSQL, SQLC, and Mage.
+- **[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up)**: Project-based C workbook for learning systems fundamentals and what abstractions cost.
+- **[scryfall-discord-bot](https://github.com/dunamismax/scryfall-discord-bot)**: Discord bot for Magic: The Gathering card lookups via Scryfall.
+
+<details>
+  <summary>Archived TypeScript-first projects</summary>
+  <br />
+  <a href="https://github.com/dunamismax/roleback">Roleback</a>
+  ·
+  <a href="https://github.com/dunamismax/fieldlog">FieldLog</a>
+  ·
+  <a href="https://github.com/dunamismax/dispatch">Dispatch</a>
+  ·
+  <a href="https://github.com/dunamismax/chute">Chute</a>
+  ·
+  <a href="https://github.com/dunamismax/rip">rip</a>
+  ·
+  <a href="https://github.com/dunamismax/opsledger">OpsLedger</a>
+  ·
+  <a href="https://github.com/dunamismax/podwatch">PodWatch</a>
+  ·
+  <a href="https://github.com/dunamismax/questlog">QuestLog</a>
+  ·
+  <a href="https://github.com/dunamismax/arbor">Arbor</a>
+  ·
+  <a href="https://github.com/dunamismax/tsforge">tsforge</a>
+</details>
