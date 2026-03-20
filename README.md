@@ -32,11 +32,6 @@
   <img alt="tracing" src="https://img.shields.io/badge/tracing-B45309?style=for-the-badge" />
 </p>
 
-<p align="center">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=dunamismax&amp;show_icons=true&amp;theme=transparent&amp;hide_border=true&amp;rank_icon=github" alt="GitHub stats for Stephen Sawyer" />
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dunamismax&amp;layout=donut-vertical&amp;theme=transparent&amp;hide_border=true&amp;langs_count=8&amp;size_weight=0.5&amp;count_weight=0.5&amp;hide=html,css" alt="Most used languages across public repositories" />
-</p>
-
 ## Build Bias
 
 - Local-first software over service-heavy architectures by default
