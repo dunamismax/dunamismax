@@ -41,6 +41,10 @@ Native SQLite diff studio. Inspect schemas, compare rows, snapshot live database
 
 Native Rust viewer for Tokio `console-subscriber` telemetry. Connect to live gRPC streams, inspect tasks, spans, resources, and warnings, then persist snapshots to SQLite for later analysis.
 
+### [Deepblue](https://github.com/dunamismax/deepblue)
+
+Truecolor terminal aquarium with procedural fish genomes, boids-inspired motion, and a full day/night cycle.
+
 ### [cargo-compatible](https://github.com/dunamismax/cargo-compatible)
 
 Cargo subcommand for finding the highest dependency graph that still fits a chosen Rust version or MSRV, with candidate lockfile resolution and conservative manifest guidance.
@@ -59,6 +63,5 @@ Cargo subcommand for finding the highest dependency graph that still fits a chos
 
 - **[cargo-license-verify](https://github.com/dunamismax/cargo-license-verify)** — Cargo subcommand for verifying manifest license metadata, packaged license evidence, SPDX headers, and dependency licensing against CI policy.
 - **[Sand Sorcerer](https://github.com/dunamismax/sand-sorcerer)** — Bevy action-puzzler / roguelite built around reactive material-grid chain reactions.
-- **[Deepblue](https://github.com/dunamismax/deepblue)** — Truecolor terminal aquarium with procedural fish genomes, boids-inspired motion, and a full day/night cycle.
 - **[go-web-server](https://github.com/dunamismax/go-web-server)** — Go starter with Echo, Templ, HTMX, PostgreSQL, SQLC, and Mage.
 - **[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up)** — Project-based C workbook for learning systems fundamentals and what abstractions cost.
