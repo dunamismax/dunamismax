@@ -40,6 +40,12 @@ I like local-first data, single-binary deployments, operator-facing tooling, and
 - **[Patchworks](https://github.com/dunamismax/patchworks)** - Git-style visual diffing for SQLite databases with schema comparison, row diffs, snapshots, and generated SQL to move one database toward another.
 - **[Cargo Scout](https://github.com/dunamismax/cargoscout)** - Ratatui instrument panel for Cargo dependency graphs, why-path inspection, feature visibility, and RustSec advisory surfacing.
 
+## Other Repos
+
+- **[go-web-server](https://github.com/dunamismax/go-web-server)** - Go starter for server-rendered apps with Echo, Templ, HTMX, PostgreSQL, SQLC, and Mage.
+- **[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up)** - Project-based C workbook for staying close to systems fundamentals and understanding what abstractions cost.
+- **[scryfall-discord-bot](https://github.com/dunamismax/scryfall-discord-bot)** - Discord bot for fast Magic: The Gathering card lookups against the Scryfall API.
+
 ## Archived TypeScript / Web Stack
 
 These repos belong to my previous TypeScript-first phase and are no longer actively maintained.
@@ -54,7 +60,6 @@ These repos belong to my previous TypeScript-first phase and are no longer activ
 - **[QuestLog](https://github.com/dunamismax/questlog)** - Quest, habit, and execution journal
 - **[Arbor](https://github.com/dunamismax/arbor)** - TypeScript backend utility packages
 - **[tsforge](https://github.com/dunamismax/tsforge)** - TypeScript forge for scripts and lightweight tools
-- **[scryfall-discord-bot](https://github.com/dunamismax/scryfall-discord-bot)** - Discord bot for Magic card lookups
 
 ## Elsewhere
 
