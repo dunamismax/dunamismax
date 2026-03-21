@@ -1,7 +1,7 @@
 # Stephen Sawyer
 
 <div align="center">
-  <strong>Rust. Local-first. Sharp tools.</strong>
+  <strong>Rust. Local-first. Ships.</strong>
   <br />
   <br />
   I build Rust software for observability, diagnostics, and SQLite-backed workflows — tools that stay local, surface truth, and hold up under real use.
