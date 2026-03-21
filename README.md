@@ -1,12 +1,12 @@
 # Stephen Sawyer
 
 <div align="center">
-  <strong>Rust. Local-first. Ships.</strong>
+  <strong>Rust. Local-first. Sharp tools.</strong>
   <br />
   <br />
-  I build native desktop apps, Cargo tools, and async-first developer software in Rust.
+  I build Cargo tools, native desktop apps, and local-first developer software in Rust.
   <br />
-  Current focus: async observability, diagnostics, developer tooling, and local-first Rust systems.
+  Current focus: async diagnostics, observability, and SQLite-backed workflows.
   <br />
   <br />
   <a href="https://github.com/dunamismax">GitHub</a>
@@ -18,64 +18,56 @@
 
 <p align="center">
   <img alt="Rust" src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&amp;logo=rust&amp;logoColor=white" />
-  <img alt="SQLite" src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&amp;logo=sqlite&amp;logoColor=white" />
   <img alt="Tokio" src="https://img.shields.io/badge/Tokio-DC2626?style=for-the-badge" />
-  <img alt="Tauri v2" src="https://img.shields.io/badge/Tauri-v2-24C8D8?style=for-the-badge&amp;logo=tauri&amp;logoColor=white" />
-  <img alt="Axum" src="https://img.shields.io/badge/Axum-111827?style=for-the-badge" />
-  <img alt="HTMX" src="https://img.shields.io/badge/HTMX-3366CC?style=for-the-badge&amp;logo=htmx&amp;logoColor=white" />
-  <img alt="egui" src="https://img.shields.io/badge/egui-334155?style=for-the-badge" />
+  <img alt="SQLite" src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&amp;logo=sqlite&amp;logoColor=white" />
   <img alt="tracing" src="https://img.shields.io/badge/tracing-B45309?style=for-the-badge" />
+  <img alt="Tauri v2" src="https://img.shields.io/badge/Tauri-v2-24C8D8?style=for-the-badge&amp;logo=tauri&amp;logoColor=white" />
 </p>
 
 ## Featured Projects
 
-### [rust-async-field-guide](https://github.com/dunamismax/rust-async-field-guide)
-
-Examples-first guide to practical async Rust, focused on footguns, debugging, cancellation, observability, and runtime-aware design.
-
-### [cargo-async-doctor](https://github.com/dunamismax/cargo-async-doctor)
-
-Cargo subcommand in progress for auditing common async Rust hazards and explaining how to fix them.
-
 ### [TraceScope](https://github.com/dunamismax/tracescope)
 
-Native Rust viewer for Tokio `console-subscriber` telemetry. Connect to live gRPC streams, inspect tasks, spans, resources, and warnings, then persist snapshots to SQLite for later analysis.
-
-### [CargoWatch](https://github.com/dunamismax/cargowatch)
-
-Rust-first build monitoring with an honest split between managed runs and best-effort external process detection. Captures logs, diagnostics, artifacts, and session history in a dedicated TUI backed by SQLite.
-
-### [GitPulse](https://github.com/dunamismax/gitpulse)
-
-Local-first git analytics for one repo or many. Tracks working-tree activity, commits, pushes, sessions, streaks, goals, and achievements, then serves it back through a local dashboard backed by SQLite.
-
-### [Patchworks](https://github.com/dunamismax/patchworks)
-
-Native SQLite diff studio. Inspect schemas, compare rows, snapshot live databases, and generate SQL to move one database toward another.
+Native Rust viewer for Tokio `console-subscriber` telemetry with live task inspection and SQLite-backed snapshots.
 
 ### [cargo-compatible](https://github.com/dunamismax/cargo-compatible)
 
-Cargo subcommand for finding the highest dependency graph that still fits a chosen Rust version or MSRV, with candidate lockfile resolution and conservative manifest guidance.
+Cargo subcommand for finding the highest dependency graph that still fits a target Rust version or MSRV.
 
-### [Deepblue](https://github.com/dunamismax/deepblue)
+### [CargoWatch](https://github.com/dunamismax/cargowatch)
 
-Truecolor terminal aquarium with procedural fish genomes, boids-inspired motion, and a full day/night cycle.
+Rust build monitor with managed runs, structured diagnostics, and SQLite-backed session history.
 
-### [Sand Sorcerer](https://github.com/dunamismax/sand-sorcerer)
+### [Patchworks](https://github.com/dunamismax/patchworks)
 
-Bevy-built action-puzzler / roguelite vertical slice centered on reactive material-grid spellcasting. Fight through handcrafted occult-desert combat rooms, chain sand, oil, fire, water, steam, smoke, and glass interactions, and push toward a readable, system-driven boss encounter.
+Native SQLite diff studio for schemas, rows, snapshots, and SQL export.
+
+### [GitPulse](https://github.com/dunamismax/gitpulse)
+
+Local-first git analytics for repo activity, sessions, streaks, and dashboards.
+
+## Now Building
+
+### [rust-async-field-guide](https://github.com/dunamismax/rust-async-field-guide)
+
+Examples-first guide to practical async Rust: debugging, cancellation, observability, and runtime-aware design.
+
+### [cargo-async-doctor](https://github.com/dunamismax/cargo-async-doctor)
+
+In-progress Cargo subcommand for detecting common async Rust hazards and explaining how to fix them.
 
 ## What I Optimize For
 
 - Local-first software over service-heavy defaults
 - Async systems that are observable and explainable
 - SQLite as part of the product, not just storage
-- Native desktop apps and TUIs when they make the workflow clearer
 - Cargo tooling that solves real maintainer pain
-- Diffs, timelines, telemetry, and search as first-class product features
-- Footgun-resistant APIs, diagnostics, and docs
-- Shared Rust domain cores with thin interface layers on top
-- Repos that ship with tests, CI, benchmarks, and explicit quality gates
+- Tests, CI, benchmarks, and explicit quality gates
+
+## Other Rust Work
+
+- **[Deepblue](https://github.com/dunamismax/deepblue)** — Truecolor terminal aquarium with procedural fish genomes, boids-inspired motion, and a full day/night cycle.
+- **[Sand Sorcerer](https://github.com/dunamismax/sand-sorcerer)** — Bevy-built action-puzzler / roguelite vertical slice centered on reactive material-grid spellcasting.
 
 ## Selected Other Work
 
