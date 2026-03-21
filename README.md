@@ -24,11 +24,23 @@
   <img alt="Tauri v2" src="https://img.shields.io/badge/Tauri-v2-24C8D8?style=for-the-badge&amp;logo=tauri&amp;logoColor=white" />
 </p>
 
-## Featured Projects
+## Flagship Project
+
+### [GitPulse](https://github.com/dunamismax/gitpulse)
+
+Local-first git analytics for working-tree activity, staged work, commits, pushes, sessions, streaks, goals, and dashboards.
+
+GitPulse is the clearest expression of what I like building: software that stays local, surfaces real behavior, and turns noisy development activity into something inspectable and useful.
+
+## Core Projects
 
 ### [TraceScope](https://github.com/dunamismax/tracescope)
 
-Native Rust viewer for Tokio `console-subscriber` telemetry with live task inspection and SQLite-backed snapshots.
+Native Rust desktop viewer for Tokio `console-subscriber` telemetry with live task inspection, resource views, warnings, and SQLite-backed snapshots.
+
+### [Patchworks](https://github.com/dunamismax/patchworks)
+
+Native SQLite diff studio for schemas, rows, snapshots, and SQL export.
 
 ### [cargo-compatible](https://github.com/dunamismax/cargo-compatible)
 
@@ -38,23 +50,18 @@ Cargo subcommand for finding the highest dependency graph that still fits a targ
 
 Rust build monitor with managed runs, structured diagnostics, and SQLite-backed session history.
 
-### [Patchworks](https://github.com/dunamismax/patchworks)
-
-Native SQLite diff studio for schemas, rows, snapshots, and SQL export.
-
-### [GitPulse](https://github.com/dunamismax/gitpulse)
-
-Local-first git analytics for working-tree activity, commits, pushes, sessions, streaks, and dashboards.
-
-## Now Building
-
 ### [rust-async-field-guide](https://github.com/dunamismax/rust-async-field-guide)
 
-Examples-first guide to practical async Rust: debugging, cancellation, observability, and runtime-aware design.
+Examples-first guide to practical async Rust: debugging, cancellation, observability, testing, and runtime-aware design.
 
 ### [cargo-async-doctor](https://github.com/dunamismax/cargo-async-doctor)
 
-In-progress Cargo subcommand for detecting common async Rust hazards and explaining how to fix them.
+Cargo subcommand for detecting common async Rust hazards and explaining how to fix them.
+
+## Selected Other Rust Work
+
+- **[Deepblue](https://github.com/dunamismax/deepblue)** — truecolor terminal aquarium with procedural fish genomes, boids-inspired motion, and a full day/night cycle.
+- **[Sand Sorcerer](https://github.com/dunamismax/sand-sorcerer)** — Bevy-built action-puzzler / roguelite vertical slice centered on reactive material-grid spellcasting.
 
 ## What I Optimize For
 
@@ -63,13 +70,3 @@ In-progress Cargo subcommand for detecting common async Rust hazards and explain
 - SQLite as part of the product, not just storage
 - Cargo tooling that solves real maintainer pain
 - Tests, CI, benchmarks, and explicit quality gates
-
-## Other Rust Work
-
-- **[Deepblue](https://github.com/dunamismax/deepblue)** — Truecolor terminal aquarium with procedural fish genomes, boids-inspired motion, and a full day/night cycle.
-- **[Sand Sorcerer](https://github.com/dunamismax/sand-sorcerer)** — Bevy-built action-puzzler / roguelite vertical slice centered on reactive material-grid spellcasting.
-
-## Selected Other Work
-
-- **[go-web-server](https://github.com/dunamismax/go-web-server)** — Go starter with Echo, Templ, HTMX, PostgreSQL, SQLC, and Mage.
-- **[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up)** — Project-based C workbook for learning systems fundamentals and what abstractions cost.
