@@ -53,6 +53,10 @@ Cargo subcommand for finding the highest dependency graph that still fits a chos
 
 Truecolor terminal aquarium with procedural fish genomes, boids-inspired motion, and a full day/night cycle.
 
+### [Sand Sorcerer](https://github.com/dunamismax/sand-sorcerer)
+
+Bevy-built action-puzzler / roguelite vertical slice centered on reactive material-grid spellcasting. Fight through handcrafted occult-desert combat rooms, chain sand, oil, fire, water, steam, smoke, and glass interactions, and push toward a readable, system-driven boss encounter.
+
 ## What I Optimize For
 
 - Local-first software over service-heavy defaults
@@ -65,6 +69,5 @@ Truecolor terminal aquarium with procedural fish genomes, boids-inspired motion,
 
 ## Selected Other Work
 
-- **[Sand Sorcerer](https://github.com/dunamismax/sand-sorcerer)** — Bevy action-puzzler / roguelite built around reactive material-grid chain reactions.
 - **[go-web-server](https://github.com/dunamismax/go-web-server)** — Go starter with Echo, Templ, HTMX, PostgreSQL, SQLC, and Mage.
 - **[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up)** — Project-based C workbook for learning systems fundamentals and what abstractions cost.
