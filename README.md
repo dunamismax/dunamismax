@@ -4,9 +4,9 @@
   <strong>Rust. Local-first. Ships.</strong>
   <br />
   <br />
-  I build native desktop apps, Cargo tools, and SQLite-backed developer software in Rust.
+  I build native desktop apps, Cargo tools, and async-first developer software in Rust.
   <br />
-  Current focus: git analytics, database diffing, build telemetry, async observability, and Rust workspace compatibility.
+  Current focus: async observability, diagnostics, developer tooling, and local-first Rust systems.
   <br />
   <br />
   <a href="https://github.com/dunamismax">GitHub</a>
@@ -29,13 +29,13 @@
 
 ## Featured Projects
 
-### [GitPulse](https://github.com/dunamismax/gitpulse)
+### [rust-async-field-guide](https://github.com/dunamismax/rust-async-field-guide)
 
-Local-first git analytics for one repo or many. Tracks working-tree activity, commits, pushes, sessions, streaks, goals, and achievements, then serves it back through a local dashboard backed by SQLite.
+Examples-first guide to practical async Rust, focused on footguns, debugging, cancellation, observability, and runtime-aware design.
 
-### [Patchworks](https://github.com/dunamismax/patchworks)
+### [cargo-async-doctor](https://github.com/dunamismax/cargo-async-doctor)
 
-Native SQLite diff studio. Inspect schemas, compare rows, snapshot live databases, and generate SQL to move one database toward another.
+Cargo subcommand in progress for auditing common async Rust hazards and explaining how to fix them.
 
 ### [TraceScope](https://github.com/dunamismax/tracescope)
 
@@ -44,6 +44,14 @@ Native Rust viewer for Tokio `console-subscriber` telemetry. Connect to live gRP
 ### [CargoWatch](https://github.com/dunamismax/cargowatch)
 
 Rust-first build monitoring with an honest split between managed runs and best-effort external process detection. Captures logs, diagnostics, artifacts, and session history in a dedicated TUI backed by SQLite.
+
+### [GitPulse](https://github.com/dunamismax/gitpulse)
+
+Local-first git analytics for one repo or many. Tracks working-tree activity, commits, pushes, sessions, streaks, goals, and achievements, then serves it back through a local dashboard backed by SQLite.
+
+### [Patchworks](https://github.com/dunamismax/patchworks)
+
+Native SQLite diff studio. Inspect schemas, compare rows, snapshot live databases, and generate SQL to move one database toward another.
 
 ### [cargo-compatible](https://github.com/dunamismax/cargo-compatible)
 
@@ -60,10 +68,12 @@ Bevy-built action-puzzler / roguelite vertical slice centered on reactive materi
 ## What I Optimize For
 
 - Local-first software over service-heavy defaults
+- Async systems that are observable and explainable
 - SQLite as part of the product, not just storage
 - Native desktop apps and TUIs when they make the workflow clearer
 - Cargo tooling that solves real maintainer pain
 - Diffs, timelines, telemetry, and search as first-class product features
+- Footgun-resistant APIs, diagnostics, and docs
 - Shared Rust domain cores with thin interface layers on top
 - Repos that ship with tests, CI, benchmarks, and explicit quality gates
 
