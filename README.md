@@ -65,7 +65,6 @@ Truecolor terminal aquarium with procedural fish genomes, boids-inspired motion,
 
 ## Selected Other Work
 
-- **[cargo-license-verify](https://github.com/dunamismax/cargo-license-verify)** — Cargo subcommand for verifying manifest license metadata, packaged license evidence, SPDX headers, and dependency licensing against CI policy.
 - **[Sand Sorcerer](https://github.com/dunamismax/sand-sorcerer)** — Bevy action-puzzler / roguelite built around reactive material-grid chain reactions.
 - **[go-web-server](https://github.com/dunamismax/go-web-server)** — Go starter with Echo, Templ, HTMX, PostgreSQL, SQLC, and Mage.
 - **[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up)** — Project-based C workbook for learning systems fundamentals and what abstractions cost.
