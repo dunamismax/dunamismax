@@ -44,7 +44,7 @@ Native SQLite diff studio for schemas, rows, snapshots, and SQL export.
 
 ### [GitPulse](https://github.com/dunamismax/gitpulse)
 
-Local-first git analytics for repo activity, sessions, streaks, and dashboards.
+Local-first git analytics for working-tree activity, commits, pushes, sessions, streaks, and dashboards.
 
 ## Now Building
 
