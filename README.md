@@ -6,7 +6,7 @@
   <br />
   I build native desktop apps, Cargo tools, and SQLite-backed developer software in Rust.
   <br />
-  Current focus: git analytics, database diffing, async observability, and Rust workspace compatibility.
+  Current focus: git analytics, database diffing, build telemetry, async observability, and Rust workspace compatibility.
   <br />
   <br />
   <a href="https://github.com/dunamismax">GitHub</a>
@@ -41,13 +41,17 @@ Native SQLite diff studio. Inspect schemas, compare rows, snapshot live database
 
 Native Rust viewer for Tokio `console-subscriber` telemetry. Connect to live gRPC streams, inspect tasks, spans, resources, and warnings, then persist snapshots to SQLite for later analysis.
 
-### [Deepblue](https://github.com/dunamismax/deepblue)
+### [CargoWatch](https://github.com/dunamismax/cargowatch)
 
-Truecolor terminal aquarium with procedural fish genomes, boids-inspired motion, and a full day/night cycle.
+Rust-first build monitoring with an honest split between managed runs and best-effort external process detection. Captures logs, diagnostics, artifacts, and session history in a dedicated TUI backed by SQLite.
 
 ### [cargo-compatible](https://github.com/dunamismax/cargo-compatible)
 
 Cargo subcommand for finding the highest dependency graph that still fits a chosen Rust version or MSRV, with candidate lockfile resolution and conservative manifest guidance.
+
+### [Deepblue](https://github.com/dunamismax/deepblue)
+
+Truecolor terminal aquarium with procedural fish genomes, boids-inspired motion, and a full day/night cycle.
 
 ## What I Optimize For
 
