@@ -2,7 +2,7 @@
 
 Software developer building useful, durable, privacy- and security-focused things.
 
-I work across Rust, Go, C, Python, and Lua. Most of my public work is local-first software, developer tools, systems utilities, and security-conscious infrastructure — but I also build games and experiments that are fun, weird, or genuinely useful.
+I work across Rust, Go, C, and Lua. Most of my public work is local-first software, developer tools, systems utilities, and security-conscious infrastructure — but I also build games and experiments that are fun, weird, or genuinely useful.
 
 Everything is local-first. Everything is honest about what it can and can't do.
 
@@ -18,11 +18,8 @@ Codeberg: <https://codeberg.org/dunamismax>
 ## Developer tools
 
 - [cargo-compatible](https://github.com/dunamismax/cargo-compatible) — Cargo subcommand for auditing dependency graphs against any Rust version. Lockfile-first MSRV compatibility. Rust.
-- [cargo-async-doctor](https://github.com/dunamismax/cargo-async-doctor) — Cargo subcommand that detects common async Rust hazards and explains the fix. Rust.
 - [GitPulse](https://github.com/dunamismax/gitpulse) — local-first git activity analytics. Tracks commits, sessions, and streaks across CLI, web dashboard, and desktop app. Rust.
-- [repotruth](https://github.com/dunamismax/repotruth) — repo verification tool. Extracts commands from docs, runs them in sandboxed temp dirs, reports what actually passes. Go.
-- [repokeeper](https://github.com/dunamismax/repokeeper) — self-hosted repo health daemon. Watches repos, validates remotes, detects drift, runs doc verification on a schedule. Go.
-- [git-fossil](https://github.com/dunamismax/git-fossil) — git archaeology. Finds dead code and fossilized modules using git history and tree-sitter parsing. Python.
+- [repokeeper](https://github.com/dunamismax/repokeeper) — self-hosted repo health daemon with built-in doc verification. Watches repos, validates remotes, detects drift, runs doc-extracted commands in sandboxed temp dirs. Go.
 
 ## Data and infrastructure
 
@@ -38,7 +35,3 @@ Codeberg: <https://codeberg.org/dunamismax>
 - [Deepblue](https://github.com/dunamismax/deepblue) — truecolor terminal aquarium with procedural fish, boids, and ecosystem simulation. Rust.
 - [deepblue.lua](https://github.com/dunamismax/deepblue.lua) — Love2D port of Deepblue. Same simulation, real pixel rendering. Lua.
 - [podforge](https://github.com/dunamismax/podforge) — local-first Commander night tracker for pods, decks, sessions, and playgroup stats. Go.
-
-## Reference
-
-- [rust-async-field-guide](https://github.com/dunamismax/rust-async-field-guide) — practical async Rust guide with runnable examples. mdBook.
