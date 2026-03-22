@@ -13,6 +13,7 @@ Codeberg: <https://codeberg.org/dunamismax>
 
 ## Flagship projects
 
+- [0xvane](https://github.com/dunamismax/0xvane) — local-first algorithmic trading workbench. Paper-first execution engine, real-time market data, risk management, and post-trade forensics. Rust core with Python research via gRPC. Equities + crypto.
 - [bore](https://github.com/dunamismax/bore) — privacy-first encrypted file transfer. No accounts, no cloud, end-to-end encrypted, direct peer-to-peer with relay fallback. Monorepo: Rust client with Go relay server, NAT traversal library, and admin dashboard.
 - [cargo-compatible](https://github.com/dunamismax/cargo-compatible) — Cargo subcommand for auditing dependency graphs against any Rust version. Lockfile-first MSRV compatibility. Published on crates.io. Rust.
 
