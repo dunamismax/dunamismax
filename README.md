@@ -1,84 +1,24 @@
 # Stephen Sawyer
 
-<div align="center">
-  <strong>Rust. Local-first. Operator tools.</strong>
-  <br />
-  <br />
-  I build privacy-respecting Rust software for observability, diagnostics, SQLite-backed workflows, and other tools that help people understand what their systems are actually doing.
-  <br />
-  <br />
-  Most of my work lives at the intersection of local-first software, operational clarity, async/runtime visibility, encrypted or privacy-sensitive workflows, and developer-focused tooling that stays useful after the demo.
-  <br />
-  <br />
-  <a href="https://github.com/dunamismax">GitHub</a>
-  ·
-  <a href="https://codeberg.org/dunamismax">Codeberg</a>
-</div>
+Rust developer building local-first, privacy-respecting software.
 
-<br />
+I work mostly on observability, diagnostics, SQLite-backed tools, and other operator-grade utilities that help explain what a system is actually doing.
 
-<p align="center">
-  <img alt="Rust" src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&amp;logo=rust&amp;logoColor=white" />
-  <img alt="Tokio" src="https://img.shields.io/badge/Tokio-DC2626?style=for-the-badge" />
-  <img alt="SQLite" src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&amp;logo=sqlite&amp;logoColor=white" />
-  <img alt="tracing" src="https://img.shields.io/badge/tracing-B45309?style=for-the-badge" />
-  <img alt="Tauri v2" src="https://img.shields.io/badge/Tauri-v2-24C8D8?style=for-the-badge&amp;logo=tauri&amp;logoColor=white" />
-</p>
+GitHub: <https://github.com/dunamismax>  
+Codeberg: <https://codeberg.org/dunamismax>
 
-## What I Optimize For
+## Current focus
 
-- Local-first software over service-heavy defaults
-- Privacy, ownership, and explicit data flow
-- Async systems that are observable and explainable
-- SQLite as part of the product, not just storage
-- Cargo tooling that solves real maintainer pain
-- Tests, CI, benchmarks, and explicit quality gates
+- [cargo-compatible](https://github.com/dunamismax/cargo-compatible) — Cargo dependency graph and MSRV compatibility tool.
+- [GitPulse](https://github.com/dunamismax/gitpulse) — local-first git activity, session, and work-history tracking.
+- [bore](https://github.com/dunamismax/bore) — encrypted file transfer and relay-aware operator tooling in Rust.
+- [podforge](https://github.com/dunamismax/podforge) — local-first Commander / MTG pod, deck, and session manager.
 
-## Flagship Project
+## Selected projects
 
-### [GitPulse](https://github.com/dunamismax/gitpulse)
-
-Local-first git analytics for working-tree activity, staged work, commits, pushes, sessions, streaks, goals, and dashboards.
-
-GitPulse is the clearest expression of the software I most want to build: tools that stay on your machine, tell the truth about how work actually happened, and turn noisy activity into something inspectable and useful.
-
-## Current Build Focus
-
-### [cargo-compatible](https://github.com/dunamismax/cargo-compatible)
-
-Cargo tool for resolving dependency graphs against a target Rust version or MSRV without blindly downgrading everything.
-
-### [bore](https://github.com/dunamismax/bore)
-
-Long-term encrypted file transfer and relay-aware operator tooling in Rust, built around human-friendly exchange, privacy-first design, and honest local control.
-
-### [podforge](https://github.com/dunamismax/podforge)
-
-Local-first Rust companion for Commander / MTG pod nights: players, decks, sessions, house meta, and game-night history that stays useful at the table.
-
-## Selected Rust Projects
-
-### [TraceScope](https://github.com/dunamismax/tracescope)
-
-Native Rust desktop viewer for Tokio `console-subscriber` telemetry with live task inspection, resource views, warnings, and SQLite-backed snapshots.
-
-### [Patchworks](https://github.com/dunamismax/patchworks)
-
-Native SQLite diff and inspection studio for schemas, row-level changes, snapshots, and generated SQL migrations.
-
-## Async Rust Tooling
-
-### [rust-async-field-guide](https://github.com/dunamismax/rust-async-field-guide)
-
-Examples-first guide to practical async Rust: debugging, cancellation, observability, testing, and runtime-aware design.
-
-### [cargo-async-doctor](https://github.com/dunamismax/cargo-async-doctor)
-
-Cargo subcommand for detecting common async Rust hazards and explaining how to fix them.
-
-Together, these projects form a paired teaching-and-tooling lane: one explains the patterns in depth, the other helps detect them quickly in real codebases.
-
-## Creative / Simulation Work
-
-- **[Deepblue](https://github.com/dunamismax/deepblue)** — truecolor terminal aquarium with procedural fish genomes, boids-inspired motion, and a full day/night cycle.
-- **[Sand Sorcerer](https://github.com/dunamismax/sand-sorcerer)** — Bevy-built action-puzzler / roguelite vertical slice centered on reactive material-grid spellcasting.
+- [TraceScope](https://github.com/dunamismax/tracescope) — desktop viewer for Tokio `console-subscriber` telemetry.
+- [Patchworks](https://github.com/dunamismax/patchworks) — SQLite diff and inspection studio.
+- [cargo-async-doctor](https://github.com/dunamismax/cargo-async-doctor) — async Rust hazard detection.
+- [rust-async-field-guide](https://github.com/dunamismax/rust-async-field-guide) — practical async Rust guide.
+- [Deepblue](https://github.com/dunamismax/deepblue) — truecolor terminal aquarium.
+- [Sand Sorcerer](https://github.com/dunamismax/sand-sorcerer) — Bevy action-puzzler / roguelite vertical slice.
