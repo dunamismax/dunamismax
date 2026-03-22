@@ -9,12 +9,14 @@ Most of my recent public work is in local-first software, developer tools, diagn
 GitHub: <https://github.com/dunamismax>
 Codeberg: <https://codeberg.org/dunamismax>
 
-## Current work
+## Passion projects
+
+- [bore](https://github.com/dunamismax/bore) — encrypted file transfer and relay-aware tooling in Rust.
+
+## Main projects
 
 - [cargo-compatible](https://github.com/dunamismax/cargo-compatible) — Cargo dependency graph and MSRV compatibility tool.
 - [GitPulse](https://github.com/dunamismax/gitpulse) — local-first git activity, session, and work-history tracking.
-- [bore](https://github.com/dunamismax/bore) — encrypted file transfer and relay-aware tooling in Rust.
-- [podforge](https://github.com/dunamismax/podforge) — local-first Commander night tracker for pods, decks, sessions, and house meta.
 
 ## Other projects
 
@@ -23,7 +25,8 @@ Codeberg: <https://codeberg.org/dunamismax>
 - [cargo-async-doctor](https://github.com/dunamismax/cargo-async-doctor) — async Rust hazard detection.
 - [rust-async-field-guide](https://github.com/dunamismax/rust-async-field-guide) — practical async Rust guide.
 
-## For fun projects
+## Just for fun projects
 
+- [podforge](https://github.com/dunamismax/podforge) — local-first Commander night tracker for pods, decks, sessions, and house meta.
 - [Deepblue](https://github.com/dunamismax/deepblue) — truecolor terminal aquarium.
 - [Sand Sorcerer](https://github.com/dunamismax/sand-sorcerer) — Bevy action-puzzler / roguelite vertical slice.
