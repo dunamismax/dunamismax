@@ -1,18 +1,18 @@
 # Stephen Sawyer
 
-Rust developer building local-first, privacy-respecting software.
+Rust developer building local-first, privacy-respecting operator tools.
 
-I work mostly on observability, diagnostics, SQLite-backed tools, and other operator-grade utilities that help explain what a system is actually doing.
+I mostly work on observability, diagnostics, SQLite-backed software, and systems that make real machine behavior easier to inspect.
 
 GitHub: <https://github.com/dunamismax>  
 Codeberg: <https://codeberg.org/dunamismax>
 
-## Current focus
+## Current work
 
 - [cargo-compatible](https://github.com/dunamismax/cargo-compatible) — Cargo dependency graph and MSRV compatibility tool.
 - [GitPulse](https://github.com/dunamismax/gitpulse) — local-first git activity, session, and work-history tracking.
 - [bore](https://github.com/dunamismax/bore) — encrypted file transfer and relay-aware operator tooling in Rust.
-- [podforge](https://github.com/dunamismax/podforge) — local-first Commander / MTG pod, deck, and session manager.
+- [podforge](https://github.com/dunamismax/podforge) — local-first Commander night tracker for pods, decks, sessions, and house meta.
 
 ## Selected projects
 
