@@ -13,10 +13,7 @@ Codeberg: <https://codeberg.org/dunamismax>
 
 ## Flagship projects
 
-- [bore](https://github.com/dunamismax/bore) — privacy-first encrypted file transfer. No accounts, no cloud, end-to-end encrypted, direct peer-to-peer with relay fallback. Rust.
-- [relay](https://github.com/dunamismax/relay) — bore's relay server. Zero-knowledge encrypted stream broker for when direct connections fail. Go.
-- [punchthrough](https://github.com/dunamismax/punchthrough) — bore's NAT traversal library. STUN-based discovery and UDP hole-punching for direct peer connections. Go.
-- [bore-admin](https://github.com/dunamismax/bore-admin) — monitoring and administration dashboard for bore's relay infrastructure. Go.
+- [bore](https://github.com/dunamismax/bore) — privacy-first encrypted file transfer. No accounts, no cloud, end-to-end encrypted, direct peer-to-peer with relay fallback. Monorepo: Rust client with Go relay server, NAT traversal library, and admin dashboard.
 
 ## Developer tools
 
