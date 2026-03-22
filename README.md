@@ -7,7 +7,7 @@
   I build privacy-respecting Rust software for observability, diagnostics, SQLite-backed workflows, and other tools that help people understand what their systems are actually doing.
   <br />
   <br />
-  Most of my work lives at the intersection of local-first software, operational clarity, async/runtime visibility, and developer-focused tooling that stays useful after the demo.
+  Most of my work lives at the intersection of local-first software, operational clarity, async/runtime visibility, encrypted or privacy-sensitive workflows, and developer-focused tooling that stays useful after the demo.
   <br />
   <br />
   <a href="https://github.com/dunamismax">GitHub</a>
@@ -42,7 +42,21 @@ Local-first git analytics for working-tree activity, staged work, commits, pushe
 
 GitPulse is the clearest expression of the software I most want to build: tools that stay on your machine, tell the truth about how work actually happened, and turn noisy activity into something inspectable and useful.
 
-## Featured Projects
+## Current Build Focus
+
+### [cargo-compatible](https://github.com/dunamismax/cargo-compatible)
+
+Cargo tool for resolving dependency graphs against a target Rust version or MSRV without blindly downgrading everything.
+
+### [bore](https://github.com/dunamismax/bore)
+
+Long-term encrypted file transfer and relay-aware operator tooling in Rust, built around human-friendly exchange, privacy-first design, and honest local control.
+
+### [podforge](https://github.com/dunamismax/podforge)
+
+Local-first Rust companion for Commander / MTG pod nights: players, decks, sessions, house meta, and game-night history that stays useful at the table.
+
+## Selected Rust Projects
 
 ### [TraceScope](https://github.com/dunamismax/tracescope)
 
@@ -51,14 +65,6 @@ Native Rust desktop viewer for Tokio `console-subscriber` telemetry with live ta
 ### [Patchworks](https://github.com/dunamismax/patchworks)
 
 Native SQLite diff and inspection studio for schemas, row-level changes, snapshots, and generated SQL migrations.
-
-### [CargoWatch](https://github.com/dunamismax/cargowatch)
-
-Rust build monitor with managed runs, structured diagnostics, and SQLite-backed session history.
-
-### [cargo-compatible](https://github.com/dunamismax/cargo-compatible)
-
-Cargo tool for resolving dependency graphs against a target Rust version or MSRV without blindly downgrading everything.
 
 ## Async Rust Tooling
 
