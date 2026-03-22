@@ -2,7 +2,7 @@
 
 Software developer building useful, durable, privacy- and security-focused things.
 
-I work across Rust, C, Python, PowerShell, Go, TypeScript, and Lua.
+I work across Rust, C, Python, Go, and Lua.
 
 Most of my recent public work is in local-first software, developer tools, diagnostics, automation, and systems-focused utilities, but I also like building experiments, games, and other projects that are fun, weird, or genuinely useful.
 
