@@ -1,17 +1,29 @@
 # Stephen Sawyer
 
-Rust developer building local-first, privacy-respecting operator tools.
+Software developer building useful, durable, and interesting things.
 
-I mostly work on observability, diagnostics, SQLite-backed software, and systems that make real machine behavior easier to inspect.
+I work across Rust, C, Python, PowerShell, Go, TypeScript, and Lua.
+
+Most of my recent public work is in local-first software, developer tools, diagnostics, automation, and systems-focused utilities, but I also like building experiments, games, and other projects that are fun, weird, or genuinely useful.
 
 GitHub: <https://github.com/dunamismax>  
 Codeberg: <https://codeberg.org/dunamismax>
+
+## Languages
+
+- Rust
+- C
+- Python
+- PowerShell
+- Go
+- TypeScript
+- Lua
 
 ## Current work
 
 - [cargo-compatible](https://github.com/dunamismax/cargo-compatible) — Cargo dependency graph and MSRV compatibility tool.
 - [GitPulse](https://github.com/dunamismax/gitpulse) — local-first git activity, session, and work-history tracking.
-- [bore](https://github.com/dunamismax/bore) — encrypted file transfer and relay-aware operator tooling in Rust.
+- [bore](https://github.com/dunamismax/bore) — encrypted file transfer and relay-aware tooling in Rust.
 - [podforge](https://github.com/dunamismax/podforge) — local-first Commander night tracker for pods, decks, sessions, and house meta.
 
 ## Selected projects
