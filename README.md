@@ -1,10 +1,13 @@
 # Stephen Sawyer
 
 <div align="center">
-  <strong>Rust. Local-first. Ships.</strong>
+  <strong>Rust. Local-first. Operator tools.</strong>
   <br />
   <br />
-  I build Rust software for observability, diagnostics, and SQLite-backed workflows — tools that stay local, surface truth, and hold up under real use.
+  I build privacy-respecting Rust software for observability, diagnostics, SQLite-backed workflows, and other tools that help people understand what their systems are actually doing.
+  <br />
+  <br />
+  Most of my work lives at the intersection of local-first software, operational clarity, async/runtime visibility, and developer-focused tooling that stays useful after the demo.
   <br />
   <br />
   <a href="https://github.com/dunamismax">GitHub</a>
@@ -25,6 +28,7 @@
 ## What I Optimize For
 
 - Local-first software over service-heavy defaults
+- Privacy, ownership, and explicit data flow
 - Async systems that are observable and explainable
 - SQLite as part of the product, not just storage
 - Cargo tooling that solves real maintainer pain
@@ -36,7 +40,7 @@
 
 Local-first git analytics for working-tree activity, staged work, commits, pushes, sessions, streaks, goals, and dashboards.
 
-GitPulse is the clearest expression of the software I most want to build: local-first, operationally honest, and useful when the raw activity is too noisy to reason about directly.
+GitPulse is the clearest expression of the software I most want to build: tools that stay on your machine, tell the truth about how work actually happened, and turn noisy activity into something inspectable and useful.
 
 ## Featured Projects
 
@@ -46,15 +50,15 @@ Native Rust desktop viewer for Tokio `console-subscriber` telemetry with live ta
 
 ### [Patchworks](https://github.com/dunamismax/patchworks)
 
-Native SQLite diff studio for inspecting schemas, row-level changes, snapshots, and generated SQL migrations.
-
-### [cargo-compatible](https://github.com/dunamismax/cargo-compatible)
-
-Cargo tool for resolving dependency graphs against a target Rust version or MSRV without blindly downgrading everything.
+Native SQLite diff and inspection studio for schemas, row-level changes, snapshots, and generated SQL migrations.
 
 ### [CargoWatch](https://github.com/dunamismax/cargowatch)
 
 Rust build monitor with managed runs, structured diagnostics, and SQLite-backed session history.
+
+### [cargo-compatible](https://github.com/dunamismax/cargo-compatible)
+
+Cargo tool for resolving dependency graphs against a target Rust version or MSRV without blindly downgrading everything.
 
 ## Async Rust Tooling
 
@@ -66,7 +70,7 @@ Examples-first guide to practical async Rust: debugging, cancellation, observabi
 
 Cargo subcommand for detecting common async Rust hazards and explaining how to fix them.
 
-Together, these projects form a paired teaching-and-tooling surface: one explains the patterns in depth, the other helps detect them quickly in real codebases.
+Together, these projects form a paired teaching-and-tooling lane: one explains the patterns in depth, the other helps detect them quickly in real codebases.
 
 ## Creative / Simulation Work
 
