@@ -1,38 +1,49 @@
 # Stephen Sawyer
 
-I build self-hostable systems software: networking, cryptography, observability, trading infrastructure, and operating-system work.
+I build self-hostable systems software in **Go, Zig, and C**.
 
-**Stack:** Go, Zig, C, and PostgreSQL.
-**Style:** raw SQL, local-first systems, clean operator workflows, durable software that still makes sense at 2am.
-
----
-
-## Flagships
-
-- [Riftline](https://github.com/dunamismax/riftline) — private ingress mesh for exposing internal services through a public relay without turning the whole thing into cloud theater.
-- [Lockbox](https://github.com/dunamismax/lockbox) — Zig-first file crypto toolkit focused on `seal`, `unseal`, `inspect`, and `keygen`, with a tight UX and no cryptography cosplay.
-- [Wirescope](https://github.com/dunamismax/wirescope) — terminal-first network observability with live capture, drill-down, and PostgreSQL-backed metadata instead of dashboard sludge.
-- [Vaultd](https://github.com/dunamismax/vaultd) — small local HSM-style daemon with a C core, Unix socket control surface, and sharp operational boundaries.
-- [Netweave](https://github.com/dunamismax/netweave) — userspace network stack in Zig, built as a layered library with demos instead of a monolithic moonshot.
-- [Dunamis](https://github.com/dunamismax/dunamis) — operating-system umbrella repo; **Basalt** is the kernel, with Zig for kernel work, C at the firmware boundary, and Go for host tooling.
-
-## Selected Repos
-
-- [bore](https://github.com/dunamismax/bore) — secure file transfer with relay-assisted rendezvous and a clean CLI-first workflow.
-- [gitpulse](https://github.com/dunamismax/gitpulse) — repository analytics and operational insight with Go, PostgreSQL, and a terminal/web operator surface.
-- [0xvane](https://github.com/dunamismax/0xvane) — algorithmic trading workbench for signals, risk controls, paper/live execution paths, and PostgreSQL-backed state.
-- [podforge](https://github.com/dunamismax/podforge) — local-first card and deck tooling with a Go/PostgreSQL core and operator-grade CLI direction.
-- [rtop](https://github.com/dunamismax/rtop) — Zig terminal process monitor with fixture-driven verification and a systems-first design.
-- [c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up) — practical C systems reference covering fundamentals through networking, crypto, and memory work.
-
-## Working Philosophy
-
-- Go for services, daemons, CLIs, and orchestration.
-- Zig for systems code, native tooling, protocol machinery, and low-level control.
-- C for auditable boundary-layer work: boot code, secure-memory custody, packet hot paths, and tight systems interfaces.
-- PostgreSQL when state matters. Raw SQL always.
-- Ship the boring core first. Earn complexity later.
+The through-lines are networking, cryptography, observability, developer tooling, trading infrastructure, and operating-system work. When state matters, I use **PostgreSQL** and write **raw SQL**. I like local-first tools, clean operator workflows, and software that still makes sense when something breaks at 2am.
 
 ---
 
-If a repo is here, it is meant to become real software — not a parking lot for vague ideas.
+## Start Here
+
+If you want the strongest entry points into my work, start with these:
+
+- [bore](https://github.com/dunamismax/bore) — privacy-first file transfer with relay-assisted rendezvous, end-to-end encryption, and a clean CLI workflow.
+- [rtop](https://github.com/dunamismax/rtop) — Zig terminal system monitor focused on speed, legibility, and systems-level control.
+- [lockbox](https://github.com/dunamismax/lockbox) — Zig-first file crypto toolkit built around `seal`, `unseal`, `inspect`, and `keygen`.
+- [wirescope](https://github.com/dunamismax/wirescope) — terminal-first network observability with live capture, replay, and PostgreSQL-backed metadata.
+- [riftline](https://github.com/dunamismax/riftline) — self-hosted secure ingress tunnel for exposing private services through a public relay.
+- [dunamis](https://github.com/dunamismax/dunamis) — operating-system umbrella repo; **Basalt** is the kernel, with Zig for the kernel core, C at the firmware boundary, and Go for host tooling.
+
+## Building Now
+
+These are the other repos I think are most worth watching:
+
+- [netweave](https://github.com/dunamismax/netweave) — userspace network stack in Zig, built as a layered library with demos.
+- [vaultd](https://github.com/dunamismax/vaultd) — small local HSM-style daemon with a C core and a Go control surface.
+- [gitpulse](https://github.com/dunamismax/gitpulse) — local-first repository analytics and operational insight with Go, PostgreSQL, and a terminal/web operator surface.
+- [0xvane](https://github.com/dunamismax/0xvane) — local-first algorithmic trading workbench for signals, risk control, paper/live execution, and PostgreSQL-backed state.
+- [repokeeper](https://github.com/dunamismax/repokeeper) — self-hosted repo health daemon for remote validation, drift detection, and doc verification.
+- [podforge](https://github.com/dunamismax/podforge) — local-first Commander / MTG session and results engine with a Go/PostgreSQL core.
+
+## Reference, Learning, and Smaller Builds
+
+- [c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up) — practical C systems workbook from fundamentals through networking, crypto, and memory work.
+- [go-web-server](https://github.com/dunamismax/go-web-server) — a boring-default Go starter for server-rendered apps with PostgreSQL and SQLC.
+- [mtg-card-bot](https://github.com/dunamismax/mtg-card-bot) — Discord bot for fast Magic: The Gathering lookups.
+- [hello-world-from-hell](https://github.com/dunamismax/hello-world-from-hell) — intentionally cursed C nonsense, which is sometimes its own kind of documentation.
+
+## Working Style
+
+- **Go** for services, daemons, CLIs, and orchestration.
+- **Zig** for systems code, native tooling, protocol machinery, and low-level control.
+- **C** for tight boundary-layer work: boot code, secure-memory custody, packet hot paths, and auditable interfaces.
+- **PostgreSQL** when persistent state matters.
+- **Raw SQL** over ORM theater.
+- Build the boring core first. Earn complexity later.
+
+---
+
+I care about software that is inspectable, self-hostable, and durable.
