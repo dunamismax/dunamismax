@@ -10,12 +10,12 @@ Use this stack when the project is mostly:
 - CLIs and operator tooling
 - orchestration and control planes
 - APIs and network-facing systems software
-- durable-state applications
+- durable application logic
 - integrations, automation, and operational products
 
 For this workspace, that maps to `wirescope`, `riftline`, `vaultd`, `gitpulse`, `repokeeper`, and `podforge`.
 
-If the browser surface is the product, start with the [Web Tech Stack](./web-tech-stack.md). If the browser is only an operator surface and one binary matters more than frontend specialization, Go can own the HTML too.
+If the browser surface is the product, start with the [Web Tech Stack](./web-tech-stack.md). If the browser is only an operator surface and one binary matters more than frontend specialization, Go can still own the HTML.
 
 ## Opinionated Default
 
@@ -30,10 +30,11 @@ If the browser surface is the product, start with the [Web Tech Stack](./web-tec
 | Logging | `log/slog` | Standard structured logging |
 | HTTP | `net/http` first | The stdlib is strong and keeps dependency count down |
 | Router upgrade path | `chi` when route structure and middleware outgrow the stdlib | Small, idiomatic, not framework-heavy |
-| Database | PostgreSQL | Best fit for durable state in this workspace |
-| DB driver | `pgx/v5` | Best-in-class PostgreSQL driver and toolkit in Go |
-| SQL layer | `sqlc` | Typed code from raw SQL without ORM magic |
-| Migrations | `goose` | Simple and durable |
+| Database default | SQLite first | Fastest path to a real local app with minimal setup |
+| SQLite path | `database/sql` + a boring SQLite driver | Keeps the local loop simple |
+| PostgreSQL path | `pgx/v5` when the product clearly earns PostgreSQL | Strong option once concurrency and deployment needs grow |
+| Query layer | plain SQL first; `sqlc` when query surface, team size, or complexity justify codegen | Keeps early repos light without giving up a real typed path later |
+| Migrations | simple SQL migrations first; `goose` when the repo needs a real migration runner | Avoid ceremony before it helps |
 | Config | environment variables and flags first, `koanf` only when multiple sources really matter | Avoid configuration theater |
 | CLI | `flag` for small tools, `cobra` for large multi-command CLIs | Keep small tools small |
 | Task runner | `mage` | Lets Go repos stay Go-native |
@@ -48,11 +49,13 @@ If the browser surface is the product, start with the [Web Tech Stack](./web-tec
 
 1. Start with one binary and divide the code by capability, not architecture cosplay.
 2. Use the standard library unless a small package clearly removes pain.
-3. Use PostgreSQL, `pgx`, and `sqlc` for anything with real state.
-4. Add structured logs and Prometheus metrics on day one.
-5. Keep the deploy shape obvious.
-6. Pair Go with the web lane when the browser is a first-class product surface.
-7. Let Go render HTML directly only when that materially simplifies the product.
+3. Start with SQLite when the product needs state but not operational database drama.
+4. Use plain SQL first; add `sqlc` only when the query surface or team workflow really earns it.
+5. Move to PostgreSQL only when concurrency, deployment shape, background jobs, or data volume clearly justify it.
+6. Add structured logs and Prometheus metrics on day one for long-running services.
+7. Keep the deploy shape obvious.
+8. Pair Go with the web lane when the browser is a first-class product surface.
+9. Let Go render HTML directly only when that materially simplifies the product.
 
 ## Default Repo Shape
 
@@ -68,7 +71,7 @@ project/
   go.mod
 ```
 
-Use `cmd/` for entrypoints, `internal/` for app code, `migrations/` for schema changes, and `sql/` for the source SQL that feeds `sqlc`.
+Use `cmd/` for entrypoints, `internal/` for app code, `migrations/` for schema changes, and `sql/` only when the repo has earned a real externalized SQL surface.
 
 `static/` and `views/` only belong here when Go owns the browser surface.
 
@@ -82,19 +85,29 @@ Use `cmd/` for entrypoints, `internal/` for app code, `migrations/` for schema c
 
 ## Data Guidance
 
-- PostgreSQL is the default durable store.
-- `pgxpool` is the default connection layer for services.
-- `sqlc` is the default path for typed data access.
-- Use raw SQL and database constraints instead of pushing correctness into application folklore.
-- Prefer transactions, proper indexes, and explicit query shape over magical repository layers.
-- Use `LISTEN/NOTIFY`, `SKIP LOCKED`, and regular SQL before adding queue infrastructure.
+The Go data doctrine is:
+
+- **SQLite by default**
+- **PostgreSQL when the product clearly earns it**
+- **relational data by default**
+- **plain SQL first**
+- **`sqlc` only when backend complexity actually justifies it**
+
+That means:
+
+- use SQLite for local-first tools, single-node services, operator software, early products, and repos where easy setup matters more than networked concurrency
+- move to PostgreSQL when multiple writers, networked deployment, job coordination, heavier operational reporting, or higher write pressure make SQLite the wrong fit
+- use database constraints, transactions, and explicit query shape instead of hiding truth in repository folklore
+- do not reach for a heavyweight Go ORM as the center of the data layer
+- do not jump to MongoDB just because documents feel easy in week one
 
 ## Web Pairing Guidance
 
 When the product has a real browser-facing frontend:
 
 - let the [Web Tech Stack](./web-tech-stack.md) own routes, HTML shells, assets, and presentation
-- let Go own auth, business logic, jobs, SQL, and durable state
+- let Go own auth, business logic, jobs, and heavy service logic
+- let SQLite or PostgreSQL live on the side that actually owns the durable state
 - keep the boundary boring: same-origin HTTP or one reverse proxy in front
 - do not couple frontend deploy complexity to backend service boundaries unless the product actually needs it
 
@@ -143,11 +156,11 @@ Choose C when the project is mostly ABI, firmware, or the narrowest possible low
 
 ## Avoid By Default
 
-- ORMs as the center of the data layer
+- heavyweight ORMs as the center of the data layer
 - reflection-driven web frameworks
 - giant DI containers
 - multi-service decomposition before one binary is clearly failing
-- adding Redis, Kafka, or extra infrastructure before PostgreSQL and a worker loop have been exhausted
+- adding Redis, Kafka, or extra infrastructure before SQLite or a straightforward worker loop have been exhausted
 - splitting a small product into frontend and backend theater when one binary or one boring boundary is enough
 
 ## Primary Sources
@@ -157,6 +170,7 @@ Choose C when the project is mostly ABI, firmware, or the narrowest possible low
 - [`slog` blog post](https://go.dev/blog/slog)
 - [`net/http` ServeMux docs](https://pkg.go.dev/net/http#ServeMux)
 - [`govulncheck` tutorial](https://go.dev/doc/tutorial/govulncheck)
+- [SQLite docs](https://www.sqlite.org/docs.html)
 - [`pgx` docs](https://pkg.go.dev/github.com/jackc/pgx/v5)
 - [`sqlc` docs](https://docs.sqlc.dev/)
 - [`chi` docs](https://go-chi.io/)

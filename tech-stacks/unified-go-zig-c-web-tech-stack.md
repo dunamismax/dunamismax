@@ -7,7 +7,7 @@ Last reviewed: 2026-03-23
 Use this stack when one product genuinely benefits from all four lanes:
 
 - Web for the browser surface
-- Go for the control plane and durable-state application logic
+- Go for the control plane and durable application logic
 - Zig for the native engine
 - C for the narrowest low-level boundary
 
@@ -57,13 +57,14 @@ That keeps the browser simple, the Go control plane obvious, and the native code
 | Web toolchain | Bun |
 | Web framework | Astro |
 | Web interaction layer | Alpine.js 3 |
+| Web data default | SQLite + Drizzle |
 | Go toolchain | Go 1.26.1 |
+| Go data default | SQLite first |
+| PostgreSQL path | only when the product clearly earns it |
+| Heavier backend query path | plain SQL or `sqlc` when justified |
 | Zig toolchain | Zig 0.15.2 stable |
 | C toolchain | Clang by default, GCC as a portability check, `zig cc` for cross builds |
 | Control-plane transport | Go `net/http` or `chi` |
-| Data store | PostgreSQL, owned by Go |
-| Query layer | `pgx` + `sqlc` |
-| Migrations | `goose` |
 | Typed contracts | Buf-managed Protobuf only when contracts justify it |
 | Browser auth/session boundary | terminate at the Go edge |
 | Logs and metrics | emitted in Go as the primary operational surface |
@@ -88,19 +89,19 @@ project/
 
 Suggested responsibilities:
 
-- `web/` for the Astro frontend and static assets
+- `web/` for the Astro frontend, Drizzle schema, and browser assets
 - `cmd/` and `internal/` for Go control-plane code
 - `zig/` for systems engines, shared native libs, or TUIs
 - `c/` for firmware or ABI-boundary code
 - `proto/` only when the system actually benefits from typed contracts
-- `sql/` and `migrations/` as Go-owned data boundaries
+- `sql/` and `migrations/` only when the Go side has earned an explicit heavier data boundary
 
 ## Boundary Guidance
 
 ### Web <-> Go
 
 - let Web own routes, HTML, assets, and browser-only interaction
-- let Go own auth, business logic, jobs, SQL, and persistence
+- let Go own auth, business logic, jobs, and heavy service logic
 - keep the boundary same-origin and boring
 - do not leak backend topology into frontend build choices unless the product genuinely needs it
 
@@ -123,10 +124,20 @@ Suggested responsibilities:
 
 ## Data And State Guidance
 
-- PostgreSQL belongs on the Go side by default.
-- SQL, migrations, auth, audit logs, and admin workflows belong on the Go side by default.
-- Web stays thin.
-- Zig and C components should treat persistent state as an explicit dependency, not something they casually own.
+The unified stack data doctrine is:
+
+- **relational by default**
+- **SQLite by default**
+- **Drizzle for web-heavy apps**
+- **PostgreSQL only when the product clearly earns it**
+- **plain SQL or `sqlc` only when backend complexity actually justifies it**
+
+That means:
+
+- let the web lane stay fast and local-first with SQLite when it can
+- let Go take over heavier persistence, job coordination, auth, audit, and operational state when the product grows into that shape
+- move to PostgreSQL because the product needs it, not because the stack doc said so years ago
+- keep Zig and C focused on engines and boundaries, not casual ownership of application data
 
 This keeps the systems code focused and the operations story understandable.
 
@@ -169,6 +180,7 @@ If any one of those jobs is fake, collapse the architecture and remove the lane.
 - separate logging, auth, and config systems per lane
 - storing product logic in ABI glue code
 - turning the web app into a second control plane
+- jumping to PostgreSQL, MongoDB, or extra infrastructure before the product has actually outgrown SQLite
 
 ## Primary Sources
 
@@ -176,6 +188,8 @@ If any one of those jobs is fake, collapse the architecture and remove the lane.
 - [TypeScript docs](https://www.typescriptlang.org/docs/)
 - [Astro docs](https://docs.astro.build/)
 - [Alpine.js docs](https://alpinejs.dev/start-here)
+- [SQLite docs](https://www.sqlite.org/docs.html)
+- [Drizzle docs](https://orm.drizzle.team/docs/overview)
 - [Go downloads](https://go.dev/dl/)
 - [Zig downloads](https://ziglang.org/download/)
 - [Zig docs](https://ziglang.org/documentation/master/)

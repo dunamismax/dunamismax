@@ -13,16 +13,19 @@ Use it for:
 - authenticated web frontends
 - browser-facing apps that still want a calm architecture
 - frontends paired with Go services or APIs
+- web-heavy products where local setup, fast iteration, and clean DX matter more than framework fashion
 
-The point is simple: fast local loops, small client-side JavaScript, clean HTML, and deploys that do not turn the frontend into its own circus.
+The point is simple: fast local loops, small client-side JavaScript, clean HTML, minimal setup, and deploys that do not turn the frontend into its own circus.
 
 ## Why This Stack
 
-- Bun keeps installs, scripts, and local feedback fast.
-- TypeScript catches stupid mistakes without framework ceremony.
+- Bun keeps installs, scripts, local tooling, and SQLite access fast.
 - Astro keeps rendering server-first and lets the browser stay mostly quiet.
 - Alpine.js covers the small interaction layer without dragging in a full client application.
-- The whole stack pairs cleanly with the [Go Tech Stack](./go-tech-stack.md) while keeping the frontend pleasant to build.
+- SQLite removes local database setup drag for most web-first products.
+- Drizzle gives the web lane typed schema and query ergonomics without heavy ORM theater.
+- TypeScript stays where it helps, without turning the whole product into framework cosplay.
+- The whole stack pairs cleanly with the [Go Tech Stack](./go-tech-stack.md) when the product later earns a heavier control plane.
 
 ## The Default Web Stack
 
@@ -35,22 +38,28 @@ The point is simple: fast local loops, small client-side JavaScript, clean HTML,
 | Component model | `.astro` layouts and components first |
 | Styling | CSS variables plus hand-written CSS first |
 | Content | Astro content collections when the repo is content-heavy |
+| Database | SQLite by default |
+| Relational layer | Drizzle |
+| SQLite runtime | Bun SQLite when the app can stay in the web lane |
+| Migrations | Drizzle Kit |
 | Lint + format | Biome |
 | Type and Astro checks | `astro check` |
 | Unit tests | Vitest |
-| Browser tests | Playwright only for critical flows |
+| Browser tests | Playwright only when needed |
 | Output mode | static by default, SSR only when required |
 | Backend pairing | Go over same-origin HTTP when the product has a real service layer |
 
 ## Golden Path
 
-1. Use Bun for installs, scripts, and local commands.
+1. Use Bun for installs, scripts, local commands, and the fastest development loop.
 2. Build pages, layouts, and components in Astro.
-3. Fetch data on the server or at build time first.
-4. Ship HTML and CSS that work before JavaScript wakes up.
-5. Add Alpine only where the page needs light interaction.
-6. Add a hydrated island only when the browser truly owns local state.
-7. Keep deployment simple: static unless the product forces SSR.
+3. Use SQLite by default.
+4. Use Drizzle for schema, migrations, and typed relational access in web-heavy apps.
+5. Fetch data on the server or at build time first.
+6. Ship HTML and CSS that work before JavaScript wakes up.
+7. Add Alpine only where the page needs light interaction.
+8. Add a hydrated island only when the browser truly owns local state.
+9. Move to PostgreSQL only when the product clearly earns it.
 
 ## Default Project Shape
 
@@ -60,6 +69,9 @@ project/
   src/
     components/
     content/
+    db/
+      schema.ts
+      client.ts
     layouts/
     lib/
       api/
@@ -68,9 +80,11 @@ project/
     styles/
       base.css
       tokens.css
+  drizzle/
   tests/
   astro.config.mjs
   biome.json
+  drizzle.config.ts
   package.json
   tsconfig.json
 ```
@@ -80,9 +94,27 @@ Notes:
 - `src/pages/` owns routes.
 - `src/layouts/` owns page shells.
 - `src/components/` holds reusable Astro components.
-- `src/lib/api/` is where backend calls and adapters live.
+- `src/db/` owns Drizzle schema and access.
+- `src/lib/api/` is where backend adapters or same-origin fetch helpers live.
 - `src/styles/` holds the global tokens and base rules.
 - `public/` is only for files that must bypass the build pipeline.
+- `drizzle/` holds generated migrations.
+
+## Data Doctrine
+
+The default web data posture is:
+
+1. relational by default
+2. SQLite by default
+3. Drizzle by default
+4. PostgreSQL only when the product clearly earns it
+
+That means:
+
+- use SQLite for local-first tools, single-node products, prototypes that should still be real, dashboards, admin tools, and early web apps
+- use Drizzle instead of a heavyweight ORM or hand-rolled query sprawl
+- move to PostgreSQL when concurrency, deployment shape, team size, background-job pressure, or data volume make SQLite the wrong tool
+- do not jump to MongoDB just because document storage looks friendlier on day one
 
 ## Rendering And Data Flow
 
@@ -103,8 +135,9 @@ That means:
 If the backend is Go, keep the boundary boring:
 
 - Astro owns routes, HTML, assets, and presentation
-- Go owns APIs, auth, jobs, SQL, and durable state
+- Go owns APIs, auth, jobs, and heavy service logic
 - use same-origin routing or a simple reverse proxy instead of clever frontend/backend choreography
+- keep SQLite or PostgreSQL decisions on the side that actually owns the state
 
 ## Interaction Ladder
 
@@ -176,7 +209,7 @@ Recommended meaning:
 - `bun run check` -> `biome check . && astro check`
 - `bun run test` -> `vitest run`
 
-Add Playwright only when the product has critical browser flows worth protecting, such as auth, checkout, editors, or complex mutations.
+Add Playwright only when the product has critical browser flows worth protecting, such as auth, editors, complex mutations, or multi-step operator workflows.
 
 ## Deployment Posture
 
@@ -184,7 +217,8 @@ Default order:
 
 1. static hosting
 2. one Astro SSR process
-3. anything more complex only if the product earns it
+3. Astro plus one boring backend
+4. anything more complex only if the product earns it
 
 Guidance:
 
@@ -192,7 +226,8 @@ Guidance:
 - use SSR when auth, request-scoped data, previews, or private dashboards require it
 - keep the frontend on the same origin as the backend when cookies or session flows matter
 - avoid edge-function mazes unless there is a real latency or placement reason
-- let the backend carry observability and business-state complexity; the frontend should stay thin
+- let the backend carry heavy business-state complexity; the frontend should stay thin
+- do not make local setup depend on network databases unless the product has clearly outgrown SQLite
 
 ## Guardrails
 
@@ -203,6 +238,7 @@ Guidance:
 - Do not add GraphQL, tRPC, or websocket machinery just to feel modern.
 - Do not split into frontend and backend deployment complexity if one simple reverse proxy solves it.
 - Do not bring in React, Vue, or Svelte for the whole app when Astro and Alpine already cover the problem.
+- Do not jump to PostgreSQL, MongoDB, or hosted infrastructure before the product has earned more moving parts.
 
 ## When Not To Use This Stack
 
@@ -222,6 +258,9 @@ In those cases, choose the stack that matches the actual runtime shape instead o
 - [Astro docs](https://docs.astro.build/)
 - [Astro deployment guide](https://docs.astro.build/en/guides/deploy/)
 - [Alpine.js docs](https://alpinejs.dev/start-here)
+- [SQLite docs](https://www.sqlite.org/docs.html)
+- [Drizzle docs](https://orm.drizzle.team/docs/overview)
+- [Drizzle migrations docs](https://orm.drizzle.team/docs/migrations)
 - [Biome docs](https://biomejs.dev/guides/getting-started/)
 - [Vitest docs](https://vitest.dev/guide/)
 - [Playwright docs](https://playwright.dev/docs/intro)

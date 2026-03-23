@@ -5,12 +5,12 @@ Last reviewed: 2026-03-23
 This folder is the opinionated reference set for the software that shows up across this workspace:
 
 - Web for websites, docs, frontends, and browser-facing products
-- Go for services, daemons, CLIs, operator software, and durable-state application logic
+- Go for services, daemons, CLIs, operator software, and durable application logic
 - Zig for systems tools, native engines, protocol machinery, and low-level control
 - C for boundary-layer, firmware, ABI, and custody code
 - a unified stack when one product genuinely needs all four lanes at once
 
-These are not "all possible tools" lists. They are boring-default stack decisions for self-hostable systems software, networking, observability, crypto, local-first tooling, operator-facing products, and web surfaces that should stay fast and sane.
+These are not "all possible tools" lists. They are boring-default stack decisions for self-hostable systems software, networking, observability, crypto, local-first tooling, operator-facing products, and browser surfaces that should stay fast, sane, and pleasant to build.
 
 ## How To Choose
 
@@ -26,7 +26,11 @@ These are not "all possible tools" lists. They are boring-default stack decision
 
 - Prefer official toolchains and standard libraries first.
 - Prefer one obvious build entrypoint per repo.
-- Prefer PostgreSQL and raw SQL when durable state matters.
+- Prefer **SQLite by default**.
+- Move to **PostgreSQL only when the product clearly earns it**.
+- Prefer **relational data by default**.
+- Prefer **Drizzle for web-heavy apps**.
+- Prefer **`sqlc` or plain SQL only when backend complexity actually justifies it**.
 - Prefer process boundaries over language-FFI tangles.
 - Prefer single-binary or small-surface deploys over sprawling control planes.
 - Prefer server-first rendering and HTML/CSS that still make sense before JavaScript runs.
@@ -43,6 +47,7 @@ In this folder, "best" means the tool is some combination of:
 - boring to operate
 - easy to audit
 - aligned with Go, Zig, C, and the default web lane instead of fighting them
+- fast enough to keep local loops, agent workflows, and solo development pleasant
 
 That means some fashionable tools are intentionally absent. If the stack decision increases hidden state, runtime magic, framework theater, JavaScript sprawl, or operational drag, it probably did not make the cut.
 
@@ -50,20 +55,21 @@ That means some fashionable tools are intentionally absent. If the stack decisio
 
 | Concern | Default |
 | --- | --- |
-| Database | PostgreSQL |
-| Query layer | Raw SQL, usually generated into typed code where that helps |
+| Database | SQLite first; PostgreSQL when the product earns it |
+| Data model | Relational by default |
+| Query / schema layer | Drizzle for web-heavy apps; `sqlc` or plain SQL for heavier Go backends |
 | Observability | Structured logs, Prometheus metrics, OpenTelemetry where tracing is worth it |
 | Packaging | Single-purpose binaries first |
 | CI quality bar | formatter, linter, tests, vulnerability scan, and release smoke path |
-| Frontend/web lane | Bun + TypeScript + Astro first, Alpine for light interaction, islands only when the browser really owns the state |
+| Frontend/web lane | Bun + Astro first, TypeScript where it helps, Alpine for light interaction, islands only when the browser really owns the state |
 | Cross-language integration | Process boundary first, C ABI second, broad `cgo` usage last |
 
 ## Update Policy
 
 - Update this folder whenever a new stable Go or Zig release materially changes the advice.
-- Re-check Bun, Astro, Alpine.js, Biome, and Vitest guidance when their stable releases materially change the default web lane.
+- Re-check Bun, Astro, Alpine.js, Biome, Vitest, SQLite, and Drizzle guidance when their stable releases materially change the default web lane.
 - Re-check C toolchain guidance on new stable Clang, GCC, CMake, or Meson releases.
-- Re-check Go web guidance when the standard library meaningfully grows and removes the need for external packages.
+- Re-check Go guidance when the standard library meaningfully grows and removes the need for external packages.
 
 ## Primary Research Anchors
 
@@ -74,6 +80,8 @@ That means some fashionable tools are intentionally absent. If the stack decisio
 - [Biome docs](https://biomejs.dev/guides/getting-started/)
 - [Vitest docs](https://vitest.dev/guide/)
 - [Playwright docs](https://playwright.dev/docs/intro)
+- [SQLite docs](https://www.sqlite.org/docs.html)
+- [Drizzle docs](https://orm.drizzle.team/docs/overview)
 - [Go downloads and release history](https://go.dev/dl/)
 - [Go release notes index](https://go.dev/doc/devel/release)
 - [Go `slog` announcement](https://go.dev/blog/slog)
