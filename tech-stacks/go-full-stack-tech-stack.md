@@ -4,18 +4,22 @@ Last reviewed: 2026-03-23
 
 ## Purpose
 
-This is the opinionated stack for full-stack Go apps where you want:
+This is the Go-rendered web stack for the cases where one Go binary should own the browser surface.
+
+It is **not** the default frontend or website stack in this workspace anymore. For most websites, frontends, and browser-facing web apps, use [Bun + TypeScript + Astro + Alpine.js](./bun-typescript-astro-alpine-tech-stack.md).
+
+Use this stack when you want:
 
 - Go as the main language
-- a browser UI
+- a browser UI that lives in the same runtime as the backend
 - minimal authored JavaScript
 - server-rendered HTML
 - PostgreSQL-backed state
 - deploys that still feel like normal Go software
 
-This matches the browser-facing operator-surface direction already visible in `gitpulse`.
+This is still a good fit for small operator surfaces and products where one binary matters more than frontend specialization.
 
-## The Default Full-Stack Stack
+## The Go-Rendered Stack
 
 | Area | Default |
 | --- | --- |
@@ -78,7 +82,7 @@ That means:
 - CSS carries the presentation system
 - the server stays in control of state and rendering
 
-This is the right fit for operator dashboards, internal tools, self-hosted products, and stateful web software where durability and debuggability matter more than client-side trend compliance.
+This is the right fit for operator dashboards, internal tools, self-hosted products, and stateful web software where one deployable Go runtime matters more than having a dedicated frontend stack.
 
 ## CSS Guidance
 
@@ -110,6 +114,15 @@ Avoid:
 - use CSRF protection on mutating browser flows
 - make session storage PostgreSQL-backed when multi-instance or durability needs it
 
+## When To Choose This Instead Of The Default Web Stack
+
+Choose this Go-rendered stack over the Bun + Astro web stack when:
+
+- one binary is a hard requirement
+- the browser surface is an operator UI, not a frontend product lane of its own
+- server-rendered HTML already covers nearly all interaction needs
+- the team wants Go to own routing, templates, sessions, and deploy shape end to end
+
 ## Dev And Release Guidance
 
 - use `air` for local reload
@@ -122,8 +135,9 @@ Avoid:
 Do not use this stack when:
 
 - the product is truly an offline-first rich client that needs heavy browser-side logic
-- the team is explicitly building a JS-first front end
+- the team is explicitly building a frontend/web app as a first-class product surface
 - the real value is a native desktop or mobile app instead of a web surface
+- Astro would give you a simpler, faster frontend split without hurting deployment
 
 ## Primary Sources
 

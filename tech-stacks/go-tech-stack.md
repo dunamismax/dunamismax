@@ -15,6 +15,8 @@ Use this stack when the project is mostly:
 
 For this workspace, this maps to `wirescope`, `riftline`, `vaultd`, `gitpulse`, `repokeeper`, and `podforge`.
 
+For websites, frontends, and browser-facing web apps, the default lane is [Bun + TypeScript + Astro + Alpine.js](./bun-typescript-astro-alpine-tech-stack.md). Use this Go stack for the service/runtime side, not as the default frontend choice.
+
 ## Opinionated Default
 
 | Area | Default | Why |
@@ -99,7 +101,7 @@ Use `cmd/` for entrypoints, `internal/` for app code, `migrations/` for schema c
 Choose Go when:
 
 - the system has durable state
-- operators need an API, CLI, or web surface
+- operators need an API, CLI, or administrative surface
 - you need straightforward concurrency and deployment
 - the code is mostly coordination, control, or application logic
 

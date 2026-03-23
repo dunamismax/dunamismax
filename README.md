@@ -1,6 +1,6 @@
 # Stephen Sawyer
 
-I build self-hostable systems software in **Go, Zig, and C**.
+I build self-hostable systems software in **Go, Zig, and C**, and I default to **Bun + TypeScript + Astro + Alpine.js** for browser-facing products.
 
 The through-lines are networking, cryptography, observability, developer tooling, trading infrastructure, and operating-system work. When state matters, I use **PostgreSQL** and write **raw SQL**. I like local-first tools, clean operator workflows, and software that still makes sense when something breaks at 2am.
 
@@ -26,11 +26,12 @@ If you want the strongest entry points into my public work, start here, in order
 
 ## Tech Stacks
 
-- [tech-stacks](./tech-stacks/README.md) — opinionated reference stack docs for C, Zig, Go, Go backends, Go full-stack apps, and unified Go + Zig + C systems.
+- [tech-stacks](./tech-stacks/README.md) — opinionated reference stack docs for Bun + TypeScript + Astro + Alpine.js web apps, C, Zig, Go, Go backends, Go-rendered web apps, and unified Go + Zig + C systems.
 
 ## Working Style
 
 - **Go** for services, daemons, CLIs, and orchestration.
+- **Bun + TypeScript + Astro + Alpine.js** for websites, frontends, and web apps.
 - **Zig** for systems code, native tooling, protocol machinery, and low-level control.
 - **C** for tight boundary-layer work: boot code, secure-memory custody, packet hot paths, and auditable interfaces.
 - **PostgreSQL** when persistent state matters.

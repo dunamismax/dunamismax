@@ -5,7 +5,7 @@ This is the profile README repo and tech-stacks host for dunamismax.
 It has no build system. Its deliverables are:
 
 - `README.md` -- the GitHub profile README, visible at github.com/dunamismax
-- `tech-stacks/` -- opinionated reference stack docs for C, Zig, Go, Go backends, Go full-stack, and unified Go + Zig + C systems
+- `tech-stacks/` -- opinionated reference stack docs for Bun + TypeScript + Astro + Alpine.js web apps, C, Zig, Go, Go backends, Go-rendered web apps, and unified Go + Zig + C systems
 
 Maintenance work here falls into three phases: keeping the profile README accurate, keeping the tech-stack docs current, and keeping the portfolio curation honest.
 
@@ -25,9 +25,10 @@ Maintenance work here falls into three phases: keeping the profile README accura
 
 - [ ] Re-check the Go toolchain version in all four Go stack docs against the current stable release at go.dev/dl
 - [ ] Re-check the Zig toolchain version in `zig-tech-stack.md` and `unified-go-zig-c-tech-stack.md` against the current stable release at ziglang.org/download
+- [ ] Re-check the Bun, Astro, Alpine.js, Biome, and Vitest guidance in the web stack doc against current stable docs
 - [ ] Re-check the C stack for any changes to Clang, GCC, CMake, or Meson that materially affect the guidance
 - [ ] Confirm `sqlc`, `pgx`, `goose`, `chi`, `golangci-lint`, and `govulncheck` references are still the correct packages and still actively maintained
-- [ ] Confirm `templ`, `htmx`, `air`, and `scs` references in the full-stack doc are current
+- [ ] Confirm `templ`, `htmx`, `air`, and `scs` references in the Go-rendered web doc are current
 - [ ] Confirm `buf`, `connectrpc`, and `opentelemetry` references in the backend doc are current
 - [ ] Update the "Last reviewed" date in each tech-stack file after verifying it
 - [ ] Verify that the repo examples cited in each stack doc still exist and still match the described stack
@@ -35,7 +36,6 @@ Maintenance work here falls into three phases: keeping the profile README accura
   - `zig-tech-stack.md` cites: lockbox, dunamis
   - `c-tech-stack.md` cites: dunamis, vaultd
   - `unified-go-zig-c-tech-stack.md` cites: dunamis, vaultd
-  - `go-full-stack-tech-stack.md` cites: gitpulse
 - [ ] Update `tech-stacks/README.md` "Last reviewed" date after any stack doc changes
 - [ ] Confirm the "How To Choose" table in `tech-stacks/README.md` still maps correctly to the actual stack docs
 

@@ -15,6 +15,8 @@ This is the backend-specific version of the Go stack for:
 
 Use this when the browser UI is not the center of the project.
 
+If the project does have a real browser frontend, the default pairing is [Bun + TypeScript + Astro + Alpine.js](./bun-typescript-astro-alpine-tech-stack.md) on the web side and Go on the backend side.
+
 ## The Default Backend Stack
 
 | Area | Default |
@@ -65,6 +67,15 @@ Default internal RPC when needed:
 - Connect or gRPC for typed service-to-service calls
 
 Do not introduce typed RPC just because it feels more serious. Use it when contract stability, generated clients, or inter-service evolution really justify it.
+
+## Frontend Pairing Guidance
+
+When a browser UI exists:
+
+- let Astro own routes, HTML, assets, and presentation
+- let Go own auth, business logic, SQL, jobs, and durable state
+- keep the boundary boring: same-origin HTTP or one reverse proxy in front
+- avoid coupling frontend deploy complexity to backend service boundaries unless there is a real product need
 
 ## Database Guidance
 
