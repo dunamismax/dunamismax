@@ -1,10 +1,10 @@
-# Bun + TypeScript + Astro + Alpine.js Web Tech Stack
+# Web Tech Stack
 
 Last reviewed: 2026-03-23
 
 ## Purpose
 
-This is the default web stack in this workspace.
+This is the default browser-facing stack in this workspace.
 
 Use it for:
 
@@ -19,10 +19,10 @@ The point is simple: fast local loops, small client-side JavaScript, clean HTML,
 ## Why This Stack
 
 - Bun keeps installs, scripts, and local feedback fast.
-- TypeScript catches stupid mistakes without needing framework ceremony.
+- TypeScript catches stupid mistakes without framework ceremony.
 - Astro keeps rendering server-first and lets the browser stay mostly quiet.
 - Alpine.js covers the small interaction layer without dragging in a full client application.
-- The whole stack pairs cleanly with Go backends while keeping the frontend pleasant to build.
+- The whole stack pairs cleanly with the [Go Tech Stack](./go-tech-stack.md) while keeping the frontend pleasant to build.
 
 ## The Default Web Stack
 
@@ -44,11 +44,11 @@ The point is simple: fast local loops, small client-side JavaScript, clean HTML,
 
 ## Golden Path
 
-1. Use Bun for install, scripts, and local commands.
+1. Use Bun for installs, scripts, and local commands.
 2. Build pages, layouts, and components in Astro.
 3. Fetch data on the server or at build time first.
 4. Ship HTML and CSS that work before JavaScript wakes up.
-5. Add Alpine only where the page needs small interaction.
+5. Add Alpine only where the page needs light interaction.
 6. Add a hydrated island only when the browser truly owns local state.
 7. Keep deployment simple: static unless the product forces SSR.
 
@@ -98,7 +98,7 @@ That means:
 - fetch per-request or authenticated data in SSR mode
 - keep forms and mutations server-owned when possible
 - treat client fetch as a follow-up move, not the first instinct
-- avoid a client cache/query layer until repeated pain proves it is needed
+- avoid a client cache or query layer until repeated pain proves it is needed
 
 If the backend is Go, keep the boundary boring:
 

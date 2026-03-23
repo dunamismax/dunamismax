@@ -4,10 +4,11 @@ Last reviewed: 2026-03-23
 
 This folder is the opinionated reference set for the software that shows up across this workspace:
 
-- Bun + TypeScript + Astro + Alpine.js for websites, docs, frontends, and browser-facing web apps
-- Go services, daemons, CLIs, and operator software like `wirescope`, `riftline`, `gitpulse`, `vaultd`, `repokeeper`, and `podforge`
-- Zig systems tools and native engines like `lockbox` and the Zig parts of `dunamis`
-- C boundary-layer, firmware, ABI, and custody code like the low-level edges in `dunamis` and the C core in `vaultd`
+- Web for websites, docs, frontends, and browser-facing products
+- Go for services, daemons, CLIs, operator software, and durable-state application logic
+- Zig for systems tools, native engines, protocol machinery, and low-level control
+- C for boundary-layer, firmware, ABI, and custody code
+- a unified stack when one product genuinely needs all four lanes at once
 
 These are not "all possible tools" lists. They are boring-default stack decisions for self-hostable systems software, networking, observability, crypto, local-first tooling, operator-facing products, and web surfaces that should stay fast and sane.
 
@@ -15,13 +16,11 @@ These are not "all possible tools" lists. They are boring-default stack decision
 
 | If the project is mostly... | Start here |
 | --- | --- |
-| Websites, docs, product frontends, or browser-facing web apps | [Bun + TypeScript + Astro + Alpine.js Web Tech Stack](./bun-typescript-astro-alpine-tech-stack.md) |
+| Websites, docs, product frontends, or browser-facing web apps | [Web Tech Stack](./web-tech-stack.md) |
 | Boundary-layer systems code, firmware edges, ABI shims, hot loops, or tiny native tools | [C Tech Stack](./c-tech-stack.md) |
 | Native tooling, protocol engines, terminal apps, packet logic, or systems libraries | [Zig Tech Stack](./zig-tech-stack.md) |
 | Services, daemons, CLIs, orchestration, or operational software | [Go Tech Stack](./go-tech-stack.md) |
-| APIs, daemons, and service backends without a primary browser UI | [Go Backend Tech Stack](./go-backend-tech-stack.md) |
-| Server-rendered Go apps where one binary should own the browser surface | [Go Full-Stack Tech Stack](./go-full-stack-tech-stack.md) |
-| One product where Go, Zig, and C all belong in the same architecture | [Unified Go + Zig + C Tech Stack](./unified-go-zig-c-tech-stack.md) |
+| One product where the browser surface, Go control plane, Zig engine, and C boundary all belong in the same architecture | [Unified Go + Zig + C + Web Tech Stack](./unified-go-zig-c-web-tech-stack.md) |
 
 ## Shared Rules
 

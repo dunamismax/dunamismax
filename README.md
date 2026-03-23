@@ -26,7 +26,7 @@ If you want the strongest entry points into my public work, start here, in order
 
 ## Tech Stacks
 
-- [tech-stacks](./tech-stacks/README.md) — opinionated reference stack docs for Bun + TypeScript + Astro + Alpine.js web apps, C, Zig, Go, Go backends, Go-rendered web apps, and unified Go + Zig + C systems.
+- [tech-stacks](./tech-stacks/README.md) — opinionated reference stack docs for Web, C, Zig, Go, and unified Go + Zig + C + Web systems.
 
 ## Working Style
 

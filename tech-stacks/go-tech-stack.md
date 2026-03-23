@@ -13,9 +13,9 @@ Use this stack when the project is mostly:
 - durable-state applications
 - integrations, automation, and operational products
 
-For this workspace, this maps to `wirescope`, `riftline`, `vaultd`, `gitpulse`, `repokeeper`, and `podforge`.
+For this workspace, that maps to `wirescope`, `riftline`, `vaultd`, `gitpulse`, `repokeeper`, and `podforge`.
 
-For websites, frontends, and browser-facing web apps, the default lane is [Bun + TypeScript + Astro + Alpine.js](./bun-typescript-astro-alpine-tech-stack.md). Use this Go stack for the service/runtime side, not as the default frontend choice.
+If the browser surface is the product, start with the [Web Tech Stack](./web-tech-stack.md). If the browser is only an operator surface and one binary matters more than frontend specialization, Go can own the HTML too.
 
 ## Opinionated Default
 
@@ -23,31 +23,36 @@ For websites, frontends, and browser-facing web apps, the default lane is [Bun +
 | --- | --- | --- |
 | Toolchain | Go 1.26.1 | Current stable toolchain, excellent stdlib, strong tooling |
 | Dependency management | Go modules | Native, boring, and reliable |
-| Workspace mode | `go work` only when actively developing multiple modules together | Useful, but do not force it into every repo |
+| Workspace mode | `go work` only when actively developing multiple modules together | Useful, but not mandatory ceremony |
 | Formatting | `gofmt` | Canonical formatting |
-| Linting | `golangci-lint` plus `go vet` | Broad static checks with low operational cost |
+| Linting | `golangci-lint` plus `go vet` | Broad static checks with low operating cost |
 | Vulnerability scan | `govulncheck` | Official vulnerability tooling |
 | Logging | `log/slog` | Standard structured logging |
-| HTTP | `net/http` first | The standard library is strong and keeps dependency count down |
-| Router upgrade path | `chi` when routing and middleware structure outgrow the stdlib | Small, idiomatic, and not framework-heavy |
+| HTTP | `net/http` first | The stdlib is strong and keeps dependency count down |
+| Router upgrade path | `chi` when route structure and middleware outgrow the stdlib | Small, idiomatic, not framework-heavy |
 | Database | PostgreSQL | Best fit for durable state in this workspace |
 | DB driver | `pgx/v5` | Best-in-class PostgreSQL driver and toolkit in Go |
 | SQL layer | `sqlc` | Typed code from raw SQL without ORM magic |
 | Migrations | `goose` | Simple and durable |
-| Config | environment variables and flags first, `koanf` when multiple sources really matter | Avoid configuration theater |
+| Config | environment variables and flags first, `koanf` only when multiple sources really matter | Avoid configuration theater |
 | CLI | `flag` for small tools, `cobra` for large multi-command CLIs | Keep small tools small |
 | Task runner | `mage` | Lets Go repos stay Go-native |
-| Observability | `pprof`, `trace`, Prometheus metrics, OpenTelemetry when tracing is justified | Use the built-ins first, add tracing deliberately |
-| RPC schemas | Buf + Protobuf only when network boundaries justify it | Strong contracts without mandatory framework sprawl |
+| Observability | `pprof`, `trace`, Prometheus metrics, OpenTelemetry when tracing is justified | Use the built-ins first |
+| Browser surface when Go owns it | `templ` + `htmx` + server-rendered HTML | Good for operator UIs and one-binary apps |
+| Sessions when Go owns the browser surface | `scs` | Boring first-party web sessions |
+| Validation when Go owns forms | `go-playground/validator` or explicit hand-written checks | Keep validation visible |
+| Dev reload for browser-facing Go apps | `air` | Simple local loop |
+| RPC schemas | Buf + Protobuf + Connect only when network boundaries justify it | Strong contracts without framework sprawl |
 
 ## Golden Path
 
-1. Start with a modular monolith, not a microservice fleet.
+1. Start with one binary and divide the code by capability, not architecture cosplay.
 2. Use the standard library unless a small package clearly removes pain.
 3. Use PostgreSQL, `pgx`, and `sqlc` for anything with real state.
-4. Keep the binary self-contained and operationally obvious.
-5. Add Prometheus metrics and structured logs from day one.
-6. Add OpenTelemetry only when trace data will actually be consumed.
+4. Add structured logs and Prometheus metrics on day one.
+5. Keep the deploy shape obvious.
+6. Pair Go with the web lane when the browser is a first-class product surface.
+7. Let Go render HTML directly only when that materially simplifies the product.
 
 ## Default Repo Shape
 
@@ -58,11 +63,14 @@ project/
   migrations/
   sql/
   static/
+  views/
   README.md
   go.mod
 ```
 
 Use `cmd/` for entrypoints, `internal/` for app code, `migrations/` for schema changes, and `sql/` for the source SQL that feeds `sqlc`.
+
+`static/` and `views/` only belong here when Go owns the browser surface.
 
 ## HTTP Guidance
 
@@ -70,7 +78,7 @@ Use `cmd/` for entrypoints, `internal/` for app code, `migrations/` for schema c
 - Use `http.Server` with explicit timeouts.
 - Use middleware sparingly and visibly.
 - Reach for `chi` only when route grouping and middleware composition become materially easier with it.
-- Avoid reflection-heavy frameworks unless the project has a very unusual requirement.
+- Avoid reflection-heavy frameworks unless the project has a genuinely unusual requirement.
 
 ## Data Guidance
 
@@ -79,31 +87,55 @@ Use `cmd/` for entrypoints, `internal/` for app code, `migrations/` for schema c
 - `sqlc` is the default path for typed data access.
 - Use raw SQL and database constraints instead of pushing correctness into application folklore.
 - Prefer transactions, proper indexes, and explicit query shape over magical repository layers.
+- Use `LISTEN/NOTIFY`, `SKIP LOCKED`, and regular SQL before adding queue infrastructure.
+
+## Web Pairing Guidance
+
+When the product has a real browser-facing frontend:
+
+- let the [Web Tech Stack](./web-tech-stack.md) own routes, HTML shells, assets, and presentation
+- let Go own auth, business logic, jobs, SQL, and durable state
+- keep the boundary boring: same-origin HTTP or one reverse proxy in front
+- do not couple frontend deploy complexity to backend service boundaries unless the product actually needs it
+
+## When Go Should Own The Browser Surface
+
+Let Go render HTML directly when:
+
+- one binary is a hard requirement
+- the browser surface is an operator UI, admin console, dashboard, or internal tool
+- server-rendered HTML already covers nearly all interaction
+- authored JavaScript should stay near zero
+
+The default shape there is `templ` for server-rendered components, `htmx` for partial updates, normal forms for mutations, SSE for live status, and `scs` for sessions. Do not turn a clean Go app into a JavaScript platform by accident.
 
 ## Testing Baseline
 
-- `go test ./...` is always the base path.
-- Use table-driven tests where they make the cases easier to read.
-- Use `httptest` for HTTP handlers.
-- Use fuzz tests for parsers, protocol inputs, and anything that ingests attacker-controlled data.
-- Keep integration tests explicit and easy to run locally.
+- `go test ./...` is always the base path
+- use table-driven tests where they make the cases easier to read
+- use `httptest` for HTTP handlers
+- use fuzz tests for parsers, protocol inputs, and anything that ingests attacker-controlled data
+- keep integration tests explicit and easy to run locally
 
 ## Security Baseline
 
-- `govulncheck` in CI.
+- `govulncheck` in CI
 - dependency updates on a regular cadence
 - explicit timeouts on outbound network calls
 - no silent retry storms
+- authenticated admin surfaces
 - audit logging for security-relevant actions
 
-## When To Choose Go Over Zig Or C
+## When To Choose Go Over Web, Zig, Or C
 
 Choose Go when:
 
-- the system has durable state
+- the hard part is coordination, control, state, or operator workflow
 - operators need an API, CLI, or administrative surface
 - you need straightforward concurrency and deployment
-- the code is mostly coordination, control, or application logic
+- the code is mostly application logic, not native engine work
+
+Choose the [Web Tech Stack](./web-tech-stack.md) when the browser is the first-class product surface.
 
 Choose Zig when the project is mostly native systems logic and performance-sensitive machinery.
 
@@ -116,6 +148,7 @@ Choose C when the project is mostly ABI, firmware, or the narrowest possible low
 - giant DI containers
 - multi-service decomposition before one binary is clearly failing
 - adding Redis, Kafka, or extra infrastructure before PostgreSQL and a worker loop have been exhausted
+- splitting a small product into frontend and backend theater when one binary or one boring boundary is enough
 
 ## Primary Sources
 
@@ -127,7 +160,14 @@ Choose C when the project is mostly ABI, firmware, or the narrowest possible low
 - [`pgx` docs](https://pkg.go.dev/github.com/jackc/pgx/v5)
 - [`sqlc` docs](https://docs.sqlc.dev/)
 - [`chi` docs](https://go-chi.io/)
+- [`templ` guide](https://templ.guide/)
+- [`htmx` docs](https://htmx.org/docs/)
+- [`scs` package docs](https://pkg.go.dev/github.com/alexedwards/scs/v2)
+- [`go-playground/validator` docs](https://pkg.go.dev/github.com/go-playground/validator/v10)
+- [`air` repository](https://github.com/air-verse/air)
 - [`goose` docs](https://pressly.github.io/goose/)
 - [OpenTelemetry for Go](https://opentelemetry.io/docs/languages/go/)
 - [Prometheus Go app guide](https://prometheus.io/docs/guides/go-application/)
+- [Buf docs](https://buf.build/docs/)
+- [Connect RPC docs](https://connectrpc.com/docs/)
 - [`golangci-lint` docs](https://golangci-lint.run/)

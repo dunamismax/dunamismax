@@ -1,24 +1,29 @@
-# Unified Go + Zig + C Tech Stack
+# Unified Go + Zig + C + Web Tech Stack
 
 Last reviewed: 2026-03-23
 
 ## Purpose
 
-Use this stack when one product genuinely benefits from all three languages.
+Use this stack when one product genuinely benefits from all four lanes:
 
-This is the right model for the kind of work already visible in this workspace:
+- Web for the browser surface
+- Go for the control plane and durable-state application logic
+- Zig for the native engine
+- C for the narrowest low-level boundary
 
-- `dunamis`: Zig kernel core, C firmware boundary, Go host tooling
-- `vaultd`: C custody core with a Go control surface
-- future products that combine systems engines, operator surfaces, crypto, and self-hosted deployment
+Do not use this stack for vanity. Use it when each lane has a clear job and deleting one of them would make the product worse.
 
-Do not use this stack for vanity. Use it when each language has a clear job.
+This is the right model for work shaped like:
+
+- `dunamis`: Zig kernel core, C firmware boundary, Go host tooling, and a future web-facing operator surface if the product earns one
+- future products that combine systems engines, operator surfaces, crypto, self-hosted deployment, and a browser-facing UI
 
 ## Division Of Labor
 
-| Concern | Default language |
+| Concern | Default lane |
 | --- | --- |
-| Web UI, APIs, services, admin CLI, migrations, auth, persistence, observability | Go |
+| Browser UI, docs, dashboards, account pages, operator frontend | Web |
+| APIs, services, auth, persistence, admin CLI, jobs, metrics, audit, release plumbing | Go |
 | Native engines, packet and protocol machinery, terminal apps, systems libraries, cross-compiled tools | Zig |
 | Firmware edge, freestanding code, stable ABI shims, custody code, platform interop leafs | C |
 
@@ -26,50 +31,50 @@ Do not use this stack for vanity. Use it when each language has a clear job.
 
 The default architecture is:
 
-- Go owns the control plane
+- Web owns presentation and browser-only interaction
+- Go owns the control plane and the boundary the browser talks to
 - Zig owns the systems engine
 - C owns the narrowest low-level boundary
 
-If a concern does not obviously belong to Zig or C, it belongs in Go.
+If a concern does not obviously belong to Zig or C, it belongs in Go. If it only exists because a human is in a browser, it belongs in the web lane.
 
 ## Interop Rule Order
 
 Prefer cross-language integration in this order:
 
-1. process boundary
-2. stable file or socket protocol
-3. narrow C ABI
-4. only then a very small `cgo` bridge
+1. browser talks to Go over same-origin HTTP
+2. Go talks to Zig or C components over process boundaries
+3. stable file or socket protocols
+4. narrow C ABI
+5. only then a very small `cgo` bridge
 
-That means:
-
-- Go should usually talk to Zig or C components over Unix sockets, pipes, stdio, or a tightly defined RPC boundary
-- Zig can own the native build and compile the C edge
-- C stays leaf-like and avoids dragging the rest of the system into FFI debt
+That keeps the browser simple, the Go control plane obvious, and the native code leaf-like.
 
 ## The Default Unified Stack
 
 | Area | Default |
 | --- | --- |
-| Root build spine | `zig build` |
+| Web toolchain | Bun |
+| Web framework | Astro |
+| Web interaction layer | Alpine.js 3 |
 | Go toolchain | Go 1.26.1 |
 | Zig toolchain | Zig 0.15.2 stable |
 | C toolchain | Clang by default, GCC as a portability check, `zig cc` for cross builds |
-| Service transport | Go `net/http` or `chi` |
+| Control-plane transport | Go `net/http` or `chi` |
 | Data store | PostgreSQL, owned by Go |
 | Query layer | `pgx` + `sqlc` |
 | Migrations | `goose` |
-| Contracts | protobuf managed by Buf when typed RPC is required |
+| Typed contracts | Buf-managed Protobuf only when contracts justify it |
+| Browser auth/session boundary | terminate at the Go edge |
 | Logs and metrics | emitted in Go as the primary operational surface |
 | Tracing | OpenTelemetry at the Go boundary when worth it |
-| Release shape | a small set of explicit binaries and artifacts, not a hidden polyglot maze |
+| Release shape | a small set of explicit binaries and assets, not a hidden polyglot maze |
 
 ## Recommended Repo Shape
 
 ```text
 project/
-  build.zig
-  build.zig.zon
+  web/
   cmd/
   internal/
   zig/
@@ -83,6 +88,7 @@ project/
 
 Suggested responsibilities:
 
+- `web/` for the Astro frontend and static assets
 - `cmd/` and `internal/` for Go control-plane code
 - `zig/` for systems engines, shared native libs, or TUIs
 - `c/` for firmware or ABI-boundary code
@@ -90,6 +96,13 @@ Suggested responsibilities:
 - `sql/` and `migrations/` as Go-owned data boundaries
 
 ## Boundary Guidance
+
+### Web <-> Go
+
+- let Web own routes, HTML, assets, and browser-only interaction
+- let Go own auth, business logic, jobs, SQL, and persistence
+- keep the boundary same-origin and boring
+- do not leak backend topology into frontend build choices unless the product genuinely needs it
 
 ### Go <-> Zig
 
@@ -99,7 +112,7 @@ Suggested responsibilities:
 
 ### Zig <-> C
 
-- use Zig as the build and integration spine
+- use Zig as the build and integration spine for native pieces
 - keep C exposed through small headers and narrow contracts
 - wrap imported C APIs in Zig-owned modules before they touch the rest of the codebase
 
@@ -112,6 +125,7 @@ Suggested responsibilities:
 
 - PostgreSQL belongs on the Go side by default.
 - SQL, migrations, auth, audit logs, and admin workflows belong on the Go side by default.
+- Web stays thin.
 - Zig and C components should treat persistent state as an explicit dependency, not something they casually own.
 
 This keeps the systems code focused and the operations story understandable.
@@ -126,12 +140,13 @@ Go should be the main operator surface:
 - tracing when needed
 - admin CLI or HTTP endpoints
 
-Zig and C components should emit simple, structured, parseable outputs rather than each inventing separate observability stacks.
+The web lane should report user-visible failures cleanly. Zig and C components should emit simple, structured, parseable outputs instead of each inventing separate observability stacks.
 
 ## Security Guidance
 
 - keep secret custody in the narrowest possible native layer
-- keep policy, audit, and orchestration in Go
+- keep policy, audit, auth, and orchestration in Go
+- keep browser state shallow and first-party
 - review every cross-language boundary as if it were a network boundary
 - keep ABI surfaces tiny and documented
 
@@ -139,22 +154,28 @@ Zig and C components should emit simple, structured, parseable outputs rather th
 
 Use the unified stack when:
 
+- there is a real browser-facing product or operator surface
+- there is a real service or control plane that earns Go
 - there is a real native core that earns Zig
 - there is a real boundary or custody layer that earns C
-- there is a real service, UI, or operational surface that earns Go
 
-If any one of those jobs is fake, collapse the architecture and remove the language.
+If any one of those jobs is fake, collapse the architecture and remove the lane.
 
 ## Avoid By Default
 
 - shared-state polyglot architectures
 - broad `cgo` integration
-- three different build systems fighting each other
-- separate logging and config systems per language
+- three different build systems fighting each other without a clear top-level entrypoint
+- separate logging, auth, and config systems per lane
 - storing product logic in ABI glue code
+- turning the web app into a second control plane
 
 ## Primary Sources
 
+- [Bun docs](https://bun.sh/docs)
+- [TypeScript docs](https://www.typescriptlang.org/docs/)
+- [Astro docs](https://docs.astro.build/)
+- [Alpine.js docs](https://alpinejs.dev/start-here)
 - [Go downloads](https://go.dev/dl/)
 - [Zig downloads](https://ziglang.org/download/)
 - [Zig docs](https://ziglang.org/documentation/master/)
