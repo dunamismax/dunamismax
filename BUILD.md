@@ -31,11 +31,11 @@ Maintenance work here falls into three phases: keeping the profile README accura
 - [ ] Confirm `buf`, `connectrpc`, and `opentelemetry` references in the backend doc are current
 - [ ] Update the "Last reviewed" date in each tech-stack file after verifying it
 - [ ] Verify that the repo examples cited in each stack doc still exist and still match the described stack
-  - `go-tech-stack.md` cites: wirescope, riftline, vaultd, gitpulse, repokeeper, podforge, go-web-server
-  - `zig-tech-stack.md` cites: ztop, lockbox, netweave, dunamis
-  - `c-tech-stack.md` cites: c-from-the-ground-up, dunamis, vaultd
+  - `go-tech-stack.md` cites: wirescope, riftline, vaultd, gitpulse, repokeeper, podforge
+  - `zig-tech-stack.md` cites: lockbox, dunamis
+  - `c-tech-stack.md` cites: dunamis, vaultd
   - `unified-go-zig-c-tech-stack.md` cites: dunamis, vaultd
-  - `go-full-stack-tech-stack.md` cites: go-web-server
+  - `go-full-stack-tech-stack.md` cites: gitpulse
 - [ ] Update `tech-stacks/README.md` "Last reviewed" date after any stack doc changes
 - [ ] Confirm the "How To Choose" table in `tech-stacks/README.md` still maps correctly to the actual stack docs
 

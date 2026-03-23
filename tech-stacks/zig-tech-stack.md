@@ -13,7 +13,7 @@ Use this stack when the project is mostly:
 - cross-compiled utilities
 - kernel, runtime, or low-level platform work
 
-For this workspace, this fits `ztop`, `lockbox`, `netweave`, and the Zig core inside `dunamis`.
+For this workspace, this fits `lockbox` and the Zig core inside `dunamis`.
 
 ## Opinionated Default
 

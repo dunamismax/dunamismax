@@ -13,7 +13,7 @@ This is the opinionated stack for full-stack Go apps where you want:
 - PostgreSQL-backed state
 - deploys that still feel like normal Go software
 
-This matches the direction already visible in `go-web-server`.
+This matches the browser-facing operator-surface direction already visible in `gitpulse`.
 
 ## The Default Full-Stack Stack
 

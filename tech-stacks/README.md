@@ -4,9 +4,9 @@ Last reviewed: 2026-03-23
 
 This folder is the opinionated reference set for the software that shows up across this workspace:
 
-- Go services, daemons, CLIs, and operator surfaces like `wirescope`, `riftline`, `gitpulse`, `vaultd`, `repokeeper`, `podforge`, and `go-web-server`
-- Zig systems tools and native engines like `ztop`, `lockbox`, `netweave`, and the Zig parts of `dunamis`
-- C boundary-layer, firmware, ABI, and custody code like the low-level edges in `dunamis`, the C core in `vaultd`, and the learning path in `c-from-the-ground-up`
+- Go services, daemons, CLIs, and operator surfaces like `wirescope`, `riftline`, `gitpulse`, `vaultd`, `repokeeper`, and `podforge`
+- Zig systems tools and native engines like `lockbox` and the Zig parts of `dunamis`
+- C boundary-layer, firmware, ABI, and custody code like the low-level edges in `dunamis` and the C core in `vaultd`
 
 These are not "all possible tools" lists. They are boring-default stack decisions for self-hostable systems software, networking, observability, crypto, local-first tooling, and operator-facing products.
 

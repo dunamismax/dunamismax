@@ -13,7 +13,7 @@ Use this stack when the project is mostly:
 - durable-state applications
 - integrations, automation, and operational products
 
-For this workspace, this maps to `wirescope`, `riftline`, `vaultd`, `gitpulse`, `repokeeper`, `podforge`, and `go-web-server`.
+For this workspace, this maps to `wirescope`, `riftline`, `vaultd`, `gitpulse`, `repokeeper`, and `podforge`.
 
 ## Opinionated Default
 

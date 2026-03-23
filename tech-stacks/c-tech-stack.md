@@ -13,7 +13,7 @@ Use this stack when the project is mostly:
 - tiny native utilities
 - packet hot paths that need direct control
 
-For this workspace, this maps best to `c-from-the-ground-up`, the C edges inside `dunamis`, and the narrow C core patterns inside `vaultd`.
+For this workspace, this maps best to the C edges inside `dunamis` and the narrow C core patterns inside `vaultd`.
 
 ## Opinionated Default
 
