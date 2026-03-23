@@ -6,34 +6,23 @@ The through-lines are networking, cryptography, observability, developer tooling
 
 ---
 
-## Start Here
+## Portfolio
 
-If you want the strongest entry points into my work, start with these:
+If you want the strongest entry points into my public work, start here, in order:
 
-- [bore](https://github.com/dunamismax/bore) — privacy-first file transfer with relay-assisted rendezvous, end-to-end encryption, and a clean CLI workflow.
-- [ztop](https://github.com/dunamismax/ztop) — Zig terminal system monitor focused on speed, legibility, and systems-level control.
-- [lockbox](https://github.com/dunamismax/lockbox) — Zig-first file crypto toolkit built around `seal`, `unseal`, `inspect`, and `keygen`.
-- [wirescope](https://github.com/dunamismax/wirescope) — terminal-first network observability with live capture, replay, and PostgreSQL-backed metadata.
-- [riftline](https://github.com/dunamismax/riftline) — self-hosted secure ingress tunnel for exposing private services through a public relay.
+1. [bore](https://github.com/dunamismax/bore) — privacy-first file transfer with relay-assisted rendezvous, end-to-end encryption, and a clean CLI workflow.
+2. [wirescope](https://github.com/dunamismax/wirescope) — terminal-first network observability with live capture, replay, and PostgreSQL-backed metadata.
+3. [lockbox](https://github.com/dunamismax/lockbox) — Zig-first file crypto toolkit built around `seal`, `unseal`, `inspect`, and `keygen`.
+4. [0xvane](https://github.com/dunamismax/0xvane) — local-first algorithmic trading workbench for signals, risk control, paper/live execution, and PostgreSQL-backed state.
+5. [repokeeper](https://github.com/dunamismax/repokeeper) — self-hosted repo health daemon for remote validation, drift detection, and doc verification.
+6. [riftline](https://github.com/dunamismax/riftline) — self-hosted secure ingress tunnel for exposing private services through a public relay.
+7. [podforge](https://github.com/dunamismax/podforge) — local-first Commander / MTG session and results engine with a Go/PostgreSQL core.
+8. [vaultd](https://github.com/dunamismax/vaultd) — small local HSM-style daemon with a C core and a Go control surface.
+9. [gitpulse](https://github.com/dunamismax/gitpulse) — local-first repository analytics and operational insight with Go, PostgreSQL, and a terminal/web operator surface.
+
+## Long-Horizon Systems Work
+
 - [dunamis](https://github.com/dunamismax/dunamis) — operating-system umbrella repo; **Basalt** is the kernel, with Zig for the kernel core, C at the firmware boundary, and Go for host tooling.
-
-## Building Now
-
-These are the other repos I think are most worth watching:
-
-- [netweave](https://github.com/dunamismax/netweave) — userspace network stack in Zig, built as a layered library with demos.
-- [vaultd](https://github.com/dunamismax/vaultd) — small local HSM-style daemon with a C core and a Go control surface.
-- [gitpulse](https://github.com/dunamismax/gitpulse) — local-first repository analytics and operational insight with Go, PostgreSQL, and a terminal/web operator surface.
-- [0xvane](https://github.com/dunamismax/0xvane) — local-first algorithmic trading workbench for signals, risk control, paper/live execution, and PostgreSQL-backed state.
-- [repokeeper](https://github.com/dunamismax/repokeeper) — self-hosted repo health daemon for remote validation, drift detection, and doc verification.
-- [podforge](https://github.com/dunamismax/podforge) — local-first Commander / MTG session and results engine with a Go/PostgreSQL core.
-
-## Reference, Learning, and Smaller Builds
-
-- [c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up) — practical C systems workbook from fundamentals through networking, crypto, and memory work.
-- [go-web-server](https://github.com/dunamismax/go-web-server) — a boring-default Go starter for server-rendered apps with PostgreSQL and SQLC.
-- [mtg-card-bot](https://github.com/dunamismax/mtg-card-bot) — Discord bot for fast Magic: The Gathering lookups.
-- [hello-world-from-hell](https://github.com/dunamismax/hello-world-from-hell) — intentionally cursed C nonsense, which is sometimes its own kind of documentation.
 
 ## Tech Stacks
 
