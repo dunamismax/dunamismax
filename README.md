@@ -35,6 +35,10 @@ These are the other repos I think are most worth watching:
 - [mtg-card-bot](https://github.com/dunamismax/mtg-card-bot) — Discord bot for fast Magic: The Gathering lookups.
 - [hello-world-from-hell](https://github.com/dunamismax/hello-world-from-hell) — intentionally cursed C nonsense, which is sometimes its own kind of documentation.
 
+## Tech Stacks
+
+- [tech-stacks](./tech-stacks/README.md) — opinionated reference stack docs for C, Zig, Go, Go backends, Go full-stack apps, and unified Go + Zig + C systems.
+
 ## Working Style
 
 - **Go** for services, daemons, CLIs, and orchestration.
