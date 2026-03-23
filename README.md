@@ -2,6 +2,8 @@
 
 I build self-hostable systems software.
 
+**Home:** [dunamismax.com](https://dunamismax.com) — profile site, project index, and durable public landing page.
+
 Most of it lives in **Go, Zig, and C**, with **Bun + Astro + Alpine.js** on the browser-facing side. I bias toward local-first products, operator-friendly workflows, relational data, and software that stays legible when something breaks at 2am.
 
 Defaults, not dogma:
