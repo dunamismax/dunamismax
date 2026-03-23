@@ -11,7 +11,7 @@ The through-lines are networking, cryptography, observability, developer tooling
 If you want the strongest entry points into my work, start with these:
 
 - [bore](https://github.com/dunamismax/bore) — privacy-first file transfer with relay-assisted rendezvous, end-to-end encryption, and a clean CLI workflow.
-- [rtop](https://github.com/dunamismax/rtop) — Zig terminal system monitor focused on speed, legibility, and systems-level control.
+- [ztop](https://github.com/dunamismax/ztop) — Zig terminal system monitor focused on speed, legibility, and systems-level control.
 - [lockbox](https://github.com/dunamismax/lockbox) — Zig-first file crypto toolkit built around `seal`, `unseal`, `inspect`, and `keygen`.
 - [wirescope](https://github.com/dunamismax/wirescope) — terminal-first network observability with live capture, replay, and PostgreSQL-backed metadata.
 - [riftline](https://github.com/dunamismax/riftline) — self-hosted secure ingress tunnel for exposing private services through a public relay.
