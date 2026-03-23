@@ -23,19 +23,21 @@ Core interests: encrypted communications, network protocols, privacy tooling, da
 
 [bore](https://github.com/dunamismax/bore) / Privacy-first encrypted file transfer. No accounts, no cloud. End-to-end encrypted with Noise protocol and ChaCha20-Poly1305. Peer-to-peer with relay fallback.
 
-[repokeeper](https://github.com/dunamismax/repokeeper) / Self-hosted git repo health monitoring daemon. Watches remotes, detects drift, validates documentation in sandboxed environments, stores results in PostgreSQL.
+[repokeeper](https://github.com/dunamismax/repokeeper) / Self-hosted git repo health monitoring daemon. Watches remotes, detects drift, validates documentation in sandboxed environments.
 
 [gitpulse](https://github.com/dunamismax/gitpulse) / Local-first git activity analytics. Tracks commits, sessions, and streaks across repositories. CLI and web dashboard.
 
-[patchworks](https://github.com/dunamismax/patchworks) / PostgreSQL database diffing, schema comparison, and SQL migration generation. CLI tool for inspecting what changed between two database states.
+[podforge](https://github.com/dunamismax/podforge) / Local-first MTG Commander game-night tracker. Players, decks, pods, sessions, match history.
 
-[tracescope](https://github.com/dunamismax/tracescope) / Go runtime observability tool. Visualizes goroutine counts, GC pauses, memory stats, and pprof data with snapshot recording to PostgreSQL.
-
-[podforge](https://github.com/dunamismax/podforge) / Local-first MTG Commander game-night tracker. Players, decks, pods, sessions, match history. PostgreSQL-backed, zero cloud dependency.
+[go-web-server](https://github.com/dunamismax/go-web-server) / Production-ready Go web server template. Batteries-included starting point for new Go HTTP projects.
 
 ### Go / Python / SQL
 
 [0xvane](https://github.com/dunamismax/0xvane) / Local-first algorithmic trading workbench. Research, backtesting, paper trading, live execution, and risk management. Go engine, Python research scripts, PostgreSQL data layer.
+
+### Python
+
+[mtg-card-bot](https://github.com/dunamismax/mtg-card-bot) / MTG card lookup bot. Searches and displays card information on demand.
 
 ### Zig
 
@@ -43,4 +45,6 @@ Core interests: encrypted communications, network protocols, privacy tooling, da
 
 ### C
 
-No public C projects yet. C is used for performance-critical libraries and cryptographic primitives that Go and Zig call into.
+[c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up) / Comprehensive C programming reference and learning resource. From fundamentals to advanced systems programming.
+
+[hello-world-from-hell](https://github.com/dunamismax/hello-world-from-hell) / Intentionally over-engineered hello world implementations in C. A study in taking simplicity to absurd extremes.
