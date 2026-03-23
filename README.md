@@ -2,7 +2,7 @@
 
 Systems developer focused on encryption, networking, privacy, and performance.
 
-I build tools in **Go**, **Zig**, and **C**, backed by **PostgreSQL** and **SQLite**. Python for data work and scripting. Everything is local-first. Every tool earns its place by solving a real problem.
+I build tools in **Go**, **Zig**, and **C**, backed by **PostgreSQL**. Python for data work and scripting. Everything is local-first. Every tool earns its place by solving a real problem.
 
 ---
 
@@ -10,7 +10,7 @@ I build tools in **Go**, **Zig**, and **C**, backed by **PostgreSQL** and **SQLi
 
 | Role | Languages |
 |---|---|
-| Primary | Go, Zig, SQL |
+| Primary | Go, Zig, SQL (PostgreSQL) |
 | Supporting | C, Python |
 
 Core interests: encrypted communications, network protocols, privacy tooling, database internals, and high-performance systems.
@@ -23,17 +23,15 @@ Core interests: encrypted communications, network protocols, privacy tooling, da
 
 [bore](https://github.com/dunamismax/bore) / Privacy-first encrypted file transfer. No accounts, no cloud. End-to-end encrypted with Noise protocol and ChaCha20-Poly1305. Peer-to-peer with relay fallback.
 
-[dbvault](https://github.com/dunamismax/dbvault) / SQLite backup and integrity toolkit. WAL-safe online backups, manifest-driven tracking, integrity verification, and rotation policies.
-
-[repokeeper](https://github.com/dunamismax/repokeeper) / Self-hosted git repo health monitoring daemon. Watches remotes, detects drift, validates documentation in sandboxed environments, stores results in SQLite.
+[repokeeper](https://github.com/dunamismax/repokeeper) / Self-hosted git repo health monitoring daemon. Watches remotes, detects drift, validates documentation in sandboxed environments, stores results in PostgreSQL.
 
 [gitpulse](https://github.com/dunamismax/gitpulse) / Local-first git activity analytics. Tracks commits, sessions, and streaks across repositories. CLI and web dashboard.
 
-[patchworks](https://github.com/dunamismax/patchworks) / SQLite database diffing, schema comparison, and SQL migration generation. CLI tool for inspecting what changed between two database states.
+[patchworks](https://github.com/dunamismax/patchworks) / PostgreSQL database diffing, schema comparison, and SQL migration generation. CLI tool for inspecting what changed between two database states.
 
-[tracescope](https://github.com/dunamismax/tracescope) / Go runtime observability tool. Visualizes goroutine counts, GC pauses, memory stats, and pprof data with snapshot recording to SQLite.
+[tracescope](https://github.com/dunamismax/tracescope) / Go runtime observability tool. Visualizes goroutine counts, GC pauses, memory stats, and pprof data with snapshot recording to PostgreSQL.
 
-[podforge](https://github.com/dunamismax/podforge) / Local-first MTG Commander game-night tracker. Players, decks, pods, sessions, match history. SQLite-backed, zero cloud dependency.
+[podforge](https://github.com/dunamismax/podforge) / Local-first MTG Commander game-night tracker. Players, decks, pods, sessions, match history. PostgreSQL-backed, zero cloud dependency.
 
 ### Go / Python / SQL
 
@@ -45,4 +43,4 @@ Core interests: encrypted communications, network protocols, privacy tooling, da
 
 ### C
 
-[sqlite-vfs-encrypt](https://github.com/dunamismax/sqlite-vfs-encrypt) / Transparent AES-256-GCM encryption for SQLite at the VFS layer. Every page encrypted before disk write, decrypted on read. Uses libsodium. Zero application changes required.
+No public C projects yet. C is used for performance-critical libraries and cryptographic primitives that Go and Zig call into.
