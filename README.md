@@ -1,37 +1,48 @@
 # Stephen Sawyer
 
-Software developer building useful, durable, privacy- and security-focused things.
+Systems developer focused on encryption, networking, privacy, and performance.
 
-I work across Rust, Go, C, and Lua. Most of my public work is local-first software, developer tools, systems utilities, and security-conscious infrastructure.
-
-Everything is local-first. Everything is honest about what it can and can't do.
-
-GitHub: <https://github.com/dunamismax>
-Codeberg: <https://codeberg.org/dunamismax>
+I build tools in **Go**, **Zig**, and **C**, backed by **PostgreSQL** and **SQLite**. Python for data work and scripting. Everything is local-first. Every tool earns its place by solving a real problem.
 
 ---
 
-## Flagship projects
+## Stack
 
-- [0xvane](https://github.com/dunamismax/0xvane) — local-first algorithmic trading workbench. Paper-first execution engine, real-time market data, risk management, and post-trade forensics. Rust core with Python research via gRPC. Equities + crypto.
-- [bore](https://github.com/dunamismax/bore) — privacy-first encrypted file transfer. No accounts, no cloud, end-to-end encrypted, direct peer-to-peer with relay fallback. Monorepo: Rust client with Go relay server, NAT traversal library, and admin dashboard.
-- [cargo-compatible](https://github.com/dunamismax/cargo-compatible) — Cargo subcommand for auditing dependency graphs against any Rust version. Lockfile-first MSRV compatibility. Published on crates.io. Rust.
+| Role | Languages |
+|---|---|
+| Primary | Go, Zig, SQL |
+| Supporting | C, Python |
 
-## Developer tools
+Core interests: encrypted communications, network protocols, privacy tooling, database internals, and high-performance systems.
 
-- [GitPulse](https://github.com/dunamismax/gitpulse) — local-first git activity analytics. Tracks commits, sessions, and streaks across CLI, web dashboard, and desktop app. Rust.
-- [repokeeper](https://github.com/dunamismax/repokeeper) — self-hosted repo health daemon with built-in doc verification. Watches repos, validates remotes, detects drift, runs doc-extracted commands in sandboxed temp dirs. Go.
+---
 
-## Systems and infrastructure
+## Projects
 
-- [rtop](https://github.com/dunamismax/rtop) — ground-up Rust rewrite of htop. Linux and macOS as co-equal first-class platforms. Rust.
-- [sqlite-vfs-encrypt](https://github.com/dunamismax/sqlite-vfs-encrypt) — transparent AES-256 encryption for SQLite databases at the VFS layer. One `.c`/`.h`, zero application changes. C.
-- [dbvault](https://github.com/dunamismax/dbvault) — SQLite backup and integrity toolkit. WAL-safe backups, integrity verification, rotation, and audit trail. Go.
-- [Patchworks](https://github.com/dunamismax/patchworks) — git-style diffs for SQLite databases. Native desktop inspection, comparison, and SQL migration generation. Rust.
-- [TraceScope](https://github.com/dunamismax/tracescope) — native desktop viewer for live Tokio console-subscriber telemetry with SQLite snapshot recording. Rust.
+### Go
 
-## Games and personal
+[bore](https://github.com/dunamismax/bore) / Privacy-first encrypted file transfer. No accounts, no cloud. End-to-end encrypted with Noise protocol and ChaCha20-Poly1305. Peer-to-peer with relay fallback.
 
-- [Sand Sorcerer](https://github.com/dunamismax/sand-sorcerer) — Bevy action-puzzler / roguelite with reactive material simulation. Rust.
-- [deepblue.lua](https://github.com/dunamismax/deepblue.lua) — Love2D aquarium with procedural fish, boids, and ecosystem simulation. Lua.
-- [podforge](https://github.com/dunamismax/podforge) — local-first Commander night tracker for pods, decks, sessions, and playgroup stats. Go.
+[dbvault](https://github.com/dunamismax/dbvault) / SQLite backup and integrity toolkit. WAL-safe online backups, manifest-driven tracking, integrity verification, and rotation policies.
+
+[repokeeper](https://github.com/dunamismax/repokeeper) / Self-hosted git repo health monitoring daemon. Watches remotes, detects drift, validates documentation in sandboxed environments, stores results in SQLite.
+
+[gitpulse](https://github.com/dunamismax/gitpulse) / Local-first git activity analytics. Tracks commits, sessions, and streaks across repositories. CLI and web dashboard.
+
+[patchworks](https://github.com/dunamismax/patchworks) / SQLite database diffing, schema comparison, and SQL migration generation. CLI tool for inspecting what changed between two database states.
+
+[tracescope](https://github.com/dunamismax/tracescope) / Go runtime observability tool. Visualizes goroutine counts, GC pauses, memory stats, and pprof data with snapshot recording to SQLite.
+
+[podforge](https://github.com/dunamismax/podforge) / Local-first MTG Commander game-night tracker. Players, decks, pods, sessions, match history. SQLite-backed, zero cloud dependency.
+
+### Go / Python / SQL
+
+[0xvane](https://github.com/dunamismax/0xvane) / Local-first algorithmic trading workbench. Research, backtesting, paper trading, live execution, and risk management. Go engine, Python research scripts, PostgreSQL data layer.
+
+### Zig
+
+[rtop](https://github.com/dunamismax/rtop) / Ground-up terminal system monitor. Full process table, CPU/memory/swap meters, tree view, sort, search, and filter. An htop replacement built from scratch.
+
+### C
+
+[sqlite-vfs-encrypt](https://github.com/dunamismax/sqlite-vfs-encrypt) / Transparent AES-256-GCM encryption for SQLite at the VFS layer. Every page encrypted before disk write, decrypted on read. Uses libsodium. Zero application changes required.
