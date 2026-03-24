@@ -1,37 +1,29 @@
 # Stephen Sawyer
 
-**Systems software, self-hostable products, and practical build reference docs.**
+Systems software, self-hostable products, and reference docs for people who build things.
 
-Front door for my public work: an active index of the projects, products, and reference material I want people to hit first.
+**Home:** [dunamismax.com](https://dunamismax.com)
 
-**Home:** [dunamismax.com](https://dunamismax.com) · [repo](https://github.com/dunamismax/dunamismax.com)
+---
 
-## Start Here
+## Products
 
-- [bore](https://github.com/dunamismax/bore) — move files between machines with a short code and end-to-end encryption. The relay never sees your data.
-- [repokeeper](https://github.com/dunamismax/repokeeper) — run the verification commands your docs claim work, validate your remotes, and store the results. One binary, no cloud.
-- [scrybase](https://github.com/dunamismax/scrybase) — Commander workbench that connects what you play, what you own, who you play against, and what actually wins.
-- [wirescope](https://github.com/dunamismax/wirescope) — live network inspection for operators who need proof, not dashboards. Top talkers, DNS context, connection tables, and raw PCAP on disk.
+- [bore](https://github.com/dunamismax/bore) — peer-to-peer encrypted file transfer. Direct connections first, relay fallback when NAT wins. No accounts, no cloud, no trust required.
+- [wirescope](https://github.com/dunamismax/wirescope) — terminal-first network observability. Live capture, top talkers, DNS context, connection tables, PCAP on disk. Go core with Rust and Zig capture backends.
+- [repokeeper](https://github.com/dunamismax/repokeeper) — self-hosted repo health daemon. Validates remotes, detects drift, runs the verification commands your docs claim work, and stores the results. One binary, no cloud.
+- [scrybase](https://github.com/dunamismax/scrybase) — Commander intelligence workbench. Decks, collection, pod tracking, matchup journal, Scryfall integration, and real meta from your actual games.
+- [patchworks](https://github.com/dunamismax/patchworks) — git-style diffs for SQLite databases. Schema, rows, and the SQL to reconcile them. Native desktop app and headless CLI.
 
-## Rust Tools
+## Rust Crates
 
-- [patchworks](https://github.com/dunamismax/patchworks) — open two SQLite databases and see exactly what changed: schema, rows, and the SQL to reconcile them. Native desktop app and headless CLI.
-- [cargo-compatible](https://github.com/dunamismax/cargo-compatible) — check whether your resolved dependency graph fits a target Rust version. Lockfile-first fixes before manifest changes.
-- [cargo-async-doctor](https://github.com/dunamismax/cargo-async-doctor) — catch async Rust bugs that compile fine and pass Clippy but deadlock at 2 AM. Three high-signal checks with real fixes.
+- [cargo-compatible](https://github.com/dunamismax/cargo-compatible) — check whether your resolved dependency graph fits a target Rust version. Lockfile-first, fixes before manifest changes.
+- [cargo-async-doctor](https://github.com/dunamismax/cargo-async-doctor) — catch async Rust bugs that compile fine and pass Clippy but deadlock at 2 AM.
 
-## Notes and Reference
+## Reference
 
 - [rust-async-field-guide](https://github.com/dunamismax/rust-async-field-guide) ([read it](https://dunamismax.github.io/rust-async-field-guide/)) — learn async Rust by breaking things first. Twelve chapters of real footguns, reproductions, and verified fixes.
-- [tech-stacks](./tech-stacks/README.md) — opinionated reference docs for how I build.
+- [tech-stacks](./tech-stacks/README.md) — opinionated stack docs for how I build.
 
-## Working Style
+---
 
-Most of the work here is **Go**, **Rust**, and **Zig**, with **TypeScript** for browser-facing products.
-
-- Go for services, daemons, CLIs, APIs, and orchestration
-- Rust for native runtimes, shared system cores, desktop tools, and cargo plugins
-- Zig for high-performance probes, capture agents, BPF helpers, and C-interop boundaries
-- local-first when possible
-- relational data by default
-- small operational surfaces
-- honest docs over hype
+**Go**, **Rust**, and **Zig** for systems work. **TypeScript** for browser surfaces. SQLite by default. Local-first when possible. Honest docs over hype.
