@@ -12,14 +12,11 @@ Most of it lives in **Go**, **Zig**, and **C**, with **Bun + Astro + Alpine.js**
 
 - [Scrybase](https://github.com/dunamismax/scrybase) — local-first Commander intelligence for decks, collection tracking, and real pod meta.
 - [0xvane](https://github.com/dunamismax/0xvane) — local-first algorithmic trading workbench for signals, risk control, and execution.
-- [CallRift](https://github.com/dunamismax/callrift) — self-hosted incident command with public status pages and a responder console.
-- [DebugPath](https://github.com/dunamismax/debugpath) — self-hosted request-path debugger and investigation studio.
 
 ### Infrastructure
 
 - [bore](https://github.com/dunamismax/bore) — privacy-first file transfer with a payload-blind relay.
 - [wirescope](https://github.com/dunamismax/wirescope) — terminal-first network observability with durable metadata and raw PCAP retention.
-- [riftline](https://github.com/dunamismax/riftline) — self-hosted secure ingress tunnel for private services.
 
 ### Security
 
