@@ -21,7 +21,7 @@ Front door for my public work: an active index of the projects, products, and re
 
 ## Notes and Reference
 
-- [rust-async-field-guide](https://github.com/dunamismax/rust-async-field-guide) — learn async Rust by breaking things first. Twelve chapters of real footguns, reproductions, and verified fixes.
+- [rust-async-field-guide](https://github.com/dunamismax/rust-async-field-guide) ([read it](https://dunamismax.github.io/rust-async-field-guide/)) — learn async Rust by breaking things first. Twelve chapters of real footguns, reproductions, and verified fixes.
 - [tech-stacks](./tech-stacks/README.md) — opinionated reference docs for how I build.
 
 ## Working Style
