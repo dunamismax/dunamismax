@@ -13,7 +13,7 @@ Use this stack when the project is mostly:
 - durable application logic
 - integrations, automation, and operational products
 
-For this workspace, that maps to `wirescope`, `riftline`, `vaultd`, `gitpulse`, `repokeeper`, and the Go service layers in most product repos.
+For this workspace, that maps to `wirescope`, `vaultd`, `gitpulse`, `repokeeper`, `bore`, `0xvane`, `scrybase`, and the Go service layers in most product repos.
 
 If the browser surface is the product, pair Go with the [SSR Web](./web-ssr-tech-stack.md) stack. If the site is static content, use the [Static Web](./web-static-tech-stack.md) stack.
 

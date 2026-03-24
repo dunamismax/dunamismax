@@ -14,7 +14,8 @@ Do not use this stack for vanity. Use it when each lane has a clear job and dele
 
 This is the right model for work shaped like:
 
-- `dunamis`: C kernel core, C firmware boundary, Go host tooling, and a future web-facing operator surface if the product earns one
+- `vaultd`: C core + Go control plane + browser operator surface
+- `wirescope`: C capture + Go aggregation + browser companion
 - future products that combine systems engines, operator surfaces, crypto, self-hosted deployment, and a browser-facing UI
 
 ## Division Of Labor
