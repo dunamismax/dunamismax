@@ -8,17 +8,17 @@ Front door for my public work: an active index of the projects, products, and re
 
 ## Start Here
 
-- [cargo-compatible](https://github.com/dunamismax/cargo-compatible) — check whether your resolved dependency graph fits a target Rust version. Lockfile-first fixes before manifest changes.
 - [bore](https://github.com/dunamismax/bore) — move files between machines with a short code and end-to-end encryption. The relay never sees your data.
 - [repokeeper](https://github.com/dunamismax/repokeeper) — run the verification commands your docs claim work, validate your remotes, and store the results. One binary, no cloud.
+- [scrybase](https://github.com/dunamismax/scrybase) — Commander workbench that connects what you play, what you own, who you play against, and what actually wins.
+- [gitpulse](https://github.com/dunamismax/gitpulse) — git activity analytics that keep live work, commits, and pushes as separate ledgers. Local-first, no source upload.
+- [wirescope](https://github.com/dunamismax/wirescope) — live network inspection for operators who need proof, not dashboards. Top talkers, DNS context, connection tables, and raw PCAP on disk.
+
+## Rust Crates
+
+- [cargo-compatible](https://github.com/dunamismax/cargo-compatible) — check whether your resolved dependency graph fits a target Rust version. Lockfile-first fixes before manifest changes.
 - [cargo-async-doctor](https://github.com/dunamismax/cargo-async-doctor) — catch async Rust bugs that compile fine and pass Clippy but deadlock at 2 AM. Three high-signal checks with real fixes.
 - [patchworks](https://github.com/dunamismax/patchworks) — open two SQLite databases and see exactly what changed: schema, rows, and the SQL to reconcile them.
-
-## Systems And Products
-
-- [wirescope](https://github.com/dunamismax/wirescope) — live network inspection for operators who need proof, not dashboards. Top talkers, DNS context, connection tables, and raw PCAP on disk.
-- [gitpulse](https://github.com/dunamismax/gitpulse) — git activity analytics that keep live work, commits, and pushes as separate ledgers. Local-first, no source upload.
-- [scrybase](https://github.com/dunamismax/scrybase) — Commander workbench that connects what you play, what you own, who you play against, and what actually wins.
 
 ## Notes And Reference
 
