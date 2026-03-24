@@ -34,6 +34,7 @@ Pick the **first row that matches** your project:
 | A Rust-first desktop tool, cargo plugin, terminal app, native utility, HTMX web app, or shared cross-platform core | **Rust** | `rust-tech-stack.md` |
 | A service, daemon, CLI, API, orchestrator, or operational tool | **Go** | `go-tech-stack.md` |
 | A product that needs Go orchestration plus a Rust runtime, worker, or shared core (no browser surface in scope) | **Go + Rust** | `go-rust-tech-stack.md` |
+| A high-performance probe, capture agent, BPF helper, or C-interop boundary component | **Zig** | `zig-tech-stack.md` |
 
 ### Common combinations
 
@@ -54,6 +55,8 @@ If the repo needs **Go + Rust and also has a browser surface**, read `go-rust-te
 If the repo is purely a Go service with no browser surface, read only `go-tech-stack.md`.
 
 If the SPA is the entire product with no backend, read only `spa-tech-stack.md`.
+
+If the repo has a **Zig component** (capture probe, BPF helper, protocol parser), read `zig-tech-stack.md` for the Zig boundary and the relevant backend doc (Go or Go + Rust) for the rest. Zig components sit alongside Rust and Go, not on top of them.
 
 ---
 

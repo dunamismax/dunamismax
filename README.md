@@ -13,11 +13,11 @@ Front door for my public work: an active index of the projects, products, and re
 - [scrybase](https://github.com/dunamismax/scrybase) — Commander workbench that connects what you play, what you own, who you play against, and what actually wins.
 - [wirescope](https://github.com/dunamismax/wirescope) — live network inspection for operators who need proof, not dashboards. Top talkers, DNS context, connection tables, and raw PCAP on disk.
 
-## Rust Crates
+## Rust Tools
 
+- [patchworks](https://github.com/dunamismax/patchworks) — open two SQLite databases and see exactly what changed: schema, rows, and the SQL to reconcile them. Native desktop app and headless CLI.
 - [cargo-compatible](https://github.com/dunamismax/cargo-compatible) — check whether your resolved dependency graph fits a target Rust version. Lockfile-first fixes before manifest changes.
 - [cargo-async-doctor](https://github.com/dunamismax/cargo-async-doctor) — catch async Rust bugs that compile fine and pass Clippy but deadlock at 2 AM. Three high-signal checks with real fixes.
-- [patchworks](https://github.com/dunamismax/patchworks) — open two SQLite databases and see exactly what changed: schema, rows, and the SQL to reconcile them.
 
 ## Notes and Reference
 
@@ -26,8 +26,11 @@ Front door for my public work: an active index of the projects, products, and re
 
 ## Working Style
 
-Most of the work here is **Go** and **Rust**, with **TypeScript** for browser-facing products.
+Most of the work here is **Go**, **Rust**, and **Zig**, with **TypeScript** for browser-facing products.
 
+- Go for services, daemons, CLIs, APIs, and orchestration
+- Rust for native runtimes, shared system cores, desktop tools, and cargo plugins
+- Zig for high-performance probes, capture agents, BPF helpers, and C-interop boundaries
 - local-first when possible
 - relational data by default
 - small operational surfaces
