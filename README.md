@@ -26,8 +26,6 @@ These are the active repos right now. Some ship today. Some are still early buil
 
 - [CallRift](https://github.com/dunamismax/callrift) — self-hosted incident command with public status pages and a responder console. Domains: `callrift.com`, `callrift.dev`, `callrift.org`
 - [DebugPath](https://github.com/dunamismax/debugpath) — self-hosted request-path debugger and investigation studio. Domain: `debugpath.dev`
-- [ElChess](https://github.com/dunamismax/elchess) — open-source multiplayer chess platform for real play, analysis, puzzles, and tournaments. Domain: `elchess.org`
-- [MyLifeRPG](https://github.com/dunamismax/myliferpg) — gamified habit engine with mood correlation, adaptive difficulty, and an RPG layer. Domain: `myliferpg.app`
 - [Scrybase](https://github.com/dunamismax/scrybase) — local-first Commander intelligence for decks, collection tracking, and real pod meta. Domains: `scrybase.app`, `scrybase.net`
 - [0xvane](https://github.com/dunamismax/0xvane) — local-first algorithmic trading workbench for signals, risk control, execution, and operator state. Domains: `0xvane.com`, `0xvane.dev`
 
