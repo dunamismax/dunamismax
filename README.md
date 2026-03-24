@@ -21,7 +21,6 @@ Most of the work here is **Go** and **Rust**, with **TypeScript** for browser-fa
 - [wirescope](https://github.com/dunamismax/wirescope) — terminal-first network observability with durable metadata and raw PCAP retention.
 - [gitpulse](https://github.com/dunamismax/gitpulse) — local-first git activity analytics with separate ledgers for live work, commits, and pushes.
 - [scrybase](https://github.com/dunamismax/scrybase) — local-first Commander intelligence for decks, collection tracking, and real pod meta.
-- [0xvane](https://github.com/dunamismax/0xvane) — local-first algorithmic trading workbench for signals, risk control, and execution.
 
 ## Rust Notes And Reference
 
