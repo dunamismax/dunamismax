@@ -13,8 +13,6 @@ Use this stack when the project is mostly:
 - a Rust-first web app or service where the browser stays thin
 - a real-time, GPU, or interactive native application
 
-For this workspace, that maps to `patchworks`, `cargo-compatible`, `cargo-async-doctor`, `tracescope`, `rust-async-field-guide`, and future Rust-first products.
-
 If the browser is the real product surface and needs a full SPA, pair Rust with the [SPA](./spa-tech-stack.md) stack. If Go owns orchestration around a Rust runtime or shared core, also read [Go + Rust](./go-rust-tech-stack.md). If the browser is thin HTML over the wire, stay in this document.
 
 ## Architecture Principles

@@ -13,9 +13,9 @@ Use this stack when the project is mostly:
 - durable application logic
 - integrations, automation, and operational products
 
-For this workspace, that maps cleanly to `gitpulse`, `repokeeper`, `bore`, `scrybase`, and the Go service layers in most product repos. For hybrid repos such as `wirescope` and `0xvane`, also read the [Go + Rust](./go-rust-tech-stack.md) stack.
-
 If the browser surface is the product, pair Go with the [SPA](./spa-tech-stack.md) stack.
+
+If the project also has a Rust runtime, shared core, or safety-critical subsystem, also read the [Go + Rust](./go-rust-tech-stack.md) stack.
 
 ## Opinionated Default
 

@@ -9,10 +9,10 @@ Use this stack when the product genuinely needs both:
 - **Go** for orchestration, control plane, CLI, persistence, APIs, and operator tooling
 - **Rust** for a native runtime, shared systems core, protocol-heavy boundary, or safety-critical subsystem
 
-This is the right model for repos shaped like:
+This is the right model when the product has a real split of responsibilities:
 
-- `wirescope`: Rust native capture/dissection lane + Go aggregation, persistence, and terminal/web surfaces
-- `0xvane`: Go control plane with a Rust execution boundary for venue protocol, order-state, and hard risk logic
+- Go owns orchestration, persistence, APIs, operator workflows, and deployment shape
+- Rust owns the narrow runtime, shared systems core, protocol-heavy boundary, or safety-critical subsystem
 
 If the Rust boundary is fake, just use Go. If Go is fake, just use Rust. Both languages must earn their place.
 
