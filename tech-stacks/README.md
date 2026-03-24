@@ -2,7 +2,7 @@
 
 **Opinionated stack guidance for the repos in this workspace.**
 
-This folder is a routing document. Read this file first, then read **only the one stack document** that matches your project. Do not read all the stack documents. Each one is self-contained and designed to be the single reference for its lane.
+This folder is a routing document. Read this file first, then read the stack document(s) that match your project. Most repos need one doc. Multi-lane repos (e.g., Go + SPA) need two — see the [routing section](#routing).
 
 > **Last reviewed:** 2026-03-24
 
@@ -12,11 +12,10 @@ This folder is a routing document. Read this file first, then read **only the on
 
 If you are an LLM, coding agent, or sub-agent reading this file as context for a build task:
 
-1. **Read this README first.** It contains shared rules and the SQLite operating model that apply to every stack.
-2. **Use the decision table below to pick exactly one stack document.**
-3. **Read only that one document.** It has everything you need for that project type — defaults, golden path, repo shape, guardrails, and anti-patterns.
-4. **Do not load the other stack documents.** They are for different project types and will waste your context window.
-5. **If the project spans multiple lanes** (e.g., a Go backend with a React SPA frontend), read the relevant backend doc and the SPA doc — that is two documents, not five. If the project also has a Rust runtime or shared core behind Go orchestration, add `go-rust-tech-stack.md` for the Go ↔ Rust boundary rules.
+1. **Read this README first.** It contains shared rules, the SQLite operating model, and the routing table.
+2. **Use the [routing section](#routing) to determine which stack doc(s) to read.** Single-lane repos need one doc. Multi-lane repos need two or three — the routing table is explicit.
+3. **Read only the docs the routing table assigns.** Do not load unrelated stack documents.
+4. **Start with the primary backend doc** when the repo spans multiple lanes. The SPA doc supplements frontend decisions — it does not drive routing.
 
 ### For humans
 
@@ -24,39 +23,44 @@ Same idea. Pick your lane, read that doc, build the thing.
 
 ---
 
-## Decision Table
+## Routing
 
-Pick the **first row that matches** your project:
+Identify the **primary backend lane** first, then add the SPA doc only if the repo has a browser-facing frontend. The SPA doc is a supplement for frontend decisions — it does not drive routing for backend-heavy repos.
 
-| Your project looks like... | Read this | File |
+### Single-lane repos
+
+| Shape | Read | File |
 | --- | --- | --- |
-| A browser-facing SPA, dashboard, operator UI, or product frontend | **SPA** | `spa-tech-stack.md` |
-| A Rust-first desktop tool, cargo plugin, terminal app, native utility, HTMX web app, or shared cross-platform core | **Rust** | `rust-tech-stack.md` |
-| A service, daemon, CLI, API, orchestrator, or operational tool | **Go** | `go-tech-stack.md` |
-| A product that needs Go orchestration plus a Rust runtime, worker, or shared core (no browser surface in scope) | **Go + Rust** | `go-rust-tech-stack.md` |
-| A high-performance probe, capture agent, BPF helper, or C-interop boundary component | **Zig** | `zig-tech-stack.md` |
+| Go service, CLI, API, daemon, or orchestrator (no browser surface) | **Go** | `go-tech-stack.md` |
+| Rust-first desktop tool, cargo plugin, terminal app, native utility, or shared core | **Rust** | `rust-tech-stack.md` |
+| Standalone SPA with no backend in this repo | **SPA** | `spa-tech-stack.md` |
+| Go + Rust product with no browser surface | **Go + Rust** | `go-rust-tech-stack.md` |
+| Zig probe, BPF helper, or C-interop boundary component | **Zig** | `zig-tech-stack.md` |
 
-### Common combinations
+### Multi-lane repos
 
-Most repos that need a browser surface are **Go + SPA** — a Go backend with a React SPA frontend. For that shape:
+When a repo spans multiple lanes, start with the primary backend doc, then read the supplementary docs listed:
 
-- Read `go-tech-stack.md` for the backend
-- Read `spa-tech-stack.md` for the frontend
-- The SPA doc covers the Go ↔ SPA boundary
+| Shape | Primary | Supplement | Repos |
+| --- | --- | --- | --- |
+| Go backend + SPA frontend | `go-tech-stack.md` | `spa-tech-stack.md` | bore, repokeeper, scrybase |
+| Go + Rust + SPA | `go-tech-stack.md` + `go-rust-tech-stack.md` | `spa-tech-stack.md` | wirescope |
+| Rust + SPA | `rust-tech-stack.md` | `spa-tech-stack.md` | — |
+| Go + Zig | `go-tech-stack.md` | `zig-tech-stack.md` | — |
 
-If the repo is **Rust-first** and the browser surface is thin HTML served by the backend, read only `rust-tech-stack.md`.
+### Concrete lane map
 
-If the repo is **Rust + SPA**, read `rust-tech-stack.md` for the backend/core and `spa-tech-stack.md` for the frontend.
-
-If the repo needs **Go + Rust without a browser surface**, read `go-rust-tech-stack.md`. It covers the division of labor, interop rules, and boundary guidance for that pair.
-
-If the repo needs **Go + Rust and also has a browser surface**, read `go-rust-tech-stack.md` for the backend/boundary and `spa-tech-stack.md` for the frontend. There is no single unified doc for all three — compose the relevant docs instead.
-
-If the repo is purely a Go service with no browser surface, read only `go-tech-stack.md`.
-
-If the SPA is the entire product with no backend, read only `spa-tech-stack.md`.
-
-If the repo has a **Zig component** (capture probe, BPF helper, protocol parser), read `zig-tech-stack.md` for the Zig boundary and the relevant backend doc (Go or Go + Rust) for the rest. Zig components sit alongside Rust and Go, not on top of them.
+| Repo | Lane(s) |
+| --- | --- |
+| bore | Go + SPA |
+| repokeeper | Go + SPA |
+| scrybase | Go + SPA |
+| wirescope | Go + Rust + SPA |
+| dunamismax.com | SPA-only |
+| patchworks | Rust |
+| cargo-compatible | Rust |
+| cargo-async-doctor | Rust |
+| rust-async-field-guide | Rust (reference/docs) |
 
 ---
 

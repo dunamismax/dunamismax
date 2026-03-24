@@ -11,7 +11,7 @@ Use this stack when the project is mostly:
 - any browser-facing surface that needs routing, forms, and dynamic behavior
 - a standalone SPA that talks to a Go backend over HTTP
 
-This is the default web lane for every product in this workspace. If it runs in a browser, it starts here.
+This is the default web lane for browser-facing frontends. For repos with a Go or Rust backend, start with the backend doc and use this doc as a supplement for frontend-specific decisions. See the [routing table](./README.md#routing) to determine which docs apply to your repo.
 
 When paired with a Go backend, the SPA lives in `web/` inside the Go repo. Go owns auth, business logic, and persistence. The SPA owns presentation and browser interaction.
 
