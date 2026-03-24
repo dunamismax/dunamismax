@@ -20,7 +20,7 @@ Defaults, not dogma:
 
 ## Current Repos
 
-These are the active repos right now. Some ship today. Some are still early build lanes. `podforge` is transitional and stays out of the main list.
+These are the active repos right now. Some ship today. Some are still early build lanes.
 
 ### Browser-first products
 
@@ -50,7 +50,5 @@ These are the active repos right now. Some ship today. Some are still early buil
 ### Systems
 
 - [dunamis](https://github.com/dunamismax/dunamis) — operating-system umbrella repo; **Basalt** is the kernel.
-
-`podforge` remains the legacy transitional repo for Commander session and pod tracking until Scrybase reaches parity for that lane.
 
 [tech-stacks](./tech-stacks/README.md) — opinionated reference docs for the web lane, Go, Zig, C, and the unified stack.
