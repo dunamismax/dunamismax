@@ -17,24 +17,24 @@ For this workspace, this maps best to the C edges inside `dunamis` and the narro
 
 ## Opinionated Default
 
-| Area | Default | Why |
-| --- | --- | --- |
-| Language baseline | C23, with C17 fallback when portability forces it | C23 gives cleaner modern C without leaving mainstream compilers behind |
-| Primary compiler | Clang/LLVM | Best diagnostics, best sanitizer ergonomics, best editor tooling via `clangd` |
-| Secondary compiler | GCC | Portability cross-check and a second warning model |
-| Build system | CMake + Ninja | Widest ecosystem support, good IDE support, easy CI use |
-| Alternative build system | Meson | Simpler authoring when the project is a normal app or library |
-| Cross compilation | `zig cc` | Excellent "just cross-compile it" option from a C codebase |
-| Formatter | `clang-format` | Ubiquitous and boring |
-| LSP / indexing | `clangd` | Best-in-class C editing experience |
-| Static analysis | `clang-tidy`, `scan-build`, GCC `-fanalyzer` | C needs multiple lines of defense |
-| Runtime checking | AddressSanitizer, UndefinedBehaviorSanitizer, ThreadSanitizer | Find memory, UB, and concurrency bugs early |
-| Tests | plain C test binaries plus CTest | Fewer layers, easier to debug than clever test frameworks |
-| Fuzzing | libFuzzer with sanitizers | Strong default for parsers, protocol code, and binary formats |
-| Dependency strategy | system libs via `pkg-config`, otherwise vendor small dependencies | Keeps the build legible and reproducible |
-| Crypto | libsodium by default | Safer and simpler than assembling crypto primitives yourself |
-| TLS / ecosystem compatibility | OpenSSL only when you need TLS or broad compatibility | Use the boring industry implementation when the problem demands it |
-| Terminal UI | `ncurses` or `ncursesw` | Mature and reliable for terminal apps |
+| Area | Default |
+| --- | --- |
+| Language baseline | C23, with C17 fallback when portability forces it |
+| Primary compiler | Clang/LLVM |
+| Secondary compiler | GCC |
+| Build system | CMake + Ninja |
+| Alternative build system | Meson |
+| Cross compilation | `zig cc` |
+| Formatter | `clang-format` |
+| LSP / indexing | `clangd` |
+| Static analysis | `clang-tidy`, `scan-build`, GCC `-fanalyzer` |
+| Runtime checking | AddressSanitizer, UndefinedBehaviorSanitizer, ThreadSanitizer |
+| Tests | Plain C test binaries plus CTest |
+| Fuzzing | libFuzzer with sanitizers |
+| Dependency strategy | System libs via `pkg-config`, otherwise vendor small dependencies |
+| Crypto | libsodium by default |
+| TLS / ecosystem compatibility | OpenSSL only when you need TLS or broad compatibility |
+| Terminal UI | `ncurses` or `ncursesw` |
 
 ## Golden Path
 
@@ -119,19 +119,9 @@ Do not choose C just because the code is "performance sensitive." If the work is
 
 ## Avoid By Default
 
-- giant macro frameworks
-- custom build systems when CMake or Meson would do
-- homegrown crypto
-- hidden global allocators
-- complicated header-only meta-programming tricks
-- broad dependency trees for tiny tools
-
-## Primary Sources
-
-- [Clang docs](https://clang.llvm.org/docs/)
-- [GCC docs](https://gcc.gnu.org/onlinedocs/)
-- [CMake docs](https://cmake.org/cmake/help/latest/)
-- [Meson docs](https://mesonbuild.com/)
-- [Ninja manual](https://ninja-build.org/manual.html)
-- [libsodium docs](https://doc.libsodium.org/)
-- [OpenSSL docs](https://docs.openssl.org/3.5/)
+- Giant macro frameworks
+- Custom build systems when CMake or Meson would do
+- Homegrown crypto
+- Hidden global allocators
+- Complicated header-only meta-programming tricks
+- Broad dependency trees for tiny tools

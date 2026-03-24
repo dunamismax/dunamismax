@@ -17,23 +17,23 @@ For this workspace, this fits `lockbox` and the Zig core inside `dunamis`.
 
 ## Opinionated Default
 
-| Area | Default | Why |
-| --- | --- | --- |
-| Toolchain | Zig 0.15.2 stable, track 0.16 when it becomes stable | Stay on stable for real projects, watch master for upcoming changes |
-| Build system | `zig build` | Native, unified, and cross-target aware |
-| Package management | `build.zig.zon` | Built-in dependency story, no external package manager needed |
-| Formatting | `zig fmt` | Canonical formatting, no debate |
-| Tests | `zig test` plus `std.testing` | First-class and fast |
-| LSP | `zls` | Standard editor companion |
-| C compilation | `zig cc` | Excellent C compiler frontend and cross-toolchain escape hatch |
-| C interop | `@cImport`, `zig translate-c`, explicit wrappers | Good enough when used narrowly and deliberately |
-| Logging | `std.log` or thin local wrappers | Keep logging explicit and low magic |
-| Serialization | explicit binary formats, JSON when human readability matters | Good fit for systems tooling |
-| Profiling | system profilers plus targeted instrumentation | Keeps the runtime simple |
+| Area | Default |
+| --- | --- |
+| Toolchain | Zig (latest stable) |
+| Build system | `zig build` |
+| Package management | `build.zig.zon` |
+| Formatting | `zig fmt` |
+| Tests | `zig test` plus `std.testing` |
+| LSP | `zls` |
+| C compilation | `zig cc` |
+| C interop | `@cImport`, `zig translate-c`, explicit wrappers |
+| Logging | `std.log` or thin local wrappers |
+| Serialization | Explicit binary formats, JSON when human readability matters |
+| Profiling | System profilers plus targeted instrumentation |
 
 ## Golden Path
 
-1. Use the stable Zig release for shipping work.
+1. Use the latest stable Zig release for shipping work.
 2. Keep `zig build`, `zig fmt`, and `zig test` as the core workflow.
 3. Prefer the standard library first.
 4. Add third-party packages only when they are clearly earned.
@@ -110,14 +110,8 @@ Choose Go instead when the job is mostly services, persistence, orchestration, o
 
 ## Avoid By Default
 
-- immature Zig web frameworks as the center of product architecture
-- hidden allocators
-- overusing `translate-c` output directly in business logic
-- large dependency trees for simple tools
-- turning `build.zig` into an unreadable metaprogram
-
-## Primary Sources
-
-- [Zig downloads](https://ziglang.org/download/)
-- [Zig docs](https://ziglang.org/documentation/master/)
-- [`zls` repository](https://github.com/zigtools/zls)
+- Immature Zig web frameworks as the center of product architecture
+- Hidden allocators
+- Overusing `translate-c` output directly in business logic
+- Large dependency trees for simple tools
+- Turning `build.zig` into an unreadable metaprogram

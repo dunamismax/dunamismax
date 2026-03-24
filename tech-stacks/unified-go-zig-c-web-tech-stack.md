@@ -42,11 +42,11 @@ If a concern does not obviously belong to Zig or C, it belongs in Go. If it only
 
 Prefer cross-language integration in this order:
 
-1. browser talks to Go over same-origin HTTP
+1. Browser talks to Go over same-origin HTTP
 2. Go talks to Zig or C components over process boundaries
-3. stable file or socket protocols
-4. narrow C ABI
-5. only then a very small `cgo` bridge
+3. Stable file or socket protocols
+4. Narrow C ABI
+5. Only then a very small `cgo` bridge
 
 That keeps the browser simple, the Go control plane obvious, and the native code leaf-like.
 
@@ -57,18 +57,16 @@ That keeps the browser simple, the Go control plane obvious, and the native code
 | Web toolchain | Bun |
 | Web framework | Astro |
 | Web interaction layer | Alpine.js 3 |
-| Web data default | SQLite + raw SQL |
-| Go toolchain | Go 1.26.1 |
-| Go data default | SQLite + raw SQL |
-| Schema / query helpers | Raw SQL first; thin helpers only when they clearly earn their cost |
-| Zig toolchain | Zig 0.15.2 stable |
+| Go toolchain | Go (latest stable) |
+| Go SQLite driver | `database/sql` + `modernc.org/sqlite` |
+| Zig toolchain | Zig (latest stable) |
 | C toolchain | Clang by default, GCC as a portability check, `zig cc` for cross builds |
 | Control-plane transport | Go `net/http` or `chi` |
 | Typed contracts | Buf-managed Protobuf only when contracts justify it |
-| Browser auth/session boundary | terminate at the Go edge |
-| Logs and metrics | emitted in Go as the primary operational surface |
+| Browser auth/session boundary | Terminate at the Go edge |
+| Logs and metrics | Emitted in Go as the primary operational surface |
 | Tracing | OpenTelemetry at the Go boundary when worth it |
-| Release shape | a small set of explicit binaries and assets, not a hidden polyglot maze |
+| Release shape | A small set of explicit binaries and assets, not a hidden polyglot maze |
 
 ## Recommended Repo Shape
 
@@ -88,7 +86,7 @@ project/
 
 Suggested responsibilities:
 
-- `web/` for the Astro frontend, browser assets, and any web-owned SQLite access
+- `web/` for the Astro frontend, browser assets, and web-owned presentation
 - `cmd/` and `internal/` for Go control-plane code
 - `zig/` for systems engines, shared native libs, or TUIs
 - `c/` for firmware or ABI-boundary code
@@ -97,38 +95,38 @@ Suggested responsibilities:
 
 ## Boundary Guidance
 
-### Web <-> Go
+### Web ↔ Go
 
-- let Web own routes, HTML, assets, and browser-only interaction
-- let Go own auth, business logic, jobs, and heavy service logic
-- keep the boundary same-origin and boring
-- do not leak backend topology into frontend build choices unless the product genuinely needs it
+- Let Web own routes, HTML, assets, and browser-only interaction
+- Let Go own auth, business logic, jobs, and heavy service logic
+- Keep the boundary same-origin and boring
+- Do not leak backend topology into frontend build choices unless the product genuinely needs it
 
-### Go <-> Zig
+### Go ↔ Zig
 
-- prefer a process boundary for long-running engines and daemons
-- use a narrow C ABI only for leaf functionality that truly benefits from in-process calls
-- do not let Go business logic leak into native glue layers
+- Prefer a process boundary for long-running engines and daemons
+- Use a narrow C ABI only for leaf functionality that truly benefits from in-process calls
+- Do not let Go business logic leak into native glue layers
 
-### Zig <-> C
+### Zig ↔ C
 
-- use Zig as the build and integration spine for native pieces
-- keep C exposed through small headers and narrow contracts
-- wrap imported C APIs in Zig-owned modules before they touch the rest of the codebase
+- Use Zig as the build and integration spine for native pieces
+- Keep C exposed through small headers and narrow contracts
+- Wrap imported C APIs in Zig-owned modules before they touch the rest of the codebase
 
-### Go <-> C
+### Go ↔ C
 
-- use `cgo` only for very small, well-audited surfaces
-- never let `cgo` become the default integration model for broad subsystems
+- Use `cgo` only for very small, well-audited surfaces
+- Never let `cgo` become the default integration model for broad subsystems
 
 ## Data And State Guidance
 
 The unified stack data doctrine is:
 
-- **relational by default**
-- **SQLite by default**
-- **raw SQL by default**
-- **raw SQL first; thin helpers only when the repo clearly benefits from them**
+- Relational by default
+- SQLite by default
+- Plain SQL first
+- Thin helpers only when the repo clearly benefits from them
 
 That means:
 
@@ -136,9 +134,7 @@ That means:
 - let Go own persistence, jobs, auth, audit, and operational state
 - keep Zig and C focused on engines and boundaries, not casual ownership of application data
 - keep schema truth in visible SQL files
-- treat higher-level data tooling as an exception, not the baseline
-
-This keeps the systems code focused and the operations story understandable.
+- follow the [SQLite Operating Model](./README.md#sqlite-operating-model) for pragma configuration and connection discipline
 
 ## Observability Guidance
 
@@ -154,11 +150,11 @@ The web lane should report user-visible failures cleanly. Zig and C components s
 
 ## Security Guidance
 
-- keep secret custody in the narrowest possible native layer
-- keep policy, audit, auth, and orchestration in Go
-- keep browser state shallow and first-party
-- review every cross-language boundary as if it were a network boundary
-- keep ABI surfaces tiny and documented
+- Keep secret custody in the narrowest possible native layer
+- Keep policy, audit, auth, and orchestration in Go
+- Keep browser state shallow and first-party
+- Review every cross-language boundary as if it were a network boundary
+- Keep ABI surfaces tiny and documented
 
 ## When This Stack Is The Right Call
 
@@ -173,28 +169,10 @@ If any one of those jobs is fake, collapse the architecture and remove the lane.
 
 ## Avoid By Default
 
-- shared-state polyglot architectures
-- broad `cgo` integration
-- three different build systems fighting each other without a clear top-level entrypoint
-- separate logging, auth, and config systems per lane
-- storing product logic in ABI glue code
-- turning the web app into a second control plane
-- introducing extra persistence layers before a clean SQLite path has actually failed
-
-## Primary Sources
-
-- [Bun docs](https://bun.sh/docs)
-- [TypeScript docs](https://www.typescriptlang.org/docs/)
-- [Astro docs](https://docs.astro.build/)
-- [Alpine.js docs](https://alpinejs.dev/start-here)
-- [SQLite docs](https://www.sqlite.org/docs.html)
-- [SQLite SQL language reference](https://www.sqlite.org/lang.html)
-- [Go downloads](https://go.dev/dl/)
-- [Zig downloads](https://ziglang.org/download/)
-- [Zig docs](https://ziglang.org/documentation/master/)
-- [Clang docs](https://clang.llvm.org/docs/)
-- [CMake docs](https://cmake.org/cmake/help/latest/)
-- [`sqlc` docs](https://docs.sqlc.dev/)
-- [`goose` docs](https://pressly.github.io/goose/)
-- [Buf docs](https://buf.build/docs/)
-- [OpenTelemetry for Go](https://opentelemetry.io/docs/languages/go/)
+- Shared-state polyglot architectures
+- Broad `cgo` integration
+- Three different build systems fighting each other without a clear top-level entrypoint
+- Separate logging, auth, and config systems per lane
+- Storing product logic in ABI glue code
+- Turning the web app into a second control plane
+- Introducing extra persistence layers before a clean SQLite path has actually failed
