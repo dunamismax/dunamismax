@@ -32,7 +32,7 @@ When paired with a Go backend, the SPA lives in `web/` inside the Go repo. Go ow
 | Lint + format | Biome |
 | Unit / component tests | Vitest |
 | E2E tests | Playwright (when needed) |
-| Database (SPA-only products) | SQLite via Go backend or external API |
+| Durable state (SPA-only products) | Backend-owned (SQLite behind a Go API) or external API — the SPA never owns persistence directly |
 
 ## Golden Path
 

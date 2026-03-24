@@ -61,6 +61,7 @@ When a repo spans multiple lanes, start with the primary backend doc, then read 
 | cargo-compatible | Rust |
 | cargo-async-doctor | Rust |
 | rust-async-field-guide | Rust (reference/docs) |
+| openclaw-backup | Ops/shell (no stack doc — scripts and config, not a product repo) |
 
 ---
 
@@ -84,7 +85,7 @@ SQLite is the default database across this workspace. Every repo that uses SQLit
 
 ### Minimum version
 
-SQLite 3.35.0 or later. This is the floor for `RETURNING`, `STRICT` tables, and built-in math functions. In practice, `modernc.org/sqlite` and `bun:sqlite` both ship recent enough versions that this is not a concern — but if you are linking against a system SQLite, verify the version.
+SQLite **3.37.0** or later. This is the floor for `STRICT` tables (3.37.0), which this workspace uses by default. `RETURNING` landed in 3.35.0, and built-in math functions require the `SQLITE_ENABLE_MATH_FUNCTIONS` compile-time option (not version-gated). In practice, `modernc.org/sqlite` and `bun:sqlite` both ship recent enough builds with math functions enabled — but if you are linking against a system SQLite, verify both the version and compile options.
 
 ### Default pragmas
 
