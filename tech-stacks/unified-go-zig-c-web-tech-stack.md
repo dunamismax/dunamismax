@@ -57,11 +57,10 @@ That keeps the browser simple, the Go control plane obvious, and the native code
 | Web toolchain | Bun |
 | Web framework | Astro |
 | Web interaction layer | Alpine.js 3 |
-| Web data default | SQLite + Drizzle |
+| Web data default | SQLite + raw SQL |
 | Go toolchain | Go 1.26.1 |
-| Go data default | SQLite first |
-| PostgreSQL path | only when the product clearly earns it |
-| Heavier backend query path | plain SQL or `sqlc` when justified |
+| Go data default | SQLite + raw SQL |
+| Schema / query helpers | Drizzle or `sqlc` only when they clearly earn their cost |
 | Zig toolchain | Zig 0.15.2 stable |
 | C toolchain | Clang by default, GCC as a portability check, `zig cc` for cross builds |
 | Control-plane transport | Go `net/http` or `chi` |
@@ -89,12 +88,12 @@ project/
 
 Suggested responsibilities:
 
-- `web/` for the Astro frontend, Drizzle schema, and browser assets
+- `web/` for the Astro frontend, browser assets, and any web-owned SQLite access
 - `cmd/` and `internal/` for Go control-plane code
 - `zig/` for systems engines, shared native libs, or TUIs
 - `c/` for firmware or ABI-boundary code
 - `proto/` only when the system actually benefits from typed contracts
-- `sql/` and `migrations/` only when the Go side has earned an explicit heavier data boundary
+- `sql/` and `migrations/` for explicit SQL owned by the application layer
 
 ## Boundary Guidance
 
@@ -128,16 +127,16 @@ The unified stack data doctrine is:
 
 - **relational by default**
 - **SQLite by default**
-- **Drizzle for web-heavy apps**
-- **PostgreSQL only when the product clearly earns it**
-- **plain SQL or `sqlc` only when backend complexity actually justifies it**
+- **raw SQL by default**
+- **Drizzle or `sqlc` only when the repo clearly benefits from them**
 
 That means:
 
 - let the web lane stay fast and local-first with SQLite when it can
-- let Go take over heavier persistence, job coordination, auth, audit, and operational state when the product grows into that shape
-- move to PostgreSQL because the product needs it, not because the stack doc said so years ago
+- let Go own persistence, jobs, auth, audit, and operational state
 - keep Zig and C focused on engines and boundaries, not casual ownership of application data
+- keep schema truth in visible SQL files
+- treat higher-level data tooling as an exception, not the baseline
 
 This keeps the systems code focused and the operations story understandable.
 
@@ -180,7 +179,7 @@ If any one of those jobs is fake, collapse the architecture and remove the lane.
 - separate logging, auth, and config systems per lane
 - storing product logic in ABI glue code
 - turning the web app into a second control plane
-- jumping to PostgreSQL, MongoDB, or extra infrastructure before the product has actually outgrown SQLite
+- introducing extra persistence layers before a clean SQLite path has actually failed
 
 ## Primary Sources
 
@@ -189,13 +188,13 @@ If any one of those jobs is fake, collapse the architecture and remove the lane.
 - [Astro docs](https://docs.astro.build/)
 - [Alpine.js docs](https://alpinejs.dev/start-here)
 - [SQLite docs](https://www.sqlite.org/docs.html)
+- [SQLite SQL language reference](https://www.sqlite.org/lang.html)
 - [Drizzle docs](https://orm.drizzle.team/docs/overview)
 - [Go downloads](https://go.dev/dl/)
 - [Zig downloads](https://ziglang.org/download/)
 - [Zig docs](https://ziglang.org/documentation/master/)
 - [Clang docs](https://clang.llvm.org/docs/)
 - [CMake docs](https://cmake.org/cmake/help/latest/)
-- [`pgx` docs](https://pkg.go.dev/github.com/jackc/pgx/v5)
 - [`sqlc` docs](https://docs.sqlc.dev/)
 - [`goose` docs](https://pressly.github.io/goose/)
 - [Buf docs](https://buf.build/docs/)

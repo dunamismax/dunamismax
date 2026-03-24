@@ -44,6 +44,7 @@ For this workspace, this maps best to the C edges inside `dunamis` and the narro
 4. Keep the public API small, header-driven, and easy to audit.
 5. Prefer explicit ownership and caller-controlled allocation.
 6. Use `zig cc` when you need painless cross-target builds.
+7. Keep product persistence outside the C layer unless the C code is the only honest owner of the bytes.
 
 ## Default Build Flags
 
@@ -98,6 +99,12 @@ Use `src/` for implementation, `include/` for public headers, `tests/` for direc
 - Integration tests are shell-driven or harness-driven binaries.
 - Sanitizer jobs are mandatory in CI.
 - Add fuzz targets for parsers, decoders, network packet handling, and file formats.
+
+## Data Boundary Guidance
+
+- C is not the default owner of product persistence.
+- If state must persist, prefer letting Go or the web lane own SQLite and handing C a narrow file, socket, or ABI contract.
+- Keep database concerns out of C unless the whole point of the component is a tiny auditable storage leaf.
 
 ## When To Choose C Over Zig Or Go
 

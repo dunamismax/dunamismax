@@ -12,6 +12,13 @@ This folder is the opinionated reference set for the software that shows up acro
 
 These are not "all possible tools" lists. They are boring-default stack decisions for self-hostable systems software, networking, observability, crypto, local-first tooling, operator-facing products, and browser surfaces that should stay fast, sane, and pleasant to build.
 
+The data doctrine in this folder is now explicit:
+
+- **SQLite is the default database**
+- **raw SQL is the default query language**
+- **relational data is the default model**
+- higher-level query layers are exceptions that must earn their place
+
 ## How To Choose
 
 | If the project is mostly... | Start here |
@@ -27,10 +34,9 @@ These are not "all possible tools" lists. They are boring-default stack decision
 - Prefer official toolchains and standard libraries first.
 - Prefer one obvious build entrypoint per repo.
 - Prefer **SQLite by default**.
-- Move to **PostgreSQL only when the product clearly earns it**.
+- Prefer **raw SQL by default**.
 - Prefer **relational data by default**.
-- Prefer **Drizzle for web-heavy apps**.
-- Prefer **`sqlc` or plain SQL only when backend complexity actually justifies it**.
+- Prefer tiny SQL migration files over framework-heavy migration machinery.
 - Prefer process boundaries over language-FFI tangles.
 - Prefer single-binary or small-surface deploys over sprawling control planes.
 - Prefer server-first rendering and HTML/CSS that still make sense before JavaScript runs.
@@ -49,15 +55,16 @@ In this folder, "best" means the tool is some combination of:
 - aligned with Go, Zig, C, and the default web lane instead of fighting them
 - fast enough to keep local loops, agent workflows, and solo development pleasant
 
-That means some fashionable tools are intentionally absent. If the stack decision increases hidden state, runtime magic, framework theater, JavaScript sprawl, or operational drag, it probably did not make the cut.
+That means some fashionable tools are intentionally absent. If the stack decision increases hidden state, runtime magic, framework theater, JavaScript sprawl, database theater, or operational drag, it probably did not make the cut.
 
 ## Default Meta-Choices Across Repos
 
 | Concern | Default |
 | --- | --- |
-| Database | SQLite first; PostgreSQL when the product earns it |
-| Data model | Relational by default |
-| Query / schema layer | Drizzle for web-heavy apps; `sqlc` or plain SQL for heavier Go backends |
+| Database | SQLite |
+| Data model | Relational |
+| Query / schema layer | Raw SQL first; Drizzle or `sqlc` only when they clearly reduce real pain |
+| Migrations | SQL files first; tiny runners second; heavier tooling only when the repo has earned it |
 | Observability | Structured logs, Prometheus metrics, OpenTelemetry where tracing is worth it |
 | Packaging | Single-purpose binaries first |
 | CI quality bar | formatter, linter, tests, vulnerability scan, and release smoke path |
@@ -67,7 +74,7 @@ That means some fashionable tools are intentionally absent. If the stack decisio
 ## Update Policy
 
 - Update this folder whenever a new stable Go or Zig release materially changes the advice.
-- Re-check Bun, Astro, Alpine.js, Biome, Vitest, SQLite, and Drizzle guidance when their stable releases materially change the default web lane.
+- Re-check Bun, Astro, Alpine.js, Biome, Vitest, and SQLite guidance when their stable releases materially change the default web lane.
 - Re-check C toolchain guidance on new stable Clang, GCC, CMake, or Meson releases.
 - Re-check Go guidance when the standard library meaningfully grows and removes the need for external packages.
 
@@ -81,6 +88,8 @@ That means some fashionable tools are intentionally absent. If the stack decisio
 - [Vitest docs](https://vitest.dev/guide/)
 - [Playwright docs](https://playwright.dev/docs/intro)
 - [SQLite docs](https://www.sqlite.org/docs.html)
+- [SQLite SQL language reference](https://www.sqlite.org/lang.html)
+- [SQLite pragma reference](https://www.sqlite.org/pragma.html)
 - [Drizzle docs](https://orm.drizzle.team/docs/overview)
 - [Go downloads and release history](https://go.dev/dl/)
 - [Go release notes index](https://go.dev/doc/devel/release)
@@ -97,7 +106,6 @@ That means some fashionable tools are intentionally absent. If the stack decisio
 - [OpenSSL docs](https://docs.openssl.org/3.5/)
 - [libsodium docs](https://doc.libsodium.org/)
 - [`sqlc` docs](https://docs.sqlc.dev/)
-- [`pgx` package docs](https://pkg.go.dev/github.com/jackc/pgx/v5)
 - [`chi` docs](https://go-chi.io/)
 - [`templ` guide](https://templ.guide/)
 - [`htmx` docs](https://htmx.org/docs/)

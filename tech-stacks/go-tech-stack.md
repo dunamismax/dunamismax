@@ -30,17 +30,17 @@ If the browser surface is the product, start with the [Web Tech Stack](./web-tec
 | Logging | `log/slog` | Standard structured logging |
 | HTTP | `net/http` first | The stdlib is strong and keeps dependency count down |
 | Router upgrade path | `chi` when route structure and middleware outgrow the stdlib | Small, idiomatic, not framework-heavy |
-| Database default | SQLite first | Fastest path to a real local app with minimal setup |
-| SQLite path | `database/sql` + a boring SQLite driver | Keeps the local loop simple |
-| PostgreSQL path | `pgx/v5` when the product clearly earns PostgreSQL | Strong option once concurrency and deployment needs grow |
-| Query layer | plain SQL first; `sqlc` when query surface, team size, or complexity justify codegen | Keeps early repos light without giving up a real typed path later |
-| Migrations | simple SQL migrations first; `goose` when the repo needs a real migration runner | Avoid ceremony before it helps |
+| Database default | SQLite | Fastest path to a real local app with minimal setup |
+| SQLite path | `database/sql` + `modernc.org/sqlite` first | Pure Go, simple local setup, clean single-binary story |
+| Native SQLite path | `database/sql` + `github.com/mattn/go-sqlite3` when CGO is acceptable | Useful when binding against system SQLite is intentional |
+| Query layer | plain SQL first; `sqlc` only when query surface or team size clearly justify codegen | Keeps early repos light without giving up a typed path later |
+| Migrations | SQL files first; tiny in-repo runner second; `goose` only when the repo truly needs a migration tool | Avoid ceremony before it helps |
 | Config | environment variables and flags first, `koanf` only when multiple sources really matter | Avoid configuration theater |
 | CLI | `flag` for small tools, `cobra` for large multi-command CLIs | Keep small tools small |
 | Task runner | `mage` | Lets Go repos stay Go-native |
 | Observability | `pprof`, `trace`, Prometheus metrics, OpenTelemetry when tracing is justified | Use the built-ins first |
 | Browser surface when Go owns it | `templ` + `htmx` + server-rendered HTML | Good for operator UIs and one-binary apps |
-| Sessions when Go owns the browser surface | `scs` | Boring first-party web sessions |
+| Sessions when Go owns the browser surface | `scs` | Boring web sessions |
 | Validation when Go owns forms | `go-playground/validator` or explicit hand-written checks | Keep validation visible |
 | Dev reload for browser-facing Go apps | `air` | Simple local loop |
 | RPC schemas | Buf + Protobuf + Connect only when network boundaries justify it | Strong contracts without framework sprawl |
@@ -49,9 +49,9 @@ If the browser surface is the product, start with the [Web Tech Stack](./web-tec
 
 1. Start with one binary and divide the code by capability, not architecture cosplay.
 2. Use the standard library unless a small package clearly removes pain.
-3. Start with SQLite when the product needs state but not operational database drama.
-4. Use plain SQL first; add `sqlc` only when the query surface or team workflow really earns it.
-5. Move to PostgreSQL only when concurrency, deployment shape, background jobs, or data volume clearly justify it.
+3. Start with SQLite when the product needs state.
+4. Use plain SQL first.
+5. Add `sqlc` only when the query surface or team workflow really earns it.
 6. Add structured logs and Prometheus metrics on day one for long-running services.
 7. Keep the deploy shape obvious.
 8. Pair Go with the web lane when the browser is a first-class product surface.
@@ -71,7 +71,7 @@ project/
   go.mod
 ```
 
-Use `cmd/` for entrypoints, `internal/` for app code, `migrations/` for schema changes, and `sql/` only when the repo has earned a real externalized SQL surface.
+Use `cmd/` for entrypoints, `internal/` for app code, `migrations/` for schema changes, and `sql/` when the repo has enough queries to deserve explicit SQL files.
 
 `static/` and `views/` only belong here when Go owns the browser surface.
 
@@ -88,7 +88,6 @@ Use `cmd/` for entrypoints, `internal/` for app code, `migrations/` for schema c
 The Go data doctrine is:
 
 - **SQLite by default**
-- **PostgreSQL when the product clearly earns it**
 - **relational data by default**
 - **plain SQL first**
 - **`sqlc` only when backend complexity actually justifies it**
@@ -96,10 +95,10 @@ The Go data doctrine is:
 That means:
 
 - use SQLite for local-first tools, single-node services, operator software, early products, and repos where easy setup matters more than networked concurrency
-- move to PostgreSQL when multiple writers, networked deployment, job coordination, heavier operational reporting, or higher write pressure make SQLite the wrong fit
-- use database constraints, transactions, and explicit query shape instead of hiding truth in repository folklore
+- use database constraints, transactions, indexes, and explicit query shape instead of hiding truth in repository folklore
+- keep schema truth in readable SQL migration files
 - do not reach for a heavyweight Go ORM as the center of the data layer
-- do not jump to MongoDB just because documents feel easy in week one
+- do not add extra infrastructure before the single-file store is genuinely the bottleneck
 
 ## Web Pairing Guidance
 
@@ -107,7 +106,7 @@ When the product has a real browser-facing frontend:
 
 - let the [Web Tech Stack](./web-tech-stack.md) own routes, HTML shells, assets, and presentation
 - let Go own auth, business logic, jobs, and heavy service logic
-- let SQLite or PostgreSQL live on the side that actually owns the durable state
+- let SQLite live on the side that actually owns the durable state
 - keep the boundary boring: same-origin HTTP or one reverse proxy in front
 - do not couple frontend deploy complexity to backend service boundaries unless the product actually needs it
 
@@ -160,7 +159,7 @@ Choose C when the project is mostly ABI, firmware, or the narrowest possible low
 - reflection-driven web frameworks
 - giant DI containers
 - multi-service decomposition before one binary is clearly failing
-- adding Redis, Kafka, or extra infrastructure before SQLite or a straightforward worker loop have been exhausted
+- adding Redis, Kafka, or extra infrastructure before SQLite and a straightforward worker loop have been exhausted
 - splitting a small product into frontend and backend theater when one binary or one boring boundary is enough
 
 ## Primary Sources
@@ -171,7 +170,7 @@ Choose C when the project is mostly ABI, firmware, or the narrowest possible low
 - [`net/http` ServeMux docs](https://pkg.go.dev/net/http#ServeMux)
 - [`govulncheck` tutorial](https://go.dev/doc/tutorial/govulncheck)
 - [SQLite docs](https://www.sqlite.org/docs.html)
-- [`pgx` docs](https://pkg.go.dev/github.com/jackc/pgx/v5)
+- [SQLite SQL language reference](https://www.sqlite.org/lang.html)
 - [`sqlc` docs](https://docs.sqlc.dev/)
 - [`chi` docs](https://go-chi.io/)
 - [`templ` guide](https://templ.guide/)

@@ -39,6 +39,7 @@ For this workspace, this fits `lockbox` and the Zig core inside `dunamis`.
 4. Add third-party packages only when they are clearly earned.
 5. Keep allocator choice explicit in the API.
 6. Use Zig as the native build spine whenever the repo has cross-target or mixed-language needs.
+7. Let SQLite-owned business state live outside the Zig engine unless Zig is truly the right owner.
 
 ## Default Repo Shape
 
@@ -91,7 +92,8 @@ Zig is excellent for engines, packet paths, CLIs, TUIs, and systems libraries. I
 If persistent business state and web delivery dominate the project:
 
 - keep the engine in Zig if it earns its place
-- put the control plane and database boundary in Go
+- put the control plane and SQLite boundary in Go or the web lane
+- keep raw SQL near the application owner instead of burying state in the engine
 
 ## When To Choose Zig Over C Or Go
 

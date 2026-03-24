@@ -15,7 +15,7 @@ Use it for:
 - frontends paired with Go services or APIs
 - web-heavy products where local setup, fast iteration, and clean DX matter more than framework fashion
 
-The point is simple: fast local loops, small client-side JavaScript, clean HTML, minimal setup, and deploys that do not turn the frontend into its own circus.
+The point is simple: fast local loops, small client-side JavaScript, clean HTML, minimal setup, **SQLite without setup drama**, and deploys that do not turn the frontend into its own circus.
 
 ## Why This Stack
 
@@ -23,7 +23,7 @@ The point is simple: fast local loops, small client-side JavaScript, clean HTML,
 - Astro keeps rendering server-first and lets the browser stay mostly quiet.
 - Alpine.js covers the small interaction layer without dragging in a full client application.
 - SQLite removes local database setup drag for most web-first products.
-- Drizzle gives the web lane typed schema and query ergonomics without heavy ORM theater.
+- Raw SQL keeps the data model visible and easy to audit.
 - TypeScript stays where it helps, without turning the whole product into framework cosplay.
 - The whole stack pairs cleanly with the [Go Tech Stack](./go-tech-stack.md) when the product later earns a heavier control plane.
 
@@ -38,10 +38,11 @@ The point is simple: fast local loops, small client-side JavaScript, clean HTML,
 | Component model | `.astro` layouts and components first |
 | Styling | CSS variables plus hand-written CSS first |
 | Content | Astro content collections when the repo is content-heavy |
-| Database | SQLite by default |
-| Relational layer | Drizzle |
-| SQLite runtime | Bun SQLite when the app can stay in the web lane |
-| Migrations | Drizzle Kit |
+| Database | SQLite |
+| Relational layer | Raw SQL first |
+| SQLite runtime | `bun:sqlite` when the app can stay in the web lane |
+| Schema / query helper | Drizzle only when typed schema ergonomics clearly beat explicit SQL |
+| Migrations | SQL files first; small Bun runner if needed |
 | Lint + format | Biome |
 | Type and Astro checks | `astro check` |
 | Unit tests | Vitest |
@@ -54,12 +55,12 @@ The point is simple: fast local loops, small client-side JavaScript, clean HTML,
 1. Use Bun for installs, scripts, local commands, and the fastest development loop.
 2. Build pages, layouts, and components in Astro.
 3. Use SQLite by default.
-4. Use Drizzle for schema, migrations, and typed relational access in web-heavy apps.
+4. Start with raw SQL for schema, migrations, and queries.
 5. Fetch data on the server or at build time first.
 6. Ship HTML and CSS that work before JavaScript wakes up.
 7. Add Alpine only where the page needs light interaction.
 8. Add a hydrated island only when the browser truly owns local state.
-9. Move to PostgreSQL only when the product clearly earns it.
+9. Add a schema/query helper only after explicit SQL becomes materially harder to maintain.
 
 ## Default Project Shape
 
@@ -70,7 +71,8 @@ project/
     components/
     content/
     db/
-      schema.ts
+      migrations/
+      queries/
       client.ts
     layouts/
     lib/
@@ -80,11 +82,10 @@ project/
     styles/
       base.css
       tokens.css
-  drizzle/
+  scripts/
   tests/
   astro.config.mjs
   biome.json
-  drizzle.config.ts
   package.json
   tsconfig.json
 ```
@@ -94,11 +95,11 @@ Notes:
 - `src/pages/` owns routes.
 - `src/layouts/` owns page shells.
 - `src/components/` holds reusable Astro components.
-- `src/db/` owns Drizzle schema and access.
+- `src/db/` owns SQLite access, SQL files, and query helpers.
 - `src/lib/api/` is where backend adapters or same-origin fetch helpers live.
 - `src/styles/` holds the global tokens and base rules.
+- `scripts/` can own migration or seed helpers when a repo needs them.
 - `public/` is only for files that must bypass the build pipeline.
-- `drizzle/` holds generated migrations.
 
 ## Data Doctrine
 
@@ -106,15 +107,16 @@ The default web data posture is:
 
 1. relational by default
 2. SQLite by default
-3. Drizzle by default
-4. PostgreSQL only when the product clearly earns it
+3. raw SQL by default
+4. helpers only when they clearly reduce pain
 
 That means:
 
 - use SQLite for local-first tools, single-node products, prototypes that should still be real, dashboards, admin tools, and early web apps
-- use Drizzle instead of a heavyweight ORM or hand-rolled query sprawl
-- move to PostgreSQL when concurrency, deployment shape, team size, background-job pressure, or data volume make SQLite the wrong tool
-- do not jump to MongoDB just because document storage looks friendlier on day one
+- keep migrations as visible SQL files instead of burying schema truth in tool-generated layers
+- use `bun:sqlite` and explicit statements for most repos
+- add Drizzle only when typed schema and query composition clearly beat plain SQL for that repo
+- do not jump to hosted infrastructure or a second database just because it sounds more "serious"
 
 ## Rendering And Data Flow
 
@@ -137,7 +139,7 @@ If the backend is Go, keep the boundary boring:
 - Astro owns routes, HTML, assets, and presentation
 - Go owns APIs, auth, jobs, and heavy service logic
 - use same-origin routing or a simple reverse proxy instead of clever frontend/backend choreography
-- keep SQLite or PostgreSQL decisions on the side that actually owns the state
+- keep SQLite on the side that actually owns the durable state
 
 ## Interaction Ladder
 
@@ -227,7 +229,7 @@ Guidance:
 - keep the frontend on the same origin as the backend when cookies or session flows matter
 - avoid edge-function mazes unless there is a real latency or placement reason
 - let the backend carry heavy business-state complexity; the frontend should stay thin
-- do not make local setup depend on network databases unless the product has clearly outgrown SQLite
+- do not make local setup depend on extra services when a single SQLite file carries the product cleanly
 
 ## Guardrails
 
@@ -238,7 +240,7 @@ Guidance:
 - Do not add GraphQL, tRPC, or websocket machinery just to feel modern.
 - Do not split into frontend and backend deployment complexity if one simple reverse proxy solves it.
 - Do not bring in React, Vue, or Svelte for the whole app when Astro and Alpine already cover the problem.
-- Do not jump to PostgreSQL, MongoDB, or hosted infrastructure before the product has earned more moving parts.
+- Do not hide the data model behind ORM theater if explicit SQLite queries are still easy to read.
 
 ## When Not To Use This Stack
 
@@ -259,8 +261,5 @@ In those cases, choose the stack that matches the actual runtime shape instead o
 - [Astro deployment guide](https://docs.astro.build/en/guides/deploy/)
 - [Alpine.js docs](https://alpinejs.dev/start-here)
 - [SQLite docs](https://www.sqlite.org/docs.html)
+- [SQLite SQL language reference](https://www.sqlite.org/lang.html)
 - [Drizzle docs](https://orm.drizzle.team/docs/overview)
-- [Drizzle migrations docs](https://orm.drizzle.team/docs/migrations)
-- [Biome docs](https://biomejs.dev/guides/getting-started/)
-- [Vitest docs](https://vitest.dev/guide/)
-- [Playwright docs](https://playwright.dev/docs/intro)
