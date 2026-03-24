@@ -169,6 +169,18 @@ Default scripts:
 - Do not hydrate layouts or whole pages.
 - Every page must work with JavaScript disabled.
 
+## Quality Bar: Smooth And Responsive
+
+Even static sites should feel polished and fast:
+
+- Use Alpine for smooth interactions (menus, toggles, filters) instead of jarring full-page behavior
+- Keep transitions between pages fast — the performance budget exists for a reason
+- Use view transitions or lightweight animation where it improves perceived speed
+- Minimize layout shift during page load and navigation
+- The site should feel crisp and modern, not like a pile of disconnected HTML files
+
+This is a quality expectation baked into the static stack, not a reason to reach for heavier client frameworks.
+
 ## When Not To Use This Stack
 
 Do not use this stack when:
@@ -178,4 +190,4 @@ Do not use this stack when:
 - the product is an interactive application, not a content site
 - the site needs a database
 
-In those cases, use the [SSR Web](./web-ssr-tech-stack.md) or [SPA Web](./web-spa-tech-stack.md) stack instead.
+In those cases, use the [SSR Web](./web-ssr-tech-stack.md) stack instead.

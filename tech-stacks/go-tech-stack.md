@@ -147,7 +147,7 @@ The default shape there is `templ` for server-rendered components, `htmx` for pa
 - Authenticated admin surfaces
 - Audit logging for security-relevant actions
 
-## When To Choose Go Over Web, Zig, Or C
+## When To Choose Go Over Web Or C
 
 Choose Go when:
 
@@ -158,9 +158,7 @@ Choose Go when:
 
 Choose the web stack when the browser is the first-class product surface.
 
-Choose Zig when the project is mostly native systems logic and performance-sensitive machinery.
-
-Choose C when the project is mostly ABI, firmware, or the narrowest possible low-level surface.
+Choose C when the project is mostly ABI, firmware, kernel internals, or the narrowest possible low-level surface.
 
 ## Avoid By Default
 

@@ -12,7 +12,7 @@ Use this stack when the project is mostly:
 - products where the browser surface talks to a Go API over same-origin HTTP
 - apps that need per-request data, auth gates, or server-side redirects
 
-For this workspace, this fits most of the product repos: Scrybase, 0xvane, CallRift, DebugPath, bore, gitpulse, repokeeper, wirescope, and vaultd.
+For this workspace, this fits most of the product repos: Scrybase, 0xvane, bore, gitpulse, repokeeper, wirescope, and vaultd.
 
 ## Two Modes
 
@@ -212,10 +212,23 @@ Add Playwright when the app has auth flows, multi-step forms, or interactive mut
 - Keep the same-origin boundary boring. One proxy, one origin, no CORS theater.
 - In Go-owned HTML mode, do not add a JavaScript build step.
 
+## Quality Bar: Smooth And Responsive
+
+SSR apps should feel fast and fluid, not sluggish or page-reload-heavy. The quality bar:
+
+- Use `htmx` or Alpine for partial updates instead of full-page reloads where it improves the experience
+- Keep page transitions fast — server responses should be snappy and HTML should be lightweight
+- Use optimistic UI patterns where appropriate (disable buttons on submit, show loading states)
+- Minimize layout shift during navigation
+- Use SSE or targeted polling for live status updates instead of forcing page refreshes
+- The goal is an app that feels smooth and responsive to use, not one that feels like a 2005 form-submission loop
+
+This is a quality expectation, not a separate architecture. SSR with good use of htmx and Alpine can deliver an experience that feels as fluid as a client-heavy app without the complexity cost.
+
 ## When Not To Use This Stack
 
 Do not use this stack when:
 
 - the site is a static content site with no per-request data (use [Static Web](./web-static-tech-stack.md))
-- the product is a rich interactive client application (use [SPA Web](./web-spa-tech-stack.md))
+- the product needs heavy client-side state management beyond what Alpine and htmx can handle cleanly (evaluate whether the interaction ladder can still cover it before reaching for heavier client frameworks)
 - the browser surface does not need a Go backend at all

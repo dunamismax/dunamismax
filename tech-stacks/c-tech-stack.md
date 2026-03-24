@@ -24,7 +24,7 @@ For this workspace, this maps best to the C edges inside `dunamis` and the narro
 | Secondary compiler | GCC |
 | Build system | CMake + Ninja |
 | Alternative build system | Meson |
-| Cross compilation | `zig cc` |
+| Cross compilation | Clang cross-target flags or platform-specific cross toolchains |
 | Formatter | `clang-format` |
 | LSP / indexing | `clangd` |
 | Static analysis | `clang-tidy`, `scan-build`, GCC `-fanalyzer` |
@@ -43,7 +43,7 @@ For this workspace, this maps best to the C edges inside `dunamis` and the narro
 3. Use CMake + Ninja unless the project is so small that a tiny `Makefile` is clearly enough.
 4. Keep the public API small, header-driven, and easy to audit.
 5. Prefer explicit ownership and caller-controlled allocation.
-6. Use `zig cc` when you need painless cross-target builds.
+6. Use Clang cross-target flags or platform-specific cross toolchains for cross-compilation.
 7. Keep product persistence outside the C layer unless the C code is the only honest owner of the bytes.
 
 ## Default Build Flags
@@ -83,7 +83,7 @@ Use `src/` for implementation, `include/` for public headers, `tests/` for direc
 - Use `pkg-config` for system dependencies.
 - Vendor very small libraries if that makes the build easier to audit.
 - Do not pull in dependency managers just to feel modern.
-- If the project needs deep cross-compilation support, strongly consider building the C code through Zig's C frontend.
+- If the project needs deep cross-compilation support, use Clang cross-target flags or platform-specific cross toolchains.
 
 ## Security Baseline
 
@@ -106,7 +106,7 @@ Use `src/` for implementation, `include/` for public headers, `tests/` for direc
 - If state must persist, prefer letting Go or the web lane own SQLite and handing C a narrow file, socket, or ABI contract.
 - Keep database concerns out of C unless the whole point of the component is a tiny auditable storage leaf.
 
-## When To Choose C Over Zig Or Go
+## When To Choose C Over Go
 
 Choose C when:
 
@@ -114,8 +114,7 @@ Choose C when:
 - the boundary must expose a stable C ABI
 - you need the smallest and most auditable surface possible
 - you are wrapping platform APIs or legacy libraries
-
-Do not choose C just because the code is "performance sensitive." If the work is mostly systems logic and not boundary code, Zig is usually the better default now.
+- the work is kernel internals, boot code, or tight systems core
 
 ## Avoid By Default
 

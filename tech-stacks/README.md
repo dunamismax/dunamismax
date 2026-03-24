@@ -14,7 +14,7 @@ If you are an LLM, coding agent, or sub-agent reading this file as context for a
 2. **Use the decision table below to pick exactly one stack document.**
 3. **Read only that one document.** It has everything you need for that project type — defaults, golden path, repo shape, guardrails, and anti-patterns.
 4. **Do not load the other stack documents.** They are for different project types and will waste your context window.
-5. **If the project spans multiple lanes** (e.g., a Go backend with an Astro frontend), read the [Unified stack](./unified-go-zig-c-web-tech-stack.md). It covers cross-lane boundary rules. If the project is just Go + one web mode, read the Go doc and the relevant web doc — that is two documents, not seven.
+5. **If the project spans multiple lanes** (e.g., a Go backend with an Astro frontend), read the [Unified stack](./unified-go-c-web-tech-stack.md). It covers cross-lane boundary rules. If the project is just Go + one web mode, read the Go doc and the relevant web doc — that is two documents, not five.
 
 ### For humans
 
@@ -29,12 +29,10 @@ Pick the **first row that matches** your project:
 | Your project looks like... | Read this | File |
 | --- | --- | --- |
 | A blog, docs site, portfolio, marketing page, or content-heavy static site | **Static Web** | `web-static-tech-stack.md` |
-| A rich interactive browser app where the client experience is the product (editors, dashboards with heavy client state, canvases) | **SPA Web** | `web-spa-tech-stack.md` |
 | A Go-backed web app with auth, sessions, API routes, forms, and server rendering | **SSR Web** | `web-ssr-tech-stack.md` |
 | A service, daemon, CLI, API, orchestrator, or operational tool | **Go** | `go-tech-stack.md` |
-| Native tooling, protocol engine, terminal app, packet logic, cross-compiled utility, or systems library | **Zig** | `zig-tech-stack.md` |
-| Boundary-layer code, firmware, ABI shim, custody code, or tiny native utility | **C** | `c-tech-stack.md` |
-| A product that genuinely needs a browser surface + Go control plane + Zig engine + C boundary in one repo | **Unified** | `unified-go-zig-c-web-tech-stack.md` |
+| Boundary-layer code, firmware, ABI shim, custody code, kernel internals, or tiny native utility | **C** | `c-tech-stack.md` |
+| A product that genuinely needs a browser surface + Go control plane + C boundary in one repo | **Unified** | `unified-go-c-web-tech-stack.md` |
 
 ### Common combinations
 
@@ -146,5 +144,5 @@ Do not move to PostgreSQL because it "feels more serious." SQLite handles more t
 ## Update Policy
 
 - Update this folder whenever a new stable release of any tool in the stack materially changes the advice.
-- Always default to the latest stable version of Go, Zig, Bun, Astro, and all other tools.
+- Always default to the latest stable version of Go, Bun, Astro, and all other tools.
 - Re-check guidance when major releases land.
