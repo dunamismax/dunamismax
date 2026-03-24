@@ -127,7 +127,7 @@ When the product has a browser-facing frontend, the SPA stack owns it. See `spa-
 - Authenticated admin surfaces
 - Audit logging for security-relevant actions
 
-## When To Choose Go Over Web Or C
+## When To Choose Go Over Rust Or Web
 
 Choose Go when:
 
@@ -138,7 +138,7 @@ Choose Go when:
 
 Choose the SPA stack when the browser is the first-class product surface.
 
-Choose C when the project is mostly ABI, firmware, kernel internals, or the narrowest possible low-level surface.
+Choose Rust when the project is mostly a native tool, a shared-core systems product, or a boundary that benefits from stronger safety guarantees than Go alone.
 
 ## Avoid By Default
 

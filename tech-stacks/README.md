@@ -14,7 +14,7 @@ If you are an LLM, coding agent, or sub-agent reading this file as context for a
 2. **Use the decision table below to pick exactly one stack document.**
 3. **Read only that one document.** It has everything you need for that project type — defaults, golden path, repo shape, guardrails, and anti-patterns.
 4. **Do not load the other stack documents.** They are for different project types and will waste your context window.
-5. **If the project spans multiple lanes** (e.g., a Go backend with a React SPA frontend), read the relevant backend doc and the SPA doc — that is two documents, not five. If the project also has a C boundary layer, add `go-c-tech-stack.md` for the Go ↔ C boundary rules.
+5. **If the project spans multiple lanes** (e.g., a Go backend with a React SPA frontend), read the relevant backend doc and the SPA doc — that is two documents, not five. If the project also has a Rust runtime or shared core behind Go orchestration, add `go-rust-tech-stack.md` for the Go ↔ Rust boundary rules.
 
 ### For humans
 
@@ -31,8 +31,7 @@ Pick the **first row that matches** your project:
 | A browser-facing SPA, dashboard, operator UI, or product frontend | **SPA** | `spa-tech-stack.md` |
 | A Rust-first desktop tool, cargo plugin, terminal app, native utility, HTMX web app, or shared cross-platform core | **Rust** | `rust-tech-stack.md` |
 | A service, daemon, CLI, API, orchestrator, or operational tool | **Go** | `go-tech-stack.md` |
-| Boundary-layer code, firmware, ABI shim, custody code, kernel internals, or tiny native utility | **C** | `c-tech-stack.md` |
-| A product that needs Go orchestration + a narrow C boundary layer (no browser surface in scope) | **Go + C** | `go-c-tech-stack.md` |
+| A product that needs Go orchestration plus a Rust runtime, worker, or shared core (no browser surface in scope) | **Go + Rust** | `go-rust-tech-stack.md` |
 
 ### Common combinations
 
@@ -46,9 +45,9 @@ If the repo is **Rust-first** and the browser surface is thin HTML served by the
 
 If the repo is **Rust + SPA**, read `rust-tech-stack.md` for the backend/core and `spa-tech-stack.md` for the frontend.
 
-If the repo needs **Go + C without a browser surface**, read `go-c-tech-stack.md`. It covers the division of labor, interop rules, and boundary guidance for that pair.
+If the repo needs **Go + Rust without a browser surface**, read `go-rust-tech-stack.md`. It covers the division of labor, interop rules, and boundary guidance for that pair.
 
-If the repo needs **Go + C and also has a browser surface**, read `go-c-tech-stack.md` for the backend/boundary and `spa-tech-stack.md` for the frontend. There is no single unified doc for all three — compose the relevant docs instead.
+If the repo needs **Go + Rust and also has a browser surface**, read `go-rust-tech-stack.md` for the backend/boundary and `spa-tech-stack.md` for the frontend. There is no single unified doc for all three — compose the relevant docs instead.
 
 If the repo is purely a Go service with no browser surface, read only `go-tech-stack.md`.
 
@@ -144,7 +143,7 @@ Do not move to PostgreSQL because it "feels more serious." SQLite handles more t
 | Packaging | Single-purpose binaries first |
 | CI quality bar | Formatter, linter, tests, vulnerability scan, and release smoke path |
 | Frontend/web lane | Bun + Vite + React, TypeScript in strict mode, TanStack Router + Query, shadcn/ui + Radix |
-| Cross-language integration | Process boundary first, C ABI second, broad `cgo` usage last |
+| Cross-language integration | Process boundary first, stable protocols second, broad FFI usage last |
 
 ---
 
