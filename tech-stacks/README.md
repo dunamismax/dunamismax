@@ -1,10 +1,12 @@
 # Tech Stacks
 
-Last reviewed: 2026-03-24
+**Opinionated stack guidance for the repos in this workspace.**
+
+This folder is a routing document. Read this file first, then read **only the one stack document** that matches your project. Do not read all the stack documents. Each one is self-contained and designed to be the single reference for its lane.
+
+> **Last reviewed:** 2026-03-24
 
 ## How To Use This Folder
-
-This is a routing document. Read this file first, then read **only the one stack document** that matches your project. Do not read all the stack documents — each one is self-contained and designed to be the single reference for its lane.
 
 ### For AI agents and coding assistants
 

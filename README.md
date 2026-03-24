@@ -1,12 +1,12 @@
 # Stephen Sawyer
 
-I build self-hostable systems software.
+**Systems software, self-hostable products, and practical build reference docs.**
+
+This repo is the front door for my public work: a short index of the projects, products, and reference material I want people to hit first.
 
 **Home:** [dunamismax.com](https://dunamismax.com) · [repo](https://github.com/dunamismax/dunamismax.com)
 
-Most of the work here is **Go** and **Rust**, with **TypeScript** for browser-facing products. Local-first when possible. Relational data by default. Small operational surfaces.
-
----
+> **Status:** Active profile and project-index repo. The links here should point to the strongest public entrypoints for what I am building now.
 
 ## Start Here
 
@@ -22,10 +22,16 @@ Most of the work here is **Go** and **Rust**, with **TypeScript** for browser-fa
 - [gitpulse](https://github.com/dunamismax/gitpulse) — local-first git activity analytics with separate ledgers for live work, commits, and pushes.
 - [scrybase](https://github.com/dunamismax/scrybase) — local-first Commander intelligence for decks, collection tracking, and real pod meta.
 
-## Rust Notes And Reference
+## Notes And Reference
 
 - [rust-async-field-guide](https://github.com/dunamismax/rust-async-field-guide) — examples-first mdBook for practical async Rust.
+- [tech-stacks](./tech-stacks/README.md) — opinionated reference docs for how I build.
 
----
+## Working Style
 
-[tech-stacks](./tech-stacks/README.md) — opinionated reference docs for how I build.
+Most of the work here is **Go** and **Rust**, with **TypeScript** for browser-facing products.
+
+- local-first when possible
+- relational data by default
+- small operational surfaces
+- honest docs over hype
