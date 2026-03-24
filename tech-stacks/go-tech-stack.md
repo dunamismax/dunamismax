@@ -15,7 +15,7 @@ Use this stack when the project is mostly:
 
 For this workspace, that maps to `wirescope`, `vaultd`, `gitpulse`, `repokeeper`, `bore`, `0xvane`, `scrybase`, and the Go service layers in most product repos.
 
-If the browser surface is the product, pair Go with the [SSR Web](./web-ssr-tech-stack.md) stack. If the site is static content, use the [Static Web](./web-static-tech-stack.md) stack.
+If the browser surface is the product, pair Go with the [SPA](./spa-tech-stack.md) stack.
 
 ## Opinionated Default
 

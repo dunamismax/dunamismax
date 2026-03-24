@@ -14,7 +14,7 @@ If you are an LLM, coding agent, or sub-agent reading this file as context for a
 2. **Use the decision table below to pick exactly one stack document.**
 3. **Read only that one document.** It has everything you need for that project type — defaults, golden path, repo shape, guardrails, and anti-patterns.
 4. **Do not load the other stack documents.** They are for different project types and will waste your context window.
-5. **If the project spans multiple lanes** (e.g., a Go backend with an Astro frontend), read the Go doc and the relevant web doc — that is two documents, not five. If the project also has a C boundary layer, add `go-c-tech-stack.md` for the Go ↔ C boundary rules.
+5. **If the project spans multiple lanes** (e.g., a Go backend with a React SPA frontend), read the Go doc and the SPA doc — that is two documents, not five. If the project also has a C boundary layer, add `go-c-tech-stack.md` for the Go ↔ C boundary rules.
 
 ### For humans
 
@@ -28,27 +28,26 @@ Pick the **first row that matches** your project:
 
 | Your project looks like... | Read this | File |
 | --- | --- | --- |
-| A blog, docs site, portfolio, marketing page, or content-heavy static site | **Static Web** | `web-static-tech-stack.md` |
-| A Go-backed web app with auth, sessions, API routes, forms, and server rendering | **SSR Web** | `web-ssr-tech-stack.md` |
+| A browser-facing SPA, dashboard, operator UI, or product frontend | **SPA** | `spa-tech-stack.md` |
 | A service, daemon, CLI, API, orchestrator, or operational tool | **Go** | `go-tech-stack.md` |
 | Boundary-layer code, firmware, ABI shim, custody code, kernel internals, or tiny native utility | **C** | `c-tech-stack.md` |
 | A product that needs Go orchestration + a narrow C boundary layer (no browser surface in scope) | **Go + C** | `go-c-tech-stack.md` |
 
 ### Common combinations
 
-Most repos in this workspace are **Go + SSR Web** (a Go backend serving an Astro frontend). For that shape:
+Most repos that need a browser surface are **Go + SPA** — a Go backend with a React SPA frontend. For that shape:
 
 - Read `go-tech-stack.md` for the backend
-- Read `web-ssr-tech-stack.md` for the frontend
-- The SSR doc covers the Go ↔ Astro boundary
+- Read `spa-tech-stack.md` for the frontend
+- The SPA doc covers the Go ↔ SPA boundary
 
 If the repo needs **Go + C without a browser surface**, read `go-c-tech-stack.md`. It covers the division of labor, interop rules, and boundary guidance for that pair.
 
-If the repo needs **Go + C and also has a browser surface**, read `go-c-tech-stack.md` for the backend/boundary and the relevant web doc (`web-ssr-tech-stack.md` or `web-static-tech-stack.md`) for the frontend. There is no single unified doc for all three — compose the relevant docs instead.
+If the repo needs **Go + C and also has a browser surface**, read `go-c-tech-stack.md` for the backend/boundary and `spa-tech-stack.md` for the frontend. There is no single unified doc for all three — compose the relevant docs instead.
 
 If the repo is purely a Go service with no browser surface, read only `go-tech-stack.md`.
 
-If the repo is purely a static site with no backend, read only `web-static-tech-stack.md`.
+If the SPA is the entire product with no backend, read only `spa-tech-stack.md`.
 
 ---
 
@@ -61,8 +60,7 @@ These apply to every stack. You do not need to re-read them in the individual st
 - Prefer one obvious build entrypoint per repo.
 - Prefer process boundaries over language-FFI tangles.
 - Prefer single-binary or small-surface deploys over sprawling control planes.
-- Prefer server-first rendering and HTML/CSS that still make sense before JavaScript runs.
-- Hydrate the smallest possible surface when client state is genuinely required.
+- Prefer static assets served from the backend or a CDN when the frontend is an SPA.
 - Add third-party dependencies only when they clearly beat the standard option on correctness, leverage, or operating cost.
 
 ---
@@ -140,7 +138,7 @@ Do not move to PostgreSQL because it "feels more serious." SQLite handles more t
 | Observability | Structured logs, Prometheus metrics, OpenTelemetry where tracing is worth it |
 | Packaging | Single-purpose binaries first |
 | CI quality bar | Formatter, linter, tests, vulnerability scan, and release smoke path |
-| Frontend/web lane | Bun + Astro first, TypeScript where it helps, Alpine for light interaction, islands only when the browser really owns the state |
+| Frontend/web lane | Bun + Vite + React, TypeScript in strict mode, TanStack Router + Query, shadcn/ui + Radix |
 | Cross-language integration | Process boundary first, C ABI second, broad `cgo` usage last |
 
 ---
@@ -148,5 +146,5 @@ Do not move to PostgreSQL because it "feels more serious." SQLite handles more t
 ## Update Policy
 
 - Update this folder whenever a new stable release of any tool in the stack materially changes the advice.
-- Always default to the latest stable version of Go, Bun, Astro, and all other tools.
+- Always default to the latest stable version of Go, Bun, Vite, React, and all other tools.
 - Re-check guidance when major releases land.

@@ -4,7 +4,7 @@ I build self-hostable systems software.
 
 **Home:** [dunamismax.com](https://dunamismax.com) · [repo](https://github.com/dunamismax/dunamismax.com)
 
-Most of it lives in **Go** and **C**, with **Bun + Astro + Alpine.js** on the browser-facing side. Local-first, operator-friendly, relational data, single-binary where possible.
+Most of it lives in **Go** and **C**, with **React + Vite** on the browser-facing side. Local-first, operator-friendly, relational data, single-binary where possible.
 
 ---
 
