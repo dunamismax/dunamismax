@@ -1,0 +1,57 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: dunamismax-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Verify markdown files exist
+        run: |
+          test -f README.md
+          find tech-stacks -maxdepth 1 -name '*.md' -print | grep -q .
+
+      - name: Verify local markdown links resolve
+        run: |
+          python3 <<'PY'
+          import pathlib
+          import re
+          import sys
+
+          root = pathlib.Path(".").resolve()
+          files = [root / "README.md", *(root / "tech-stacks").glob("*.md")]
+          link_re = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
+          errors = []
+
+          for md in files:
+            text = md.read_text(encoding="utf-8")
+            for match in link_re.finditer(text):
+              target = match.group(1).strip()
+              if not target or target.startswith(("http://", "https://", "mailto:", "#")):
+                continue
+              clean = target.split("#", 1)[0]
+              if not clean:
+                continue
+              resolved = (md.parent / clean).resolve()
+              if not resolved.exists():
+                errors.append(f"{md.relative_to(root)} -> {target}")
+
+          if errors:
+            print("Broken relative markdown links:")
+            for error in errors:
+              print(f"  - {error}")
+            sys.exit(1)
+          PY
