@@ -2,17 +2,14 @@
 
 I build self-hostable systems software.
 
-**Home:** [dunamismax.com](https://dunamismax.com)
+**Home:** [dunamismax.com](https://dunamismax.com) · [repo](https://github.com/dunamismax/dunamismax.com)
 
 Most of it lives in **Go**, **Zig**, and **C**, with **Bun + Astro + Alpine.js** on the browser-facing side. Local-first, operator-friendly, relational data, single-binary where possible.
 
 ---
 
-## Repos
+### Apps
 
-### Products
-
-- [dunamismax.com](https://github.com/dunamismax/dunamismax.com) — personal site, portfolio, and blog.
 - [Scrybase](https://github.com/dunamismax/scrybase) — local-first Commander intelligence for decks, collection tracking, and real pod meta.
 - [0xvane](https://github.com/dunamismax/0xvane) — local-first algorithmic trading workbench for signals, risk control, and execution.
 - [CallRift](https://github.com/dunamismax/callrift) — self-hosted incident command with public status pages and a responder console.
@@ -21,8 +18,8 @@ Most of it lives in **Go**, **Zig**, and **C**, with **Bun + Astro + Alpine.js**
 ### Infrastructure
 
 - [bore](https://github.com/dunamismax/bore) — privacy-first file transfer with a payload-blind relay.
-- [riftline](https://github.com/dunamismax/riftline) — self-hosted secure ingress tunnel for private services.
 - [wirescope](https://github.com/dunamismax/wirescope) — terminal-first network observability with durable metadata and raw PCAP retention.
+- [riftline](https://github.com/dunamismax/riftline) — self-hosted secure ingress tunnel for private services.
 
 ### Security
 
