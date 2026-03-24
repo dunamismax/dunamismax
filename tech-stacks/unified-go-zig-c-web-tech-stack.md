@@ -60,7 +60,7 @@ That keeps the browser simple, the Go control plane obvious, and the native code
 | Web data default | SQLite + raw SQL |
 | Go toolchain | Go 1.26.1 |
 | Go data default | SQLite + raw SQL |
-| Schema / query helpers | Drizzle or `sqlc` only when they clearly earn their cost |
+| Schema / query helpers | Raw SQL first; thin helpers only when they clearly earn their cost |
 | Zig toolchain | Zig 0.15.2 stable |
 | C toolchain | Clang by default, GCC as a portability check, `zig cc` for cross builds |
 | Control-plane transport | Go `net/http` or `chi` |
@@ -128,7 +128,7 @@ The unified stack data doctrine is:
 - **relational by default**
 - **SQLite by default**
 - **raw SQL by default**
-- **Drizzle or `sqlc` only when the repo clearly benefits from them**
+- **raw SQL first; thin helpers only when the repo clearly benefits from them**
 
 That means:
 
@@ -189,7 +189,6 @@ If any one of those jobs is fake, collapse the architecture and remove the lane.
 - [Alpine.js docs](https://alpinejs.dev/start-here)
 - [SQLite docs](https://www.sqlite.org/docs.html)
 - [SQLite SQL language reference](https://www.sqlite.org/lang.html)
-- [Drizzle docs](https://orm.drizzle.team/docs/overview)
 - [Go downloads](https://go.dev/dl/)
 - [Zig downloads](https://ziglang.org/download/)
 - [Zig docs](https://ziglang.org/documentation/master/)

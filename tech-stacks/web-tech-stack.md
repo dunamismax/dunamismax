@@ -41,7 +41,7 @@ The point is simple: fast local loops, small client-side JavaScript, clean HTML,
 | Database | SQLite |
 | Relational layer | Raw SQL first |
 | SQLite runtime | `bun:sqlite` when the app can stay in the web lane |
-| Schema / query helper | Drizzle only when typed schema ergonomics clearly beat explicit SQL |
+| Schema / query helper | No ORM by default; keep schema and query logic in explicit SQL unless a thin helper layer clearly beats it |
 | Migrations | SQL files first; small Bun runner if needed |
 | Lint + format | Biome |
 | Type and Astro checks | `astro check` |
@@ -115,7 +115,7 @@ That means:
 - use SQLite for local-first tools, single-node products, prototypes that should still be real, dashboards, admin tools, and early web apps
 - keep migrations as visible SQL files instead of burying schema truth in tool-generated layers
 - use `bun:sqlite` and explicit statements for most repos
-- add Drizzle only when typed schema and query composition clearly beat plain SQL for that repo
+- keep schema, migrations, and query composition in explicit SQL unless a thin helper layer clearly beats it for that repo
 - do not jump to hosted infrastructure or a second database just because it sounds more "serious"
 
 ## Rendering And Data Flow
@@ -262,4 +262,3 @@ In those cases, choose the stack that matches the actual runtime shape instead o
 - [Alpine.js docs](https://alpinejs.dev/start-here)
 - [SQLite docs](https://www.sqlite.org/docs.html)
 - [SQLite SQL language reference](https://www.sqlite.org/lang.html)
-- [Drizzle docs](https://orm.drizzle.team/docs/overview)

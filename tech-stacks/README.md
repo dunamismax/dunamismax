@@ -63,7 +63,7 @@ That means some fashionable tools are intentionally absent. If the stack decisio
 | --- | --- |
 | Database | SQLite |
 | Data model | Relational |
-| Query / schema layer | Raw SQL first; Drizzle or `sqlc` only when they clearly reduce real pain |
+| Query / schema layer | Raw SQL first; keep helper layers thin and only add them when they clearly reduce real pain |
 | Migrations | SQL files first; tiny runners second; heavier tooling only when the repo has earned it |
 | Observability | Structured logs, Prometheus metrics, OpenTelemetry where tracing is worth it |
 | Packaging | Single-purpose binaries first |
@@ -90,7 +90,6 @@ That means some fashionable tools are intentionally absent. If the stack decisio
 - [SQLite docs](https://www.sqlite.org/docs.html)
 - [SQLite SQL language reference](https://www.sqlite.org/lang.html)
 - [SQLite pragma reference](https://www.sqlite.org/pragma.html)
-- [Drizzle docs](https://orm.drizzle.team/docs/overview)
 - [Go downloads and release history](https://go.dev/dl/)
 - [Go release notes index](https://go.dev/doc/devel/release)
 - [Go `slog` announcement](https://go.dev/blog/slog)
