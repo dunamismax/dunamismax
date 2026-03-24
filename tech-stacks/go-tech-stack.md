@@ -38,10 +38,6 @@ If the browser surface is the product, pair Go with the [SPA](./spa-tech-stack.m
 | CLI | `flag` for small tools, `cobra` for large multi-command CLIs |
 | Task runner | `mage` |
 | Observability | `pprof`, `trace`, Prometheus metrics, OpenTelemetry when tracing is justified |
-| Browser surface when Go owns it | `templ` + `htmx` + server-rendered HTML |
-| Sessions when Go owns the browser surface | `scs` |
-| Validation when Go owns forms | `go-playground/validator` or explicit hand-written checks |
-| Dev reload for browser-facing Go apps | `air` |
 | RPC schemas | Buf + Protobuf + Connect only when network boundaries justify it |
 
 ## SQLite Driver Decision
@@ -63,8 +59,7 @@ Follow the [SQLite Operating Model](./README.md#sqlite-operating-model) in the t
 5. Add `sqlc` only when the query surface or team workflow really earns it.
 6. Add structured logs and Prometheus metrics on day one for long-running services.
 7. Keep the deploy shape obvious.
-8. Pair Go with the web lane when the browser is a first-class product surface.
-9. Let Go render HTML directly only when that materially simplifies the product.
+8. Pair Go with the SPA stack when the browser is a first-class product surface.
 
 ## Default Repo Shape
 
@@ -74,15 +69,11 @@ project/
   internal/
   migrations/
   sql/
-  static/
-  views/
   README.md
   go.mod
 ```
 
 Use `cmd/` for entrypoints, `internal/` for app code, `migrations/` for schema changes, and `sql/` when the repo has enough queries to deserve explicit SQL files.
-
-`static/` and `views/` only belong here when Go owns the browser surface.
 
 ## HTTP Guidance
 
@@ -111,24 +102,13 @@ That means:
 
 ## Web Pairing Guidance
 
-When the product has a real browser-facing frontend:
+When the product has a browser-facing frontend, the SPA stack owns it. See `spa-tech-stack.md`.
 
-- let the web stack own routes, HTML shells, assets, and presentation
-- let Go own auth, business logic, jobs, and heavy service logic
-- let SQLite live on the side that actually owns the durable state
-- keep the boundary boring: same-origin HTTP or one reverse proxy in front
-- do not couple frontend deploy complexity to backend service boundaries unless the product actually needs it
-
-## When Go Should Own The Browser Surface
-
-Let Go render HTML directly when:
-
-- one binary is a hard requirement
-- the browser surface is an operator UI, admin console, dashboard, or internal tool
-- server-rendered HTML already covers nearly all interaction
-- authored JavaScript should stay near zero
-
-The default shape there is `templ` for server-rendered components, `htmx` for partial updates, normal forms for mutations, SSE for live status, and `scs` for sessions. Do not turn a clean Go app into a JavaScript platform by accident.
+- the SPA (React + Vite) owns routes, presentation, and browser interaction
+- Go owns auth, business logic, persistence, jobs, and operational concerns
+- the SPA is served as static assets by the Go binary or a reverse proxy
+- keep the boundary same-origin HTTP — no separate deploy pipeline unless the product has clearly earned it
+- let SQLite live on the Go side, where persistent state belongs
 
 ## Testing Baseline
 
@@ -156,7 +136,7 @@ Choose Go when:
 - you need straightforward concurrency and deployment
 - the code is mostly application logic, not native engine work
 
-Choose the web stack when the browser is the first-class product surface.
+Choose the SPA stack when the browser is the first-class product surface.
 
 Choose C when the project is mostly ABI, firmware, kernel internals, or the narrowest possible low-level surface.
 
@@ -167,5 +147,5 @@ Choose C when the project is mostly ABI, firmware, kernel internals, or the narr
 - Giant DI containers
 - Multi-service decomposition before one binary is clearly failing
 - Adding Redis, Kafka, or extra infrastructure before SQLite and a straightforward worker loop have been exhausted
-- Splitting a small product into frontend and backend theater when one binary or one boring boundary is enough
+- Splitting a small product into separate deploy pipelines when one binary serving the SPA as static assets is enough
 - `mattn/go-sqlite3` when `modernc.org/sqlite` works fine

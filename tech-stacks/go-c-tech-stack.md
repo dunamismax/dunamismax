@@ -16,7 +16,7 @@ This is the right model for repos shaped like:
 
 If the C boundary is fake, just use Go. If Go is fake, just use C. Both languages must earn their place.
 
-If the product also needs a browser surface, read this doc for the backend/boundary and the relevant web doc (`web-ssr-tech-stack.md` or `web-static-tech-stack.md`) for the frontend. There is no single unified doc — compose the relevant docs instead.
+If the product also needs a browser surface, read this doc for the backend/boundary and `spa-tech-stack.md` for the frontend. There is no single unified doc — compose the relevant docs instead.
 
 ## Division Of Labor
 
