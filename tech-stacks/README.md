@@ -2,31 +2,57 @@
 
 Last reviewed: 2026-03-23
 
-This folder is the opinionated reference set for the software that shows up across this workspace:
+## How To Use This Folder
 
-- Static web for blogs, docs, marketing, and content-heavy sites
-- SPA web for rich, interactive, client-first browser apps
-- SSR web for Go-backed server-rendered apps with auth, sessions, and durable state
-- Go for services, daemons, CLIs, operator software, and durable application logic
-- Zig for systems tools, native engines, protocol machinery, and low-level control
-- C for boundary-layer, firmware, ABI, and custody code
-- A unified stack when one product genuinely needs all four lanes at once
+This is a routing document. Read this file first, then read **only the one stack document** that matches your project. Do not read all the stack documents — each one is self-contained and designed to be the single reference for its lane.
 
-These are not "all possible tools" lists. They are boring-default stack decisions for self-hostable systems software, networking, observability, crypto, local-first tooling, operator-facing products, and browser surfaces that should stay fast, sane, and pleasant to build.
+### For AI agents and coding assistants
 
-## How To Choose
+If you are an LLM, coding agent, or sub-agent reading this file as context for a build task:
 
-| If the project is mostly... | Start here |
-| --- | --- |
-| Blogs, docs, marketing, portfolio, or content-heavy sites | [Static Web](./web-static-tech-stack.md) |
-| Rich interactive browser apps where the client experience is the product | [SPA Web](./web-spa-tech-stack.md) |
-| Go-backed apps with auth, sessions, API routes, and server rendering | [SSR Web](./web-ssr-tech-stack.md) |
-| Boundary-layer systems code, firmware edges, ABI shims, hot loops, or tiny native tools | [C Tech Stack](./c-tech-stack.md) |
-| Native tooling, protocol engines, terminal apps, packet logic, or systems libraries | [Zig Tech Stack](./zig-tech-stack.md) |
-| Services, daemons, CLIs, orchestration, or operational software | [Go Tech Stack](./go-tech-stack.md) |
-| One product where the browser surface, Go control plane, Zig engine, and C boundary all belong in the same architecture | [Unified Go + Zig + C + Web Tech Stack](./unified-go-zig-c-web-tech-stack.md) |
+1. **Read this README first.** It contains shared rules and the SQLite operating model that apply to every stack.
+2. **Use the decision table below to pick exactly one stack document.**
+3. **Read only that one document.** It has everything you need for that project type — defaults, golden path, repo shape, guardrails, and anti-patterns.
+4. **Do not load the other stack documents.** They are for different project types and will waste your context window.
+5. **If the project spans multiple lanes** (e.g., a Go backend with an Astro frontend), read the [Unified stack](./unified-go-zig-c-web-tech-stack.md). It covers cross-lane boundary rules. If the project is just Go + one web mode, read the Go doc and the relevant web doc — that is two documents, not seven.
+
+### For humans
+
+Same idea. Pick your lane, read that doc, build the thing.
+
+---
+
+## Decision Table
+
+Pick the **first row that matches** your project:
+
+| Your project looks like... | Read this | File |
+| --- | --- | --- |
+| A blog, docs site, portfolio, marketing page, or content-heavy static site | **Static Web** | `web-static-tech-stack.md` |
+| A rich interactive browser app where the client experience is the product (editors, dashboards with heavy client state, canvases) | **SPA Web** | `web-spa-tech-stack.md` |
+| A Go-backed web app with auth, sessions, API routes, forms, and server rendering | **SSR Web** | `web-ssr-tech-stack.md` |
+| A service, daemon, CLI, API, orchestrator, or operational tool | **Go** | `go-tech-stack.md` |
+| Native tooling, protocol engine, terminal app, packet logic, cross-compiled utility, or systems library | **Zig** | `zig-tech-stack.md` |
+| Boundary-layer code, firmware, ABI shim, custody code, or tiny native utility | **C** | `c-tech-stack.md` |
+| A product that genuinely needs a browser surface + Go control plane + Zig engine + C boundary in one repo | **Unified** | `unified-go-zig-c-web-tech-stack.md` |
+
+### Common combinations
+
+Most repos in this workspace are **Go + SSR Web** (a Go backend serving an Astro frontend). For that shape:
+
+- Read `go-tech-stack.md` for the backend
+- Read `web-ssr-tech-stack.md` for the frontend
+- The SSR doc covers the Go ↔ Astro boundary
+
+If the repo is purely a Go service with no browser surface, read only `go-tech-stack.md`.
+
+If the repo is purely a static site with no backend, read only `web-static-tech-stack.md`.
+
+---
 
 ## Shared Rules
+
+These apply to every stack. You do not need to re-read them in the individual stack documents.
 
 - Always use the latest stable release of every tool in the stack.
 - Prefer official toolchains and standard libraries first.
@@ -37,9 +63,11 @@ These are not "all possible tools" lists. They are boring-default stack decision
 - Hydrate the smallest possible surface when client state is genuinely required.
 - Add third-party dependencies only when they clearly beat the standard option on correctness, leverage, or operating cost.
 
+---
+
 ## SQLite Operating Model
 
-SQLite is the default database across this workspace. Every repo that uses SQLite should follow these shared operational rules.
+SQLite is the default database across this workspace. Every repo that uses SQLite must follow these rules. Individual stack documents reference this section instead of repeating it.
 
 ### Minimum version
 
@@ -97,6 +125,8 @@ Move to PostgreSQL when the product clearly earns it through:
 
 Do not move to PostgreSQL because it "feels more serious." SQLite handles more than most people think.
 
+---
+
 ## Default Meta-Choices Across Repos
 
 | Concern | Default |
@@ -110,6 +140,8 @@ Do not move to PostgreSQL because it "feels more serious." SQLite handles more t
 | CI quality bar | Formatter, linter, tests, vulnerability scan, and release smoke path |
 | Frontend/web lane | Bun + Astro first, TypeScript where it helps, Alpine for light interaction, islands only when the browser really owns the state |
 | Cross-language integration | Process boundary first, C ABI second, broad `cgo` usage last |
+
+---
 
 ## Update Policy
 
