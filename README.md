@@ -4,43 +4,32 @@ I build self-hostable systems software.
 
 **Home:** [dunamismax.com](https://dunamismax.com)
 
-Most of it lives in **Go, Zig, and C**, with **Bun + Astro + Alpine.js** on the browser-facing side. I bias toward local-first products, operator-friendly workflows, relational data, **SQLite as the default store**, and **raw SQL as the default interface to state**.
-
-Defaults, not dogma:
-
-- **Go** for services, daemons, CLIs, and orchestration
-- **Zig** for native tooling, protocol machinery, and systems work
-- **C** for tight boundary-layer code
-- **Bun + Astro + Alpine.js** for browser surfaces
-- **SQLite first and unapologetically**
-- **Raw SQL first**
-- **Relational by default**
+Most of it lives in **Go**, **Zig**, and **C**, with **Bun + Astro + Alpine.js** on the browser-facing side. Local-first, operator-friendly, relational data, single-binary where possible.
 
 ---
 
-## Current Repos
+## Repos
 
-These are the active repos right now. Some ship today. Some are still early build lanes.
+### Products
 
-### Browser-first products
+- [dunamismax.com](https://github.com/dunamismax/dunamismax.com) — personal site, portfolio, and blog.
+- [Scrybase](https://github.com/dunamismax/scrybase) — local-first Commander intelligence for decks, collection tracking, and real pod meta.
+- [0xvane](https://github.com/dunamismax/0xvane) — local-first algorithmic trading workbench for signals, risk control, and execution.
+- [CallRift](https://github.com/dunamismax/callrift) — self-hosted incident command with public status pages and a responder console.
+- [DebugPath](https://github.com/dunamismax/debugpath) — self-hosted request-path debugger and investigation studio.
 
-- [CallRift](https://github.com/dunamismax/callrift) — self-hosted incident command with public status pages and a responder console. Domains: `callrift.com`, `callrift.dev`, `callrift.org`
-- [DebugPath](https://github.com/dunamismax/debugpath) — self-hosted request-path debugger and investigation studio. Domain: `debugpath.dev`
-- [Scrybase](https://github.com/dunamismax/scrybase) — local-first Commander intelligence for decks, collection tracking, and real pod meta. Domains: `scrybase.app`, `scrybase.net`
-- [0xvane](https://github.com/dunamismax/0xvane) — local-first algorithmic trading workbench for signals, risk control, execution, and operator state. Domains: `0xvane.com`, `0xvane.dev`
+### Infrastructure
 
-### Infrastructure and observability
-
-- [bore](https://github.com/dunamismax/bore) — privacy-first file transfer with a payload-blind relay and a real browser surface.
-- [wirescope](https://github.com/dunamismax/wirescope) — terminal-first network observability with durable metadata and raw PCAP retention.
+- [bore](https://github.com/dunamismax/bore) — privacy-first file transfer with a payload-blind relay.
 - [riftline](https://github.com/dunamismax/riftline) — self-hosted secure ingress tunnel for private services.
+- [wirescope](https://github.com/dunamismax/wirescope) — terminal-first network observability with durable metadata and raw PCAP retention.
 
-### Security and custody
+### Security
 
-- [lockbox](https://github.com/dunamismax/lockbox) — Zig-first file crypto toolkit built around `seal`, `unseal`, `inspect`, and `keygen`.
-- [vaultd](https://github.com/dunamismax/vaultd) — small local HSM-style daemon with a C core and a Go control plane.
+- [lockbox](https://github.com/dunamismax/lockbox) — Zig-first file crypto toolkit for sealing, unsealing, and inspecting encrypted containers.
+- [vaultd](https://github.com/dunamismax/vaultd) — local HSM-style daemon with a C core and a Go control plane.
 
-### Developer tooling
+### Developer tools
 
 - [repokeeper](https://github.com/dunamismax/repokeeper) — self-hosted repo health daemon for doc verification, remote validation, and drift detection.
 - [gitpulse](https://github.com/dunamismax/gitpulse) — local-first git activity analytics with separate ledgers for live work, commits, and pushes.
@@ -49,4 +38,6 @@ These are the active repos right now. Some ship today. Some are still early buil
 
 - [dunamis](https://github.com/dunamismax/dunamis) — operating-system umbrella repo; **Basalt** is the kernel.
 
-[tech-stacks](./tech-stacks/README.md) — opinionated reference docs for the web lane, Go, Zig, C, and the unified stack.
+---
+
+[tech-stacks](./tech-stacks/README.md) — opinionated reference docs for the full stack.
