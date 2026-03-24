@@ -14,7 +14,7 @@ If you are an LLM, coding agent, or sub-agent reading this file as context for a
 2. **Use the decision table below to pick exactly one stack document.**
 3. **Read only that one document.** It has everything you need for that project type — defaults, golden path, repo shape, guardrails, and anti-patterns.
 4. **Do not load the other stack documents.** They are for different project types and will waste your context window.
-5. **If the project spans multiple lanes** (e.g., a Go backend with an Astro frontend), read the [Unified stack](./unified-go-c-web-tech-stack.md). It covers cross-lane boundary rules. If the project is just Go + one web mode, read the Go doc and the relevant web doc — that is two documents, not five.
+5. **If the project spans multiple lanes** (e.g., a Go backend with an Astro frontend), read the Go doc and the relevant web doc — that is two documents, not five. If the project also has a C boundary layer, add `go-c-tech-stack.md` for the Go ↔ C boundary rules.
 
 ### For humans
 
@@ -32,7 +32,7 @@ Pick the **first row that matches** your project:
 | A Go-backed web app with auth, sessions, API routes, forms, and server rendering | **SSR Web** | `web-ssr-tech-stack.md` |
 | A service, daemon, CLI, API, orchestrator, or operational tool | **Go** | `go-tech-stack.md` |
 | Boundary-layer code, firmware, ABI shim, custody code, kernel internals, or tiny native utility | **C** | `c-tech-stack.md` |
-| A product that genuinely needs a browser surface + Go control plane + C boundary in one repo | **Unified** | `unified-go-c-web-tech-stack.md` |
+| A product that needs Go orchestration + a narrow C boundary layer (no browser surface in scope) | **Go + C** | `go-c-tech-stack.md` |
 
 ### Common combinations
 
@@ -41,6 +41,10 @@ Most repos in this workspace are **Go + SSR Web** (a Go backend serving an Astro
 - Read `go-tech-stack.md` for the backend
 - Read `web-ssr-tech-stack.md` for the frontend
 - The SSR doc covers the Go ↔ Astro boundary
+
+If the repo needs **Go + C without a browser surface**, read `go-c-tech-stack.md`. It covers the division of labor, interop rules, and boundary guidance for that pair.
+
+If the repo needs **Go + C and also has a browser surface**, read `go-c-tech-stack.md` for the backend/boundary and the relevant web doc (`web-ssr-tech-stack.md` or `web-static-tech-stack.md`) for the frontend. There is no single unified doc for all three — compose the relevant docs instead.
 
 If the repo is purely a Go service with no browser surface, read only `go-tech-stack.md`.
 
