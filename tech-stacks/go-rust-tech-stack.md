@@ -11,8 +11,8 @@ Use this stack when the product genuinely needs both:
 
 This is the right model for repos shaped like:
 
-- `vaultd`: Rust trusted core + Go control plane
 - `wirescope`: Rust native capture/dissection lane + Go aggregation, persistence, and terminal/web surfaces
+- `0xvane`: Go control plane with a Rust execution boundary for venue protocol, order-state, and hard risk logic
 
 If the Rust boundary is fake, just use Go. If Go is fake, just use Rust. Both languages must earn their place.
 

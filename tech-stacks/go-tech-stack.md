@@ -1,6 +1,6 @@
 # Go Tech Stack
 
-Last reviewed: 2026-03-23
+Last reviewed: 2026-03-24
 
 ## Best Fit
 
@@ -13,7 +13,7 @@ Use this stack when the project is mostly:
 - durable application logic
 - integrations, automation, and operational products
 
-For this workspace, that maps to `wirescope`, `vaultd`, `gitpulse`, `repokeeper`, `bore`, `0xvane`, `scrybase`, and the Go service layers in most product repos.
+For this workspace, that maps cleanly to `gitpulse`, `repokeeper`, `bore`, `scrybase`, and the Go service layers in most product repos. For hybrid repos such as `wirescope` and `0xvane`, also read the [Go + Rust](./go-rust-tech-stack.md) stack.
 
 If the browser surface is the product, pair Go with the [SPA](./spa-tech-stack.md) stack.
 
