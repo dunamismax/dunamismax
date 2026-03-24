@@ -2,11 +2,9 @@
 
 **Systems software, self-hostable products, and practical build reference docs.**
 
-This repo is the front door for my public work: a short index of the projects, products, and reference material I want people to hit first.
+Front door for my public work: an active index of the projects, products, and reference material I want people to hit first.
 
 **Home:** [dunamismax.com](https://dunamismax.com) · [repo](https://github.com/dunamismax/dunamismax.com)
-
-> **Status:** Active profile and project-index repo. The links here should point to the strongest public entrypoints for what I am building now.
 
 ## Start Here
 
