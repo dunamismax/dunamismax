@@ -11,7 +11,6 @@ Front door for my public work: an active index of the projects, products, and re
 - [bore](https://github.com/dunamismax/bore) — move files between machines with a short code and end-to-end encryption. The relay never sees your data.
 - [repokeeper](https://github.com/dunamismax/repokeeper) — run the verification commands your docs claim work, validate your remotes, and store the results. One binary, no cloud.
 - [scrybase](https://github.com/dunamismax/scrybase) — Commander workbench that connects what you play, what you own, who you play against, and what actually wins.
-- [gitpulse](https://github.com/dunamismax/gitpulse) — git activity analytics that keep live work, commits, and pushes as separate ledgers. Local-first, no source upload.
 - [wirescope](https://github.com/dunamismax/wirescope) — live network inspection for operators who need proof, not dashboards. Top talkers, DNS context, connection tables, and raw PCAP on disk.
 
 ## Rust Crates
