@@ -13,6 +13,7 @@ Systems software, self-hostable products, and reference docs for people who buil
 - [repokeeper](https://github.com/dunamismax/repokeeper) — self-hosted repo health daemon. Validates remotes, detects drift, runs the verification commands your docs claim work, and stores the results. One binary, no cloud.
 - [scrybase](https://github.com/dunamismax/scrybase) — Commander intelligence workbench. Decks, collection, pod tracking, matchup journal, Scryfall integration, and real meta from your actual games.
 - [patchworks](https://github.com/dunamismax/patchworks) — git-style diffs for SQLite databases. Schema, rows, and the SQL to reconcile them. Native desktop app and headless CLI.
+- [agegate](https://github.com/dunamismax/agegate) — self-hostable age-assurance control plane. Policy engine, signal normalization, guardian consent, and auditable evidence — without collecting raw identity docs.
 
 ## Rust Crates
 
