@@ -2,7 +2,7 @@
 
 **Opinionated stack guidance for the repos in this workspace.**
 
-This folder is a routing document. Read this file first, then read the stack document(s) that match your project. Most repos need one doc. Multi-lane repos (e.g., Go + SPA) need two — see the [routing section](#routing).
+This folder is a routing document. Read this file first, then read the stack document(s) that match your project.
 
 > **Last reviewed:** 2026-03-25
 
@@ -13,9 +13,8 @@ This folder is a routing document. Read this file first, then read the stack doc
 If you are an LLM, coding agent, or sub-agent reading this file as context for a build task:
 
 1. **Read this README first.** It contains shared rules, the SQLite operating model, and the routing table.
-2. **Use the [routing section](#routing) to determine which stack doc(s) to read.** Single-lane repos need one doc. Multi-lane repos need two or three — the routing table is explicit.
+2. **Use the [routing section](#routing) to determine which stack doc(s) to read.**
 3. **Read only the docs the routing table assigns.** Do not load unrelated stack documents.
-4. **Start with the primary backend doc** when the repo spans multiple lanes. The SPA doc supplements frontend decisions — it does not drive routing.
 
 ### For humans
 
@@ -25,44 +24,40 @@ Same idea. Pick your lane, read that doc, build the thing.
 
 ## Routing
 
-Identify the **primary backend lane** first, then add the SPA doc only if the repo has a browser-facing frontend. The SPA doc is a supplement for frontend decisions — it does not drive routing for backend-heavy repos.
-
-### Single-lane repos
+### Stack docs
 
 | Shape | Read | File |
 | --- | --- | --- |
-| Go service, CLI, API, daemon, or orchestrator (no browser surface) | **Go** | `go-tech-stack.md` |
-| Rust-first desktop tool, cargo plugin, terminal app, native utility, or shared core | **Rust** | `rust-tech-stack.md` |
-| Standalone SPA with no backend in this repo | **SPA** | `spa-tech-stack.md` |
-| Go + Rust product with no browser surface | **Go + Rust** | `go-rust-tech-stack.md` |
 | Python script, automation, CLI tool, API, or full-stack app | **Python** | `python-tech-stack.md` |
+| Go service, CLI, API, daemon, or orchestrator | **Go** | `go-tech-stack.md` |
 
-### Multi-lane repos
-
-When a repo spans multiple lanes, start with the primary backend doc, then read the supplementary docs listed:
-
-| Shape | Primary | Supplement | Repos |
-| --- | --- | --- | --- |
-| Go backend + SPA frontend | `go-tech-stack.md` | `spa-tech-stack.md` | bore, repokeeper, scrybase |
-| Go + Rust + SPA | `go-tech-stack.md` + `go-rust-tech-stack.md` | `spa-tech-stack.md` | wirescope |
-| Rust + SPA | `rust-tech-stack.md` | `spa-tech-stack.md` | — |
-| Python + Go | `python-tech-stack.md` | `go-tech-stack.md` | — |
+Rust repos (patchworks, cargo-compatible, cargo-async-doctor, rust-async-field-guide) follow standard Rust tooling conventions. Rust does not have its own stack doc — it is used only when the project specifically requires it.
 
 ### Concrete lane map
 
-| Repo | Lane(s) |
+| Repo | Lane |
 | --- | --- |
-| bore | Go + SPA |
-| repokeeper | Go + SPA |
-| scrybase | Go + SPA |
-| wirescope | Go + Rust + SPA |
-| dunamismax.com | SPA-only |
+| toolworks | Python |
+| bore | Go (frontend: Python/htmx, planned) |
+| repokeeper | Go (frontend: Python/htmx, planned) |
+| scrybase | Go (frontend: Python/htmx, planned) |
+| wirescope | Go + Rust (frontend: Python/htmx, planned) |
+| dunamismax.com | Python (planned rewrite) |
 | patchworks | Rust |
 | cargo-compatible | Rust |
 | cargo-async-doctor | Rust |
 | rust-async-field-guide | Rust (reference/docs) |
-| toolworks | Python (automation and scripts) |
-| openclaw-backup | Ops/shell (no stack doc — scripts and config, not a product repo) |
+| openclaw-backup | Ops/shell (no stack doc) |
+
+### Frontend direction
+
+The old SPA stack (Bun + Vite + React + TypeScript) is deprecated across this workspace. New frontends and rewrites should use Python-driven server-rendered pages:
+
+- **Django + templates + htmx + Alpine.js** for full-stack products
+- **FastAPI + Jinja2 + htmx** for API-first products with a thin UI
+- No separate frontend build step. No Node/Bun/TypeScript toolchain for frontends.
+
+Existing SPA frontends in bore, repokeeper, scrybase, and wirescope are legacy and will be rewritten.
 
 ---
 
@@ -75,18 +70,17 @@ These apply to every stack. You do not need to re-read them in the individual st
 - Prefer one obvious build entrypoint per repo.
 - Prefer process boundaries over language-FFI tangles.
 - Prefer single-binary or small-surface deploys over sprawling control planes.
-- Prefer static assets served from the backend or a CDN when the frontend is an SPA.
 - Add third-party dependencies only when they clearly beat the standard option on correctness, leverage, or operating cost.
 
 ---
 
 ## SQLite Operating Model
 
-SQLite is the default database across this workspace. Every repo that uses SQLite must follow these rules. Individual stack documents reference this section instead of repeating it.
+SQLite is the default database for local-first tools and Go services. Every repo that uses SQLite must follow these rules.
 
 ### Minimum version
 
-SQLite **3.37.0** or later. This is the floor for `STRICT` tables (3.37.0), which this workspace uses by default. `RETURNING` landed in 3.35.0, and built-in math functions require the `SQLITE_ENABLE_MATH_FUNCTIONS` compile-time option (not version-gated). In practice, `modernc.org/sqlite` and `bun:sqlite` both ship recent enough builds with math functions enabled — but if you are linking against a system SQLite, verify both the version and compile options.
+SQLite **3.37.0** or later. This is the floor for `STRICT` tables (3.37.0), which this workspace uses by default. `RETURNING` landed in 3.35.0, and built-in math functions require the `SQLITE_ENABLE_MATH_FUNCTIONS` compile-time option (not version-gated). In practice, `modernc.org/sqlite` ships recent enough builds — but if you are linking against a system SQLite, verify both the version and compile options.
 
 ### Default pragmas
 
@@ -100,45 +94,34 @@ PRAGMA foreign_keys = ON;
 PRAGMA cache_size = -20000;
 ```
 
-**WAL mode** is mandatory for any app that serves concurrent reads or runs a web server. It allows readers and one writer to operate simultaneously without blocking each other.
-
-**busy_timeout** prevents immediate `SQLITE_BUSY` errors under light write contention. 5 seconds is a reasonable default; tune down for latency-sensitive paths.
-
-**synchronous = NORMAL** is safe under WAL mode and avoids the performance cost of `FULL` syncs on every commit. Do not set `synchronous = OFF` unless you genuinely accept data loss on crash.
-
-**foreign_keys = ON** is off by default in SQLite. Always enable it. There is no good reason to leave referential integrity disabled.
-
-**cache_size = -20000** sets a 20MB page cache. Adjust per workload, but the 2MB default is too small for most apps.
-
 ### Connection discipline
 
 - Open one long-lived connection for writes. Open a small pool (2–4) for reads.
-- Do not open a new connection per request. SQLite connections are cheap to keep open and expensive to re-negotiate WAL state on.
+- Do not open a new connection per request.
 - In Go, use `sql.Open` once at startup and keep the `*sql.DB` alive for the process lifetime.
-- In Bun, use `new Database()` once and reuse the handle.
 
 ### Migration discipline
 
 - Keep migrations as plain `.sql` files in a `migrations/` directory.
 - Name them with a sequential prefix: `001_initial.sql`, `002_add_users.sql`.
-- Run them at startup in order. A small in-repo runner is fine. Do not add a migration framework unless the repo has earned it.
-- Never hand-edit a production database outside a migration. If you need a fix, write a migration.
+- Run them at startup in order.
+- Never hand-edit a production database outside a migration.
 
 ### Backup discipline
 
-- Use `.backup` or `VACUUM INTO` for safe hot backups. Do not copy the database file while connections are open.
+- Use `.backup` or `VACUUM INTO` for safe hot backups.
 - For Go apps, expose a backup command or admin endpoint.
 
-### When SQLite is not enough
+### When to use PostgreSQL instead
 
-Move to PostgreSQL when the product clearly earns it through:
+Use PostgreSQL when the product needs:
 
 - multiple write-heavy processes that cannot share one writer
 - networked multi-node access
 - operational reporting that needs concurrent heavy reads alongside writes
-- deployment shape that requires a shared database server
+- a Python web app (Django/FastAPI default to PostgreSQL)
 
-Do not move to PostgreSQL because it "feels more serious." SQLite handles more than most people think.
+SQLite is the default for Go CLI tools, daemons, and local-first products. PostgreSQL is the default for Python web applications.
 
 ---
 
@@ -146,20 +129,21 @@ Do not move to PostgreSQL because it "feels more serious." SQLite handles more t
 
 | Concern | Default |
 | --- | --- |
-| Database | SQLite |
+| Database (Go tools) | SQLite |
+| Database (Python web) | PostgreSQL |
 | Data model | Relational |
-| Query / schema layer | Raw SQL first; keep helper layers thin and only add them when they clearly reduce real pain |
-| Migrations | SQL files first; tiny runners second; heavier tooling only when the repo has earned it |
+| Query / schema layer | Raw SQL first; keep helper layers thin |
+| Migrations | SQL files for Go; Django migrations or Alembic for Python |
 | Observability | Structured logs, Prometheus metrics, OpenTelemetry where tracing is worth it |
-| Packaging | Single-purpose binaries first |
-| CI quality bar | Formatter, linter, tests, vulnerability scan, and release smoke path |
-| Frontend/web lane | Bun + Vite + React, TypeScript in strict mode, TanStack Router + Query, shadcn/ui + Radix |
-| Cross-language integration | Process boundary first, stable protocols second, broad FFI usage last |
+| Packaging | Single-purpose binaries (Go) or uv-managed Python apps |
+| CI quality bar | Formatter, linter, type checker, tests, vulnerability scan |
+| Frontend | Django templates + htmx + Alpine.js (server-rendered, no SPA) |
+| Cross-language integration | Process boundary first, stable protocols second |
 
 ---
 
 ## Update Policy
 
 - Update this folder whenever a new stable release of any tool in the stack materially changes the advice.
-- Always default to the latest stable version of Go, Rust, Bun, Vite, React, and all other tools.
+- Always default to the latest stable version of Python, Go, and all other tools.
 - Re-check guidance when major releases land.
