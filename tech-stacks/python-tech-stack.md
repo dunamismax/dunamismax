@@ -9,10 +9,10 @@ Use this stack when the project is mostly:
 - automation, scripting, and operational tools
 - CLI utilities and data processing
 - API services and backend systems
-- full-stack web applications (Django or FastAPI)
+- web applications with server-rendered frontends
 - anything where development speed and ecosystem depth matter more than binary size
 
-Python is the default for new tools, scripts, and automation. Use Go when the product needs a single-binary deploy, high-concurrency networking, or systems-level performance. Use Rust only when the project genuinely needs memory safety without GC or cargo-plugin-level ecosystem integration.
+Python is the default for new tools, scripts, automation, APIs, and web surfaces. Use Go when the product needs a single-binary deploy, high-concurrency networking, or systems-level performance. Use Rust only when the project genuinely needs it.
 
 ## Opinionated Default
 
@@ -28,40 +28,34 @@ Python is the default for new tools, scripts, and automation. Use Go when the pr
 | Local gates | pre-commit |
 | CI | `uv sync` → `ruff` → Pyright → `pytest` |
 
-## Web Stack Defaults
-
-### Full-stack (server-rendered)
-
-| Area | Default |
-| --- | --- |
-| Framework | Django |
-| Templates | Django templates + htmx + Alpine.js |
-| Database | PostgreSQL (Django's natural fit) |
-| ORM | Django ORM |
-| Migrations | Django migrations |
-| Background jobs | Celery (only when truly needed) |
-| Static files | WhiteNoise |
-
-Use Django when the product is a full-stack web application with server-rendered pages. The Django + htmx + Alpine.js combination gives a high Python-to-JavaScript ratio while building modern interactive apps.
-
-### API-first
+## Web Stack
 
 | Area | Default |
 | --- | --- |
 | Framework | FastAPI |
 | Validation | Pydantic v2 |
 | Config | pydantic-settings |
-| Database | SQLAlchemy 2.0 + Alembic |
+| Database (web apps) | PostgreSQL via SQLAlchemy 2.0 |
+| Database (local tools) | SQLite |
+| Migrations | Alembic |
 | HTTP client | HTTPX |
 | Server | Uvicorn |
+| Templates | Jinja2 |
+| Frontend interactivity | htmx + Alpine.js |
+| E2E tests | Playwright for Python |
 
-Use FastAPI when the backend is the product or when a separate JS/TS frontend dominates. FastAPI + Pydantic v2 is the cleanest modern typed Python API stack.
+FastAPI is the only Python web framework in this stack. No Django.
 
-### Choosing between them
+### Server-Rendered Frontends
 
-- Start with Django unless you already know you are building an API-first system.
-- Use FastAPI when the backend is purely an API layer for a separate frontend.
-- Do not mix them in the same project.
+When the product needs a browser surface:
+
+- FastAPI serves Jinja2 templates directly
+- htmx handles dynamic updates without a JavaScript build step
+- Alpine.js handles small client-side interactions
+- No separate frontend build toolchain. No Node, no Bun, no TypeScript, no SPA framework.
+
+This applies to standalone Python web apps and to operator UIs for Go backend products. The Python layer handles templates and rendering; the Go layer handles the core product logic and data.
 
 ## Golden Path
 
@@ -74,6 +68,8 @@ Use FastAPI when the backend is the product or when a separate JS/TS frontend do
 7. Use `uv run` for scripts and `uv sync` for dependency management.
 
 ## Default Repo Shape
+
+### Scripts and tools
 
 ```text
 project/
@@ -91,20 +87,22 @@ project/
   README.md
 ```
 
-For Django projects:
+### FastAPI web apps
 
 ```text
 project/
-  project_name/
-    settings.py
-    urls.py
-    wsgi.py
-  app_name/
-    models.py
-    views.py
-    templates/
-    tests/
-  manage.py
+  src/
+    app/
+      __init__.py
+      main.py
+      config.py
+      models.py
+      routes/
+      templates/
+      static/
+  tests/
+  migrations/
+  alembic.ini
   pyproject.toml
   .python-version
   README.md
@@ -114,17 +112,16 @@ project/
 
 - Use `uv add` for dependencies. Never edit `pyproject.toml` dependency lists by hand.
 - Lock dependencies with `uv lock`. Commit the lockfile.
-- Separate runtime and dev dependencies (`[project.optional-dependencies]` or `[dependency-groups]`).
+- Separate runtime and dev dependencies.
 - Prefer well-maintained packages with type stubs or inline types.
 - Avoid dependency sprawl. The standard library covers more than most people think.
 
 ## Testing Guidance
 
-- Use `pytest` for everything. No `unittest` unless Django forces it.
+- Use `pytest` for everything.
 - Use `pytest-cov` for coverage reporting.
 - Use fixtures over setup/teardown methods.
 - Use `httpx` + FastAPI's `TestClient` for API tests.
-- Use Django's test client and `pytest-django` for Django tests.
 - Use Playwright for Python when end-to-end browser tests are needed.
 
 ## CI Quality Bar
@@ -141,7 +138,7 @@ pytest
 
 ## Security Baseline
 
-- Validate all inputs with Pydantic or Django forms.
+- Validate all inputs with Pydantic.
 - Use environment variables for secrets. Never commit `.env` files.
 - Use `bandit` for security-focused static analysis when the project handles sensitive data.
 - Pin dependencies and audit regularly.
@@ -151,14 +148,16 @@ pytest
 - Single-binary CLI tools that need zero-dependency distribution → use Go
 - High-performance concurrent network services → use Go
 - Memory-safety-critical systems code or cargo plugins → use Rust
-- Browser-side code → use TypeScript
+- Browser-side code → use htmx + Alpine.js from Python templates, not a JS framework
 
 ## Avoid By Default
 
-- Poetry (uv replaces it with better performance and broader scope)
+- Django (FastAPI covers all web use cases in this stack)
+- Poetry (uv replaces it)
 - pipenv (superseded by uv)
 - setup.py / setup.cfg (use pyproject.toml)
 - Black + isort + flake8 (ruff replaces all three)
-- mypy (Pyright is faster and more accurate for modern Python)
-- Flask (use FastAPI for APIs, Django for full-stack)
-- SQLite for web apps (use PostgreSQL; SQLite is fine for local CLI tools)
+- mypy (Pyright is faster and more accurate)
+- Flask (use FastAPI)
+- React / Vue / Angular / any SPA framework (use server-rendered templates + htmx)
+- Node / Bun / TypeScript for frontends (htmx + Alpine.js from Jinja2 templates)

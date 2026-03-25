@@ -51,11 +51,11 @@ Rust repos (patchworks, cargo-compatible, cargo-async-doctor, rust-async-field-g
 
 ### Frontend direction
 
-The old SPA stack (Bun + Vite + React + TypeScript) is deprecated across this workspace. New frontends and rewrites should use Python-driven server-rendered pages:
+The old SPA stack (Bun + Vite + React + TypeScript) is deprecated across this workspace. New frontends and rewrites use Python-driven server-rendered pages:
 
-- **Django + templates + htmx + Alpine.js** for full-stack products
-- **FastAPI + Jinja2 + htmx** for API-first products with a thin UI
+- **FastAPI + Jinja2 + htmx + Alpine.js** for all web surfaces
 - No separate frontend build step. No Node/Bun/TypeScript toolchain for frontends.
+- No Django. FastAPI is the only Python web framework in this stack.
 
 Existing SPA frontends in bore, repokeeper, scrybase, and wirescope are legacy and will be rewritten.
 
@@ -133,11 +133,11 @@ SQLite is the default for Go CLI tools, daemons, and local-first products. Postg
 | Database (Python web) | PostgreSQL |
 | Data model | Relational |
 | Query / schema layer | Raw SQL first; keep helper layers thin |
-| Migrations | SQL files for Go; Django migrations or Alembic for Python |
+| Migrations | SQL files for Go; Alembic for Python |
 | Observability | Structured logs, Prometheus metrics, OpenTelemetry where tracing is worth it |
 | Packaging | Single-purpose binaries (Go) or uv-managed Python apps |
 | CI quality bar | Formatter, linter, type checker, tests, vulnerability scan |
-| Frontend | Django templates + htmx + Alpine.js (server-rendered, no SPA) |
+| Frontend | FastAPI + Jinja2 + htmx + Alpine.js (server-rendered, no SPA) |
 | Cross-language integration | Process boundary first, stable protocols second |
 
 ---
