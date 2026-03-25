@@ -22,6 +22,10 @@ Systems software, self-hostable products, and reference docs for people who buil
 
 - [scrybase](https://github.com/dunamismax/scrybase) — Commander intelligence workbench. Decks, collection, pod tracking, matchup journal, Scryfall integration, and real meta from your actual games.
 
+## Toolbox
+
+- [toolworks](https://github.com/dunamismax/toolworks) — automation, CLI helpers, and working experiments. A curated workshop for scripts and small tools that earn their keep.
+
 ## Reference
 
 - [rust-async-field-guide](https://github.com/dunamismax/rust-async-field-guide) ([read it](https://dunamismax.github.io/rust-async-field-guide/)) — learn async Rust by breaking things first. Twelve chapters of real footguns, reproductions, and verified fixes.
