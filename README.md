@@ -8,7 +8,6 @@ I build terminal-first tools for networking, security, and infrastructure. Pytho
 
 ## Security & Networking
 
-- [apisentry](https://github.com/dunamismax/apisentry) - OWASP API Top 10 scanner. Tests auth, authorization, rate limiting, injection, and SSRF against live endpoints.
 - [flowhook](https://github.com/dunamismax/flowhook) - mitmproxy addons for capturing, replaying, mutating, and cataloging HTTP traffic.
 - [wirescope](https://github.com/dunamismax/wirescope) - Live packet capture with top talkers, DNS enrichment, connection tracking, and PCAP export. Runs in a terminal.
 - [bore](https://github.com/dunamismax/bore) - Encrypted peer-to-peer file transfer. Direct when possible, relay when NAT gets in the way. Zero trust, zero accounts.
