@@ -13,9 +13,7 @@ Use this stack when the project is mostly:
 - durable application logic
 - integrations, automation, and operational products
 
-If the browser surface is the product, pair Go with the [SPA](./spa-tech-stack.md) stack.
-
-If the project also has a Rust runtime, shared core, or safety-critical subsystem, also read the [Go + Rust](./go-rust-tech-stack.md) stack.
+If the product needs a browser surface, pair Go with a [Python/FastAPI](./python-tech-stack.md) frontend layer using Jinja2 + htmx.
 
 ## Opinionated Default
 
@@ -102,12 +100,12 @@ That means:
 
 ## Web Pairing Guidance
 
-When the product has a browser-facing frontend, the SPA stack owns it. See `spa-tech-stack.md`.
+When the product has a browser-facing frontend, a Python/FastAPI layer owns it. See `python-tech-stack.md`.
 
-- the SPA (React + Vite) owns routes, presentation, and browser interaction
+- Python (FastAPI + Jinja2 + htmx) owns templates, presentation, and browser interaction
 - Go owns auth, business logic, persistence, jobs, and operational concerns
-- the SPA is served as static assets by the Go binary or a reverse proxy
-- keep the boundary same-origin HTTP — no separate deploy pipeline unless the product has clearly earned it
+- the Python frontend fetches data from Go's JSON API endpoints
+- keep the boundary same-origin HTTP or localhost proxy
 - let SQLite live on the Go side, where persistent state belongs
 
 ## Testing Baseline
