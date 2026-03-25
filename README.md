@@ -1,53 +1,39 @@
 # Stephen Sawyer
 
-Python and Go tools for networking, privacy, automation, and security-minded infrastructure.
+I build terminal-first tools for networking, security, and infrastructure. Python and Go for almost everything, Rust when it earns it. Local-first, self-hosted, no accounts required.
 
-Terminal-first products, operator tooling, and reference docs for people who care about local-first systems, secure defaults, and honest software.
-
-**Home:** [dunamismax.com](https://dunamismax.com)
+[dunamismax.com](https://dunamismax.com)
 
 ---
 
 ## Security & Networking
 
-<sub>Offensive testing, traffic analysis, and encrypted transport.</sub>
-
-- [apisentry](https://github.com/dunamismax/apisentry) — API security tester mapped to the OWASP API Top 10. Authz drift, rate limiting, SSRF surface, inventory gaps.
-- [flowhook](https://github.com/dunamismax/flowhook) — mitmproxy addon suite for replaying, mutating, and documenting API traffic.
-- [wirescope](https://github.com/dunamismax/wirescope) — terminal-first network observability. Live capture, top talkers, DNS context, connection tables, PCAP on disk.
-- [bore](https://github.com/dunamismax/bore) — peer-to-peer encrypted file transfer. Direct connections first, relay fallback when NAT wins. No accounts, no cloud, no trust required.
+- [apisentry](https://github.com/dunamismax/apisentry) - OWASP API Top 10 scanner. Tests auth, authorization, rate limiting, injection, and SSRF against live endpoints.
+- [flowhook](https://github.com/dunamismax/flowhook) - mitmproxy addons for capturing, replaying, mutating, and cataloging HTTP traffic.
+- [wirescope](https://github.com/dunamismax/wirescope) - Live packet capture with top talkers, DNS enrichment, connection tracking, and PCAP export. Runs in a terminal.
+- [bore](https://github.com/dunamismax/bore) - Encrypted peer-to-peer file transfer. Direct when possible, relay when NAT gets in the way. Zero trust, zero accounts.
 
 ## Operator Tools
 
-<sub>Infrastructure you run yourself — repo health, database diffs, automation.</sub>
-
-- [patchworks](https://github.com/dunamismax/patchworks) — git-style diffs for SQLite databases. Schema, rows, and the SQL to reconcile them.
-- [repokeeper](https://github.com/dunamismax/repokeeper) — self-hosted repo health daemon. Validates remotes, detects drift, runs the verification commands your docs claim work, and stores the results.
-- [toolworks](https://github.com/dunamismax/toolworks) — automation, CLI helpers, and working experiments. A curated workshop for scripts and small tools that earn their keep.
+- [patchworks](https://github.com/dunamismax/patchworks) - Diff two SQLite databases like `git diff` diffs source code. Schema changes, row-level deltas, and the SQL to reconcile them.
+- [repokeeper](https://github.com/dunamismax/repokeeper) - Repo health daemon. Watches remotes, detects drift, runs your verification commands, stores results.
+- [toolworks](https://github.com/dunamismax/toolworks) - Scripts, CLI helpers, and small automation tools that do one thing well.
 
 ## Rust Projects
 
-<sub>Cargo tooling and async Rust diagnostics.</sub>
-
-- [cargo-compatible](https://github.com/dunamismax/cargo-compatible) — check whether your resolved dependency graph fits a target Rust version.
-- [cargo-async-doctor](https://github.com/dunamismax/cargo-async-doctor) — catch async Rust bugs that compile fine and pass Clippy but deadlock at 2 AM.
-- [rust-async-field-guide](https://github.com/dunamismax/rust-async-field-guide) ([read it](https://dunamismax.github.io/rust-async-field-guide/)) — learn async Rust by breaking things first. Twelve chapters of real footguns, reproductions, and verified fixes.
+- [cargo-compatible](https://github.com/dunamismax/cargo-compatible) - Check if your resolved dependency graph actually compiles on a target Rust version.
+- [cargo-async-doctor](https://github.com/dunamismax/cargo-async-doctor) - Find async bugs that compile clean and pass Clippy but deadlock at runtime.
+- [rust-async-field-guide](https://github.com/dunamismax/rust-async-field-guide) ([read it](https://dunamismax.github.io/rust-async-field-guide/)) - Twelve chapters on async Rust footguns with reproductions and verified fixes.
 
 ## Labs
 
-<sub>Hobby software and side projects that might become something.</sub>
-
-- [scrybase](https://github.com/dunamismax/scrybase) — Commander intelligence workbench. Decks, collection, pod tracking, matchup journal, Scryfall integration, and real meta from your actual games.
+- [scrybase](https://github.com/dunamismax/scrybase) - MTG Commander workbench. Deck management, pod tracking, matchup journal, meta analysis, Scryfall integration.
 
 ## Reference
 
-<sub>Stack docs and build conventions.</sub>
-
-- [tech-stacks](./tech-stacks/README.md) — opinionated stack docs for how I build.
+- [tech-stacks](./tech-stacks/README.md) - How I build things and why.
 
 ---
-
-**Python** and **Go** for almost everything. **Rust** for narrow native edges. Networking, privacy, local-first tools, and honest docs over hype.
 
 ## License
 
