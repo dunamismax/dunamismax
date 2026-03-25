@@ -9,7 +9,7 @@ Systems software, self-hostable products, and reference docs for people who buil
 ## Products
 
 - [bore](https://github.com/dunamismax/bore) — peer-to-peer encrypted file transfer. Direct connections first, relay fallback when NAT wins. No accounts, no cloud, no trust required.
-- [wirescope](https://github.com/dunamismax/wirescope) — terminal-first network observability. Live capture, top talkers, DNS context, connection tables, PCAP on disk. Go core with Rust and Zig capture backends.
+- [wirescope](https://github.com/dunamismax/wirescope) — terminal-first network observability. Live capture, top talkers, DNS context, connection tables, PCAP on disk. Go core with Rust capture backend.
 - [repokeeper](https://github.com/dunamismax/repokeeper) — self-hosted repo health daemon. Validates remotes, detects drift, runs the verification commands your docs claim work, and stores the results. One binary, no cloud.
 - [patchworks](https://github.com/dunamismax/patchworks) — git-style diffs for SQLite databases. Schema, rows, and the SQL to reconcile them. Native desktop app and headless CLI.
 
@@ -33,4 +33,4 @@ Systems software, self-hostable products, and reference docs for people who buil
 
 ---
 
-**Go**, **Rust**, and **Zig** for systems work. **TypeScript** for browser surfaces. SQLite by default. Local-first when possible. Honest docs over hype.
+**Python** and **Go** for most things. **Rust** where it earns its keep. **TypeScript** for browser surfaces. SQLite by default. Local-first when possible. Honest docs over hype.

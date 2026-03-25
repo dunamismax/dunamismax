@@ -4,7 +4,7 @@
 
 This folder is a routing document. Read this file first, then read the stack document(s) that match your project. Most repos need one doc. Multi-lane repos (e.g., Go + SPA) need two — see the [routing section](#routing).
 
-> **Last reviewed:** 2026-03-24
+> **Last reviewed:** 2026-03-25
 
 ## How To Use This Folder
 
@@ -35,7 +35,7 @@ Identify the **primary backend lane** first, then add the SPA doc only if the re
 | Rust-first desktop tool, cargo plugin, terminal app, native utility, or shared core | **Rust** | `rust-tech-stack.md` |
 | Standalone SPA with no backend in this repo | **SPA** | `spa-tech-stack.md` |
 | Go + Rust product with no browser surface | **Go + Rust** | `go-rust-tech-stack.md` |
-| Zig probe, BPF helper, or C-interop boundary component | **Zig** | `zig-tech-stack.md` |
+| Python script, automation, CLI tool, API, or full-stack app | **Python** | `python-tech-stack.md` |
 
 ### Multi-lane repos
 
@@ -46,7 +46,7 @@ When a repo spans multiple lanes, start with the primary backend doc, then read 
 | Go backend + SPA frontend | `go-tech-stack.md` | `spa-tech-stack.md` | bore, repokeeper, scrybase |
 | Go + Rust + SPA | `go-tech-stack.md` + `go-rust-tech-stack.md` | `spa-tech-stack.md` | wirescope |
 | Rust + SPA | `rust-tech-stack.md` | `spa-tech-stack.md` | — |
-| Go + Zig | `go-tech-stack.md` | `zig-tech-stack.md` | — |
+| Python + Go | `python-tech-stack.md` | `go-tech-stack.md` | — |
 
 ### Concrete lane map
 
@@ -61,6 +61,7 @@ When a repo spans multiple lanes, start with the primary backend doc, then read 
 | cargo-compatible | Rust |
 | cargo-async-doctor | Rust |
 | rust-async-field-guide | Rust (reference/docs) |
+| toolworks | Python (automation and scripts) |
 | openclaw-backup | Ops/shell (no stack doc — scripts and config, not a product repo) |
 
 ---
