@@ -20,8 +20,8 @@ I build terminal-first tools for networking, security, and infrastructure. Pytho
 
 ## Rust Projects
 
-- [cargo-compatible](https://github.com/dunamismax/cargo-compatible) - Check if your resolved dependency graph actually compiles on a target Rust version.
-- [cargo-async-doctor](https://github.com/dunamismax/cargo-async-doctor) - Find async bugs that compile clean and pass Clippy but deadlock at runtime.
+- [cargo-compatible](https://github.com/dunamismax/cargo-compatible) - Check if your resolved dependency graph actually compiles on a target Rust version. `v1.0.0`
+- [cargo-async-doctor](https://github.com/dunamismax/cargo-async-doctor) - Find async bugs that compile clean and pass Clippy but deadlock at runtime. `v1.0.0`
 - [rust-async-field-guide](https://github.com/dunamismax/rust-async-field-guide) ([read it](https://dunamismax.github.io/rust-async-field-guide/)) - Twelve chapters on async Rust footguns with reproductions and verified fixes. `v1.0.0`
 
 ## Apps
