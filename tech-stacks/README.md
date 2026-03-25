@@ -38,11 +38,11 @@ Rust repos (patchworks, cargo-compatible, cargo-async-doctor, rust-async-field-g
 | Repo | Lane |
 | --- | --- |
 | toolworks | Python |
-| bore | Go (frontend: Python/htmx, planned) |
-| repokeeper | Go (frontend: Python/htmx, planned) |
-| scrybase | Go (frontend: Python/htmx, planned) |
-| wirescope | Go + Rust (frontend: Python/htmx, planned) |
-| dunamismax.com | Python (planned rewrite) |
+| bore | Go + Python (FastAPI/htmx frontend) |
+| repokeeper | Go + Python (FastAPI/htmx frontend) |
+| scrybase | Go + Python (FastAPI/htmx frontend) |
+| wirescope | Go + Rust + Python (FastAPI/htmx frontend) |
+| dunamismax.com | Python (FastAPI) |
 | patchworks | Rust |
 | cargo-compatible | Rust |
 | cargo-async-doctor | Rust |
@@ -51,13 +51,11 @@ Rust repos (patchworks, cargo-compatible, cargo-async-doctor, rust-async-field-g
 
 ### Frontend direction
 
-The old SPA stack (Bun + Vite + React + TypeScript) is deprecated across this workspace. New frontends and rewrites use Python-driven server-rendered pages:
+All web surfaces use Python-driven server-rendered pages:
 
-- **FastAPI + Jinja2 + htmx + Alpine.js** for all web surfaces
-- No separate frontend build step. No Node/Bun/TypeScript toolchain for frontends.
+- **FastAPI + Jinja2 + htmx + Alpine.js** for all frontends
+- No separate frontend build step. No Node/Bun/TypeScript toolchain.
 - No Django. FastAPI is the only Python web framework in this stack.
-
-Existing SPA frontends in bore, repokeeper, scrybase, and wirescope are legacy and will be rewritten.
 
 ---
 
