@@ -14,7 +14,6 @@ I build terminal-first tools for networking, security, and infrastructure. Pytho
 
 ## Operator Tools
 
-- [repokeeper](https://github.com/dunamismax/repokeeper) - Repo health daemon. Doc verification, drift detection, supply-chain trust scoring, fleet dashboard, alerting. `v1.0.0`
 - [patchworks](https://github.com/dunamismax/patchworks) - SQLite database diff tool. Schema and row-level comparison, SQL migration generation, three-way merge, snapshot management, local web UI. `v1.0.0`
 - [toolworks](https://github.com/dunamismax/toolworks) - Scripts, CLI helpers, and small automation tools that do one thing well.
 
