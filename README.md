@@ -31,7 +31,7 @@ I build terminal-first tools for networking, security, and infrastructure. Pytho
 
 ## Learning Resources
 
-- [c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up) - C learning workbook. Progressive lessons from basics to systems programming, with the explanation in the comments. `141 stars`
+- [c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up) ([read it](https://dunamismax.github.io/c-from-the-ground-up/)) - C learning workbook. Progressive lessons from basics to systems programming, with the explanation in the comments. `141 stars`
 - [go-web-server](https://github.com/dunamismax/go-web-server) - Go starter for server-rendered apps with Echo, Templ, HTMX, PostgreSQL, SQLC, and Mage. `66 stars`
 - [hello-world-from-hell](https://github.com/dunamismax/hello-world-from-hell) - "Hello World" done the wrong way on purpose. A novelty C repo for the unhinged.
 
