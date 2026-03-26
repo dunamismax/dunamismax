@@ -29,6 +29,12 @@ I build terminal-first tools for networking, security, and infrastructure. Pytho
 - [scrybase](https://github.com/dunamismax/scrybase) - MTG Commander workbench. Deck lab, pod tracking, matchup journal, meta analytics, tuning loop, Scryfall integration. `v1.0.0`
 - [mtg-card-bot](https://github.com/dunamismax/mtg-card-bot) - Discord bot for Magic: The Gathering card lookups with live prices, legality, rulings, and Scryfall-powered embeds.
 
+## Learning Resources
+
+- [c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up) - C learning workbook. Progressive lessons from basics to systems programming, with the explanation in the comments. `141 stars`
+- [go-web-server](https://github.com/dunamismax/go-web-server) - Go starter for server-rendered apps with Echo, Templ, HTMX, PostgreSQL, SQLC, and Mage. `66 stars`
+- [hello-world-from-hell](https://github.com/dunamismax/hello-world-from-hell) - "Hello World" done the wrong way on purpose. A novelty C repo for the unhinged.
+
 ## Reference
 
 - [tech-stacks](./tech-stacks/README.md) - How I build things and why.
