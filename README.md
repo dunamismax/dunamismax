@@ -10,12 +10,12 @@ I build terminal-first tools for networking, security, and infrastructure. Pytho
 
 - [wirescope](https://github.com/dunamismax/wirescope) - Live packet capture with top talkers, DNS enrichment, connection tracking, and PCAP export. Runs in a terminal. `v1.0.0`
 - [bore](https://github.com/dunamismax/bore) - Encrypted peer-to-peer file transfer over QUIC. Direct when possible, relay when NAT gets in the way. `v1.0.0`
-- [flowhook](https://github.com/dunamismax/flowhook) - mitmproxy addons for capturing, storing, replaying, and cataloging HTTP traffic.
+- [flowhook](https://github.com/dunamismax/flowhook) - mitmproxy addon suite for capturing, replaying, mutating, and documenting HTTP traffic. Endpoint catalog, auth analysis, HAR/Burp export. `v1.0.0`
 
 ## Operator Tools
 
-- [repokeeper](https://github.com/dunamismax/repokeeper) - Repo health daemon. Verification, drift detection, supply-chain trust scoring, fleet dashboard, alerting. `v1.0.0`
-- [patchworks](https://github.com/dunamismax/patchworks) - Diff two SQLite databases like `git diff` diffs source code. Schema changes, row-level deltas, and the SQL to reconcile them.
+- [repokeeper](https://github.com/dunamismax/repokeeper) - Repo health daemon. Doc verification, drift detection, supply-chain trust scoring, fleet dashboard, alerting. `v1.0.0`
+- [patchworks](https://github.com/dunamismax/patchworks) - SQLite database diff tool. Schema and row-level comparison, SQL migration generation, three-way merge, snapshot management, local web UI. `v1.0.0`
 - [toolworks](https://github.com/dunamismax/toolworks) - Scripts, CLI helpers, and small automation tools that do one thing well.
 
 ## Rust Projects
@@ -26,7 +26,7 @@ I build terminal-first tools for networking, security, and infrastructure. Pytho
 
 ## Apps
 
-- [scrybase](https://github.com/dunamismax/scrybase) - MTG Commander workbench. Deck management, pod tracking, matchup journal, meta analysis, Scryfall integration. `v1.0.0`
+- [scrybase](https://github.com/dunamismax/scrybase) - MTG Commander workbench. Deck lab, pod tracking, matchup journal, meta analytics, tuning loop, Scryfall integration. `v1.0.0`
 
 ## Reference
 
