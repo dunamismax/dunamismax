@@ -15,6 +15,7 @@ I build terminal-first tools for networking, security, and infrastructure. Pytho
 ## Operator Tools
 
 - [patchworks](https://github.com/dunamismax/patchworks) - SQLite database diff tool. Schema and row-level comparison, SQL migration generation, three-way merge, snapshot management, local web UI. `v1.0.0`
+- [gitpulse](https://github.com/dunamismax/gitpulse) - Local-first git activity analytics. Honest commit signals without uploading source code.
 - [toolworks](https://github.com/dunamismax/toolworks) - Scripts, CLI helpers, and small automation tools that do one thing well.
 
 ## Rust Projects
@@ -26,6 +27,7 @@ I build terminal-first tools for networking, security, and infrastructure. Pytho
 ## Apps
 
 - [scrybase](https://github.com/dunamismax/scrybase) - MTG Commander workbench. Deck lab, pod tracking, matchup journal, meta analytics, tuning loop, Scryfall integration. `v1.0.0`
+- [mtg-card-bot](https://github.com/dunamismax/mtg-card-bot) - Discord bot for Magic: The Gathering card lookups with live prices, legality, rulings, and Scryfall-powered embeds.
 
 ## Reference
 
