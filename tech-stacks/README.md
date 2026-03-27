@@ -128,9 +128,9 @@ Use PostgreSQL when the product needs:
 - multiple write-heavy processes that cannot share one writer
 - networked multi-node access
 - operational reporting that needs concurrent heavy reads alongside writes
-- a Python/FastAPI web app
+- a Python/FastAPI web app that is primarily networked, multi-user, or service-style rather than local-first
 
-SQLite is the default for Go CLI tools, daemons, and local-first products. PostgreSQL is the default for Python web applications.
+SQLite is the default for Go CLI tools, daemons, and local-first products. Python web applications can stay on SQLite when they are local-first, single-user, or self-hosted tools without meaningful concurrent write pressure. PostgreSQL is the default for networked Python web applications.
 
 ---
 
@@ -139,7 +139,7 @@ SQLite is the default for Go CLI tools, daemons, and local-first products. Postg
 | Concern | Default |
 | --- | --- |
 | Database (Go tools) | SQLite |
-| Database (Python web) | PostgreSQL |
+| Database (Python web) | PostgreSQL for networked apps; SQLite is fine for local-first/self-hosted apps |
 | Data model | Relational |
 | Query / schema layer | Raw SQL first; keep helper layers thin |
 | Migrations | SQL files for Go; Alembic for Python |

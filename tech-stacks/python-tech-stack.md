@@ -35,7 +35,7 @@ Python is the default for new tools, scripts, automation, APIs, and web surfaces
 | Framework | FastAPI |
 | Validation | Pydantic v2 |
 | Config | pydantic-settings |
-| Database (web apps) | PostgreSQL via SQLAlchemy 2.0 |
+| Database (web apps) | PostgreSQL via SQLAlchemy 2.0 for networked/multi-user apps; SQLite is fine for local-first/self-hosted apps |
 | Database (local tools) | SQLite |
 | Migrations | Alembic |
 | HTTP client | HTTPX |
@@ -45,6 +45,10 @@ Python is the default for new tools, scripts, automation, APIs, and web surfaces
 | E2E tests | Playwright for Python |
 
 FastAPI is the only Python web framework in this stack. No Django.
+
+For database choice, the default split is simple:
+- **SQLite** for local-first, self-hosted, single-user, or low-write web apps
+- **PostgreSQL** for networked, multi-user, or write-heavy web apps
 
 ### Server-Rendered Frontends
 
