@@ -4,7 +4,7 @@
 
 This folder is a routing document. Read this file first, then read the stack document(s) that match your project.
 
-> **Last reviewed:** 2026-03-25
+> **Last reviewed:** 2026-03-27
 
 ## How To Use This Folder
 
@@ -20,6 +20,8 @@ If you are an LLM, coding agent, or sub-agent reading this file as context for a
 
 Same idea. Pick your lane, read that doc, build the thing.
 
+These docs describe the default stack direction for current work. Older repos, reference repos, and intentionally off-stack repos can diverge. When a repo is marked as an exception below, follow that repo's own README and in-repo docs.
+
 ---
 
 ## Routing
@@ -30,32 +32,40 @@ Same idea. Pick your lane, read that doc, build the thing.
 | --- | --- | --- |
 | Python script, automation, CLI tool, API, or full-stack app | **Python** | `python-tech-stack.md` |
 | Go service, CLI, API, daemon, or orchestrator | **Go** | `go-tech-stack.md` |
+| Existing repo with an intentional exception or legacy stack | **Repo README first** | repo-specific |
 
-Rust repos (patchworks, cargo-compatible, cargo-async-doctor, rust-async-field-guide) follow standard Rust tooling conventions. Rust does not have its own stack doc — it is used only when the project specifically requires it.
+Rust does not have its own stack doc. In this workspace it is maintenance-only for existing Rust repos unless a project has a clearly documented reason to require it.
 
 ### Concrete lane map
 
-| Repo | Lane |
-| --- | --- |
-| toolworks | Python |
-| bore | Go + Python (FastAPI/htmx frontend) |
-| repokeeper | Go + Python (FastAPI/htmx frontend) |
-| scrybase | Go + Python (FastAPI/htmx frontend) |
-| wirescope | Go + Rust + Python (FastAPI/htmx frontend) |
-| dunamismax.com | Python (FastAPI) |
-| patchworks | Rust |
-| cargo-compatible | Rust |
-| cargo-async-doctor | Rust |
-| rust-async-field-guide | Rust (reference/docs) |
-| openclaw-backup | Ops/shell (no stack doc) |
+| Repo | Lane | Notes |
+| --- | --- | --- |
+| bore | Go + Python frontend | Go runtime with Python/FastAPI operator surface |
+| wirescope | Go + Python frontend | Go runtime with Python/FastAPI browser companion; no Rust lane |
+| flowhook | Python | Core toolchain and optional FastAPI dashboard are Python |
+| patchworks | Python | Pure Python repo; Rust mapping is obsolete |
+| toolworks | Python / shell | Script-by-script repo; default to Python unless a tool says otherwise |
+| scrybase | Python | Target stack is pure Python; existing Go code is rewrite/spec context |
+| mtg-card-bot | Python | Python app |
+| dunamismax.com | Python | FastAPI site |
+| cargo-compatible | Rust (maintenance) | Existing Rust repo |
+| cargo-async-doctor | Rust (maintenance) | Existing Rust repo |
+| rust-async-field-guide | Rust docs/examples (maintenance) | Existing Rust repo |
+| gitpulse | Repo-specific exception | Go backend with Bun/TypeScript/React dashboard; follow repo README |
+| go-web-server | Repo-specific reference | Go + Echo + Templ + HTMX + PostgreSQL starter; follow repo README |
+| c-from-the-ground-up | C reference/docs | No stack doc |
+| hello-world-from-hell | C novelty repo | No stack doc |
+| openclaw-backup | Ops/shell + Python | No stack doc |
 
 ### Frontend direction
 
-All web surfaces use Python-driven server-rendered pages:
+Default direction for new browser surfaces and active rewrites:
 
-- **FastAPI + Jinja2 + htmx + Alpine.js** for all frontends
-- No separate frontend build step. No Node/Bun/TypeScript toolchain.
+- **FastAPI + Jinja2 + htmx + Alpine.js** for new frontends
+- No separate frontend build step for new product work. No Node/Bun/TypeScript frontend toolchain by default.
 - No Django. FastAPI is the only Python web framework in this stack.
+
+Existing repos can diverge when they predate this standard or exist as references. Current exceptions include `gitpulse` and `go-web-server`.
 
 ---
 
@@ -68,6 +78,7 @@ These apply to every stack. You do not need to re-read them in the individual st
 - Prefer one obvious build entrypoint per repo.
 - Prefer process boundaries over language-FFI tangles.
 - Prefer single-binary or small-surface deploys over sprawling control planes.
+- Prefer Go or Python for new work. Treat Rust as maintenance-only unless the repo already exists in Rust or the requirement is exceptional.
 - Add third-party dependencies only when they clearly beat the standard option on correctness, leverage, or operating cost.
 
 ---
@@ -117,7 +128,7 @@ Use PostgreSQL when the product needs:
 - multiple write-heavy processes that cannot share one writer
 - networked multi-node access
 - operational reporting that needs concurrent heavy reads alongside writes
-- a Python web app (Django/FastAPI default to PostgreSQL)
+- a Python/FastAPI web app
 
 SQLite is the default for Go CLI tools, daemons, and local-first products. PostgreSQL is the default for Python web applications.
 
@@ -135,7 +146,7 @@ SQLite is the default for Go CLI tools, daemons, and local-first products. Postg
 | Observability | Structured logs, Prometheus metrics, OpenTelemetry where tracing is worth it |
 | Packaging | Single-purpose binaries (Go) or uv-managed Python apps |
 | CI quality bar | Formatter, linter, type checker, tests, vulnerability scan |
-| Frontend | FastAPI + Jinja2 + htmx + Alpine.js (server-rendered, no SPA) |
+| Frontend (default for new browser surfaces) | FastAPI + Jinja2 + htmx + Alpine.js (server-rendered, no SPA) |
 | Cross-language integration | Process boundary first, stable protocols second |
 
 ---

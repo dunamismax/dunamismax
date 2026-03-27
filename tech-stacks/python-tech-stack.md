@@ -1,6 +1,6 @@
 # Python Tech Stack
 
-Last reviewed: 2026-03-25
+Last reviewed: 2026-03-27
 
 ## Best Fit
 
@@ -12,7 +12,7 @@ Use this stack when the project is mostly:
 - web applications with server-rendered frontends
 - anything where development speed and ecosystem depth matter more than binary size
 
-Python is the default for new tools, scripts, automation, APIs, and web surfaces. Use Go when the product needs a single-binary deploy, high-concurrency networking, or systems-level performance. Use Rust only when the project genuinely needs it.
+Python is the default for new tools, scripts, automation, APIs, and web surfaces. Use Go when the product needs a single-binary deploy, high-concurrency networking, or systems-level performance. Treat Rust as maintenance-only unless you are already in an existing Rust repo or the requirement is exceptional.
 
 ## Opinionated Default
 
@@ -147,7 +147,7 @@ pytest
 
 - Single-binary CLI tools that need zero-dependency distribution → use Go
 - High-performance concurrent network services → use Go
-- Memory-safety-critical systems code or cargo plugins → use Rust
+- Existing cargo plugins or clearly Rust-native systems work → use Rust
 - Browser-side code → use htmx + Alpine.js from Python templates, not a JS framework
 
 ## Avoid By Default

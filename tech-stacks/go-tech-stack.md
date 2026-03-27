@@ -1,6 +1,6 @@
 # Go Tech Stack
 
-Last reviewed: 2026-03-24
+Last reviewed: 2026-03-27
 
 ## Best Fit
 
@@ -13,7 +13,7 @@ Use this stack when the project is mostly:
 - durable application logic
 - integrations, automation, and operational products
 
-If the product needs a browser surface, pair Go with a [Python/FastAPI](./python-tech-stack.md) frontend layer using Jinja2 + htmx.
+If the product needs a browser surface, pair Go with a [Python/FastAPI](./python-tech-stack.md) frontend layer using Jinja2 + htmx. In this workspace, that is the default web pairing for new Go-backed products.
 
 ## Opinionated Default
 
@@ -57,7 +57,7 @@ Follow the [SQLite Operating Model](./README.md#sqlite-operating-model) in the t
 5. Add `sqlc` only when the query surface or team workflow really earns it.
 6. Add structured logs and Prometheus metrics on day one for long-running services.
 7. Keep the deploy shape obvious.
-8. Pair Go with the SPA stack when the browser is a first-class product surface.
+8. Pair Go with the Python/FastAPI server-rendered frontend when the browser is a first-class product surface.
 
 ## Default Repo Shape
 
@@ -125,7 +125,7 @@ When the product has a browser-facing frontend, a Python/FastAPI layer owns it. 
 - Authenticated admin surfaces
 - Audit logging for security-relevant actions
 
-## When To Choose Go Over Rust Or Web
+## When To Choose Go Over Python Or Rust
 
 Choose Go when:
 
@@ -134,9 +134,9 @@ Choose Go when:
 - you need straightforward concurrency and deployment
 - the code is mostly application logic, not native engine work
 
-Choose the SPA stack when the browser is the first-class product surface.
+Choose Python when the product is mostly automation, scripting, server-rendered web work, or a browser-first application that does not need Go's deployment and concurrency profile.
 
-Choose Rust when the project is mostly a native tool, a shared-core systems product, or a boundary that benefits from stronger safety guarantees than Go alone.
+Choose Rust only when you are working in an existing Rust repo or when the requirement is explicit enough that Go no longer fits on correctness, safety, or systems constraints.
 
 ## Avoid By Default
 
@@ -145,5 +145,5 @@ Choose Rust when the project is mostly a native tool, a shared-core systems prod
 - Giant DI containers
 - Multi-service decomposition before one binary is clearly failing
 - Adding Redis, Kafka, or extra infrastructure before SQLite and a straightforward worker loop have been exhausted
-- Splitting a small product into separate deploy pipelines when one binary serving the SPA as static assets is enough
+- Splitting a small product into extra deploy pipelines before one Go service or one Go service plus a small Python frontend actually needs it
 - `mattn/go-sqlite3` when `modernc.org/sqlite` works fine

@@ -1,6 +1,6 @@
 # Stephen Sawyer
 
-I build terminal-first tools for networking, security, and infrastructure. Python and Go for almost everything, Rust when it earns it. Local-first, self-hosted, no accounts required.
+I build terminal-first tools for networking, security, and infrastructure. Go and Python are the default. Rust is mostly maintenance work on existing crates and reference repos. Local-first, self-hosted, no accounts required.
 
 [dunamismax.com](https://dunamismax.com)
 
@@ -18,7 +18,7 @@ I build terminal-first tools for networking, security, and infrastructure. Pytho
 - [gitpulse](https://github.com/dunamismax/gitpulse) - Local-first git activity analytics. Honest commit signals without uploading source code.
 - [toolworks](https://github.com/dunamismax/toolworks) - Scripts, CLI helpers, and small automation tools that do one thing well.
 
-## Rust Projects
+## Maintained Rust Projects
 
 - [cargo-compatible](https://github.com/dunamismax/cargo-compatible) - Check if your resolved dependency graph actually compiles on a target Rust version. `v1.0.0`
 - [cargo-async-doctor](https://github.com/dunamismax/cargo-async-doctor) - Find async bugs that compile clean and pass Clippy but deadlock at runtime. `v1.0.0`
