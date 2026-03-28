@@ -26,7 +26,7 @@ I build terminal-first tools for networking, security, and infrastructure. Go an
 
 ## Apps
 
-- [scrybase](https://github.com/dunamismax/scrybase) - MTG Commander workbench. Deck lab, pod tracking, matchup journal, meta analytics, tuning loop, Scryfall integration. `v1.0.0`
+- [scrybase](https://github.com/dunamismax/scrybase) - MTG Commander workbench. Deck lab, pod tracking, matchup journal, meta analytics, tuning loop, Scryfall integration. `v2.0.0`
 - [mtg-card-bot](https://github.com/dunamismax/mtg-card-bot) - Discord bot for Magic: The Gathering card lookups with live prices, legality, rulings, and Scryfall-powered embeds.
 
 ## Learning Resources
