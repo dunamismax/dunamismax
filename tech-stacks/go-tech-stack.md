@@ -1,6 +1,6 @@
 # Go Tech Stack
 
-Last reviewed: 2026-03-27
+Last reviewed: 2026-03-29
 
 ## Best Fit
 
@@ -28,8 +28,9 @@ If the product needs a browser surface, pair Go with a [Python/FastAPI](./python
 | Logging | `log/slog` |
 | HTTP | `net/http` first |
 | Router upgrade path | `chi` when route structure and middleware outgrow the stdlib |
-| Database | SQLite |
-| SQLite driver | `database/sql` + `modernc.org/sqlite` |
+| Database | PostgreSQL by default; SQLite only when the repo is deliberately local-first, embedded, or tiny |
+| PostgreSQL driver | `pgx/v5` (`database/sql` stdlib or `pgxpool` when the repo actually needs it) |
+| SQLite driver | `database/sql` + `modernc.org/sqlite` when SQLite is the deliberate choice |
 | Query layer | Plain SQL first; `sqlc` only when query surface genuinely justifies codegen |
 | Migrations | SQL files first; tiny in-repo runner second; `goose` only when the repo truly needs it |
 | Config | Environment variables and flags first, `koanf` only when multiple sources really matter |
@@ -38,9 +39,27 @@ If the product needs a browser surface, pair Go with a [Python/FastAPI](./python
 | Observability | `pprof`, `trace`, Prometheus metrics, OpenTelemetry when tracing is justified |
 | RPC schemas | Buf + Protobuf + Connect only when network boundaries justify it |
 
+## Database Default
+
+Use PostgreSQL by default.
+
+For most new Go applications in this workspace, that means:
+
+- `pgx/v5` as the driver layer
+- plain SQL first
+- `sqlc` when the query surface clearly earns code generation
+- SQL migrations checked into the repo
+
+Choose SQLite only when the repo is deliberately one of these shapes:
+
+- local-first single-user operator software
+- embedded metadata/state inside a CLI or daemon
+- offline-first utilities where shipping one file matters more than networked access
+- tiny internal tools where PostgreSQL would be pure ceremony
+
 ## SQLite Driver Decision
 
-Use `modernc.org/sqlite`. Always.
+When a repo deliberately uses SQLite, use `modernc.org/sqlite`.
 
 It is a pure Go implementation. No CGO. No system library dependency. Clean single-binary story. Cross-compilation works without toolchain surgery. The performance difference from `mattn/go-sqlite3` is negligible for the workloads in this workspace.
 
@@ -52,12 +71,13 @@ Follow the [SQLite Operating Model](./README.md#sqlite-operating-model) in the t
 
 1. Start with one binary and divide the code by capability, not architecture cosplay.
 2. Use the standard library unless a small package clearly removes pain.
-3. Start with SQLite when the product needs state.
-4. Use plain SQL first.
-5. Add `sqlc` only when the query surface or team workflow really earns it.
-6. Add structured logs and Prometheus metrics on day one for long-running services.
-7. Keep the deploy shape obvious.
-8. Pair Go with the Python/FastAPI server-rendered frontend when the browser is a first-class product surface.
+3. Start with PostgreSQL when the product needs durable state.
+4. Use SQLite only when the repo is intentionally local-first, embedded, or tiny.
+5. Use plain SQL first.
+6. Add `sqlc` only when the query surface or team workflow really earns it.
+7. Add structured logs and Prometheus metrics on day one for long-running services.
+8. Keep the deploy shape obvious.
+9. Pair Go with the Python/FastAPI server-rendered frontend when the browser is a first-class product surface.
 
 ## Default Repo Shape
 
@@ -85,18 +105,20 @@ Use `cmd/` for entrypoints, `internal/` for app code, `migrations/` for schema c
 
 The Go data doctrine is:
 
-- SQLite by default
+- PostgreSQL by default
 - Relational data by default
 - Plain SQL first
 - `sqlc` only when backend complexity actually justifies it
+- SQLite only when the repo is deliberately local-first, embedded, or tiny
 
 That means:
 
-- use SQLite for local-first tools, single-node services, operator software, early products, and repos where easy setup matters more than networked concurrency
+- use PostgreSQL for new services, APIs, web backends, networked tools, and any Go application that is meant to grow
+- use SQLite only for local-first tools, single-user operator software, embedded state, caches, or deliberately small utilities
 - use database constraints, transactions, indexes, and explicit query shape instead of hiding truth in repository folklore
 - keep schema truth in readable SQL migration files
 - do not reach for a heavyweight Go ORM as the center of the data layer
-- do not add extra infrastructure before the single-file store is genuinely the bottleneck
+- do not add extra infrastructure before the actual product shape earns it
 
 ## Web Pairing Guidance
 

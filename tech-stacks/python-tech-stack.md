@@ -1,6 +1,6 @@
 # Python Tech Stack
 
-Last reviewed: 2026-03-27
+Last reviewed: 2026-03-29
 
 ## Best Fit
 
@@ -35,8 +35,8 @@ Python is the default for new tools, scripts, automation, APIs, and web surfaces
 | Framework | FastAPI |
 | Validation | Pydantic v2 |
 | Config | pydantic-settings |
-| Database (web apps) | PostgreSQL via SQLAlchemy 2.0 for networked/multi-user apps; SQLite is fine for local-first/self-hosted apps |
-| Database (local tools) | SQLite |
+| Database (web apps) | PostgreSQL via SQLAlchemy 2.0 by default; SQLite only for deliberately local-first, single-user, or tiny apps |
+| Database (local tools) | PostgreSQL by default; SQLite only for tiny, embedded, cache, or one-off use cases |
 | Migrations | Alembic |
 | HTTP client | HTTPX |
 | Server | Uvicorn |
@@ -47,8 +47,8 @@ Python is the default for new tools, scripts, automation, APIs, and web surfaces
 FastAPI is the only Python web framework in this stack. No Django.
 
 For database choice, the default split is simple:
-- **SQLite** for local-first, self-hosted, single-user, or low-write web apps
-- **PostgreSQL** for networked, multi-user, or write-heavy web apps
+- **PostgreSQL** for almost all new Python web applications and any app with real deployment ambitions
+- **SQLite** only when the app is intentionally local-first, single-user, tiny, or acting as an embedded sidecar store
 
 ### Server-Rendered Frontends
 

@@ -4,7 +4,7 @@
 
 This folder is a routing document. Read this file first, then read the stack document(s) that match your project.
 
-> **Last reviewed:** 2026-03-27
+> **Last reviewed:** 2026-03-29
 
 ## How To Use This Folder
 
@@ -12,7 +12,7 @@ This folder is a routing document. Read this file first, then read the stack doc
 
 If you are an LLM, coding agent, or sub-agent reading this file as context for a build task:
 
-1. **Read this README first.** It contains shared rules, the SQLite operating model, and the routing table.
+1. **Read this README first.** It contains shared rules, the database operating model, and the routing table.
 2. **Use the [routing section](#routing) to determine which stack doc(s) to read.**
 3. **Read only the docs the routing table assigns.** Do not load unrelated stack documents.
 
@@ -51,7 +51,7 @@ Rust does not have its own stack doc. In this workspace it is maintenance-only f
 | cargo-compatible | Rust (maintenance) | Existing Rust repo |
 | cargo-async-doctor | Rust (maintenance) | Existing Rust repo |
 | rust-async-field-guide | Rust docs/examples (maintenance) | Existing Rust repo |
-| gitpulse | Repo-specific exception | Go backend with Bun/TypeScript/React dashboard; follow repo README |
+| gitpulse | Repo-specific exception | Go backend with a Python/FastAPI + Jinja2 + htmx UI and a deliberate local-first data model; follow repo README |
 | go-web-server | Repo-specific reference | Go + Echo + Templ + HTMX + PostgreSQL starter; follow repo README |
 | c-from-the-ground-up | C reference/docs | No stack doc |
 | hello-world-from-hell | C novelty repo | No stack doc |
@@ -83,13 +83,47 @@ These apply to every stack. You do not need to re-read them in the individual st
 
 ---
 
+## Database Operating Model
+
+PostgreSQL is the default database for new application work in this workspace.
+
+That means:
+
+- **PostgreSQL first** for web apps, APIs, services, daemons, multi-user tools, and anything with real deployment ambitions
+- **SQLite only when earned** for local-first single-user tools, embedded state, caches, snapshots, SQLite-native products, and very small one-off utilities
+
+If you are starting a new repo and you are not sure which database to pick, choose PostgreSQL.
+
+### PostgreSQL default
+
+Use PostgreSQL by default when the product needs any of the following:
+
+- networked or multi-user access
+- concurrent writes as a normal operating condition
+- service-style deployment
+- richer operational reporting or background jobs
+- a Python or Go application that is meant to grow beyond one local machine or one operator session
+
+### SQLite exceptions
+
+SQLite is still the right tool when the repo is intentionally one of these shapes:
+
+- local-first, single-user desktop-ish or operator software
+- embedded metadata/state inside a CLI, daemon, or utility
+- offline-first tools where shipping one file matters more than networked concurrency
+- caches, snapshots, manifests, or sidecar state
+- products that are specifically about SQLite itself
+- very small utilities or one-off internal tools where PostgreSQL would be pure ceremony
+
+If you pick SQLite, do it on purpose and say why in the repo docs.
+
 ## SQLite Operating Model
 
-SQLite is the default database for local-first tools and Go services. Every repo that uses SQLite must follow these rules.
+When a repo does use SQLite, every repo must follow these rules.
 
 ### Minimum version
 
-SQLite **3.37.0** or later. This is the floor for `STRICT` tables (3.37.0), which this workspace uses by default. `RETURNING` landed in 3.35.0, and built-in math functions require the `SQLITE_ENABLE_MATH_FUNCTIONS` compile-time option (not version-gated). In practice, `modernc.org/sqlite` ships recent enough builds — but if you are linking against a system SQLite, verify both the version and compile options.
+SQLite **3.37.0** or later. This is the floor for `STRICT` tables (3.37.0), which this workspace uses by default. `RETURNING` landed in 3.35.0, and built-in math functions require the `SQLITE_ENABLE_MATH_FUNCTIONS` compile-time option (not version-gated). In practice, `modernc.org/sqlite` ships recent enough builds, but if you are linking against a system SQLite, verify both the version and compile options.
 
 ### Default pragmas
 
@@ -121,25 +155,14 @@ PRAGMA cache_size = -20000;
 - Use `.backup` or `VACUUM INTO` for safe hot backups.
 - For Go apps, expose a backup command or admin endpoint.
 
-### When to use PostgreSQL instead
-
-Use PostgreSQL when the product needs:
-
-- multiple write-heavy processes that cannot share one writer
-- networked multi-node access
-- operational reporting that needs concurrent heavy reads alongside writes
-- a Python/FastAPI web app that is primarily networked, multi-user, or service-style rather than local-first
-
-SQLite is the default for Go CLI tools, daemons, and local-first products. Python web applications can stay on SQLite when they are local-first, single-user, or self-hosted tools without meaningful concurrent write pressure. PostgreSQL is the default for networked Python web applications.
-
 ---
 
 ## Default Meta-Choices Across Repos
 
 | Concern | Default |
 | --- | --- |
-| Database (Go tools) | SQLite |
-| Database (Python web) | PostgreSQL for networked apps; SQLite is fine for local-first/self-hosted apps |
+| Database (Go apps and tools) | PostgreSQL by default; SQLite only for deliberately local-first, embedded, or tiny utilities |
+| Database (Python web) | PostgreSQL by default; SQLite only for deliberately local-first, single-user, or tiny self-hosted apps |
 | Data model | Relational |
 | Query / schema layer | Raw SQL first; keep helper layers thin |
 | Migrations | SQL files for Go; Alembic for Python |
