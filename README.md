@@ -1,43 +1,42 @@
 # Stephen Sawyer
 
-I build local-first tools for networking, security, infrastructure, and operator workflows. Go and Python are the default. Rust is mostly maintenance on existing crates and reference repos. Self-hosted, terminal-friendly, no accounts required.
+I build self-hostable, local-first software for network ops, database tooling, and operator workflows. Python and Go are the default. Rust stays in the lane where it already earns its keep.
+
+Most of what I ship is terminal-first, data-visible, and meant to run without SaaS glue.
 
 [dunamismax.com](https://dunamismax.com)
 
 ---
 
-## Security & Networking
+## Security and networking
 
-- [wirescope](https://github.com/dunamismax/wirescope) - Terminal-first packet capture with top talkers, DNS enrichment, connection tracking, and PCAP export. `v1.0.0`
-- [bore](https://github.com/dunamismax/bore) - Encrypted peer-to-peer file transfer over QUIC, direct when possible and relay-backed when NAT gets in the way. `v1.0.0`
-- [flowhook](https://github.com/dunamismax/flowhook) - mitmproxy addon suite for capture, replay, mutation, endpoint cataloging, auth analysis, and HTTP traffic export. `v1.0.0`
+- [wirescope](https://github.com/dunamismax/wirescope) - Terminal-first network observability with live capture, historical search, DNS context, alerts, and PCAP export. `v1.0.0`
+- [bore](https://github.com/dunamismax/bore) - Encrypted peer-to-peer file transfer over QUIC with automatic relay fallback. `v1.0.1`
+- [flowhook](https://github.com/dunamismax/flowhook) - mitmproxy addon suite for capture, replay, mutation, auth analysis, endpoint cataloging, and export. `v1.0.1`
 
-## Operator Tools
+## Operator tools
 
-- [patchworks](https://github.com/dunamismax/patchworks) - SQLite diff and migration workbench with schema comparison, row-level diffing, merge workflows, snapshots, and a local web UI. `v1.0.0`
-- [gitpulse](https://github.com/dunamismax/gitpulse) - Local-first git activity analytics for honest commit signals without uploading source code.
-- [toolworks](https://github.com/dunamismax/toolworks) - Scripts, CLI helpers, and small automation tools that do one thing well.
+- [patchworks](https://github.com/dunamismax/patchworks) - SQLite diff and migration workbench with schema diff, row diff, merge workflows, snapshots, and a local web UI. `v1.0.0`
+- [gitpulse](https://github.com/dunamismax/gitpulse) - Local-first git activity analytics with separate ledgers for working tree, commit history, and push history. `v0.2.0`
+- [toolworks](https://github.com/dunamismax/toolworks) - Small automation, CLI helpers, and working experiments. Active repo.
 
 ## Apps
 
-- [scrybase](https://github.com/dunamismax/scrybase) - MTG Commander workbench for deck building, pod tracking, matchup notes, meta analytics, tuning, and Scryfall-powered card data. `v2.0.0`
-- [mtg-card-bot](https://github.com/dunamismax/mtg-card-bot) - Discord bot for Magic: The Gathering card lookups with live prices, legality, rulings, and rich Scryfall-powered embeds.
+- [scrybase](https://github.com/dunamismax/scrybase) - Local-first Commander workbench for deck building, collection tracking, pod history, and matchup notes. `v2.0.0`
+- [mtg-card-bot](https://github.com/dunamismax/mtg-card-bot) - Discord bot for fast Magic card lookups with live pricing, legality, rulings, and embed-first responses. `3.0.0`
 
-## Maintained Rust Projects
+## Maintained Rust
 
-- [cargo-compatible](https://github.com/dunamismax/cargo-compatible) - Check whether a resolved dependency graph actually compiles on a target Rust version. `v1.0.0`
-- [cargo-async-doctor](https://github.com/dunamismax/cargo-async-doctor) - Find async bugs that compile clean, pass Clippy, and still deadlock at runtime. `v1.0.0`
-- [rust-async-field-guide](https://github.com/dunamismax/rust-async-field-guide) ([read it](https://dunamismax.github.io/rust-async-field-guide/)) - Twelve chapters on async Rust footguns with reproductions and verified fixes. `v1.0.0`
+- [cargo-compatible](https://github.com/dunamismax/cargo-compatible) - Check whether a resolved dependency graph fits a target Rust version, then fix blockers with a lockfile-first workflow. `v1.0.1`
+- [cargo-async-doctor](https://github.com/dunamismax/cargo-async-doctor) - Catch high-signal async Rust hazards and point to the fix. `v1.0.1`
+- [rust-async-field-guide](https://github.com/dunamismax/rust-async-field-guide) ([read it](https://dunamismax.github.io/rust-async-field-guide/)) - Examples-first guide to async Rust failure modes, debugging, and fixes. `v1.0.0`
 
-## Learning Resources
+## Learning and reference
 
-- [c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up) ([read it](https://dunamismax.github.io/c-from-the-ground-up/)) - C learning workbook that progresses from basics to systems programming, with the explanation in the comments. `141 stars`
-- [go-web-server](https://github.com/dunamismax/go-web-server) - Go starter for server-rendered apps with Echo, Templ, HTMX, PostgreSQL, SQLC, and Mage. `66 stars`
-- [hello-world-from-hell](https://github.com/dunamismax/hello-world-from-hell) - "Hello World" done the wrong way on purpose. A novelty C repo for the unhinged.
-
-## Reference
-
-- [tech-stacks](./tech-stacks/README.md) - Build defaults and project lanes.
+- [c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up) ([read it](https://dunamismax.github.io/c-from-the-ground-up/)) - Progressive C workbook from basics to systems programming. `v1.0.0`
+- [go-web-server](https://github.com/dunamismax/go-web-server) - Go starter for server-rendered apps with Echo, Templ, HTMX, PostgreSQL, SQLC, and Mage. `4.0.0`
+- [hello-world-from-hell](https://github.com/dunamismax/hello-world-from-hell) - Deliberately cursed C. Useless in the best way. `v3.0.0`
+- [tech-stacks](./tech-stacks/README.md) - Build defaults for Python and Go projects.
 
 ---
 
