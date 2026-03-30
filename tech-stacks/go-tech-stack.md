@@ -1,6 +1,6 @@
 # Go Tech Stack
 
-Last reviewed: 2026-03-29
+Last reviewed: 2026-03-30
 
 ## Best Fit
 
@@ -13,7 +13,7 @@ Use this stack when the project is mostly:
 - durable application logic
 - integrations, automation, and operational products
 
-If the product needs a browser surface, pair Go with a [Python/FastAPI](./python-tech-stack.md) frontend layer using Jinja2 + htmx. In this workspace, that is the default web pairing for new Go-backed products.
+If the product needs a browser surface, pair Go with a [Python/FastAPI](./python-tech-stack.md) frontend layer using Jinja2 + htmx. In this workspace, that is the default web pairing for new Go-backed products. If the product's main UX is a rich terminal UI, read [opentui-tech-stack.md](./opentui-tech-stack.md) for that lane.
 
 ## Opinionated Default
 
@@ -157,6 +157,8 @@ Choose Go when:
 - the code is mostly application logic, not native engine work
 
 Choose Python when the product is mostly automation, scripting, server-rendered web work, or a browser-first application that does not need Go's deployment and concurrency profile.
+
+Choose OpenTUI + TypeScript + Bun when the hard part is the terminal UX itself and the product needs real layout, focus, keyboard, and component state.
 
 Choose Rust only when you are working in an existing Rust repo or when the requirement is explicit enough that Go no longer fits on correctness, safety, or systems constraints.
 

@@ -4,7 +4,7 @@
 
 This folder is a routing document. Read this file first, then read the stack document(s) that match your project.
 
-> **Last reviewed:** 2026-03-29
+> **Last reviewed:** 2026-03-30
 
 ## How To Use This Folder
 
@@ -32,6 +32,7 @@ These docs describe the default stack direction for current work. Older repos, r
 | --- | --- | --- |
 | Python script, automation, CLI tool, API, or full-stack app | **Python** | `python-tech-stack.md` |
 | Go service, CLI, API, daemon, or orchestrator | **Go** | `go-tech-stack.md` |
+| Terminal UI, interactive CLI, or terminal-first app with a real component model | **OpenTUI** | `opentui-tech-stack.md` |
 | Existing repo with an intentional exception or legacy stack | **Repo README first** | repo-specific |
 
 Rust does not have its own stack doc. In this workspace it is maintenance-only for existing Rust repos unless a project has a clearly documented reason to require it.
@@ -57,13 +58,15 @@ Rust does not have its own stack doc. In this workspace it is maintenance-only f
 | hello-world-from-hell | C novelty repo | No stack doc |
 | openclaw-backup | Ops/shell + Python | No stack doc |
 
-### Frontend direction
+### Frontend and terminal UI direction
 
-Default direction for new browser surfaces and active rewrites:
+Default direction for new product surfaces and active rewrites:
 
-- **FastAPI + Jinja2 + htmx + Alpine.js** for new frontends
-- No separate frontend build step for new product work. No Node/Bun/TypeScript frontend toolchain by default.
+- **FastAPI + Jinja2 + htmx + Alpine.js** for browser frontends
+- **OpenTUI + TypeScript + Bun** for rich terminal-first interfaces
+- No SPA framework by default for browser work
 - No Django. FastAPI is the only Python web framework in this stack.
+- OpenTUI currently targets Bun first. Treat Bun as required for this lane until upstream broadens runtime support.
 
 Existing repos can diverge when they predate this standard or exist as references. Current exceptions include `gitpulse` and `go-web-server`.
 
@@ -78,7 +81,7 @@ These apply to every stack. You do not need to re-read them in the individual st
 - Prefer one obvious build entrypoint per repo.
 - Prefer process boundaries over language-FFI tangles.
 - Prefer single-binary or small-surface deploys over sprawling control planes.
-- Prefer Go or Python for new work. Treat Rust as maintenance-only unless the repo already exists in Rust or the requirement is exceptional.
+- Prefer Go, Python, or OpenTUI + TypeScript + Bun based on product shape. Treat Rust as maintenance-only unless the repo already exists in Rust or the requirement is exceptional.
 - Add third-party dependencies only when they clearly beat the standard option on correctness, leverage, or operating cost.
 
 ---
@@ -170,6 +173,7 @@ PRAGMA cache_size = -20000;
 | Packaging | Single-purpose binaries (Go) or uv-managed Python apps |
 | CI quality bar | Formatter, linter, type checker, tests, vulnerability scan |
 | Frontend (default for new browser surfaces) | FastAPI + Jinja2 + htmx + Alpine.js (server-rendered, no SPA) |
+| Terminal UI | OpenTUI + TypeScript + Bun |
 | Cross-language integration | Process boundary first, stable protocols second |
 
 ---

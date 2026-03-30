@@ -1,8 +1,8 @@
 # Stephen Sawyer
 
-I build self-hostable, local-first software for network ops, database tooling, and operator workflows. Python and Go are the default. Rust stays in the lane where it already earns its keep.
+I build self-hostable, local-first software for network ops, database tooling, operator workflows, and terminal-first products. Python and Go still carry most of the load. Rust stays in the lane where it already earns its keep.
 
-Most of what I ship is terminal-first, data-visible, and meant to run without SaaS glue.
+Most of what I ship is data-visible and meant to run without SaaS glue. When a product wants a real terminal UI, I now reach for OpenTUI with TypeScript and Bun.
 
 [dunamismax.com](https://dunamismax.com)
 
@@ -36,7 +36,7 @@ Most of what I ship is terminal-first, data-visible, and meant to run without Sa
 - [c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up) ([read it](https://dunamismax.github.io/c-from-the-ground-up/)) - Progressive C workbook from basics to systems programming. `v1.0.0`
 - [go-web-server](https://github.com/dunamismax/go-web-server) - Go starter for server-rendered apps with Echo, Templ, HTMX, PostgreSQL, SQLC, and Mage. `4.0.0`
 - [hello-world-from-hell](https://github.com/dunamismax/hello-world-from-hell) - Deliberately cursed C. Useless in the best way. `v3.0.0`
-- [tech-stacks](./tech-stacks/README.md) - Build defaults for Python and Go projects.
+- [tech-stacks](./tech-stacks/README.md) - Build defaults for Python, Go, and OpenTUI terminal products.
 
 ---
 

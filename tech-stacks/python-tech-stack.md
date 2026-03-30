@@ -1,6 +1,6 @@
 # Python Tech Stack
 
-Last reviewed: 2026-03-29
+Last reviewed: 2026-03-30
 
 ## Best Fit
 
@@ -57,7 +57,8 @@ When the product needs a browser surface:
 - FastAPI serves Jinja2 templates directly
 - htmx handles dynamic updates without a JavaScript build step
 - Alpine.js handles small client-side interactions
-- No separate frontend build toolchain. No Node, no Bun, no TypeScript, no SPA framework.
+- No separate browser frontend build toolchain. No SPA framework.
+- If the product is a real terminal UI, use the OpenTUI + TypeScript + Bun lane instead.
 
 This applies to standalone Python web apps and to operator UIs for Go backend products. The Python layer handles templates and rendering; the Go layer handles the core product logic and data.
 
@@ -152,6 +153,7 @@ pytest
 - Single-binary CLI tools that need zero-dependency distribution → use Go
 - High-performance concurrent network services → use Go
 - Existing cargo plugins or clearly Rust-native systems work → use Rust
+- Rich terminal UI-first products → use OpenTUI + TypeScript + Bun
 - Browser-side code → use htmx + Alpine.js from Python templates, not a JS framework
 
 ## Avoid By Default
@@ -164,4 +166,4 @@ pytest
 - mypy (Pyright is faster and more accurate)
 - Flask (use FastAPI)
 - React / Vue / Angular / any SPA framework (use server-rendered templates + htmx)
-- Node / Bun / TypeScript for frontends (htmx + Alpine.js from Jinja2 templates)
+- Node / Bun / TypeScript for browser frontends (htmx + Alpine.js from Jinja2 templates)
