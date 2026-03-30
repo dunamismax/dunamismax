@@ -1,8 +1,14 @@
 # Stephen Sawyer
 
-I build self-hostable, local-first software for network ops, database tooling, operator workflows, and terminal-first products. Python and Go still carry most of the load. Rust stays in the lane where it already earns its keep.
+I build self-hostable, local-first software for network ops, database tooling, operator workflows, and terminal-first products.
 
-Most of what I ship is data-visible and meant to run without SaaS glue. When a product wants a real terminal UI, I now reach for OpenTUI with TypeScript and Bun.
+Python and Go still carry most backend work. Browser frontends now default to TypeScript + Bun + Astro + Vue. Terminal frontends default to OpenTUI + TypeScript + Bun. When the product shape justifies it, I want both.
+
+Backend is chosen by fit:
+
+- Python for APIs, automation, scripting, data work, and general backend services
+- Go for networking, daemons, systems work, performance-sensitive services, and concurrency-heavy runtime paths
+- Rust stays in the maintenance lane where it already earns its keep
 
 [dunamismax.com](https://dunamismax.com)
 
@@ -36,7 +42,7 @@ Most of what I ship is data-visible and meant to run without SaaS glue. When a p
 - [c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up) ([read it](https://dunamismax.github.io/c-from-the-ground-up/)) - Progressive C workbook from basics to systems programming. `v1.0.0`
 - [go-web-server](https://github.com/dunamismax/go-web-server) - Go starter for server-rendered apps with Echo, Templ, HTMX, PostgreSQL, SQLC, and Mage. `4.0.0`
 - [hello-world-from-hell](https://github.com/dunamismax/hello-world-from-hell) - Deliberately cursed C. Useless in the best way. `v3.0.0`
-- [tech-stacks](./tech-stacks/README.md) - Build defaults for Python, Go, and OpenTUI terminal products.
+- [tech-stacks](./tech-stacks/README.md) - Build defaults for Python and Go backends, Astro + Vue web frontends, and OpenTUI terminal products.
 
 ---
 

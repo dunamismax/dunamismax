@@ -4,14 +4,16 @@ Last reviewed: 2026-03-30
 
 ## Best Fit
 
-Use this stack when the product is mostly:
+Use this stack when the product needs:
 
-- a terminal-first application with real layout, focus, input, and component state
-- an interactive CLI that wants a richer UX than flags and line prompts
-- an operator console, dashboard, workbench, or local-first tool that belongs in the terminal
-- a TUI where interface quality is part of the product, not an afterthought
+- a real terminal UI with layout, focus, input, and component state
+- a terminal-first operator console, workbench, or dashboard
+- an interactive CLI that has outgrown flags and line prompts
+- a serious local operator surface where terminal ergonomics are part of the product
 
-OpenTUI is a native terminal UI core written in Zig with TypeScript bindings. Upstream also exposes a C ABI, but the default lane here is TypeScript on Bun.
+This is the default **terminal frontend lane** in the workspace.
+
+It is usually paired with a backend in Python or Go. When the product also needs a browser surface, pair this lane with [Astro + Vue](./web-frontend-tech-stack.md) as a sibling frontend.
 
 ## Opinionated Default
 
@@ -26,17 +28,18 @@ OpenTUI is a native terminal UI core written in Zig with TypeScript bindings. Up
 | Type checking | `tsc --noEmit` |
 | Testing | `bun test` |
 | Build entrypoint | `bun run` |
-| Browser companion | Python/FastAPI only if the product also needs a web surface |
+| Backend pairing | Python or Go, chosen by product shape |
+| Browser pairing | Astro + Vue on Bun when the product also needs the web |
 
 ## What Matters About OpenTUI
 
-From the official docs and repo today:
+From the official site and docs today:
 
-- OpenTUI is built on a native Zig core with TypeScript bindings
-- the project is Bun-first right now
-- `@opentui/core` gives you the imperative renderer and core primitives
+- OpenTUI is a native terminal UI core written in Zig with TypeScript bindings
+- the native core exposes a C ABI
+- `@opentui/core` provides the imperative renderer and core primitives
 - React and Solid bindings exist, but they are optional layers
-- the native core exposes a C ABI if a repo later needs another language at the boundary
+- OpenTUI is currently Bun-exclusive, with Deno and Node support still in progress
 
 That makes this a good fit for terminal products that need a real UI model without dragging a browser into the loop.
 
@@ -46,9 +49,9 @@ That makes this a good fit for terminal products that need a real UI model witho
 2. Add `@opentui/core` first.
 3. Build the first version with the imperative API.
 4. Keep state local and explicit.
-5. Reach for React or Solid only when the component tree is clearly earning a reconciler.
-6. Keep the backend boundary boring. Local process, HTTP, or a small RPC surface.
-7. If the product also needs a browser, keep that as a separate Python/FastAPI surface instead of forcing one UI stack to do both jobs.
+5. Reach for React or Solid only when the component tree clearly earns a reconciler.
+6. Keep the backend boundary boring: local process, HTTP, or a small RPC surface.
+7. If the product also needs a browser, add Astro + Vue as a sibling frontend instead of trying to force one UI stack to do both jobs.
 
 ## Default Repo Shape
 
@@ -71,12 +74,12 @@ Use `src/main.ts` as the obvious entrypoint. Keep screen layout, component primi
 
 ## Component Guidance
 
-- Prefer OpenTUI constructs and primitives over wrapping everything immediately.
-- Treat layout as product logic. Terminal space is constrained, so be explicit.
-- Keep keyboard handling visible and test the important paths.
-- Design for resize, focus, and partial redraw from the start.
-- If the app is mostly forms, lists, panes, search, and shortcuts, this stack is in its lane.
-- If the app mostly prints output and exits, a plain Go or Python CLI is probably the better answer.
+- prefer OpenTUI constructs and primitives over wrapping everything immediately
+- treat layout as product logic
+- keep keyboard handling visible and test the important paths
+- design for resize, focus, and partial redraw from the start
+- if the app is mostly forms, lists, panes, search, and shortcuts, this stack is in its lane
+- if the app mostly prints output and exits, a plain Go or Python CLI is probably the better answer
 
 ## Quality Bar
 
@@ -89,17 +92,27 @@ bunx tsc --noEmit
 bun test
 ```
 
-If the repo has a small smoke entrypoint, also run it once in a real terminal before shipping.
+If the repo has a smoke entrypoint, also run it once in a real terminal before shipping.
 
 ## Integration Guidance
 
 Use this stack for the terminal UX, not for everything by default.
 
-- Pair it with **Go** when the hard part is networking, concurrency, daemon behavior, or systems integration.
-- Pair it with **Python** when the hard part is automation, data work, APIs, or a server-rendered web companion.
-- Leave **Rust** in its existing maintenance lane unless the repo is already Rust-native.
+- Pair it with **Go** when the hard part is networking, daemon behavior, systems integration, or concurrency.
+- Pair it with **Python** when the hard part is automation, APIs, data work, or service logic.
+- Pair it with **Astro + Vue** when the product also needs a browser frontend.
+- Leave **Rust** in the maintenance lane unless the repo is already Rust-native.
 
 Cross-language boundaries should stay simple and observable.
+
+## Dual Frontend Guidance
+
+This workspace now explicitly allows the product to have both:
+
+- a web frontend for browser access, sharing, and wider reach
+- a terminal frontend for operators, power users, or workflows that are better in a terminal
+
+Use dual frontends when they improve the product. Do not add a TUI just because it sounds cool.
 
 ## When Not To Use This Stack
 
@@ -107,7 +120,7 @@ Cross-language boundaries should stay simple and observable.
 - the primary interface is a browser, not a terminal
 - the product needs a single static binary more than it needs a rich TUI
 - the team does not want Bun in the toolchain
-- the UI complexity is low enough that curses-style minimalism or plain stdout wins
+- the UI complexity is low enough that plain stdout wins
 
 ## Avoid By Default
 
@@ -115,4 +128,4 @@ Cross-language boundaries should stay simple and observable.
 - recreating browser UI habits inside the terminal
 - hiding keybindings or focus rules in clever abstractions
 - mixing the TUI layer directly into backend business logic
-- using this lane as an excuse to build a browser SPA later
+- building a second frontend that does not improve the operator workflow

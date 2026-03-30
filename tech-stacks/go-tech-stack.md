@@ -6,20 +6,22 @@ Last reviewed: 2026-03-30
 
 Use this stack when the project is mostly:
 
-- services and daemons
-- CLIs and operator tooling
-- orchestration and control planes
-- APIs and network-facing systems software
-- durable application logic
-- integrations, automation, and operational products
+- network services and daemons
+- CLIs and operator tooling that benefit from a single binary
+- systems work and infrastructure-facing software
+- APIs and backends with meaningful concurrency demands
+- long-running runtimes where deployment simplicity matters
+- performance-sensitive services where Go's profile is a better fit than Python
 
-If the product needs a browser surface, pair Go with a [Python/FastAPI](./python-tech-stack.md) frontend layer using Jinja2 + htmx. In this workspace, that is the default web pairing for new Go-backed products. If the product's main UX is a rich terminal UI, read [opentui-tech-stack.md](./opentui-tech-stack.md) for that lane.
+Go is not the universal default backend either. Use it when the runtime shape, concurrency model, deployment target, or systems constraints clearly justify it.
+
+If the product needs a browser surface, the default frontend pairing is now [TypeScript + Bun + Astro + Vue](./web-frontend-tech-stack.md). If the product also benefits from a real terminal operator surface, pair it with [OpenTUI](./opentui-tech-stack.md).
 
 ## Opinionated Default
 
 | Area | Default |
 | --- | --- |
-| Toolchain | Go (latest stable) |
+| Toolchain | Latest stable Go |
 | Dependency management | Go modules |
 | Workspace mode | `go work` only when actively developing multiple modules together |
 | Formatting | `gofmt` |
@@ -29,15 +31,15 @@ If the product needs a browser surface, pair Go with a [Python/FastAPI](./python
 | HTTP | `net/http` first |
 | Router upgrade path | `chi` when route structure and middleware outgrow the stdlib |
 | Database | PostgreSQL by default; SQLite only when the repo is deliberately local-first, embedded, or tiny |
-| PostgreSQL driver | `pgx/v5` (`database/sql` stdlib or `pgxpool` when the repo actually needs it) |
+| PostgreSQL driver | `pgx/v5` via `database/sql` or `pgxpool` when the repo actually needs pooling semantics |
 | SQLite driver | `database/sql` + `modernc.org/sqlite` when SQLite is the deliberate choice |
-| Query layer | Plain SQL first; `sqlc` only when query surface genuinely justifies codegen |
+| Query layer | Plain SQL first; `sqlc` only when the query surface genuinely justifies codegen |
 | Migrations | SQL files first; tiny in-repo runner second; `goose` only when the repo truly needs it |
-| Config | Environment variables and flags first, `koanf` only when multiple sources really matter |
+| Config | Environment variables and flags first |
 | CLI | `flag` for small tools, `cobra` for large multi-command CLIs |
 | Task runner | `mage` |
-| Observability | `pprof`, `trace`, Prometheus metrics, OpenTelemetry when tracing is justified |
-| RPC schemas | Buf + Protobuf + Connect only when network boundaries justify it |
+| Browser frontend pairing | Astro + Vue on Bun |
+| Terminal frontend pairing | OpenTUI + TypeScript + Bun |
 
 ## Database Default
 
@@ -53,7 +55,7 @@ For most new Go applications in this workspace, that means:
 Choose SQLite only when the repo is deliberately one of these shapes:
 
 - local-first single-user operator software
-- embedded metadata/state inside a CLI or daemon
+- embedded metadata or state inside a CLI or daemon
 - offline-first utilities where shipping one file matters more than networked access
 - tiny internal tools where PostgreSQL would be pure ceremony
 
@@ -61,7 +63,7 @@ Choose SQLite only when the repo is deliberately one of these shapes:
 
 When a repo deliberately uses SQLite, use `modernc.org/sqlite`.
 
-It is a pure Go implementation. No CGO. No system library dependency. Clean single-binary story. Cross-compilation works without toolchain surgery. The performance difference from `mattn/go-sqlite3` is negligible for the workloads in this workspace.
+It is pure Go. No CGO. No system library dependency. Clean single-binary story. Cross-compilation works without toolchain surgery.
 
 Do not use `mattn/go-sqlite3` unless a specific repo has a verified, documented reason to require CGO-linked system SQLite.
 
@@ -69,7 +71,7 @@ Follow the [SQLite Operating Model](./README.md#sqlite-operating-model) in the t
 
 ## Golden Path
 
-1. Start with one binary and divide the code by capability, not architecture cosplay.
+1. Start with one binary and divide the code by capability, not architecture theater.
 2. Use the standard library unless a small package clearly removes pain.
 3. Start with PostgreSQL when the product needs durable state.
 4. Use SQLite only when the repo is intentionally local-first, embedded, or tiny.
@@ -77,7 +79,7 @@ Follow the [SQLite Operating Model](./README.md#sqlite-operating-model) in the t
 6. Add `sqlc` only when the query surface or team workflow really earns it.
 7. Add structured logs and Prometheus metrics on day one for long-running services.
 8. Keep the deploy shape obvious.
-9. Pair Go with the Python/FastAPI server-rendered frontend when the browser is a first-class product surface.
+9. Add Astro + Vue and OpenTUI as sibling frontends when the product needs them.
 
 ## Default Repo Shape
 
@@ -106,8 +108,8 @@ Use `cmd/` for entrypoints, `internal/` for app code, `migrations/` for schema c
 The Go data doctrine is:
 
 - PostgreSQL by default
-- Relational data by default
-- Plain SQL first
+- relational data by default
+- plain SQL first
 - `sqlc` only when backend complexity actually justifies it
 - SQLite only when the repo is deliberately local-first, embedded, or tiny
 
@@ -115,59 +117,66 @@ That means:
 
 - use PostgreSQL for new services, APIs, web backends, networked tools, and any Go application that is meant to grow
 - use SQLite only for local-first tools, single-user operator software, embedded state, caches, or deliberately small utilities
-- use database constraints, transactions, indexes, and explicit query shape instead of hiding truth in repository folklore
+- use database constraints, transactions, indexes, and explicit query shape instead of hiding truth in repo folklore
 - keep schema truth in readable SQL migration files
 - do not reach for a heavyweight Go ORM as the center of the data layer
 - do not add extra infrastructure before the actual product shape earns it
 
-## Web Pairing Guidance
+## Frontend Pairing Guidance
 
-When the product has a browser-facing frontend, a Python/FastAPI layer owns it. See `python-tech-stack.md`.
+When the product has a browser-facing frontend:
 
-- Python (FastAPI + Jinja2 + htmx) owns templates, presentation, and browser interaction
-- Go owns auth, business logic, persistence, jobs, and operational concerns
-- the Python frontend fetches data from Go's JSON API endpoints
-- keep the boundary same-origin HTTP or localhost proxy
-- let SQLite live on the Go side, where persistent state belongs
+- Astro owns page composition, delivery, and server-first rendering
+- Vue owns interactive components, stateful widgets, and richer browser behavior
+- Go owns auth, business logic, persistence, jobs, APIs, and operational concerns
+- keep the boundary boring: HTTP, JSON, server-rendered edges, or same-origin integration
+
+When the product has a real terminal operator surface:
+
+- OpenTUI owns layout, focus, keyboard flow, and terminal interaction
+- Go owns the runtime, state transitions, persistence, and long-running work
+- keep the frontend and backend boundary observable and testable
+
+Dual frontends are a good fit for operational products when both browser and terminal workflows are genuinely useful.
 
 ## Testing Baseline
 
 - `go test ./...` is always the base path
-- Use table-driven tests where they make the cases easier to read
-- Use `httptest` for HTTP handlers
-- Use fuzz tests for parsers, protocol inputs, and anything that ingests attacker-controlled data
-- Keep integration tests explicit and easy to run locally
+- use table-driven tests where they make the cases easier to read
+- use `httptest` for HTTP handlers
+- use fuzz tests for parsers, protocol inputs, and attacker-controlled inputs
+- keep integration tests explicit and easy to run locally
 
 ## Security Baseline
 
 - `govulncheck` in CI
-- Dependency updates on a regular cadence
-- Explicit timeouts on outbound network calls
-- No silent retry storms
-- Authenticated admin surfaces
-- Audit logging for security-relevant actions
+- dependency updates on a regular cadence
+- explicit timeouts on outbound network calls
+- no silent retry storms
+- authenticated admin surfaces
+- audit logging for security-relevant actions
 
-## When To Choose Go Over Python Or Rust
+## When To Choose Go Over Python
 
 Choose Go when:
 
-- the hard part is coordination, control, state, or operator workflow
-- operators need an API, CLI, or administrative surface
-- you need straightforward concurrency and deployment
-- the code is mostly application logic, not native engine work
+- the hard part is networking, concurrency, systems behavior, or daemon lifecycle
+- operators need a durable service, CLI, or control-plane runtime
+- you need straightforward concurrency and deployment simplicity
+- the code is mostly service logic, not scripting or data tooling
 
-Choose Python when the product is mostly automation, scripting, server-rendered web work, or a browser-first application that does not need Go's deployment and concurrency profile.
+Choose Python when the product is mostly automation, scripting, backend integration work, or data-heavy service logic.
 
-Choose OpenTUI + TypeScript + Bun when the hard part is the terminal UX itself and the product needs real layout, focus, keyboard, and component state.
+Choose OpenTUI + TypeScript + Bun when the hard part is the terminal UX itself.
 
-Choose Rust only when you are working in an existing Rust repo or when the requirement is explicit enough that Go no longer fits on correctness, safety, or systems constraints.
+Choose Rust only when you are already in a Rust repo or the requirement is explicit enough that Go no longer fits.
 
 ## Avoid By Default
 
-- Heavyweight ORMs as the center of the data layer
-- Reflection-driven web frameworks
-- Giant DI containers
-- Multi-service decomposition before one binary is clearly failing
-- Adding Redis, Kafka, or extra infrastructure before SQLite and a straightforward worker loop have been exhausted
-- Splitting a small product into extra deploy pipelines before one Go service or one Go service plus a small Python frontend actually needs it
+- heavyweight ORMs as the center of the data layer
+- reflection-driven web frameworks
+- giant DI containers
+- multi-service decomposition before one binary is clearly failing
+- adding Redis, Kafka, or extra infrastructure before PostgreSQL or SQLite plus a straightforward worker loop have been exhausted
+- splitting a small product into extra deploy pipelines before one Go backend and its frontends actually need it
 - `mattn/go-sqlite3` when `modernc.org/sqlite` works fine

@@ -6,75 +6,78 @@ Last reviewed: 2026-03-30
 
 Use this stack when the project is mostly:
 
+- backend services and APIs
 - automation, scripting, and operational tools
-- CLI utilities and data processing
-- API services and backend systems
-- web applications with server-rendered frontends
-- anything where development speed and ecosystem depth matter more than binary size
+- data processing, ingestion, and analysis
+- background jobs and integration glue
+- CLI utilities where a Python runtime is acceptable
+- application logic where development speed and ecosystem depth matter more than a single static binary
 
-Python is the default for new tools, scripts, automation, APIs, and web surfaces. Use Go when the product needs a single-binary deploy, high-concurrency networking, or systems-level performance. Treat Rust as maintenance-only unless you are already in an existing Rust repo or the requirement is exceptional.
+Python is not the universal default backend. Use it when the backend shape fits Python. Choose Go when the product is really about networking, daemons, systems work, concurrency, or runtime performance.
+
+For browser frontends, do **not** default to a Python template stack. The default web frontend for this workspace now lives in [web-frontend-tech-stack.md](./web-frontend-tech-stack.md): TypeScript + Bun + Astro + Vue.
 
 ## Opinionated Default
 
 | Area | Default |
 | --- | --- |
-| Python version | Latest stable (3.12+) |
-| Package/env management | `uv` |
-| Project manifest | `pyproject.toml` (single source of truth) |
+| Python version | Latest stable, 3.12+ |
+| Package and env management | `uv` |
+| Project manifest | `pyproject.toml` as the single source of truth |
 | Linting | `ruff check` |
-| Formatting | `ruff format` (run `ruff check --fix` first for import sorting) |
+| Formatting | `ruff format` |
 | Type checking | Pyright |
 | Testing | pytest + coverage.py |
 | Local gates | pre-commit |
-| CI | `uv sync` → `ruff` → Pyright → `pytest` |
+| CI | `uv sync` → `ruff` → `pyright` → `pytest` |
 
-## Web Stack
+## Backend and API Stack
 
 | Area | Default |
 | --- | --- |
-| Framework | FastAPI |
+| API framework | FastAPI |
 | Validation | Pydantic v2 |
 | Config | pydantic-settings |
-| Database (web apps) | PostgreSQL via SQLAlchemy 2.0 by default; SQLite only for deliberately local-first, single-user, or tiny apps |
-| Database (local tools) | PostgreSQL by default; SQLite only for tiny, embedded, cache, or one-off use cases |
+| Database | PostgreSQL via SQLAlchemy 2.0 by default; SQLite only when deliberately local-first, embedded, cache-like, or tiny |
 | Migrations | Alembic |
 | HTTP client | HTTPX |
-| Server | Uvicorn |
-| Templates | Jinja2 |
-| Frontend interactivity | htmx + Alpine.js |
-| E2E tests | Playwright for Python |
+| ASGI server | Uvicorn |
+| Background work | Plain process or queue only when the repo actually needs it |
+| Browser frontend pairing | Astro + Vue on Bun |
+| Terminal frontend pairing | OpenTUI + TypeScript + Bun |
 
-FastAPI is the only Python web framework in this stack. No Django.
+FastAPI stays in the stack, but now as a backend and API tool, not the default browser frontend story.
 
-For database choice, the default split is simple:
-- **PostgreSQL** for almost all new Python web applications and any app with real deployment ambitions
-- **SQLite** only when the app is intentionally local-first, single-user, tiny, or acting as an embedded sidecar store
+## Backend Role
 
-### Server-Rendered Frontends
+In this workspace, Python is the default choice when the backend problem looks like this:
 
-When the product needs a browser surface:
+- API orchestration
+- automation and scripting
+- data work
+- backend service logic
+- integrations and adapters
+- internal tools with moderate runtime demands
+- jobs, workers, importers, and admin tooling
 
-- FastAPI serves Jinja2 templates directly
-- htmx handles dynamic updates without a JavaScript build step
-- Alpine.js handles small client-side interactions
-- No separate browser frontend build toolchain. No SPA framework.
-- If the product is a real terminal UI, use the OpenTUI + TypeScript + Bun lane instead.
+If the product also needs a browser surface, the browser frontend should usually be a separate Astro + Vue app consuming the Python API or sharing same-origin boundaries through a thin integration layer.
 
-This applies to standalone Python web apps and to operator UIs for Go backend products. The Python layer handles templates and rendering; the Go layer handles the core product logic and data.
+If the product also needs a terminal operator surface, pair the Python backend with OpenTUI instead of trying to cram terminal UX into a plain CLI.
 
 ## Golden Path
 
-1. Start with `uv init` and `pyproject.toml`.
-2. Pin Python version in `.python-version`.
-3. Add `ruff` and `pyright` to dev dependencies from day one.
+1. Start with `uv init` and a clean `pyproject.toml`.
+2. Pin the Python version in `.python-version`.
+3. Add `ruff` and `pyright` from day one.
 4. Use type hints everywhere. No untyped public functions.
-5. Use `pytest` for tests. Keep them next to the code or in `tests/`.
-6. Set up `pre-commit` with ruff and pyright hooks.
+5. Start with PostgreSQL unless the repo is intentionally local-first or embedded.
+6. Use `pytest` for tests and keep them close to the code or under `tests/`.
 7. Use `uv run` for scripts and `uv sync` for dependency management.
+8. Keep the browser frontend separate when the product has a real web surface.
 
 ## Default Repo Shape
 
-### Scripts and tools
+### Libraries, automation, and service code
 
 ```text
 project/
@@ -92,7 +95,7 @@ project/
   README.md
 ```
 
-### FastAPI web apps
+### FastAPI backend
 
 ```text
 project/
@@ -100,11 +103,11 @@ project/
     app/
       __init__.py
       main.py
+      api/
+      services/
+      models/
+      db/
       config.py
-      models.py
-      routes/
-      templates/
-      static/
   tests/
   migrations/
   alembic.ini
@@ -113,21 +116,23 @@ project/
   README.md
 ```
 
+Keep templates and static browser assets out of the Python repo unless the repo has a deliberate, documented reason to serve them directly.
+
 ## Dependency Rules
 
-- Use `uv add` for dependencies. Never edit `pyproject.toml` dependency lists by hand.
+- Use `uv add` for dependencies. Do not hand-edit dependency lists unless there is a good reason.
 - Lock dependencies with `uv lock`. Commit the lockfile.
 - Separate runtime and dev dependencies.
 - Prefer well-maintained packages with type stubs or inline types.
-- Avoid dependency sprawl. The standard library covers more than most people think.
+- Avoid dependency sprawl. The standard library covers a lot.
 
 ## Testing Guidance
 
 - Use `pytest` for everything.
 - Use `pytest-cov` for coverage reporting.
-- Use fixtures over setup/teardown methods.
-- Use `httpx` + FastAPI's `TestClient` for API tests.
-- Use Playwright for Python when end-to-end browser tests are needed.
+- Use fixtures over setup and teardown methods.
+- Use `httpx` and FastAPI testing utilities for API tests.
+- Test the API contract, not just individual functions.
 
 ## CI Quality Bar
 
@@ -143,27 +148,27 @@ pytest
 
 ## Security Baseline
 
-- Validate all inputs with Pydantic.
+- Validate inputs with Pydantic.
 - Use environment variables for secrets. Never commit `.env` files.
-- Use `bandit` for security-focused static analysis when the project handles sensitive data.
+- Use `bandit` when the repo handles sensitive data or untrusted execution paths.
 - Pin dependencies and audit regularly.
+- Put explicit timeouts on outbound network calls.
 
 ## When Not To Use Python
 
-- Single-binary CLI tools that need zero-dependency distribution → use Go
-- High-performance concurrent network services → use Go
-- Existing cargo plugins or clearly Rust-native systems work → use Rust
-- Rich terminal UI-first products → use OpenTUI + TypeScript + Bun
-- Browser-side code → use htmx + Alpine.js from Python templates, not a JS framework
+- high-concurrency network services or daemons where Go is the better runtime
+- single-binary operator tools that need zero-runtime distribution
+- systems work where deployment simplicity and concurrency dominate the trade
+- browser frontend implementation
+- rich terminal UI-first products where OpenTUI is the actual fit
 
 ## Avoid By Default
 
-- Django (FastAPI covers all web use cases in this stack)
-- Poetry (uv replaces it)
-- pipenv (superseded by uv)
-- setup.py / setup.cfg (use pyproject.toml)
-- Black + isort + flake8 (ruff replaces all three)
-- mypy (Pyright is faster and more accurate)
-- Flask (use FastAPI)
-- React / Vue / Angular / any SPA framework (use server-rendered templates + htmx)
-- Node / Bun / TypeScript for browser frontends (htmx + Alpine.js from Jinja2 templates)
+- Django
+- Poetry
+- pipenv
+- `setup.py` or `setup.cfg` for new repos
+- Black + isort + flake8 when ruff replaces them
+- mypy when Pyright is already in the stack
+- Python template-driven browser frontends as the default web path
+- mixing frontend concerns into the Python repo without a clear reason
