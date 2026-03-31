@@ -72,7 +72,6 @@ These docs describe the current default direction for new work and major rewrite
 | Product with both browser and terminal frontends | **Web frontend + OpenTUI + chosen backend doc** | `web-frontend-tech-stack.md` + `opentui-tech-stack.md` + backend doc |
 | Existing repo with an intentional exception or legacy stack | **Repo README first** | repo-specific |
 
-Rust does not have its own stack doc. In this workspace it is maintenance-only for existing Rust repos unless a repo has a clearly documented reason to stay there.
 
 ### Recommended lane map for active repos
 
@@ -82,17 +81,12 @@ This table is routing guidance for future work, not a claim that every repo alre
 | --- | --- | --- |
 | bore | Go backend | Add Astro only if a browser surface becomes first-class. Add Vue later only if the UI earns it |
 | wirescope | Go backend + Astro web + OpenTUI optional | Strong dual-frontend candidate for operator workflows. Add Vue only for heavier browser interaction |
-| flowhook | Python backend/tooling | Add Astro only if browser workflows earn it. Vue is optional, not automatic |
-| patchworks | Python backend + Astro web | Core product stays Python; browser UI follows the new web lane, with Vue only if interaction justifies it |
 | toolworks | Python / Go / shell | Choose per tool; Python by default, Go when systems or networking shape justifies it |
 | scrybase | Python backend + Astro web + OpenTUI optional | Dual frontend can make sense if the terminal lane improves the workflow. Add Vue only where the web UI needs it |
 | mtg-card-bot | Python backend/bot | No separate frontend by default |
 | dunamismax.com | Astro web | Public-facing site follows the new web lane. Keep Vue out unless there is a real interaction case |
 | gitpulse | Repo-specific exception | Follow repo README and in-repo docs |
 | go-web-server | Repo-specific reference | Go web reference repo; not the default browser lane for new work |
-| cargo-compatible | Rust maintenance | Existing Rust repo |
-| cargo-async-doctor | Rust maintenance | Existing Rust repo |
-| rust-async-field-guide | Rust docs/examples maintenance | Existing Rust repo |
 | c-from-the-ground-up | C reference/docs | No stack doc |
 | hello-world-from-hell | C novelty repo | No stack doc |
 | openclaw-backup | Ops/shell + Python | No stack doc |

@@ -169,7 +169,6 @@ Choose Python when the product is mostly automation, scripting, backend integrat
 
 Choose OpenTUI + TypeScript + Bun when the hard part is the terminal UX itself.
 
-Choose Rust only when you are already in a Rust repo or the requirement is explicit enough that Go no longer fits.
 
 ## Avoid By Default
 

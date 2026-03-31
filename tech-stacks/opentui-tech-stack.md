@@ -101,7 +101,6 @@ Use this stack for the terminal UX, not for everything by default.
 - Pair it with **Go** when the hard part is networking, daemon behavior, systems integration, or concurrency.
 - Pair it with **Python** when the hard part is automation, APIs, data work, or service logic.
 - Pair it with **Astro** when the product also needs a browser frontend. Add Vue only when the browser UI earns it.
-- Leave **Rust** in the maintenance lane unless the repo is already Rust-native.
 
 Cross-language boundaries should stay simple and observable.
 
