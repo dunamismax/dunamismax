@@ -1,6 +1,6 @@
 # Go Tech Stack
 
-Last reviewed: 2026-03-30
+Last reviewed: 2026-03-31
 
 ## Best Fit
 
@@ -15,7 +15,7 @@ Use this stack when the project is mostly:
 
 Go is not the universal default backend either. Use it when the runtime shape, concurrency model, deployment target, or systems constraints clearly justify it.
 
-If the product needs a browser surface, the default frontend pairing is now [TypeScript + Bun + Astro + Vue](./web-frontend-tech-stack.md). If the product also benefits from a real terminal operator surface, pair it with [OpenTUI](./opentui-tech-stack.md).
+If the product needs a browser surface, the default frontend pairing is now [TypeScript + Bun + Astro](./web-frontend-tech-stack.md). Add Vue only when the browser UI earns it. If the product also benefits from a real terminal operator surface, pair it with [OpenTUI](./opentui-tech-stack.md).
 
 ## Opinionated Default
 
@@ -38,7 +38,7 @@ If the product needs a browser surface, the default frontend pairing is now [Typ
 | Config | Environment variables and flags first |
 | CLI | `flag` for small tools, `cobra` for large multi-command CLIs |
 | Task runner | `mage` |
-| Browser frontend pairing | Astro + Vue on Bun |
+| Browser frontend pairing | Astro on Bun, with Vue only when the UI earns it |
 | Terminal frontend pairing | OpenTUI + TypeScript + Bun |
 
 ## Database Default
@@ -79,7 +79,7 @@ Follow the [SQLite Operating Model](./README.md#sqlite-operating-model) in the t
 6. Add `sqlc` only when the query surface or team workflow really earns it.
 7. Add structured logs and Prometheus metrics on day one for long-running services.
 8. Keep the deploy shape obvious.
-9. Add Astro + Vue and OpenTUI as sibling frontends when the product needs them.
+9. Add Astro and OpenTUI as sibling frontends when the product needs them. Add Vue only where the browser UI earns it.
 
 ## Default Repo Shape
 
@@ -127,7 +127,7 @@ That means:
 When the product has a browser-facing frontend:
 
 - Astro owns page composition, delivery, and server-first rendering
-- Vue owns interactive components, stateful widgets, and richer browser behavior
+- Vue is optional and owns interactive components, stateful widgets, and richer browser behavior only when the browser UI actually needs that extra layer
 - Go owns auth, business logic, persistence, jobs, APIs, and operational concerns
 - keep the boundary boring: HTTP, JSON, server-rendered edges, or same-origin integration
 

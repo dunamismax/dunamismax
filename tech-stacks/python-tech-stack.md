@@ -1,6 +1,6 @@
 # Python Tech Stack
 
-Last reviewed: 2026-03-30
+Last reviewed: 2026-03-31
 
 ## Best Fit
 
@@ -15,7 +15,7 @@ Use this stack when the project is mostly:
 
 Python is not the universal default backend. Use it when the backend shape fits Python. Choose Go when the product is really about networking, daemons, systems work, concurrency, or runtime performance.
 
-For browser frontends, do **not** default to a Python template stack. The default web frontend for this workspace now lives in [web-frontend-tech-stack.md](./web-frontend-tech-stack.md): TypeScript + Bun + Astro + Vue.
+For browser frontends, do **not** default to a Python template stack. The default web frontend for this workspace now lives in [web-frontend-tech-stack.md](./web-frontend-tech-stack.md): TypeScript + Bun + Astro, with Vue only when the UI earns it.
 
 ## Opinionated Default
 
@@ -43,7 +43,7 @@ For browser frontends, do **not** default to a Python template stack. The defaul
 | HTTP client | HTTPX |
 | ASGI server | Uvicorn |
 | Background work | Plain process or queue only when the repo actually needs it |
-| Browser frontend pairing | Astro + Vue on Bun |
+| Browser frontend pairing | Astro on Bun, with Vue only when the UI earns it |
 | Terminal frontend pairing | OpenTUI + TypeScript + Bun |
 
 FastAPI stays in the stack, but now as a backend and API tool, not the default browser frontend story.
@@ -60,7 +60,7 @@ In this workspace, Python is the default choice when the backend problem looks l
 - internal tools with moderate runtime demands
 - jobs, workers, importers, and admin tooling
 
-If the product also needs a browser surface, the browser frontend should usually be a separate Astro + Vue app consuming the Python API or sharing same-origin boundaries through a thin integration layer.
+If the product also needs a browser surface, the browser frontend should usually be a separate Astro app consuming the Python API or sharing same-origin boundaries through a thin integration layer. Add Vue only for substantial interactivity.
 
 If the product also needs a terminal operator surface, pair the Python backend with OpenTUI instead of trying to cram terminal UX into a plain CLI.
 

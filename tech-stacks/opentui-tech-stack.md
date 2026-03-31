@@ -1,6 +1,6 @@
 # OpenTUI + TypeScript + Bun Tech Stack
 
-Last reviewed: 2026-03-30
+Last reviewed: 2026-03-31
 
 ## Best Fit
 
@@ -13,7 +13,7 @@ Use this stack when the product needs:
 
 This is the default **terminal frontend lane** in the workspace.
 
-It is usually paired with a backend in Python or Go. When the product also needs a browser surface, pair this lane with [Astro + Vue](./web-frontend-tech-stack.md) as a sibling frontend.
+It is usually paired with a backend in Python or Go. When the product also needs a browser surface, pair this lane with [Astro](./web-frontend-tech-stack.md) as a sibling frontend. Add Vue only when the browser UI earns it.
 
 ## Opinionated Default
 
@@ -29,7 +29,7 @@ It is usually paired with a backend in Python or Go. When the product also needs
 | Testing | `bun test` |
 | Build entrypoint | `bun run` |
 | Backend pairing | Python or Go, chosen by product shape |
-| Browser pairing | Astro + Vue on Bun when the product also needs the web |
+| Browser pairing | Astro on Bun when the product also needs the web, with Vue only when earned |
 
 ## What Matters About OpenTUI
 
@@ -51,7 +51,7 @@ That makes this a good fit for terminal products that need a real UI model witho
 4. Keep state local and explicit.
 5. Reach for React or Solid only when the component tree clearly earns a reconciler.
 6. Keep the backend boundary boring: local process, HTTP, or a small RPC surface.
-7. If the product also needs a browser, add Astro + Vue as a sibling frontend instead of trying to force one UI stack to do both jobs.
+7. If the product also needs a browser, add Astro as a sibling frontend instead of trying to force one UI stack to do both jobs. Add Vue only when the browser UI earns it.
 
 ## Default Repo Shape
 
@@ -100,7 +100,7 @@ Use this stack for the terminal UX, not for everything by default.
 
 - Pair it with **Go** when the hard part is networking, daemon behavior, systems integration, or concurrency.
 - Pair it with **Python** when the hard part is automation, APIs, data work, or service logic.
-- Pair it with **Astro + Vue** when the product also needs a browser frontend.
+- Pair it with **Astro** when the product also needs a browser frontend. Add Vue only when the browser UI earns it.
 - Leave **Rust** in the maintenance lane unless the repo is already Rust-native.
 
 Cross-language boundaries should stay simple and observable.

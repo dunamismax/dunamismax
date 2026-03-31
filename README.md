@@ -2,7 +2,7 @@
 
 I build self-hostable, local-first software for network ops, database tooling, operator workflows, and terminal-first products.
 
-Python and Go still carry most backend work. Browser frontends now default to TypeScript + Bun + Astro + Vue. Terminal frontends default to OpenTUI + TypeScript + Bun. When the product shape justifies it, I want both.
+Python and Go still carry most backend work. Browser frontends now default to TypeScript + Bun + Astro. Vue is optional and has to earn its place. Terminal frontends default to OpenTUI + TypeScript + Bun. When the product shape justifies it, I want both.
 
 Backend is chosen by fit:
 
@@ -42,7 +42,7 @@ Backend is chosen by fit:
 - [c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up) ([read it](https://dunamismax.github.io/c-from-the-ground-up/)) - Progressive C workbook from basics to systems programming. `v1.0.0`
 - [go-web-server](https://github.com/dunamismax/go-web-server) - Go starter for server-rendered apps with Echo, Templ, HTMX, PostgreSQL, SQLC, and Mage. `4.0.0`
 - [hello-world-from-hell](https://github.com/dunamismax/hello-world-from-hell) - Deliberately cursed C. Useless in the best way. `v3.0.0`
-- [tech-stacks](./tech-stacks/README.md) - Build defaults for Python and Go backends, Astro + Vue web frontends, and OpenTUI terminal products.
+- [tech-stacks](./tech-stacks/README.md) - Build defaults for Python and Go backends, Astro-first web frontends with optional Vue, and OpenTUI terminal products.
 
 ---
 

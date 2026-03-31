@@ -4,34 +4,38 @@
 
 This folder is a routing document. Read this file first, then read the stack document or documents that match the project shape.
 
-> **Last reviewed:** 2026-03-30
+> **Last reviewed:** 2026-03-31
 
 ## The Current Contract
 
-This workspace now has **three language lanes** and **two primary frontend modes**.
+This workspace now has **three language lanes**, **one TypeScript full-stack web lane**, and **two primary frontend modes**.
 
 ### Language lanes
 
 - **Python** for backend services, APIs, automation, scripting, data work, and general application logic
 - **Go** for networking, daemons, systems work, performance-sensitive services, and concurrency-heavy runtimes
-- **TypeScript** for product frontends, both web and terminal
+- **TypeScript** for product frontends and Bun-native full-stack web apps
 
 ### Frontend modes
 
-- **Web frontend:** TypeScript + Bun + Astro + Vue
+- **Web frontend:** TypeScript + Bun + Astro
 - **Terminal frontend:** OpenTUI + TypeScript + Bun
 
 ### Product default
 
-Pick the backend by fit: **Python or Go**.
+Pick the product lane by fit.
+
+- If the backend is the hard part, choose **Python or Go** based on the runtime and problem shape.
+- If the product is genuinely **web-first** and wants one TypeScript stack end to end, choose the **full-stack TypeScript web lane**.
 
 Then apply the frontend rule:
 
-- If the product has a browser surface, the default frontend is **Astro + Vue on Bun**.
+- If the product has a browser surface, the default frontend is **Astro on Bun**.
+- Add **Vue** only when the browser UI has enough sustained interactivity to earn the extra layer.
 - If the product also benefits from a serious terminal operator surface, add **OpenTUI + TypeScript + Bun** as a second frontend.
 - If a TUI does not fit, ship the **web frontend only**.
 
-The preferred shape, when it is justified, is **one backend plus dual frontends**: web and TUI.
+The preferred shape, when it is justified, is still **one backend plus dual frontends**: web and TUI.
 
 ---
 
@@ -44,7 +48,7 @@ If you are an LLM, coding agent, or sub-agent reading this file as context for b
 1. Read this README first.
 2. Use the [routing section](#routing) to determine which stack doc or docs to read.
 3. Read only the docs the routing table assigns.
-4. Do not assume Python is the default backend. Choose Python or Go based on the actual product shape.
+4. Do not assume Python is the default backend. Choose Python, Go, or the full-stack TypeScript lane based on the actual product shape.
 
 ### For humans
 
@@ -63,6 +67,7 @@ These docs describe the current default direction for new work and major rewrite
 | Python backend, automation, API, data tool, or service | **Python** | `python-tech-stack.md` |
 | Go service, daemon, networking tool, performance-sensitive backend, or systems runtime | **Go** | `go-tech-stack.md` |
 | Browser-facing product surface, site, dashboard, or app frontend | **Web frontend** | `web-frontend-tech-stack.md` |
+| Browser-first product with Bun backend, PostgreSQL, and TypeScript across the whole stack | **Web full stack** | `web-fullstack-tech-stack.md` |
 | Terminal UI, operator console, or terminal-first app frontend | **OpenTUI** | `opentui-tech-stack.md` |
 | Product with both browser and terminal frontends | **Web frontend + OpenTUI + chosen backend doc** | `web-frontend-tech-stack.md` + `opentui-tech-stack.md` + backend doc |
 | Existing repo with an intentional exception or legacy stack | **Repo README first** | repo-specific |
@@ -75,14 +80,14 @@ This table is routing guidance for future work, not a claim that every repo alre
 
 | Repo | Recommended lane now | Notes |
 | --- | --- | --- |
-| bore | Go backend | Add Astro + Vue only if a browser surface becomes first-class |
-| wirescope | Go backend + Astro + Vue web + OpenTUI optional | Strong dual-frontend candidate for operator workflows |
-| flowhook | Python backend/tooling | Add Astro + Vue only if browser workflows earn it |
-| patchworks | Python backend + Astro + Vue web | Core product stays Python; browser UI follows the new web lane |
+| bore | Go backend | Add Astro only if a browser surface becomes first-class. Add Vue later only if the UI earns it |
+| wirescope | Go backend + Astro web + OpenTUI optional | Strong dual-frontend candidate for operator workflows. Add Vue only for heavier browser interaction |
+| flowhook | Python backend/tooling | Add Astro only if browser workflows earn it. Vue is optional, not automatic |
+| patchworks | Python backend + Astro web | Core product stays Python; browser UI follows the new web lane, with Vue only if interaction justifies it |
 | toolworks | Python / Go / shell | Choose per tool; Python by default, Go when systems or networking shape justifies it |
-| scrybase | Python backend + Astro + Vue web + OpenTUI optional | Dual frontend can make sense if the terminal lane improves the workflow |
+| scrybase | Python backend + Astro web + OpenTUI optional | Dual frontend can make sense if the terminal lane improves the workflow. Add Vue only where the web UI needs it |
 | mtg-card-bot | Python backend/bot | No separate frontend by default |
-| dunamismax.com | Astro + Vue web | Public-facing site follows the new web lane |
+| dunamismax.com | Astro web | Public-facing site follows the new web lane. Keep Vue out unless there is a real interaction case |
 | gitpulse | Repo-specific exception | Follow repo README and in-repo docs |
 | go-web-server | Repo-specific reference | Go web reference repo; not the default browser lane for new work |
 | cargo-compatible | Rust maintenance | Existing Rust repo |
@@ -96,13 +101,14 @@ This table is routing guidance for future work, not a claim that every repo alre
 
 Default direction for new product surfaces and active rewrites:
 
-- **TypeScript + Bun + Astro + Vue** for browser frontends
+- **TypeScript + Bun + Astro** for browser frontends
+- **TypeScript + Bun + Astro + Elysia + PostgreSQL + Caddy** for browser-first full-stack products, with Vue added only when substantial interactivity earns it
 - **OpenTUI + TypeScript + Bun** for terminal frontends
 - **Web frontend first** when the product needs a browser surface
 - **Dual frontends** when a terminal operator workflow is materially useful
 - **Web only** when a TUI would be forced, redundant, or ceremonial
 
-For the web lane, do not default to a client-heavy SPA. Astro owns pages, delivery, and server-first rendering. Vue owns interactive components and stateful UI where interactivity is actually needed.
+For the web lane, do not default to a client-heavy SPA or a pure Vue app. Astro owns pages, delivery, and server-first rendering. Astro can stand alone. Vue is an optional layer for substantial interactivity.
 
 ---
 
@@ -139,7 +145,7 @@ Use PostgreSQL by default when the product needs any of the following:
 - concurrent writes as a normal operating condition
 - service-style deployment
 - richer operational reporting or background jobs
-- a Python or Go application that is meant to grow beyond one local machine or one operator session
+- a Python, Go, or Bun application that is meant to grow beyond one local machine or one operator session
 
 ### SQLite exceptions
 
@@ -199,14 +205,15 @@ PRAGMA cache_size = -20000;
 | Concern | Default |
 | --- | --- |
 | Backend | Python or Go by fit |
-| Browser frontend | TypeScript + Bun + Astro + Vue |
+| Browser frontend | TypeScript + Bun + Astro, with Vue only when earned |
+| Full-stack web app | TypeScript + Bun + Astro + Elysia + PostgreSQL + Caddy, with Vue only when earned |
 | Terminal frontend | OpenTUI + TypeScript + Bun |
 | Database | PostgreSQL by default; SQLite only for deliberately local-first, embedded, SQLite-native, or tiny utilities |
 | Data model | Relational |
 | Query / schema layer | Raw SQL first; keep helper layers thin |
-| Migrations | SQL files for Go; Alembic for Python |
+| Migrations | SQL files for Go and Bun; Alembic for Python |
 | Observability | Structured logs, Prometheus metrics, OpenTelemetry where tracing is worth it |
-| Packaging | Single-purpose binaries, Bun-managed frontend apps, or uv-managed Python apps |
+| Packaging | Single-purpose binaries, Bun-managed web apps, Bun-managed API apps, or uv-managed Python apps |
 | CI quality bar | Formatter, linter, type checker, tests, vulnerability scan |
 | Cross-language integration | Process boundary first, stable protocols second |
 
@@ -215,5 +222,5 @@ PRAGMA cache_size = -20000;
 ## Update Policy
 
 - Update this folder whenever a new stable release of any tool in the stack materially changes the advice.
-- Always default to the latest stable version of Python, Go, Bun, Astro, Vue, OpenTUI, and all other tools in scope.
+- Always default to the latest stable version of Python, Go, Bun, Astro, Vue when used, OpenTUI, and all other tools in scope.
 - Re-check guidance when major releases land.
