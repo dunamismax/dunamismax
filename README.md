@@ -1,50 +1,53 @@
 # Stephen Sawyer
 
-I build self-hostable, local-first software for network ops, database tooling, operator workflows, and terminal-first products.
+I build self-hostable, local-first software with boring infrastructure, explicit data models, and fast feedback loops.
 
-Python and Go still carry most backend work. Browser frontends now default to TypeScript + Bun + Astro. Vue is optional and has to earn its place. Terminal frontends default to OpenTUI + TypeScript + Bun. When the product shape justifies it, I want both.
+My stack is getting simpler and more opinionated:
 
-Backend is chosen by fit:
+- TypeScript + Bun + Astro + Vue for web apps
+- Go and Golang-first systems work for networking, daemons, and operator tools
+- Python for scripting, automation, APIs, and glue code
+- PostgreSQL by default when the product needs a real database
+- OpenTUI when a terminal surface genuinely earns its place
 
-- Python for APIs, automation, scripting, data work, and general backend services
-- Go for networking, daemons, systems work, performance-sensitive services, and concurrency-heavy runtime paths
-- Rust stays in the maintenance lane where it already earns its keep
+Website: [dunamismax.com](https://dunamismax.com)
 
-[dunamismax.com](https://dunamismax.com)
+## Current focus
 
----
+- full-stack web apps on Bun + TypeScript
+- Go services and networking-heavy tools
+- Python scripting and automation
+- products that run cleanly on your own hardware
 
-## Security and networking
+## Selected projects
 
-- [wirescope](https://github.com/dunamismax/wirescope) - Terminal-first network observability with live capture, historical search, DNS context, alerts, and PCAP export. `v1.0.0`
-- [bore](https://github.com/dunamismax/bore) - Encrypted peer-to-peer file transfer over QUIC with automatic relay fallback. `v1.0.1`
-- [flowhook](https://github.com/dunamismax/flowhook) - mitmproxy addon suite for capture, replay, mutation, auth analysis, endpoint cataloging, and export. `v1.0.1`
+### Full-stack apps and operator products
 
-## Operator tools
+- [scrybase](https://github.com/dunamismax/scrybase) - Commander workbench for decks, collection tracking, pod history, and matchup notes.
+- [gitpulse](https://github.com/dunamismax/gitpulse) - Local-first git activity analytics with a web dashboard and terminal workflow.
+- [patchworks](https://github.com/dunamismax/patchworks) - SQLite diff and migration workbench for schema review, row diffs, snapshots, and merge workflows.
+- [flowhook](https://github.com/dunamismax/flowhook) - HTTP capture, replay, mutation, auth analysis, endpoint cataloging, and export on top of mitmproxy.
 
-- [patchworks](https://github.com/dunamismax/patchworks) - SQLite diff and migration workbench with schema diff, row diff, merge workflows, snapshots, and a local web UI. `v1.0.0`
-- [gitpulse](https://github.com/dunamismax/gitpulse) - Local-first git activity analytics with separate ledgers for working tree, commit history, and push history. `v0.2.0`
-- [toolworks](https://github.com/dunamismax/toolworks) - Small automation, CLI helpers, and working experiments. Active repo.
+### Go, networking, and systems
 
-## Apps
+- [wirescope](https://github.com/dunamismax/wirescope) - Network observability with live capture, historical search, DNS context, alerts, and PCAP export.
+- [bore](https://github.com/dunamismax/bore) - Encrypted peer-to-peer file transfer over QUIC with automatic relay fallback.
+- [go-web-server](https://github.com/dunamismax/go-web-server) - Go starter for modern web apps with PostgreSQL, SQLC, Mage, and an Astro + Vue frontend.
 
-- [scrybase](https://github.com/dunamismax/scrybase) - Local-first Commander workbench for deck building, collection tracking, pod history, and matchup notes. `v2.0.0`
-- [mtg-card-bot](https://github.com/dunamismax/mtg-card-bot) - Discord bot for fast Magic card lookups with live pricing, legality, rulings, and embed-first responses. `3.0.0`
+### Python and automation
 
-## Maintained Rust
+- [toolworks](https://github.com/dunamismax/toolworks) - Automation, CLI helpers, and scripts that earn their keep.
+- [mtg-card-bot](https://github.com/dunamismax/mtg-card-bot) - Discord bot for fast Magic card lookups with live pricing, legality, and rulings.
 
-- [cargo-compatible](https://github.com/dunamismax/cargo-compatible) - Check whether a resolved dependency graph fits a target Rust version, then fix blockers with a lockfile-first workflow. `v1.0.1`
-- [cargo-async-doctor](https://github.com/dunamismax/cargo-async-doctor) - Catch high-signal async Rust hazards and point to the fix. `v1.0.1`
-- [rust-async-field-guide](https://github.com/dunamismax/rust-async-field-guide) ([read it](https://dunamismax.github.io/rust-async-field-guide/)) - Examples-first guide to async Rust failure modes, debugging, and fixes. `v1.0.0`
+### Rust, still in the maintenance lane
 
-## Learning and reference
+- [cargo-compatible](https://github.com/dunamismax/cargo-compatible) - Check whether a resolved dependency graph fits a target Rust version and fix blockers safely.
+- [cargo-async-doctor](https://github.com/dunamismax/cargo-async-doctor) - Catch high-signal async Rust hazards and point to the fix.
+- [rust-async-field-guide](https://github.com/dunamismax/rust-async-field-guide) - Examples-first guide to async Rust failure modes, debugging, and fixes.
 
-- [c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up) ([read it](https://dunamismax.github.io/c-from-the-ground-up/)) - Progressive C workbook from basics to systems programming. `v1.0.0`
-- [go-web-server](https://github.com/dunamismax/go-web-server) - Go starter for server-rendered apps with Echo, Templ, HTMX, PostgreSQL, SQLC, and Mage. `4.0.0`
-- [hello-world-from-hell](https://github.com/dunamismax/hello-world-from-hell) - Deliberately cursed C. Useless in the best way. `v3.0.0`
-- [tech-stacks](./tech-stacks/README.md) - Build defaults for Python and Go backends, Astro-first web frontends with optional Vue, and OpenTUI terminal products.
+## Build defaults
 
----
+- [tech-stacks](./tech-stacks/README.md) - Current defaults for Bun + TypeScript web apps, Go backends, Python scripting, and OpenTUI terminal products.
 
 ## License
 
