@@ -4,7 +4,7 @@ I build self-hostable, local-first software with boring infrastructure, explicit
 
 Current stack:
 
-- TypeScript + Bun + Astro + Vue for web apps
+- TypeScript + Bun + Astro for web apps, with Vue only when the UI earns it
 - Go for networking, daemons, operator tools, and systems work
 - Python for scripting, automation, APIs, and glue code
 - PostgreSQL by default when the product needs a real database
@@ -14,7 +14,7 @@ Website: [dunamismax.com](https://dunamismax.com)
 
 ## Current focus
 
-- browser-first full-stack products
+- browser-first Astro products and Bun full-stack apps when one TypeScript stack fits
 - Go services and networking-heavy tools
 - Python scripting and automation
 - products that run cleanly on your own hardware

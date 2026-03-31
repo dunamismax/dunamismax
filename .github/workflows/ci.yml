@@ -19,12 +19,13 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Verify markdown files exist
+      - name: Verify stable markdown files exist
         run: |
           test -f README.md
+          test -f tech-stacks/README.md
           find tech-stacks -maxdepth 1 -name '*.md' -print | grep -q .
 
-      - name: Verify local markdown links resolve
+      - name: Verify local markdown links resolve across repo docs
         run: |
           python3 <<'PY'
           import pathlib
@@ -32,7 +33,11 @@ jobs:
           import sys
 
           root = pathlib.Path(".").resolve()
-          files = [root / "README.md", *(root / "tech-stacks").glob("*.md")]
+          files = sorted(
+            path
+            for path in root.rglob("*.md")
+            if ".git" not in path.parts and ".github" not in path.parts
+          )
           link_re = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
           errors = []
 
