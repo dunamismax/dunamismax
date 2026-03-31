@@ -23,6 +23,9 @@ Website: [dunamismax.com](https://dunamismax.com)
 
 ### Full-stack apps and operator products
 
+- [debugpath](https://github.com/dunamismax/debugpath) - Browser-first debug artifact workspace for incident timelines, artifact search, correlation, notes, and shareable debug bundles. In active build.
+- [elchess](https://github.com/dunamismax/elchess) - Real-time multiplayer chess platform focused on fast play, durable game history, ratings, and post-game review. In active build.
+- [myliferpg](https://github.com/dunamismax/myliferpg) - Planning-first personal operating system that unifies habits, routines, tasks, goals, quests, and progress tracking. In active build.
 - [scrybase](https://github.com/dunamismax/scrybase) - Commander workbench for decks, collection tracking, pod history, and matchup notes.
 - [gitpulse](https://github.com/dunamismax/gitpulse) - Local-first git activity analytics with a web dashboard and terminal workflow.
 - [patchworks](https://github.com/dunamismax/patchworks) - SQLite diff and migration workbench for schema review, row diffs, snapshots, and merge workflows.
