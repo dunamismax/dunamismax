@@ -14,6 +14,7 @@ Website: [dunamismax.com](https://dunamismax.com)
 
 ## Current focus
 
+- [Pish](https://github.com/dunamismax/pish) — all-in-one birding platform at [getpish.com](https://getpish.com). Primary project.
 - browser-first Astro products and Bun full-stack apps when one TypeScript stack fits
 - Go services and networking-heavy tools
 - Python scripting and automation
@@ -23,7 +24,7 @@ Website: [dunamismax.com](https://dunamismax.com)
 
 ### Full-stack apps and operator products
 
-- [debugpath](https://github.com/dunamismax/debugpath) - Browser-first debug artifact workspace for incident timelines, artifact search, correlation, notes, and shareable debug bundles. In active build.
+- [pish](https://github.com/dunamismax/pish) - All-in-one birding platform with real-time bird sound ID, field guide, crowd-confirmed sighting alerts, and community features. Primary focus. [getpish.com](https://getpish.com)
 - [elchess](https://github.com/dunamismax/elchess) - Real-time multiplayer chess platform focused on fast play, durable game history, ratings, and post-game review. In active build.
 - [myliferpg](https://github.com/dunamismax/myliferpg) - Planning-first personal operating system that unifies habits, routines, tasks, goals, quests, and progress tracking. In active build.
 - [scrybase](https://github.com/dunamismax/scrybase) - Commander workbench for decks, collection tracking, pod history, and matchup notes.
@@ -33,7 +34,6 @@ Website: [dunamismax.com](https://dunamismax.com)
 
 - [wirescope](https://github.com/dunamismax/wirescope) - Network observability with live capture, historical search, DNS context, alerts, and PCAP export.
 - [bore](https://github.com/dunamismax/bore) - Encrypted peer-to-peer file transfer over QUIC with automatic relay fallback.
-- [go-web-server](https://github.com/dunamismax/go-web-server) - Go starter for modern web apps with PostgreSQL, SQLC, Mage, and an Astro + Vue frontend.
 
 ### Python and automation
 
