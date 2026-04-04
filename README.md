@@ -46,4 +46,4 @@ Website: [dunamismax.com](https://dunamismax.com)
 
 ## License
 
-[MIT](LICENSE)
+[GPL-3.0](LICENSE)
