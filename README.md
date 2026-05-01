@@ -27,9 +27,6 @@ plane. Public site: [sentrypact.com](https://sentrypact.com).
 
 ## Selected other projects
 
-- [pish](https://github.com/dunamismax/pish) — All-in-one birding platform
-  with bird sound ID, field guide, sighting alerts, and community
-  features. Live at [getpish.com](https://getpish.com).
 - [scrybase](https://github.com/dunamismax/scrybase) — Commander workbench
   for decks, collection tracking, pod history, and matchup notes.
 - [gitpulse](https://github.com/dunamismax/gitpulse) — Local-first git
