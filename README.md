@@ -21,8 +21,6 @@ rules data rather than model memory. Public site:
 
 ## Selected other projects
 
-- [scrybase](https://github.com/dunamismax/scrybase) — Commander workbench
-  for decks, collection tracking, pod history, and matchup notes.
 - [gitpulse](https://github.com/dunamismax/gitpulse) — Local-first git
   activity analytics with a dashboard and terminal workflow.
 - [bore](https://github.com/dunamismax/bore) — Encrypted peer-to-peer
