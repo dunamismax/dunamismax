@@ -7,23 +7,17 @@ Website: [dunamismax.com](https://dunamismax.com)
 
 ## Currently building
 
-### [SentryPact](https://github.com/dunamismax/sentrypact) — primary focus
+### [Ideal Magic](https://github.com/dunamismax/ideal-magic) — primary focus
 
-Filtering that stays on. SentryPact is a privacy-preserving, lockdown-first
-blocker for adults and families who want protection that cannot be
-impulsively switched off at the exact moment it is needed most. It combines
-DNS, app, and browser filtering with timer-locked Solo Pacts, optional
-co-signers, tamper detection, and minimal accountability reporting.
+AI-assisted Magic: The Gathering Commander deck and pod evaluation with
+deterministic card facts, transparent scoring, and table-ready explanations.
+Ideal Magic imports decks, evaluates power, speed, interaction, consistency,
+salt, social friction, and pod fit, then shows the evidence behind the score
+instead of hiding judgment behind a mystery number.
 
-The product is deliberately careful about claims: tamper-resistant and
-bypass-detecting, not impossible to bypass, not a medical treatment, and
-not a guarantee. Coercive control is a primary abuse case the design has
-to defend against, so adult co-signer modes require explicit consent,
-persistent visibility, and emergency release paths.
-
-The first product target is SentryPact Solo for iOS, with Android, macOS,
-Windows, and browser companions on the roadmap behind a shared control
-plane. Public site: [sentrypact.com](https://sentrypact.com).
+The product is Commander-first, self-hostable, and built around source-backed
+rules data rather than model memory. Public site:
+[ideal-magic.com](https://ideal-magic.com).
 
 ## Selected other projects
 
