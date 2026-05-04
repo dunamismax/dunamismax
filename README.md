@@ -7,9 +7,9 @@ I build self-hostable software. Boring infrastructure, explicit data models, fas
 
 ## What I work on
 
-Tools I'd want to use myself: deck and pod intelligence for Magic, local-first dev tooling, self-hosted utilities, and small CLIs that earn their keep. I prefer Rails and Go for systems work, TypeScript when the browser is the product, and Rust or Zig when correctness or footprint matters.
+Tools I'd want to use myself: deck and pod intelligence for Magic, local-first dev tooling, self-hosted utilities, and small scripts that earn their keep.
 
-I try to ship software that is durable, inspectable, and owned by the person who runs it.
+Ruby on Rails for everything on the web. Python for scripting and automation. Software that is durable, inspectable, and owned by the person who runs it.
 
 ## Currently building
 
@@ -21,30 +21,12 @@ Ideal Magic scores Commander decks on Power, Speed, Interaction, Consistency, Sa
 
 Self-hosted Rails app at [ideal-magic.com](https://ideal-magic.com).
 
-## Selected other projects
+## Selected work
 
-### Tools and utilities
-
+- [ideal-magic](https://github.com/dunamismax/ideal-magic) — Commander deck and pod intelligence on Rails.
 - [gitpulse](https://github.com/dunamismax/gitpulse) — Local-first git activity analytics with a dashboard and terminal workflow.
 - [bore](https://github.com/dunamismax/bore) — Encrypted peer-to-peer file transfer with relay fallback.
-- [toolworks](https://github.com/dunamismax/toolworks) — Automation, CLI helpers, and scripts that earn their keep.
 - [mtg-card-bot](https://github.com/dunamismax/mtg-card-bot) — Fast Magic card lookups with live pricing, legality, and rulings.
-
-### Self-hosted services
-
-- [rip](https://github.com/dunamismax/rip) — Self-hosted web app for downloading videos from 1700+ sites. Powered by yt-dlp and ffmpeg.
-- [chute](https://github.com/dunamismax/chute) — Self-hosted form backend and dashboard for collecting submissions without building custom endpoints.
-
-### Rust async
-
-- [cargo-async-doctor](https://github.com/dunamismax/cargo-async-doctor) — Cargo subcommand for spotting common async Rust hazards and explaining the fix.
-- [rust-async-field-guide](https://github.com/dunamismax/rust-async-field-guide) — Examples-first mdBook for practical async Rust, with chapters that live next to runnable example crates.
-
-### Learning resources
-
-- [c-from-the-ground-up](https://github.com/dunamismax/c-from-the-ground-up) — A from-scratch C curriculum.
-- [go-web-server](https://github.com/dunamismax/go-web-server) — Reference Go web server project.
-- [hello-world-from-hell](https://github.com/dunamismax/hello-world-from-hell) — A "hello, world" you'll regret asking about.
 
 ## License
 
