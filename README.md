@@ -16,19 +16,19 @@ My default stack is Ruby on Rails, PostgreSQL, Hotwire, and the Rails-native too
 
 ## Current Focus
 
-### [Ideal Magic](https://github.com/dunamismax/ideal-magic)
+### [Pod Tracker](https://github.com/dunamismax/pod-tracker)
 
 The serious Commander companion for Magic: The Gathering players.
 
-Ideal Magic is a self-hosted Rails app for importing Commander decks, evaluating them under Wizards' Commander Brackets system, comparing pods before the game starts, tracking game nights, and turning real playgroup history into useful tuning advice.
+Pod Tracker is a self-hosted Rails app for importing Commander decks, evaluating them under Wizards' Commander Brackets system, comparing pods before the game starts, tracking game nights, and turning real playgroup history into useful tuning advice.
 
 It uses source-backed card facts, deterministic legality checks, collection-aware recommendations, privacy-conscious account handling, and AI-assisted deck and pod evaluations that explain their reasoning instead of hiding behind a mystery score.
 
-Live at [ideal-magic.com](https://ideal-magic.com).
+Live at [pod-tracker.app](https://pod-tracker.app).
 
 ## Selected Work
 
-- [ideal-magic](https://github.com/dunamismax/ideal-magic) — Rails-powered Commander deck and pod intelligence.
+- [pod-tracker](https://github.com/dunamismax/pod-tracker) — Rails-powered Commander deck and pod intelligence.
 - [mtg-card-bot](https://github.com/dunamismax/mtg-card-bot) — Fast Magic card lookups with pricing, legality, and rulings.
 
 ## Principles
