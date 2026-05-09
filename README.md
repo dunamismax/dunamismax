@@ -1,32 +1,44 @@
 # Stephen Sawyer
 
-I build self-hostable software. Boring infrastructure, explicit data models, fast feedback loops. Things that work offline, run on your own server, and let you read the code.
+Full-stack Ruby on Rails developer. Open source, privacy, and security advocate. Fifteen years in IT, building systems that have to keep working after the demo is over.
+
+> Ruby and Rails are my default because they let me ship fastest. I'll use other tools when the problem clearly calls for them.
 
 - Website: [dunamismax.com](https://dunamismax.com)
 - GitHub: [@dunamismax](https://github.com/dunamismax)
+- Codeberg: [@dunamismax](https://codeberg.org/dunamismax)
 
-## What I work on
+## What I Build
 
-Tools I'd want to use myself: deck and pod intelligence for Magic, local-first dev tooling, self-hosted utilities, and small scripts that earn their keep.
+I build self-hostable Rails applications with clear data models, boring infrastructure, and fast feedback loops. I like software that is durable, inspectable, and owned by the person who runs it.
 
-Ruby on Rails for everything on the web. Python for scripting and automation. Software that is durable, inspectable, and owned by the person who runs it.
+My default stack is Ruby on Rails, PostgreSQL, Hotwire, and the Rails-native toolbox. I care about full-stack product work: domain modeling, authentication, background jobs, security, deployment, UI polish, operational runbooks, and the parts in between.
 
-## Currently building
+## Current Focus
 
-### [Ideal Magic](https://github.com/dunamismax/ideal-magic) — primary focus
+### [Ideal Magic](https://github.com/dunamismax/ideal-magic)
 
-The serious Commander companion. Import a deck, get an honest read on it, build pods that actually feel fair, remember every game night, and turn your real playgroup into useful tuning advice.
+The serious Commander companion for Magic: The Gathering players.
 
-Ideal Magic scores Commander decks on Power, Speed, Interaction, Consistency, Salt, and Social Friction — every score backed by the cards and patterns that drove it. Source-backed card facts, evidence-first explanations, collection-aware recommendations, and a phone-first UI built for the table.
+Ideal Magic is a self-hosted Rails app for importing Commander decks, evaluating them under Wizards' Commander Brackets system, comparing pods before the game starts, tracking game nights, and turning real playgroup history into useful tuning advice.
 
-Self-hosted Rails app at [ideal-magic.com](https://ideal-magic.com).
+It uses source-backed card facts, deterministic legality checks, collection-aware recommendations, privacy-conscious account handling, and AI-assisted deck and pod evaluations that explain their reasoning instead of hiding behind a mystery score.
 
-## Selected work
+Live at [ideal-magic.com](https://ideal-magic.com).
 
-- [ideal-magic](https://github.com/dunamismax/ideal-magic) — Commander deck and pod intelligence on Rails.
-- [gitpulse](https://github.com/dunamismax/gitpulse) — Local-first git activity analytics with a dashboard and terminal workflow.
-- [bore](https://github.com/dunamismax/bore) — Encrypted peer-to-peer file transfer with relay fallback.
-- [mtg-card-bot](https://github.com/dunamismax/mtg-card-bot) — Fast Magic card lookups with live pricing, legality, and rulings.
+## Selected Work
+
+- [ideal-magic](https://github.com/dunamismax/ideal-magic) — Rails-powered Commander deck and pod intelligence.
+- [mtg-card-bot](https://github.com/dunamismax/mtg-card-bot) — Fast Magic card lookups with pricing, legality, and rulings.
+
+## Principles
+
+- Ruby and Rails first, because shipping matters.
+- Self-hostable over rented black boxes.
+- Privacy and security as product requirements, not decorations.
+- Explicit data models over clever magic.
+- Open source when it helps people inspect, adapt, and own their tools.
+- Boring infrastructure, clear operations, and code you can read at 2 AM.
 
 ## License
 
