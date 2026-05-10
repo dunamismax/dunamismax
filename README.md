@@ -5,6 +5,8 @@ Systems-leaning engineer working in C, Zig, PostgreSQL, Python, and vanilla Type
 > Small languages, small tools, no frameworks. Software you can read at 2 AM and own end-to-end.
 
 - Website: [dunamismax.com](https://dunamismax.com)
+- zwire: [zwire.cc](https://zwire.cc)
+- ciphers: [ciphers.cc](https://ciphers.cc)
 - GitHub: [@dunamismax](https://github.com/dunamismax)
 - Codeberg: [@dunamismax](https://codeberg.org/dunamismax)
 
@@ -32,27 +34,27 @@ The build is Zig-only: `zig build`, `zig build test`, `zig build sanitize`, `zig
 
 It's my current flagship systems project and the work that defines how I write everything else now.
 
-### [zwire](https://github.com/dunamismax/zwire)
+### [zwire](https://zwire.cc)
 
-zwire is an end-to-end encrypted file transfer tool written in C and built with Zig.
+zwire is a self-hosted, end-to-end encrypted file transfer service written in C, built with Zig, backed by PostgreSQL, and published at [zwire.cc](https://zwire.cc).
 
-The target shape is two machines, one short human-readable code, and a file lands on the other side: no accounts, no daemon, no plaintext on the wire, and an optional self-hostable relay that only sees ciphertext. It is shaped after Magic Wormhole, with a PAKE handshake for code-to-key derivation and authenticated encryption for every byte after the handshake.
+The target shape is a public web portal and CLI where two people use one short human-readable code or share link and a file lands on the other side: no plaintext on the wire, no raw codes stored in PostgreSQL, and a self-hosted relay that only sees ciphertext. It is shaped after Magic Wormhole, with a PAKE handshake for code-to-key derivation and authenticated encryption for every byte after the handshake.
 
-The project is in phase 0. The repo currently holds the README, build manual, and license while the implementation lands against a protocol-first plan.
+The repo lives at [github.com/dunamismax/zwire](https://github.com/dunamismax/zwire).
 
-### [ciphers](https://github.com/dunamismax/ciphers)
+### [ciphers](https://ciphers.cc)
 
-ciphers is an interactive cryptography playground for the browser.
+ciphers is an interactive cryptography playground for the browser, published at [ciphers.cc](https://ciphers.cc).
 
 It is a framework-free, local-only educational site for learning cryptography by transforming it: Caesar, Vigenere, Enigma, AES rounds, Diffie-Hellman, RSA toys, hashing, Merkle trees, and cryptanalysis tools with every algorithm implemented in readable TypeScript. No backend, no analytics, no third-party JavaScript at runtime.
 
-The project is in phase 0. The repo currently holds the README, build manual, and license while the interactive site is built out.
+The repo lives at [github.com/dunamismax/ciphers](https://github.com/dunamismax/ciphers).
 
 ## Selected Work
 
 - [zarc](https://github.com/dunamismax/zarc) — Local-first, content-addressed backup system. C, built with Zig.
-- [zwire](https://github.com/dunamismax/zwire) — End-to-end encrypted file transfer by short human code. C, Zig, PAKE, AEAD.
-- [ciphers](https://github.com/dunamismax/ciphers) — Interactive browser cryptography playground. Vanilla HTML, CSS, and TypeScript.
+- [zwire](https://zwire.cc) — End-to-end encrypted file transfer by short human code. C, Zig, PostgreSQL, PAKE, AEAD.
+- [ciphers](https://ciphers.cc) — Interactive browser cryptography playground. Vanilla HTML, CSS, and TypeScript.
 - [dunamismax.com](https://github.com/dunamismax/dunamismax.com) — This site. Static HTML, CSS, TypeScript, Python build tooling, Caddy.
 
 ## Principles
