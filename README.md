@@ -1,8 +1,8 @@
 # Stephen Sawyer
 
-Full-stack Ruby on Rails developer. Open source, privacy, and security advocate. Fifteen years in IT, building systems that have to keep working after the demo is over.
+Systems-leaning engineer working in C, Zig, Python, and vanilla TypeScript. Open source, privacy, and security advocate. Fifteen years in IT, building software that has to keep working after the demo is over.
 
-> Ruby and Rails are my default because they let me ship fastest. I'll use other tools when the problem clearly calls for them.
+> Small languages, small tools, no frameworks. Software you can read at 2 AM and own end-to-end.
 
 - Website: [dunamismax.com](https://dunamismax.com)
 - GitHub: [@dunamismax](https://github.com/dunamismax)
@@ -10,35 +10,39 @@ Full-stack Ruby on Rails developer. Open source, privacy, and security advocate.
 
 ## What I Build
 
-I build self-hostable Rails applications with clear data models, boring infrastructure, and fast feedback loops. I like software that is durable, inspectable, and owned by the person who runs it.
+I build systems software, scripts, and small web apps that are durable, inspectable, and owned by the person who runs them. The goal is software with explicit data, explicit ownership, explicit failure modes, and no hidden framework architecture.
 
-My default stack is Ruby on Rails, PostgreSQL, Hotwire, and the Rails-native toolbox. I care about full-stack product work: domain modeling, authentication, background jobs, security, deployment, UI polish, operational runbooks, and the parts in between.
+My toolkit is intentionally narrow:
+
+- **C** (C23 preferred, C17 for portability) for the systems core: parsers, file formats, on-disk data, anything that has to be precise about memory and time.
+- **Zig** for the build system, cross-compilation, codegen, helper tooling, and test harnesses. `zig cc` is how the C compiles; CMake stays out of the project.
+- **Python** for scripting, automation, APIs, and backends — anywhere a clean, fast script or a small service is the right shape.
+- **Vanilla HTML, CSS, and TypeScript** for websites and browser frontends. No frameworks, no build-time magic, no SPA tax when a server-rendered page works.
 
 ## Current Focus
 
-### [Pod Tracker](https://github.com/dunamismax/pod-tracker)
+### [zarc](https://github.com/dunamismax/zarc)
 
-The serious Commander companion for Magic: The Gathering players.
+zarc is a local-first, content-addressed backup system written in C and built with Zig.
 
-Pod Tracker is a self-hosted Rails app for importing Commander decks, evaluating them under Wizards' Commander Brackets system, comparing pods before the game starts, tracking game nights, and turning real playgroup history into useful tuning advice.
+A zarc repository is a normal directory of explicit files, binary formats, and content-addressed objects — designed to remain understandable with ordinary tools. The early releases focus on a small archive core (store file bytes as hashed objects, record snapshots as explicit metadata, restore data from an inspectable repository) so the full backup system grows from boring, testable ground instead of framework architecture.
 
-It uses source-backed card facts, deterministic legality checks, collection-aware recommendations, privacy-conscious account handling, and AI-assisted deck and pod evaluations that explain their reasoning instead of hiding behind a mystery score.
+The build is Zig-only: `zig build`, `zig build test`, `zig build sanitize`, `zig build release`. C is compiled through `zig cc`. The project policy is allocator-clean code, fixed-width binary formats, fuzzable parsers, and recovery behavior that's easy to inspect at 2 AM.
 
-Live at [pod-tracker.app](https://pod-tracker.app).
+It's my pinnacle current project and the work that defines how I write everything else now.
 
 ## Selected Work
 
-- [pod-tracker](https://github.com/dunamismax/pod-tracker) — Rails-powered Commander deck and pod intelligence.
-- [mtg-card-bot](https://github.com/dunamismax/mtg-card-bot) — Fast Magic card lookups with pricing, legality, and rulings.
+- [zarc](https://github.com/dunamismax/zarc) — Local-first, content-addressed backup system. C, built with Zig.
 
 ## Principles
 
-- Ruby and Rails first, because shipping matters.
-- Self-hostable over rented black boxes.
-- Privacy and security as product requirements, not decorations.
-- Explicit data models over clever magic.
-- Open source when it helps people inspect, adapt, and own their tools.
-- Boring infrastructure, clear operations, and code you can read at 2 AM.
+- **Small languages, no frameworks.** C, Zig, Python, and vanilla web. Anything that depends on a framework to stay coherent is too clever for what I want to build.
+- **Explicit over magical.** Explicit ownership, explicit lifetimes, explicit errors, explicit allocation, explicit data flow. If you can't trace the value through the system, the system is broken.
+- **Self-hostable over rented.** Software should run on hardware you control with data you can inspect and move.
+- **Privacy and security as product requirements**, not decorations.
+- **Open source when it helps people inspect, adapt, and own their tools.**
+- **Boring infrastructure**, clear operations, and code you can read at 2 AM.
 
 ## License
 
