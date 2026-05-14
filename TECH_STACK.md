@@ -1,73 +1,56 @@
-# Java / PostgreSQL Full Stack
+# Go / C / PostgreSQL Tech Stack
 
-The default stack I use across projects I own unless the product calls for
-something outside it. One language, one database, one VM. Anything outside the
-default has to earn its place.
+The single stack I use across every project I own. One language, one
+database, one VM—plus C for systems. Everything below is the default;
+anything outside it has to earn its place.
 
 ## Core
 
-- Java 25 LTS
-- Spring Boot 4.0.6+
-- Maven
-- JDK toolchains
-- Java records
-- Java virtual threads
-
-## Backend
-
-- Spring MVC
-- Embedded Tomcat
-- Jackson 3
-- Jakarta Validation
-- Spring Boot Actuator
-- Spring Security only when needed
-- jOOQ
-- Flyway
-- HikariCP
-
-## Database
-
+- Go 1.26+
+- C (clang/gcc, C11/C17)
+- Standard library first
+- `justfile` for every repo
 - PostgreSQL 18
-- uuidv7 primary keys
-- pgcrypto
-- pg_trgm
-- pg_stat_statements
-- pgvector only for AI/RAG
-- PostGIS only for maps/GIS
+- Ubuntu LTS
+- systemd
+- Caddy 2.9+
+- HTMX 2.0+
+- Vanilla CSS or Tailwind v4
 
-## Frontend
+## Go Application Layer
 
-- Thymeleaf
-- HTMX
-- Tailwind CSS
-- Vanilla JavaScript
-- Alpine.js only when needed
+- `net/http` for routing and handlers
+- `html/template` for server-rendered HTML
+- `sqlc` for typed SQL generation
+- `pgx` for PostgreSQL access
+- Forward-only SQL migrations (goose or golang-migrate)
+- PostgreSQL-backed job tables with `FOR UPDATE SKIP LOCKED`
+- Structured logging (slog)
+- Zero-dependency binaries where practical
 
-## Testing
+## C Systems Layer
 
-- JUnit 5
-- AssertJ
-- Spring Boot Test
-- Testcontainers PostgreSQL
-- Flyway migration tests
-- Playwright only for critical browser flows
+- Clang / GCC
+- Make or `just` for builds
+- Focus on first-principles systems and performance
+- Minimal dependencies
 
-## Local dev
+## PostgreSQL Data Platform
 
-- Docker Compose
-- justfile
-- Maven wrapper
-- `.env` for local config
-- Mailpit when testing email
+- Source of truth for all state
+- `pgcrypto`, `pg_trgm`, `pg_stat_statements`, `btree_gin`
+- JSONB for raw payloads and flexible documents
+- Full-text search and trigram search
+- Materialized views for summaries and pairing
+- Time-ordered UUIDs (uuidv7)
+- Explicit constraints and foreign keys
 
-## Deploy
+## Operations
 
-- Ubuntu LTS VM
-- Caddy for HTTPS/reverse proxy
-- Spring Boot fat jar
-- systemd service
-- PostgreSQL on the VM
-- GitHub Actions deploy over SSH
-- Flyway migrations
-- `pg_dump` backups
-- offsite backup copy
+- Single Ubuntu VM
+- systemd for process management
+- Caddy for TLS and reverse proxy
+- GitHub Actions for CI and SSH-based deploy
+- Automated `pg_dump` to offsite storage
+- Regular restore drills
+- Prometheus/Grafana for monitoring only when scale earns it
