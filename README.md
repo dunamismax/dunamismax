@@ -48,4 +48,4 @@ I am consolidating onto a single Go, C, and PostgreSQL stack and rewriting older
 
 ## License
 
-Repository content is [GPL-3.0](LICENSE) unless an individual project specifies otherwise.
+Repository content is [MIT](LICENSE) unless an individual project specifies otherwise.
