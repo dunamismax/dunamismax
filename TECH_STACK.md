@@ -1,56 +1,60 @@
-# Go / C / PostgreSQL Tech Stack
+# Rust / PostgreSQL / Python Tech Stack
 
-The single stack I use across every project I own. One language, one
-database, one VM—plus C for systems. Everything below is the default;
-anything outside it has to earn its place.
+Default stack for new work. Rust is the center. PostgreSQL is the data layer.
+Python is for automation, scripting, prototypes, data work, and glue.
 
 ## Core
 
-- Go 1.26+
-- C (clang/gcc, C11/C17)
-- Standard library first
-- `justfile` for every repo
-- PostgreSQL 18
-- Ubuntu LTS
-- systemd
-- Caddy 2.9+
-- HTMX 2.0+
-- Vanilla CSS or Tailwind v4
+- Rust stable, edition 2024 where available
+- Cargo workspaces for multi-crate projects
+- Tokio for async systems when async is justified
+- `tracing` for logs and diagnostics
+- `serde` / `serde_json` / `toml` for structured data
+- PostgreSQL as the primary database
+- Python 3.13+ managed with `uv`
+- Ruff for Python linting and formatting
+- pytest for Python tests
+- Bash, zsh, and PowerShell for operations
+- macOS for local work, Ubuntu LTS for servers
+- systemd, Caddy, SSH deploys, and reproducible runbooks
 
-## Go Application Layer
+## Rust Systems Layer
 
-- `net/http` for routing and handlers
-- `html/template` for server-rendered HTML
-- `sqlc` for typed SQL generation
-- `pgx` for PostgreSQL access
-- Forward-only SQL migrations (goose or golang-migrate)
-- PostgreSQL-backed job tables with `FOR UPDATE SKIP LOCKED`
-- Structured logging (slog)
-- Zero-dependency binaries where practical
-
-## C Systems Layer
-
-- Clang / GCC
-- Make or `just` for builds
-- Focus on first-principles systems and performance
-- Minimal dependencies
+- CLI tools and terminal apps
+- Network services and protocol implementations
+- QUIC/TLS where the product needs secure transport
+- Cryptography-adjacent tooling with reviewed libraries
+- Market-data, trading, and low-latency experiments
+- Benchmarks before performance claims
+- Small crates with explicit ownership boundaries
+- `cargo fmt`, `cargo clippy`, `cargo test`, and release builds as the normal gate
 
 ## PostgreSQL Data Platform
 
-- Source of truth for all state
-- `pgcrypto`, `pg_trgm`, `pg_stat_statements`, `btree_gin`
-- JSONB for raw payloads and flexible documents
-- Full-text search and trigram search
-- Materialized views for summaries and pairing
-- Time-ordered UUIDs (uuidv7)
-- Explicit constraints and foreign keys
+- Source of truth for durable application state
+- Explicit SQL migrations
+- Relational schema first, JSONB when the data is genuinely document-shaped
+- Full-text and trigram search when useful
+- Audit tables and event history for important workflows
+- Job tables with `FOR UPDATE SKIP LOCKED` where a queue can stay in Postgres
+- Backups with `pg_dump` and tested restores
+
+## Python Automation Layer
+
+- `uv init`, `uv sync`, and project-local virtual environments
+- `pyproject.toml` as the package/tooling contract
+- Ruff for lint and format
+- pytest for tests
+- Pyright when static typing meaningfully reduces risk
+- `httpx`, `pydantic`, and small focused libraries when they earn their place
+- Scripts that can run from a clean checkout without manual dependency drift
 
 ## Operations
 
-- Single Ubuntu VM
-- systemd for process management
+- One Ubuntu LTS VM until scale proves otherwise
 - Caddy for TLS and reverse proxy
-- GitHub Actions for CI and SSH-based deploy
-- Automated `pg_dump` to offsite storage
-- Regular restore drills
-- Prometheus/Grafana for monitoring only when scale earns it
+- systemd units for long-running services
+- GitHub Actions for CI and SSH-based deploys
+- Shell and PowerShell scripts for repeatable IT workflows
+- Logs and health checks before dashboards
+- Prometheus/Grafana only when operational scale earns them
