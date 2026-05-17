@@ -36,6 +36,14 @@ The supporting stack is deliberately small:
 - [mtg-card-bot](https://github.com/dunamismax/mtg-card-bot) — Python Discord
   bot for Magic: The Gathering card lookup, built with `uv`, Ruff, pytest,
   `discord.py`, and live Scryfall data.
+- [Callrift](https://github.com/dunamismax/callrift) — Username-first
+  communications platform for encrypted messages, WebRTC voice, groups,
+  developer servers, and technical communities, being rewritten around Rust,
+  Axum, Leptos, PostgreSQL, and coturn.
+- [Pod Tracker](https://github.com/dunamismax/pod-tracker) — PostgreSQL-first
+  Commander playgroup OS for events, RSVPs, pod generation, deck tracking,
+  game logging, and meta dashboards, being rewritten around Rust, Axum,
+  Leptos, sqlx, and SSE.
 - [Toolworks](https://github.com/dunamismax/toolworks) — Python automation,
   operational scripts, and durable CLI helpers.
 - [LangIndex](https://github.com/dunamismax/langindex) — Open-source reference
