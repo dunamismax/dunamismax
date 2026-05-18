@@ -30,7 +30,7 @@ The supporting stack is deliberately small:
 
 ## Projects
 
-- [FileFerry](https://github.com/dunamismax/sealport) — Rust encrypted backup
+- [FileFerry](https://github.com/dunamismax/fileferry) — Rust encrypted backup
   CLI with client-side encryption, local and S3-compatible repositories,
   policy-driven retention, and scriptable restore workflows.
 - [mtg-card-bot](https://github.com/dunamismax/mtg-card-bot) — Python Discord
