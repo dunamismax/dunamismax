@@ -44,6 +44,9 @@ The supporting stack is deliberately small:
   Commander playgroup OS for events, RSVPs, pod generation, deck tracking,
   game logging, and meta dashboards, being rewritten around Rust, Axum,
   Leptos, sqlx, and SSE.
+- [status.dunamismax](https://github.com/dunamismax/status.dunamismax) —
+  Rust status and operations dashboard for public site health, host services,
+  deploy history, and project progress across my self-hosted systems.
 - [Toolworks](https://github.com/dunamismax/toolworks) — Python automation,
   operational scripts, and durable CLI helpers.
 - [LangIndex](https://github.com/dunamismax/langindex) — Open-source reference
