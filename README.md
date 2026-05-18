@@ -16,17 +16,23 @@ I am going deep on Rust for performance-sensitive software: market data,
 trading infrastructure, local-first tools, secure networking, protocol work,
 and systems that need predictable behavior under pressure.
 
-The supporting stack is deliberately small:
+The supporting stack is deliberately small and Rust-first:
 
 - **Rust** for production systems, CLIs, network services, protocol work,
   cryptography-adjacent tooling, and performance-critical paths.
+- **Leptos + Axum + Tokio** for serious web apps, dashboards, public sites,
+  and self-hosted operator surfaces when a Rust web stack is the right fit.
 - **PostgreSQL** as the primary data layer for durable state, audit trails,
   analytics, queues, search, and operational reporting.
+- **SQLx** for explicit SQL, migrations, PostgreSQL pools, and query code
+  that keeps the database model inspectable.
 - **Python** for scripting, prototypes, data work, automation, bots, and glue.
   New Python work uses `uv`, Ruff, project-local virtual environments, and
   checked-in `pyproject.toml` configuration.
 - **Shell and PowerShell** for IT operations, deployment scripts, diagnostics,
   and cross-platform admin work on macOS, Ubuntu, and Windows.
+- **clap, ratatui, Tauri, egui, iced, and Dioxus** where the product shape
+  calls for CLI, TUI, desktop-native, or cross-platform Rust UI work.
 
 ## Projects
 
@@ -57,7 +63,8 @@ The supporting stack is deliberately small:
 ## Principles
 
 - **Rust first.** Prefer memory-safe, explicit, fast systems with small public
-  APIs and measurable behavior.
+  APIs and measurable behavior. For web work, default to Leptos, Axum, Tokio,
+  SQLx, and PostgreSQL before reaching for heavier frontend machinery.
 - **PostgreSQL first.** Keep durable application state in one inspectable
   database until the workload proves it needs another component.
 - **Python for leverage.** Automate the boring parts, prototype quickly, and
