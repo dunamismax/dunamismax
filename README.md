@@ -30,9 +30,9 @@ The supporting stack is deliberately small:
 
 ## Projects
 
-- [FileFerry](https://github.com/dunamismax/fileferry) — Rust local-network
-  file transfer with QUIC, mDNS discovery, resumable manifests, TUI, daemon
-  mode, and signed releases.
+- [FileFerry](https://github.com/dunamismax/sealport) — Rust encrypted backup
+  CLI with client-side encryption, local and S3-compatible repositories,
+  policy-driven retention, and scriptable restore workflows.
 - [mtg-card-bot](https://github.com/dunamismax/mtg-card-bot) — Python Discord
   bot for Magic: The Gathering card lookup, built with `uv`, Ruff, pytest,
   `discord.py`, and live Scryfall data.
