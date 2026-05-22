@@ -1,10 +1,7 @@
 # Stephen Sawyer
 
-Rust-first engineer and IT operator focused on high-performance systems,
-crypto infrastructure, cryptography, encryption, PostgreSQL-backed products,
-and Python automation.
-
-> Build fast systems you can inspect, operate, and own.
+Rust-first engineer and IT operator building self-hostable systems that are
+fast, inspectable, and boring to run.
 
 - Website: [dunamismax.com](https://dunamismax.com)
 - GitHub: [@dunamismax](https://github.com/dunamismax)
@@ -12,47 +9,37 @@ and Python automation.
 
 ## Focus
 
-I am going deep on Rust for performance-sensitive software: market data,
-trading infrastructure, local-first tools, secure networking, protocol work,
-and systems that need predictable behavior under pressure.
+I work on performance-sensitive software, crypto infrastructure, secure
+networking, local-first tools, and automation for real operations.
 
-The supporting stack is deliberately small and Rust-first:
+Current default stack:
 
-- **Rust** for production systems, CLIs, network services, protocol work,
-  cryptography-adjacent tooling, and performance-critical paths.
-- **Leptos + Axum + Tokio** for serious web apps, dashboards, public sites,
-  and self-hosted operator surfaces when a Rust web stack is the right fit.
-- **PostgreSQL** as the primary data layer for durable state, audit trails,
-  analytics, queues, search, and operational reporting.
-- **SQLx** for explicit SQL, migrations, PostgreSQL pools, and query code
-  that keeps the database model inspectable.
-- **Python** for scripting, prototypes, data work, automation, bots, and glue.
-  New Python work uses `uv`, Ruff, project-local virtual environments, and
-  checked-in `pyproject.toml` configuration.
-- **Shell and PowerShell** for IT operations, deployment scripts, diagnostics,
-  and cross-platform admin work on macOS, Ubuntu, and Windows.
-- **clap, ratatui, Tauri, egui, iced, and Dioxus** where the product shape
-  calls for CLI, TUI, desktop-native, or cross-platform Rust UI work.
+- **Rust** for production systems, CLIs, network services, protocol work, and
+  performance-critical paths.
+- **PostgreSQL** for durable state, audit trails, queues, analytics, search,
+  and reporting.
+- **Leptos, Axum, Tokio, and SQLx** for Rust web apps and operator surfaces.
+- **Python** for automation, scripts, prototypes, bots, data work, and glue,
+  managed with `uv`, Ruff, pytest, and checked-in `pyproject.toml` config.
+- **Shell and PowerShell** for deployment, diagnostics, and cross-platform IT
+  operations across macOS, Ubuntu, and Windows.
 
 ## Projects
 
 - [FileFerry](https://github.com/dunamismax/fileferry) — Rust encrypted backup
-  CLI with client-side encryption, local and S3-compatible repositories,
-  policy-driven retention, and scriptable restore workflows.
-- [mtg-card-bot](https://github.com/dunamismax/mtg-card-bot) — Python Discord
-  bot for Magic: The Gathering card lookup, built with `uv`, Ruff, pytest,
-  `discord.py`, and live Scryfall data.
+  CLI with client-side encryption, local and S3-compatible repositories, and
+  scriptable restores.
 - [Callrift](https://github.com/dunamismax/callrift) — Username-first
-  communications platform for encrypted messages, WebRTC voice, groups,
-  developer servers, and technical communities, being rewritten around Rust,
-  Axum, Leptos, PostgreSQL, and coturn.
+  communications platform for encrypted messages, WebRTC voice, groups, and
+  technical communities.
 - [Pod Tracker](https://github.com/dunamismax/pod-tracker) — PostgreSQL-first
-  Commander playgroup OS for events, RSVPs, pod generation, deck tracking,
-  game logging, and meta dashboards, being rewritten around Rust, Axum,
-  Leptos, sqlx, and SSE.
-- [status.dunamismax](https://github.com/dunamismax/status.dunamismax) —
-  Rust status and operations dashboard for public site health, host services,
-  deploy history, and project progress across my self-hosted systems.
+  Commander playgroup OS for events, RSVPs, pod generation, deck tracking, and
+  meta dashboards.
+- [status.dunamismax](https://github.com/dunamismax/status.dunamismax) — Rust
+  status and operations dashboard for public site health, host services,
+  deploy history, and project progress.
+- [mtg-card-bot](https://github.com/dunamismax/mtg-card-bot) — Python Discord
+  bot for Magic: The Gathering card lookup using live Scryfall data.
 - [Toolworks](https://github.com/dunamismax/toolworks) — Python automation,
   operational scripts, and durable CLI helpers.
 - [LangIndex](https://github.com/dunamismax/langindex) — Open-source reference
@@ -62,19 +49,12 @@ The supporting stack is deliberately small and Rust-first:
 
 ## Principles
 
-- **Rust first.** Prefer memory-safe, explicit, fast systems with small public
-  APIs and measurable behavior. For web work, default to Leptos, Axum, Tokio,
-  SQLx, and PostgreSQL before reaching for heavier frontend machinery.
-- **PostgreSQL first.** Keep durable application state in one inspectable
-  database until the workload proves it needs another component.
-- **Python for leverage.** Automate the boring parts, prototype quickly, and
-  keep scripts reproducible with `uv`, Ruff, and local project environments.
-- **Security is architecture.** Cryptography, encryption, identity, key
-  handling, logs, and retention shape the design from the start.
-- **Self-hostable and inspectable.** The owner should be able to run it,
-  recover it, audit it, and move it.
-- **Boring operations.** Ubuntu, macOS, systemd, Caddy, SSH deploys,
-  PostgreSQL backups, restore drills, and clear runbooks beat fragile magic.
+- Rust first for systems work.
+- PostgreSQL first for durable application state.
+- Python where speed of iteration matters.
+- Security, key handling, logs, retention, backups, and restores are part of
+  the architecture.
+- The owner should be able to run it, audit it, recover it, and move it.
 
 ## License
 
