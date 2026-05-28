@@ -12,7 +12,8 @@ fast, inspectable, and boring to run.
 I work on performance-sensitive software, self-hostable product systems,
 crypto infrastructure, secure networking, local-first tools, and automation for
 real operations. My current primary product focus is LoveWard, a private,
-safety-aware meditation, journaling, and daily practice PWA.
+self-hostable practice PWA for Meditate, Breath, Yoga, Love, grounding, and
+private practice history.
 
 Current default stack:
 
@@ -35,8 +36,8 @@ Current default stack:
 ## Projects
 
 - [LoveWard](https://github.com/dunamismax/loveward) — Self-hostable Next.js
-  PWA for meditation, self-inquiry, private journaling, daily practice, and a
-  safety-aware AI reflection guide.
+  PWA for Meditate, Breath, Yoga, Love, grounding, and private practice
+  history with export and deletion controls.
 - [FileFerry](https://github.com/dunamismax/fileferry) — Rust encrypted backup
   CLI with client-side encryption, local and S3-compatible repositories, and
   scriptable restores.
