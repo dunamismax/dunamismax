@@ -57,9 +57,6 @@ lifetime cost. More detail is in [TECH_STACK.md](TECH_STACK.md).
   and rulings. Python, `discord.py`, and `httpx`.
 - [Toolworks](https://github.com/dunamismax/toolworks): Python automation,
   CLI helpers, and operational scripts for repeatable IT workflows.
-- [LangIndex](https://github.com/dunamismax/langindex): an open reference
-  for programming languages, ecosystem tradeoffs, and practical language
-  selection. [Live](https://langindex.dev)
 
 ## What I care about
 
