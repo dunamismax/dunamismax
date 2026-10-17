@@ -1,82 +1,58 @@
 # Stephen Sawyer
 
-PHP developer and Linux systems administrator. I build bespoke,
-object-oriented PHP on MySQL with semantic HTML and hand-written CSS, script
-the routine work in Python, and run the Ubuntu servers it all lives on.
+I build websites and run the systems behind them. My work spans bespoke PHP
+and MySQL applications, Python automation, company remote support, and the
+Ubuntu infrastructure that keeps those services available.
 
-[dunamismax.com](https://dunamismax.com) ·
+[Website](https://dunamismax.com) ·
+[Portfolio](https://dunamismax.com/projects) ·
 [Contact](https://dunamismax.com/contact) ·
-[Codeberg](https://codeberg.org/dunamismax) ·
-[Status](https://status.dunamismax.com)
+[Codeberg](https://codeberg.org/dunamismax)
 
-## What I do
+## Selected work
 
-- **Web.** Bespoke PHP 8.5: a small front controller, readable classes,
-  prepared SQL, and templates that render complete, accessible HTML on the
-  server. Styles are hand-written and responsive. Most pages send no
-  JavaScript at all.
-- **Data.** MySQL for published content and durable records, with explicit
-  schemas and separate read-only and writer accounts.
-- **Operations.** I administer the servers my sites run on: Ubuntu LTS, Caddy
-  for HTTPS, a dedicated PHP-FPM pool and system user per site, MySQL on
-  localhost, systemd services and timers, backups with restore checks, and
-  SSH that stays off the public internet. Deploys are versioned releases
-  with a one-command rollback.
-- **Scripting.** Python for automation, bots, and data cleanup, managed with
-  `uv`, Ruff, and pytest. Bash for deploy and server glue, and PowerShell
-  where Windows administration calls for it.
+### Infrastructure and support
 
-## Stack
+- **[Company remote support](https://xrayservice.net)** — I self-host RustDesk's
+  server and relay for company-wide remote support. The support site
+  offers a preconfigured Windows client; scheduled jobs verify installer
+  updates and back up the self-hosted service.
+- **[Dunamis Status](https://status.dunamismax.com)** — A PHP/MySQL dashboard for
+  website health, services, incidents, deployments, and repository status. A
+  scheduled collector writes snapshots; the public site reads them with a
+  separate, read-only database account. [Source](https://github.com/dunamismax/status.dunamismax)
+- **[Server backup and recovery](https://dunamismax.com/projects#backups)** —
+  Daily server and application backups, age-encrypted sensitive data, and
+  documented rebuild procedures. The operational repository stays private.
 
-| Layer | Choice |
-| --- | --- |
-| Application | PHP 8.5, object-oriented and bespoke |
-| Database | MySQL 8 |
-| Front end | Semantic HTML, vanilla CSS, vanilla JavaScript only when a feature needs it |
-| Web server | Caddy with PHP-FPM |
-| Server | Ubuntu LTS, systemd |
-| DNS | Cloudflare |
-| Scripting | Python (`uv`, Ruff, pytest), Bash, PowerShell |
+### Websites
 
-No framework, ORM, CMS, Composer dependency, npm project, build step,
-external font, analytics, or CDN unless a concrete need justifies its
-lifetime cost. More detail is in [TECH_STACK.md](TECH_STACK.md).
+- **[dunamismax.com](https://dunamismax.com)** — This portfolio and blog,
+  built with PHP, MySQL, semantic HTML, and hand-written CSS. It runs without
+  JavaScript or a frontend build step. [Source](https://github.com/dunamismax/dunamismax.com)
+- **[Grace & Footnotes](https://graceandfootnotes.com)** — My Christian writing
+  site, with PHP/MySQL publishing, scheduled posts, RSS, and downloadable
+  resources. I build and host it on my own server.
+- **[Imaging Services website](https://dunamismax.com/projects#imaging-services)** —
+  A twelve-page PHP/MySQL replacement for an existing WordPress site. It is
+  hosted as a demo for review; the company's main website has not been cut
+  over. The source is private.
 
-## Projects
+### Automation
 
-- [dunamismax.com](https://github.com/dunamismax/dunamismax.com): my site
-  and blog. Bespoke PHP and MySQL behind Caddy, with semantic HTML,
-  hand-written CSS, and zero JavaScript.
-  [Live](https://dunamismax.com)
-- [status.dunamismax](https://github.com/dunamismax/status.dunamismax): a
-  status and operations dashboard for site health, host services, deploy
-  history, and project progress across my self-hosted systems. PHP and
-  MySQL, no JavaScript. [Live](https://status.dunamismax.com)
-- [mtg-card-bot](https://github.com/dunamismax/mtg-card-bot): a Discord bot
-  for Magic: The Gathering card lookups with live Scryfall prices, legality,
-  and rulings. Python, `discord.py`, and `httpx`.
-- [Toolworks](https://github.com/dunamismax/toolworks): Python automation,
-  CLI helpers, and operational scripts for repeatable IT workflows.
+- **[MTG Card Bot](https://github.com/dunamismax/mtg-card-bot)** — A running
+  Python Discord bot for Magic: The Gathering card search, pricing, legality,
+  and rulings through Scryfall.
+- **[Dynamic DNS automation](https://dunamismax.com/projects#dns-automation)** —
+  A scheduled PHP CLI tool that updates an explicit allowlist of Cloudflare
+  DNS records, with a dry-run mode for reviewing changes.
 
-## What I care about
+## How I work
 
-- **Vanilla first.** Frameworks, package managers, and build steps all carry
-  a lifetime cost. I'd rather read fifty lines of my own PHP than debug
-  someone else's abstraction.
-- **Security as architecture.** Prepared SQL, escaped output,
-  least-privilege accounts, secrets kept out of the web root and out of Git,
-  and trust boundaries decided before the first line of code.
-- **Ownership.** Software that runs on hardware you control, with data you
-  can inspect, back up, restore, and move.
-- **Explicit data.** If you can't trace a value through the system, the
-  system is too clever.
-- **Operational discipline.** Iterate, but keep only the complexity that has
-  earned its place.
+I favor server-rendered pages, readable code, prepared SQL, and small,
+purposeful dependencies. Shipping includes deployment, monitoring, backups,
+and recovery documentation. I separate public read access from private
+operating tools and describe demos as demos.
 
-Code lives on GitHub and mirrors to
-[Codeberg](https://codeberg.org/dunamismax).
-
-## License
-
-Repository content is [MIT](LICENSE) unless an individual project says
-otherwise.
+My working stack is PHP, MySQL, Python, HTML, CSS, Ubuntu, Caddy, Docker, and
+systemd. See [Tech Stack](TECH_STACK.md) for the details.
