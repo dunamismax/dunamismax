@@ -1,8 +1,8 @@
 # Stephen Sawyer
 
-I build websites and run the systems behind them. My work spans bespoke PHP
-and MySQL applications, Python automation, company remote support, and the
-Ubuntu infrastructure that keeps those services available.
+I build websites, write automation, and run the systems behind them. My work
+includes Astro and TypeScript applications, PostgreSQL publishing systems,
+Python tools, and self-hosted Ubuntu infrastructure.
 
 [Website](https://dunamismax.com) ·
 [Portfolio](https://dunamismax.com/projects) ·
@@ -11,48 +11,51 @@ Ubuntu infrastructure that keeps those services available.
 
 ## Selected work
 
-### Infrastructure and support
-
-- **[Company remote support](https://xrayservice.net)** — I self-host RustDesk's
-  server and relay for company-wide remote support. The support site
-  offers a preconfigured Windows client; scheduled jobs verify installer
-  updates and back up the self-hosted service.
-- **[Dunamis Status](https://status.dunamismax.com)** — A PHP/MySQL dashboard for
-  website health, services, incidents, deployments, and repository status. A
-  scheduled collector writes snapshots; the public site reads them with a
-  separate, read-only database account. [Source](https://github.com/dunamismax/status.dunamismax)
-- **[Server backup and recovery](https://dunamismax.com/projects#backups)** —
-  Daily server and application backups, age-encrypted sensitive data, and
-  documented rebuild procedures. The operational repository stays private.
-
 ### Websites
 
-- **[dunamismax.com](https://dunamismax.com)** — This portfolio and blog,
-  built with PHP, MySQL, semantic HTML, and hand-written CSS. It runs without
-  JavaScript or a frontend build step. [Source](https://github.com/dunamismax/dunamismax.com)
+- **[dunamismax.com](https://dunamismax.com)** — My portfolio and blog, built
+  with Astro, strict TypeScript, and PostgreSQL. Static pages sit alongside
+  database-backed publishing; the browser receives no JavaScript.
+  [Source](https://github.com/dunamismax/dunamismax.com)
 - **[Grace & Footnotes](https://graceandfootnotes.com)** — My Christian writing
-  site, with PHP/MySQL publishing, scheduled posts, RSS, and downloadable
-  resources. I build and host it on my own server.
+  site, with scheduled publishing, RSS, and downloadable resources. I build
+  and host its Astro and PostgreSQL application on my own server.
 - **[Imaging Services website](https://dunamismax.com/projects#imaging-services)** —
-  A twelve-page PHP/MySQL replacement for an existing WordPress site. It is
-  hosted as a demo for review; the company's main website has not been cut
-  over. The source is private.
+  A twelve-page Astro and PostgreSQL replacement for an existing WordPress
+  site. It is hosted as a demo for review; the company's main website has
+  not been cut over. The source remains private.
 
-### Automation
+### Infrastructure and automation
 
+- **[Company remote support](https://xrayservice.net)** — I operate RustDesk's
+  self-hosted server and relay for company-wide support. A static Astro site
+  distributes a preconfigured Windows client, with scheduled installer
+  verification and service backups.
+- **[Dunamis Status](https://status.dunamismax.com)** — An Astro and PostgreSQL
+  dashboard for website health, services, incidents, deployments, and
+  repository status. A TypeScript collector records snapshots separately
+  from the read-only public application.
+  [Source](https://github.com/dunamismax/status.dunamismax)
+- **[Server backup and recovery](https://dunamismax.com/projects#backups)** —
+  Automated database and configuration backups, age-encrypted off-site
+  snapshots, isolated PostgreSQL restore verification, and documented
+  rebuild procedures. The operational repository stays private.
 - **[MTG Card Bot](https://github.com/dunamismax/mtg-card-bot)** — A running
   Python Discord bot for Magic: The Gathering card search, pricing, legality,
   and rulings through Scryfall.
 - **[Dynamic DNS automation](https://dunamismax.com/projects#dns-automation)** —
-  A scheduled PHP CLI tool that updates an explicit allowlist of Cloudflare
-  DNS records, with a dry-run mode for reviewing changes.
+  A scheduled TypeScript tool that updates an explicit allowlist of
+  Cloudflare DNS records, with a dry-run mode for reviewing changes.
 
 ## How I work
 
-I favor server-rendered pages, readable code, prepared SQL, and small,
-purposeful dependencies. Shipping includes deployment, monitoring, backups,
-and recovery documentation. I separate public read access from private
-operating tools and describe demos as demos.
+I favor semantic HTML, hand-written CSS, parameterized SQL, and small,
+purposeful dependencies. I prerender stable pages and use server rendering
+where content needs to change at request time. Reading works without
+JavaScript; local scripts add small enhancements where useful.
 
-My working stack is PHP, MySQL, Python, HTML, CSS, Ubuntu, Caddy, Docker, and
-systemd. See [Tech Stack](TECH_STACK.md) for the details.
+Deployment, monitoring, backups, and recovery are part of the work. Public
+applications use restricted service identities and database access; publishing
+and administration stay separate.
+
+See [Tech Stack](TECH_STACK.md) for the tools and practices behind these projects.
