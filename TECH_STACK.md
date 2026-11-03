@@ -19,10 +19,14 @@ Reviewed against project source and active deployments on **October 23, 2026**.
 | [MTG Card Bot](https://github.com/dunamismax/mtg-card-bot) | Python 3.13, `discord.py`, `httpx`, Pillow, and the Scryfall API | `uv` and `uv.lock`; a dedicated systemd service account on Ubuntu |
 | Server backup and recovery | Bash, PostgreSQL dumps, application/configuration archives, and `age` encryption | Scheduled off-site snapshots, integrity checks, isolated database restore verification, and rebuild procedures |
 
-The hosted services share an **Ubuntu 26.04 LTS VM on Hyper-V**. Cloudflare
-provides DNS. Caddy serves static output or proxies to application-specific
-Node services; Node and PostgreSQL listen on loopback. The support landing
-page needs no running Node application or database to serve visitors.
+The hosted services share an **Ubuntu 26.04 LTS VM on Hyper-V**. All domains
+are registered at Cloudflare, with DNS records managed by hand: DNS-only
+(not proxied) records pointing at the server's public IP. Caddy is the
+reverse proxy and obtains its own Let's Encrypt certificates; there is no
+Cloudflare DNS challenge, Caddy DNS plugin or API token for Caddy. Caddy
+serves static output or proxies to application-specific Node services; Node
+and PostgreSQL listen on loopback. The support landing page needs no running
+Node application or database to serve visitors.
 
 The website toolchain currently uses Astro 7, TypeScript 6, Node 24, and
 PostgreSQL 18. Repositories pin exact application runtime and dependency
