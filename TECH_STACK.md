@@ -5,7 +5,7 @@ through **Caddy on Ubuntu**. Python powers the Discord bot, Docker packages
 RustDesk, and systemd runs services and scheduled jobs. Each project uses
 the runtime that fits its job.
 
-Reviewed against project source and active deployments on **October 23, 2026**.
+Reviewed against project source and active deployments on **November 3, 2026**.
 
 ## Where the tools run
 
@@ -28,17 +28,18 @@ serves static output or proxies to application-specific Node services; Node
 and PostgreSQL listen on loopback. The support landing page needs no running
 Node application or database to serve visitors.
 
-The website toolchain currently uses Astro 7, TypeScript 6, Node 24, and
-PostgreSQL 18. Repositories pin exact application runtime and dependency
-versions. PHP-FPM and MySQL have been retired from active hosting; protected
-legacy material remains available for recovery.
+The website toolchain currently uses Astro 7, TypeScript 6, Node 24, npm,
+PostgreSQL 18, and Drizzle ORM. Repositories pin exact application runtime
+and dependency versions. PHP-FPM and MySQL have been retired from active
+hosting; protected legacy material remains available for recovery.
 
 ## Application and data practices
 
 - Astro handles static generation and server rendering. Strict TypeScript
   covers application code, publishing tools, monitoring, and DNS automation.
-- PostgreSQL access uses `pg`, parameterized queries, small connection pools,
-  and explicit SQL schemas or migrations.
+- PostgreSQL access uses Drizzle ORM over `pg`, with parameterized queries,
+  small connection pools, and reviewed `drizzle-kit` migrations checked into
+  each repository.
 - Web readers, publishers, collectors, and migration operators use separate
   database roles. Publishing views exclude private drafts and future posts
   until their publication time.
