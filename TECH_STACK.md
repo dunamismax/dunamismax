@@ -38,7 +38,7 @@ One web stack, used everywhere it fits. Go, Python and Swift where a project gen
 | [vincentsawyer.org](https://vincentsawyer.org) | SvelteKit, TypeScript, Tailwind CSS 4, PostgreSQL 18, Drizzle | Node behind Caddy; a validated, checksummed content catalog |
 | [Dunamis Status](https://status.dunamismax.com) | SvelteKit, TypeScript, PostgreSQL 18, Drizzle | Read-only public app; a separate TypeScript collector on a five-minute systemd timer |
 | [RiverMind Poker](https://rivermindpoker.com) | Python, FastAPI, WebSockets, SQLAlchemy, Alembic, PostgreSQL; SvelteKit client | Python table server behind Caddy, built client served as static files |
-| [Lorehallow](https://lorehallow.com) | Go server, Protocol Buffers; Astro website | Go binary as a systemd service; Caddy serves the static site. Website moves to SvelteKit when accounts arrive |
+| [Lorehallow](https://lorehallow.com) | Go server, Protocol Buffers; script-free SvelteKit website; Phaser browser client | Go binary as a systemd service; SvelteKit on Node behind Caddy; Caddy serves the client build at play.lorehallow.com |
 | [Azeroth Trail](https://azerothtrail.com) | Astro, TypeScript, Node status tracker, Web Push | Static pages from Caddy plus a small Node service |
 | Imaging Services website | Astro, TypeScript, PostgreSQL 18, Drizzle; SvelteKit port approved | Hosted review demo behind Caddy and Node; not yet launched |
 | [xrayservice.net](https://xrayservice.net) + RustDesk | Static Astro support site; RustDesk server and relay in Docker | Weekly verified Windows installer builds, TypeScript Cloudflare DDNS on a timer |
