@@ -1,85 +1,103 @@
+<div align="center">
+
 # Tech Stack
 
-My current websites use **Astro, strict TypeScript, and PostgreSQL**, served
-through **Caddy on Ubuntu**. Python powers the Discord bot, Docker packages
-RustDesk, and systemd runs services and scheduled jobs. Each project uses
-the runtime that fits its job.
+**SvelteKit 3 · Svelte 5 · TypeScript · Tailwind CSS 4 · PostgreSQL 18 + Drizzle ORM · Node · Caddy**
 
-Reviewed against project source and active deployments on **November 3, 2026**.
+One web stack, used everywhere it fits. Go, Python and Swift where a project genuinely needs them.
 
-## Where the tools run
+<sub>Reviewed against project source, the production server and public HTTPS responses on <b>November 20, 2026</b>.</sub>
 
-| Project | Application and data | Delivery and operations |
+</div>
+
+---
+
+## The toolbox
+
+| Area | Tools |
+| --- | --- |
+| **Web** | SvelteKit 3, Svelte 5, strict TypeScript 6, Tailwind CSS 4, Vite, adapter-node, Better Auth where accounts are needed, Astro for fully static sites |
+| **Data** | PostgreSQL 18, Drizzle ORM over node-postgres with reviewed `drizzle-kit` migrations; SQLAlchemy and Alembic on the Python side |
+| **Languages** | TypeScript · Go · Python · Swift · SQL · C · Bash |
+| **Games & realtime** | Go game server, Protocol Buffers with Buf, WebSockets, FastAPI and uvicorn, NumPy and scikit-learn for poker AI training |
+| **Apple** | Swift 6, SwiftUI, Xcode for iPhone and iPad clients that share HTTPS APIs with the web apps |
+| **Python** | uv, Ruff, Pyright, pytest, discord.py, httpx |
+| **Quality** | svelte-check, `tsc --noEmit`, Node's test runner and Vitest, Biome, golangci-lint, ShellCheck, isolated PostgreSQL fixtures in tests |
+| **Hosting** | Ubuntu 26.04 LTS on Hyper-V, Caddy, Node 24, systemd services and timers, Docker for RustDesk |
+| **Security** | Tailscale, UFW, fail2ban, key-only SSH, Lynis audits, strict CSP headers, dedicated service accounts, least-privilege database roles |
+| **Recovery** | Nightly `pg_dump`, `age`-encrypted off-server snapshots, isolated restore drills for databases and application releases |
+| **Workflow** | Git on `main`, GitHub with Codeberg mirrors, GitHub Actions, committed lockfiles and pinned runtimes, `BUILD.md` plans and decision records in each repo |
+| **Workstation** | MacBook with Apple silicon, Ghostty, VS Code, Xcode, Homebrew, mise for runtime versions |
+
+## Where it runs
+
+| Project | Application & data | Delivery |
 | --- | --- | --- |
-| [dunamismax.com](https://dunamismax.com) | Astro, TypeScript, PostgreSQL, semantic HTML, hand-written CSS | Prerendered pages and server-rendered publishing through Caddy and Node; no browser JavaScript |
-| [Dunamis Status](https://status.dunamismax.com) | Astro, TypeScript, PostgreSQL | Read-only public Node application; separate TypeScript collector on a systemd timer; no browser JavaScript |
-| [Grace & Footnotes](https://graceandfootnotes.com) | Astro, TypeScript, PostgreSQL, HTML, CSS | Caddy and Node, CLI publishing, scheduled posts, RSS, and a local theme script |
-| Imaging Services replacement | Astro, TypeScript, PostgreSQL, HTML, CSS, self-hosted Inter, and a local theme script | Hosted demo through Caddy and Node; the company's main website has not been cut over |
-| [xrayservice.net](https://xrayservice.net) and RustDesk | Static Astro support site; third-party RustDesk server and relay in Docker | Caddy serves built files; scheduled installer verification, TypeScript Cloudflare DDNS, and systemd timers |
-| [MTG Card Bot](https://github.com/dunamismax/mtg-card-bot) | Python 3.13, `discord.py`, `httpx`, Pillow, and the Scryfall API | `uv` and `uv.lock`; a dedicated systemd service account on Ubuntu |
-| Server backup and recovery | Bash, PostgreSQL dumps, application/configuration archives, and `age` encryption | Scheduled off-site snapshots, integrity checks, isolated database restore verification, and rebuild procedures |
+| [dunamismax.com](https://dunamismax.com) | SvelteKit, Svelte 5, TypeScript, Tailwind CSS 4, PostgreSQL 18, Drizzle | Node via adapter-node behind Caddy. Prerendered pages, server-rendered blog and RSS, zero browser JavaScript |
+| [Grace & Footnotes](https://graceandfootnotes.com) | SvelteKit, TypeScript, Tailwind CSS 4, PostgreSQL 18, Drizzle | Node behind Caddy, shell-only publishing on its own database role, scheduled posts, RSS |
+| [vincentsawyer.org](https://vincentsawyer.org) | SvelteKit, TypeScript, Tailwind CSS 4, PostgreSQL 18, Drizzle | Node behind Caddy; a validated, checksummed content catalog |
+| [Dunamis Status](https://status.dunamismax.com) | SvelteKit, TypeScript, PostgreSQL 18, Drizzle | Read-only public app; a separate TypeScript collector on a five-minute systemd timer |
+| [RiverMind Poker](https://rivermindpoker.com) | Python, FastAPI, WebSockets, SQLAlchemy, Alembic, PostgreSQL; SvelteKit client | Python table server behind Caddy, built client served as static files |
+| [Lorehallow](https://lorehallow.com) | Go server, Protocol Buffers; Astro website | Go binary as a systemd service; Caddy serves the static site. Website moves to SvelteKit when accounts arrive |
+| [Azeroth Trail](https://azerothtrail.com) | Astro, TypeScript, Node status tracker, Web Push | Static pages from Caddy plus a small Node service |
+| Imaging Services website | Astro, TypeScript, PostgreSQL 18, Drizzle; SvelteKit port approved | Hosted review demo behind Caddy and Node; not yet launched |
+| [xrayservice.net](https://xrayservice.net) + RustDesk | Static Astro support site; RustDesk server and relay in Docker | Weekly verified Windows installer builds, TypeScript Cloudflare DDNS on a timer |
+| [MTG Card Bot](https://github.com/dunamismax/mtg-card-bot) | Python 3.13, discord.py, httpx, Pillow, Scryfall API | `uv` with a lockfile, dedicated systemd service account |
+| Field Cadence · Day by Word | SvelteKit, PostgreSQL, Drizzle; SwiftUI apps | In development, not deployed |
 
-The hosted services share an **Ubuntu 26.04 LTS VM on Hyper-V**. All domains
-are registered at Cloudflare, with DNS records managed by hand: DNS-only
-(not proxied) records pointing at the server's public IP. Caddy is the
-reverse proxy and obtains its own Let's Encrypt certificates; there is no
-Cloudflare DNS challenge, Caddy DNS plugin or API token for Caddy. Caddy
-serves static output or proxies to application-specific Node services; Node
-and PostgreSQL listen on loopback. The support landing page needs no running
-Node application or database to serve visitors.
+## How it fits together
 
-The website toolchain currently uses Astro 7, TypeScript 6, Node 24, npm,
-PostgreSQL 18, and Drizzle ORM. Repositories pin exact application runtime
-and dependency versions. PHP-FPM and MySQL have been retired from active
-hosting; protected legacy material remains available for recovery.
+```text
+Cloudflare DNS ── DNS-only records, edited by hand, pointing at the server's public IP
+      │
+Caddy ── its own Let's Encrypt certificates, security headers, static files, reverse proxy
+      │
+      ├── Node 24 ── SvelteKit apps, each its own systemd unit and service account, loopback only
+      ├── Go · Python ── game server, poker table server, Discord bot under systemd
+      ├── Docker ── RustDesk server and relay
+      └── PostgreSQL 18 ── loopback only; separate roles for web, publishing, collectors, migrations
+```
 
-## Application and data practices
+There is no Cloudflare proxy, DNS challenge, Caddy DNS plugin or API token for Caddy. PHP-FPM and
+MySQL are retired from active hosting; protected legacy material remains for recovery.
 
-- Astro handles static generation and server rendering. Strict TypeScript
-  covers application code, publishing tools, monitoring, and DNS automation.
-- PostgreSQL access uses Drizzle ORM over `pg`, with parameterized queries,
-  small connection pools, and reviewed `drizzle-kit` migrations checked into
-  each repository.
-- Web readers, publishers, collectors, and migration operators use separate
-  database roles. Publishing views exclude private drafts and future posts
-  until their publication time.
-- Node projects use exact dependency pins, committed npm lockfiles, and
-  `npm ci`. Astro checks, TypeScript checks, project tests, and production
-  builds verify changes; database integration tests use isolated fixtures.
-- The bot keeps its Python workflow: `uv`, Ruff, Pyright, and pytest.
-  Deployment scripts use shell syntax checks and ShellCheck where applicable.
+## Practices
 
-## Front end
+**Application**
 
-- Semantic HTML and responsive, hand-written CSS keep pages accessible and
-  readable without a browser framework.
-- Astro builds the websites, but a build step does not require shipping
-  JavaScript to the browser. The portfolio, status site, and support landing
-  page send none. Grace & Footnotes and the Imaging Services demo use small
-  local theme scripts; reading remains usable without JavaScript.
-- Most sites use system fonts; the Imaging Services demo serves Inter
-  locally. Fonts do not depend on an external service.
+- Content sites are server-rendered semantic HTML. The portfolio, Grace & Footnotes, Dunamis Status,
+  Lorehallow's site and the support page ship no browser JavaScript at all; Azeroth Trail's small script
+  only filters and remembers, and every page reads fine without it.
+- Parameterized queries through Drizzle, small connection pools, and migrations reviewed as SQL before
+  they ever touch a real database, applied by a dedicated operator-only identity.
+- Publishing sites read through views or roles that exclude drafts and future posts. Writers and readers
+  never share credentials.
+- Fonts are system fonts or self-hosted. No external CDNs, analytics or trackers.
 
-## Operations and recovery
+**Deployment**
 
-- Caddy handles HTTPS, static files, and reverse proxying. Docker runs
-  RustDesk; systemd manages application services, monitoring, DDNS, installer
-  verification, and backup schedules.
-- Tailscale, key-only SSH, UFW, and fail2ban support server access controls.
-  Dedicated service identities and systemd filesystem protections limit
-  application access. Secrets stay outside repositories and public assets.
-- Website deployments use immutable commit-based releases, atomic `current`
-  symlinks, a shared deployment lock, verification checks, and documented
-  rollback procedures. Publishing and deployment remain separate operations.
-- RustDesk installers are checked against upstream digests and Windows
-  signatures. The TypeScript DDNS job manages an explicit record allowlist
-  and supports dry runs.
-- Daily backups capture databases, active application releases, configuration,
-  and service data. Sensitive off-site snapshots are encrypted with `age`.
-  The host backup verifies PostgreSQL dumps by restoring them into an
-  isolated cluster. Database restore verification and a complete replacement
-  server rehearsal are distinct checks.
-- Bash handles server deployment and recovery tooling. PowerShell manages
-  the Windows Hyper-V host's forwarding and firewall configuration.
+- Releases are built and tested as isolated candidates first: type checks, unit tests, a production
+  build and, for the database-backed sites, a rehearsal against a disposable PostgreSQL cluster that
+  covers outage and recovery.
+- Releases are immutable, named by commit, and switched with an atomic `current` symlink under a shared
+  deploy lock. The previous release stays ready for rollback, and public HTTPS is verified before a
+  cutover counts as done.
+- Shared services are never restarted for one site's release; Caddy only reloads after the full
+  configuration validates.
 
-[Back to profile](README.md)
+**Operations**
+
+- systemd runs applications, monitoring, DDNS, installer builds, disk cleanup and backups. Services run
+  under dedicated identities with filesystem protections.
+- RustDesk installers are checked against upstream SHA-256 digests, Authenticode signatures and pinned
+  certificates before they are published.
+- Backups capture every database, the exact deployed releases, configuration and service data. Restores
+  are drilled in an isolated cluster; a passing timer alone is never treated as proof of recovery.
+- Bash drives deployment and recovery tooling. PowerShell handles the Windows Hyper-V host's forwarding
+  and firewall.
+
+<div align="center">
+
+**[← Back to profile](README.md)**
+
+</div>
