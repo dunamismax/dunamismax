@@ -16,7 +16,7 @@ One web stack, used everywhere it fits. Go, Python and Swift where a project gen
 
 | Area | Tools |
 | --- | --- |
-| **Web** | SvelteKit 3, Svelte 5, strict TypeScript 6, Tailwind CSS 4, Vite, adapter-node, Better Auth where accounts are needed, Astro for fully static sites |
+| **Web** | SvelteKit 3, Svelte 5, strict TypeScript 6, Tailwind CSS 4, Vite, adapter-node, Better Auth where accounts are needed |
 | **Data** | PostgreSQL 18, Drizzle ORM over node-postgres with reviewed `drizzle-kit` migrations; SQLAlchemy and Alembic on the Python side |
 | **Languages** | TypeScript · Go · Python · Swift · SQL · C · Bash |
 | **Games & realtime** | Go game server, Protocol Buffers with Buf, WebSockets, FastAPI and uvicorn, NumPy and scikit-learn for poker AI training |
@@ -39,9 +39,9 @@ One web stack, used everywhere it fits. Go, Python and Swift where a project gen
 | [Dunamis Status](https://status.dunamismax.com) | SvelteKit, TypeScript, PostgreSQL 18, Drizzle | Read-only public app; a separate TypeScript collector on a five-minute systemd timer |
 | [RiverMind Poker](https://rivermindpoker.com) | Python, FastAPI, WebSockets, SQLAlchemy, Alembic, PostgreSQL; SvelteKit client | Python table server behind Caddy, built client served as static files |
 | [Lorehallow](https://lorehallow.com) | Go server, Protocol Buffers; script-free SvelteKit website; Phaser browser client | Go binary as a systemd service; SvelteKit on Node behind Caddy; Caddy serves the client build at play.lorehallow.com |
-| [Azeroth Trail](https://azerothtrail.com) | Astro, TypeScript, Node status tracker, Web Push | Static pages from Caddy plus a small Node service |
-| Imaging Services website | Astro, TypeScript, PostgreSQL 18, Drizzle; SvelteKit port approved | Hosted review demo behind Caddy and Node; not yet launched |
-| [xrayservice.net](https://xrayservice.net) + RustDesk | Static Astro support site; RustDesk server and relay in Docker | Weekly verified Windows installer builds, TypeScript Cloudflare DDNS on a timer |
+| [Azeroth Trail](https://azerothtrail.com) | SvelteKit, TypeScript, Tailwind CSS 4; PostgreSQL 18 and Drizzle for the server-status tracker; Web Push | Prerendered pages from Caddy; Node via adapter-node for the tracker API |
+| Imaging Services website | SvelteKit, TypeScript, Tailwind CSS 4, PostgreSQL 18, Drizzle | Hosted review demo on Node behind Caddy; not yet launched |
+| [xrayservice.net](https://xrayservice.net) + RustDesk | Prerendered SvelteKit support page with no database; RustDesk server and relay in Docker | Node behind Caddy; weekly verified Windows installer builds, TypeScript Cloudflare DDNS on a timer |
 | [MTG Card Bot](https://github.com/dunamismax/mtg-card-bot) | Python 3.13, discord.py, httpx, Pillow, Scryfall API | `uv` with a lockfile, dedicated systemd service account |
 | Field Cadence · Day by Word | SvelteKit, PostgreSQL, Drizzle; SwiftUI apps | In development, not deployed |
 
