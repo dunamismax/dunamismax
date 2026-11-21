@@ -17,6 +17,7 @@ poker AI in **Python**, iPhone apps in **Swift**, all running on Ubuntu infrastr
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL_18-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![Drizzle](https://img.shields.io/badge/Drizzle-C5F74F?style=flat-square&logo=drizzle&logoColor=black)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![pnpm](https://img.shields.io/badge/pnpm-F69220?style=flat-square&logo=pnpm&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white)
@@ -31,13 +32,14 @@ poker AI in **Python**, iPhone apps in **Swift**, all running on Ubuntu infrastr
 ## Right now
 
 - **Building an MMO server.** [Lorehallow](https://lorehallow.com) is a pixel-art fantasy MMO with an
-  authoritative Go server. The networking core is in progress, and an early browser prototype is open at
-  [play.lorehallow.com](https://play.lorehallow.com).
+  authoritative Go server. Version 0.2.0 puts two players in one shared world, and the browser
+  prototype is open at [play.lorehallow.com](https://play.lorehallow.com).
 - **Running a poker site.** [RiverMind Poker](https://rivermindpoker.com) deals no-limit hold'em
   against labelled bots, for play money, while a CFR training pipeline builds stronger ones.
 - **Shipping on one stack.** Every deployed web app runs on SvelteKit 3, Svelte 5, TypeScript and
-  Tailwind CSS 4 on Node, behind Caddy, with PostgreSQL 18 and Drizzle wherever there is data to keep.
-- **Keeping eight public sites up** on a single Ubuntu server, with monitoring, encrypted backups and
+  Tailwind CSS 4 on Node 26, behind Caddy, with PostgreSQL 18 and Drizzle wherever there is data to
+  keep. Every repository pins the same exact Node, pnpm and dependency versions.
+- **Keeping thirteen sites up** on a single Ubuntu server, with monitoring, encrypted backups and
   restore drills.
 
 ## Games & play
@@ -45,7 +47,7 @@ poker AI in **Python**, iPhone apps in **Swift**, all running on Ubuntu infrastr
 | | Project | Stack | |
 | :-: | --- | --- | :-: |
 | ⚔️ | **[Lorehallow](https://github.com/dunamismax/lorehallow)**<br>A small online world with zones, quests, grouping, and other people already there when you log in. One goroutine per zone, a versioned Protocol Buffers protocol, and a scale target of thousands of players that nothing claims until it's measured. [lorehallow.com](https://lorehallow.com) | Go · Protobuf · TypeScript · SvelteKit | `pre-alpha` |
-| ♠️ | **[RiverMind Poker](https://github.com/dunamismax/rivermind-poker)**<br>No-limit Texas hold'em at 2 to 9 seats in the browser. A fuzz-tested engine and FastAPI table server stream hands over WebSockets to a SvelteKit client; Monte Carlo CFR trains the bots. [Play it](https://rivermindpoker.com) | Python · FastAPI · SvelteKit · PostgreSQL | `live` |
+| ♠️ | **[RiverMind Poker](https://github.com/dunamismax/rivermind-poker)**<br>No-limit Texas hold'em at 2 to 9 seats in the browser. A fuzz-tested engine, the bots and the table server are TypeScript inside one SvelteKit service, streaming hands over WebSockets; Monte Carlo CFR in Python trains the bots. [Play it](https://rivermindpoker.com) | SvelteKit · TypeScript · PostgreSQL · Python | `live` |
 | 🗺️ | **[Azeroth Trail](https://github.com/dunamismax/azerothtrail)**<br>A WoW leveling guide that answers "what should I do at my level?" for every Paladin and Druid spec, with a build-time verifier against its sources and Web Push server-status alerts. [azerothtrail.com](https://azerothtrail.com) | SvelteKit · TypeScript · PostgreSQL · Web Push | `live` |
 
 ## Websites & publishing
@@ -53,16 +55,18 @@ poker AI in **Python**, iPhone apps in **Swift**, all running on Ubuntu infrastr
 | | Project | Stack | |
 | :-: | --- | --- | :-: |
 | 📜 | **[vincentsawyer.org](https://vincentsawyer.org)**<br>The website and permanent archive of my father's ministry: sermons, Bible studies, and pastoral training courses, with original files preserved byte-for-byte. | SvelteKit · PostgreSQL · Drizzle | `live` |
-| ✒️ | **[Grace & Footnotes](https://graceandfootnotes.com)**<br>My Christian writing site, with scheduled publishing, RSS, study dates and downloads. Zero browser JavaScript. | SvelteKit · PostgreSQL · Drizzle | `live` |
+| ✒️ | **[Grace & Footnotes](https://graceandfootnotes.com)**<br>My Christian writing site, with scheduled publishing, RSS, study dates and downloads. Every page reads fully without JavaScript. | SvelteKit · PostgreSQL · Drizzle | `live` |
 | 🧭 | **[dunamismax.com](https://github.com/dunamismax/dunamismax.com)**<br>Portfolio and blog. Prerendered pages, a read-only public database role, immutable releases, and no browser JavaScript. | SvelteKit · PostgreSQL · Tailwind CSS | `live` |
 | 🏥 | **[Imaging Services website](https://dunamismax.com/projects#imaging-services)**<br>A thirteen-page replacement for a company WordPress site, hosted as a review demo before launch. Private source. | SvelteKit · PostgreSQL · Drizzle | `demo` |
 
 ## Apps in development
 
+Both run on their own domains as development previews, kept out of search engines until they are ready.
+
 | | Project | Stack | |
 | :-: | --- | --- | :-: |
-| 🛠️ | **[Field Cadence](https://dunamismax.com/projects#field-cadence)**<br>Field-service software for x-ray and imaging dealers: every machine by serial number, computed due dates, nightly proposed schedules, and an offline-capable technician app. Private source. | SvelteKit · Better Auth · PostgreSQL · SwiftUI | `building` |
-| 📖 | **[Day by Word](https://github.com/dunamismax/daybyword)**<br>A Bible reading companion for iPhone, iPad and the web: pick a plan, see today's reading, keep an honest record, and get a welcoming way back after missed days. | Swift · SwiftUI · SvelteKit · PostgreSQL | `building` |
+| 🛠️ | **[Field Cadence](https://dunamismax.com/projects#field-cadence)**<br>Field-service software for x-ray and imaging dealers: every machine by serial number, computed due dates, nightly proposed schedules, and an offline-capable technician app. Private source. | SvelteKit · Better Auth · PostgreSQL · SwiftUI | `preview` |
+| 📖 | **[Day by Word](https://github.com/dunamismax/daybyword)**<br>A Bible reading companion for iPhone, iPad and the web: pick a plan, see today's reading, keep an honest record, and get a welcoming way back after missed days. | Swift · SwiftUI · SvelteKit · PostgreSQL | `preview` |
 
 ## Infrastructure & tools
 
@@ -70,9 +74,10 @@ poker AI in **Python**, iPhone apps in **Swift**, all running on Ubuntu infrastr
 | :-: | --- | --- | :-: |
 | 🖥️ | **[Company remote support](https://xrayservice.net)**<br>Self-hosted RustDesk server and relay for my whole company, with a support site that hands customers a preconfigured Windows client, built weekly and verified against upstream digests and Authenticode signatures. | RustDesk · Docker · SvelteKit · Caddy | `in service` |
 | 📈 | **[Dunamis Status](https://status.dunamismax.com)**<br>Operations dashboard for site health, services, backups, incidents, deployments and repository status. A five-minute collector writes; the public app only reads. [Source](https://github.com/dunamismax/status.dunamismax) | SvelteKit · PostgreSQL · systemd | `live` |
-| 🔐 | **[Backup & recovery](https://dunamismax.com/projects#backups)**<br>Nightly database and configuration backups, age-encrypted and kept off the server, with restore drills in an isolated PostgreSQL cluster. | Bash · PostgreSQL · age | `scheduled` |
+| 🔐 | **[Backup & recovery](https://dunamismax.com/projects#backups)**<br>Daily age-encrypted snapshots of every database, each site's exact release and the server's configuration, kept off the server, plus an encrypted off-site copy of the large media. Every run restores the databases into an isolated cluster and boots the recovered sites against them. | Bash · Python · PostgreSQL · age · restic | `scheduled` |
+| 🌐 | **[Dynamic DNS automation](https://dunamismax.com/projects#dns-automation)**<br>A TypeScript updater on a five-minute timer keeps selected Cloudflare DNS records pointed at the server's public address, with drift checks and a dry-run mode. | TypeScript · Node · systemd | `scheduled` |
 | 🃏 | **[MTG Card Bot](https://github.com/dunamismax/mtg-card-bot)**<br>Discord bot for Magic: The Gathering card lookups, prices, legality and rulings through Scryfall, with typo-tolerant matching and slash-command autocomplete. | Python · discord.py · httpx | `in service` |
-| 📘 | **[C From The Ground Up](https://github.com/dunamismax/c-from-the-ground-up)**<br>A free, progressive C course: 35 runnable lessons from Hello World to sockets, threads and an ncurses text adventure. [cfromthegroundup.com](https://cfromthegroundup.com) | C · POSIX · ncurses · SvelteKit | `published` |
+| 📘 | **[C From The Ground Up](https://github.com/dunamismax/c-from-the-ground-up)**<br>A free, progressive C course: 38 runnable lessons from Hello World to sockets, threads and an ncurses text adventure, then debugging, undefined behavior and testing. [cfromthegroundup.com](https://cfromthegroundup.com) | C · POSIX · ncurses · SvelteKit | `published` |
 
 ## One server, everything on it
 
@@ -80,14 +85,14 @@ poker AI in **Python**, iPhone apps in **Swift**, all running on Ubuntu infrastr
 Cloudflare DNS ── DNS-only records, no proxy
   │
   ▼
-Caddy ── HTTPS via Let's Encrypt, security headers, static files
+Caddy ── HTTPS via Let's Encrypt, security headers, rate limits, static files
   │
-  ├── SvelteKit apps on Node 24 ──▶ PostgreSQL 18, one least-privilege role per job
-  ├── Go game server · FastAPI poker server · Discord bot
+  ├── SvelteKit apps on Node 26, one systemd unit each ──▶ PostgreSQL 18, one least-privilege role per job
+  ├── Go game server · Python Discord bot
   └── RustDesk server + relay in Docker
 
-systemd timers ── monitoring · DDNS · installer builds · nightly age-encrypted backups
-Ubuntu 26.04 LTS on Hyper-V · Tailscale · UFW · fail2ban · key-only SSH
+systemd timers ── monitoring · DDNS · installer builds · daily age-encrypted backups
+Ubuntu 26.04 LTS on Hyper-V · Tailscale · UFW · fail2ban · SSH over the tailnet only
 ```
 
 ## How I work
@@ -98,8 +103,12 @@ Ubuntu 26.04 LTS on Hyper-V · Tailscale · UFW · fail2ban · key-only SSH
   feature needs them.
 - **Least privilege by default.** Separate service accounts and database roles for readers, publishers,
   collectors and migrations. Secrets never live in a repository or a build.
-- **Releases you can roll back.** Immutable commit-named releases, atomic symlink switches, a shared deploy
-  lock, and a rollback check before anything is called done.
+- **Releases that only move forward.** Immutable releases, atomic symlink switches and a shared deploy
+  lock. Each release first runs as a candidate against the real database, under the service's own
+  account and sandbox, and takes traffic only if it passes. There is no rollback: a bad release is
+  fixed in a new commit.
+- **One written standard.** Every web project follows the same platform contract: pnpm, one Node
+  version, exact dependency pins, the host's PostgreSQL. A conformance check is the definition of done.
 - **Plans in writing.** Each project keeps its build plan and decision records next to the code, and says
   exactly what is finished and what is not.
 
