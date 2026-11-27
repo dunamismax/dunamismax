@@ -4,8 +4,8 @@
 
 ### I build the software. I run the servers.
 
-Full-stack developer and hands-on sysadmin. Web apps in **SvelteKit**, game servers in **Go**,
-poker AI in **Python**, iPhone apps in **Swift**, all running on Ubuntu infrastructure I operate myself.
+Full-stack developer and hands-on sysadmin. Web apps in **SvelteKit**, poker AI in **Python**,
+iPhone apps in **Swift**, all running on Ubuntu infrastructure I operate myself.
 
 [![Website](https://img.shields.io/badge/dunamismax.com-0d1117?style=for-the-badge&logo=svelte&logoColor=58a6ff)](https://dunamismax.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-0d1117?style=for-the-badge&logo=bookstack&logoColor=58a6ff)](https://dunamismax.com/projects)
@@ -31,24 +31,19 @@ poker AI in **Python**, iPhone apps in **Swift**, all running on Ubuntu infrastr
 
 ## Right now
 
-- **Building an MMO server.** [Lorehallow](https://lorehallow.com) is a pixel-art fantasy MMO with an
-  authoritative Go server. Version 0.2.0 puts two players in one shared world, and the browser
-  prototype is open at [play.lorehallow.com](https://play.lorehallow.com).
 - **Running a poker site.** [RiverMind Poker](https://rivermindpoker.com) deals no-limit hold'em
   against labelled bots, for play money, while a CFR training pipeline builds stronger ones.
 - **Shipping on one stack.** Every deployed web app runs on SvelteKit 3, Svelte 5, TypeScript and
   Tailwind CSS 4 on Node 26, behind Caddy, with PostgreSQL 18 and Drizzle wherever there is data to
   keep. Every repository pins the same exact Node, pnpm and dependency versions.
-- **Keeping thirteen sites up** on a single Ubuntu server, with monitoring, encrypted backups and
+- **Keeping twelve sites up** on a single Ubuntu server, with monitoring, encrypted backups and
   restore drills.
 
 ## Games & play
 
 | | Project | Stack | |
 | :-: | --- | --- | :-: |
-| ⚔️ | **[Lorehallow](https://github.com/dunamismax/lorehallow)**<br>A small online world with zones, quests, grouping, and other people already there when you log in. One goroutine per zone, a versioned Protocol Buffers protocol, and a scale target of thousands of players that nothing claims until it's measured. [lorehallow.com](https://lorehallow.com) | Go · Protobuf · TypeScript · SvelteKit | `pre-alpha` |
 | ♠️ | **[RiverMind Poker](https://github.com/dunamismax/rivermind-poker)**<br>No-limit Texas hold'em at 2 to 9 seats in the browser. A fuzz-tested engine, the bots and the table server are TypeScript inside one SvelteKit service, streaming hands over WebSockets; Monte Carlo CFR in Python trains the bots. [Play it](https://rivermindpoker.com) | SvelteKit · TypeScript · PostgreSQL · Python | `live` |
-| 🗺️ | **[Azeroth Trail](https://github.com/dunamismax/azerothtrail)**<br>A WoW leveling guide that answers "what should I do at my level?" for every Paladin and Druid spec, with a build-time verifier against its sources and Web Push server-status alerts. [azerothtrail.com](https://azerothtrail.com) | SvelteKit · TypeScript · PostgreSQL · Web Push | `live` |
 
 ## Websites & publishing
 
@@ -88,7 +83,7 @@ Cloudflare DNS ── DNS-only records, no proxy
 Caddy ── HTTPS via Let's Encrypt, security headers, rate limits, static files
   │
   ├── SvelteKit apps on Node 26, one systemd unit each ──▶ PostgreSQL 18, one least-privilege role per job
-  ├── Go game server · Python Discord bot
+  ├── Python Discord bot
   └── RustDesk server + relay in Docker
 
 systemd timers ── monitoring · DDNS · installer builds · daily age-encrypted backups
@@ -97,8 +92,8 @@ Ubuntu 26.04 LTS on Hyper-V · Tailscale · UFW · fail2ban · SSH over the tail
 
 ## How I work
 
-- **One stack, used deliberately.** SvelteKit, TypeScript and PostgreSQL for the web. Go, Python or Swift
-  only when the project actually needs a game server, a model or a native app.
+- **One stack, used deliberately.** SvelteKit, TypeScript and PostgreSQL for the web. Python or Swift
+  only when the project actually needs a model, a bot or a native app.
 - **Pages that work without JavaScript.** Server-rendered, semantic HTML first; scripts only where a
   feature needs them.
 - **Least privilege by default.** Separate service accounts and database roles for readers, publishers,

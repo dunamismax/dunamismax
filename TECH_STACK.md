@@ -19,7 +19,7 @@ One web stack, used everywhere it fits. Go, Python and Swift where a project gen
 | **Web** | SvelteKit 3, Svelte 5, strict TypeScript 6, Tailwind CSS 4, Vite, adapter-node, Better Auth where accounts are needed |
 | **Data** | PostgreSQL 18, Drizzle ORM over node-postgres (`pg`) with reviewed `drizzle-kit` migrations |
 | **Languages** | TypeScript · Go · Python · Swift · SQL · C · Bash |
-| **Games & realtime** | Go game server, Protocol Buffers with Buf, WebSockets, a TypeScript poker engine and table server checked against their Python originals, NumPy and scikit-learn for poker AI training |
+| **Games & realtime** | WebSockets, a TypeScript poker engine and table server checked against their Python originals, NumPy and scikit-learn for poker AI training |
 | **Apple** | Swift 6, SwiftUI, Xcode for iPhone and iPad clients that share HTTPS APIs with the web apps |
 | **Python** | uv, Ruff, Pyright, pytest, discord.py, httpx |
 | **Quality** | svelte-check, `tsc --noEmit`, Node's test runner and Vitest, Playwright with axe-core, ESLint, Biome, golangci-lint, ShellCheck, isolated PostgreSQL fixtures in tests |
@@ -38,8 +38,6 @@ One web stack, used everywhere it fits. Go, Python and Swift where a project gen
 | [vincentsawyer.org](https://vincentsawyer.org) | SvelteKit, TypeScript, Tailwind CSS 4, PostgreSQL 18, Drizzle | Node behind Caddy; a validated, checksummed content catalog; sermon media backed up off-site on its own schedule |
 | [Dunamis Status](https://status.dunamismax.com) | SvelteKit, TypeScript, Tailwind CSS 4, PostgreSQL 18, Drizzle | Read-only public app; a separate TypeScript collector on a five-minute systemd timer |
 | [RiverMind Poker](https://rivermindpoker.com) | SvelteKit, TypeScript, Tailwind CSS 4, PostgreSQL 18, Drizzle; a TypeScript engine, bots and table server over WebSockets; Python with NumPy and scikit-learn for offline CFR training | One Node service behind Caddy serves the pages, the API and the tables; open tables are kept in PostgreSQL and survive a restart |
-| [Lorehallow](https://lorehallow.com) | Go server, Protocol Buffers; script-free SvelteKit website; Phaser browser client | Go binary as a systemd service; SvelteKit on Node behind Caddy; Caddy serves the client build at play.lorehallow.com |
-| [Azeroth Trail](https://azerothtrail.com) | SvelteKit, TypeScript, Tailwind CSS 4; PostgreSQL 18 and Drizzle for the server-status tracker; Web Push | Prerendered pages from Caddy; Node via adapter-node for the tracker API |
 | [C From The Ground Up](https://cfromthegroundup.com) | 38 C lessons that compile as C17 and C23; SvelteKit course site with PostgreSQL 18, Drizzle and Better Auth for optional accounts | Node behind Caddy, lesson pages prerendered from the lesson sources; an mdBook mirror on GitHub Pages |
 | Imaging Services website | SvelteKit, TypeScript, Tailwind CSS 4, PostgreSQL 18, Drizzle | Hosted review demo on Node behind Caddy, kept out of search engines; not yet launched |
 | [xrayservice.net](https://xrayservice.net) + RustDesk | Prerendered SvelteKit support page with no database; RustDesk server and relay in Docker | Node behind Caddy; weekly verified Windows installer builds, TypeScript Cloudflare DDNS on a five-minute timer |
@@ -56,7 +54,7 @@ Cloudflare DNS ── DNS-only records, edited by hand, pointing at the server's
 Caddy ── its own Let's Encrypt certificates, security headers, rate limits, static files, reverse proxy
       │
       ├── Node 26 ── SvelteKit apps, each its own systemd unit and service account, loopback only
-      ├── Go · Python ── game server and Discord bot under systemd
+      ├── Python ── Discord bot under systemd
       ├── Docker ── RustDesk server and relay
       └── PostgreSQL 18 ── loopback only; separate roles for web, publishing, collectors, migrations
 ```
@@ -70,9 +68,9 @@ protected legacy material remains for recovery.
 
 **Application**
 
-- Content sites are server-rendered semantic HTML. The portfolio, Dunamis Status, Lorehallow's site and
-  the support page ship no browser JavaScript at all. Grace & Footnotes ships one small theme script and
-  Azeroth Trail a few that filter, remember and handle alerts; every page on both reads fine without them.
+- Content sites are server-rendered semantic HTML. The portfolio, Dunamis Status and the support page
+  ship no browser JavaScript at all. Grace & Footnotes ships one small theme script, and every page
+  reads fine without it.
 - Parameterized queries through Drizzle, small connection pools, and migrations reviewed as SQL before
   they ever touch a real database, applied by a dedicated operator-only identity.
 - Publishing sites read through views or roles that exclude drafts and future posts. Writers and readers
